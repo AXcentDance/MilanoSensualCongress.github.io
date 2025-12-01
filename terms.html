@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms & Conditions - Milano Sensual Congress 2026</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    colors: {
+                        brand: {
+                            dark: '#0f172a',
+                            purple: '#4c1d95',
+                            pink: '#be185d',
+                            accent: '#f43f5e',
+                            gold: '#fbbf24'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-brand-dark text-slate-300 font-sans antialiased">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-brand-dark/90 backdrop-blur-md border-b border-white/10">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-3 group">
+                <img src="images/logo.png" alt="Milano Sensual Congress Logo"
+                    class="h-12 w-auto group-hover:opacity-90 transition-opacity">
+                <span
+                    class="text-white text-xs font-sans tracking-[0.2em] uppercase opacity-60 border-l border-white/20 pl-3 py-1">2026</span>
+            </a>
+            <div class="hidden md:flex space-x-8 text-sm font-medium tracking-wide items-center">
+                <a href="index.html" class="hover:text-pink-400 transition-colors">Home</a>
+                <a href="artists.html" class="hover:text-pink-400 transition-colors">Artists</a>
+                <a href="tickets.html" class="hover:text-pink-400 transition-colors">Tickets</a>
+                <a href="hotel.html" class="hover:text-pink-400 transition-colors">Hotel</a>
+                <a href="contact.html" class="hover:text-pink-400 transition-colors">Contact</a>
+            </div>
+            <button class="md:hidden text-white focus:outline-none"
+                onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+                <i class="fa-solid fa-bars text-xl"></i>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-brand-dark border-t border-white/10">
+            <div class="flex flex-col p-4 space-y-4">
+                <a href="index.html" class="block hover:text-pink-400">Home</a>
+                <a href="artists.html" class="block hover:text-pink-400">Artists</a>
+                <a href="tickets.html" class="block hover:text-pink-400">Tickets</a>
+                <a href="hotel.html" class="block hover:text-pink-400">Hotel</a>
+                <a href="contact.html" class="block hover:text-pink-400">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mx-auto px-6 py-32 max-w-4xl">
+        <h1 class="text-4xl md:text-5xl font-serif font-bold text-white mb-12 text-center">Terms & Conditions</h1>
+
+        <!-- Terms Section -->
+        <section class="mb-16 space-y-8">
+            <div class="bg-white/5 p-8 rounded-2xl border border-white/10">
+                <h2 class="text-2xl font-bold text-white mb-4">1. Ticket Policy</h2>
+                <ul class="list-disc pl-5 space-y-3 text-slate-300">
+                    <li><strong>No Refunds:</strong> All ticket sales are final. No refunds will be issued under any
+                        circumstances.</li>
+                    <li><strong>Terms of Sale:</strong> The general terms and conditions for ticket purchases are those
+                        of our ticketing partner, <a href="https://lasalsadelbaile.com" target="_blank"
+                            class="text-pink-400 hover:text-pink-300 underline">LaSalsaDelBaile</a>. By purchasing a
+                        ticket, you agree to their terms.</li>
+                    <li><strong>Name Changes:</strong> Name changes on tickets are permitted for a fee of
+                        <strong>€10</strong> per ticket. This must be processed through the ticketing platform.</li>
+                </ul>
+            </div>
+
+            <div class="bg-white/5 p-8 rounded-2xl border border-white/10">
+                <h2 class="text-2xl font-bold text-white mb-4">2. Event Access & Wristbands</h2>
+                <ul class="list-disc pl-5 space-y-3 text-slate-300">
+                    <li><strong>Wristbands:</strong> Upon check-in, you will receive a wristband that must be worn at
+                        all times during the event.</li>
+                    <li><strong>Lost Wristbands:</strong> If you lose your wristband or show up without it asking for a
+                        replacement, you will be charged <strong>50% of the current door price</strong> for a new one.
+                        This replacement is allowed <strong>only one time</strong>. Subsequent loss will require
+                        purchasing a full new ticket.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Privacy Policy Section -->
+        <h1 class="text-4xl md:text-5xl font-serif font-bold text-white mb-12 text-center">Privacy Policy</h1>
+        <section class="space-y-8">
+            <div class="bg-white/5 p-8 rounded-2xl border border-white/10">
+                <p class="mb-4">In compliance with Italian and European regulations (GDPR), we are committed to
+                    protecting your personal data.</p>
+
+                <h3 class="text-xl font-bold text-white mb-2">Data Collection</h3>
+                <p class="mb-4">We collect personal information (name, email, phone number) only for the purpose of
+                    managing your booking and communicating important event updates.</p>
+
+                <h3 class="text-xl font-bold text-white mb-2">Media Release</h3>
+                <p class="mb-4">By attending Milano Sensual Congress, you acknowledge that you may be photographed or
+                    filmed. These images and videos may be used for promotional purposes on our website and social media
+                    channels.</p>
+
+                <h3 class="text-xl font-bold text-white mb-2">Contact</h3>
+                <p>For any privacy-related concerns, please contact us at <a href="mailto:slamitza@gmail.com"
+                        class="text-pink-400 hover:text-pink-300">slamitza@gmail.com</a>.</p>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-brand-dark border-t border-white/10 py-12 mt-20">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-slate-500 text-sm">&copy; 2026 Milano Sensual Congress. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
