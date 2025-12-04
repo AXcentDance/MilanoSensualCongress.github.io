@@ -20,8 +20,7 @@
     <meta property="og:title" content="Milano Sensual Congress 2026">
     <meta property="og:description"
         content="The ultimate Bachata experience in Italy. World-class lineup, executive venue, and unforgettable parties. Nov 2026.">
-    <meta property="og:image"
-        content="images/logo.png">
+    <meta property="og:image" content="images/logo.png">
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -35,6 +34,10 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
         rel="stylesheet">
+
+    <!-- PERFORMANCE: Preload Hero Image for faster LCP score -->
+    <link rel="preload" as="image"
+        href="https://slamitza-urmft.wpcomstaging.com/wp-content/uploads/2025/11/Devero-Hotel-SPA_principale_colori.png">
 
     <script>
         tailwind.config = {
@@ -126,8 +129,8 @@
     <nav class="fixed w-full z-50 glass-nav">
         <div class="container mx-auto px-6 py-3 flex justify-between items-center">
             <a href="#" class="flex items-center gap-3 group">
-                <img src="images/logo.png"
-                    alt="Milano Sensual Congress Logo" class="h-12 w-auto group-hover:opacity-90 transition-opacity">
+                <img src="images/logo.png" alt="Milano Sensual Congress Logo"
+                    class="h-12 w-auto group-hover:opacity-90 transition-opacity">
                 <span
                     class="text-white text-xs font-sans tracking-[0.2em] uppercase opacity-60 border-l border-white/20 pl-3 py-1">2026</span>
             </a>
@@ -161,13 +164,18 @@
     </nav>
 
     <!-- Hero Section with Video -->
-    <header class="relative w-full h-screen min-h-[800px] flex items-center justify-center overflow-hidden">
-        <!-- Video Background -->
+    <!-- Hero Section with Video -->
+    <header class="relative w-full min-h-screen flex items-center justify-center overflow-hidden">
+        <!-- Mobile Background Image -->
+        <div class="absolute top-0 left-0 w-full h-full z-0 md:hidden bg-cover bg-center"
+            style="background-image: url('images/hotel/exterior_dusk.png');">
+        </div>
+
+        <!-- Video Background (Desktop) -->
         <video autoplay muted loop playsinline
             poster="https://slamitza-urmft.wpcomstaging.com/wp-content/uploads/2025/11/Devero-Hotel-SPA_principale_colori.png"
-            class="absolute top-0 left-0 w-full h-full object-cover z-0">
-            <source src="https://videos.files.wordpress.com/XzKzmW8K/169-milano-sensual-event-nov-2026-x-sito-2.mov"
-                type="video/mp4">
+            class="absolute top-0 left-0 w-full h-full object-cover z-0 hidden md:block">
+            <source src="images/hero.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
 
@@ -175,7 +183,7 @@
         <div class="hero-overlay absolute inset-0 z-10"></div>
 
         <!-- Hero Content -->
-        <div class="container mx-auto px-6 relative z-20 pt-20 text-center">
+        <div class="container mx-auto px-6 relative z-20 py-20 text-center">
 
             <!-- Main Heading -->
             <h1 class="text-5xl md:text-7xl lg:text-8xl font-serif font-bold mb-4 leading-tight animate-fade-in-up">
@@ -338,24 +346,22 @@
                 <div class="flex flex-col md:flex-row gap-6 items-start">
                     <!-- Placeholder for Image -->
                     <div
-                        class="w-32 h-48 md:w-40 md:h-56 rounded-xl overflow-hidden border-2 border-pink-500/50 flex-shrink-0 bg-slate-800 shadow-lg">
+                        class="w-48 h-64 md:w-56 md:h-72 rounded-xl overflow-hidden border-2 border-pink-500/50 flex-shrink-0 bg-slate-800 shadow-lg">
                         <!-- Replace src with actual image URL -->
-                        <img src="https://slamitza-urmft.wpcomstaging.com/wp-content/uploads/2025/10/ok.png"
-                            alt="Marco y Valeria"
-                            class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                        <img src="images/artists/marco_valeria.webp" alt="Marco y Valeria"
+                            class="w-full h-full object-cover scale-125 hover:scale-135 transition-transform duration-500"
+                            loading="lazy">
                     </div>
                     <div>
                         <h3 class="text-2xl font-bold text-white mb-1">Marco y Valeria</h3>
                         <p class="text-pink-500 text-sm mb-4 font-medium">Congress Directors</p>
                         <p class="text-slate-400 text-sm leading-relaxed">
-                            <span class="text-white font-medium">@marcoyvaleria</span> — passionate ambassadors of
-                            Bachata Sensual and founders of one of Milan’s largest and most prestigious dance
-                            communities. With over a decade of experience, they have taught internationally across more
-                            than ten countries and serve as artistic directors of the renowned <strong>Gero y Migle
-                                Project Performance Show</strong>. As creators of both <strong>Milano Sensual
-                                Congress</strong> and its Spring Edition, as well as artistic directors of Una Más,
-                            Marco and Valeria continue to elevate the global Bachata Sensual scene with creativity,
-                            professionalism, and passion.
+                            <span class="text-white font-medium">@marcoyvaleria</span> — Bachata Sensual artists with
+                            their school <strong>Bachata Passion</strong> in Milan. With a decade of experience, they
+                            are directors of the <strong>Gero y Migle Project Performance Show</strong> in Milan.
+                            Creators of <strong>Milano Sensual Congress</strong> and its Spring Edition, and artistic
+                            directors of <strong>Una Más</strong>. They have performed and taught internationally for 10
+                            years.
                         </p>
                     </div>
                 </div>
@@ -364,25 +370,23 @@
                 <div class="flex flex-col md:flex-row gap-6 items-start">
                     <!-- Placeholder for Image -->
                     <div
-                        class="w-32 h-48 md:w-40 md:h-56 rounded-xl overflow-hidden border-2 border-purple-500/50 flex-shrink-0 bg-slate-800 shadow-lg">
+                        class="w-48 h-64 md:w-56 md:h-72 rounded-xl overflow-hidden border-2 border-purple-500/50 flex-shrink-0 bg-slate-800 shadow-lg">
                         <!-- Replace src with actual image URL -->
-                        <img src="https://slamitza-urmft.wpcomstaging.com/wp-content/uploads/2025/10/WebsitePicture.png"
-                            alt="Ale y Xidan"
-                            class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                        <img src="images/artists/Ale_Xidan.webp" alt="Ale y Xidan"
+                            class="w-full h-full object-cover scale-125 hover:scale-135 transition-transform duration-500"
+                            loading="lazy">
                     </div>
                     <div>
                         <h3 class="text-2xl font-bold text-white mb-1">Ale y Xidan</h3>
                         <p class="text-purple-500 text-sm mb-4 font-medium">Congress Directors</p>
                         <p class="text-slate-400 text-sm leading-relaxed">
-                            <span class="text-white font-medium">@aleyxidan</span> — internationally recognized Bachata
-                            Sensual artists who have taught across Europe, the Americas, and Asia. With over twelve
-                            years of experience, they are the founders of
-                            <a href="https://axcentdance.com" target="_blank"
+                            <span class="text-white font-medium">@aleyxidan</span> — We have taught in Europe, North
+                            America, and Asia. With 10 years of experience teaching internationally, we are the founders
+                            of <a href="https://axcentdance.com" target="_blank"
                                 class="text-pink-400 hover:text-white font-bold underline decoration-pink-500/30 transition-colors">AXcent
-                                Dance</a>,
-                            the first Bachata Sensual–specialized school in Zurich, established in 2025. As
-                            co-organizers of Milano Sensual Congress, its Spring Edition, and Bailadoro Dance Weekender,
-                            Ale and Xidan bring elegance, energy, and innovation to every event they lead.
+                                Dance</a>, the first Bachata Sensual specialized school in Zurich, established in 2025.
+                            Creators of <strong>Milano Sensual Congress</strong> and its Spring Edition with Marco y
+                            Valeria, and co-organizers of <strong>Bailadoro Dance Weekend</strong> in Basel.
                         </p>
                     </div>
                 </div>
@@ -424,7 +428,8 @@
                     </h4>
                     <p class="text-slate-400 pl-8">Sales for the official hotel open in January 2026. Please visit our
                         <a href="hotel.html" class="text-pink-400 underline">Hotel Page</a> for the official booking
-                        link to get the group rate.</p>
+                        link to get the group rate.
+                    </p>
                 </div>
             </div>
         </div>
@@ -491,8 +496,8 @@
                 class="border-t border-white/5 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-slate-600">
                 <p>&copy; 2026 Milano Sensual Congress. All rights reserved.</p>
                 <div class="flex gap-4 mt-4 md:mt-0">
-                    <a href="#" class="hover:text-slate-400">Privacy Policy</a>
-                    <a href="#" class="hover:text-slate-400">Terms & Conditions</a>
+                    <a href="terms.html" class="hover:text-slate-400">Privacy Policy</a>
+                    <a href="terms.html" class="hover:text-slate-400">Terms & Conditions</a>
                 </div>
             </div>
         </div>
