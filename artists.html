@@ -34,27 +34,97 @@
 
     <!-- Structured Data (JSON-LD) for Event Performers -->
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "DanceEvent",
-      "name": "Milano Sensual Congress 2026",
-      "startDate": "2026-11-20T12:00", 
-      "endDate": "2026-11-22T23:59",
-      "location": {
-        "@type": "Place",
-        "name": "Devero Hotel",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Milan",
-          "addressCountry": "IT"
-        }
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "DanceEvent",
+        "name": "Milano Sensual Congress 2026",
+        "startDate": "2026-11-20T12:00", 
+        "endDate": "2026-11-22T23:59",
+        "location": {
+          "@type": "Place",
+          "name": "Devero Hotel",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Cavenago di Brianza",
+            "addressRegion": "MB",
+            "postalCode": "20873",
+            "addressCountry": "IT"
+          }
+        },
+        "performer": [
+          { "@type": "Person", "name": "Gero y Migle" },
+          { "@type": "Person", "name": "Klaus y Ros" },
+          { "@type": "Person", "name": "Cristian y Gabriella" },
+          { "@type": "Person", "name": "Nacho y Silvia" },
+          { "@type": "Person", "name": "Agustín y Alba" },
+          { "@type": "Person", "name": "Irene y Tomás" },
+          { "@type": "Person", "name": "Aitor Gomez" }
+        ]
       },
-      "performer": [
-        { "@type": "Person", "name": "Gero y Migle", "nationality": "Spanish" },
-        { "@type": "Person", "name": "Klau y Ros", "nationality": "Spanish" },
-        { "@type": "Person", "name": "Cristian y Gabriella", "nationality": "Spanish" }
-      ]
-    }
+      {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@type": "Person",
+              "name": "Gero y Migle"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@type": "Person",
+              "name": "Klaus y Ros"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "item": {
+              "@type": "Person",
+              "name": "Cristian y Gabriella"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "item": {
+              "@type": "Person",
+              "name": "Nacho y Silvia"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "item": {
+              "@type": "Person",
+              "name": "Agustín y Alba"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 6,
+            "item": {
+              "@type": "Person",
+              "name": "Irene y Tomás"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 7,
+            "item": {
+              "@type": "Person",
+              "name": "Aitor Gomez"
+            }
+          }
+        ]
+      }
+    ]
     </script>
 
     <!-- Tailwind CSS -->
