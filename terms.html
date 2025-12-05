@@ -20,7 +20,6 @@
                     },
                     colors: {
                         brand: {
-                            make
                             dark: '#0f172a',
                             purple: '#4c1d95',
                             pink: '#be185d',
@@ -32,6 +31,14 @@
             }
         }
     </script>
+    <style>
+        .hero-bg {
+            background-image: linear-gradient(rgba(15, 23, 42, 0.85), rgba(76, 29, 149, 0.9)), url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2070&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+    </style>
 </head>
 
 <body class="bg-brand-dark text-slate-300 font-sans antialiased">
@@ -47,7 +54,7 @@
             </a>
             <div class="hidden md:flex space-x-8 text-sm font-medium tracking-wide items-center">
                 <a href="index.html" class="hover:text-pink-400 transition-colors">Home</a>
-                <a href="terms.html" class="hover:text-slate-400">Terms & Conditions</a>
+                <a href="terms.html" class="text-pink-500">Terms & Conditions</a>
                 <a href="tickets.html" class="hover:text-pink-400 transition-colors">Tickets</a>
                 <a href="hotel.html" class="hover:text-pink-400 transition-colors">Hotel</a>
                 <a href="contact.html" class="hover:text-pink-400 transition-colors">Contact</a>
@@ -68,8 +75,21 @@
         </div>
     </nav>
 
-    <div class="container mx-auto px-6 py-32 max-w-4xl">
-        <h1 class="text-4xl md:text-5xl font-serif font-bold text-white mb-12 text-center">Terms & Conditions</h1>
+    <!-- Hero Section -->
+    <header class="hero-bg min-h-[40vh] flex flex-col items-center justify-center pt-32 pb-16 relative mb-12">
+        <div class="absolute inset-0 bg-gradient-to-b from-brand-dark/80 via-brand-dark/60 to-brand-dark"></div>
+        <div class="container mx-auto px-6 relative z-10 text-center">
+            <h1 class="text-4xl md:text-6xl font-serif font-bold mb-4 leading-tight text-white">
+                Terms & <span
+                    class="text-transparent bg-clip-text bg-gradient-to-r from-pink-400 via-purple-400 to-indigo-400">Policies</span>
+            </h1>
+            <p class="text-lg text-slate-300 max-w-2xl mx-auto font-light">
+                Please read our terms and conditions and privacy policy carefully.
+            </p>
+        </div>
+    </header>
+
+    <div class="container mx-auto px-6 max-w-4xl">
 
         <!-- Terms Section -->
         <section class="mb-16 space-y-8">
@@ -164,11 +184,32 @@
 
     <!-- Footer -->
     <footer class="bg-brand-dark border-t border-white/10 py-12 mt-20">
-        <div class="container mx-auto px-6 text-center">
-            <p class="text-slate-500 text-sm">&copy; 2026 Milano Sensual Congress. All rights reserved.</p>
-            <div class="flex justify-center gap-4 mt-4">
-                <a href="terms.html" class="text-slate-500 hover:text-slate-400 text-sm">Privacy Policy</a>
-                <a href="terms.html" class="text-slate-500 hover:text-slate-400 text-sm">Terms & Conditions</a>
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                <div class="text-center md:text-left">
+                    <h4 class="text-xl font-serif font-bold text-white mb-2">Milano Sensual Congress</h4>
+                    <p class="text-slate-500 text-sm">The ultimate Bachata experience in Italy.</p>
+                </div>
+
+                <div class="flex gap-6">
+                    <a href="https://instagram.com/milano_sensual_congress" target="_blank"
+                        class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-pink-600 hover:text-white transition-all text-slate-400">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://wa.me/41799668481" target="_blank"
+                        class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-green-500 hover:text-white transition-all text-slate-400">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div
+                class="border-t border-white/5 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-slate-600">
+                <p>&copy; 2026 Milano Sensual Congress. All rights reserved.</p>
+                <div class="flex gap-4 mt-4 md:mt-0">
+                    <a href="terms.html" class="hover:text-slate-400">Privacy Policy</a>
+                    <a href="terms.html" class="hover:text-slate-400">Terms & Conditions</a>
+                </div>
             </div>
         </div>
     </footer>
