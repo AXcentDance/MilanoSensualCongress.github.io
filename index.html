@@ -217,152 +217,219 @@
                 <a href="hotel.html" class="hover:text-pink-400 transition-colors">Hotel</a>
                 <a href="contact.html" class="hover:text-pink-400 transition-colors">Contact</a>
             </div>
-            <!-- ... -->
-            <!-- Organizer 1: Marco y Valeria -->
-            <div class="flex flex-col md:flex-row gap-6 items-start">
-                <!-- Placeholder for Image -->
-                <div
-                    class="w-48 h-64 md:w-56 md:h-72 rounded-xl overflow-hidden border-2 border-pink-500/50 flex-shrink-0 bg-slate-800 shadow-lg">
-                    <!-- Replace src with actual image URL -->
-                    <img src="images/artists/marco_valeria.webp"
-                        alt="Marco y Valeria - Bachata Sensual Instructors and Organizers"
-                        class="w-full h-full object-cover scale-125 hover:scale-135 transition-transform duration-500"
-                        loading="lazy">
-                </div>
-                <div>
-                    <h3 class="text-2xl font-bold text-white mb-1">Marco y Valeria</h3>
-                    <p class="text-pink-500 text-sm mb-4 font-medium">Congress Directors</p>
-                    <p class="text-slate-400 text-sm leading-relaxed">
-                        <span class="text-white font-medium">@marcoyvaleria</span> — Bachata Sensual artists with
-                        their school <strong>Bachata Passion</strong> in Arcore, MB. Creators of <strong>Milano
-                            Sensual
-                            Congress</strong> and its Spring Edition. Marco is the artistic
-                        director of <strong>Una Más</strong>. With a decade of experience, they
-                        are directors of the <strong>Gero y Migle Project Performance Show</strong> in Milan. They
-                        have performed and taught internationally for 10
-                        years.
-                    </p>
-                </div>
+
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden text-white focus:outline-none"
+                onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+                <i class="fa-solid fa-bars text-xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-brand-dark border-t border-white/10">
+            <div class="flex flex-col p-4 space-y-4">
+                <a href="/" class="block text-pink-500">Home</a>
+                <a href="artists.html" class="block hover:text-pink-400">Artists</a>
+                <a href="tickets.html" class="block hover:text-pink-400">Tickets</a>
+                <a href="hotel.html" class="block hover:text-pink-400">Hotel</a>
+                <a href="contact.html" class="block hover:text-pink-400">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Video Background -->
+    <header class="relative h-screen flex items-center justify-center overflow-hidden">
+        <!-- Video Background -->
+        <video autoplay muted loop playsinline class="absolute w-full h-full object-cover">
+            <source src="images/hero.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <!-- Overlay -->
+        <div class="hero-overlay absolute inset-0"></div>
+
+        <!-- Content -->
+        <div class="relative z-10 text-center px-6 animate-fade-in-up">
+            <h1 class="text-6xl md:text-9xl font-bold text-white tracking-tighter mb-4"
+                style="font-family: 'Inter', sans-serif;">
+                AXcent
+            </h1>
+            <p class="text-xl md:text-2xl text-slate-300 font-light tracking-widest uppercase mb-8">
+                Milano Sensual Congress 2026
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="https://lasalsadelbaile.com/MSC2026" target="_blank"
+                    class="btn-gradient px-8 py-4 rounded-full font-bold text-white shadow-lg flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-ticket"></i> Get Tickets
+                </a>
+                <a href="#lineup"
+                    class="px-8 py-4 rounded-full border border-white/30 hover:bg-white/10 text-white font-bold transition-all">
+                    View Lineup
+                </a>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce text-white/50">
+            <i class="fa-solid fa-chevron-down text-2xl"></i>
+        </div>
+    </header>
+
+    <!-- Organizers Section -->
+    <section id="lineup" class="py-20 bg-brand-dark relative">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-serif font-bold mb-4">The Organizers</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-pink-500 to-purple-600 mx-auto rounded-full"></div>
             </div>
 
-            <!-- Organizer 2: Ale y Xidan -->
-            <div class="flex flex-col md:flex-row gap-6 items-start">
-                <!-- Placeholder for Image -->
-                <div
-                    class="w-48 h-64 md:w-56 md:h-72 rounded-xl overflow-hidden border-2 border-purple-500/50 flex-shrink-0 bg-slate-800 shadow-lg">
-                    <!-- Replace src with actual image URL -->
-                    <img src="images/artists/Ale_Xidan.webp"
-                        alt="Ale y Xidan - Bachata Sensual Instructors and Organizers"
-                        class="w-full h-full object-cover scale-125 hover:scale-135 transition-transform duration-500"
-                        loading="lazy">
-                </div>
-                <div>
-                    <h3 class="text-2xl font-bold text-white mb-1">Ale y Xidan</h3>
-                    <p class="text-purple-500 text-sm mb-4 font-medium">Congress Directors</p>
-                    <p class="text-slate-400 text-sm leading-relaxed">
-                        <span class="text-white font-medium">@aleyxidan</span> — International Sensual Bachata
-                        instructors which have thaught in Europe, North
-                        America, and Asia. They founded <a href="https://axcentdance.com" target="_blank"
-                            class="text-pink-400 hover:text-white font-bold underline decoration-pink-500/30 transition-colors">AXcent
-                            Dance</a>, the first Bachata Sensual specialized school in Zurich, established in 2025.
-                        Creators of <strong>Milano Sensual Congress</strong> and its Spring Edition with Marco y
-                        Valeria, and co-organizers of <strong>Bailadoro Dance Weekend</strong>.
-                    </p>
-                </div>
-            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
 
-        </div>
-        </div>
-        </section>
-
-        <!-- FAQ Section -->
-        <section class="py-20 bg-brand-dark">
-            <div class="container mx-auto px-6 max-w-4xl">
-                <h2 class="text-3xl font-serif font-bold text-white text-center mb-10">Frequently Asked Questions</h2>
-
-                <div class="space-y-4">
-                    <!-- Q1 -->
-                    <div class="glass-card p-6 rounded-xl">
-                        <h4 class="font-bold text-white mb-2 flex items-center gap-3">
-                            <i class="fa-regular fa-circle-question text-pink-500"></i> Where is the event located?
-                        </h4>
-                        <p class="text-slate-400 pl-8">The entire event takes place at the <strong>New Devero Hotel &
-                                Spa</strong> (4 Stars Executive), located in Cavenago di Brianza. It is easily
-                            accessible
-                            from Milan airports.</p>
+                <!-- Organizer 1: Marco y Valeria -->
+                <div class="flex flex-col md:flex-row gap-6 items-start">
+                    <!-- Placeholder for Image -->
+                    <div
+                        class="w-48 h-64 md:w-56 md:h-72 rounded-xl overflow-hidden border-2 border-pink-500/50 flex-shrink-0 bg-slate-800 shadow-lg">
+                        <!-- Replace src with actual image URL -->
+                        <img src="images/artists/marco_valeria.webp"
+                            alt="Marco y Valeria - Bachata Sensual Instructors and Organizers"
+                            class="w-full h-full object-cover scale-125 hover:scale-135 transition-transform duration-500"
+                            loading="lazy">
                     </div>
-
-                    <!-- Q2 -->
-                    <div class="glass-card p-6 rounded-xl">
-                        <h4 class="font-bold text-white mb-2 flex items-center gap-3">
-                            <i class="fa-regular fa-circle-question text-pink-500"></i> Can I compete in the Jack &
-                            Jill?
-                        </h4>
-                        <p class="text-slate-400 pl-8">Yes! We host an International Jack & Jill competition.
-                            Registration
-                            details and categories will be announced closer to the event date on our social media and
-                            website.</p>
-                    </div>
-
-                    <!-- Q3 -->
-                    <div class="glass-card p-6 rounded-xl">
-                        <h4 class="font-bold text-white mb-2 flex items-center gap-3">
-                            <i class="fa-regular fa-circle-question text-pink-500"></i> How do I book the hotel?
-                        </h4>
-                        <p class="text-slate-400 pl-8">Sales for the official hotel open in January 2026. Please visit
-                            our
-                            <a href="hotel.html" class="text-pink-400 underline">Hotel Page</a> for the official booking
-                            link to get the group rate.
-                        </p>
-                    </div>
-
-                    <!-- Q4 -->
-                    <div class="glass-card p-6 rounded-xl">
-                        <h4 class="font-bold text-white mb-2 flex items-center gap-3">
-                            <i class="fa-regular fa-circle-question text-pink-500"></i> Will there be day socials?
-                        </h4>
-                        <p class="text-slate-400 pl-8">Yes, both Saturday and Sunday will have day socials only
-                            accessible
-                            for who has the Full Pass (not party pass).
+                    <div>
+                        <h3 class="text-2xl font-bold text-white mb-1">Marco y Valeria</h3>
+                        <p class="text-pink-500 text-sm mb-4 font-medium">Congress Directors</p>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            <span class="text-white font-medium">@marcoyvaleria</span> — Bachata Sensual artists with
+                            their school <strong>Bachata Passion</strong> in Arcore, MB. Creators of <strong>Milano
+                                Sensual
+                                Congress</strong> and its Spring Edition. Marco is the artistic
+                            director of <strong>Una Más</strong>. With a decade of experience, they
+                            are directors of the <strong>Gero y Migle Project Performance Show</strong> in Milan. They
+                            have performed and taught internationally for 10
+                            years.
                         </p>
                     </div>
                 </div>
-            </div>
-        </section>
 
-
-
-        <!-- Footer -->
-        <footer class="bg-black border-t border-white/10 py-12">
-            <div class="container mx-auto px-6">
-                <div class="flex flex-col md:flex-row justify-between items-center gap-6">
-                    <div class="text-center md:text-left">
-                        <h4 class="text-xl font-serif font-bold text-white mb-2">Milano Sensual Congress</h4>
-                        <p class="text-slate-500 text-sm">The ultimate Bachata experience in Italy.</p>
+                <!-- Organizer 2: Ale y Xidan -->
+                <div class="flex flex-col md:flex-row gap-6 items-start">
+                    <!-- Placeholder for Image -->
+                    <div
+                        class="w-48 h-64 md:w-56 md:h-72 rounded-xl overflow-hidden border-2 border-purple-500/50 flex-shrink-0 bg-slate-800 shadow-lg">
+                        <!-- Replace src with actual image URL -->
+                        <img src="images/artists/Ale_Xidan.webp"
+                            alt="Ale y Xidan - Bachata Sensual Instructors and Organizers"
+                            class="w-full h-full object-cover scale-125 hover:scale-135 transition-transform duration-500"
+                            loading="lazy">
                     </div>
-
-                    <div class="flex gap-6">
-                        <a href="https://instagram.com/milano_sensual_congress" target="_blank"
-                            class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-pink-600 hover:text-white transition-all text-slate-400">
-                            <i class="fa-brands fa-instagram"></i>
-                        </a>
-                        <a href="https://wa.me/41799668481"
-                            class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-green-500 hover:text-white transition-all text-slate-400">
-                            <i class="fa-brands fa-whatsapp"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <div
-                    class="border-t border-white/5 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-slate-600">
-                    <p>&copy; 2026 Milano Sensual Congress. All rights reserved.</p>
-                    <div class="flex gap-4 mt-4 md:mt-0">
-                        <a href="terms.html" class="hover:text-slate-400">Privacy Policy</a>
-                        <a href="terms.html" class="hover:text-slate-400">Terms & Conditions</a>
+                    <div>
+                        <h3 class="text-2xl font-bold text-white mb-1">Ale y Xidan</h3>
+                        <p class="text-purple-500 text-sm mb-4 font-medium">Congress Directors</p>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            <span class="text-white font-medium">@aleyxidan</span> — International Sensual Bachata
+                            instructors which have thaught in Europe, North
+                            America, and Asia. They founded <a href="https://axcentdance.com" target="_blank"
+                                class="text-pink-400 hover:text-white font-bold underline decoration-pink-500/30 transition-colors">AXcent
+                                Dance</a>, the first Bachata Sensual specialized school in Zurich, established in 2025.
+                            Creators of <strong>Milano Sensual Congress</strong> and its Spring Edition with Marco y
+                            Valeria, and co-organizers of <strong>Bailadoro Dance Weekend</strong>.
+                        </p>
                     </div>
                 </div>
+
             </div>
-        </footer>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-20 bg-brand-dark">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <h2 class="text-3xl font-serif font-bold text-white text-center mb-10">Frequently Asked Questions</h2>
+
+            <div class="space-y-4">
+                <!-- Q1 -->
+                <div class="glass-card p-6 rounded-xl">
+                    <h4 class="font-bold text-white mb-2 flex items-center gap-3">
+                        <i class="fa-regular fa-circle-question text-pink-500"></i> Where is the event located?
+                    </h4>
+                    <p class="text-slate-400 pl-8">The entire event takes place at the <strong>New Devero Hotel &
+                            Spa</strong> (4 Stars Executive), located in Cavenago di Brianza. It is easily
+                        accessible
+                        from Milan airports.</p>
+                </div>
+
+                <!-- Q2 -->
+                <div class="glass-card p-6 rounded-xl">
+                    <h4 class="font-bold text-white mb-2 flex items-center gap-3">
+                        <i class="fa-regular fa-circle-question text-pink-500"></i> Can I compete in the Jack &
+                        Jill?
+                    </h4>
+                    <p class="text-slate-400 pl-8">Yes! We host an International Jack & Jill competition.
+                        Registration
+                        details and categories will be announced closer to the event date on our social media and
+                        website.</p>
+                </div>
+
+                <!-- Q3 -->
+                <div class="glass-card p-6 rounded-xl">
+                    <h4 class="font-bold text-white mb-2 flex items-center gap-3">
+                        <i class="fa-regular fa-circle-question text-pink-500"></i> How do I book the hotel?
+                    </h4>
+                    <p class="text-slate-400 pl-8">Sales for the official hotel open in January 2026. Please visit
+                        our
+                        <a href="hotel.html" class="text-pink-400 underline">Hotel Page</a> for the official booking
+                        link to get the group rate.
+                    </p>
+                </div>
+
+                <!-- Q4 -->
+                <div class="glass-card p-6 rounded-xl">
+                    <h4 class="font-bold text-white mb-2 flex items-center gap-3">
+                        <i class="fa-regular fa-circle-question text-pink-500"></i> Will there be day socials?
+                    </h4>
+                    <p class="text-slate-400 pl-8">Yes, both Saturday and Sunday will have day socials only
+                        accessible
+                        for who has the Full Pass (not party pass).
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer class="bg-black border-t border-white/10 py-12">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                <div class="text-center md:text-left">
+                    <h4 class="text-xl font-serif font-bold text-white mb-2">Milano Sensual Congress</h4>
+                    <p class="text-slate-500 text-sm">The ultimate Bachata experience in Italy.</p>
+                </div>
+
+                <div class="flex gap-6">
+                    <a href="https://instagram.com/milano_sensual_congress" target="_blank"
+                        class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-pink-600 hover:text-white transition-all text-slate-400">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://wa.me/41799668481"
+                        class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-green-500 hover:text-white transition-all text-slate-400">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div
+                class="border-t border-white/5 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-slate-600">
+                <p>&copy; 2026 Milano Sensual Congress. All rights reserved.</p>
+                <div class="flex gap-4 mt-4 md:mt-0">
+                    <a href="terms.html" class="hover:text-slate-400">Privacy Policy</a>
+                    <a href="terms.html" class="hover:text-slate-400">Terms & Conditions</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 </body>
 
