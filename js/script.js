@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
         mobileToggle.addEventListener('click', () => {
             navLinks.classList.toggle('active');
             mobileToggle.classList.toggle('active');
-            
+
             // Animate hamburger to X
             const bars = mobileToggle.querySelectorAll('.bar');
             if (navLinks.classList.contains('active')) {
@@ -70,4 +70,13 @@ document.addEventListener('DOMContentLoaded', () => {
         el.style.transition = 'all 0.6s ease-out';
         observer.observe(el);
     });
+    // Force video autoplay on mobile
+    const heroVideo = document.querySelector('video');
+    if (heroVideo) {
+        heroVideo.play().catch(error => {
+            console.log("Video autoplay failed:", error);
+            // Ensure controls are hidden if we want a background effect
+            heroVideo.controls = false;
+        });
+    }
 });
