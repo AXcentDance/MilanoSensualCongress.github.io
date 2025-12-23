@@ -16,5 +16,6 @@ The official website for the Milano Sensual Congress, a premier Bachata Sensual 
 - [Contact](https://milanosensualcongress.com/contact.html) - Support and inquiries.
 
 ## Technical Details
-- Built with HTML, Tailwind CSS, and Vanilla JS.
+- Built with HTML, Vanilla CSS, and JS.
+- Optimized with WebP images and speculation rules for performance.
 - Hosted on GitHub Pages.

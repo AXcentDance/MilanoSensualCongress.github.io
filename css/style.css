@@ -184,7 +184,7 @@ ul {
     display: flex;
     align-items: center;
     position: relative;
-    background-image: url('../images/hero.png');
+    background-image: url('../images/hero.webp');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
