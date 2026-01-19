@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Venue & Hotel | Milano Sensual Spring Edition</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ["Outfit", "sans-serif"],
+                        serif: ["Playfair Display", "serif"]
+                    },
+                    colors: {
+                        brand: {
+                            dark: "#fff0f5",
+                            pink: "#db2777",
+                            green: "#15803d",
+                            accent: "#be185d",
+                            text: "#881337"
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-brand-dark text-slate-800 font-sans antialiased floral-bg">
+    <nav class="fixed w-full z-50 glass-nav-spring">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="../index.html" class="flex items-center gap-3 group">
+                <img src="../images/logo.webp" alt="Milano Sensual Congress Logo"
+                    class="h-12 w-auto group-hover:opacity-90 transition-opacity drop-shadow-md">
+                <span
+                    class="text-brand-pink text-xs font-sans tracking-[0.2em] uppercase border-l border-pink-500/30 pl-3 py-1 font-bold">Spring
+                    2026</span>
+            </a>
+            <div class="hidden md:flex items-center space-x-8 text-sm font-medium tracking-wide">
+                <a href="index.html" class="text-slate-700 hover:text-brand-green transition-colors">Home</a>
+                <a href="artists.html" class="text-slate-700 hover:text-brand-green transition-colors">Artists</a>
+                <a href="tickets.html" class="text-slate-700 hover:text-brand-green transition-colors">Tickets</a>
+                <a href="hotel.html" class="text-brand-pink font-bold">Hotel</a>
+                <a href="contact.html" class="text-slate-700 hover:text-brand-green transition-colors">Contact</a>
+            </div>
+            <button class="md:hidden text-slate-700 focus:outline-none"
+                onclick='document.getElementById("mobile-menu").classList.toggle("hidden")'>
+                <i class="fa-solid fa-bars text-xl"></i>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white/95 border-t border-pink-100">
+            <div class="flex flex-col p-4 space-y-4 text-center">
+                <a href="index.html" class="block text-slate-700 hover:text-brand-green">Home</a>
+                <a href="artists.html" class="block text-slate-700 hover:text-brand-green">Artists</a>
+                <a href="tickets.html" class="block text-slate-700 hover:text-brand-green">Tickets</a>
+                <a href="hotel.html" class="block text-brand-pink font-bold">Hotel</a>
+                <a href="contact.html" class="block text-slate-700 hover:text-brand-green">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="min-h-screen pt-32 pb-20 relative z-10">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <div class="max-w-2xl mx-auto glass-card-spring rounded-2xl overflow-hidden shadow-xl p-12 text-center">
+                    <div class="w-20 h-20 mx-auto rounded-full bg-pink-100 flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-hotel text-4xl text-brand-pink"></i>
+                    </div>
+                    <h2 class="text-3xl font-serif font-bold text-slate-800 mb-4">Hotel Options</h2>
+                    <p class="text-slate-600 text-lg mb-8">We are currently selecting the best hotel partners for our
+                        guests. Special rates and booking links will be available soon.</p>
+                    <div
+                        class="inline-block px-8 py-3 bg-brand-pink/10 text-brand-pink rounded-full font-bold uppercase tracking-widest text-sm">
+                        Coming Soon
+                    </div>
+                </div>
+            </div>
+    </section>
+    <footer class="bg-white/60 border-t border-pink-200 py-12 backdrop-blur-md mt-12">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                <div class="text-center md:text-left">
+                    <h4 class="text-xl font-serif font-bold text-slate-800 mb-2">Milano Sensual Congress</h4>
+                    <div class="flex gap-1 mt-4 md:mt-0">
+                        <p class="text-slate-400">Organized by Marco Fracassi, Alessandro Slamitz and Marco Lopez</p>
+                    </div>
+                </div>
+                <div class="flex gap-6">
+                    <a href="https://instagram.com/milano_sensual_congress" target="_blank"
+                        class="w-10 h-10 rounded-full bg-white/50 flex items-center justify-center hover:bg-brand-pink hover:text-white transition-all text-slate-400"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href="https://wa.me/41799668481"
+                        class="w-10 h-10 rounded-full bg-white/50 flex items-center justify-center hover:bg-brand-green hover:text-white transition-all text-slate-400"><i
+                            class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="border-t border-pink-200 mt-8 pt-8 text-center text-xs text-slate-500">
+                <p>&copy; 2026 Milano Sensual Congress. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
