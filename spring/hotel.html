@@ -70,17 +70,112 @@
 
     <section class="min-h-screen pt-32 pb-20 relative z-10">
         <div class="container mx-auto px-6">
-            <div class="text-center mb-16">
-                <div class="max-w-2xl mx-auto glass-card-spring rounded-2xl overflow-hidden shadow-xl p-12 text-center">
-                    <div class="w-20 h-20 mx-auto rounded-full bg-pink-100 flex items-center justify-center mb-6">
-                        <i class="fa-solid fa-hotel text-4xl text-brand-pink"></i>
+            <div class="text-center mb-16 animate-fade-in-up">
+                <h1 class="text-4xl md:text-5xl font-serif font-bold text-slate-800 mb-4">Official Hotel</h1>
+                <p class="text-slate-600 text-lg max-w-2xl mx-auto">Experience comfort and luxury at our partner hotel,
+                    just minutes away from the venue.</p>
+            </div>
+
+            <div class="bg-white/80 backdrop-blur-md rounded-3xl shadow-xl overflow-hidden border border-white/50 animate-fade-in-up"
+                style="animation-delay: 0.1s;">
+                <div class="grid md:grid-cols-2 gap-0">
+                    <!-- Image Gallery -->
+                    <div class="p-4 grid grid-cols-2 gap-4 bg-pink-50/50">
+                        <img src="images/hotel/le-favaglie-01.jpg" alt="Hotel Le Favaglie Room"
+                            class="rounded-2xl shadow-md w-full h-48 object-cover hover:scale-105 transition-transform duration-500 cursor-pointer">
+                        <img src="images/hotel/le-favaglie-02.jpg" alt="Hotel Le Favaglie Pool"
+                            class="rounded-2xl shadow-md w-full h-48 object-cover hover:scale-105 transition-transform duration-500 cursor-pointer">
+                        <img src="images/hotel/le-favaglie-03.jpg" alt="Hotel Le Favaglie Exterior"
+                            class="rounded-2xl shadow-md w-full h-48 object-cover hover:scale-105 transition-transform duration-500 cursor-pointer">
+                        <img src="images/hotel/le-favaglie-04.jpg" alt="Hotel Le Favaglie Interior"
+                            class="rounded-2xl shadow-md w-full h-48 object-cover hover:scale-105 transition-transform duration-500 cursor-pointer">
                     </div>
-                    <h2 class="text-3xl font-serif font-bold text-slate-800 mb-4">Hotel Options</h2>
-                    <p class="text-slate-600 text-lg mb-8">We are currently selecting the best hotel partners for our
-                        guests. Special rates and booking links will be available soon.</p>
-                    <div
-                        class="inline-block px-8 py-3 bg-brand-pink/10 text-brand-pink rounded-full font-bold uppercase tracking-widest text-sm">
-                        Coming Soon
+
+                    <!-- Hotel Details -->
+                    <div class="p-8 md:p-12 flex flex-col justify-center">
+                        <div
+                            class="inline-block px-3 py-1 bg-brand-pink/10 text-brand-pink rounded-full text-xs font-bold uppercase tracking-widest mb-4 w-fit">
+                            4 Star Superior</div>
+                        <h2 class="text-3xl font-serif font-bold text-slate-800 mb-2">Hotel Le Favaglie</h2>
+
+                        <div class="flex items-start gap-2 text-slate-500 mb-6">
+                            <i class="fa-solid fa-location-dot mt-1 text-brand-pink"></i>
+                            <p>Via R. Merendi, 24 ‑ 20007 Cornaredo (MI) ‑ Italy</p>
+                        </div>
+
+                        <p class="text-slate-600 mb-6 leading-relaxed">
+                            Enjoy a relaxing stay with premium amenities including a wellness area with heated indoor
+                            pool, sauna, and hot tub. The hotel offers free Wi-Fi, a fitness center, and delicious
+                            dining options.
+                        </p>
+
+                        <div class="space-y-3 mb-8">
+                            <div class="flex items-center gap-3 text-slate-700">
+                                <i
+                                    class="fa-solid fa-wifi text-brand-green bg-green-100 p-2 rounded-full w-8 h-8 flex items-center justify-center text-xs"></i>
+                                <span class="text-sm font-medium">Fast Free Wi-Fi</span>
+                            </div>
+                            <div class="flex items-center gap-3 text-slate-700">
+                                <i
+                                    class="fa-solid fa-person-swimming text-blue-500 bg-blue-100 p-2 rounded-full w-8 h-8 flex items-center justify-center text-xs"></i>
+                                <span class="text-sm font-medium">Indoor Heated Pool & Spa</span>
+                            </div>
+                            <div class="flex items-center gap-3 text-slate-700">
+                                <i
+                                    class="fa-solid fa-utensils text-orange-500 bg-orange-100 p-2 rounded-full w-8 h-8 flex items-center justify-center text-xs"></i>
+                                <span class="text-sm font-medium">Restaurant & Bar</span>
+                            </div>
+                            <div class="flex items-center gap-3 text-slate-700">
+                                <i
+                                    class="fa-solid fa-square-parking text-slate-500 bg-slate-100 p-2 rounded-full w-8 h-8 flex items-center justify-center text-xs"></i>
+                                <span class="text-sm font-medium">Private Parking</span>
+                            </div>
+                        </div>
+
+                        <div class="mb-8 p-4 bg-pink-50 rounded-xl border border-pink-100">
+                            <h3 class="font-serif font-bold text-slate-800 mb-3 flex items-center gap-2">
+                                <i class="fa-solid fa-tag text-brand-pink"></i> Special Rates
+                            </h3>
+                            <ul class="space-y-2">
+                                <li class="flex justify-between items-center border-b border-pink-200/50 pb-2">
+                                    <span class="text-slate-600 font-medium">Single Room</span>
+                                    <span class="font-bold text-brand-pink text-lg">€101<span
+                                            class="text-xs text-slate-500 font-normal"> / night</span></span>
+                                </li>
+                                <li class="flex justify-between items-center pt-1">
+                                    <span class="text-slate-600 font-medium">Double Room</span>
+                                    <span class="font-bold text-brand-pink text-lg">€133<span
+                                            class="text-xs text-slate-500 font-normal"> / night</span></span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-brand-dark p-6 rounded-2xl border border-pink-100">
+                            <h3 class="font-bold text-slate-800 mb-2 flex items-center gap-2">
+                                <i class="fa-solid fa-bookmark text-brand-pink"></i> How to Book
+                            </h3>
+                            <p class="text-sm text-slate-600 mb-4">To book your stay, please fill out the credit card
+                                authorization form and email it directly to the hotel.</p>
+
+                            <div class="flex flex-col gap-3">
+                                <a href="assets/forms/credit-card-authorization-form-le-favaglie.pdf" download
+                                    class="flex items-center justify-center gap-2 w-full py-3 bg-white border-2 border-brand-pink text-brand-pink rounded-xl font-bold hover:bg-brand-pink hover:text-white transition-all group">
+                                    <i
+                                        class="fa-solid fa-file-pdf text-lg group-hover:scale-110 transition-transform"></i>
+                                    Download Form
+                                </a>
+                                <a href="mailto:marco.soli@hotelfavaglie.it"
+                                    class="flex items-center justify-center gap-2 w-full py-3 bg-brand-pink text-white rounded-xl font-bold hover:bg-brand-accent shadow-lg shadow-pink-500/30 hover:shadow-pink-500/40 transition-all">
+                                    <i class="fa-solid fa-envelope"></i>
+                                    Email Form
+                                </a>
+                            </div>
+                            <div class="mt-3 text-center">
+                                <span class="text-xs text-slate-400">Send to: <a
+                                        href="mailto:marco.soli@hotelfavaglie.it"
+                                        class="text-brand-pink hover:underline">marco.soli@hotelfavaglie.it</a></span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
