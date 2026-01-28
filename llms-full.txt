@@ -1,0 +1,90 @@
+# Milano Sensual Congress 2026 - Full Site Documentation
+
+This document provides a comprehensive overview of the Milano Sensual Congress website structure and content for AI agents.
+
+## Event Details
+- **Name**: Milano Sensual Congress 2026
+- **Dates**: November 20th - 22nd, 2026
+- **Venue**: Devero Hotel (Largo J. F. Kennedy 1, 20873 Cavenago di Brianza MB, Italy)
+- **Description**: The premier Bachata Sensual event in Italy, featuring over 30 international artists, 40+ hours of workshops, and 3 nights of parties.
+
+## Site Structure
+
+### English (Root)
+Base URL: `https://milanosensualcongress.com/`
+
+1.  **Home** (`/`)
+    - **Filename**: `index.html`
+    - **Content**: Hero section, event USPs, lineup highlights, pricing tiers overview, location teaser, newsletter signup.
+    - **Key Actions**: Navigate to Tickets, Artists, Hotel.
+
+2.  **Artists** (`/artists`)
+    - **Filename**: `artists.html`
+    - **Content**: Full lineup of international instructors and masterclass artists.
+    - **Key Artists**: Marco y Valeria (Hosts), Gero y Migle, Klau y Ros, etc.
+    - **Features**: Breadcrumbs, Artist cards with images and origin.
+
+3.  **Tickets** (`/tickets`)
+    - **Filename**: `tickets.html`
+    - **Content**: Ticket options (Full Pass, Masterclass Upgrade, Jack & Jill, Party Pass).
+    - **Link**: Redirects to `lasalsadelbaile.com` for purchase.
+    - **Features**: Breadcrumbs, Pricing tables, "Sold Out" states (simulated/visual).
+
+4.  **Hotel** (`/hotel`)
+    - **Filename**: `hotel.html`
+    - **Content**: Venue details, Devero Hotel amenities (Spa, Pool, Rooms), booking info.
+    - **Booking**: Sales open Jan 2026. Promo code: `MSC2026`.
+    - **Features**: Breadcrumbs, Image carousel, embedded map.
+
+5.  **Contact** (`/contact`)
+    - **Filename**: `contact.html`
+    - **Content**: Contact channels (WhatsApp, Email), FAQ section, Location map.
+    - **Features**: Breadcrumbs, Direct WhatsApp links.
+
+6.  **Terms** (`/terms`)
+    - **Filename**: `terms.html`
+    - **Content**: Privacy Policy, Terms & Conditions, refund policies.
+
+---
+
+### Italian (Localized)
+Base URL: `https://milanosensualcongress.com/it/`
+
+1.  **Home** (`/it/`)
+    - **Filename**: `it/index.html`
+    - **Content**: Italian creation of the homepage.
+    - **URLs**: Links to `/it/artists`, `/it/tickets`, etc.
+
+2.  **Artisti** (`/it/artists`)
+    - **Filename**: `it/artists.html`
+    - **Content**: Italian translation of Artists page.
+
+3.  **Biglietti** (`/it/tickets`)
+    - **Filename**: `it/tickets.html`
+    - **Content**: Italian translation of Tickets page.
+
+4.  **Hotel** (`/it/hotel`)
+    - **Filename**: `it/hotel.html`
+    - **Content**: Italian translation of Hotel page.
+
+5.  **Contatti** (`/it/contact`)
+    - **Filename**: `it/contact.html`
+    - **Content**: Italian translation of Contact page.
+
+*Note: The Italian site currently links to the English `/terms` page for Terms & Conditions.*
+
+## Technical Stack
+- **Framework**: Static HTML5
+- **Styling**: Tailwind CSS (via CDN) + Custom CSS
+- **Icons**: FontAwesome 6
+- **Performance**: `speculationrules` for prerendering, WebP images, Lazy loading.
+- **SEO**: Schema.org (Event, BreadcrumbList), Open Graph, Twitter Cards, semantic HTML.
+
+## Developer & Navigation Info
+- **Navigation**: Consistent Header/Footer across all pages.
+- **Language Switcher**: Present in the header (EN/IT).
+- **Files**:
+    - `humans.txt`: Credits.
+    - `manifest.json`: PWA Manifest.
+    - `robots.txt`: Crawling rules.
+    - `sitemap.xml`: XML Sitemap.

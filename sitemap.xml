@@ -1,39 +1,456 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
-    <loc>https://milanosensualcongress.com/</loc>
-    <lastmod>2025-12-04</lastmod>
-    <changefreq>weekly</changefreq>
+    <loc>https://www.milanosensualcongress.com/artists</loc>
+    <lastmod>2025-12-23</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.milanosensualcongress.com/artists" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.milanosensualcongress.com/artists" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.milanosensualcongress.com/it/artists" />
+    <image:image>
+      <image:loc>https://www.milanosensualcongress.com/images/logo.webp</image:loc>
+      <image:title>Milano Sensual Congress Logo</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.milanosensualcongress.com/images/artists/gero_migle.webp</image:loc>
+      <image:title>Gero y Migle - International Bachata Instructors from Spain</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.milanosensualcongress.com/images/artists/klau_ros.webp</image:loc>
+      <image:title>Klau y Ros - Bachata Sensual Artists from Poland and Spain</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.milanosensualcongress.com/images/artists/cristian_gabriella.webp</image:loc>
+      <image:title>Cristian y Gabriella - Bachata Dancers from Spain</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.milanosensualcongress.com/images/artists/Agustin_Alba.webp</image:loc>
+      <image:title>Agustín y Alba - Bachata Teachers from Spain</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.milanosensualcongress.com/images/artists/irene_tomas.webp</image:loc>
+      <image:title>Irene y Tomas - Bachata Artists from Spain</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.milanosensualcongress.com/images/artists/nacho_silvia.webp</image:loc>
+      <image:title>Nacho y Silvia - Bachata Instructors from Spain</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.milanosensualcongress.com/images/artists/aitor.webp</image:loc>
+      <image:title>Aitor Gomez - Bachata Solo Artist from Spain</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.milanosensualcongress.com/images/artists/marco_valeria.webp</image:loc>
+      <image:title>Marco y Valeria - Milano Sensual Congress Organizers and Bachata Artists</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.milanosensualcongress.com/images/artists/Ale_Xidan.webp</image:loc>
+      <image:title>Ale y Xidan - Milano Sensual Congress Organizers and Bachata Artists</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.milanosensualcongress.com/it/artists</loc>
+    <lastmod>2025-12-23</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.milanosensualcongress.com/artists" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.milanosensualcongress.com/artists" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.milanosensualcongress.com/it/artists" />
+    <image:image>
+      <image:loc>https://www.milanosensualcongress.com/images/logo.webp</image:loc>
+      <image:title>Milano Sensual Congress Logo</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.milanosensualcongress.com/images/artists/gero_migle.webp</image:loc>
+      <image:title>Gero y Migle - Istruttori Internazionali di Bachata dalla Spagna</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.milanosensualcongress.com/images/artists/klau_ros.webp</image:loc>
+      <image:title>Klau y Ros - Artisti di Bachata Sensual dalla Polonia e Spagna</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.milanosensualcongress.com/images/artists/cristian_gabriella.webp</image:loc>
+      <image:title>Cristian y Gabriella - Ballerini di Bachata dalla Spagna</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.milanosensualcongress.com/images/artists/Agustin_Alba.webp</image:loc>
+      <image:title>Agustín y Alba - Insegnanti di Bachata dalla Spagna</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.milanosensualcongress.com/images/artists/irene_tomas.webp</image:loc>
+      <image:title>Irene y Tomas - Artisti di Bachata dalla Spagna</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.milanosensualcongress.com/images/artists/nacho_silvia.webp</image:loc>
+      <image:title>Nacho y Silvia - Istruttori di Bachata dalla Spagna</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.milanosensualcongress.com/images/artists/aitor.webp</image:loc>
+      <image:title>Aitor Gomez - Artista Solista di Bachata dalla Spagna</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.milanosensualcongress.com/images/artists/marco_valeria.webp</image:loc>
+      <image:title>Marco y Valeria - Organizzatori del Milano Sensual Congress e Artisti di Bachata</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.milanosensualcongress.com/images/artists/Ale_Xidan.webp</image:loc>
+      <image:title>Ale y Xidan - Organizzatori del Milano Sensual Congress e Artisti di Bachata</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.milanosensualcongress.com/contact</loc>
+    <lastmod>2025-12-23</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.milanosensualcongress.com/contact" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.milanosensualcongress.com/contact" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.milanosensualcongress.com/it/contact" />
+    <image:image>
+      <image:loc>https://www.milanosensualcongress.com/images/logo.webp</image:loc>
+      <image:title>Milano Sensual Congress Logo</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.milanosensualcongress.com/it/contact</loc>
+    <lastmod>2025-12-23</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.milanosensualcongress.com/contact" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.milanosensualcongress.com/contact" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.milanosensualcongress.com/it/contact" />
+    <image:image>
+      <image:loc>https://www.milanosensualcongress.com/images/logo.webp</image:loc>
+      <image:title>Milano Sensual Congress Logo</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.milanosensualcongress.com/googleab7c36a192a19d84</loc>
+    <lastmod>2025-12-23</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.milanosensualcongress.com/googleab7c36a192a19d84" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.milanosensualcongress.com/googleab7c36a192a19d84" />
+  </url>
+  <url>
+    <loc>https://www.milanosensualcongress.com/hotel</loc>
+    <lastmod>2025-12-23</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.milanosensualcongress.com/hotel" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.milanosensualcongress.com/hotel" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.milanosensualcongress.com/it/hotel" />
+    <image:image>
+      <image:loc>https://www.milanosensualcongress.com/images/logo.webp</image:loc>
+      <image:title>Milano Sensual Congress Logo</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.milanosensualcongress.com/images/hotel/pool_night.webp</image:loc>
+      <image:title>Devero Hotel Pool at Night</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.milanosensualcongress.com/images/hotel/exterior_dusk.webp</image:loc>
+      <image:title>Devero Hotel Exterior at Dusk</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.milanosensualcongress.com/images/hotel/pool_day.webp</image:loc>
+      <image:title>Devero Hotel Pool Day</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.milanosensualcongress.com/images/hotel/tower_day.webp</image:loc>
+      <image:title>Devero Hotel Tower</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.milanosensualcongress.com/images/hotel/room_interior.webp</image:loc>
+      <image:title>Devero Hotel Room</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.milanosensualcongress.com/it/hotel</loc>
+    <lastmod>2025-12-23</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.milanosensualcongress.com/hotel" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.milanosensualcongress.com/hotel" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.milanosensualcongress.com/it/hotel" />
+    <image:image>
+      <image:loc>https://www.milanosensualcongress.com/images/logo.webp</image:loc>
+      <image:title>Milano Sensual Congress Logo</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.milanosensualcongress.com/images/hotel/pool_night.webp</image:loc>
+      <image:title>Devero Hotel Pool at Night</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.milanosensualcongress.com/images/hotel/exterior_dusk.webp</image:loc>
+      <image:title>Devero Hotel Exterior at Dusk</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.milanosensualcongress.com/images/hotel/pool_day.webp</image:loc>
+      <image:title>Devero Hotel Pool Day</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.milanosensualcongress.com/images/hotel/tower_day.webp</image:loc>
+      <image:title>Devero Hotel Tower</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.milanosensualcongress.com/images/hotel/room_interior.webp</image:loc>
+      <image:title>Devero Hotel Room</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.milanosensualcongress.com/</loc>
+    <lastmod>2026-01-28</lastmod>
     <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.milanosensualcongress.com/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.milanosensualcongress.com/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.milanosensualcongress.com/it/" />
+    <image:image>
+      <image:loc>https://www.milanosensualcongress.com/images/logo.webp</image:loc>
+      <image:title>Milano Sensual Congress Logo</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.milanosensualcongress.com/images/poster.webp</image:loc>
+      <image:title>Milano Sensual Congress Hero Image</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.milanosensualcongress.com/spring/images/spring-bg-v2.webp</image:loc>
+      <image:title>Spring floral pattern background</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.milanosensualcongress.com/spring/images/promo-poster.webp</image:loc>
+      <image:title>Milano Sensual Congress Spring Edition</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.milanosensualcongress.com/images/artists/marco_valeria.webp</image:loc>
+      <image:title>Marco y Valeria - Bachata Passion Directors and Milano Sensual Congress Organizers</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.milanosensualcongress.com/images/artists/Ale_Xidan.webp</image:loc>
+      <image:title>Ale y Xidan - AXcent Dance Directors and Milano Sensual Congress Organizers</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://milanosensualcongress.com/artists.html</loc>
-    <lastmod>2025-12-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://www.milanosensualcongress.com/it/</loc>
+    <lastmod>2026-01-28</lastmod>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.milanosensualcongress.com/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.milanosensualcongress.com/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.milanosensualcongress.com/it/" />
+    <image:image>
+      <image:loc>https://www.milanosensualcongress.com/images/logo.webp</image:loc>
+      <image:title>Milano Sensual Congress Logo</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.milanosensualcongress.com/images/poster.webp</image:loc>
+      <image:title>Milano Sensual Congress Hero Image</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.milanosensualcongress.com/images/artists/marco_valeria.webp</image:loc>
+      <image:title>Marco y Valeria - Bachata Passion Directors and Milano Sensual Congress Organizers</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.milanosensualcongress.com/images/artists/Ale_Xidan.webp</image:loc>
+      <image:title>Ale y Xidan - AXcent Dance Directors and Milano Sensual Congress Organizers</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://milanosensualcongress.com/tickets.html</loc>
-    <lastmod>2025-12-04</lastmod>
-    <changefreq>weekly</changefreq>
+    <loc>https://www.milanosensualcongress.com/spring/artists</loc>
+    <lastmod>2026-01-28</lastmod>
     <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.milanosensualcongress.com/spring/artists" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.milanosensualcongress.com/spring/artists" />
+    <image:image>
+      <image:loc>https://www.milanosensualcongress.com/images/logo.webp</image:loc>
+      <image:title>Milano Sensual Congress Logo</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.milanosensualcongress.com/images/artists/spring/melvin_gatica.webp</image:loc>
+      <image:title>Melvin y Gatica</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.milanosensualcongress.com/images/artists/spring/irene_tomas.webp</image:loc>
+      <image:title>Irene y Tomas</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.milanosensualcongress.com/images/artists/spring/cristian_gabriella.webp</image:loc>
+      <image:title>Cristian y Gabriella</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.milanosensualcongress.com/images/artists/spring/marco_valeria.webp</image:loc>
+      <image:title>Marco y Valeria</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.milanosensualcongress.com/images/artists/spring/ale_xidan.webp</image:loc>
+      <image:title>Ale y Xidan</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.milanosensualcongress.com/images/artists/spring/marco_fabiola.webp</image:loc>
+      <image:title>Marco y Fabiola</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.milanosensualcongress.com/images/artists/spring/stefano_stefania.webp</image:loc>
+      <image:title>Stefano y Stefania</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.milanosensualcongress.com/images/artists/spring/mattias_marta.webp</image:loc>
+      <image:title>Mattias y Marta</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.milanosensualcongress.com/images/artists/spring/elvis_mary.webp</image:loc>
+      <image:title>Elvis y Mary</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.milanosensualcongress.com/images/artists/spring/francesco_narcisa.webp</image:loc>
+      <image:title>Francesco y Narcisa</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.milanosensualcongress.com/images/artists/spring/andrea_pipicella.webp</image:loc>
+      <image:title>Andrea Pipicella</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.milanosensualcongress.com/images/artists/spring/dj_fabrizio_zoro.webp</image:loc>
+      <image:title>DJ Fabrizio Zoro</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.milanosensualcongress.com/images/artists/spring/dj_patrik.webp</image:loc>
+      <image:title>DJ Patrik</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.milanosensualcongress.com/images/artists/spring/dj_marco.webp</image:loc>
+      <image:title>DJ Marco</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.milanosensualcongress.com/images/artists/spring/dj_stefano_balla.webp</image:loc>
+      <image:title>DJ Stefano Balla</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://milanosensualcongress.com/hotel.html</loc>
-    <lastmod>2025-12-04</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://www.milanosensualcongress.com/spring/contact</loc>
+    <lastmod>2026-01-27</lastmod>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.milanosensualcongress.com/spring/contact" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.milanosensualcongress.com/spring/contact" />
+    <image:image>
+      <image:loc>https://www.milanosensualcongress.com/images/logo.webp</image:loc>
+      <image:title>Milano Sensual Congress Logo</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.milanosensualcongress.com/spring/hotel</loc>
+    <lastmod>2026-01-28</lastmod>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.milanosensualcongress.com/spring/hotel" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.milanosensualcongress.com/spring/hotel" />
+    <image:image>
+      <image:loc>https://www.milanosensualcongress.com/images/logo.webp</image:loc>
+      <image:title>Milano Sensual Congress Logo</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.milanosensualcongress.com/spring/images/hotel/le-favaglie-01.webp</image:loc>
+      <image:title>Hotel Le Favaglie Room</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.milanosensualcongress.com/spring/images/hotel/le-favaglie-02.webp</image:loc>
+      <image:title>Hotel Le Favaglie Pool</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.milanosensualcongress.com/spring/images/hotel/le-favaglie-03.webp</image:loc>
+      <image:title>Hotel Le Favaglie Exterior</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.milanosensualcongress.com/spring/images/hotel/le-favaglie-04.webp</image:loc>
+      <image:title>Hotel Le Favaglie Interior</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.milanosensualcongress.com/spring/</loc>
+    <lastmod>2026-01-28</lastmod>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.milanosensualcongress.com/spring/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.milanosensualcongress.com/spring/" />
+    <image:image>
+      <image:loc>https://www.milanosensualcongress.com/images/logo.webp</image:loc>
+      <image:title>Milano Sensual Congress Logo</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.milanosensualcongress.com/spring/images/promo-poster.webp</image:loc>
+      <image:title>Milano Sensual Congress Spring Edition Promo</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.milanosensualcongress.com/images/artists/spring/melvin_gatica.webp</image:loc>
+      <image:title>Melvin y Gatica</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.milanosensualcongress.com/images/artists/spring/irene_tomas.webp</image:loc>
+      <image:title>Irene y Tomas</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.milanosensualcongress.com/images/artists/spring/cristian_gabriella.webp</image:loc>
+      <image:title>Cristian y Gabriella</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.milanosensualcongress.com/spring/tickets</loc>
+    <lastmod>2026-01-27</lastmod>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.milanosensualcongress.com/spring/tickets" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.milanosensualcongress.com/spring/tickets" />
+    <image:image>
+      <image:loc>https://www.milanosensualcongress.com/images/logo.webp</image:loc>
+      <image:title>Milano Sensual Congress Logo</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.milanosensualcongress.com/terms</loc>
+    <lastmod>2025-12-23</lastmod>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.milanosensualcongress.com/terms" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.milanosensualcongress.com/terms" />
+    <image:image>
+      <image:loc>https://www.milanosensualcongress.com/images/logo.webp</image:loc>
+      <image:title>Milano Sensual Congress Logo</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://milanosensualcongress.com/contact.html</loc>
-    <lastmod>2025-12-04</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+    <loc>https://www.milanosensualcongress.com/tickets</loc>
+    <lastmod>2025-12-23</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.milanosensualcongress.com/tickets" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.milanosensualcongress.com/tickets" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.milanosensualcongress.com/it/tickets" />
+    <image:image>
+      <image:loc>https://www.milanosensualcongress.com/images/logo.webp</image:loc>
+      <image:title>Milano Sensual Congress Logo</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.milanosensualcongress.com/images/artists/gero_migle.webp</image:loc>
+      <image:title>Gero y Migle - Masterclass Instructors</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.milanosensualcongress.com/images/artists/klau_ros.webp</image:loc>
+      <image:title>Klau y Ros - Masterclass Instructors</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.milanosensualcongress.com/images/artists/cristian_gabriella.webp</image:loc>
+      <image:title>Cristian y Gabriella - Masterclass Instructors</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://milanosensualcongress.com/terms.html</loc>
-    <lastmod>2025-12-04</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
+    <loc>https://www.milanosensualcongress.com/it/tickets</loc>
+    <lastmod>2025-12-23</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.milanosensualcongress.com/tickets" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.milanosensualcongress.com/tickets" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.milanosensualcongress.com/it/tickets" />
+    <image:image>
+      <image:loc>https://www.milanosensualcongress.com/images/logo.webp</image:loc>
+      <image:title>Milano Sensual Congress Logo</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.milanosensualcongress.com/images/artists/gero_migle.webp</image:loc>
+      <image:title>Gero y Migle - Istruttori Masterclass</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.milanosensualcongress.com/images/artists/klau_ros.webp</image:loc>
+      <image:title>Klau y Ros - Istruttori Masterclass</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.milanosensualcongress.com/images/artists/cristian_gabriella.webp</image:loc>
+      <image:title>Cristian y Gabriella - Istruttori Masterclass</image:title>
+    </image:image>
   </url>
 </urlset>

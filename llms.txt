@@ -1,21 +1,15 @@
 # Milano Sensual Congress 2026
 
-The official website for the Milano Sensual Congress, a premier Bachata Sensual festival in Milan, Italy.
+The official knowledge base for the Milano Sensual Congress 2026 website.
 
-## Core Information
-- **Event Name**: Milano Sensual Congress 2026
+## Quick Links
+- **Full Documentation**: [llms-full.txt](llms-full.txt) - Comprehensive site structure and content details.
+- **English Site**: https://milanosensualcongress.com/
+- **Italian Site**: https://milanosensualcongress.com/it/
+
+## Event Summary
+- **Name**: Milano Sensual Congress 2026
 - **Dates**: November 20-22, 2026
-- **Location**: Devero Hotel & Spa, Cavenago di Brianza, Italy
-- **Main Topic**: Bachata Sensual Dance Festival
-
-## Key Pages
-- [Home](https://milanosensualcongress.com/) - Main landing page with overview.
-- [Artists](https://milanosensualcongress.com/artists.html) - Lineup of instructors and performers.
-- [Tickets](https://milanosensualcongress.com/tickets.html) - Ticket purchase information.
-- [Hotel](https://milanosensualcongress.com/hotel.html) - Venue and accommodation details.
-- [Contact](https://milanosensualcongress.com/contact.html) - Support and inquiries.
-
-## Technical Details
-- Built with HTML, Vanilla CSS, and JS.
-- Optimized with WebP images and speculation rules for performance.
-- Hosted on GitHub Pages.
+- **Location**: Devero Hotel & Spa, Cavenago di Brianza (MB), Italy
+- **Focus**: Bachata Sensual, International Artists, Workshops, Social Parties
+- **Official Hashtags**: #MSC2026 #MilanoSensualCongress

@@ -1,0 +1,10 @@
+/* TEAM */
+  Role: AI Agent (Google DeepMind)
+  Contact: slamitza@gmail.com
+  Site: https://milanosensualcongress.com/
+
+/* SITE */
+  Last update: 2026/01/28
+  Standards: HTML5, CSS3, JSON-LD
+  Components: TailwindCSS, FontAwesome, Schema.org
+  Software: VS Code
