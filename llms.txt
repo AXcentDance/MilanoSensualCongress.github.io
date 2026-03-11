@@ -12,4 +12,30 @@ The official knowledge base for the Milano Sensual Congress 2026 website.
 - **Dates**: November 20-22, 2026
 - **Location**: Devero Hotel & Spa, Cavenago di Brianza (MB), Italy
 - **Focus**: Bachata Sensual, International Artists, Workshops, Social Parties
-- **Official Hashtags**: #MSC2026 #MilanoSensualCongress
+
+## Site Map (AI Context)
+- [Milano Sensual Congress 2026 | Bachata Congress Italy & Bachata Sensual Congress](index.html): The official Milano Sensual Congress 2026 (Nov 20-22). The #1 Bachata Congress in Italy and premier Bachata Sensual Congress. Join World-class artists in Milan.
+- [Milano Sensual Congress 2026 | Il Migliore dei Congressi Bachata 2026 Italia](it/index.html): Partecipa al Milano Sensual Congress (20-22 Nov), l'evento imperdibile tra i congressi bachata 2026 in Italia. Artisti internazionali e feste esclusive a Milano.
+- [Milano Sensual Congress Spring | Congresso Bachata Italia](it/spring/index.html): Partecipa al Milano Sensual Congress Spring Edition (15-17 Maggio 2026). Una celebrazione floreale della Bachata a Milano. Il miglior congresso primaverile di Bachata Sensual in Italia.
+- [Milano Sensual Congress Spring | Bachata Congress Italy](spring/index.html): Join the Milano Sensual Congress Spring Edition (May 15-17, 2026). A floral celebration of Bachata in Milan. The best Spring Bachata Sensual Congress in Italy.
+- [International Bachata Artists Lineup 2026 | Milano Sensual Congress](artists.html): Experience a world-class lineup at the International Milano Sensual Congress. Featuring Gero y Migle, Klaus y Ros, and more top Bachata Sensual artists teaching workshops and performing in Milan.
+- [Lineup Artisti Bachata 2026 | Milano Sensual Congress](it/artists.html): Scopri la lineup di classe mondiale al Milano Sensual Congress. Con Gero y Migle, Klaus y Ros, e altri top artisti di Bachata Sensual che terranno workshop e show a Milano.
+- [Artisti | Milano Sensual Spring Edition](it/spring/artists.html): Incontra i maestri internazionali di Bachata Sensual protagonisti del Milano Sensual Congress Spring Edition. Con Melvin y Gatica, Irene y Tomas, e altri artisti.
+- [Artists | Milano Sensual Spring Edition](spring/artists.html): Meet the international Bachata Sensual masters headlining the Milano Sensual Congress Spring Edition. Featuring Melvin y Gatica, Irene y Tomas, and more.
+- [Biglietti | Milano Sensual Spring Edition](it/spring/tickets.html): Acquista il tuo Full Pass per il Milano Sensual Congress Spring Edition. Workshop e serate con i migliori artisti di Bachata al mondo a Milano.
+- [Biglietti e Prezzi 2026 | Milano Sensual Congress](it/tickets.html): Acquista i tuoi biglietti per il Milano Sensual Congress 2026. Scegli tra Full Pass, Party Pass e Day Pass. Assicurati il tuo posto al miglior prezzo oggi.
+- [Tickets | Milano Sensual Spring Edition](spring/tickets.html): Get your Full Pass for the Milano Sensual Congress Spring Edition. Workshops and parties with the world's best Bachata artists in Milan.
+- [International Bachata Congress Tickets | Milano Sensual Congress 2026](tickets.html): Buy tickets for the top International Bachata Congress in Italy. Get your Full Pass for Milano Sensual Congress 2026. Best prices for the premier Bachata festival in Milan.
+- [Official Congress Hotel | International Bachata Festival Venue](hotel.html): Book your stay at Devero Hotel & Spa, the official venue for Milano Sensual Congress 2026. Luxury accommodation with direct access to dance floors and spa facilities.
+- [Hotel Ufficiale e Alloggi | Milano Sensual Congress 2026](it/hotel.html): Prenota il tuo soggiorno al Devero Hotel, la sede ufficiale del Milano Sensual Congress 2026. Camere di lusso, spa e servizi esclusivi per un'esperienza indimenticabile.
+- [Sede & Hotel | Milano Sensual Spring Edition](it/spring/hotel.html): Prenota il tuo soggiorno all'Hotel Le Favaglie, l'hotel ufficiale 4 stelle superior per il Milano Sensual Congress Spring Edition. Tariffe esclusive e servizi premium per i ballerini.
+- [Venue & Hotel | Milano Sensual Spring Edition](spring/hotel.html): Book your stay at Hotel Le Favaglie, the official 4-star superior hotel for Milano Sensual Congress Spring Edition. Exclusive rates and premium amenities for dancers.
+- [Contact Us | Milano Sensual Congress - International Bachata Support](contact.html): Have questions about Milano Sensual Congress? Contact our team for support regarding tickets, hotel booking, or event details.
+- [Contattaci | Milano Sensual Congress 2026](it/contact.html): Contatta il team del Milano Sensual Congress. Hai domande su biglietti, hotel o programma? Siamo qui per aiutarti.
+- [Contatti | Milano Sensual Spring Edition](it/spring/contact.html): Domande sul Milano Sensual Congress Spring Edition? Contatta il nostro team per informazioni su biglietti, hotel e il programma dell'evento.
+- [Contact | Milano Sensual Spring Edition](spring/contact.html): Questions about Milano Sensual Congress Spring Edition? Contact our team for info on tickets, hotel, and the event schedule.
+- [Termini e Condizioni - Milano Sensual Congress 2026](it/terms.html): 
+- [Terms & Conditions - Milano Sensual Congress 2026](terms.html): 
+- [Page Not Found | Milano Sensual Congress 2026](404.html): 
+- [Transfer Service | Milano Sensual Congress 2026](transfer.html): Official transfer service for Milano Sensual Congress 2026. Book your ride from Malpensa, Linate, Bergamo, or Milano Centrale to Devero Hotel.
+- [Servizio Transfer | Milano Sensual Congress 2026](it/transfer.html): Servizio transfer ufficiale per il Milano Sensual Congress 2026. Prenota il tuo viaggio da Malpensa, Linate, Bergamo o Milano Centrale per l'Hotel Devero.
