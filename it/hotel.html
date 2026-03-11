@@ -118,13 +118,10 @@
       box-shadow: 0 0 20px rgba(236, 72, 153, .5)
     }
 
-    .no-scrollbar::-webkit-scrollbar {
-      display: none
-    }
-
-    .no-scrollbar {
-      -ms-overflow-style: none;
-      scrollbar-width: none
+    .glass-nav {
+      background: rgba(15, 23, 42, .85);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(255, 255, 255, .1)
     }
   </style>
   <script
@@ -132,7 +129,7 @@
 </head>
 
 <body class="bg-brand-dark text-slate-100 font-sans antialiased overflow-x-hidden">
-  <nav class="fixed w-full z-50 bg-brand-dark/90 backdrop-blur-md border-b border-white/10">
+  <nav class="fixed w-full z-50 glass-nav">
     <div class="container mx-auto px-6 py-3 flex justify-between items-center"><a href="./"
         class="flex items-center gap-3 group"><img src="../images/logo.webp" alt="Milano Sensual Congress Logo"
           class="h-12 w-auto group-hover:opacity-90 transition-opacity"> <span
@@ -140,7 +137,7 @@
       <div class="hidden md:flex space-x-8 text-sm font-medium tracking-wide"><a href="./"
           class="hover:text-pink-400 transition-colors">Home</a> <a href="artists"
           class="hover:text-pink-400 transition-colors">Artisti</a> <a href="tickets"
-          class="hover:text-pink-400 transition-colors">Biglietti</a><a href="hotel" class="text-pink-500">Hotel</a> <a
+          class="hover:text-pink-400 transition-colors">Biglietti</a> <a href="hotel" class="text-pink-500">Hotel</a> <a
           href="transfer" class="hover:text-pink-400 transition-colors">Transfer</a> <a href="contact"
           class="hover:text-pink-400 transition-colors">Contatti</a>
         <div class="border-l border-white/20 pl-6 ml-2 flex gap-3"><a href="../hotel"

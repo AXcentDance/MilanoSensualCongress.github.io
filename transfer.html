@@ -159,6 +159,12 @@
       box-shadow: 0 0 25px rgba(236, 72, 153, 0.6);
       transform: scale(1.05);
     }
+
+    .glass-nav {
+      background: rgba(15, 23, 42, .85);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(255, 255, 255, .1)
+    }
   </style>
   <script
     type="speculationrules">{"prerender":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"selector_matches":"a"}]},"eagerness":"moderate"}]}</script>
@@ -166,11 +172,11 @@
 
 <body class="bg-brand-dark text-slate-100 font-sans antialiased overflow-x-hidden">
   <nav class="fixed w-full z-50 glass-nav">
-    <div class="container mx-auto px-6 py-3 flex justify-between items-center"><a href="#"
+    <div class="container mx-auto px-6 py-3 flex justify-between items-center"><a href="./"
         class="flex items-center gap-3 group"><img src="images/logo.webp" alt="Milano Sensual Congress Logo"
           class="h-12 w-auto group-hover:opacity-90 transition-opacity"> <span
           class="text-white text-xs font-sans tracking-[0.2em] uppercase opacity-60 border-l border-white/20 pl-3 py-1">2026</span></a>
-      <div class="hidden md:flex space-x-8 text-sm font-medium tracking-wide"><a href="./"
+      <div class="hidden md:flex space-x-8 text-sm font-medium tracking-wide items-center"><a href="./"
           class="hover:text-pink-400 transition-colors">Home</a>
         <a href="artists" class="hover:text-pink-400 transition-colors">Artists</a> <a href="tickets"
           class="hover:text-pink-400 transition-colors">Tickets</a> <a href="hotel"

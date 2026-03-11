@@ -214,13 +214,19 @@
       transform: scale(1.02);
       box-shadow: 0 0 20px rgba(236, 72, 153, .5)
     }
+
+    .glass-nav {
+      background: rgba(15, 23, 42, .85);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(255, 255, 255, .1)
+    }
   </style>
   <script
     type="speculationrules">{"prerender":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"selector_matches":"a"}]},"eagerness":"moderate"}]}</script>
 </head>
 
 <body class="bg-brand-dark text-slate-100 font-sans antialiased overflow-x-hidden">
-  <nav class="fixed w-full z-50 bg-brand-dark/90 backdrop-blur-md border-b border-white/10">
+  <nav class="fixed w-full z-50 glass-nav">
     <div class="container mx-auto px-6 py-3 flex justify-between items-center"><a href="./"
         class="flex items-center gap-3 group"><img src="../images/logo.webp" alt="Milano Sensual Congress Logo"
           class="h-12 w-auto group-hover:opacity-90 transition-opacity"> <span
