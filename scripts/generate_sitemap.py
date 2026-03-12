@@ -43,10 +43,8 @@ def get_url_path(filepath):
         
     if rel_path == 'index':
         return '/'
-    if rel_path == 'it/index':
-        return '/it/'
-    if rel_path == 'spring/index':
-        return '/spring/'
+    if rel_path.endswith('/index'):
+        return '/' + rel_path[:-6]
     
     return '/' + rel_path
 
