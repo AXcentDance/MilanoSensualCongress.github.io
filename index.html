@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Milano Sensual Congress 2026 | Bachata Congress Italy & Bachata Sensual Congress</title>
+  <title>Milano Sensual Congress 2026 | Official Bachata Congress Italy</title>
   <meta name="google-site-verification" content="V3_MRW2roXjskyLVIe9pT3IueZS1P5q_UBCazjooe3Q" />
   <meta name="description"
     content="The official Milano Sensual Congress 2026 (Nov 20-22). The #1 Bachata Congress in Italy and premier Bachata Sensual Congress. Join World-class artists in Milan.">
@@ -257,13 +257,25 @@
           </div>
         </div>
       </div>
-      <div class="mt-12 animate-fade-in-up flex flex-col sm:flex-row justify-center items-center gap-6"
-        style="animation-delay:.4s">
+      <div class="mt-12 animate-fade-in-up flex flex-col items-center gap-8" style="animation-delay:.4s">
+        <!-- Countdown Timer -->
+        <div id="countdown" class="glass-card px-8 py-4 rounded-2xl border border-pink-500/30 shadow-[0_0_20px_rgba(236,72,153,0.2)]">
+          <div class="text-pink-400 text-xs font-bold tracking-widest uppercase mb-2 text-center">Prices will go up! Buy now</div>
+          <div class="flex gap-4 text-white font-mono text-2xl md:text-3xl">
+            <div class="text-center"><span id="days">00</span><p class="text-[10px] uppercase tracking-tighter opacity-50 font-sans">Days</p></div>
+            <div class="text-pink-500/50">:</div>
+            <div class="text-center"><span id="hours">00</span><p class="text-[10px] uppercase tracking-tighter opacity-50 font-sans">Hrs</p></div>
+            <div class="text-pink-500/50">:</div>
+            <div class="text-center"><span id="minutes">00</span><p class="text-[10px] uppercase tracking-tighter opacity-50 font-sans">Min</p></div>
+            <div class="text-pink-500/50">:</div>
+            <div class="text-center"><span id="seconds">00</span><p class="text-[10px] uppercase tracking-tighter opacity-50 font-sans">Sec</p></div>
+          </div>
+        </div>
+
         <a href="https://lasalsadelbaile.com/MSC2026" target="_blank"
           class="btn-gradient px-10 py-4 rounded-full text-white font-bold tracking-wide shadow-lg text-lg inline-flex items-center gap-3">
           <i class="fa-solid fa-ticket"></i> Get Your Pass
         </a>
-
       </div>
     </div>
   </header>
@@ -578,6 +590,20 @@
       </div>
     </div>
   </footer>
+  <script>
+    const targetDate = new Date("April 1, 2026 00:00:00").getTime();
+    function updateCountdown() {
+      const now = new Date().getTime();
+      const diff = targetDate - now;
+      if (diff < 0) return;
+      document.getElementById("days").innerText = Math.floor(diff / (1000 * 60 * 60 * 24)).toString().padStart(2, '0');
+      document.getElementById("hours").innerText = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)).toString().padStart(2, '0');
+      document.getElementById("minutes").innerText = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60)).toString().padStart(2, '0');
+      document.getElementById("seconds").innerText = Math.floor((diff % (1000 * 60)) / 1000).toString().padStart(2, '0');
+    }
+    setInterval(updateCountdown, 1000);
+    updateCountdown();
+  </script>
 </body>
 
 </html>
