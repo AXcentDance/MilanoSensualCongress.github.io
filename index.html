@@ -237,9 +237,9 @@
             <div class="text-center"><span id="seconds">00</span><p class="text-[10px] uppercase tracking-tighter opacity-50 font-sans">Sec</p></div>
           </div>
           
-          <div class="w-full pt-6 border-t border-white/10">
+          <div id="reminder-container" class="w-full pt-6 border-t border-white/10">
             <p class="text-white text-[10px] font-bold tracking-[0.2em] uppercase mb-4 text-center opacity-90">GET A REMINDER THE DAY BEFORE THE INCREASE</p>
-            <form action="https://formsubmit.co/slamitzam@gmail.com" method="POST" class="flex flex-col md:flex-row gap-3 items-center justify-center">
+            <form id="reminder-form" action="https://formsubmit.co/slamitzam@gmail.com" method="POST" class="flex flex-col md:flex-row gap-3 items-center justify-center">
               <input type="hidden" name="_subject" value="New Reminder Request - Milano Sensual Congress">
               <input type="hidden" name="_template" value="table">
               <input type="hidden" name="_autoresponse" value="Thanks for reaching out! We'll remind you before the prices change.">
@@ -620,6 +620,44 @@
     }
     setInterval(updateCountdown, 1000);
     updateCountdown();
+
+    // Reminder Form Interaction
+    const reminderForm = document.getElementById('reminder-form');
+    if (reminderForm) {
+      reminderForm.addEventListener('submit', function (e) {
+        e.preventDefault();
+        const form = this;
+        const container = document.getElementById('reminder-container');
+        const button = form.querySelector('button');
+        const originalButtonText = button.innerHTML;
+
+        button.innerHTML = '<i class="fa-solid fa-circle-notch animate-spin"></i> Sending...';
+        button.disabled = true;
+
+        fetch(form.action, {
+          method: 'POST',
+          body: new FormData(form),
+          headers: { 'Accept': 'application/json' }
+        })
+          .then(response => {
+            if (response.ok) {
+              container.innerHTML = `
+                <div class="animate-fade-in-up text-center py-2">
+                  <p class="text-white text-xl font-serif mb-2">We will remind you! 😊</p>
+                  <a href="artists" class="text-pink-400 text-xs font-bold tracking-widest uppercase hover:text-pink-300 transition-colors underline decoration-pink-500/30">Check the lineup in the meanwhile &rarr;</a>
+                </div>
+              `;
+            } else {
+              throw new Error();
+            }
+          })
+          .catch(() => {
+            button.innerHTML = originalButtonText;
+            button.disabled = false;
+            alert('Oops! There was a problem. Please try again.');
+          });
+      });
+    }
   </script>
 </body>
 
