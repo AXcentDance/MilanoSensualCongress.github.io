@@ -214,12 +214,12 @@
         <span class="text-pink-400 text-sm font-bold tracking-normal opacity-80 mt-2 block">Il TOP dei Congressi Bachata 2026</span>
       </p>
 
-      <!-- Countdown Timer -->
-      <div id="countdown" class="animate-fade-in-up mb-10 flex justify-center" style="animation-delay:.1s">
-        <div class="px-8 py-4 rounded-2xl border border-pink-500/40 shadow-[0_0_30px_rgba(236,72,153,0.3)]"
+      <!-- Countdown & Reminder -->
+      <div id="countdown" class="animate-fade-in-up mb-12 flex justify-center" style="animation-delay:.1s">
+        <div class="px-8 py-6 rounded-3xl border border-pink-500/40 shadow-[0_0_30px_rgba(236,72,153,0.3)] flex flex-col items-center" 
              style="background: rgba(15, 23, 42, 0.85); backdrop-filter: blur(20px);">
-          <div class="text-pink-400 text-xs font-bold tracking-widest uppercase mb-2 text-center">I prezzi aumenteranno! Acquista ora</div>
-          <div class="flex gap-4 text-white font-mono text-2xl md:text-3xl">
+          <div class="text-pink-400 text-xs font-bold tracking-widest uppercase mb-3 text-center">I prezzi aumenteranno! Acquista ora</div>
+          <div class="flex gap-4 text-white font-mono text-2xl md:text-3xl mb-6">
             <div class="text-center"><span id="days">00</span><p class="text-[10px] uppercase tracking-tighter opacity-50 font-sans">Giorni</p></div>
             <div class="text-pink-500/50">:</div>
             <div class="text-center"><span id="hours">00</span><p class="text-[10px] uppercase tracking-tighter opacity-50 font-sans">Ore</p></div>
@@ -227,6 +227,20 @@
             <div class="text-center"><span id="minutes">00</span><p class="text-[10px] uppercase tracking-tighter opacity-50 font-sans">Min</p></div>
             <div class="text-pink-500/50">:</div>
             <div class="text-center"><span id="seconds">00</span><p class="text-[10px] uppercase tracking-tighter opacity-50 font-sans">Sec</p></div>
+          </div>
+          
+          <div class="w-full pt-6 border-t border-white/10">
+            <p class="text-white text-[10px] font-bold tracking-[0.2em] uppercase mb-4 text-center opacity-90">AVVISAMI PRIMA CHE I PREZZI CAMBINO</p>
+            <form action="https://formsubmit.co/slamitzam@gmail.com" method="POST" class="flex flex-col md:flex-row gap-3 items-center justify-center">
+              <input type="hidden" name="_subject" value="Nuova Richiesta Promemoria - Milano Sensual Congress">
+              <input type="hidden" name="_template" value="table">
+              <input type="hidden" name="_autoresponse" value="Grazie per averci contattato! Ti invieremo un promemoria prima che i prezzi cambino.">
+              <input type="email" name="email" placeholder="Inserisci la tua email" required 
+                class="form-input px-6 py-2.5 rounded-full text-xs w-64 focus:ring-2 focus:ring-pink-500/50 outline-none">
+              <button type="submit" class="btn-gradient px-6 py-2.5 rounded-full text-white font-bold text-xs tracking-wide shadow-lg whitespace-nowrap">
+                Avvisami
+              </button>
+            </form>
           </div>
         </div>
       </div>
@@ -586,7 +600,7 @@
     </div>
   </footer>
   <script>
-    const targetDate = new Date("April 1, 2026 00:00:00").getTime();
+    const targetDate = new Date("May 1, 2026 00:00:00").getTime();
     function updateCountdown() {
       const now = new Date().getTime();
       const diff = targetDate - now;
