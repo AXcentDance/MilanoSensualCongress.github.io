@@ -1,11 +1,11 @@
 # Milano Sensual Congress 2026 - Full Site Documentation
-# Generated automatically on 2026-03-12 14:31
+# Generated automatically on 2026-03-12 15:23
 # Total Pages: 29
 
-## Page: Milano Sensual Congress 2026 | Bachata Congress Italy & Bachata Sensual Congress (index.html)
+## Page: Milano Sensual Congress 2026 | Official Bachata Congress Italy (index.html)
 Description: The official Milano Sensual Congress 2026 (Nov 20-22). The #1 Bachata Congress in Italy and premier Bachata Sensual Congress. Join World-class artists in Milan.
 
-Milano Sensual Congress 2026 | Bachata Congress Italy & Bachata Sensual Congress
+Milano Sensual Congress 2026 | Official Bachata Congress Italy
 
  Your browser does not support the video tag.
 
@@ -46,6 +46,26 @@ International
 Bachata Jack & Jill
 
 Compete with the best.
+
+Prices will go up! Buy now
+
+00
+Days
+
+:
+
+00
+Hrs
+
+:
+
+00
+Min
+
+:
+
+00
+Sec
 
  Get Your Pass
 
@@ -226,10 +246,10 @@ Yes, both Saturday and Sunday will have day socials only accessible for who has
 
 ---
 
-## Page: Milano Sensual Congress 2026 | Il Migliore dei Congressi Bachata 2026 Italia (it/index.html)
+## Page: Milano Sensual Congress 2026 | Il Congresso Bachata Ufficiale in Italia (it/index.html)
 Description: Partecipa al Milano Sensual Congress (20-22 Nov), l'evento imperdibile tra i congressi bachata 2026 in Italia. Artisti internazionali e feste esclusive a Milano.
 
-Milano Sensual Congress 2026 | Il Migliore dei Congressi Bachata 2026 Italia
+Milano Sensual Congress 2026 | Il Congresso Bachata Ufficiale in Italia
 
  Il tuo browser non supporta il tag video.
 
@@ -273,6 +293,26 @@ Jack & Jill
 di Bachata
 
 Competi con i migliori.
+
+I prezzi aumenteranno! Acquista ora
+
+00
+Giorni
+
+:
+
+00
+Ore
+
+:
+
+00
+Min
+
+:
+
+00
+Sec
 
  Acquista il Pass
 
@@ -455,10 +495,10 @@ Sì, sia Sabato che Domenica ci saranno social diurni accessibili solo a chi
 
 ---
 
-## Page: Milano Sensual Congress Spring | Congresso Bachata Italia (it/spring/index.html)
+## Page: Milano Sensual Spring Edition | Workshop & Festival Bachata Internazionale (it/spring/index.html)
 Description: Partecipa al Milano Sensual Congress Spring Edition (15-17 Maggio 2026). Una celebrazione floreale della Bachata a Milano. Il miglior congresso primaverile di Bachata Sensual in Italia.
 
-Milano Sensual Congress Spring | Congresso Bachata Italia
+Milano Sensual Spring Edition | Workshop & Festival Bachata Internazionale
 
  Milano Sensual
 
@@ -516,10 +556,10 @@ Hai domande? Siamo qui per aiutarti a goderti
 
 ---
 
-## Page: Milano Sensual Congress Spring | Bachata Congress Italy (spring/index.html)
+## Page: Milano Sensual Spring Edition | International Bachata Workshop & Festival (spring/index.html)
 Description: Join the Milano Sensual Congress Spring Edition (May 15-17, 2026). A floral celebration of Bachata in Milan. The best Spring Bachata Sensual Congress in Italy.
 
-Milano Sensual Congress Spring | Bachata Congress Italy
+Milano Sensual Spring Edition | International Bachata Workshop & Festival
 
  Milano Sensual
 
@@ -577,10 +617,10 @@ Have questions? We are here to help you enjoy
 
 ---
 
-## Page: International Bachata Artists Lineup 2026 | Milano Sensual Congress (artists.html)
+## Page: Bachata Artists & Workshops 2026 | Milano Sensual Congress (artists.html)
 Description: Experience a world-class lineup at the International Milano Sensual Congress. Featuring Gero y Migle, Klaus y Ros, and more top Bachata Sensual artists teaching workshops and performing in Milan.
 
-International Bachata Artists Lineup 2026 | Milano Sensual Congress
+Bachata Artists & Workshops 2026 | Milano Sensual Congress
 
 The
  Lineup
@@ -660,10 +700,10 @@ Tickets are selling fast. Secure your spot to learn from and
 
 ---
 
-## Page: Lineup Artisti Bachata 2026 | Milano Sensual Congress (it/artists.html)
+## Page: Artisti & Workshop Bachata 2026 | Milano Sensual Congress (it/artists.html)
 Description: Scopri la lineup di classe mondiale al Milano Sensual Congress. Con Gero y Migle, Klaus y Ros, e altri top artisti di Bachata Sensual che terranno workshop e show a Milano.
 
-Lineup Artisti Bachata 2026 | Milano Sensual Congress
+Artisti & Workshop Bachata 2026 | Milano Sensual Congress
 
 La
  Lineup
@@ -948,10 +988,10 @@ sul
 
 ---
 
-## Page: Biglietti e Prezzi 2026 | Milano Sensual Congress (it/tickets.html)
+## Page: Biglietti Congresso Bachata 2026 | Milano Sensual Congress (it/tickets.html)
 Description: Acquista i tuoi biglietti per il Milano Sensual Congress 2026. Scegli tra Full Pass, Party Pass e Day Pass. Assicurati il tuo posto al miglior prezzo oggi.
 
-Biglietti e Prezzi 2026 | Milano Sensual Congress
+Biglietti Congresso Bachata 2026 | Milano Sensual Congress
 
 Biglietti
  Ufficiali
@@ -1191,10 +1231,10 @@ on
 
 ---
 
-## Page: International Bachata Congress Tickets | Milano Sensual Congress 2026 (tickets.html)
+## Page: Buy Tickets for Bachata Congress 2026 | Milano Sensual Congress (tickets.html)
 Description: Buy tickets for the top International Bachata Congress in Italy. Get your Full Pass for Milano Sensual Congress 2026. Best prices for the premier Bachata festival in Milan.
 
-International Bachata Congress Tickets | Milano Sensual Congress 2026
+Buy Tickets for Bachata Congress 2026 | Milano Sensual Congress
 
 Official
  Ticket Sales • 2026 Edition
@@ -2259,10 +2299,10 @@ Page Not Found
 
 ---
 
-## Page: Bachata News & Insights | Milano Sensual Congress 2026 (news.html)
+## Page: Bachata Events & News 2026 | Milano Sensual Congress (news.html)
 Description: Stay updated with the latest Bachata news, festival guides, and dance insights from the European Bachata scene.
 
-Bachata News & Insights | Milano Sensual Congress 2026
+Bachata Events & News 2026 | Milano Sensual Congress
 
 Bachata 
 Timeline
@@ -2445,10 +2485,10 @@ Needs to be booked in advance.
 
 ---
 
-## Page: Bachata News & Insights | Milano Sensual Congress 2026 (it/news.html)
+## Page: Eventi Bachata & News 2026 | Milano Sensual Congress (it/news.html)
 Description: Rimani aggiornato con le ultime notizie di Bachata, i festival europei e gli approfondimenti sulla danza dalla scena bachata italiana ed europea.
 
-Bachata News & Insights | Milano Sensual Congress 2026
+Eventi Bachata & News 2026 | Milano Sensual Congress
 
 Bachata 
 Timeline
