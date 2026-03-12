@@ -656,4 +656,48 @@
       <image:title>Servizio Transfer di Lusso</image:title>
     </image:image>
   </url>
+  <url>
+    <loc>https://www.milanosensualcongress.com/news/</loc>
+    <lastmod>2026-03-12</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.milanosensualcongress.com/news/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.milanosensualcongress.com/it/news/" />
+    <image:image>
+      <image:loc>https://www.milanosensualcongress.com/images/logo.webp</image:loc>
+      <image:title>Milano Sensual Congress Logo</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.milanosensualcongress.com/it/news/</loc>
+    <lastmod>2026-03-12</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.milanosensualcongress.com/news/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.milanosensualcongress.com/it/news/" />
+    <image:image>
+      <image:loc>https://www.milanosensualcongress.com/images/logo.webp</image:loc>
+      <image:title>Milano Sensual Congress Logo</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.milanosensualcongress.com/news/top-5-bachata-congresses-europe-2026.html</loc>
+    <lastmod>2026-03-12</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.milanosensualcongress.com/news/top-5-bachata-congresses-europe-2026.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.milanosensualcongress.com/it/news/i-5-migliori-congressi-bachata-europa-2026.html" />
+    <image:image>
+      <image:loc>https://www.milanosensualcongress.com/images/news/top-5-congresses-2026.png</image:loc>
+      <image:title>Top 5 Bachata Congresses in Europe 2026</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.milanosensualcongress.com/it/news/i-5-migliori-congressi-bachata-europa-2026.html</loc>
+    <lastmod>2026-03-12</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.milanosensualcongress.com/news/top-5-bachata-congresses-europe-2026.html" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.milanosensualcongress.com/it/news/i-5-migliori-congressi-bachata-europa-2026.html" />
+    <image:image>
+      <image:loc>https://www.milanosensualcongress.com/images/news/top-5-congresses-2026.png</image:loc>
+      <image:title>I 5 Migliori Congressi Bachata in Europa 2026</image:title>
+    </image:image>
+  </url>
 </urlset>
