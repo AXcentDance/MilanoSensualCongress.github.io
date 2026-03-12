@@ -216,7 +216,7 @@
           
           <div id="reminder-container" class="w-full pt-6 border-t border-white/10">
             <p class="text-white text-[10px] font-bold tracking-[0.2em] uppercase mb-4 text-center opacity-90">AVVISAMI IL GIORNO PRIMA CHE I PREZZI AUMENTINO</p>
-            <form id="reminder-form" action="https://formsubmit.co/slamitzam@gmail.com" method="POST" class="flex flex-col md:flex-row gap-3 items-center justify-center">
+            <form id="reminder-form" action="https://formsubmit.co/ajax/slamitzam@gmail.com" method="POST" class="flex flex-col md:flex-row gap-3 items-center justify-center">
               <input type="hidden" name="_subject" value="Nuova Richiesta Promemoria - Milano Sensual Congress">
               <input type="hidden" name="_template" value="table">
               <input type="hidden" name="_autoresponse" value="Grazie per averci contattato! Ti invieremo un promemoria prima che i prezzi cambino.">
@@ -520,10 +520,16 @@
         button.innerHTML = '<i class="fa-solid fa-circle-notch animate-spin"></i> Invio...';
         button.disabled = true;
 
+        const formData = new FormData(form);
+        const data = Object.fromEntries(formData.entries());
+
         fetch(form.action, {
           method: 'POST',
-          body: new FormData(form),
-          headers: { 'Accept': 'application/json' }
+          body: JSON.stringify(data),
+          headers: { 
+            'Content-Type': 'application/json',
+            'Accept': 'application/json' 
+          }
         })
           .then(response => {
             if (response.ok) {
