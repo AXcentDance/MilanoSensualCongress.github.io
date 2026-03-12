@@ -28,6 +28,13 @@ And any supporting sub-pages in their respective language directories.
 ## 4. Meta-Data & Schema
 - Update the `llms.txt` and `llms-full.txt` after adding news content using the `sync-indexes` skill.
 - Ensure the news article has a relevant `date` in both English and Italian formats.
+- **Breadcrumbs & Hierarchy**:
+    - Every news post must follow the logical structure: `Home > News > [Post Title]`.
+    - Implement this using both visual breadcrumbs (links at the top of the article) and JSON-LD schema (BreadcrumbList).
 
-## 5. Visuals
+## 5. URL Structure
+- Every news article file should be located within a relevant directory structure or logically mapped.
+- **Mandatory Parent**: News articles must be children of the News page in the breadcrumb hierarchy.
+
+## 6. Visuals
 - Use realistic, high-quality images. Avoid generic or "obviously AI" graphics. If generating AI images, use prompts that emphasize realism and professional photography.

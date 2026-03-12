@@ -29,10 +29,10 @@ python3 scripts/generate_llms_text.py
     ```
 2.  **LLM Context**: Verify the new page appears in `llms-full.txt` and `llms.txt`.
 3.  **JSON-LD Schema**: Ensure the JSON-LD schema in the `<head>` of the updated page(s) has been synchronized with any factual changes made to the body text (Dates, Prices, Artists, etc.).
-4.  **Internal Links**: Review internal link opportunities and implement suggested links in older authoritative pages to boost the new page's SEO.
+4.  **Internal Links & Breadcrumbs**: Review internal link opportunities and ensure the page has correctly implemented **Breadcrumbs** following the site hierarchy (e.g. `Home > News > Story`).
 
 ## When to use this:
 - After adding any new `.html` file.
-- After updating metadata (titles, descriptions).
+- After updating metadata (titles, descriptions, breadcrumbs).
 - After making large structural changes to the site.
-- After adding or updating news articles to ensure keyword priority and internal linking (see `news-seo` skill).
+- After adding or updating news articles to ensure keyword priority, URL hierarchy (`/news/post`), and internal linking.
