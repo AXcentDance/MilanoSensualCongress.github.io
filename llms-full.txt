@@ -1,5 +1,5 @@
 # Milano Sensual Congress 2026 - Full Site Documentation
-# Generated automatically on 2026-03-12 19:14
+# Generated automatically on 2026-03-12 23:34
 # Total Pages: 29
 
 ## Page: Milano Sensual Congress 2026 | Official Bachata Congress Italy (index.html)
@@ -36,7 +36,7 @@ Min
 00
 Sec
 
-GET A REMINDER THE DAY BEFORE THE INCREASE
+GET A REMINDER ON THE DAY OF THE INCREASE
 
  Remind Me
 
@@ -286,7 +286,7 @@ Min
 00
 Sec
 
-AVVISAMI IL GIORNO PRIMA CHE I PREZZI AUMENTINO
+AVVISAMI IL GIORNO DELL'AUMENTO
 
  Avvisami
 
@@ -1031,7 +1031,7 @@ Min
 00
 Sec
 
-AVVISAMI IL GIORNO PRIMA CHE I PREZZI AUMENTINO
+AVVISAMI IL GIORNO DELL'AUMENTO
 
  Avvisami
 
@@ -1297,7 +1297,7 @@ Min
 00
 Sec
 
-GET A REMINDER THE DAY BEFORE THE INCREASE
+GET A REMINDER ON THE DAY OF THE INCREASE
 
  Remind Me
 
