@@ -1,5 +1,5 @@
 # Milano Sensual Congress 2026 - Full Site Documentation
-# Generated automatically on 2026-03-12 18:57
+# Generated automatically on 2026-03-12 19:01
 # Total Pages: 29
 
 ## Page: Milano Sensual Congress 2026 | Official Bachata Congress Italy (index.html)
@@ -1011,6 +1011,30 @@ Partecipa al più atteso dei
 congressi bachata 2026
 . Scegli il pass che fa per te e preparati a ballare.
 
+I prezzi aumenteranno! Acquista ora
+
+00
+Giorni
+
+:
+
+00
+Ore
+
+:
+
+00
+Min
+
+:
+
+00
+Sec
+
+AVVISAMI IL GIORNO PRIMA CHE I PREZZI AUMENTINO
+
+ Avvisami
+
  Acquista Biglietti
 
 Scegli la Tua Esperienza
@@ -1252,6 +1276,30 @@ Tickets
 Join us at the stunning Devero
  Hotel for the premier Bachata event. We went sold out last year! Experience over 40 hours of workshops,
  world-class artists, and unforgettable parties.
+
+Prices will go up! Buy now
+
+00
+Days
+
+:
+
+00
+Hrs
+
+:
+
+00
+Min
+
+:
+
+00
+Sec
+
+GET A REMINDER THE DAY BEFORE THE INCREASE
+
+ Remind Me
 
  Get Tickets
 
