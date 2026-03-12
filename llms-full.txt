@@ -1,5 +1,5 @@
 # Milano Sensual Congress 2026 - Full Site Documentation
-# Generated automatically on 2026-03-12 15:23
+# Generated automatically on 2026-03-12 16:27
 # Total Pages: 29
 
 ## Page: Milano Sensual Congress 2026 | Official Bachata Congress Italy (index.html)
@@ -15,6 +15,26 @@ Bachata
  Congress
 
 20 - 21 - 22 November 2026
+
+Prices will go up! Buy now
+
+00
+Days
+
+:
+
+00
+Hrs
+
+:
+
+00
+Min
+
+:
+
+00
+Sec
 
 International Bachata Lineup
 
@@ -46,26 +66,6 @@ International
 Bachata Jack & Jill
 
 Compete with the best.
-
-Prices will go up! Buy now
-
-00
-Days
-
-:
-
-00
-Hrs
-
-:
-
-00
-Min
-
-:
-
-00
-Sec
 
  Get Your Pass
 
@@ -260,8 +260,27 @@ Bachata
 
  20 - 21 - 22 Novembre 2026
 
-Il TOP dei Congressi Bachata
- 2026
+Il TOP dei Congressi Bachata 2026
+
+I prezzi aumenteranno! Acquista ora
+
+00
+Giorni
+
+:
+
+00
+Ore
+
+:
+
+00
+Min
+
+:
+
+00
+Sec
 
 Lineup Internazionale di Bachata
 
@@ -293,26 +312,6 @@ Jack & Jill
 di Bachata
 
 Competi con i migliori.
-
-I prezzi aumenteranno! Acquista ora
-
-00
-Giorni
-
-:
-
-00
-Ore
-
-:
-
-00
-Min
-
-:
-
-00
-Sec
 
  Acquista il Pass
 
