@@ -35,3 +35,4 @@ python3 scripts/generate_llms_text.py
 - After adding any new `.html` file.
 - After updating metadata (titles, descriptions).
 - After making large structural changes to the site.
+- After adding or updating news articles to ensure keyword priority and internal linking (see `news-seo` skill).
