@@ -250,7 +250,7 @@
   </url>
   <url>
     <loc>https://www.milanosensualcongress.com/news</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>2026-03-14</lastmod>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.milanosensualcongress.com/news" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.milanosensualcongress.com/news" />
@@ -258,6 +258,10 @@
     <image:image>
       <image:loc>https://www.milanosensualcongress.com/images/logo.webp</image:loc>
       <image:title>Milano Sensual Congress Logo</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.milanosensualcongress.com/images/news/bachata_workshop_vs_classes_real.jpg</image:loc>
+      <image:title>Classes vs Congresses</image:title>
     </image:image>
     <image:image>
       <image:loc>https://www.milanosensualcongress.com/images/news/bachata_dancing_realistic.png</image:loc>
@@ -270,7 +274,7 @@
   </url>
   <url>
     <loc>https://www.milanosensualcongress.com/it/news</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>2026-03-14</lastmod>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.milanosensualcongress.com/news" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.milanosensualcongress.com/news" />
@@ -280,12 +284,26 @@
       <image:title>Milano Sensual Congress Logo</image:title>
     </image:image>
     <image:image>
+      <image:loc>https://www.milanosensualcongress.com/images/news/bachata_workshop_vs_classes_real.jpg</image:loc>
+      <image:title>Corsi vs Congressi</image:title>
+    </image:image>
+    <image:image>
       <image:loc>https://www.milanosensualcongress.com/images/news/bachata_dancing_realistic.png</image:loc>
       <image:title>Top Bachata Congresses Europe</image:title>
     </image:image>
     <image:image>
       <image:loc>https://www.milanosensualcongress.com/images/news/msc_flyer_2026.jpg</image:loc>
       <image:title>Milano Sensual Congress 2026 Official Flyer</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.milanosensualcongress.com/it/news/corsi-settimanali-vs-congressi-bachata</loc>
+    <lastmod>2026-03-14</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.milanosensualcongress.com/it/news/corsi-settimanali-vs-congressi-bachata" />
+    <image:image>
+      <image:loc>https://www.milanosensualcongress.com/images/logo.webp</image:loc>
+      <image:title>Milano Sensual Congress Logo</image:title>
     </image:image>
   </url>
   <url>
@@ -304,6 +322,17 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.milanosensualcongress.com/news/top-5-bachata-congresses-europe-2026" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.milanosensualcongress.com/news/top-5-bachata-congresses-europe-2026" />
+    <image:image>
+      <image:loc>https://www.milanosensualcongress.com/images/logo.webp</image:loc>
+      <image:title>Milano Sensual Congress Logo</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.milanosensualcongress.com/news/weekly-classes-vs-bachata-congresses</loc>
+    <lastmod>2026-03-14</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.milanosensualcongress.com/news/weekly-classes-vs-bachata-congresses" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.milanosensualcongress.com/news/weekly-classes-vs-bachata-congresses" />
     <image:image>
       <image:loc>https://www.milanosensualcongress.com/images/logo.webp</image:loc>
       <image:title>Milano Sensual Congress Logo</image:title>
