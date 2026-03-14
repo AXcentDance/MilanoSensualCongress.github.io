@@ -28,9 +28,11 @@ And any supporting sub-pages in their respective language directories.
 ## 4. Meta-Data & Schema
 - Update the `llms.txt` and `llms-full.txt` after adding news content using the `sync-indexes` skill.
 - Ensure the news article has a relevant `date` in both English and Italian formats.
-- **Breadcrumbs & Hierarchy**:
-    - Every news post must follow the logical structure: `Home > News > [Post Title]`.
-    - Implement this using both visual breadcrumbs (links at the top of the article) and JSON-LD schema (BreadcrumbList).
+- **JSON-LD Comprehensive Schema**:
+    - You MUST inject a complete JSON-LD `<script>` tag in the `<head>` structured as an array containing multiple schemas.
+    - Include a `BlogPosting` object with: `mainEntityOfPage`, `headline`, `image`, `author` (Organization), `publisher` (Organization with logo), `datePublished`, `dateModified`, and `description`. Use strict ISO 8601 formatting for dates (e.g., `2026-03-14T09:00:00+01:00`). 
+    - Include a `BreadcrumbList` object outlining the site hierarchy (e.g., `Home > News > [Post Title]`).
+- **Visual Breadcrumbs**: In addition to JSON-LD, implement visible breadcrumb links (e.g., "Back to News") at the top of the article.
 
 ## 5. URL Structure
 - Every news article file should be located within a relevant directory structure or logically mapped.
