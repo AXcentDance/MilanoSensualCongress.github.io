@@ -1,5 +1,5 @@
 # Milano Sensual Congress 2026 - Full Site Documentation
-# Generated automatically on 2026-03-14 09:59
+# Generated automatically on 2026-03-14 10:10
 # Total Pages: 31
 
 ## Page: Milano Sensual Congress 2026 | Official Bachata Congress Italy (index.html)
@@ -2359,8 +2359,8 @@ Description: Stay updated with the latest Bachata news, festival guides, and dan
 
 Bachata Events & News 2026 | Milano Sensual Congress
 
-Bachata 
-Timeline
+Bachata News 
+& Festival Updates
 
 Track the evolution of the congress and stay updated with every milestone.
 
@@ -2617,8 +2617,8 @@ Description: Rimani aggiornato con le ultime notizie di Bachata, i festival euro
 
 Eventi Bachata & News 2026 | Milano Sensual Congress
 
-Bachata 
-Timeline
+Notizie Bachata 
+& Aggiornamenti Festival
 
 Traccia l'evoluzione del congresso e rimani aggiornato su ogni traguardo.
 
