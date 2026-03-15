@@ -1,5 +1,5 @@
 # Milano Sensual Congress 2026 - Full Site Documentation
-# Generated automatically on 2026-03-14 10:10
+# Generated automatically on 2026-03-15 14:42
 # Total Pages: 31
 
 ## Page: Milano Sensual Congress 2026 | Official Bachata Congress Italy (index.html)
@@ -2095,6 +2095,7 @@ Or reach us directly via WhatsApp
 ---
 
 ## Page: Termini e Condizioni - Milano Sensual Congress 2026 (it/terms.html)
+Description: Leggi i termini e le condizioni ufficiali del Milano Sensual Congress 2026, inclusi la polizza sui biglietti, la privacy policy e le regole dell'evento.
 
 Termini e Condizioni - Milano Sensual Congress 2026
 
@@ -2213,6 +2214,7 @@ slamitza@gmail.com
 ---
 
 ## Page: Terms & Conditions - Milano Sensual Congress 2026 (terms.html)
+Description: Read the official terms and conditions for Milano Sensual Congress 2026, including our ticket policy, privacy policy, and event rules.
 
 Terms & Conditions - Milano Sensual Congress 2026
 
@@ -2340,6 +2342,7 @@ slamitza@gmail.com
 ---
 
 ## Page: Page Not Found | Milano Sensual Congress 2026 (404.html)
+Description: The page you are looking for does not exist. Return to the Milano Sensual Congress home page to find your way.
 
 Page Not Found | Milano Sensual Congress 2026
 

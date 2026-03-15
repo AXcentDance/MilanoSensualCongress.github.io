@@ -34,9 +34,9 @@ The official knowledge base for the Milano Sensual Congress 2026 website.
 - [Contattaci | Milano Sensual Congress 2026](it/contact.html): Contatta il team del Milano Sensual Congress. Hai domande su biglietti, hotel o programma? Siamo qui per aiutarti.
 - [Contatti | Milano Sensual Spring Edition](it/spring/contact.html): Domande sul Milano Sensual Congress Spring Edition? Contatta il nostro team per informazioni su biglietti, hotel e il programma dell'evento.
 - [Contact | Milano Sensual Spring Edition](spring/contact.html): Questions about Milano Sensual Congress Spring Edition? Contact our team for info on tickets, hotel, and the event schedule.
-- [Termini e Condizioni - Milano Sensual Congress 2026](it/terms.html): 
-- [Terms & Conditions - Milano Sensual Congress 2026](terms.html): 
-- [Page Not Found | Milano Sensual Congress 2026](404.html): 
+- [Termini e Condizioni - Milano Sensual Congress 2026](it/terms.html): Leggi i termini e le condizioni ufficiali del Milano Sensual Congress 2026, inclusi la polizza sui biglietti, la privacy policy e le regole dell'evento.
+- [Terms & Conditions - Milano Sensual Congress 2026](terms.html): Read the official terms and conditions for Milano Sensual Congress 2026, including our ticket policy, privacy policy, and event rules.
+- [Page Not Found | Milano Sensual Congress 2026](404.html): The page you are looking for does not exist. Return to the Milano Sensual Congress home page to find your way.
 - [Bachata Events & News 2026 | Milano Sensual Congress](news.html): Stay updated with the latest Bachata news, festival guides, and dance insights from the European Bachata scene.
 - [Top 5 Must-Visit Bachata Congresses in Europe 2026 | Milano Sensual Congress](news/top-5-bachata-congresses-europe-2026.html): Our expert guide to the top 5 Bachata festivals in Europe for 2026. Discover why Milano Sensual, Bachaturo, and others are the must-visit events this year.
 - [Weekly Classes vs. Congresses: How to Elevate Your Bachata Style | Milano Sensual Congress](news/weekly-classes-vs-bachata-congresses.html): Discover the difference between learning Bachata at weekly classes versus congresses. Learn why classes build foundation, but congresses develop your unique style.
