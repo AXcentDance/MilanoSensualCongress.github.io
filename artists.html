@@ -27,114 +27,179 @@
     content="Discover the passion. Over 30 artists from around the globe joining us in Milan.">
   <meta property="twitter:image"
     content="https://slamitza-urmft.wpcomstaging.com/wp-content/uploads/2025/10/GeroyMigle.webp">
-  <script type="application/ld+json">[
-      {
-        "@context": "https://schema.org",
-        "@type": "DanceEvent",
-        "name": "Milano Sensual Congress 2026",
-        "startDate": "2026-11-20T12:00", 
-        "endDate": "2026-11-22T23:59",
-        "location": {
-          "@type": "Place",
-          "name": "Devero Hotel",
-          "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Cavenago di Brianza",
-            "addressRegion": "MB",
-            "postalCode": "20873",
-            "addressCountry": "IT"
-          }
-        },
-        "performer": [
-          { "@type": "Person", "name": "Gero y Migle" },
-          { "@type": "Person", "name": "Klaus y Ros" },
-          { "@type": "Person", "name": "Cristian y Gabriella" },
-          { "@type": "Person", "name": "Nacho y Silvia" },
-          { "@type": "Person", "name": "Agustín y Alba" },
-          { "@type": "Person", "name": "Irene y Tomás" },
-          { "@type": "Person", "name": "Aitor Gomez" }
-        ]
-      },
-      {
-        "@context": "https://schema.org",
-        "@type": "ItemList",
-        "itemListElement": [
-          {
-            "@type": "ListItem",
-            "position": 1,
-            "item": {
-              "@type": "Person",
-              "name": "Gero y Migle"
-            }
-          },
-          {
-            "@type": "ListItem",
-            "position": 2,
-            "item": {
-              "@type": "Person",
-              "name": "Klaus y Ros"
-            }
-          },
-          {
-            "@type": "ListItem",
-            "position": 3,
-            "item": {
-              "@type": "Person",
-              "name": "Cristian y Gabriella"
-            }
-          },
-          {
-            "@type": "ListItem",
-            "position": 4,
-            "item": {
-              "@type": "Person",
-              "name": "Nacho y Silvia"
-            }
-          },
-          {
-            "@type": "ListItem",
-            "position": 5,
-            "item": {
-              "@type": "Person",
-              "name": "Agustín y Alba"
-            }
-          },
-          {
-            "@type": "ListItem",
-            "position": 6,
-            "item": {
-              "@type": "Person",
-              "name": "Irene y Tomás"
-            }
-          },
-          {
-            "@type": "ListItem",
-            "position": 7,
-            "item": {
-              "@type": "Person",
-              "name": "Aitor Gomez"
-            }
-          }
-        ]
-      }
-    ]</script>
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [{
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://milanosensualcongress.com/"
-      },{
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Artists",
-        "item": "https://milanosensualcongress.com/artists"
-      }]
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://milanosensualcongress.com/#organization",
+          "name": "Milano Sensual Congress",
+          "url": "https://milanosensualcongress.com",
+          "logo": "https://milanosensualcongress.com/images/logo.webp",
+          "sameAs": [
+            "https://www.instagram.com/milano_sensual_congress/"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://milanosensualcongress.com/#website",
+          "url": "https://milanosensualcongress.com",
+          "name": "Milano Sensual Congress",
+          "publisher": {
+            "@id": "https://milanosensualcongress.com/#organization"
+          }
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://milanosensualcongress.com/artists#webpage",
+          "url": "https://milanosensualcongress.com/artists",
+          "name": "Bachata Artists & Workshops 2026 | Milano Sensual Congress",
+          "isPartOf": {
+            "@id": "https://milanosensualcongress.com/#website"
+          },
+          "breadcrumb": {
+            "@id": "https://milanosensualcongress.com/artists#breadcrumb"
+          },
+          "inLanguage": "en-US",
+          "description": "Experience a world-class lineup at the International Milano Sensual Congress. Featuring Gero y Migle, Klaus y Ros, and more top Bachata Sensual artists teaching workshops and performing in Milan."
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://milanosensualcongress.com/artists#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://milanosensualcongress.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Artists",
+              "item": "https://milanosensualcongress.com/artists"
+            }
+          ]
+        },
+        {
+          "@type": "DanceEvent",
+          "mainEntityOfPage": {
+            "@id": "https://milanosensualcongress.com/artists#webpage"
+          },
+          "name": "Milano Sensual Congress 2026",
+          "startDate": "2026-11-20T12:00",
+          "endDate": "2026-11-22T23:59",
+          "location": {
+            "@type": "Place",
+            "name": "Devero Hotel",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Cavenago di Brianza",
+              "addressRegion": "MB",
+              "postalCode": "20873",
+              "addressCountry": "IT"
+            }
+          },
+          "performer": [
+            {
+              "@type": "Person",
+              "name": "Gero y Migle"
+            },
+            {
+              "@type": "Person",
+              "name": "Klaus y Ros"
+            },
+            {
+              "@type": "Person",
+              "name": "Cristian y Gabriella"
+            },
+            {
+              "@type": "Person",
+              "name": "Nacho y Silvia"
+            },
+            {
+              "@type": "Person",
+              "name": "Agustín y Alba"
+            },
+            {
+              "@type": "Person",
+              "name": "Irene y Tomás"
+            },
+            {
+              "@type": "Person",
+              "name": "Aitor Gomez"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Bachata Artists Lineup",
+          "mainEntityOfPage": {
+            "@id": "https://milanosensualcongress.com/artists#webpage"
+          },
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "item": {
+                "@type": "Person",
+                "name": "Gero y Migle"
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "item": {
+                "@type": "Person",
+                "name": "Klaus y Ros"
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "item": {
+                "@type": "Person",
+                "name": "Cristian y Gabriella"
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "item": {
+                "@type": "Person",
+                "name": "Nacho y Silvia"
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "item": {
+                "@type": "Person",
+                "name": "Agustín y Alba"
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 6,
+              "item": {
+                "@type": "Person",
+                "name": "Irene y Tomás"
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 7,
+              "item": {
+                "@type": "Person",
+                "name": "Aitor Gomez"
+              }
+            }
+          ]
+        }
+      ]
     }
-    </script>
+  </script>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">

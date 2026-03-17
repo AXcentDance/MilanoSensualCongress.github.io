@@ -27,73 +27,137 @@
   <meta property="twitter:description" content="Secure your Milano Congress Tickets 2026. Join the passion in Milan.">
   <meta property="twitter:image"
     content="https://slamitza-urmft.wpcomstaging.com/wp-content/uploads/2025/10/cropped-Screenshot-2025-10-20-at-22.29.47.webp">
-  <script type="application/ld+json">{
-      "@context": "https://schema.org",
-      "@type": "DanceEvent",
-      "name": "Milano Sensual Congress 2026",
-      "description": "The premier Bachata congress in Milan featuring workshops, shows, and social dancing. We went sold out last year!",
-      "startDate": "2026-11-20T12:00", 
-      "endDate": "2026-11-22T23:59",
-      "eventStatus": "https://schema.org/EventScheduled",
-      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-      "location": {
-        "@type": "Place",
-        "name": "Devero Hotel",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Milan",
-          "addressCountry": "IT"
-        }
-      },
-      "image": [
-        "https://slamitza-urmft.wpcomstaging.com/wp-content/uploads/2025/10/cropped-Screenshot-2025-10-20-at-22.29.47.webp"
-      ],
-      "offers": [
-        {
-          "@type": "Offer",
-          "name": "Full Pass",
-          "price": "109",
-          "priceCurrency": "EUR",
-          "url": "https://lasalsadelbaile.com/MSC2026",
-          "availability": "https://schema.org/InStock",
-          "validFrom": "2025-01-01"
-        },
-        {
-          "@type": "Offer",
-          "name": "Party Pass",
-          "price": "89",
-          "priceCurrency": "EUR",
-          "url": "https://lasalsadelbaile.com/MSC2026",
-          "availability": "https://schema.org/InStock"
-        }
-      ],
-      "performer": [
-        { "@type": "Person", "name": "Gero y Migle" },
-        { "@type": "Person", "name": "Klaus y Ros" },
-        { "@type": "Person", "name": "Cristian y Gabriella" },
-        { "@type": "Person", "name": "Nacho y Silvia" },
-        { "@type": "Person", "name": "Agustín y Alba" },
-        { "@type": "Person", "name": "Irene y Tomás" },
-        { "@type": "Person", "name": "Aitor Gomez" }
-      ]
-    }</script>
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [{
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://milanosensualcongress.com/"
-      },{
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Tickets",
-        "item": "https://milanosensualcongress.com/tickets"
-      }]
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://milanosensualcongress.com/#organization",
+          "name": "Milano Sensual Congress",
+          "url": "https://milanosensualcongress.com",
+          "logo": "https://milanosensualcongress.com/images/logo.webp",
+          "sameAs": [
+            "https://www.instagram.com/milano_sensual_congress/"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://milanosensualcongress.com/#website",
+          "url": "https://milanosensualcongress.com",
+          "name": "Milano Sensual Congress",
+          "publisher": {
+            "@id": "https://milanosensualcongress.com/#organization"
+          }
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://milanosensualcongress.com/tickets#webpage",
+          "url": "https://milanosensualcongress.com/tickets",
+          "name": "Buy Tickets for Bachata Congress 2026 | Milano Sensual Congress",
+          "isPartOf": {
+            "@id": "https://milanosensualcongress.com/#website"
+          },
+          "breadcrumb": {
+            "@id": "https://milanosensualcongress.com/tickets#breadcrumb"
+          },
+          "inLanguage": "en-US",
+          "description": "Buy tickets for the top International Bachata Congress in Italy. Get your Full Pass for Milano Sensual Congress 2026. Best prices for the premier Bachata festival in Milan."
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://milanosensualcongress.com/tickets#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://milanosensualcongress.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Tickets",
+              "item": "https://milanosensualcongress.com/tickets"
+            }
+          ]
+        },
+        {
+          "@type": "DanceEvent",
+          "mainEntityOfPage": {
+            "@id": "https://milanosensualcongress.com/tickets#webpage"
+          },
+          "name": "Milano Sensual Congress 2026",
+          "description": "The premier Bachata congress in Milan featuring workshops, shows, and social dancing. We went sold out last year!",
+          "startDate": "2026-11-20T12:00",
+          "endDate": "2026-11-22T23:59",
+          "eventStatus": "https://schema.org/EventScheduled",
+          "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+          "location": {
+            "@type": "Place",
+            "name": "Devero Hotel",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Milan",
+              "addressCountry": "IT"
+            }
+          },
+          "image": [
+            "https://slamitza-urmft.wpcomstaging.com/wp-content/uploads/2025/10/cropped-Screenshot-2025-10-20-at-22.29.47.webp"
+          ],
+          "offers": [
+            {
+              "@type": "Offer",
+              "name": "Full Pass",
+              "price": "109",
+              "priceCurrency": "EUR",
+              "url": "https://lasalsadelbaile.com/MSC2026",
+              "availability": "https://schema.org/InStock",
+              "validFrom": "2025-01-01"
+            },
+            {
+              "@type": "Offer",
+              "name": "Party Pass",
+              "price": "89",
+              "priceCurrency": "EUR",
+              "url": "https://lasalsadelbaile.com/MSC2026",
+              "availability": "https://schema.org/InStock"
+            }
+          ],
+          "performer": [
+            {
+              "@type": "Person",
+              "name": "Gero y Migle"
+            },
+            {
+              "@type": "Person",
+              "name": "Klaus y Ros"
+            },
+            {
+              "@type": "Person",
+              "name": "Cristian y Gabriella"
+            },
+            {
+              "@type": "Person",
+              "name": "Nacho y Silvia"
+            },
+            {
+              "@type": "Person",
+              "name": "Agustín y Alba"
+            },
+            {
+              "@type": "Person",
+              "name": "Irene y Tomás"
+            },
+            {
+              "@type": "Person",
+              "name": "Aitor Gomez"
+            }
+          ]
+        }
+      ]
     }
-    </script>
+  </script>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">

@@ -29,43 +29,85 @@
     content="Stay right where the action is. The Devero Hotel is the exclusive 4-star venue.">
   <meta property="twitter:image"
     content="https://slamitza-urmft.wpcomstaging.com/wp-content/uploads/2025/11/Devero-Hotel-SPA_principale_colori.webp">
-  <script type="application/ld+json">{
-      "@context": "https://schema.org",
-      "@type": "Hotel",
-      "name": "Devero Hotel & Spa",
-      "description": "The official 4-star executive venue hosting the Milano Sensual Congress 2026.",
-      "image": "https://slamitza-urmft.wpcomstaging.com/wp-content/uploads/2025/11/Devero-Hotel-SPA_principale_colori.webp",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Largo Kennedy 1",
-        "addressLocality": "Cavenago di Brianza",
-        "addressRegion": "MB",
-        "postalCode": "20873",
-        "addressCountry": "IT"
-      },
-      "starRating": {
-        "@type": "Rating",
-        "ratingValue": "4"
-      },
-      "url": "https://milanosensualcongress.com/hotel/"
-    }</script>
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [{
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://milanosensualcongress.com/"
-      },{
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Hotel",
-        "item": "https://milanosensualcongress.com/hotel"
-      }]
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://milanosensualcongress.com/#organization",
+          "name": "Milano Sensual Congress",
+          "url": "https://milanosensualcongress.com",
+          "logo": "https://milanosensualcongress.com/images/logo.webp",
+          "sameAs": [
+            "https://www.instagram.com/milano_sensual_congress/"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://milanosensualcongress.com/#website",
+          "url": "https://milanosensualcongress.com",
+          "name": "Milano Sensual Congress",
+          "publisher": {
+            "@id": "https://milanosensualcongress.com/#organization"
+          }
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://milanosensualcongress.com/hotel#webpage",
+          "url": "https://milanosensualcongress.com/hotel",
+          "name": "Official Congress Hotel | International Bachata Festival Venue",
+          "isPartOf": {
+            "@id": "https://milanosensualcongress.com/#website"
+          },
+          "breadcrumb": {
+            "@id": "https://milanosensualcongress.com/hotel#breadcrumb"
+          },
+          "inLanguage": "en-US",
+          "description": "Book your stay at Devero Hotel & Spa, the official venue for Milano Sensual Congress 2026. Luxury accommodation with direct access to dance floors and spa facilities."
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://milanosensualcongress.com/hotel#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://milanosensualcongress.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Hotel",
+              "item": "https://milanosensualcongress.com/hotel"
+            }
+          ]
+        },
+        {
+          "@type": "Hotel",
+          "mainEntityOfPage": {
+            "@id": "https://milanosensualcongress.com/hotel#webpage"
+          },
+          "name": "Devero Hotel & Spa",
+          "description": "The official 4-star executive venue hosting the Milano Sensual Congress 2026.",
+          "image": "https://slamitza-urmft.wpcomstaging.com/wp-content/uploads/2025/11/Devero-Hotel-SPA_principale_colori.webp",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Largo Kennedy 1",
+            "addressLocality": "Cavenago di Brianza",
+            "addressRegion": "MB",
+            "postalCode": "20873",
+            "addressCountry": "IT"
+          },
+          "starRating": {
+            "@type": "Rating",
+            "ratingValue": "4"
+          }
+        }
+      ]
     }
-    </script>
+  </script>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">

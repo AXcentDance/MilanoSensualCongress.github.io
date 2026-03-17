@@ -29,33 +29,70 @@
     content="https://slamitza-urmft.wpcomstaging.com/wp-content/uploads/2025/10/GeroyMigle.webp">
   <link rel="preload" as="image"
     href="https://milanosensualcongress.com/wp-content/uploads/2025/11/devero3-006583m.webp">
-  <script type="application/ld+json">{
+  <script type="application/ld+json">
+    {
       "@context": "https://schema.org",
       "@graph": [
         {
+          "@type": "Organization",
+          "@id": "https://milanosensualcongress.com/#organization",
+          "name": "Milano Sensual Congress",
+          "url": "https://milanosensualcongress.com",
+          "logo": "https://milanosensualcongress.com/images/logo.webp",
+          "sameAs": [
+            "https://www.instagram.com/milano_sensual_congress/"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://milanosensualcongress.com/#website",
+          "url": "https://milanosensualcongress.com",
+          "name": "Milano Sensual Congress",
+          "publisher": {
+            "@id": "https://milanosensualcongress.com/#organization"
+          }
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://milanosensualcongress.com/contact#webpage",
+          "url": "https://milanosensualcongress.com/contact",
+          "name": "Contact Us | Milano Sensual Congress - International Bachata Support",
+          "isPartOf": {
+            "@id": "https://milanosensualcongress.com/#website"
+          },
+          "breadcrumb": {
+            "@id": "https://milanosensualcongress.com/contact#breadcrumb"
+          },
+          "inLanguage": "en-US",
+          "description": "Have questions about Milano Sensual Congress? Contact our team for support regarding tickets, hotel booking, or event details."
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://milanosensualcongress.com/contact#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://milanosensualcongress.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Contact",
+              "item": "https://milanosensualcongress.com/contact"
+            }
+          ]
+        },
+        {
           "@type": "ContactPage",
+          "mainEntityOfPage": {
+            "@id": "https://milanosensualcongress.com/contact#webpage"
+          },
           "name": "Contact Milano Sensual Congress",
           "description": "Customer support and inquiry page for the Milano Sensual Congress.",
           "mainEntity": {
-            "@type": "Organization",
-            "name": "Milano Sensual Congress",
-            "url": "https://milanosensualcongress.com",
-            "logo": "images/logo.webp",
-            "contactPoint": [
-              {
-                "@type": "ContactPoint",
-                "telephone": "+39-333-393-5911",
-                "contactType": "customer service",
-                "areaServed": "IT",
-                "availableLanguage": ["Italian", "Spanish"]
-              },
-              {
-                "@type": "ContactPoint",
-                "telephone": "+41-79-966-84-81",
-                "contactType": "customer service",
-                "availableLanguage": "English"
-              }
-            ]
+            "@id": "https://milanosensualcongress.com/#organization"
           }
         },
         {
@@ -104,24 +141,8 @@
           ]
         }
       ]
-    }</script>
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [{
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://milanosensualcongress.com/"
-      },{
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Contact",
-        "item": "https://milanosensualcongress.com/contact"
-      }]
     }
-    </script>
+  </script>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">

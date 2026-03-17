@@ -18,72 +18,136 @@
   <link rel="alternate" hreflang="en" href="https://milanosensualcongress.com/">
   <link rel="alternate" hreflang="it" href="https://milanosensualcongress.com/it/">
   <link rel="manifest" href="../manifest.json">
-  <script type="application/ld+json">{
+  <script type="application/ld+json">
+    {
       "@context": "https://schema.org",
-      "@type": "DanceEvent",
-      "name": "Milano Sensual Congress 2026",
-      "startDate": "2026-11-20",
-      "endDate": "2026-11-22",
-      "eventStatus": "https://schema.org/EventScheduled",
-      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-      "location": {
-        "@type": "Place",
-        "name": "Devero Hotel & Spa",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "Largo Kennedy 1",
-          "addressLocality": "Cavenago di Brianza",
-          "postalCode": "20873",
-          "addressRegion": "MB",
-          "addressCountry": "IT"
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://milanosensualcongress.com/#organization",
+          "name": "Milano Sensual Congress",
+          "url": "https://milanosensualcongress.com",
+          "logo": "https://milanosensualcongress.com/images/logo.webp",
+          "sameAs": [
+            "https://www.instagram.com/milano_sensual_congress/"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://milanosensualcongress.com/#website",
+          "url": "https://milanosensualcongress.com",
+          "name": "Milano Sensual Congress",
+          "publisher": {
+            "@id": "https://milanosensualcongress.com/#organization"
+          }
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://milanosensualcongress.com/it/#webpage",
+          "url": "https://milanosensualcongress.com/it/",
+          "name": "Milano Sensual Congress 2026 | Il Congresso Bachata Ufficiale in Italia",
+          "isPartOf": {
+            "@id": "https://milanosensualcongress.com/#website"
+          },
+          "inLanguage": "it-IT",
+          "description": "Partecipa al Milano Sensual Congress (20-22 Nov), l'evento imperdibile tra i congressi bachata 2026 in Italia. Artisti internazionali e feste esclusive a Milano."
+        },
+        {
+          "@type": "DanceEvent",
+          "mainEntityOfPage": {
+            "@id": "https://milanosensualcongress.com/it/#webpage"
+          },
+          "name": "Milano Sensual Congress 2026",
+          "startDate": "2026-11-20",
+          "endDate": "2026-11-22",
+          "eventStatus": "https://schema.org/EventScheduled",
+          "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+          "location": {
+            "@type": "Place",
+            "name": "Devero Hotel & Spa",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Largo Kennedy 1",
+              "addressLocality": "Cavenago di Brianza",
+              "postalCode": "20873",
+              "addressRegion": "MB",
+              "addressCountry": "IT"
+            }
+          },
+          "image": [
+            "https://milanosensualcongress.com/images/logo.webp"
+          ],
+          "description": "L'esperienza Bachata definitiva in Italia. Lineup di classe mondiale, location executive e feste indimenticabili.",
+          "organizer": {
+            "@id": "https://milanosensualcongress.com/#organization"
+          },
+          "performer": [
+            {
+              "@type": "Person",
+              "name": "Gero y Migle"
+            },
+            {
+              "@type": "Person",
+              "name": "Klaus y Ros"
+            },
+            {
+              "@type": "Person",
+              "name": "Cristian y Gabriella"
+            },
+            {
+              "@type": "Person",
+              "name": "David y Ines"
+            },
+            {
+              "@type": "Person",
+              "name": "Nacho y Silvia"
+            },
+            {
+              "@type": "Person",
+              "name": "Agustín y Alba"
+            },
+            {
+              "@type": "Person",
+              "name": "Irene y Tomás"
+            },
+            {
+              "@type": "Person",
+              "name": "Aitor Gomez"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Dove si svolge l'evento?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "L'intero evento si svolge presso il New Devero Hotel & Spa (4 Stelle Executive), situato a Cavenago di Brianza. È facilmente accessibile dagli aeroporti di Milano."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Posso competere nel Jack & Jill?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sì! Ospitiamo una competizione internazionale Jack & Jill. I dettagli di registrazione e le categorie saranno annunciati più vicino alla data dell'evento sui nostri social media e sul sito web."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Come prenoto l'hotel?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Le vendite per l'hotel ufficiale aprono a Gennaio 2026. Visita la nostra Pagina Hotel per il link di prenotazione ufficiale per ottenere la tariffa di gruppo."
+              }
+            }
+          ]
         }
-      },
-      "image": [
-        "https://milanosensualcongress.com/images/logo.webp"
-      ],
-      "description": "The ultimate Bachata experience in Italy. World-class lineup, executive venue, and unforgettable parties.",
-      "organizer": {
-        "@type": "Organization",
-        "name": "Milano Sensual Congress",
-        "url": "https://milanosensualcongress.com"
-      },
-      "performer": [
-        { "@type": "Person", "name": "Gero y Migle" },
-        { "@type": "Person", "name": "Klaus y Ros" },
-        { "@type": "Person", "name": "Cristian y Gabriella" },
-        { "@type": "Person", "name": "David y Ines" },
-        { "@type": "Person", "name": "Nacho y Silvia" },
-        { "@type": "Person", "name": "Agustín y Alba" },
-        { "@type": "Person", "name": "Irene y Tomás" },
-        { "@type": "Person", "name": "Aitor Gomez" }
       ]
-    }</script>
-  <script type="application/ld+json">{
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [{
-        "@type": "Question",
-        "name": "Where is the event located?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "The entire event takes place at the Devero Hotel & Spa (4 Stars Executive), located in Cavenago di Brianza. It is easily accessible from Milan airports."
-        }
-      }, {
-        "@type": "Question",
-        "name": "Can I compete in the Jack & Jill?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes! We host an International Jack & Jill competition. Registration details and categories will be announced closer to the event date on our social media and website."
-        }
-      }, {
-        "@type": "Question",
-        "name": "How do I book the hotel?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Sales for the official hotel open in January 2026. Please visit our Hotel Page for the official booking link to get the group rate."
-        }
-      }]
-    }</script>
+    }
+  </script>
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://milanosensualcongress.com/it/">
   <meta property="og:title" content="Milano Sensual Congress 2026 | Il Migliore dei Congressi Bachata 2026 Italia">

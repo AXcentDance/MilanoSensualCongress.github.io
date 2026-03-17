@@ -18,71 +18,133 @@
   <link rel="alternate" hreflang="en" href="https://milanosensualcongress.com/transfer">
   <link rel="alternate" hreflang="it" href="https://milanosensualcongress.com/it/transfer">
   <link rel="manifest" href="../manifest.json">
-  <script type="application/ld+json">{
+  <script type="application/ld+json">
+    {
       "@context": "https://schema.org",
-      "@type": "DanceEvent",
-      "name": "Milano Sensual Congress 2026",
-      "startDate": "2026-11-20",
-      "endDate": "2026-11-22",
-      "eventStatus": "https://schema.org/EventScheduled",
-      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-      "location": {
-        "@type": "Place",
-        "name": "Devero Hotel & Spa",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "Largo Kennedy 1",
-          "addressLocality": "Cavenago di Brianza",
-          "postalCode": "20873",
-          "addressRegion": "MB",
-          "addressCountry": "IT"
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://milanosensualcongress.com/#organization",
+          "name": "Milano Sensual Congress",
+          "url": "https://milanosensualcongress.com",
+          "logo": "https://milanosensualcongress.com/images/logo.webp",
+          "sameAs": [
+            "https://www.instagram.com/milano_sensual_congress/"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://milanosensualcongress.com/#website",
+          "url": "https://milanosensualcongress.com",
+          "name": "Milano Sensual Congress",
+          "publisher": {
+            "@id": "https://milanosensualcongress.com/#organization"
+          }
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://milanosensualcongress.com/it/transfer#webpage",
+          "url": "https://milanosensualcongress.com/it/transfer",
+          "name": "Servizio Transfer | Milano Sensual Congress 2026",
+          "isPartOf": {
+            "@id": "https://milanosensualcongress.com/#website"
+          },
+          "breadcrumb": {
+            "@id": "https://milanosensualcongress.com/it/transfer#breadcrumb"
+          },
+          "inLanguage": "it-IT",
+          "description": "Servizio transfer ufficiale per il Milano Sensual Congress 2026. Prenota il tuo viaggio da Malpensa, Linate, Bergamo o Milano Centrale per l'Hotel Devero."
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://milanosensualcongress.com/it/transfer#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://milanosensualcongress.com/it/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Transfer",
+              "item": "https://milanosensualcongress.com/it/transfer"
+            }
+          ]
+        },
+        {
+          "@type": "DanceEvent",
+          "@id": "https://milanosensualcongress.com/#event",
+          "mainEntityOfPage": {
+            "@id": "https://milanosensualcongress.com/it/transfer#webpage"
+          },
+          "name": "Milano Sensual Congress 2026",
+          "startDate": "2026-11-20",
+          "endDate": "2026-11-22",
+          "eventStatus": "https://schema.org/EventScheduled",
+          "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+          "location": {
+            "@type": "Place",
+            "name": "Devero Hotel & Spa",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Largo Kennedy 1",
+              "addressLocality": "Cavenago di Brianza",
+              "postalCode": "20873",
+              "addressRegion": "MB",
+              "addressCountry": "IT"
+            }
+          },
+          "image": [
+            "https://milanosensualcongress.com/images/logo.webp"
+          ],
+          "description": "The ultimate Bachata experience in Italy. World-class lineup, executive venue, and unforgettable parties.",
+          "organizer": {
+            "@id": "https://milanosensualcongress.com/#organization"
+          },
+          "performer": [
+            { "@type": "Person", "name": "Gero y Migle" },
+            { "@type": "Person", "name": "Klaus y Ros" },
+            { "@type": "Person", "name": "Cristian y Gabriella" },
+            { "@type": "Person", "name": "Nacho y Silvia" },
+            { "@type": "Person", "name": "Agustín y Alba" },
+            { "@type": "Person", "name": "Irene y Tomás" },
+            { "@type": "Person", "name": "Aitor Gomez" }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Where is the event located?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The entire event takes place at the Devero Hotel & Spa (4 Stars Executive), located in Cavenago di Brianza. It is easily accessible from Milan airports."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I compete in the Jack & Jill?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sì! Ospitiamo una competizione internazionale Jack & Jill. I dettagli di registrazione e le categorie saranno annunciati più vicino alla data dell'evento sui nostri social media e sul sito web."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I book the hotel?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Le vendite per l'hotel ufficiale aprono a Gennaio 2026. Visita la nostra Pagina Hotel per il link di prenotazione ufficiale per ottenere la tariffa di gruppo."
+              }
+            }
+          ]
         }
-      },
-      "image": [
-        "https://milanosensualcongress.com/images/logo.webp"
-      ],
-      "description": "The ultimate Bachata experience in Italy. World-class lineup, executive venue, and unforgettable parties.",
-      "organizer": {
-        "@type": "Organization",
-        "name": "Milano Sensual Congress",
-        "url": "https://milanosensualcongress.com"
-      },
-      "performer": [
-        { "@type": "Person", "name": "Gero y Migle" },
-        { "@type": "Person", "name": "Klaus y Ros" },
-        { "@type": "Person", "name": "Cristian y Gabriella" },
-        { "@type": "Person", "name": "Nacho y Silvia" },
-        { "@type": "Person", "name": "Agustín y Alba" },
-        { "@type": "Person", "name": "Irene y Tomás" },
-        { "@type": "Person", "name": "Aitor Gomez" }
       ]
-    }</script>
-  <script type="application/ld+json">{
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [{
-        "@type": "Question",
-        "name": "Where is the event located?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "The entire event takes place at the Devero Hotel & Spa (4 Stars Executive), located in Cavenago di Brianza. It is easily accessible from Milan airports."
-        }
-      }, {
-        "@type": "Question",
-        "name": "Can I compete in the Jack & Jill?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes! We host an International Jack & Jill competition. Registration details and categories will be announced closer to the event date on our social media and website."
-        }
-      }, {
-        "@type": "Question",
-        "name": "How do I book the hotel?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Sales for the official hotel open in January 2026. Please visit our Hotel Page for the official booking link to get the group rate."
-        }
-      }]
-    }</script>
+    }
+  </script>
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://milanosensualcongress.com/it/transfer">
   <meta property="og:title" content="Servizio Transfer | Milano Sensual Congress 2026">

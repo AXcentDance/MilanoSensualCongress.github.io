@@ -28,10 +28,10 @@ And any supporting sub-pages in their respective language directories.
 ## 4. Meta-Data & Schema
 - Update the `llms.txt` and `llms-full.txt` after adding news content using the `sync-indexes` skill.
 - Ensure the news article has a relevant `date` in both English and Italian formats.
-- **JSON-LD Comprehensive Schema**:
-    - You MUST inject a complete JSON-LD `<script>` tag in the `<head>` structured as an array containing multiple schemas.
-    - Include a `BlogPosting` object with: `mainEntityOfPage`, `headline`, `image`, `author` (Organization), `publisher` (Organization with logo), `datePublished`, `dateModified`, and `description`. Use strict ISO 8601 formatting for dates (e.g., `2026-03-14T09:00:00+01:00`). 
-    - Include a `BreadcrumbList` object outlining the site hierarchy (e.g., `Home > News > [Post Title]`).
+- **JSON-LD Unified Graph Standard**:
+    - You MUST use the `schema-graph` skill to inject a single JSON-LD `<script>` tag in the `<head>`.
+    - This graph must include a `BlogPosting` object with all required properties (`headline`, `image`, `datePublished`, etc.).
+    - Reference the global `Organization` and `WebSite` IDs as defined in the `schema-graph` standard.
 - **Visual Breadcrumbs**: In addition to JSON-LD, implement visible breadcrumb links (e.g., "Back to News") at the top of the article.
 
 ## 5. URL Structure
