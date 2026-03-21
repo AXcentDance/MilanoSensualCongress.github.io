@@ -1,5 +1,5 @@
 # Milano Sensual Congress 2026 - Full Site Documentation
-# Generated automatically on 2026-03-21 14:24
+# Generated automatically on 2026-03-21 14:31
 # Total Pages: 33
 
 ## Page: Milano Sensual Congress 2026 | Official Bachata Congress Italy (index.html)
@@ -1090,7 +1090,7 @@ Richiede un Full Pass valido
 
 3 Ore di Masterclass
 
-Gero y Migle, Klau y Ros
+Gero y Migle, Klau y Ros, Cristian y Gabriella
 
 Full Pass NON incluso
 
@@ -1109,7 +1109,7 @@ Richiede un Full Pass valido
 
 3 Ore di Masterclass
 
-Gero y Migle, Klau y Ros
+Gero y Migle, Klau y Ros, Cristian y Gabriella
 
 Bloccato
 
@@ -1352,7 +1352,7 @@ Requires a valid Full Pass
 
 3 Hours of Masterclasses
 
-Gero y Migle, Klau y Ros
+Gero y Migle, Klau y Ros, Cristian y Gabriella
 
 Full Pass NOT included
 
@@ -1367,7 +1367,7 @@ Requires a valid Full Pass
 
 3 Hours of Masterclasses
 
-Gero y Migle, Klau y Ros
+Gero y Migle, Klau y Ros, Cristian y Gabriella
 
 Locked
 
