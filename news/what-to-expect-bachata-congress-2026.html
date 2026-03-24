@@ -60,59 +60,86 @@
     }
   </style>
   
-  <!-- Schema.org Article & Breadcrumbs Markup -->
   <script type="application/ld+json">
-  [
     {
       "@context": "https://schema.org",
-      "@type": "BlogPosting",
-      "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "https://milanosensualcongress.com/news/what-to-expect-bachata-congress-2026"
-      },
-      "headline": "What to Expect from a Bachata Congress",
-      "image": "https://milanosensualcongress.com/images/news/bachata_dance_hands.png",
-      "author": {
-        "@type": "Organization",
-        "name": "Milano Sensual Congress",
-        "url": "https://milanosensualcongress.com"
-      },
-      "publisher": {
-        "@type": "Organization",
-        "name": "Milano Sensual Congress",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://milanosensualcongress.com/images/logo.webp"
-        }
-      },
-      "datePublished": "2026-03-21T09:00:00+01:00",
-      "dateModified": "2026-03-21T09:00:00+01:00",
-      "description": "A comprehensive guide on what to expect when attending a Bachata congress in 2026, from workshops to social dancing."
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
+      "@graph": [
         {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://milanosensualcongress.com/"
+          "@type": "Organization",
+          "@id": "https://milanosensualcongress.com/#organization",
+          "name": "Milano Sensual Congress",
+          "url": "https://milanosensualcongress.com",
+          "logo": "https://milanosensualcongress.com/images/logo.webp",
+          "sameAs": [
+            "https://www.instagram.com/milano_sensual_congress/"
+          ]
         },
         {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "News",
-          "item": "https://milanosensualcongress.com/news"
+          "@type": "WebSite",
+          "@id": "https://milanosensualcongress.com/#website",
+          "url": "https://milanosensualcongress.com",
+          "name": "Milano Sensual Congress",
+          "publisher": {
+            "@id": "https://milanosensualcongress.com/#organization"
+          }
         },
         {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "What to Expect from a Bachata Congress"
+          "@type": "WebPage",
+          "@id": "https://milanosensualcongress.com/news/what-to-expect-bachata-congress-2026#webpage",
+          "url": "https://milanosensualcongress.com/news/what-to-expect-bachata-congress-2026",
+          "name": "What to Expect from a Bachata Congress | Milano Sensual Congress",
+          "isPartOf": {
+            "@id": "https://milanosensualcongress.com/#website"
+          },
+          "breadcrumb": {
+            "@id": "https://milanosensualcongress.com/news/what-to-expect-bachata-congress-2026#breadcrumb"
+          },
+          "inLanguage": "en-US",
+          "description": "Discover what to expect at a Bachata congress in 2026. Learn about workshops, social dancing, and why learning from international artists is vital."
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://milanosensualcongress.com/news/what-to-expect-bachata-congress-2026#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://milanosensualcongress.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "News",
+              "item": "https://milanosensualcongress.com/news"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "What to Expect from a Bachata Congress",
+              "item": "https://milanosensualcongress.com/news/what-to-expect-bachata-congress-2026"
+            }
+          ]
+        },
+        {
+          "@type": "BlogPosting",
+          "mainEntityOfPage": {
+            "@id": "https://milanosensualcongress.com/news/what-to-expect-bachata-congress-2026#webpage"
+          },
+          "headline": "What to Expect from a Bachata Congress",
+          "image": "https://milanosensualcongress.com/images/news/bachata_dance_hands.png",
+          "author": {
+            "@id": "https://milanosensualcongress.com/#organization"
+          },
+          "publisher": {
+            "@id": "https://milanosensualcongress.com/#organization"
+          },
+          "datePublished": "2026-03-21T09:00:00+01:00",
+          "dateModified": "2026-03-21T09:00:00+01:00",
+          "description": "A comprehensive guide on what to expect when attending a Bachata congress in 2026, from workshops to social dancing."
         }
       ]
     }
-  ]
   </script>
 </head>
 

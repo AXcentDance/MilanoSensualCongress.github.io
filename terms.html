@@ -23,18 +23,59 @@
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [{
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://milanosensualcongress.com/"
-      },{
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Terms",
-        "item": "https://milanosensualcongress.com/terms"
-      }]
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://milanosensualcongress.com/#organization",
+          "name": "Milano Sensual Congress",
+          "url": "https://milanosensualcongress.com",
+          "logo": "https://milanosensualcongress.com/images/logo.webp",
+          "sameAs": [
+            "https://www.instagram.com/milano_sensual_congress/"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://milanosensualcongress.com/#website",
+          "url": "https://milanosensualcongress.com",
+          "name": "Milano Sensual Congress",
+          "publisher": {
+            "@id": "https://milanosensualcongress.com/#organization"
+          }
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://milanosensualcongress.com/terms#webpage",
+          "url": "https://milanosensualcongress.com/terms",
+          "name": "Terms & Conditions - Milano Sensual Congress 2026",
+          "isPartOf": {
+            "@id": "https://milanosensualcongress.com/#website"
+          },
+          "breadcrumb": {
+            "@id": "https://milanosensualcongress.com/terms#breadcrumb"
+          },
+          "inLanguage": "en-US",
+          "description": "Read the official terms and conditions for Milano Sensual Congress 2026, including our ticket policy, privacy policy, and event rules."
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://milanosensualcongress.com/terms#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://milanosensualcongress.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Terms",
+              "item": "https://milanosensualcongress.com/terms"
+            }
+          ]
+        }
+      ]
     }
     </script>
     <meta property="og:type" content="website">

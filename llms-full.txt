@@ -1,6 +1,6 @@
 # Milano Sensual Congress 2026 - Full Site Documentation
-# Generated automatically on 2026-03-21 14:33
-# Total Pages: 33
+# Generated automatically on 2026-03-24 17:45
+# Total Pages: 35
 
 ## Page: Milano Sensual Congress 2026 | Official Bachata Congress Italy (index.html)
 Description: The official Milano Sensual Congress 2026 (Nov 20-22). The #1 Bachata Congress in Italy and premier Bachata Sensual Congress. Join World-class artists in Milan.
@@ -625,7 +625,7 @@ Have questions? We are here to help you enjoy
 ---
 
 ## Page: Bachata Artists & Workshops 2026 | Milano Sensual Congress (artists.html)
-Description: Experience a world-class lineup at the International Milano Sensual Congress. Featuring Gero y Migle, Klaus y Ros, and more top Bachata Sensual artists teaching workshops and performing in Milan.
+Description: Experience a world-class lineup at the International Milano Sensual Congress. Featuring Gero y Migle (Esencia Style), Klaus y Ros, and more top Bachata artists teaching workshops and performing in Milan.
 
 Bachata Artists & Workshops 2026 | Milano Sensual Congress
 
@@ -656,6 +656,8 @@ Countries
 Workshops
 
  Get Tickets
+
+Esencia Masterclass
 
  Gero y Migle
 
@@ -708,7 +710,7 @@ Tickets are selling fast. Secure your spot to learn from and
 ---
 
 ## Page: Artisti & Workshop Bachata 2026 | Milano Sensual Congress (it/artists.html)
-Description: Scopri la lineup di classe mondiale al Milano Sensual Congress. Con Gero y Migle, Klaus y Ros, e altri top artisti di Bachata Sensual che terranno workshop e show a Milano.
+Description: Scopri la lineup di classe mondiale al Milano Sensual Congress. Con Gero y Migle (Esencia Style), Klaus y Ros, e altri top artisti di Bachata che terranno workshop e show a Milano.
 
 Artisti & Workshop Bachata 2026 | Milano Sensual Congress
 
@@ -737,6 +739,8 @@ Paesi
 Workshop
 
  Acquista Biglietti
+
+Masterclass Esencia
 
  Gero y Migle
 
@@ -1648,24 +1652,21 @@ Prenota
 
 FAQ Hotel & Prenotazioni
 
-Hotel room sales will officially open in 
-January
- 2026
-. We recommend booking as soon as the link goes live, as the main hotel sells out quickly.
+ Quando iniziano le vendite dell'hotel?
 
- What is the official hotel?
+Le vendite delle camere apriranno ufficialmente a 
+Gennaio 2026
+. Consigliamo di prenotare non appena il link sarà attivo, poiché l'hotel principale va sold-out rapidamente.
 
-The event takes place entirely at the 
-Devero
- Hotel
-, a 4-star executive hotel. All workshops, parties, and social activities are under one
- roof for maximum comfort.
+ Qual è l'hotel ufficiale?
 
- Can I change the name on the room reservation?
+L'evento si svolge interamente presso il 
+Devero Hotel
+, un hotel executive a 4 stelle. Tutti i workshop, le feste e le attività social sono sotto lo stesso tetto per il massimo comfort.
 
-Yes, name changes for room reservations are possible. If you
- need to transfer your room to another attendee, please contact us or the hotel reservation desk (specific
- instructions will be provided upon booking).
+ Posso cambiare il nome sulla prenotazione?
+
+Sì, i cambi di nome per le prenotazioni delle camere sono possibili. Se hai bisogno di trasferire la tua camera a un altro partecipante, ti preghiamo di contattare noi o l'ufficio prenotazioni dell'hotel.
 
 ---
 
@@ -2357,6 +2358,14 @@ Bachata News
 
 Track the evolution of the congress and stay updated with every milestone.
 
+March 24, 2026
+
+Artist Spotlight: Gero y Migle
+
+Uncovering the journey and unique chemistry of the couple transforming modern Bachata with their signature "Esencia Style".
+
+Read Article 
+
 March 21, 2026
 
 What to Expect from a Bachata Congress
@@ -2394,6 +2403,75 @@ Stay in the Loop
 Get exclusive news and early-bird alerts directly in your inbox.
 
 Join
+
+---
+
+## Page: Gero y Migle Bachata: Discover the Masters of Esencia Style | Milano Sensual Congress 2026 (news/gero-y-migle-bachata-masters-2026.html)
+Description: Discover the background, style, and unique chemistry of world-renowned Bachata artists Gero and Migle. Join their exclusive Esencia Style masterclasses at Milano Sensual Congress 2026.
+
+Gero y Migle Bachata: Discover the Masters of Esencia Style | Milano Sensual Congress 2026
+
+Back to News
+
+Artist Spotlight
+
+Gero y Migle: 
+Masters of Esencia Style
+
+Uncovering the journey and unique chemistry of the couple transforming modern Bachata with their signature method.
+
+"Energy is the soul of the dance." This philosophy has carried Gero and Migle from their diverse backgrounds in Spain and Lithuania to the pinnacle of the international Bachata scene.
+
+In the world of 
+Bachata
+, few couples possess the unique blend of technical discipline and explosive charisma that defines 
+Gero y Migle
+. While many mistakenly categorize their dance as standard Sensual, Gero and Migle have actually developed their own distinct philosophy and movement language: the 
+Esencia Style
+. As we prepare for the Milano Sensual Congress 2026, we take an in-depth look at the artists who have become a global benchmark for dancers everywhere.
+
+Esencia Style: Beyond the Labels
+
+Gero and Migle consistently emphasize that they do not follow the standard Bachata Sensual curriculum. Instead, they have fused their extensive backgrounds—from Flamenco and Hip-Hop to Contemporary and Folk—into what they call 
+Esencia Style
+. While it shares the fluid, connected movements often associated with modern Bachata, Esencia Style prioritizes the natural weight transfer and organic body mechanics derived from their years of multi-disciplinary training.
+
+Gero
+, hailing from the vibrant island of Ibiza, Spain, began his pursuit of movement at the age of 14. His early training was a masterclass in versatility, covering Flamenco, Hip-Hop, Ballet, and Jazz. This eclectic base refined his understanding of body isolation and weight transfer—skills he would later perfectly adapt to partner dancing.
+
+Meanwhile, in Lithuania, 
+Migle
+ was carving her own path through folk dance, contemporary, and show dance. Her move to Madrid, the heart of the Bachata revolution, was the catalyst that transformed her technical excellence into the soulful, fluid style she is known for today.
+
+The Gero y Migle Methodology
+
+What sets them apart is not just their breathtaking performances, but their 
+teaching methodology
+. They are known for their infectious energy and a structured approach that prioritizes comfort, safety, and technical precision.
+
+In an 
+Esencia Style Workshop
+, students are encouraged to find their own expression within the framework of Gero and Migle's unique methodology. They focus on the intricate lead-and-follow dynamics that allow a couple to feel "weightless" on the floor. It is this dedication to the *feeling* behind the move that has made them one of the most recognized couples in the international dance scene.
+
+Exclusivity at Milano Sensual Congress 2026
+
+For the 2026 edition of our congress, Gero and Migle are bringing a specially curated series of workshops to the 
+Devero Hotel
+. Beyond their main stage performance—which promises to be a highlight of the weekend—they will be hosting exclusive 
+Esencia Style Masterclasses
+. These advanced sessions will focus specifically on the 
+roots of their style
+, breaking down the fundamental body mechanics and philosophical origins that distinguish Esencia from other Bachata methods.
+
+Attendees will have the rare opportunity to learn directly from the source, absorbing the nuances of their style in the premium, luxury environment that defines the Milano experience. Whether you are looking to master body rolls or perfect your connection, their presence in Milan is an opportunity not to be missed.
+
+Dance with the Masters
+
+Masterclasses with Gero y Migle have limited capacity. Secure your spot and join the ultimate Bachata journey in Milan.
+
+Get Your Full Pass
+
+View Artist Lineup
 
 ---
 
@@ -2683,6 +2761,14 @@ Notizie Bachata
 
 Traccia l'evoluzione del congresso e rimani aggiornato su ogni traguardo.
 
+24 Marzo, 2026
+
+Gero y Migle: I Maestri dell'Esencia Style
+
+Scopriamo il viaggio e la chimica unica della coppia che sta trasformando la Bachata con il loro esclusivo "Esencia Style".
+
+Leggi l'Articolo 
+
 21 Marzo, 2026
 
 Cosa Aspettarsi ad un Congresso di Bachata
@@ -2844,6 +2930,75 @@ Pronto a Viverlo?
 Unisciti a noi per l'edizione 2026 del Milano Sensual Congress. Eleva il tuo stile, incontra la comunità e balla con tutto il cuore.
 
 Prenota il Tuo Full Pass Ora
+
+---
+
+## Page: Gero y Migle Bachata: Scopri i Maestri dell'Esencia Style | Milano Sensual Congress 2026 (it/news/gero-y-migle-maestri-bachata-sensual-2026.html)
+Description: Scopri la storia, lo stile e l'incredibile chimica degli artisti di Bachata di fama mondiale Gero e Migle. Partecipa alle loro masterclass esclusive in Esencia Style al Milano Sensual Congress 2026.
+
+Gero y Migle Bachata: Scopri i Maestri dell'Esencia Style | Milano Sensual Congress 2026
+
+Torna alle News
+
+Artista in Primo Piano
+
+Gero y Migle: 
+I Maestri dell'Esencia Style
+
+Scopriamo il viaggio e la chimica unica della coppia che sta trasformando la Bachata con il loro metodo esclusivo.
+
+"L'energia è l'anima del ballo." Questa filosofia ha portato Gero e Migle dalle loro diverse radici in Spagna e Lituania fino ai vertici della scena internazionale della bachata.
+
+Nel mondo della 
+Bachata
+, poche coppie possiedono il mix unico di disciplina tecnica e carisma esplosivo che definisce 
+Gero y Migle
+. Sebbene molti cataloghino erroneamente il loro ballo come standard Sensual, Gero e Migle hanno in realtà sviluppato una propria filosofia e un linguaggio di movimento distinti: l'
+Esencia Style
+. Mentre ci prepariamo per il Milano Sensual Congress 2026, analizziamo in profondità gli artisti che sono diventati un punto di riferimento globale per i ballerini di tutto il mondo.
+
+Esencia Style: Oltre le Etichette
+
+Gero e Migle sottolineano costantemente che non seguono il curriculum standard della Bachata Sensual. Invece, hanno fuso i loro vasti background—dal Flamenco e Hip-Hop alla Danza Contemporanea e Folk—in quello che chiamano 
+Esencia Style
+. Pur condividendo i movimenti fluidi e connessi spesso associati alla Bachata moderna, l'Esencia Style privilegia il trasferimento naturale del peso e la meccanica corporea organica derivata dai loro anni di formazione multidisciplinare.
+
+Gero
+, originario della vibrante isola di Ibiza, in Spagna, ha iniziato il suo percorso nel mondo del movimento all'età di 14 anni. La sua prima formazione è stata una masterclass di versatilità: Flamenco, Hip-Hop, Danza Classica, Tip-tap e Jazz. Questa base eclettica ha affinato la sua comprensione dell'isolamento del corpo e dei trasferimenti di peso—abilità che avrebbe poi adattato perfettamente al ballo di coppia.
+
+Nel frattempo, in Lituania, 
+Migle
+ stava tracciando il proprio percorso attraverso la danza folk, la danza contemporanea e lo show dance. Il suo trasferimento a Madrid, il cuore della rivoluzione della bachata, è stato il catalizzatore che ha trasformato la sua eccellenza tecnica nello stile fluido e colmo d'anima per cui è conosciuta oggi.
+
+La Metodologia di Gero y Migle
+
+Ciò che li distingue non sono solo le loro performance mozzafiato, ma la loro 
+metodologia di insegnamento
+. Sono noti per la loro energia contagiosa e un approccio strutturato che dà priorità al comfort, alla sicurezza e alla precisione tecnica.
+
+In un 
+Workshop di Esencia Style
+, gli studenti sono incoraggiati a trovare la propria espressione all'interno della struttura della metodologia unica di Gero e Migle. Si concentrano sulle intricate dinamiche di guida e ascolto (lead and follow) che permettono a una coppia di sentirsi "senza peso" sulla pista. È questa dedizione alla *sensazione* dietro il movimento che li ha resi una delle coppie più riconosciute nel panorama coreutico internazionale.
+
+Esclusiva al Milano Sensual Congress 2026
+
+Per l'edizione 2026 del nostro congresso, Gero e Migle porteranno una serie di workshop appositamente curati al 
+Devero Hotel
+. Oltre alla loro performance sul palco principale—che promette di essere uno dei momenti clou del weekend—terranno delle esclusive 
+Masterclass di Esencia Style
+. Queste sessioni avanzate si concentreranno specificamente sulle 
+origini e radici del loro stile
+, approfondendo la meccanica corporea fondamentale e i principi filosofici che distinguono l'Esencia da altri metodi di Bachata.
+
+I partecipanti avranno la rara opportunità di imparare direttamente dalla fonte, assorbendo le sfumature del loro stile nell'ambiente di lusso che definisce l'esperienza milanese. Che tu voglia padroneggiare i body rolls o perfezionare la tua connessione, la loro presenza a Milano è un'occasione da non perdere.
+
+Balla con i Maestri
+
+Le Masterclass con Gero y Migle hanno posti limitati. Assicurati il tuo posto e unisciti al viaggio definitivo della Bachata a Milano.
+
+Acquista il tuo Full Pass
+
+Vedi il Lineup Artisti
 
 ---
 

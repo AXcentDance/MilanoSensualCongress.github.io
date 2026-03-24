@@ -60,59 +60,86 @@
     }
   </style>
   
-  <!-- Schema.org Article & Breadcrumbs Markup -->
   <script type="application/ld+json">
-  [
     {
       "@context": "https://schema.org",
-      "@type": "BlogPosting",
-      "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "https://milanosensualcongress.com/news/top-5-bachata-congresses-europe-2026"
-      },
-      "headline": "Top 5 Must-Visit Bachata Congresses in Europe 2026",
-      "image": "https://milanosensualcongress.com/images/news/bachata_dancing_realistic.png",
-      "author": {
-        "@type": "Organization",
-        "name": "Milano Sensual Congress",
-        "url": "https://milanosensualcongress.com"
-      },
-      "publisher": {
-        "@type": "Organization",
-        "name": "Milano Sensual Congress",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://milanosensualcongress.com/images/logo.webp"
-        }
-      },
-      "datePublished": "2024-03-12T09:00:00+01:00",
-      "dateModified": "2026-03-14T10:00:00+01:00",
-      "description": "Discover the absolute best Bachata festivals in Europe for the year 2026. From the luxury of Milan to the massive scale of Bachaturo."
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
+      "@graph": [
         {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://milanosensualcongress.com/"
+          "@type": "Organization",
+          "@id": "https://milanosensualcongress.com/#organization",
+          "name": "Milano Sensual Congress",
+          "url": "https://milanosensualcongress.com",
+          "logo": "https://milanosensualcongress.com/images/logo.webp",
+          "sameAs": [
+            "https://www.instagram.com/milano_sensual_congress/"
+          ]
         },
         {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "News",
-          "item": "https://milanosensualcongress.com/news"
+          "@type": "WebSite",
+          "@id": "https://milanosensualcongress.com/#website",
+          "url": "https://milanosensualcongress.com",
+          "name": "Milano Sensual Congress",
+          "publisher": {
+            "@id": "https://milanosensualcongress.com/#organization"
+          }
         },
         {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Top 5 Must-Visit Bachata Congresses in Europe 2026"
+          "@type": "WebPage",
+          "@id": "https://milanosensualcongress.com/news/top-5-bachata-congresses-europe-2026#webpage",
+          "url": "https://milanosensualcongress.com/news/top-5-bachata-congresses-europe-2026",
+          "name": "Top 5 Must-Visit Bachata Congresses in Europe 2026 | Milano Sensual Congress",
+          "isPartOf": {
+            "@id": "https://milanosensualcongress.com/#website"
+          },
+          "breadcrumb": {
+            "@id": "https://milanosensualcongress.com/news/top-5-bachata-congresses-europe-2026#breadcrumb"
+          },
+          "inLanguage": "en-US",
+          "description": "Our expert guide to the top 5 Bachata festivals in Europe for 2026. Discover why Milano Sensual, Bachaturo, and others are the must-visit events this year."
+        },
+        {
+          "@type": "BlogPosting",
+          "@id": "https://milanosensualcongress.com/news/top-5-bachata-congresses-europe-2026#blogposting",
+          "mainEntityOfPage": {
+            "@id": "https://milanosensualcongress.com/news/top-5-bachata-congresses-europe-2026#webpage"
+          },
+          "headline": "Top 5 Must-Visit Bachata Congresses in Europe 2026",
+          "image": "https://milanosensualcongress.com/images/news/bachata_dancing_realistic.png",
+          "author": {
+            "@id": "https://milanosensualcongress.com/#organization"
+          },
+          "publisher": {
+            "@id": "https://milanosensualcongress.com/#organization"
+          },
+          "datePublished": "2024-03-12T09:00:00+01:00",
+          "dateModified": "2026-03-14T10:00:00+01:00",
+          "description": "Discover the absolute best Bachata festivals in Europe for the year 2026. From the luxury of Milan to the massive scale of Bachaturo."
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://milanosensualcongress.com/news/top-5-bachata-congresses-europe-2026#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://milanosensualcongress.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "News",
+              "item": "https://milanosensualcongress.com/news"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Top 5 Must-Visit Bachata Congresses in Europe 2026"
+            }
+          ]
         }
       ]
     }
-  ]
   </script>
 </head>
 

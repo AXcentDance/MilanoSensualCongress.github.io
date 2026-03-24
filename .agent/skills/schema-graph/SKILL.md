@@ -8,13 +8,13 @@ description: Guidelines for implementing a unified JSON-LD @graph structure for 
 Use this skill whenever you are modifying a page's metadata, adding a new page, or fixing SEO issues. This ensures that search engines (Google) and AI crawlers (Perplexity, OpenAI O1, Gemini) understand the semantic relationship between entities on your site.
 
 ## 1. Core Principles
-*   **One Tag to Rule Them All**: Use exactly one `<script type="application/ld+json">` tag in the `<head>`.
-*   **The @graph Array**: All entities must be contained within a top-level `@graph` array.
+*   **One Tag to Rule Them All**: Use exactly ONE `<script type="application/ld+json">` tag in the `<head>`. 
+*   **Unified Graph Mandate**: Any entity that CAN be part of the schema (FAQ, Events, BlogPosting, Organization, etc.) MUST be contained within the top-level `@graph` array.
+*   **Strict Consolidation**: Standalone JSON-LD tags elsewhere in the HTML are FORBIDDEN. If you find one, it must be merged into the head’s graph.
 *   **Persistent Identifiers (@id)**: Use canonical URLs with fragments (e.g., `#organization`, `#website`, `#webpage`) to cross-reference entities across the entire site.
 
 ## 2. Standard Global Entities
 Every page graph should reference these global entities for consistency:
-
 *   **Organization**: `https://milanosensualcongress.com/#organization`
 *   **WebSite**: `https://milanosensualcongress.com/#website`
 
@@ -29,7 +29,7 @@ Add the specific type of content for the page as a primary entity in the graph:
 *   **News Articles**: `BlogPosting`.
 *   **Contact Page**: `ContactPage`.
 *   **FAQ Sections**: `FAQPage`.
-*   **Hotel/Tickets**: `WebPage` with detailed `mainEntity`.
+*   **Hotel/Tickets**: `WebPage` with detailed `mainEntity` or specific sub-entities.
 
 ## 5. Implementation Template
 ```json
@@ -79,3 +79,4 @@ Add the specific type of content for the page as a primary entity in the graph:
 
 ## 6. Bilingual Consistency (Rule `it.md`)
 Whenever updating the `@graph` on an English page, immediately apply the same structural change to its Italian counterpart in `/it/`. Ensure the `inLanguage` property and all translated fields match the respective versions.
+
