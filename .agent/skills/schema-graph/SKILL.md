@@ -80,3 +80,7 @@ Add the specific type of content for the page as a primary entity in the graph:
 ## 6. Bilingual Consistency (Rule `it.md`)
 Whenever updating the `@graph` on an English page, immediately apply the same structural change to its Italian counterpart in `/it/`. Ensure the `inLanguage` property and all translated fields match the respective versions.
 
+
+
+## 7. Global Artist Entity Linking
+When referencing top-tier performers in `DanceEvent` or `Person` JSON-LD schema (e.g., Gero y Migle, Klau y Ros), you MUST use the `sameAs` explicit mapping linked to their official Instagram or core digital entity to bridge into Google's Knowledge Graph.
