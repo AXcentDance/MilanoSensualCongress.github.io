@@ -1,5 +1,5 @@
 # Milano Sensual Congress 2026 - Full Site Documentation
-# Generated automatically on 2026-03-27 01:03
+# Generated automatically on 2026-03-28 15:12
 # Total Pages: 37
 
 ## Page: Milano Sensual Congress 2026 | Official Bachata Congress Italy (index.html)
@@ -247,6 +247,18 @@ Hotel Page
 
 Yes, both Saturday and Sunday will have day socials only accessible for who has
  the Full Pass (not party pass).
+
+ Are the Bachata Masterclasses taught in English?
+
+Yes, all our international workshops, masterclasses, and main stage communications at the Milano Sensual Congress are conducted in 
+English
+ to accommodate our European and global attendees.
+
+ Which airport is best for the Milano Sensual Congress?
+
+Milan Bergamo Orio al Serio (BGY) and Milan Linate (LIN) are the closest, but Milan Malpensa (MXP) is also highly convenient. We offer 
+dedicated direct transport shuttles
+ from all three airports to the hotel.
 
 ---
 
@@ -499,6 +511,18 @@ Pagina Hotel
 
 Sì, sia Sabato che Domenica ci saranno social diurni accessibili solo a chi
  possiede il Full Pass (non il party pass).
+
+ Le lezioni e le masterclass di Bachata sono tradotte o in inglese?
+
+Sì, tutti i workshop internazionali, le masterclass e le comunicazioni dal palco per il Milano Sensual Congress si tengono in 
+lingua inglese
+ per accogliere il nostro pubblico europeo.
+
+ Qual è l'aeroporto migliore per raggiungere il Milano Sensual Congress?
+
+Milano Bergamo Orio al Serio (BGY) e Milano Linate (LIN) sono i più vicini, ma anche Milano Malpensa (MXP) è eccellente. Offriamo 
+navette dirette prenotabili
+ da tutti e tre gli aeroporti all'hotel.
 
 ---
 
@@ -2358,6 +2382,14 @@ Bachata News
 
 Track the evolution of the congress and stay updated with every milestone.
 
+March 26, 2026
+
+Artist Spotlight: Klau y Ros
+
+Discover the signature Endless Bachata style of Klau y Ros. The international Bachata masters joining Milano Sensual Congress 2026.
+
+Read Article 
+
 March 24, 2026
 
 Artist Spotlight: Gero y Migle
@@ -2806,6 +2838,14 @@ Notizie Bachata
 & Aggiornamenti Festival
 
 Traccia l'evoluzione del congresso e rimani aggiornato su ogni traguardo.
+
+26 Marzo 2026
+
+Riflettori sugli Artisti: Klau y Ros
+
+Scopri lo stile inconfondibile Endless Bachata di Klau y Ros. I maestri internazionali si uniscono al Milano Sensual Congress 2026.
+
+Leggi l'articolo 
 
 24 Marzo, 2026
 
