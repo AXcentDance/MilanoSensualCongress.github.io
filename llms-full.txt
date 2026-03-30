@@ -2,10 +2,10 @@
 # Generated automatically on 2026-03-30 01:01
 # Total Pages: 37
 
-## Page: Milano Sensual Congress 2026 | Official Bachata Congress Italy (index.html)
-Description: The official Milano Sensual Congress 2026 (Nov 20-22). The #1 Bachata Congress in Italy and premier Bachata Sensual Congress. Join World-class artists in Milan.
+## Page: Milano Sensual Congress 2026 | Europe's Leading Bachata Congress (index.html)
+Description: The official Milano Sensual Congress 2026 (Nov 20-22). Europe's leading Bachata congress and the #1 Bachata Sensual event in Italy. Join world-class artists in Milan.
 
-Milano Sensual Congress 2026 | Official Bachata Congress Italy
+Milano Sensual Congress 2026 | Europe's Leading Bachata Congress
 
  Your browser does not support the video tag.
 
@@ -262,10 +262,10 @@ dedicated direct transport shuttles
 
 ---
 
-## Page: Milano Sensual Congress 2026 | Il Congresso Bachata Ufficiale in Italia (it/index.html)
-Description: Partecipa al Milano Sensual Congress (20-22 Nov), l'evento imperdibile tra i congressi bachata 2026 in Italia. Artisti internazionali e feste esclusive a Milano.
+## Page: Milano Sensual Congress 2026 | Il Congresso Bachata Leader in Europa (it/index.html)
+Description: Il Milano Sensual Congress 2026 (20-22 Nov): il congresso bachata leader in Europa e l'evento #1 in Italia. Workshop internazionali, hotel di lusso e party esclusivi.
 
-Milano Sensual Congress 2026 | Il Congresso Bachata Ufficiale in Italia
+Milano Sensual Congress 2026 | Il Congresso Bachata Leader in Europa
 
  Il tuo browser non supporta il tag video.
 
@@ -3287,3 +3287,13 @@ Deve essere prenotato in anticipo.
 
 ---
 
+
+---
+
+## Page: From Social Dancer to International Artist: The Milano Sensual Jack & Jill 2026 (news/international-bachata-jack-and-jill-2026.html)
+Description: Join the International Bachata Jack & Jill at Milano Sensual Congress 2026. Compete for a spot in the 2027 artist lineup and more. International judges and top dancers from Europe.
+Content: The International Jack & Jill at Milano Sensual Congress 2026 rewards the next star with an Official Artist Slot for 2027. International judges from all over Europe. Entry fee 10 EUR for pass holders. Sunday competition.
+
+## Page: Da Social Dancer ad Artista Internazionale: Il Jack & Jill del Milano Sensual Congress 2026 (it/news/jack-and-jill-internazionale-bachata-2026.html)
+Description: Partecipa al Jack & Jill internazionale di Bachata al Milano Sensual Congress 2026. Competi per un posto nella lineup degli artisti 2027. Giudici internazionali e i migliori ballerini d'Europa.
+Content: Il Jack & Jill del Milano Sensual Congress 2026 è il ponte verso il professionismo. Premio: Slot Artista 2027 e Full Pass. Giudici internazionali. Iscrizione 10 EUR per i possessori di pass. Domenica gara finale.
