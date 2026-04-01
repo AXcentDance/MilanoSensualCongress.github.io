@@ -868,7 +868,7 @@
           .then(async response => {
             if (response.ok) {
               // OPTIONAL: Send to Google Sheet if URL is provided
-              const GOOGLE_SHEET_URL = ""; // Paste URL here
+              const GOOGLE_SHEET_URL = "https://script.google.com/macros/s/AKfycbwrNAbUFKKdY9lCJgZC1TJdRE3L6P-TWG1fwd0R4KpkbTeLfbTVxjqN6nBbkijqR53psw/exec"; // Paste URL here
               if (GOOGLE_SHEET_URL) {
                 fetch(GOOGLE_SHEET_URL, {
                   method: 'POST',
