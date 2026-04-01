@@ -855,7 +855,6 @@
           }
         })
           .then(async response => {
-            const result = await response.json();
             if (response.ok) {
               container.innerHTML = `
                 <div class="animate-fade-in-up text-center py-2">
@@ -864,15 +863,14 @@
                 </div>
               `;
             } else {
-              console.error('FormSubmit Error:', result);
-              throw new Error(result.message || 'Invio fallito');
+              // Fallback all'invio standard se l'AJAX viene rifiutato
+              form.submit();
             }
           })
           .catch((error) => {
             console.error('Submission Error:', error);
-            button.innerHTML = originalButtonText;
-            button.disabled = false;
-            alert('Errore durante l\'invio della richiesta. Riprova o contattaci direttamente.');
+            // Fallback all'invio standard se l'AJAX è bloccato o fallisce
+            form.submit();
           });
       });
     }

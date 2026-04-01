@@ -694,7 +694,6 @@
           }
         })
           .then(async response => {
-            const result = await response.json();
             if (response.ok) {
               container.innerHTML = `
                 <div class="animate-fade-in-up text-center py-2">
@@ -703,15 +702,14 @@
                 </div>
               `;
             } else {
-              console.error('FormSubmit Error:', result);
-              throw new Error(result.message || 'Submission failed');
+              // Fallback to standard submission if AJAX is rejected
+              form.submit();
             }
           })
           .catch((error) => {
             console.error('Submission Error:', error);
-            button.innerHTML = originalButtonText;
-            button.disabled = false;
-            alert('Oops! There was a problem. Please try again or contact us directly.');
+            // Fallback to standard submission if AJAX is blocked/fails
+            form.submit();
           });
       });
     }
