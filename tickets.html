@@ -378,7 +378,7 @@
           
           <div id="reminder-container" class="w-full pt-6 border-t border-white/10">
             <p class="text-white text-[10px] font-bold tracking-[0.2em] uppercase mb-4 text-center opacity-90">GET A REMINDER ON THE DAY OF THE INCREASE</p>
-            <form id="reminder-form" action="https://formsubmit.co/ajax/slamitzam@gmail.com" method="POST" class="flex flex-col md:flex-row gap-3 items-center justify-center">
+            <form id="reminder-form" action="https://formspree.io/f/slamitzam@gmail.com" method="POST" class="flex flex-col md:flex-row gap-3 items-center justify-center">
               <input type="hidden" name="_subject" value="New Reminder Request - Milano Sensual Congress">
               <input type="hidden" name="_template" value="table">
               <input type="hidden" name="_captcha" value="false">
@@ -697,21 +697,22 @@
             if (response.ok) {
               container.innerHTML = `
                 <div class="animate-fade-in-up text-center py-2">
-                  <p class="text-white text-xl font-serif mb-2">We will remind you! 😊</p>
-                  <a href="artists" class="text-pink-400 text-xs font-bold tracking-widest uppercase hover:text-pink-300 transition-colors underline decoration-pink-500/30">Check the lineup in the meanwhile &rarr;</a>
+                  <p class="text-white text-xl font-serif mb-2">Almost done! 😊</p>
+                  <p class="text-slate-300 text-xs mb-3">Please check <strong>${data.email}</strong> to verify your request.</p>
+                  <a href="artists" class="text-pink-400 text-xs font-bold tracking-widest uppercase hover:text-pink-300 transition-colors underline decoration-pink-500/30">Check the lineup while you wait &rarr;</a>
                 </div>
               `;
             } else {
-              throw new Error('Provider Issue');
+              throw new Error('Formspree Failure');
             }
           })
           .catch((error) => {
             console.error('Submission Error:', error);
-            // Handle Provider Outage with a direct contact option
+            // Handle service issue with a direct contact option
             container.innerHTML = `
               <div class="animate-fade-in-up text-center py-2">
-                <p class="text-white text-sm font-bold mb-3 uppercase tracking-wider text-pink-400">Service unreachable</p>
-                <p class="text-slate-300 text-xs mb-4">Our form provider is having issues. Please register via WhatsApp instead:</p>
+                <p class="text-white text-sm font-bold mb-3 uppercase tracking-wider text-pink-400">Submission issue</p>
+                <p class="text-slate-300 text-xs mb-4">We're having trouble with the email service. Register via WhatsApp instead:</p>
                 <div class="flex flex-col gap-3">
                   <a href="https://wa.me/41799668481?text=Hi! I want a reminder for the Milano Sensual Congress price increase. My email is: ${data.email}" 
                      target="_blank"

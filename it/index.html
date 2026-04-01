@@ -397,7 +397,7 @@
           
           <div id="reminder-container" class="w-full pt-6 border-t border-white/10">
             <p class="text-white text-[10px] font-bold tracking-[0.2em] uppercase mb-4 text-center opacity-90">AVVISAMI IL GIORNO DELL'AUMENTO</p>
-            <form id="reminder-form" action="https://formsubmit.co/ajax/slamitzam@gmail.com" method="POST" class="flex flex-col md:flex-row gap-3 items-center justify-center">
+            <form id="reminder-form" action="https://formspree.io/f/slamitzam@gmail.com" method="POST" class="flex flex-col md:flex-row gap-3 items-center justify-center">
               <input type="hidden" name="_subject" value="Nuova Richiesta Promemoria - Milano Sensual Congress">
               <input type="hidden" name="_template" value="table">
               <input type="hidden" name="_captcha" value="false">
@@ -858,12 +858,13 @@
             if (response.ok) {
               container.innerHTML = `
                 <div class="animate-fade-in-up text-center py-2">
-                  <p class="text-white text-xl font-serif mb-2">Ti avviseremo! 😊</p>
+                  <p class="text-white text-xl font-serif mb-2">Quasi fatto! 😊</p>
+                  <p class="text-slate-300 text-xs mb-3">Controlla la tua email <strong>${data.email}</strong> per confermare la richiesta.</p>
                   <a href="artists" class="text-pink-400 text-xs font-bold tracking-widest uppercase hover:text-pink-300 transition-colors underline decoration-pink-500/30">Controlla la lineup nel frattempo &rarr;</a>
                 </div>
               `;
             } else {
-              throw new Error('Provider Issue');
+              throw new Error('Formspree Failure');
             }
           })
           .catch((error) => {
@@ -871,8 +872,8 @@
             // Gestione del disservizio del provider con contatto diretto
             container.innerHTML = `
               <div class="animate-fade-in-up text-center py-2">
-                <p class="text-white text-sm font-bold mb-3 uppercase tracking-wider text-pink-400">Servizio non raggiungibile</p>
-                <p class="text-slate-300 text-xs mb-4">Il nostro sistema di invio sta riscontrando problemi. Registra la tua email comodamente via WhatsApp:</p>
+                <p class="text-white text-sm font-bold mb-3 uppercase tracking-wider text-pink-400">Problema di invio</p>
+                <p class="text-slate-300 text-xs mb-4">Stiamo riscontrando problemi con il servizio email. Registrati via WhatsApp:</p>
                 <div class="flex flex-col gap-3">
                   <a href="https://wa.me/393333935911?text=Ciao! Vorrei ricevere un promemoria per l'aumento dei prezzi del Milano Sensual Congress. La mia email è: ${data.email}" 
                      target="_blank"
