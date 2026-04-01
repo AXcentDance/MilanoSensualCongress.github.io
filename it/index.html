@@ -844,23 +844,14 @@
         const formData = new FormData(form);
         const data = Object.fromEntries(formData.entries());
 
-        // 1. Log to Google Sheet FIRST (Independent GET - 100% reliable)
-        const GOOGLE_SHEET_URL = "https://script.google.com/macros/s/AKfycbwrNAbUFKKdY9lCJgZC1TJdRE3L6P-TWG1fwd0R4KpkbTeLfbTVxjqN6nBbkijqR53psw/exec";
-        if (GOOGLE_SHEET_URL) {
-          const sheetUrl = `${GOOGLE_SHEET_URL}?email=${encodeURIComponent(data.email)}&source=${encodeURIComponent('Home - IT')}`;
-          fetch(sheetUrl, { mode: 'no-cors' }).catch(e => console.log('Sheet skipped', e));
-        }
-
-        // 2. Submit to Formspree via AJAX
-        fetch(form.action, {
-          method: 'POST',
-          body: JSON.stringify(data),
-          headers: { 
-            'Content-Type': 'application/json',
-            'Accept': 'application/json' 
-          }
-        })
-        .then(response => {
+        // ALL-IN-ONE URL (Sheet + Email)
+        const AIO_URL = "https://script.google.com/macros/s/AKfycbwrNAbUFKKdY9lCJgZC1TJdRE3L6P-TWG1fwd0R4KpkbTeLfbTVxjqN6nBbkijqR53psw/exec";
+        
+        // Single Tracking Pixel Submit (GET - 100% reliable)
+        const submitUrl = `${AIO_URL}?email=${encodeURIComponent(data.email)}&source=${encodeURIComponent('Home - IT')}`;
+        
+        fetch(submitUrl, { mode: 'no-cors' })
+        .then(() => {
           container.innerHTML = `
             <div class="animate-fade-in-up text-center py-2">
               <p class="text-white text-xl font-serif mb-2">Quasi fatto! 😊</p>
@@ -869,9 +860,21 @@
             </div>
           `;
         })
-        .catch(error => {
-          console.warn('AJAX error, falling back to standard submit', error);
-          form.submit();
+        .catch(err => {
+          console.warn("Script issue, fallback to WhatsApp", err);
+          container.innerHTML = `
+            <div class="animate-fade-in-up text-center py-2">
+              <p class="text-white text-sm font-bold mb-3 uppercase tracking-wider text-pink-400">Errore invio</p>
+              <p class="text-slate-300 text-xs mb-4">Problemi con il servizio email. Registrati via WhatsApp:</p>
+              <div class="flex flex-col gap-3">
+                <a href="https://wa.me/41799668481?text=Ciao! Vorrei un promemoria per il Milano Sensual Congress. La mia email è: ${data.email}" 
+                   target="_blank"
+                   class="bg-green-600 hover:bg-green-500 text-white py-2 px-6 rounded-full font-bold text-xs transition-all flex items-center justify-center gap-2">
+                  <i class="fa-brands fa-whatsapp text-lg"></i> Invia con WhatsApp
+                </a>
+              </div>
+            </div>
+          `;
         });
       });
     }
