@@ -677,14 +677,24 @@
         const form = this;
         const container = document.getElementById('reminder-container');
         const button = form.querySelector('button');
-        const originalButtonText = button.innerHTML;
-
-        button.innerHTML = '<i class="fa-solid fa-circle-notch animate-spin"></i> Sending...';
+        button.innerHTML = '<i class="fa-solid fa-circle-notch animate-spin"></i> Processing...';
         button.disabled = true;
 
         const formData = new FormData(form);
         const data = Object.fromEntries(formData.entries());
 
+        // 1. Log to Google Sheet FIRST (Independent)
+        const GOOGLE_SHEET_URL = "https://script.google.com/macros/s/AKfycbwrNAbUFKKdY9lCJgZC1TJdRE3L6P-TWG1fwd0R4KpkbTeLfbTVxjqN6nBbkijqR53psw/exec";
+        if (GOOGLE_SHEET_URL) {
+          fetch(GOOGLE_SHEET_URL, {
+            method: 'POST',
+            mode: 'no-cors',
+            body: JSON.stringify({...data, source: 'Tickets - EN'}),
+            headers: { 'Content-Type': 'application/json' }
+          }).catch(e => console.log('Sheet skipped', e));
+        }
+
+        // 2. Submit to Formspree via AJAX
         fetch(form.action, {
           method: 'POST',
           body: JSON.stringify(data),
@@ -693,49 +703,18 @@
             'Accept': 'application/json' 
           }
         })
-          .then(async response => {
-            if (response.ok) {
-              // OPTIONAL: Send to Google Sheet if URL is provided
-              const GOOGLE_SHEET_URL = "https://script.google.com/macros/s/AKfycbwrNAbUFKKdY9lCJgZC1TJdRE3L6P-TWG1fwd0R4KpkbTeLfbTVxjqN6nBbkijqR53psw/exec"; // Paste URL here
-              if (GOOGLE_SHEET_URL) {
-                fetch(GOOGLE_SHEET_URL, {
-                  method: 'POST',
-                  mode: 'no-cors',
-                  body: JSON.stringify({...data, source: 'Tickets - EN'}),
-                  headers: { 'Content-Type': 'application/json' }
-                }).catch(e => console.error('Sheet Logging Failed', e));
-              }
-
-              container.innerHTML = `
-                <div class="animate-fade-in-up text-center py-2">
-                  <p class="text-white text-xl font-serif mb-2">Almost done! 😊</p>
-                  <p class="text-slate-300 text-xs mb-3">Please check <strong>${data.email}</strong> to verify your request.</p>
-                  <a href="artists" class="text-pink-400 text-xs font-bold tracking-widest uppercase hover:text-pink-300 transition-colors underline decoration-pink-500/30">Check the lineup while you wait &rarr;</a>
-                </div>
-              `;
-            } else {
-              throw new Error('Formspree Failure');
-            }
-          })
-          .catch((error) => {
-            console.error('Submission Error:', error);
-            // Handle service issue with a direct contact option
-            container.innerHTML = `
-              <div class="animate-fade-in-up text-center py-2">
-                <p class="text-white text-sm font-bold mb-3 uppercase tracking-wider text-pink-400">Submission issue</p>
-                <p class="text-slate-300 text-xs mb-4">We're having trouble with the email service. Register via WhatsApp instead:</p>
-                <div class="flex flex-col gap-3">
-                  <a href="https://wa.me/41799668481?text=Hi! I want a reminder for the Milano Sensual Congress price increase. My email is: ${data.email}" 
-                     target="_blank"
-                     class="bg-green-600 hover:bg-green-500 text-white py-2 px-6 rounded-full font-bold text-xs transition-all flex items-center justify-center gap-2">
-                    <i class="fa-brands fa-whatsapp text-lg"></i> Send via WhatsApp
-                  </a>
-                  <a href="mailto:slamitzam@gmail.com?subject=Reminder Request&body=Hi! Please remind me when prices increase. Email: ${data.email}" 
-                     class="text-slate-400 hover:text-white text-[10px] underline decoration-white/20">or send us an Email</a>
-                </div>
-              </div>
-            `;
-          });
+        .then(response => {
+          container.innerHTML = `
+            <div class="animate-fade-in-up text-center py-2">
+              <p class="text-white text-xl font-serif mb-2">Almost done! 😊</p>
+              <p class="text-slate-300 text-xs mb-3">Please check <strong>${data.email}</strong> to verify your request.</p>
+            </div>
+          `;
+        })
+        .catch(error => {
+          console.warn('AJAX error, falling back to standard submit', error);
+          form.submit();
+        });
       });
     }
   </script>
