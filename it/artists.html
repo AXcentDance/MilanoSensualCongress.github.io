@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="it" class="scroll-smooth">
 
 <head>
   <meta charset="UTF-8">
@@ -32,108 +32,145 @@
     {
       "@context": "https://schema.org",
       "@graph": [
+    {
+      "@type": "Airport",
+      "@id": "https://en.wikipedia.org/wiki/Milan_Malpensa_Airport",
+      "name": "Aeroporto di Milano-Malpensa",
+      "iataCode": "MXP",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Fernon",
+        "addressRegion": "VA",
+        "addressCountry": "IT"
+      }
+    },
+    {
+      "@type": "Airport",
+      "@id": "https://en.wikipedia.org/wiki/Linate_Airport",
+      "name": "Aeroporto di Milano-Linate",
+      "iataCode": "LIN",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Milan",
+        "addressRegion": "MI",
+        "addressCountry": "IT"
+      }
+    },
+    {
+      "@type": "Airport",
+      "@id": "https://en.wikipedia.org/wiki/Orio_al_Serio_International_Airport",
+      "name": "Aeroporto di Bergamo-Orio al Serio",
+      "iataCode": "BGY",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Bergamo",
+        "addressRegion": "BG",
+        "addressCountry": "IT"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://milanosensualcongress.com/#organization",
+      "name": "Milano Sensual Congress",
+      "url": "https://milanosensualcongress.com",
+      "logo": "https://milanosensualcongress.com/images/logo.webp",
+      "sameAs": [
+        "https://www.instagram.com/milano_sensual_congress/"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://milanosensualcongress.com/#website",
+      "url": "https://milanosensualcongress.com",
+      "name": "Milano Sensual Congress",
+      "publisher": {
+        "@id": "https://milanosensualcongress.com/#organization"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://milanosensualcongress.com/it/artists#webpage",
+      "url": "https://milanosensualcongress.com/it/artists",
+      "name": "Artisti & Workshop Bachata 2026 | Milano Sensual Congress",
+      "isPartOf": {
+        "@id": "https://milanosensualcongress.com/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://milanosensualcongress.com/it/artists#breadcrumb"
+      },
+      "inLanguage": "it-IT",
+      "description": "Scopri la lineup di classe mondiale al Milano Sensual Congress. Con Gero y Migle, Klaus y Ros, e altri top artisti di Bachata Sensual che terranno workshop e show a Milano."
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://milanosensualcongress.com/it/artists#breadcrumb",
+      "itemListElement": [
         {
-          "@type": "Organization",
-          "@id": "https://milanosensualcongress.com/#organization",
-          "name": "Milano Sensual Congress",
-          "url": "https://milanosensualcongress.com",
-          "logo": "https://milanosensualcongress.com/images/logo.webp",
-          "sameAs": [
-            "https://www.instagram.com/milano_sensual_congress/"
-          ]
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://milanosensualcongress.com/it/"
         },
         {
-          "@type": "WebSite",
-          "@id": "https://milanosensualcongress.com/#website",
-          "url": "https://milanosensualcongress.com",
-          "name": "Milano Sensual Congress",
-          "publisher": {
-            "@id": "https://milanosensualcongress.com/#organization"
-          }
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://milanosensualcongress.com/it/artists#webpage",
-          "url": "https://milanosensualcongress.com/it/artists",
-          "name": "Artisti & Workshop Bachata 2026 | Milano Sensual Congress",
-          "isPartOf": {
-            "@id": "https://milanosensualcongress.com/#website"
-          },
-          "breadcrumb": {
-            "@id": "https://milanosensualcongress.com/it/artists#breadcrumb"
-          },
-          "inLanguage": "it-IT",
-          "description": "Scopri la lineup di classe mondiale al Milano Sensual Congress. Con Gero y Migle, Klaus y Ros, e altri top artisti di Bachata Sensual che terranno workshop e show a Milano."
-        },
-        {
-          "@type": "BreadcrumbList",
-          "@id": "https://milanosensualcongress.com/it/artists#breadcrumb",
-          "itemListElement": [
-            {
-              "@type": "ListItem",
-              "position": 1,
-              "name": "Home",
-              "item": "https://milanosensualcongress.com/it/"
-            },
-            {
-              "@type": "ListItem",
-              "position": 2,
-              "name": "Artisti",
-              "item": "https://milanosensualcongress.com/it/artists"
-            }
-          ]
-        },
-        {
-          "@type": "DanceEvent",
-          "audience": {
-            "@type": "Audience",
-            "audienceType": "Bachata Dancers",
-            "geographicArea": {
-              "@type": "AdministrativeArea",
-              "name": "Europe"
-            }
-          },
-          "@id": "https://milanosensualcongress.com/#event",
-          "name": "Milano Sensual Congress 2026",
-          "description": "Il principale congresso di Bachata a Milano con workshop, spettacoli e social dance.",
-          "startDate": "2026-11-20T12:00",
-          "endDate": "2026-11-22T23:59",
-          "eventStatus": "https://schema.org/EventScheduled",
-          "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-          "location": {
-            "@type": "Place",
-            "name": "Devero Hotel",
-            "address": {
-              "@type": "PostalAddress",
-              "addressLocality": "Cavenago di Brianza",
-              "addressRegion": "MB",
-              "postalCode": "20873",
-              "addressCountry": "IT"
-            }
-          },
-          "image": [
-            "https://milanosensualcongress.com/images/logo.webp"
-          ],
-          "organizer": {
-            "@id": "https://milanosensualcongress.com/#organization"
-          },
-          "performer": [
-            { "@type": "Person", "name": "Gero y Migle",
-              "sameAs": "https://www.instagram.com/geroymigle_official/" },
-            { "@type": "Person", "name": "Klaus y Ros",
-              "sameAs": "https://www.instagram.com/klausyros/" },
-            { "@type": "Person", "name": "Cristian y Gabriella",
-              "sameAs": "https://www.instagram.com/cristianygabriella_official/" },
-            { "@type": "Person", "name": "Nacho y Silvia",
-              "sameAs": "https://www.instagram.com/nachoysilvia/" },
-            { "@type": "Person", "name": "Agustín y Alba",
-              "sameAs": "https://www.instagram.com/agustinyalba_official/" },
-            { "@type": "Person", "name": "Irene y Tomás",
-              "sameAs": "https://www.instagram.com/ireneytomas/" },
-            { "@type": "Person", "name": "Aitor Gomez",
-              "sameAs": "https://www.instagram.com/aitorgomez_bachata/" }
-          ]
-        },
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Artisti",
+          "item": "https://milanosensualcongress.com/it/artists"
+        }
+      ]
+    },
+    {
+      "@type": "DanceEvent",
+      "@id": "https://milanosensualcongress.com/#event",
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Bachata Dancers",
+        "geographicArea": {
+          "@type": "AdministrativeArea",
+          "name": "Europe"
+        }
+      },
+      "mainEntityOfPage": {
+        "@id": "https://milanosensualcongress.com/it/artists#webpage"
+      },
+      "name": "Milano Sensual Congress 2026",
+      "description": "Il principale congresso di Bachata a Milano con workshop, spettacoli e social dance.",
+      "startDate": "2026-11-20T12:00",
+      "endDate": "2026-11-22T23:59",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "location": {
+        "@type": "Place",
+        "name": "Devero Hotel",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Milan",
+          "addressCountry": "IT"
+        }
+      },
+      "image": [
+        "https://milanosensualcongress.com/images/logo.webp"
+      ],
+      "organizer": {
+        "@id": "https://milanosensualcongress.com/#organization"
+      },
+      "performer": [
+        { "@type": "Person", "name": "Gero y Migle",
+          "sameAs": "https://www.instagram.com/geroymigle_official/" },
+        { "@type": "Person", "name": "Klaus y Ros",
+          "sameAs": "https://www.instagram.com/klausyros/" },
+        { "@type": "Person", "name": "Cristian y Gabriella",
+          "sameAs": "https://www.instagram.com/cristianygabriella_official/" },
+        { "@type": "Person", "name": "Nacho y Silvia",
+          "sameAs": "https://www.instagram.com/nachoysilvia/" },
+        { "@type": "Person", "name": "Agustín y Alba",
+          "sameAs": "https://www.instagram.com/agustinyalba_official/" },
+        { "@type": "Person", "name": "Irene y Tomás",
+          "sameAs": "https://www.instagram.com/ireneytomas/" },
+        { "@type": "Person", "name": "Aitor Gomez",
+          "sameAs": "https://www.instagram.com/aitorgomez_bachata/" }
+      ]
+    },
         {
           "@type": "ItemList",
           "mainEntityOfPage": {
@@ -390,9 +427,12 @@
                 <h2
                   class="text-xl font-serif font-bold text-white leading-tight group-hover:text-pink-400 transition-colors">
                   Gero y Migle</h2>
-                <p class="text-slate-300 flex items-center gap-2 text-xs mt-1"><span
-                    class="w-2 h-2 rounded-full bg-gradient-to-r from-pink-500 to-purple-500 inline-block"></span>
-                  Spagna</p>
+                <div class="flex items-center justify-between mt-1">
+                  <p class="text-slate-300 flex items-center gap-2 text-xs"><span
+                      class="w-2 h-2 rounded-full bg-gradient-to-r from-pink-500 to-purple-500 inline-block"></span>
+                    Spagna</p>
+                  <a href="news/gero-y-migle-maestri-bachata-sensual-2026" class="text-[10px] text-pink-400 font-bold uppercase tracking-wider hover:text-white transition-colors">Leggi Spotlight &rarr;</a>
+                </div>
               </div>
             </div>
           </div>
@@ -405,9 +445,12 @@
                 <h3
                   class="text-xl font-serif font-bold text-white leading-tight group-hover:text-pink-400 transition-colors">
                   Klau y Ros</h3>
-                <p class="text-slate-300 flex items-center gap-2 text-xs mt-1"><span
-                    class="w-2 h-2 rounded-full bg-gradient-to-r from-pink-500 to-purple-500 inline-block"></span>
-                  Spagna</p>
+                <div class="flex items-center justify-between mt-1">
+                  <p class="text-slate-300 flex items-center gap-2 text-xs"><span
+                      class="w-2 h-2 rounded-full bg-gradient-to-r from-pink-500 to-purple-500 inline-block"></span>
+                    Polonia / Spagna</p>
+                  <a href="news/klau-y-ros-maestri-endless-bachata-2026" class="text-[10px] text-pink-400 font-bold uppercase tracking-wider hover:text-white transition-colors">Leggi Spotlight &rarr;</a>
+                </div>
               </div>
             </div>
           </div>

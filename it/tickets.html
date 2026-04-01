@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="it" class="scroll-smooth">
 
 <head>
   <meta charset="UTF-8">
@@ -33,6 +33,42 @@
 {
   "@context": "https://schema.org",
   "@graph": [
+    {
+      "@type": "Airport",
+      "@id": "https://en.wikipedia.org/wiki/Milan_Malpensa_Airport",
+      "name": "Aeroporto di Milano-Malpensa",
+      "iataCode": "MXP",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Fernon",
+        "addressRegion": "VA",
+        "addressCountry": "IT"
+      }
+    },
+    {
+      "@type": "Airport",
+      "@id": "https://en.wikipedia.org/wiki/Linate_Airport",
+      "name": "Aeroporto di Milano-Linate",
+      "iataCode": "LIN",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Milan",
+        "addressRegion": "MI",
+        "addressCountry": "IT"
+      }
+    },
+    {
+      "@type": "Airport",
+      "@id": "https://en.wikipedia.org/wiki/Orio_al_Serio_International_Airport",
+      "name": "Aeroporto di Bergamo-Orio al Serio",
+      "iataCode": "BGY",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Bergamo",
+        "addressRegion": "BG",
+        "addressCountry": "IT"
+      }
+    },
     {
       "@type": "Organization",
       "@id": "https://milanosensualcongress.com/#organization",
@@ -86,6 +122,7 @@
     },
     {
       "@type": "DanceEvent",
+      "@id": "https://milanosensualcongress.com/#event",
       "audience": {
         "@type": "Audience",
         "audienceType": "Bachata Dancers",
@@ -94,7 +131,6 @@
           "name": "Europe"
         }
       },
-      "@id": "https://milanosensualcongress.com/#event",
       "mainEntityOfPage": {
         "@id": "https://milanosensualcongress.com/it/tickets#webpage"
       },
@@ -207,8 +243,10 @@
           "@type": "Question",
           "name": "Where is the event located?",
           "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "The event takes place entirely at the <strong>Devero\n                Hotel</strong> in Cavenago di Brianza. This 4-star exclusive venue hosts all workshops, day socials, and\n              night parties under one roof."
+            "@type": {
+              "@type": "Answer",
+              "text": "The event takes place entirely at the <strong>Devero\n                Hotel</strong> in Cavenago di Brianza. This 4-star exclusive venue hosts all workshops, day socials, and\n              night parties under one roof."
+            }
           }
         }
       ]
@@ -652,7 +690,8 @@
             'Accept': 'application/json' 
           }
         })
-          .then(response => {
+          .then(async response => {
+            const result = await response.json();
             if (response.ok) {
               container.innerHTML = `
                 <div class="animate-fade-in-up text-center py-2">
@@ -661,13 +700,15 @@
                 </div>
               `;
             } else {
-              throw new Error();
+              console.error('FormSubmit Error:', result);
+              throw new Error(result.message || 'Invio fallito');
             }
           })
-          .catch(() => {
+          .catch((error) => {
+            console.error('Submission Error:', error);
             button.innerHTML = originalButtonText;
             button.disabled = false;
-            alert('Errore durante l\'invio della richiesta. Riprova.');
+            alert('Errore durante l\'invio della richiesta. Riprova o contattaci direttamente.');
           });
       });
     }

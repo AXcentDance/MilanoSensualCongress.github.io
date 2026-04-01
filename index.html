@@ -28,19 +28,37 @@
       "@type": "Airport",
       "@id": "https://en.wikipedia.org/wiki/Milan_Malpensa_Airport",
       "name": "Milan Malpensa Airport",
-      "iataCode": "MXP"
+      "iataCode": "MXP",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Fernon",
+        "addressRegion": "VA",
+        "addressCountry": "IT"
+      }
     },
     {
       "@type": "Airport",
       "@id": "https://en.wikipedia.org/wiki/Linate_Airport",
-      "name": "Milan Linate Airport",
-      "iataCode": "LIN"
+      "name": "Linate Airport",
+      "iataCode": "LIN",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Milan",
+        "addressRegion": "MI",
+        "addressCountry": "IT"
+      }
     },
     {
       "@type": "Airport",
       "@id": "https://en.wikipedia.org/wiki/Orio_al_Serio_International_Airport",
       "name": "Orio al Serio International Airport",
-      "iataCode": "BGY"
+      "iataCode": "BGY",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Bergamo",
+        "addressRegion": "BG",
+        "addressCountry": "IT"
+      }
     },
     {
       "@type": "Organization",
@@ -75,6 +93,7 @@
     },
     {
       "@type": "DanceEvent",
+      "@id": "https://milanosensualcongress.com/#event",
       "audience": {
         "@type": "Audience",
         "audienceType": "Bachata Dancers",
@@ -93,13 +112,10 @@
       "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
       "location": {
         "@type": "Place",
-        "name": "Devero Hotel & Spa",
+        "name": "Devero Hotel",
         "address": {
           "@type": "PostalAddress",
-          "streetAddress": "Largo Kennedy 1",
-          "addressLocality": "Cavenago di Brianza",
-          "postalCode": "20873",
-          "addressRegion": "MB",
+          "addressLocality": "Milan",
           "addressCountry": "IT"
         }
       },
@@ -370,7 +386,10 @@
           class="text-transparent bg-clip-text bg-gradient-to-r from-pink-400 via-purple-400 to-indigo-400">Bachata
           Congress</span>
       </h1>
-      <p class="text-xl md:text-2xl text-slate-300 font-light tracking-widest uppercase mb-8">20 - 21 - 22 November 2026</p>
+      <p class="text-xl md:text-2xl text-slate-300 font-light tracking-widest uppercase mb-4">20 - 21 - 22 November 2026</p>
+      <p class="text-slate-400 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed font-light mb-8">Join the most
+        exclusive <strong>Bachata Congress in Milan, Italy</strong>. Experience the luxury of a 4-star executive
+        hotel in the heart of Lombardy, featuring world-class masters and a high-stakes International Jack & Jill competition.</p>
 
       <!-- Countdown & Reminder -->
       <div id="countdown" class="animate-fade-in-up mb-12 flex justify-center" style="animation-delay:.1s">
@@ -846,7 +865,8 @@
             'Accept': 'application/json' 
           }
         })
-          .then(response => {
+          .then(async response => {
+            const result = await response.json();
             if (response.ok) {
               container.innerHTML = `
                 <div class="animate-fade-in-up text-center py-2">
@@ -855,13 +875,15 @@
                 </div>
               `;
             } else {
-              throw new Error();
+              console.error('FormSubmit Error:', result);
+              throw new Error(result.message || 'Submission failed');
             }
           })
-          .catch(() => {
+          .catch((error) => {
+            console.error('Submission Error:', error);
             button.innerHTML = originalButtonText;
             button.disabled = false;
-            alert('Oops! There was a problem. Please try again.');
+            alert('Oops! There was a problem. Please try again or contact us directly.');
           });
       });
     }

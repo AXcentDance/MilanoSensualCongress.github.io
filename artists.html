@@ -34,6 +34,42 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "Airport",
+      "@id": "https://en.wikipedia.org/wiki/Milan_Malpensa_Airport",
+      "name": "Milan Malpensa Airport",
+      "iataCode": "MXP",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Fernon",
+        "addressRegion": "VA",
+        "addressCountry": "IT"
+      }
+    },
+    {
+      "@type": "Airport",
+      "@id": "https://en.wikipedia.org/wiki/Linate_Airport",
+      "name": "Linate Airport",
+      "iataCode": "LIN",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Milan",
+        "addressRegion": "MI",
+        "addressCountry": "IT"
+      }
+    },
+    {
+      "@type": "Airport",
+      "@id": "https://en.wikipedia.org/wiki/Orio_al_Serio_International_Airport",
+      "name": "Bergamo Orio al Serio Airport",
+      "iataCode": "BGY",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Bergamo",
+        "addressRegion": "BG",
+        "addressCountry": "IT"
+      }
+    },
+    {
       "@type": "Organization",
       "@id": "https://milanosensualcongress.com/#organization",
       "name": "Milano Sensual Congress",
@@ -86,6 +122,7 @@
     },
     {
       "@type": "DanceEvent",
+      "@id": "https://milanosensualcongress.com/#event",
       "audience": {
         "@type": "Audience",
         "audienceType": "Bachata Dancers",
@@ -100,16 +137,19 @@
       "name": "Milano Sensual Congress 2026",
       "startDate": "2026-11-20T12:00",
       "endDate": "2026-11-22T23:59",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
       "location": {
         "@type": "Place",
         "name": "Devero Hotel",
         "address": {
           "@type": "PostalAddress",
-          "addressLocality": "Cavenago di Brianza",
-          "addressRegion": "MB",
-          "postalCode": "20873",
+          "addressLocality": "Milan",
           "addressCountry": "IT"
         }
+      },
+      "organizer": {
+        "@id": "https://milanosensualcongress.com/#organization"
       },
       "performer": [
         {
@@ -428,9 +468,12 @@
                 <h2
                   class="text-xl font-serif font-bold text-white leading-tight group-hover:text-pink-400 transition-colors">
                   Gero y Migle</h2>
-                <p class="text-slate-300 flex items-center gap-2 text-xs mt-1"><span
-                    class="w-2 h-2 rounded-full bg-gradient-to-r from-pink-500 to-purple-500 inline-block"></span> Spain
-                </p>
+                <div class="flex items-center justify-between mt-1">
+                  <p class="text-slate-300 flex items-center gap-2 text-xs"><span
+                      class="w-2 h-2 rounded-full bg-gradient-to-r from-pink-500 to-purple-500 inline-block"></span>
+                    Spain</p>
+                  <a href="news/gero-y-migle-bachata-masters-2026" class="text-[10px] text-pink-400 font-bold uppercase tracking-wider hover:text-white transition-colors">Read Spotlight &rarr;</a>
+                </div>
               </div>
             </div>
           </div>
@@ -440,12 +483,15 @@
             <div class="artist-img-container h-[18rem] md:h-[16rem] relative"><img height="600" width="800" src="images/artists/klau_ros.webp"
                 alt="Klau y Ros - Bachata Sensual Artists from Poland and Spain" class="artist-img" loading="lazy">
               <div class="absolute bottom-0 left-0 right-0 z-10 p-4">
-                <h3
+                <h2
                   class="text-xl font-serif font-bold text-white leading-tight group-hover:text-pink-400 transition-colors">
-                  Klau y Ros</h3>
-                <p class="text-slate-300 flex items-center gap-2 text-xs mt-1"><span
-                    class="w-2 h-2 rounded-full bg-gradient-to-r from-pink-500 to-purple-500 inline-block"></span> Spain
-                </p>
+                  Klau y Ros</h2>
+                <div class="flex items-center justify-between mt-1">
+                  <p class="text-slate-300 flex items-center gap-2 text-xs"><span
+                      class="w-2 h-2 rounded-full bg-gradient-to-r from-pink-500 to-purple-500 inline-block"></span>
+                    Poland / Spain</p>
+                  <a href="news/klau-y-ros-endless-bachata-masters-2026" class="text-[10px] text-pink-400 font-bold uppercase tracking-wider hover:text-white transition-colors">Read Spotlight &rarr;</a>
+                </div>
               </div>
             </div>
           </div>

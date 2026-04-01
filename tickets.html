@@ -34,6 +34,42 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "Airport",
+      "@id": "https://en.wikipedia.org/wiki/Milan_Malpensa_Airport",
+      "name": "Milan Malpensa Airport",
+      "iataCode": "MXP",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Fernon",
+        "addressRegion": "VA",
+        "addressCountry": "IT"
+      }
+    },
+    {
+      "@type": "Airport",
+      "@id": "https://en.wikipedia.org/wiki/Linate_Airport",
+      "name": "Linate Airport",
+      "iataCode": "LIN",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Milan",
+        "addressRegion": "MI",
+        "addressCountry": "IT"
+      }
+    },
+    {
+      "@type": "Airport",
+      "@id": "https://en.wikipedia.org/wiki/Orio_al_Serio_International_Airport",
+      "name": "Bergamo Orio al Serio Airport",
+      "iataCode": "BGY",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Bergamo",
+        "addressRegion": "BG",
+        "addressCountry": "IT"
+      }
+    },
+    {
       "@type": "Organization",
       "@id": "https://milanosensualcongress.com/#organization",
       "name": "Milano Sensual Congress",
@@ -86,6 +122,7 @@
     },
     {
       "@type": "DanceEvent",
+      "@id": "https://milanosensualcongress.com/#event",
       "audience": {
         "@type": "Audience",
         "audienceType": "Bachata Dancers",
@@ -174,7 +211,10 @@
           "name": "Aitor Gomez",
           "sameAs": "https://www.instagram.com/aitorgomez_bachata/"
         }
-      ]
+      ],
+      "organizer": {
+        "@id": "https://milanosensualcongress.com/#organization"
+      }
     },
     {
       "@type": "FAQPage",
@@ -653,7 +693,8 @@
             'Accept': 'application/json' 
           }
         })
-          .then(response => {
+          .then(async response => {
+            const result = await response.json();
             if (response.ok) {
               container.innerHTML = `
                 <div class="animate-fade-in-up text-center py-2">
@@ -662,13 +703,15 @@
                 </div>
               `;
             } else {
-              throw new Error();
+              console.error('FormSubmit Error:', result);
+              throw new Error(result.message || 'Submission failed');
             }
           })
-          .catch(() => {
+          .catch((error) => {
+            console.error('Submission Error:', error);
             button.innerHTML = originalButtonText;
             button.disabled = false;
-            alert('Oops! There was a problem. Please try again.');
+            alert('Oops! There was a problem. Please try again or contact us directly.');
           });
       });
     }
