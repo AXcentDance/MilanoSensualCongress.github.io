@@ -689,8 +689,11 @@
         // Single Tracking Pixel Submit (GET - 100% reliable)
         const submitUrl = `${AIO_URL}?email=${encodeURIComponent(data.email)}&source=${encodeURIComponent('Tickets - EN')}`;
         
+        console.log("Attempting submission to:", submitUrl);
+
         fetch(submitUrl, { mode: 'no-cors' })
         .then(() => {
+          console.log("Submission sent successfully (Opaque result)");
           container.innerHTML = `
             <div class="animate-fade-in-up text-center py-2">
               <p class="text-white text-xl font-serif mb-2">Almost done! 😊</p>
@@ -699,12 +702,12 @@
           `;
         })
         .catch(err => {
-          console.warn("Script issue, fallback to WhatsApp", err);
+          console.error("CRITICAL SUBMISSION ERROR:", err);
           container.innerHTML = `
             <div class="animate-fade-in-up text-center py-2">
               <p class="text-white text-sm font-bold mb-3 uppercase tracking-wider text-pink-400">Submission issue</p>
               <p class="text-slate-300 text-xs mb-4">Register via WhatsApp instead:</p>
-              <a href="https://wa.me/41799668481?text=Hi! I want a reminder for the Milano Sensual Congress. Email: ${data.email}" target="_blank" class="bg-green-600 hover:bg-green-500 text-white py-2 px-6 rounded-full font-bold text-xs">Send via WhatsApp</a>
+              <a href="https://wa.me/41799668481?text=Hi! I want a reminder for the Milano Sensual Congress. My email is: ${data.email}" target="_blank" class="bg-green-600 hover:bg-green-500 text-white py-2 px-6 rounded-full font-bold text-xs flex items-center justify-center gap-2"><i class="fa-brands fa-whatsapp text-lg"></i> Send via WhatsApp</a>
             </div>
           `;
         });
