@@ -699,15 +699,15 @@
                 </div>
               `;
             } else {
-              throw new Error('Provider Down');
+              throw new Error('Provider Issue');
             }
           })
           .catch((error) => {
             console.error('Submission Error:', error);
-            // Gestione del disservizio del provider (Errore 521) con contatto diretto
+            // Gestione del disservizio del provider con contatto diretto
             container.innerHTML = `
               <div class="animate-fade-in-up text-center py-2">
-                <p class="text-white text-sm font-bold mb-3 uppercase tracking-wider text-pink-400">Servizio temporaneamente non disponibile</p>
+                <p class="text-white text-sm font-bold mb-3 uppercase tracking-wider text-pink-400">Servizio non raggiungibile</p>
                 <p class="text-slate-300 text-xs mb-4">Il nostro sistema di invio sta riscontrando problemi. Registra la tua email comodamente via WhatsApp:</p>
                 <div class="flex flex-col gap-3">
                   <a href="https://wa.me/393333935911?text=Ciao! Vorrei ricevere un promemoria per l'aumento dei prezzi del Milano Sensual Congress. La mia email è: ${data.email}" 
@@ -715,7 +715,7 @@
                      class="bg-green-600 hover:bg-green-500 text-white py-2 px-6 rounded-full font-bold text-xs transition-all flex items-center justify-center gap-2">
                     <i class="fa-brands fa-whatsapp text-lg"></i> Invia via WhatsApp
                   </a>
-                  <a href="mailto:slamitza@gmail.com?subject=Richiesta Promemoria&body=Ciao! Per favore avvisatemi quando i prezzi aumentano. Email: ${data.email}" 
+                  <a href="mailto:slamitzam@gmail.com?subject=Richiesta Promemoria&body=Ciao! Per favore avvisatemi quando i prezzi aumentano. Email: ${data.email}" 
                      class="text-slate-400 hover:text-white text-[10px] underline decoration-white/20">o inviaci una Email</a>
                 </div>
               </div>
