@@ -874,14 +874,27 @@
                 </div>
               `;
             } else {
-              // Fallback to standard submission if AJAX is rejected
-              form.submit();
+              throw new Error('Provider Down');
             }
           })
           .catch((error) => {
             console.error('Submission Error:', error);
-            // Fallback to standard submission if AJAX is blocked/fails
-            form.submit();
+            // Handle Provider Outage (Error 521) with a direct contact option
+            container.innerHTML = `
+              <div class="animate-fade-in-up text-center py-2">
+                <p class="text-white text-sm font-bold mb-3 uppercase tracking-wider text-pink-400">Service temporarily down</p>
+                <p class="text-slate-300 text-xs mb-4">Our form provider is experiencing an outage. Please register via WhatsApp instead:</p>
+                <div class="flex flex-col gap-3">
+                  <a href="https://wa.me/41799668481?text=Hi! I want a reminder for the Milano Sensual Congress price increase. My email is: ${data.email}" 
+                     target="_blank"
+                     class="bg-green-600 hover:bg-green-500 text-white py-2 px-6 rounded-full font-bold text-xs transition-all flex items-center justify-center gap-2">
+                    <i class="fa-brands fa-whatsapp text-lg"></i> Send via WhatsApp
+                  </a>
+                  <a href="mailto:slamitza@gmail.com?subject=Reminder Request&body=Hi! Please remind me when prices increase. Email: ${data.email}" 
+                     class="text-slate-400 hover:text-white text-[10px] underline decoration-white/20">or send us an Email</a>
+                </div>
+              </div>
+            `;
           });
       });
     }
