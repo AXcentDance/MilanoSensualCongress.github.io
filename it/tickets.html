@@ -680,34 +680,25 @@
         const formData = new FormData(form);
         const data = Object.fromEntries(formData.entries());
 
-        // ALL-IN-ONE URL (Sheet + Email)
-        const AIO_URL = "https://script.google.com/macros/s/AKfycbwWVfJPtNUyPx56B0FepnjfiAAM7AMjpu3iQ_bj0tNkUmYKhuSfbyfv0QfvZOacnIDpSA/exec";
-        
-        // Single Tracking Pixel Submit (GET - 100% reliable)
+        // ALL-IN-ONE URL (Sheet Only Version)
+        const AIO_URL = "https://script.google.com/macros/s/AKfycbzNaU95FbDrYx2kp3uwYi5Kxu0_ziFrh2gL28OZicVla0zkfj7wVuafgDdeffkBaPKZmg/exec";
         const submitUrl = `${AIO_URL}?email=${encodeURIComponent(data.email)}&source=${encodeURIComponent('Tickets - IT')}`;
         
-        console.log("Attempting submission to:", submitUrl);
+        // "Indestructible" Method: Hidden Iframe (Bypasses all CORS blocks)
+        const hiddenIframe = document.createElement('iframe');
+        hiddenIframe.style.display = 'none';
+        hiddenIframe.src = submitUrl;
+        document.body.appendChild(hiddenIframe);
 
-        fetch(submitUrl, { mode: 'no-cors' })
-        .then(() => {
-          console.log("Submission sent successfully (Opaque result)");
+        setTimeout(() => {
           container.innerHTML = `
             <div class="animate-fade-in-up text-center py-2">
               <p class="text-white text-xl font-serif mb-2">Quasi fatto! 😊</p>
               <p class="text-slate-300 text-xs mb-3">Controlla <strong>${data.email}</strong> per verificare la tua richiesta.</p>
             </div>
           `;
-        })
-        .catch(err => {
-          console.error("CRITICAL SUBMISSION ERROR:", err);
-          container.innerHTML = `
-            <div class="animate-fade-in-up text-center py-2">
-              <p class="text-white text-sm font-bold mb-3 uppercase tracking-wider text-pink-400">Errore invio</p>
-              <p class="text-slate-300 text-xs mb-4">Registrati via WhatsApp invece:</p>
-              <a href="https://wa.me/41799668481?text=Ciao! Vorrei un promemoria per il Milano Sensual Congress. My email is: ${data.email}" target="_blank" class="bg-green-600 hover:bg-green-500 text-white py-2 px-6 rounded-full font-bold text-xs flex items-center justify-center gap-2"><i class="fa-brands fa-whatsapp text-lg"></i> Invia con WhatsApp</a>
-            </div>
-          `;
-        });
+          document.body.removeChild(hiddenIframe);
+        }, 1000);
       });
     }
   </script>

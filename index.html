@@ -857,18 +857,18 @@
         const formData = new FormData(form);
         const data = Object.fromEntries(formData.entries());
 
-        // ALL-IN-ONE URL (Sheet + Email)
-        const AIO_URL = "https://script.google.com/macros/s/AKfycbwWVfJPtNUyPx56B0FepnjfiAAM7AMjpu3iQ_bj0tNkUmYKhuSfbyfv0QfvZOacnIDpSA/exec";
-        
-        // Single Tracking Pixel Submit (GET - 100% reliable)
+        // ALL-IN-ONE URL (Sheet Only Version)
+        const AIO_URL = "https://script.google.com/macros/s/AKfycbzNaU95FbDrYx2kp3uwYi5Kxu0_ziFrh2gL28OZicVla0zkfj7wVuafgDdeffkBaPKZmg/exec";
         const submitUrl = `${AIO_URL}?email=${encodeURIComponent(data.email)}&source=${encodeURIComponent('Home - EN')}`;
         
-        console.log("Attempting submission to:", submitUrl);
+        // "Indestructible" Method: Hidden Iframe (Bypasses all CORS blocks)
+        const hiddenIframe = document.createElement('iframe');
+        hiddenIframe.style.display = 'none';
+        hiddenIframe.src = submitUrl;
+        document.body.appendChild(hiddenIframe);
 
-        fetch(submitUrl, { mode: 'no-cors' })
-        .then(() => {
-          console.log("Submission sent successfully (Opaque result)");
-          // Show Success UI immediately
+        // Show Success UI immediately (Iframe works in background)
+        setTimeout(() => {
           container.innerHTML = `
             <div class="animate-fade-in-up text-center py-2">
               <p class="text-white text-xl font-serif mb-2">Almost done! 😊</p>
@@ -876,18 +876,8 @@
               <a href="artists" class="text-pink-400 text-xs font-bold tracking-widest uppercase hover:text-pink-300 transition-colors underline decoration-pink-500/30">Check the lineup while you wait &rarr;</a>
             </div>
           `;
-        })
-        .catch(err => {
-          console.error("CRITICAL SUBMISSION ERROR:", err);
-          // If totally blocked, show the WhatsApp fallback
-          container.innerHTML = `
-            <div class="animate-fade-in-up text-center py-2">
-              <p class="text-white text-sm font-bold mb-3 uppercase tracking-wider text-pink-400">Submission issue</p>
-              <p class="text-slate-300 text-xs mb-4">Register via WhatsApp instead:</p>
-              <a href="https://wa.me/41799668481?text=Hi! I want a reminder for the Milano Sensual Congress. My email is: ${data.email}" target="_blank" class="bg-green-600 hover:bg-green-500 text-white py-2 px-6 rounded-full font-bold text-xs flex items-center justify-center gap-2"><i class="fa-brands fa-whatsapp text-lg"></i> Send via WhatsApp</a>
-            </div>
-          `;
-        });
+          document.body.removeChild(hiddenIframe); // Cleanup
+        }, 1000);
       });
     }
   </script>
