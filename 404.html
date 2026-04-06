@@ -40,6 +40,25 @@
             background-position: center;
         }
     </style>
+    <script>
+        (function () {
+            var path = window.location.pathname;
+            // 1. Redirect trailing slash to non-trailing slash
+            if (path.length > 1 && path.endsWith('/')) {
+                var cleanPath = path.slice(0, -1);
+                window.location.replace(cleanPath + window.location.search + window.location.hash);
+                return;
+            }
+            // 2. Handle known legacy redirects
+            var legacyRedirects = {
+                '/home': '/',
+                '/devero3-006583m': '/hotel'
+            };
+            if (legacyRedirects[path]) {
+                window.location.replace(legacyRedirects[path] + window.location.search + window.location.hash);
+            }
+        })();
+    </script>
 </head>
 
 <body class="bg-brand-dark text-slate-300 font-sans antialiased min-h-screen flex flex-col">
