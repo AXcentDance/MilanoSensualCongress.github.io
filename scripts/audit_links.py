@@ -53,6 +53,11 @@ class LinkAuditor(HTMLParser):
                 else:
                     exists = True
             
+            # Check for clean URLs (path -> path.html)
+            if not exists and not target_path.endswith('.html'):
+                if os.path.exists(target_path + '.html'):
+                    exists = True
+            
             if not exists:
                 self.broken_links.append({
                     'link': href,
