@@ -25,7 +25,8 @@ Every page must have:
 
 ## 4. Entity Specifics (Rich Snippets)
 Add the specific type of content for the page as a primary entity in the graph:
-*   **Home Page**: `DanceEvent` (the main congress).
+*   **Home/News Pages**: `DanceEvent` (the main congress). 
+    *   **CRITICAL**: Every `DanceEvent` MUST include a complete `location` object (Devero Hotel) and `endDate` to satisfy Google Search Console requirements.
 *   **News Articles**: `BlogPosting`.
 *   **Contact Page**: `ContactPage`.
 *   **FAQ Sections**: `FAQPage`.

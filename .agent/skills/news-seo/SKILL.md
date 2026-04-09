@@ -31,6 +31,7 @@ And any supporting sub-pages in their respective language directories.
 - **JSON-LD Unified Graph Standard**:
     - You MUST use the `schema-graph` skill to inject a single JSON-LD `<script>` tag in the `<head>`.
     - This graph must include a `BlogPosting` object with all required properties (`headline`, `image`, `datePublished`, etc.).
+    - **DanceEvent Inclusion**: Every news article MUST also include the `DanceEvent` object with the full `location` (Devero Hotel) and `endDate` from the `schema-graph` template to ensure rich search results.
     - Reference the global `Organization` and `WebSite` IDs as defined in the `schema-graph` standard.
 - **Visual Breadcrumbs**: In addition to JSON-LD, implement visible breadcrumb links (e.g., "Back to News") at the top of the article.
 
