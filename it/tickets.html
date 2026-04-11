@@ -327,8 +327,7 @@
           class="hover:text-pink-400 transition-colors">Home</a> <a href="artists"
           class="hover:text-pink-400 transition-colors">Artisti</a> <a href="tickets" class="text-pink-500">Biglietti</a>
         <a href="hotel" class="hover:text-pink-400 transition-colors">Hotel</a> <a href="transfer"
-          class="hover:text-pink-400 transition-colors">Transfer</a>
-        <a href=\"jacknjill\" class=\"hover:text-pink-400 transition-colors\">JacknJill</a> <a href="news"
+          class="hover:text-pink-400 transition-colors">Transfer</a> <a href="news"
           class="hover:text-pink-400 transition-colors">News</a> <a href="contact"
           class="hover:text-pink-400 transition-colors">Contatti</a>
         <div class="border-l border-white/20 pl-6 ml-2 flex gap-3"><a href="../tickets"
@@ -338,4 +337,371 @@
         onclick='document.getElementById("mobile-menu").classList.toggle("hidden")'><i
           class="fa-solid fa-bars text-xl"></i></button>
     </div>
-    <div id="
+    <div id="mobile-menu" class="hidden md:hidden bg-brand-dark border-t border-white/10">
+      <div class="flex flex-col p-4 space-y-4"><a href="./" class="block hover:text-pink-400">Home</a> <a href="artists"
+          class="block hover:text-pink-400">Artisti</a> <a href="tickets" class="block text-pink-500">Biglietti</a> <a
+          href="hotel" class="block hover:text-pink-400">Hotel</a> <a href="transfer"
+          class="block hover:text-pink-400">Transfer</a> <a href="news" class="block hover:text-pink-400">News</a> <a href="contact" class="block hover:text-pink-400">Contatti</a>
+        <div class="flex gap-4 pt-4 border-t border-white/10"><a href="../tickets" class="text-slate-400">English</a> <a
+            href="#" class="text-white font-bold">Italiano</a></div>
+      </div>
+    </div>
+  </nav>
+  <header class="hero-bg min-h-[60vh] flex items-center justify-center pt-32 pb-10 relative">
+    <div class="absolute inset-0 bg-gradient-to-b from-transparent to-brand-dark"></div>
+    <div class="container mx-auto px-6 relative z-10 text-center"><span
+        class="inline-block py-1 px-3 rounded-full bg-pink-500/20 border border-pink-500/50 text-pink-300 text-xs font-bold tracking-widest uppercase mb-6">Biglietti
+        Ufficiali</span>
+      <h1 class="text-5xl md:text-7xl font-serif font-bold mb-6 leading-tight">Assicurati il Tuo<br><span
+          class="text-transparent bg-clip-text bg-gradient-to-r from-pink-400 via-purple-400 to-indigo-400">Posto</span>
+      </h1>
+      <p class="text-lg md:text-xl text-slate-300 max-w-2xl mx-auto mb-10 font-light">Partecipa al più atteso dei
+        <strong>congressi bachata 2026</strong>. Scegli il pass che fa per te e preparati a ballare.
+      </p>
+
+      <!-- Countdown & Reminder -->
+      <div id="countdown" class="animate-fade-in-up mb-12 flex justify-center" style="animation-delay:.1s">
+        <div class="px-8 py-6 rounded-3xl border border-pink-500/40 shadow-[0_0_30px_rgba(236,72,153,0.3)] flex flex-col items-center" 
+             style="background: rgba(15, 23, 42, 0.85); backdrop-filter: blur(20px);">
+          <div class="text-pink-400 text-xs font-bold tracking-widest uppercase mb-3 text-center">I prezzi aumenteranno! Acquista ora</div>
+          <div class="flex gap-4 text-white font-mono text-2xl md:text-3xl mb-6">
+            <div class="text-center"><span id="days">00</span><p class="text-[10px] uppercase tracking-tighter opacity-50 font-sans">Giorni</p></div>
+            <div class="text-pink-500/50">:</div>
+            <div class="text-center"><span id="hours">00</span><p class="text-[10px] uppercase tracking-tighter opacity-50 font-sans">Ore</p></div>
+            <div class="text-pink-500/50">:</div>
+            <div class="text-center"><span id="minutes">00</span><p class="text-[10px] uppercase tracking-tighter opacity-50 font-sans">Min</p></div>
+            <div class="text-pink-500/50">:</div>
+            <div class="text-center"><span id="seconds">00</span><p class="text-[10px] uppercase tracking-tighter opacity-50 font-sans">Sec</p></div>
+          </div>
+          
+          <div id="reminder-container" class="w-full pt-6 border-t border-white/10">
+            <p class="text-white text-[10px] font-bold tracking-[0.2em] uppercase mb-4 text-center opacity-90">AVVISAMI IL GIORNO DELL'AUMENTO</p>
+            <form id="reminder-form" action="https://formspree.io/slamitzam@gmail.com" method="POST" class="flex flex-col md:flex-row gap-3 items-center justify-center">
+              <input type="hidden" name="_subject" value="Nuova Richiesta Promemoria - Milano Sensual Congress">
+              <input type="hidden" name="_template" value="table">
+              <input type="hidden" name="_captcha" value="false">
+              <input type="text" name="_honey" style="display:none">
+              <input type="hidden" name="_autoresponse" value="Grazie per averci contattato! Ti invieremo un promemoria prima che i prezzi cambino.">
+              <input type="email" name="email" placeholder="Inserisci la tua email" required 
+                class="form-input px-6 py-2.5 rounded-full text-xs w-64 border border-white/10 bg-white/5 text-white focus:ring-2 focus:ring-pink-500/50 outline-none">
+              <button type="submit" class="btn-gradient px-6 py-2.5 rounded-full text-white font-bold text-xs tracking-wide shadow-lg whitespace-nowrap">
+                Avvisami
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center"><a href="https://lasalsadelbaile.com/MSC2026"
+          target="_blank"
+          class="btn-gradient px-8 py-4 rounded-full font-bold text-white shadow-lg flex items-center justify-center gap-2"><i
+            class="fa-solid fa-ticket"></i> Acquista Biglietti</a></div>
+    </div>
+  </header>
+  <section id="tickets" class="py-20 relative overflow-hidden">
+    <div class="absolute top-20 left-0 w-96 h-96 bg-purple-600/20 rounded-full blur-3xl -z-10"></div>
+    <div class="absolute bottom-20 right-0 w-96 h-96 bg-pink-600/20 rounded-full blur-3xl -z-10"></div>
+    <div class="container mx-auto px-6">
+
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-serif font-bold mb-4">Scegli la Tua Esperienza</h2>
+        <div class="w-24 h-1 bg-gradient-to-r from-pink-500 to-purple-600 mx-auto rounded-full"></div>
+        <p class="mt-4 text-slate-400">Assicurati il tuo posto in anticipo per le migliori tariffe.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto mb-12">
+        <div
+          class="glass-card rounded-2xl p-6 relative border-pink-500/50 transform lg:-translate-y-2 w-full flex flex-col">
+          <div
+            class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gradient-to-r from-amber-400 to-orange-500 text-brand-dark font-bold px-4 py-1 rounded-full text-xs shadow-lg uppercase tracking-wider whitespace-nowrap">
+            Miglior Valore</div>
+          <h3 class="text-xl font-bold mb-2">Full Pass</h3>
+          <div class="flex items-baseline gap-1 mb-4"><span class="text-4xl font-bold text-white">€115</span> <span
+              class="text-slate-400 text-sm decoration-line-through">€125</span></div>
+
+          <ul class="space-y-3 mb-8 text-slate-300 text-sm flex-grow">
+            <li class="flex items-start gap-2"><i class="fa-solid fa-check text-green-400 mt-1 text-xs"></i>
+              <span>Accesso completo all'intero evento</span>
+            </li>
+            <li class="flex items-start gap-2"><i class="fa-solid fa-check text-green-400 mt-1 text-xs"></i> <span>Tutte
+                le Feste (Ven, Sab, Dom)</span></li>
+            <li class="flex items-start gap-2"><i class="fa-solid fa-check text-green-400 mt-1 text-xs"></i> <span>Oltre
+                40 Ore di Workshop</span></li>
+            <li class="flex items-start gap-2"><i class="fa-solid fa-check text-green-400 mt-1 text-xs"></i>
+              <span>Social Pomeridiani</span>
+            </li>
+          </ul><a href="https://lasalsadelbaile.com/MSC2026" target="_blank"
+            class="btn-gradient w-full py-3 rounded-xl font-bold text-white text-center block shadow-lg shadow-pink-500/20 mt-auto">Acquista
+            Early Bird</a>
+        </div>
+        <div class="glass-card-locked rounded-2xl p-6 flex flex-col w-full">
+          <div
+            class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 flex flex-col items-center text-center w-full px-4">
+            <div
+              class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center mb-3 backdrop-blur-md border border-white/20">
+              <i class="fa-solid fa-lock text-xl text-slate-300"></i>
+            </div><span class="text-white font-bold text-sm uppercase tracking-widest">Prossima Fascia di Prezzo</span>
+            <span class="text-slate-400 text-xs mt-1">Si sblocca quando l'Early Bird è esaurito</span>
+          </div>
+          <div class="opacity-30 blur-[1px] select-none h-full flex flex-col">
+            <h3 class="text-xl font-bold mb-2 text-slate-200">Full Pass Fascia 2</h3>
+            <div class="flex items-baseline gap-1 mb-6"><span class="text-4xl font-bold text-white">€125</span></div>
+            <ul class="space-y-3 mb-8 text-slate-300 text-sm flex-grow">
+              <li class="flex items-start gap-2"><i class="fa-solid fa-check text-slate-400 mt-1"></i> <span>Accesso
+                  Completo</span></li>
+              <li class="flex items-start gap-2"><i class="fa-solid fa-check text-slate-400 mt-1"></i> <span>Prossima
+                  Fascia di Prezzo</span></li>
+            </ul><button disabled="disabled"
+              class="block w-full py-3 rounded-xl border border-slate-600 text-slate-500 font-bold text-center cursor-not-allowed mt-auto">Bloccato</button>
+          </div>
+        </div>
+        <div class="glass-card rounded-2xl p-6 flex flex-col border-brand-purple/50 w-full relative">
+          <div
+            class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-purple-600 text-white font-bold px-3 py-1 rounded-full text-xs shadow-lg uppercase tracking-wider whitespace-nowrap">
+            Avanzato</div>
+          <h3 class="text-xl font-bold mb-2 text-slate-200 text-center">Upgrade Masterclass</h3>
+          <div class="flex items-baseline gap-1 mb-1"><span class="text-4xl font-bold text-white">€59</span> <span
+              class="text-slate-400 text-sm decoration-line-through">€65</span></div>
+
+          <div class="bg-red-500/20 border border-red-500/50 rounded p-2 mb-6 flex items-center gap-2"><i
+              class="fa-solid fa-triangle-exclamation text-red-400 text-xs"></i> <span
+              class="text-xs text-red-200 font-bold">Richiede un Full Pass valido</span></div>
+          <ul class="space-y-3 mb-8 text-slate-300 text-sm flex-grow">
+            <li class="flex items-start gap-2"><i class="fa-solid fa-graduation-cap text-purple-400 mt-1 text-xs"></i>
+              <span>3 Ore di Masterclass</span>
+            </li>
+            <li class="flex items-start gap-2"><i class="fa-solid fa-user-group text-purple-400 mt-1 text-xs"></i>
+              <span>Gero y Migle, Klau y Ros, Cristian y Gabriella</span>
+            </li>
+            <li class="flex items-start gap-2"><i class="fa-solid fa-ban text-slate-500 mt-1 text-xs"></i> <span
+                class="text-slate-400">Full Pass NON incluso</span></li>
+          </ul><a href="https://lasalsadelbaile.com/MSC2026" target="_blank"
+            class="block w-full py-3 rounded-xl bg-purple-600/20 border border-purple-500 text-purple-200 hover:bg-purple-600 hover:text-white font-bold text-center transition-all mt-auto">Acquista
+            Upgrade</a>
+        </div>
+        <div class="glass-card-locked rounded-2xl p-6 flex flex-col w-full">
+          <div
+            class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 flex flex-col items-center text-center w-full px-4">
+            <div
+              class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center mb-3 backdrop-blur-md border border-white/20">
+              <i class="fa-solid fa-lock text-xl text-slate-300"></i>
+            </div><span class="text-white font-bold text-sm uppercase tracking-widest">Prossima Fascia di Prezzo</span>
+            <span class="text-slate-400 text-xs mt-1">Si sblocca quando la Fascia 1 è esaurita</span>
+          </div>
+          <div class="opacity-30 blur-[1px] select-none h-full flex flex-col">
+            <h3 class="text-xl font-bold mb-2 text-slate-200">Upgrade Masterclass</h3>
+            <div class="flex items-baseline gap-1 mb-6"><span class="text-4xl font-bold text-white">€65</span></div>
+            <div class="bg-red-500/20 border border-red-500/50 rounded p-2 mb-6 flex items-center gap-2"><i
+                class="fa-solid fa-triangle-exclamation text-red-400 text-xs"></i> <span
+                class="text-xs text-red-200 font-bold">Richiede un Full Pass valido</span></div>
+            <ul class="space-y-3 mb-8 text-slate-300 text-sm flex-grow">
+              <li class="flex items-start gap-2"><i class="fa-solid fa-graduation-cap text-purple-400 mt-1 text-xs"></i>
+                <span>3 Ore di Masterclass</span>
+              </li>
+              <li class="flex items-start gap-2"><i class="fa-solid fa-user-group text-purple-400 mt-1 text-xs"></i>
+                <span>Gero y Migle, Klau y Ros, Cristian y Gabriella</span>
+              </li>
+            </ul><button disabled="disabled"
+              class="block w-full py-3 rounded-xl border border-slate-600 text-slate-500 font-bold text-center cursor-not-allowed mt-auto">Bloccato</button>
+          </div>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+        <div class="glass-card rounded-2xl p-6 flex flex-col border-blue-500/30 w-full relative">
+          <div
+            class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-blue-600 text-white font-bold px-3 py-1 rounded-full text-xs shadow-lg uppercase tracking-wider whitespace-nowrap">
+            Competizione</div>
+          <h3 class="text-xl font-bold mb-2 text-slate-200">Biglietto Jack & Jill</h3>
+          <div class="flex items-baseline gap-1 mb-1"><span class="text-4xl font-bold text-white">€10</span></div>
+          <p class="text-xs text-blue-400 font-bold mb-6"><i class="fa-solid fa-trophy"></i> Competizione Internazionale
+          </p>
+          <div class="bg-blue-500/20 border border-blue-500/50 rounded p-2 mb-6 flex items-center gap-2"><i
+              class="fa-solid fa-circle-info text-blue-300 text-xs"></i> <span
+              class="text-xs text-blue-100 font-bold leading-tight">Richiede Full Pass O Full Party Pass</span></div>
+          <ul class="space-y-3 mb-8 text-slate-300 text-sm flex-grow">
+            <li class="flex items-start gap-2"><i class="fa-solid fa-gavel text-blue-400 mt-1 text-xs"></i>
+              <span>Giudici Internazionali</span>
+            </li>
+            <li class="flex items-start gap-2"><i class="fa-solid fa-medal text-blue-400 mt-1 text-xs"></i> <span>Vinci
+                Trofei Ufficiali</span></li>
+            <li class="flex items-start gap-2"><i class="fa-solid fa-star text-blue-400 mt-1 text-xs"></i> <span>Mostra
+                il tuo stile</span></li>
+          </ul><a href="https://lasalsadelbaile.com/MSC2026" target="_blank"
+            class="block w-full py-3 rounded-xl bg-blue-600/20 border border-blue-500 text-blue-200 hover:bg-blue-600 hover:text-white font-bold text-center transition-all mt-auto">Registrati
+            Ora</a>
+        </div>
+        <div class="glass-card-locked rounded-2xl p-6 flex flex-col w-full">
+          <div
+            class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 flex flex-col items-center text-center w-full px-4">
+            <div
+              class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center mb-3 backdrop-blur-md border border-white/20">
+              <i class="fa-solid fa-champagne-glasses text-xl text-slate-300"></i>
+            </div><span class="text-white font-bold text-sm uppercase tracking-widest">Prossimamente</span> <span
+              class="text-slate-400 text-xs mt-1">I Full Party Pass saranno disponibili a breve</span>
+          </div>
+          <div class="opacity-30 blur-[1px] select-none h-full flex flex-col">
+            <h3 class="text-xl font-bold mb-2 text-slate-200">Full Party Pass</h3>
+            <div class="flex items-baseline gap-1 mb-6"><span class="text-4xl font-bold text-white">--</span></div>
+            <ul class="space-y-3 mb-8 text-slate-300 text-sm flex-grow">
+              <li class="flex items-start gap-2"><i class="fa-solid fa-moon text-indigo-400 mt-1"></i> <span>Accesso a
+                  TUTTE le feste ufficiali</span></li>
+              <li class="flex items-start gap-2"><i class="fa-solid fa-calendar text-indigo-400 mt-1"></i>
+                <span>Venerdì, Sabato e Domenica</span>
+              </li>
+            </ul><button disabled="disabled"
+              class="block w-full py-3 rounded-xl border border-slate-600 text-slate-500 font-bold text-center cursor-not-allowed mt-auto">Bloccato</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="py-20 bg-white/5">
+    <div class="container mx-auto px-6">
+      <div class="max-w-7xl mx-auto">
+        <h2 class="text-3xl font-serif font-bold mb-8 text-center">Artisti Masterclass</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+          <div
+            class="p-8 rounded-2xl bg-brand-dark border border-white/5 hover:border-pink-500/50 transition-all group">
+            <div class="w-48 h-48 mx-auto mb-6 rounded-full overflow-hidden border-4 border-purple-500 shadow-xl"><img
+                src="../images/artists/gero_migle.webp" alt="Gero y Migle - Istruttori Masterclass"
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                loading="lazy"></div>
+            <h3 class="font-bold text-2xl mb-1">Gero y Migle</h3>
+            <p class="text-slate-400 text-base">Spagna / Lituania</p>
+          </div>
+          <div
+            class="p-8 rounded-2xl bg-brand-dark border border-white/5 hover:border-pink-500/50 transition-all group">
+            <div class="w-48 h-48 mx-auto mb-6 rounded-full overflow-hidden border-4 border-blue-500 shadow-xl"><img
+                src="../images/artists/klau_ros.webp" alt="Klau y Ros - Istruttori Masterclass"
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                loading="lazy"></div>
+            <h3 class="font-bold text-2xl mb-1">Klau y Ros</h3>
+            <p class="text-slate-400 text-base">Polonia / Spagna</p>
+          </div>
+          <div
+            class="p-8 rounded-2xl bg-brand-dark border border-white/5 hover:border-pink-500/50 transition-all group">
+            <div class="w-48 h-48 mx-auto mb-6 rounded-full overflow-hidden border-4 border-orange-500 shadow-xl"><img
+                src="../images/artists/cristian_gabriella.webp" alt="Cristian y Gabriella - Istruttori Masterclass"
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                loading="lazy"></div>
+            <h3 class="font-bold text-2xl mb-1">Cristian y Gabriella</h3>
+            <p class="text-slate-400 text-base">Spagna</p>
+          </div>
+        </div>
+        <p class="text-center text-slate-400 mt-12 text-lg italic">"Le Masterclass sono pensate per ballerini avanzati
+          che desiderano elevare la loro tecnica e il loro stile. 3 ore di allenamento intensivo."</p>
+      </div>
+    </div>
+  </section>
+  <section class="py-20 relative">
+    <div class="container mx-auto px-6">
+      <section class="max-w-4xl mx-auto">
+        <h3 class="text-2xl md:text-3xl font-serif font-bold text-white text-center mb-10">Domande Frequenti</h3>
+        <div class="grid gap-6">
+          <div class="glass-card p-6">
+            <h4 class="text-lg font-bold text-white mb-2 flex items-start gap-3"><i
+                class="fa-solid fa-user-pen text-pink-500 mt-1"></i> Posso cambiare il nome sul mio biglietto?</h4>
+            <p class="text-slate-300 pl-8 leading-relaxed">Sì, i cambi di nome sono possibili. Puoi effettuare questa
+              operazione direttamente sul sito web per una piccola tassa amministrativa. Gestisci la tua prenotazione
+              tramite la piattaforma di biglietteria.</p>
+          </div>
+          <div class="glass-card p-6">
+            <h4 class="text-lg font-bold text-white mb-2 flex items-start gap-3"><i
+                class="fa-solid fa-trophy text-blue-400 mt-1"></i> Cosa mi serve per partecipare al Jack & Jill?</h4>
+            <p class="text-slate-300 pl-8 leading-relaxed">Per partecipare alla competizione, devi essere in possesso di
+              un <strong>Full Pass</strong> valido o di un <strong>Full Party Pass</strong>. La quota di iscrizione alla
+              competizione è separata (€10), ma richiede uno di questi pass per essere valida.</p>
+          </div>
+          <div class="glass-card p-6">
+            <h4 class="text-lg font-bold text-white mb-2 flex items-start gap-3"><i
+                class="fa-solid fa-graduation-cap text-purple-500 mt-1"></i> Posso acquistare la Masterclass
+              separatamente?</h4>
+            <p class="text-slate-300 pl-8 leading-relaxed">No. La Masterclass è un upgrade, il che significa che
+              <strong>devi avere un Full Pass valido</strong> prima. Se acquisti l'upgrade senza un Full Pass, la tua
+              partecipazione alla masterclass non sarà valida.
+            </p>
+          </div>
+          <div class="glass-card p-6">
+            <h4 class="text-lg font-bold text-white mb-2 flex items-start gap-3"><i
+                class="fa-solid fa-map-location-dot text-brand-gold mt-1"></i> Dove si svolge l'evento?</h4>
+            <p class="text-slate-300 pl-8 leading-relaxed">L'evento si svolge interamente presso il <strong>Devero
+                Hotel</strong> a Cavenago di Brianza. Questa esclusiva struttura a 4 stelle ospita tutti i workshop, i social pomeridiani e le feste serali sotto lo stesso tetto.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </section>
+  <footer class="bg-brand-dark border-t border-white/10 py-12">
+    <div class="container mx-auto px-6">
+      <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+        <div class="text-center md:text-left">
+          <h2 class="text-xl font-serif font-bold text-white mb-2">Milano Sensual Congress</h2>
+          <p class="text-slate-500 text-sm">Il congresso di riferimento per la Bachata Sensual in Italia.</p>
+        </div>
+        <div class="flex gap-6"><a href="https://instagram.com/milano_sensual_congress" target="_blank"
+            class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-pink-600 hover:text-white transition-all text-slate-400"><i
+              class="fa-brands fa-instagram"></i> </a><a href="https://wa.me/41799668481"
+            class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-green-500 hover:text-white transition-all text-slate-400"><i
+              class="fa-brands fa-whatsapp"></i></a></div>
+      </div>
+      <div
+        class="border-t border-white/5 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-slate-600">
+        <p>&copy; 2026 Milano Sensual Congress. Tutti i diritti riservati.</p>
+        <div class="flex gap-4 mt-4 md:mt-0"><a href="terms" class="hover:text-slate-400">Privacy Policy</a> <a
+            href="terms" class="hover:text-slate-400">Termini e Condizioni</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Countdown Timer
+    const targetDate = new Date("May 1, 2026 00:00:00").getTime();
+    function updateCountdown() {
+      const now = new Date().getTime();
+      const diff = targetDate - now;
+      if (diff < 0) return;
+      document.getElementById("days").innerText = Math.floor(diff / (1000 * 60 * 60 * 24)).toString().padStart(2, '0');
+      document.getElementById("hours").innerText = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)).toString().padStart(2, '0');
+      document.getElementById("minutes").innerText = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60)).toString().padStart(2, '0');
+      document.getElementById("seconds").innerText = Math.floor((diff % (1000 * 60)) / 1000).toString().padStart(2, '0');
+    }
+    setInterval(updateCountdown, 1000);
+    updateCountdown();
+
+    // Interazione Modulo Promemoria
+    const reminderForm = document.getElementById('reminder-form');
+    if (reminderForm) {
+      reminderForm.addEventListener('submit', function (e) {
+        e.preventDefault();
+        const form = this;
+        const container = document.getElementById('reminder-container');
+        const button = form.querySelector('button');
+        button.innerHTML = '<i class="fa-solid fa-circle-notch animate-spin"></i> Processing...';
+        button.disabled = true;
+
+        const formData = new FormData(form);
+        const data = Object.fromEntries(formData.entries());
+
+        // ALL-IN-ONE URL (Sheet Only Version)
+        const AIO_URL = "https://script.google.com/macros/s/AKfycbzNaU95FbDrYx2kp3uwYi5Kxu0_ziFrh2gL28OZicVla0zkfj7wVuafgDdeffkBaPKZmg/exec";
+        const submitUrl = `${AIO_URL}?email=${encodeURIComponent(data.email)}&source=${encodeURIComponent('Tickets - IT')}`;
+        
+        // "Indestructible" Method: Hidden Iframe (Bypasses all CORS blocks)
+        const hiddenIframe = document.createElement('iframe');
+        hiddenIframe.style.display = 'none';
+        hiddenIframe.src = submitUrl;
+        document.body.appendChild(hiddenIframe);
+
+        setTimeout(() => {
+          container.innerHTML = `
+            <div class="animate-fade-in-up text-center py-2">
+              <p class="text-white text-xl font-serif mb-2">Grazie! 😊</p>
+              <p class="text-slate-300 text-xs mb-3">Ti invieremo un promemoria 3 giorni prima del rincaro dei prezzi.</p>
+            </div>
+          `;
+          document.body.removeChild(hiddenIframe);
+        }, 1000);
+      });
+    }
+  </script>
+</body>
+
+</html>

@@ -344,8 +344,7 @@
         <a href="artists" class="hover:text-pink-400 transition-colors">Artists</a> <a href="tickets"
           class="hover:text-pink-400 transition-colors">Tickets</a> <a href="hotel"
           class="hover:text-pink-400 transition-colors">Hotel</a> <a href="transfer"
-          class="hover:text-pink-400 transition-colors">Transfer</a>
-        <a href=\"jacknjill\" class=\"hover:text-pink-400 transition-colors\">JacknJill</a> <a href="news"
+          class="hover:text-pink-400 transition-colors">Transfer</a> <a href="news"
           class="hover:text-pink-400 transition-colors">News</a> <a href="contact"
           class="hover:text-pink-400 transition-colors">Contact</a>
         <div class="border-l border-white/20 pl-6 ml-2 flex gap-3"><a href="#" class="text-white font-bold">EN</a> <a
@@ -354,4 +353,537 @@
         onclick='document.getElementById("mobile-menu").classList.toggle("hidden")'><i
           class="fa-solid fa-bars text-xl"></i></button>
     </div>
-    <div id="
+    <div id="mobile-menu" class="hidden md:hidden bg-brand-dark border-t border-white/10">
+      <div class="flex flex-col p-4 space-y-4"><a href="#" class="block text-pink-500">Home</a> <a href="artists"
+          class="block hover:text-pink-400">Artists</a> <a href="tickets" class="block hover:text-pink-400">Tickets</a>
+        <a href="hotel" class="block hover:text-pink-400">Hotel</a> <a href="transfer"
+          class="block hover:text-pink-400">Transfer</a> <a href="news" class="block hover:text-pink-400">News</a> <a href="contact" class="block hover:text-pink-400">Contact</a>
+        <div class="flex gap-4 pt-4 border-t border-white/10"><a href="#" class="text-white font-bold">English</a> <a
+            href="it/" class="text-slate-400">Italiano</a></div>
+      </div>
+    </div>
+  </nav>
+
+  <header class="relative w-full min-h-screen flex items-center justify-center overflow-hidden">
+    <video autoplay muted loop playsinline webkit-playsinline preload="auto" poster="images/poster.webp"
+      class="absolute top-0 left-0 w-full h-full object-cover z-0" id="heroVideo">
+      <source src="images/hero.webm" type="video/webm">
+      <source src="images/hero.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <script>
+      // Professional nudge to ensure autoplay works on all devices/save modes
+      window.addEventListener('load', function () {
+        var video = document.getElementById('heroVideo');
+        if (video) {
+          video.play().catch(function (error) {
+            console.log("Autoplay prevented, retrying on first interaction");
+          });
+        }
+      });
+    </script>
+    <div class="hero-overlay absolute inset-0 z-10"></div>
+    <div class="container mx-auto px-6 relative z-20 py-20 text-center">
+      <h1 class="text-5xl md:text-7xl lg:text-8xl font-serif font-bold mb-4 leading-tight animate-fade-in-up">Milano
+        Sensual<br><span
+          class="text-transparent bg-clip-text bg-gradient-to-r from-pink-400 via-purple-400 to-indigo-400">Bachata
+          Congress</span>
+      </h1>
+      <p class="text-xl md:text-2xl text-slate-300 font-light tracking-widest uppercase mb-4">20 - 21 - 22 November 2026</p>
+      <p class="text-slate-400 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed font-light mb-8">Join the most
+        exclusive <strong>Bachata Congress in Milan, Italy</strong>. Experience the luxury of a 4-star executive
+        hotel in the heart of Lombardy, featuring world-class masters and a high-stakes International Jack & Jill competition.</p>
+
+      <!-- Countdown & Reminder -->
+      <div id="countdown" class="animate-fade-in-up mb-12 flex justify-center" style="animation-delay:.1s">
+        <div class="px-8 py-6 rounded-3xl border border-pink-500/40 shadow-[0_0_30px_rgba(236,72,153,0.3)] flex flex-col items-center" 
+             style="background: rgba(15, 23, 42, 0.85); backdrop-filter: blur(20px);">
+          <div class="text-pink-400 text-xs font-bold tracking-widest uppercase mb-3 text-center">Prices will go up! Buy now</div>
+          <div class="flex gap-4 text-white font-mono text-2xl md:text-3xl mb-6">
+            <div class="text-center"><span id="days">00</span><p class="text-[10px] uppercase tracking-tighter opacity-50 font-sans">Days</p></div>
+            <div class="text-pink-500/50">:</div>
+            <div class="text-center"><span id="hours">00</span><p class="text-[10px] uppercase tracking-tighter opacity-50 font-sans">Hrs</p></div>
+            <div class="text-pink-500/50">:</div>
+            <div class="text-center"><span id="minutes">00</span><p class="text-[10px] uppercase tracking-tighter opacity-50 font-sans">Min</p></div>
+            <div class="text-pink-500/50">:</div>
+            <div class="text-center"><span id="seconds">00</span><p class="text-[10px] uppercase tracking-tighter opacity-50 font-sans">Sec</p></div>
+          </div>
+          
+          <div id="reminder-container" class="w-full pt-6 border-t border-white/10">
+            <p class="text-white text-[10px] font-bold tracking-[0.2em] uppercase mb-4 text-center opacity-90">GET A REMINDER ON THE DAY OF THE INCREASE</p>
+            <form id="reminder-form" action="https://formspree.io/slamitzam@gmail.com" method="POST" class="flex flex-col md:flex-row gap-3 items-center justify-center">
+              <input type="hidden" name="_subject" value="New Reminder Request - Milano Sensual Congress">
+              <input type="hidden" name="_template" value="table">
+              <input type="hidden" name="_captcha" value="false">
+              <input type="text" name="_honey" style="display:none">
+              <input type="hidden" name="_autoresponse" value="Thanks for reaching out! We'll remind you before the prices change.">
+              <input type="email" name="email" placeholder="Enter your email" required 
+                class="form-input px-6 py-2.5 rounded-full text-xs w-64 focus:ring-2 focus:ring-pink-500/50 outline-none">
+              <button type="submit" class="btn-gradient px-6 py-2.5 rounded-full text-white font-bold text-xs tracking-wide shadow-lg whitespace-nowrap">
+                Remind Me
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="max-w-5xl mx-auto glass-card rounded-2xl p-8 md:p-10 animate-fade-in-up" style="animation-delay:.2s">
+        <div class="grid md:grid-cols-3 gap-8 text-center divide-y md:divide-y-0 md:divide-x divide-white/10">
+          <div class="px-4">
+            <h2 class="text-pink-400 font-bold tracking-wider uppercase text-sm mb-4">International Bachata Lineup</h2>
+            <ul class="space-y-2 text-slate-200 font-serif text-lg leading-tight">
+              <li>Gero y Migle</li>
+              <li>Klaus y Ros</li>
+              <li>Cristian y Gabriella</li>
+              <li>David y Ines</li>
+              <li>Nacho y Silvia</li>
+              <li>Agustín y Alba</li>
+              <li>Irene y Tomás</li>
+              <li>Aitor Gomez</li>
+            </ul>
+          </div>
+          <div class="px-4 pt-6 md:pt-0 flex flex-col justify-center items-center relative group">
+            <div class="absolute -top-3 -right-3 flex items-center justify-center animate-pulse"><i
+                class="fa-solid fa-star text-brand-gold text-4xl"></i> <span
+                class="absolute text-brand-dark text-[10px] font-bold pt-1">NEW</span></div>
+            <div class="flex gap-1 mb-3"><i class="fa-solid fa-star text-brand-gold text-xl"></i> <i
+                class="fa-solid fa-star text-brand-gold text-xl"></i> <i
+                class="fa-solid fa-star text-brand-gold text-xl"></i> <i
+                class="fa-solid fa-star text-brand-gold text-xl"></i></div>
+            <h2 class="text-white font-bold text-2xl mb-2">4 Star Bachata Congress Hotel</h2>
+            <p class="text-slate-400 text-sm mb-4">The exclusive Devero Hotel & Spa</p><a href="hotel"
+              class="text-xs font-bold text-pink-400 hover:text-pink-300 underline decoration-pink-500/50">New Location
+              &rarr;</a>
+          </div>
+          <div class="px-4 pt-6 md:pt-0 flex flex-col justify-center items-center"><i
+              class="fa-solid fa-trophy text-purple-400 mb-3 text-xl"></i>
+            <h2 class="text-white font-bold text-2xl mb-2">International<br>Bachata Jack & Jill</h2>
+            <p class="text-slate-400 text-sm">Compete with the best.</p>
+          </div>
+        </div>
+      </div>
+      <div class="mt-12 animate-fade-in-up flex flex-col items-center" style="animation-delay:.4s">
+        <a href="https://lasalsadelbaile.com/MSC2026" target="_blank"
+          class="btn-gradient px-10 py-4 rounded-full text-white font-bold tracking-wide shadow-lg text-lg inline-flex items-center gap-3">
+          <i class="fa-solid fa-ticket"></i> Get Your Pass
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <section class="py-20 bg-brand-dark/50 border-y border-white/5 relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-r from-pink-900/5 via-transparent to-purple-900/5"></div>
+    <div class="container mx-auto px-6 relative z-10">
+      <div class="text-center mb-16">
+        <span class="text-pink-500 font-bold tracking-widest text-xs uppercase bg-pink-500/10 px-3 py-1 rounded-full border border-pink-500/20">The International Choice</span>
+        <h2 class="text-3xl md:text-5xl font-serif font-bold text-white mt-4 mb-6">Europe's Premier Bachata Gathering</h2>
+        <p class="text-slate-400 max-w-3xl mx-auto text-lg leading-relaxed">
+          The Milano Sensual Congress has evolved into a global ecosystem for Bachata enthusiasts, attracting <strong class="text-white">more than 1000 dancers</strong> from <strong class="text-white">over 20 nations</strong> across the continent.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="glass-card p-10 rounded-3xl text-center flex flex-col items-center">
+          <div class="w-16 h-16 bg-pink-500/10 rounded-2xl flex items-center justify-center mb-6 border border-pink-500/20">
+            <i class="fa-solid fa-earth-europe text-3xl text-pink-500"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-4">English-Taught Workshops</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">All 30+ hours of advanced workshops and masterclasses are conducted in <strong class="text-white">English</strong> by world-class artists to ensure full accessibility for our European attendees.</p>
+        </div>
+
+        <div class="glass-card p-10 rounded-3xl text-center flex flex-col items-center">
+          <div class="w-16 h-16 bg-purple-500/10 rounded-2xl flex items-center justify-center mb-6 border border-purple-500/20">
+            <i class="fa-solid fa-van-shuttle text-3xl text-purple-500"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-4">International Accessibility</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">Travel with ease with our <strong class="text-white">dedicated direct shuttles</strong> from Milan Malpensa, Linate, and Bergamo airports directly to the luxury Devero Hotel venue.</p>
+        </div>
+
+        <div class="glass-card p-10 rounded-3xl text-center flex flex-col items-center">
+          <div class="w-16 h-16 bg-indigo-500/10 rounded-2xl flex items-center justify-center mb-6 border border-indigo-500/20">
+            <i class="fa-solid fa-users-rays text-3xl text-indigo-500"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-4">European Community</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">Join a diverse community of high-level social dancers from Spain, France, Germany, and Switzerland in a <strong class="text-white">World-class luxury venue</strong>.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="relative py-16 bg-[#fff0f5] border-b border-pink-200 overflow-hidden">
+    <!-- Decorative Background Image -->
+    <div class="absolute inset-0 opacity-30 pointer-events-none">
+      <img height="600" width="800" loading="lazy" src="spring/images/spring-bg-v2.webp" alt="Spring floral pattern background"
+        class="w-full h-full object-cover">
+    </div>
+
+    <div class="container mx-auto px-6 relative z-10">
+      <div class="flex flex-col md:flex-row items-center justify-center gap-12">
+        <!-- Text Content -->
+        <div class="text-center md:text-left max-w-xl">
+          <h2 class="text-3xl md:text-5xl font-serif font-bold text-[#831843] mb-6 leading-tight">
+            Interested in our<br />
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-pink-600 to-green-600">Spring
+              Bachata Congress?</span>
+          </h2>
+          <a href="spring/"
+            class="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-pink-500 to-green-500 text-white font-bold rounded-full shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300 text-lg group">
+            <i class="fa-solid fa-seedling group-hover:rotate-12 transition-transform"></i>
+            Go to Spring Website
+          </a>
+        </div>
+
+        <!-- Promo Poster -->
+        <a href="spring/" class="block w-full max-w-sm transform hover:scale-105 transition-transform duration-300">
+          <div class="rounded-xl overflow-hidden shadow-2xl border-4 border-white/50">
+            <img height="600" width="800" loading="lazy" src="spring/images/promo-poster.webp" alt="Milano Sensual Congress Spring Edition"
+              class="w-full h-auto">
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+  <section class="py-24 bg-brand-dark relative">
+    <div class="absolute top-0 right-0 w-96 h-96 bg-purple-600/10 rounded-full blur-3xl -z-0"></div>
+    <div class="container mx-auto px-6 relative z-10">
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="glass-card rounded-2xl overflow-hidden group">
+          <div
+            class="h-48 bg-gradient-to-br from-pink-900/50 to-purple-900/50 flex items-center justify-center relative overflow-hidden">
+            <i
+              class="fa-solid fa-ticket text-6xl text-white/20 group-hover:scale-110 transition-transform duration-500"></i>
+            <div class="absolute inset-0 bg-gradient-to-t from-brand-dark to-transparent"></div>
+          </div>
+          <div class="p-8 relative -mt-12">
+            <h3 class="text-2xl font-serif font-bold text-white mb-3">Full Passes</h3>
+            <p class="text-slate-400 mb-6 text-sm leading-relaxed">Secure your spot at the best price. Prices increase
+              as the event approaches. Full pass includes all workshops, shows, and parties.</p><a
+              href="https://lasalsadelbaile.com/MSC2026" target="_blank"
+              class="inline-block w-full text-center py-3 rounded-xl border border-pink-500 text-pink-400 hover:bg-pink-500 hover:text-white transition-all font-medium">Buy
+              on LaSalsaDelBaile</a>
+          </div>
+        </div>
+        <div class="glass-card rounded-2xl overflow-hidden group relative">
+          <div
+            class="absolute top-4 right-4 bg-pink-600 text-white text-xs font-bold px-3 py-1 rounded-full z-10 shadow-lg">
+            NEW VENUE</div>
+          <div
+            class="h-48 bg-gradient-to-br from-blue-900/50 to-slate-800/50 flex items-center justify-center relative overflow-hidden">
+            <i
+              class="fa-solid fa-hotel text-6xl text-white/20 group-hover:scale-110 transition-transform duration-500"></i>
+            <div class="absolute inset-0 bg-gradient-to-t from-brand-dark to-transparent"></div>
+          </div>
+          <div class="p-8 relative -mt-12">
+            <h3 class="text-2xl font-serif font-bold text-white mb-3">Devero Hotel ****</h3>
+            <p class="text-slate-400 mb-6 text-sm leading-relaxed">Experience the congress in our <strong
+                class="text-white">brand new</strong> location. A 4-star executive hotel offering premium comfort, spa
+              facilities, and direct access to the dance floors.</p><a href="hotel"
+              class="inline-block w-full text-center py-3 rounded-xl border border-purple-500 text-purple-400 hover:bg-purple-600 hover:text-white transition-all font-medium">View
+              New Rooms & Info</a>
+          </div>
+        </div>
+        <div class="glass-card rounded-2xl overflow-hidden group">
+          <div
+            class="h-48 bg-gradient-to-br from-indigo-900/50 to-pink-900/50 flex items-center justify-center relative overflow-hidden">
+            <i
+              class="fa-solid fa-graduation-cap text-6xl text-white/20 group-hover:scale-110 transition-transform duration-500"></i>
+            <div class="absolute inset-0 bg-gradient-to-t from-brand-dark to-transparent"></div>
+          </div>
+          <div class="p-8 relative -mt-12">
+            <h3 class="text-2xl font-serif font-bold text-white mb-3">Master Classes</h3>
+            <p class="text-slate-400 mb-6 text-sm leading-relaxed">Level up your dancing with exclusive master classes
+              from our headlining artists. Limited spots available for intimate learning.</p><button
+              class="inline-block w-full text-center py-3 rounded-xl border border-indigo-500 text-indigo-400 hover:bg-indigo-600 hover:text-white transition-all font-medium">Schedule
+              Coming Soon</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="py-20 relative border-y border-white/5 bg-black/20">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-16"><span class="text-pink-500 font-bold tracking-widest text-xs uppercase">The Team
+          Behind The Magic</span>
+        <h2 class="text-4xl font-serif font-bold text-white mt-2">Organizers of the Bachata Congress Italy</h2>
+      </div>
+      <div class="grid lg:grid-cols-2 gap-12 items-start max-w-6xl mx-auto">
+        <div class="flex flex-col md:flex-row gap-6 items-start">
+          <div
+            class="w-48 h-64 md:w-56 md:h-72 rounded-xl overflow-hidden border-2 border-pink-500/50 flex-shrink-0 bg-slate-800 shadow-lg">
+            <img height="600" width="800" src="images/artists/marco_valeria.webp"
+              alt="Marco y Valeria - Bachata Passion Directors and Milano Sensual Congress Organizers"
+              class="w-full h-full object-cover scale-125 hover:scale-135 transition-transform duration-500"
+              loading="lazy">
+          </div>
+          <div>
+            <h3 class="text-2xl font-bold text-white mb-1">Marco y Valeria</h3>
+            <p class="text-pink-500 text-sm mb-4 font-medium">Congress Directors</p>
+            <p class="text-slate-400 text-sm leading-relaxed"><span class="text-white font-medium">@marcoyvaleria</span>
+              — International Sensual Bachata Artists with dance school established in Arcore, MB. Creators of
+              <strong>Milano Sensual Congress</strong> and its Spring Edition. With a decade of teaching and performance
+              experience, they are directors of the <strong>Gero y Migle Project Performance Show</strong> in Milan, and
+              Marco serves as artistic director for one of the top Latin club in Milan, the UnaMas Club.
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-col md:flex-row gap-6 items-start">
+          <div
+            class="w-48 h-64 md:w-56 md:h-72 rounded-xl overflow-hidden border-2 border-purple-500/50 flex-shrink-0 bg-slate-800 shadow-lg">
+            <img height="600" width="800" src="images/artists/Ale_Xidan.webp"
+              alt="Ale y Xidan - AXcent Dance Directors and Milano Sensual Congress Organizers"
+              class="w-full h-full object-cover scale-125 hover:scale-135 transition-transform duration-500"
+              loading="lazy">
+          </div>
+          <div>
+            <h3 class="text-2xl font-bold text-white mb-1">Ale y Xidan</h3>
+            <p class="text-purple-500 text-sm mb-4 font-medium">Congress Directors</p>
+            <p class="text-slate-400 text-sm leading-relaxed"><span class="text-white font-medium">@aleyxidan</span> —
+              International Sensual Bachata Artists. They founded <a href="https://axcentdance.com" target="_blank"
+                class="text-pink-400 hover:text-white font-bold underline decoration-pink-500/30 transition-colors">AXcent
+                Dance</a>, the first Bachata Sensual specialized school in Zurich, established in 2025. They also serve
+              as judges for the International Swiss Championship for Salsa and Bachata. Ale y Xidan are the creators of
+              <strong>Milano Sensual Congress</strong> and its Spring Edition with Marco y Valeria, and are the
+              co-organizers of <strong>Bailadoro Dance Weekend</strong>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="py-20 bg-brand-dark relative border-t border-white/5">
+    <div class="absolute top-0 left-0 w-96 h-96 bg-pink-600/10 rounded-full blur-3xl -z-0"></div>
+    <div class="container mx-auto px-6 relative z-10">
+      <div class="text-center mb-16">
+        <span class="text-pink-500 font-bold tracking-widest text-xs uppercase">Travel & Logistics</span>
+        <h2 class="text-3xl md:text-5xl font-serif font-bold text-white mt-2 mb-6">Official Transfer Service</h2>
+        <p class="text-slate-400 max-w-2xl mx-auto">Do you want a direct transfer from the airport or train station
+          directly to our location? We have a service which is right for you.</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Malpensa -->
+        <div class="glass-card p-6 rounded-xl flex flex-col hover:border-pink-500/30 transition-colors">
+          <div class="mb-4">
+            <span class="text-xs font-bold text-pink-500 uppercase tracking-wider">Airport Transfer</span>
+            <h3 class="text-xl font-bold text-white mt-1">Malpensa</h3>
+            <p class="text-slate-500 text-sm">to Devero Hotel</p>
+          </div>
+          <div class="space-y-3 mb-6 flex-grow">
+            <div class="flex justify-between items-center border-b border-white/5 pb-2">
+              <span class="text-slate-300"><i class="fa-solid fa-car text-slate-500 mr-2"></i>Car (4 spots)</span>
+              <span class="text-white font-bold">135€</span>
+            </div>
+            <div class="flex justify-between items-center border-b border-white/5 pb-2">
+              <span class="text-slate-300"><i class="fa-solid fa-van-shuttle text-slate-500 mr-2"></i>Minivan (6
+                spots)</span>
+              <span class="text-white font-bold">175€</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Linate -->
+        <div class="glass-card p-6 rounded-xl flex flex-col hover:border-pink-500/30 transition-colors">
+          <div class="mb-4">
+            <span class="text-xs font-bold text-pink-500 uppercase tracking-wider">Airport Transfer</span>
+            <h3 class="text-xl font-bold text-white mt-1">Linate</h3>
+            <p class="text-slate-500 text-sm">to Devero Hotel</p>
+          </div>
+          <div class="space-y-3 mb-6 flex-grow">
+            <div class="flex justify-between items-center border-b border-white/5 pb-2">
+              <span class="text-slate-300"><i class="fa-solid fa-car text-slate-500 mr-2"></i>Car (4 spots)</span>
+              <span class="text-white font-bold">75€</span>
+            </div>
+            <div class="flex justify-between items-center border-b border-white/5 pb-2">
+              <span class="text-slate-300"><i class="fa-solid fa-van-shuttle text-slate-500 mr-2"></i>Minivan (6
+                spots)</span>
+              <span class="text-white font-bold">115€</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bergamo -->
+        <div class="glass-card p-6 rounded-xl flex flex-col hover:border-pink-500/30 transition-colors">
+          <div class="mb-4">
+            <span class="text-xs font-bold text-pink-500 uppercase tracking-wider">Airport Transfer</span>
+            <h3 class="text-xl font-bold text-white mt-1">Bergamo Orio</h3>
+            <p class="text-slate-500 text-sm">to Devero Hotel</p>
+          </div>
+          <div class="space-y-3 mb-6 flex-grow">
+            <div class="flex justify-between items-center border-b border-white/5 pb-2">
+              <span class="text-slate-300"><i class="fa-solid fa-car text-slate-500 mr-2"></i>Car (4 spots)</span>
+              <span class="text-white font-bold">75€</span>
+            </div>
+            <div class="flex justify-between items-center border-b border-white/5 pb-2">
+              <span class="text-slate-300"><i class="fa-solid fa-van-shuttle text-slate-500 mr-2"></i>Minivan (6
+                spots)</span>
+              <span class="text-white font-bold">115€</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Milano Centrale -->
+        <div class="glass-card p-6 rounded-xl flex flex-col hover:border-pink-500/30 transition-colors">
+          <div class="mb-4">
+            <span class="text-xs font-bold text-pink-500 uppercase tracking-wider">Train Station Transfer</span>
+            <h3 class="text-xl font-bold text-white mt-1">Milano Centrale</h3>
+            <p class="text-slate-500 text-sm">to Devero Hotel</p>
+          </div>
+          <div class="space-y-3 mb-6 flex-grow">
+            <div class="flex justify-between items-center border-b border-white/5 pb-2">
+              <span class="text-slate-300"><i class="fa-solid fa-car text-slate-500 mr-2"></i>Car (4 spots)</span>
+              <span class="text-white font-bold">75€</span>
+            </div>
+            <div class="flex justify-between items-center border-b border-white/5 pb-2">
+              <span class="text-slate-300"><i class="fa-solid fa-van-shuttle text-slate-500 mr-2"></i>Minivan (6
+                spots)</span>
+              <span class="text-white font-bold">115€</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="mt-12 glass-card p-8 rounded-2xl border border-pink-500/20 bg-gradient-to-r from-pink-900/20 to-purple-900/20 text-center max-w-3xl mx-auto">
+        <div class="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-12">
+          <div class="text-left">
+            <h4 class="text-xl font-bold text-white mb-2"><i
+                class="fa-solid fa-circle-info text-pink-500 mr-2"></i>Important Information</h4>
+            <p class="text-slate-300 text-sm mb-0">Limited spots available. This service will be available all weekend
+              at every hour of the day. <strong class="text-white">Needs to be booked in advance.</strong></p>
+          </div>
+          <div class="flex flex-col gap-3 min-w-[200px]">
+            <a href="https://wa.me/393662073769"
+              class="btn-floral px-6 py-2 rounded-full text-white font-bold text-sm shadow-lg inline-flex items-center justify-center gap-2 hover:scale-105 transition-transform">
+              <i class="fa-brands fa-whatsapp"></i> Book via WhatsApp
+            </a>
+            <a href="mailto:g.suraci@yahoo.it"
+              class="inline-flex items-center justify-center gap-2 text-slate-300 hover:text-white transition-colors text-sm">
+              <i class="fa-solid fa-envelope"></i> g.suraci@yahoo.it
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="py-20 bg-brand-dark">
+    <div class="container mx-auto px-6 max-w-4xl">
+      <h2 class="text-3xl font-serif font-bold text-white text-center mb-10">Bachata Congress FAQ</h2>
+      <div class="space-y-4">
+        <div class="glass-card p-6 rounded-xl">
+          <h3 class="font-bold text-white mb-2 flex items-center gap-3"><i
+              class="fa-regular fa-circle-question text-pink-500"></i> Where is the event located?</h3>
+          <p class="text-slate-400 pl-8">The entire event takes place at the <strong>New Devero Hotel & Spa</strong>
+            (4
+            Stars Executive), located in Cavenago di Brianza. It is easily accessible from Milan airports.</p>
+        </div>
+        <div class="glass-card p-6 rounded-xl">
+          <h3 class="font-bold text-white mb-2 flex items-center gap-3"><i
+              class="fa-regular fa-circle-question text-pink-500"></i> Can I compete in the Jack & Jill?</h3>
+          <p class="text-slate-400 pl-8">Yes! We host an International Jack & Jill competition. Registration details
+            and
+            categories will be announced closer to the event date on our social media and website.</p>
+        </div>
+        <div class="glass-card p-6 rounded-xl">
+          <h3 class="font-bold text-white mb-2 flex items-center gap-3"><i
+              class="fa-regular fa-circle-question text-pink-500"></i> How do I book the hotel?</h3>
+          <p class="text-slate-400 pl-8">Sales for the official hotel open in January 2026. Please visit our <a
+              href="hotel" class="text-pink-400 underline">Hotel Page</a> for the official booking link to get the group
+            rate.</p>
+        </div>
+        <div class="glass-card p-6 rounded-xl">
+          <h3 class="font-bold text-white mb-2 flex items-center gap-3"><i
+              class="fa-regular fa-circle-question text-pink-500"></i> Will there be day socials?</h3>
+          <p class="text-slate-400 pl-8">Yes, both Saturday and Sunday will have day socials only accessible for who has
+            the Full Pass (not party pass).</p>
+        </div>
+        <div class="glass-card p-6 rounded-xl">
+          <h3 class="font-bold text-white mb-2 flex items-center gap-3"><i
+              class="fa-regular fa-circle-question text-pink-500"></i> Are the Bachata Masterclasses taught in English?</h3>
+          <p class="text-slate-400 pl-8">Yes, all our international workshops, masterclasses, and main stage communications at the Milano Sensual Congress are conducted in <strong class="text-white">English</strong> to accommodate our European and global attendees.</p>
+        </div>
+        <div class="glass-card p-6 rounded-xl">
+          <h3 class="font-bold text-white mb-2 flex items-center gap-3"><i
+              class="fa-solid fa-plane text-pink-500"></i> Which airport is best for the Milano Sensual Congress?</h3>
+          <p class="text-slate-400 pl-8">Milan Bergamo Orio al Serio (BGY) and Milan Linate (LIN) are the closest, but Milan Malpensa (MXP) is also highly convenient. We offer <a href="transfer" class="text-pink-400 underline">dedicated direct transport shuttles</a> from all three airports to the hotel.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="bg-black border-t border-white/10 py-12">
+    <div class="container mx-auto px-6">
+      <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+        <div class="text-center md:text-left">
+          <h3 class="text-xl font-serif font-bold text-white mb-2">Milano Sensual Congress</h3>
+          <p class="text-slate-500 text-sm">The ultimate Bachata experience in Italy.</p>
+        </div>
+        <div class="flex gap-6"><a href="https://instagram.com/milano_sensual_congress" target="_blank"
+            class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-pink-600 hover:text-white transition-all text-slate-400"><i
+              class="fa-brands fa-instagram"></i> </a><a href="https://wa.me/41799668481"
+            class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-green-500 hover:text-white transition-all text-slate-400"><i
+              class="fa-brands fa-whatsapp"></i></a></div>
+      </div>
+      <div
+        class="border-t border-white/5 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-slate-600">
+        <p>&copy; 2026 Milano Sensual Congress. All rights reserved.</p>
+        <div class="flex gap-4 mt-4 md:mt-0"><a href="terms" class="hover:text-slate-400">Privacy Policy</a> <a
+            href="terms" class="hover:text-slate-400">Terms & Conditions</a></div>
+      </div>
+    </div>
+  </footer>
+  <script>
+    const targetDate = new Date("May 1, 2026 00:00:00").getTime();
+    function updateCountdown() {
+      const now = new Date().getTime();
+      const diff = targetDate - now;
+      if (diff < 0) return;
+      document.getElementById("days").innerText = Math.floor(diff / (1000 * 60 * 60 * 24)).toString().padStart(2, '0');
+      document.getElementById("hours").innerText = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)).toString().padStart(2, '0');
+      document.getElementById("minutes").innerText = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60)).toString().padStart(2, '0');
+      document.getElementById("seconds").innerText = Math.floor((diff % (1000 * 60)) / 1000).toString().padStart(2, '0');
+    }
+    setInterval(updateCountdown, 1000);
+    updateCountdown();
+
+    // Reminder Form Interaction
+    const reminderForm = document.getElementById('reminder-form');
+    if (reminderForm) {
+      reminderForm.addEventListener('submit', function (e) {
+        e.preventDefault();
+        const form = this;
+        const container = document.getElementById('reminder-container');
+        const button = form.querySelector('button');
+        const originalButtonText = button.innerHTML;
+
+        button.innerHTML = '<i class="fa-solid fa-circle-notch animate-spin"></i> Processing...';
+        button.disabled = true;
+
+        const formData = new FormData(form);
+        const data = Object.fromEntries(formData.entries());
+
+        // ALL-IN-ONE URL (Sheet Only Version)
+        const AIO_URL = "https://script.google.com/macros/s/AKfycbzNaU95FbDrYx2kp3uwYi5Kxu0_ziFrh2gL28OZicVla0zkfj7wVuafgDdeffkBaPKZmg/exec";
+        const submitUrl = `${AIO_URL}?email=${encodeURIComponent(data.email)}&source=${encodeURIComponent('Home - EN')}`;
+        
+        // "Indestructible" Method: Hidden Iframe (Bypasses all CORS blocks)
+        const hiddenIframe = document.createElement('iframe');
+        hiddenIframe.style.display = 'none';
+        hiddenIframe.src = submitUrl;
+        document.body.appendChild(hiddenIframe);
+
+        // Show Success UI immediately (Iframe works in background)
+        setTimeout(() => {
+          container.innerHTML = `
+            <div class="animate-fade-in-up text-center py-2">
+              <p class="text-white text-xl font-serif mb-2">Thank you! 😊</p>
+              <p class="text-slate-300 text-xs mb-3">We will remind you 3 days before prices go up.</p>
+              <a href="artists" class="text-pink-400 text-xs font-bold tracking-widest uppercase hover:text-pink-300 transition-colors underline decoration-pink-500/30">Check the lineup while you wait &rarr;</a>
+            </div>
+          `;
+          document.body.removeChild(hiddenIframe); // Cleanup
+        }, 1000);
+      });
+    }
+  </script>
+</body>
+
+</html>
