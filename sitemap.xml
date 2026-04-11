@@ -284,6 +284,10 @@
       <image:title>Milano Sensual Congress Logo</image:title>
     </image:image>
     <image:image>
+      <image:loc>https://www.milanosensualcongress.com/images/artists/agustin_alba.png</image:loc>
+      <image:title>Agustin y Alba</image:title>
+    </image:image>
+    <image:image>
       <image:loc>https://www.milanosensualcongress.com/images/artists/irene_tomas.webp</image:loc>
       <image:title>Irene y Tomas</image:title>
     </image:image>
@@ -336,6 +340,10 @@
       <image:title>Milano Sensual Congress Logo</image:title>
     </image:image>
     <image:image>
+      <image:loc>https://www.milanosensualcongress.com/images/artists/agustin_alba.png</image:loc>
+      <image:title>Agustin y Alba</image:title>
+    </image:image>
+    <image:image>
       <image:loc>https://www.milanosensualcongress.com/images/artists/irene_tomas.webp</image:loc>
       <image:title>Irene y Tomas</image:title>
     </image:image>
@@ -374,6 +382,27 @@
     <image:image>
       <image:loc>https://www.milanosensualcongress.com/images/news/msc_flyer_2026.jpg</image:loc>
       <image:title>Milano Sensual Congress 2026 Official Flyer</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.milanosensualcongress.com/news/agustinyalba-bachata-sensual-rising-stars</loc>
+    <lastmod>2026-04-11</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.milanosensualcongress.com/news/agustinyalba-bachata-sensual-rising-stars" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.milanosensualcongress.com/news/agustinyalba-bachata-sensual-rising-stars" />
+    <image:image>
+      <image:loc>https://www.milanosensualcongress.com/images/logo.webp</image:loc>
+      <image:title>Milano Sensual Congress Logo</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.milanosensualcongress.com/it/news/agustinyalba-stelle-nascenti-bachata-sensual</loc>
+    <lastmod>2026-04-11</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.milanosensualcongress.com/it/news/agustinyalba-stelle-nascenti-bachata-sensual" />
+    <image:image>
+      <image:loc>https://www.milanosensualcongress.com/images/logo.webp</image:loc>
+      <image:title>Milano Sensual Congress Logo</image:title>
     </image:image>
   </url>
   <url>
