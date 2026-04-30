@@ -1,6 +1,6 @@
 # Milano Sensual Congress 2026 - Full Site Documentation
-# Generated automatically on 2026-04-15 11:10
-# Total Pages: 51
+# Generated automatically on 2026-04-30 12:58
+# Total Pages: 58
 
 ## Page: Milano Sensual Congress 2026 | Europe's Leading Bachata Congress (index.html)
 Description: The official Milano Sensual Congress 2026 (Nov 20-22). Europe's leading Bachata congress and the #1 Bachata Sensual event in Italy. Join world-class artists in Milan.
@@ -713,10 +713,10 @@ Have questions? We are here to help you enjoy
 
 ---
 
-## Page: Bachata Artists & Workshops 2026 | Milano Sensual Congress (artists.html)
+## Page: Bachata Workshops 2026 in Milan | International Artists & Masterclasses (artists.html)
 Description: Experience a world-class lineup at the International Milano Sensual Congress. Featuring Gero y Migle (Esencia Style), Klaus y Ros, and more top Bachata artists teaching workshops and performing in Milan.
 
-Bachata Artists & Workshops 2026 | Milano Sensual Congress
+Bachata Workshops 2026 in Milan | International Artists & Masterclasses
 
 The
  Lineup
@@ -804,10 +804,10 @@ Tickets are selling fast. Secure your spot to learn from and
 
 ---
 
-## Page: Artisti & Workshop Bachata 2026 | Milano Sensual Congress (it/artists.html)
+## Page: Workshop Bachata 2026 a Milano | Artisti Internazionali e Masterclass (it/artists.html)
 Description: Scopri la lineup di classe mondiale al Milano Sensual Congress. Con Gero y Migle (Esencia Style), Klaus y Ros, e altri top artisti di Bachata che terranno workshop e show a Milano.
 
-Artisti & Workshop Bachata 2026 | Milano Sensual Congress
+Workshop Bachata 2026 a Milano | Artisti Internazionali e Masterclass
 
 La
  Lineup
@@ -1593,6 +1593,20 @@ Where Comfort Meets Bachata
 
  Book Now 
 
+ Exclusive Event Rates
+
+Double Room:
+ 150 EUR / night
+
+•
+
+Quadruple Room:
+ 270 EUR / night
+
+ Breakfast included in both options
+
+ Note: Hotel restaurants are open for lunch and dinner (Friday to Sunday). Meals are not included in room reservations but can be purchased by everyone.
+
 Experience the Congress
 in 
 Executive Style
@@ -1617,10 +1631,6 @@ Nearby Accommodation
 
 Stay steps away in the same 4★ executive hotel as the event.
 
-Immersive Production
-
-State-of-the-art sound, lighting, and staging for bachata lovers.
-
 Atmospheric Night Pool Parties
 
 Luxury 4-Star Venue
@@ -1630,30 +1640,6 @@ Relax by the Pool
 Iconic Architecture
 
 Comfortable & Stylish Rooms
-
-Book Your Stay
-
-The official hotel link will provide the best rates for
- attendees. Don't miss out on staying right where the action is.
-
-Rooms & Suites
-
-The Devero Hotel offers spacious and elegant rooms equipped
- with
- all modern comforts. Choose between Standard, Superior rooms, or treat yourself to one of our luxury
- Suites.
-
- Free
- High-Speed Wi-Fi
-
- Air Conditioning
-
- Smart TV
-
- Minibar
-
-Book
- Your Room
 
 Hotel & Booking FAQ
 
@@ -1699,6 +1685,20 @@ congressi bachata 2026
 
  Prenota Ora 
 
+ Tariffe Esclusive Evento
+
+Camera Doppia:
+ 150 € / notte
+
+•
+
+Camera Quadrupla:
+ 270 € / notte
+
+ Colazione inclusa in entrambe
+
+ Nota: I ristoranti dell'hotel sono aperti per pranzo e cena (da venerdì a domenica). I pasti non sono inclusi nella prenotazione della camera ma sono acquistabili da tutti.
+
 Vivi il Congresso
 in 
 Stile Executive
@@ -1739,29 +1739,6 @@ Rilassati a bordo piscina
 Architettura iconica
 
 Camere confortevoli ed eleganti
-
-Prenota il Tuo Soggiorno
-
-Il link ufficiale dell'hotel fornirà le migliori tariffe per i
- partecipanti. Non perdere l'occasione di soggiornare proprio dove si svolge l'azione.
-
-Camere & Suite
-
-Il Devero Hotel offre camere spaziose ed eleganti dotate di
- tutti i comfort moderni. Scegli tra camere Standard, Superior, o concediti una delle nostre lussuose
- Suite.
-
- Wi-Fi
- Gratuito ad alta velocità
-
- Aria Condizionata
-
- Smart TV
-
- Minibar
-
-Prenota
- la Tua Camera
 
 FAQ Hotel & Prenotazioni
 
@@ -2461,6 +2438,233 @@ Page Not Found
 
 ---
 
+## Page: BookHotel | Milano Sensual Congress 2026 (BookHotel.html)
+Description: Book your official Milano Sensual Congress hotel room at Devero Hotel & Spa for 20-22 November 2026.
+
+BookHotel | Milano Sensual Congress 2026
+
+Personal data / Residence
+
+Reservation form
+
+Fields marked with 
+*
+ are required.
+
+Nome / 
+Name
+
+*
+
+Cognome / 
+Surname
+
+*
+
+Email 
+*
+
+Please enter the correct email address. Your booking
+ code will be sent there.
+
+Cellulare, Telefono / 
+Mobile, Phone
+
+*
+
+Indirizzo / 
+Address
+
+*
+
+Città di residenza / 
+City of residence
+
+*
+
+Provincia / 
+Province
+
+*
+
+Cap / 
+Zip
+
+*
+
+Paese di residenza / 
+Country of
+ Residence
+
+Italian residents must enter their Codice Fiscale
+ correctly for the receipt.
+
+Data di nascita / 
+Date of birth
+
+*
+
+Comune di nascita / 
+Municipality of
+ birth
+
+*
+
+If you were not born in Italy, select "Nato NON in
+ Italia".
+
+Codice Fiscale 
+*
+
+Pernottamento / Overnight stay
+
+Choose the hotel and the room
+
+Breakfast is included with your hotel booking. Lunch and
+ dinner are not included, but they can be purchased directly at the hotel during the event.
+
+All reservations are for either a double room or a
+ quadruple room. Single, triple, and other room configurations are not available for this booking.
+
+Double room
+
+2 nights
+
+150 EUR
+
+per night
+
+Quadruple room
+
+2 nights
+
+270 EUR
+
+per night
+
+Indica eventuali preferenze / 
+Please indicate your
+ preferences
+
+Indica con precisione cognome e nome delle persone con cui vuoi
+ stare in stanza / Please indicate the exact surname and name of the people you wish to share the room
+ with.
+
+1
+
+2
+
+3
+
+Totale
+
+0,00
+ EUR
+
+Richiedo fattura
+
+ Conferma
+
+---
+
+## Page: Bachata Congress 2026 in Europe | Milano Sensual Congress (bachata-congress-2026.html)
+Description: Looking for a bachata congress in 2026? Discover Milano Sensual Congress in Italy: international bachata workshops, parties, artists, hotel venue and social dancing in Milan.
+
+Bachata Congress 2026 in Europe | Milano Sensual Congress
+
+International Bachata Congress 2026
+
+Bachata Congress 2026
+in Milan, Italy
+
+Join Milano Sensual Congress from
+ 20 to 22 November 2026 for international bachata workshops, social dancing, parties, artists and a full weekend
+ inside the official congress hotel.
+
+ Get Tickets
+
+ View Artists
+
+Why this congress
+
+A bachata weekend built for international dancers
+
+If you are searching for a 
+bachata congress 2026
+ in Europe, Milano Sensual Congress brings together the elements dancers travel for: international artists, structured workshops, social dancing, parties, an official hotel venue and the energy of Milan.
+
+The congress is designed for dancers who want more than a single party. It is a complete weekend where you can train during the day, dance at night, meet people from different countries and experience bachata inside a dedicated event environment.
+
+Workshops
+
+Learn from international bachata artists across sensual, fusion, technique and musicality.
+
+Parties
+
+Dance through the weekend with DJs, shows, socials and a full international dance floor.
+
+Official Hotel
+
+Stay where the event happens at Devero Hotel, with workshops and parties under one roof.
+
+Europe & Beyond
+
+Meet bachata dancers traveling to Milan from Italy, Europe and the global scene.
+
+What you can expect
+
+Workshops, parties and social dancing in one weekend
+
+Milano Sensual Congress is created for dancers who want to improve, connect and enjoy a full bachata festival experience in Italy.
+
+Daytime training
+
+Workshops help you understand technique, connection, body movement, footwork, styling and musicality directly from the artists shaping the bachata scene.
+
+Night parties
+
+The parties are where dancers from many countries meet, practice, socialize and turn the congress into a shared international memory.
+
+Milan travel
+
+Milan is easy to reach from major European cities, with airport options, transfer support and a venue just outside the city.
+
+Event details
+
+Milano Sensual Congress 2026
+
+Dates:
+ 20-22 November 2026
+
+Location:
+ Devero Hotel, Cavenago di Brianza, Milan area, Italy
+
+Passes:
+ Full Pass and other ticket options available on the official ticket page
+
+Hotel:
+ Official congress hotel with event rooms, parties and dancer-friendly logistics
+
+Buy Tickets
+
+Hotel Info
+
+Bachata Congress 2026 FAQ
+
+Is Milano Sensual Congress good for international dancers?
+
+Yes. The event is designed for an international audience, with dancers and artists traveling to Milan from across Europe and beyond.
+
+Do I need to be advanced to attend?
+
+No. A bachata congress welcomes different levels. Choose workshops that match your experience and use the weekend to grow.
+
+What makes a congress different from a normal party?
+
+A congress combines workshops, parties, social dancing, shows, artists and travel into one intensive weekend. It is both a learning event and a dance community experience.
+
+---
+
 ## Page: From Social Dancer to International Artist: The Milano Sensual Jack & Jill 2026 (jacknjill.html)
 Description: Join the International Bachata Jack & Jill at Milano Sensual Congress 2026. Compete for a spot in the 2027 artist lineup and more. International judges and top dancers from Europe.
 
@@ -2507,9 +2711,6 @@ The Prizes: Your Future Starts Here
 
 We are looking for more than just a winner—we are looking for a colleague. The top prizes for the International Jack & Jill 2026 include:
 
-Cash Prizes
-: Significant financial rewards to support your international dance journey.
-
 Official Artist Slot for 2027
 : The winner will receive an invitation to join the official artist lineup for the Milano Sensual Congress 2027.
 
@@ -2530,15 +2731,31 @@ Get Your Pass First
 
 ---
 
-## Page: Bachata Events & News 2026 | Milano Sensual Congress (news.html)
+## Page: Bachata Congress 2026 News, Festivals & Dance Guides (news.html)
 Description: Stay updated with the latest Bachata news, festival guides, and dance insights from the European Bachata scene.
 
-Bachata Events & News 2026 | Milano Sensual Congress
+Bachata Congress 2026 News, Festivals & Dance Guides
 
 Bachata News 
 & Festival Updates
 
 Track the evolution of the congress and stay updated with every milestone.
+
+April 30, 2026
+
+Bachata Congress 2026 in Europe
+
+A complete guide for dancers searching for a bachata congress in 2026: workshops, parties, international artists, Milan travel and the official congress hotel.
+
+Read Guide 
+
+April 30, 2026
+
+Bachata Congress Etiquette
+
+A practical guide to social dancing, workshops and parties for international dancers who want to feel confident and respectful on the congress floor.
+
+Read Article 
 
 April 19, 2026
 
@@ -2746,6 +2963,110 @@ Get Your Full Pass
 
 ---
 
+## Page: Bachata Congress Etiquette: Social Dancing, Workshops & Parties (news/bachata-congress-etiquette-social-dancing-workshops-parties.html)
+Description: Learn bachata congress etiquette for social dancing, workshops and parties. A practical guide for international dancers attending Milano Sensual Congress 2026.
+
+Bachata Congress Etiquette: Social Dancing, Workshops & Parties
+
+Dance Culture Guide
+
+Bachata Congress Etiquette:
+Social Dancing, Workshops and Parties
+
+A practical guide for international dancers who want to feel confident, respectful and ready before stepping onto the congress floor.
+
+A bachata congress is more than a schedule of classes and parties. It is a temporary international community, built around trust, music, shared space and the small choices dancers make with each other.
+
+If you are traveling to an international bachata festival for the first time, etiquette can feel like an invisible rulebook. The good news is that bachata congress etiquette is not about being perfect. It is about making the dance floor safer, warmer and more enjoyable for everyone.
+
+At 
+Milano Sensual Congress 2026
+, dancers arrive from different countries, schools, styles and experience levels. A little awareness helps everyone connect faster, learn better and dance longer.
+
+1. Social Dancing Etiquette: Connection Before Patterns
+
+The party floor is where a congress becomes unforgettable. You may dance with people from your city, from the other side of Europe, or from a country you have never visited. The best social dancers are not always the ones with the most advanced moves. They are the ones who make partners feel comfortable.
+
+Ask Simply and Accept the Answer
+
+A smile, eye contact and a simple "Would you like to dance?" is enough. If someone says no, accept it gracefully. They may be tired, resting, waiting for a friend, changing shoes or simply not in the mood. A respectful no keeps the social floor healthy.
+
+Adapt to Your Partner
+
+International congresses bring together many bachata styles: sensual, fusion, moderna, Dominican influences and personal local flavors. Start calmly, listen to your partner's response, and build the dance from there. If your partner is newer, keep the dance clean and musical. If they are advanced, you can explore more, but never force complexity.
+
+Protect the Space Around You
+
+Parties can get full, especially late at night. Keep dips, head movements and big traveling patterns under control. Before leading anything with more body movement, check the space and your partner's comfort. A beautiful dance should never put nearby dancers at risk.
+
+2. Workshop Etiquette: Learn With Focus and Humility
+
+Workshops are one of the biggest reasons dancers travel to a congress. You get direct access to international artists, new methods and details that are difficult to catch in weekly classes. The etiquette here is simple: respect the teachers, respect the rotation and respect the learning process.
+
+Arrive a few minutes early so you do not interrupt the explanation.
+
+Choose a level that fits your current dancing, not your ambition for the weekend.
+
+Rotate when the teacher asks, and do it with a friendly attitude.
+
+Avoid teaching over the artists unless your partner directly asks for help.
+
+Record only when recording is allowed, and never block other dancers' view.
+
+Great workshop etiquette also means taking care of your own energy. Drink water, rest when you need to, and keep fresh shirts or towels with you. Congress days are long, and small habits make a big difference for the people dancing next to you.
+
+3. Party Etiquette: Stay Fresh, Friendly and Present
+
+The night parties are often the emotional center of a bachata congress. This is where workshop material becomes real connection, where strangers become friends, and where the music carries everyone past normal bedtime.
+
+Because parties are close-contact environments, personal care matters. Fresh clothes, deodorant, breath mints and respectful hygiene are not small details. They are part of making your partner comfortable. Bring extra shirts if you sweat a lot. Many experienced dancers do.
+
+Be present during the dance. Avoid checking your phone, scanning the room for someone else, or treating one song as a warm-up for the next partner. Every dance is short. Give it your attention.
+
+4. Consent and Sensual Bachata: Clear, Comfortable, Respectful
+
+Sensual bachata includes close connection, body movement, waves, isolations and sometimes head movement. That makes consent and sensitivity especially important. Close embrace is not automatic. Body contact is not a shortcut. Every partner deserves to feel that they can relax without being pushed.
+
+Lead with clarity, not force. Followers should feel invited, not pulled. If a movement feels uncertain, simplify. If your partner creates more distance, respect it. If something goes wrong, smile, reset and continue. The best dancers are easy to trust.
+
+5. International Dance Floor Etiquette
+
+At a major bachata congress in Europe, you will meet dancers with different languages, customs and dance backgrounds. Keep communication simple and kind. English is usually the shared language at international events, but body language matters too: a smile, a thank you and a calm attitude travel well.
+
+Avoid judging dancers by level, nationality or style. Some people dance softly. Some dance technically. Some dance with Dominican flavor, others with a sensual or fusion focus. A congress is the perfect place to discover those differences without trying to make everyone dance the same way.
+
+6. What to Bring for Better Etiquette
+
+The right preparation helps you show up well for yourself and others. Before packing for Milano Sensual Congress, consider bringing:
+
+Comfortable dance shoes for workshops and parties.
+
+Extra shirts or outfits for long social nights.
+
+Deodorant, breath mints and a small towel.
+
+A refillable water bottle.
+
+A light layer for breaks between rooms or late-night moments.
+
+An open attitude, especially if you are coming alone.
+
+7. The Milano Sensual Congress Spirit
+
+The best congress etiquette is not stiff or formal. It is generous. It makes the event feel open to first-timers, inspiring for advanced dancers and welcoming for international guests. When everyone brings respect to the workshops, care to the social floor and good energy to the parties, the whole weekend rises.
+
+That is the spirit behind 
+Milano Sensual Congress
+: high-level dancing, international connection and a room full of people who came to learn, share and enjoy bachata together.
+
+Ready to Dance in Milan?
+
+Join dancers from across Europe and beyond for workshops, parties, social dancing and a full bachata weekend in Italy.
+
+Book Your Full Pass
+
+---
+
 ## Page: Cristian y Gabriella: The Masters of Technical Bachata | Milano Sensual Congress (news/cristian-y-gabriella-bachata-world-masters-2026.html)
 Description: Discover the world-class precision of Cristian y Gabriella. The Spanish Bachata masters bring their technical excellence and creative fusion to Milano Sensual Congress 2026.
 
@@ -2791,6 +3112,58 @@ Train with Cristian y Gabriella
 Join their exclusive workshops and witness their breathtaking performance at the Milano Sensual Congress 2026.
 
 Secure Your Full Pass
+
+---
+
+## Page: David y Inés: The Masters of Technical Precision & Fluidity | Milano Sensual Congress (news/david-y-ines-bachata-sensual-masters-2026.html)
+Description: Experience the world-class expertise of David y Inés at Milano Sensual Congress 2026. Discover their unique fusion of Bachata Sensual and athletic discipline.
+
+David y Inés: The Masters of Technical Precision & Fluidity | Milano Sensual Congress
+
+Back to News
+
+Artist Spotlight
+
+David y Inés 
+Technical Precision & Fluid Motion
+
+Combining 20 years of experience with a high-performance sports background, David & Inés represent the pinnacle of technical excellence in modern Bachata.
+
+"Our goal is to transform technical rigor into pure, fluid emotion on the dance floor." - David & Inés
+
+In the landscape of international Bachata, few couples command as much respect for their technical discipline as 
+David Morante and Inés Ferrero
+. Based in Spain, their journey from founders of the renowned "Marimba" dance school to global icons is a testament to their unwavering commitment to the art of movement.
+
+The Sports Background Edge
+
+What truly distinguishes David y Inés is their foundation in competitive sports. This background infuses their dancing with a level of 
+precision, athleticism, and body control
+ that is rare in the social dance world. Every movement is calculated yet feels effortless, creating a visual harmony that has captivated audiences from Europe to Latin America.
+
+Masters of Bachata Fusion
+
+While deeply rooted in the principles of Bachata Sensual, they have pioneered a style that seamlessly blends the heat of the Sensual style with the technical rigor of contemporary fusion. This "Fusion" approach allows for greater musical interpretation and a dynamic range of expression, making their performances some of the most anticipated in the circuit.
+
+Workshops at Milano Sensual Congress 2026
+
+We are honored to have David y Inés conducting 
+two specialized workshops
+ designed for dancers who want to bridge the gap between social dancing and professional performance levels:
+
+Technical Body Control
+: Breaking down the mechanics of isolation and fluid transitions.
+
+Dynamic Connection
+: High-level lead and follow techniques for complex fusion patterns.
+
+Their pedagogical approach is highly structured, ensuring that every student leaves with a deeper understanding of the "why" behind the "how."
+
+Elevate Your Technique
+
+Don't miss the chance to learn from the Spanish masters at the Devero Hotel this November.
+
+Get Your Full Pass
 
 ---
 
@@ -3373,6 +3746,104 @@ Needs to be booked in advance.
 
 ---
 
+## Page: Congresso Bachata 2026 in Europa | Milano Sensual Congress (it/congresso-bachata-2026.html)
+Description: Cerchi un congresso bachata nel 2026? Scopri Milano Sensual Congress in Italia: workshop bachata internazionali, party, artisti, hotel ufficiale e social dancing a Milano.
+
+Congresso Bachata 2026 in Europa | Milano Sensual Congress
+
+Congresso Bachata Internazionale 2026
+
+Congresso Bachata 2026
+a Milano, Italia
+
+Partecipa a Milano Sensual Congress dal
+ 20 al 22 novembre 2026 per workshop bachata internazionali, social dancing, party, artisti e un weekend completo
+ dentro l'hotel ufficiale del congresso.
+
+ Acquista Biglietti
+
+ Vedi Artisti
+
+Perche questo congresso
+
+Un weekend bachata pensato per ballerini internazionali
+
+Se stai cercando un 
+congresso bachata 2026
+ in Europa, Milano Sensual Congress riunisce cio per cui i ballerini viaggiano: artisti internazionali, workshop strutturati, social dancing, party, hotel ufficiale e l'energia di Milano.
+
+Il congresso e pensato per ballerini che vogliono piu di una singola serata. E un weekend completo in cui allenarsi di giorno, ballare di notte, incontrare persone da diversi paesi e vivere la bachata in un ambiente dedicato all'evento.
+
+Workshop
+
+Impara da artisti bachata internazionali tra sensual, fusion, tecnica e musicalita.
+
+Party
+
+Balla per tutto il weekend con DJ, show, social e una pista internazionale.
+
+Hotel Ufficiale
+
+Soggiorna dove si svolge l'evento, al Devero Hotel, con workshop e party sotto lo stesso tetto.
+
+Europa e Oltre
+
+Incontra ballerini bachata che arrivano a Milano dall'Italia, dall'Europa e dalla scena globale.
+
+Cosa aspettarti
+
+Workshop, party e social dancing in un solo weekend
+
+Milano Sensual Congress e creato per ballerini che vogliono migliorare, connettersi e vivere un'esperienza completa di festival bachata in Italia.
+
+Formazione diurna
+
+I workshop ti aiutano a comprendere tecnica, connessione, body movement, footwork, styling e musicalita direttamente dagli artisti che influenzano la scena bachata.
+
+Party notturni
+
+I party sono il momento in cui ballerini da tanti paesi si incontrano, praticano, socializzano e trasformano il congresso in un ricordo internazionale condiviso.
+
+Viaggio a Milano
+
+Milano e facile da raggiungere dalle principali citta europee, con diverse opzioni aeroportuali, supporto transfer e una sede appena fuori citta.
+
+Dettagli evento
+
+Milano Sensual Congress 2026
+
+Date:
+ 20-22 novembre 2026
+
+Luogo:
+ Devero Hotel, Cavenago di Brianza, area Milano, Italia
+
+Pass:
+ Full Pass e altre opzioni disponibili nella pagina ufficiale dei biglietti
+
+Hotel:
+ Hotel ufficiale del congresso con sale evento, party e logistica comoda per ballerini
+
+Acquista Biglietti
+
+Info Hotel
+
+FAQ Congresso Bachata 2026
+
+Milano Sensual Congress e adatto ai ballerini internazionali?
+
+Si. L'evento e pensato per un pubblico internazionale, con ballerini e artisti che arrivano a Milano da tutta Europa e oltre.
+
+Devo essere avanzato per partecipare?
+
+No. Un congresso bachata accoglie diversi livelli. Scegli i workshop adatti alla tua esperienza e usa il weekend per crescere.
+
+Cosa rende un congresso diverso da una normale serata?
+
+Un congresso unisce workshop, party, social dancing, show, artisti e viaggio in un weekend intenso. E sia un evento formativo sia un'esperienza di comunita.
+
+---
+
 ## Page: Da Social Dancer ad Artista Internazionale: Il Jack & Jill del Milano Sensual Congress 2026 (it/jacknjill.html)
 Description: Partecipa al Jack & Jill internazionale di Bachata al Milano Sensual Congress 2026. Competi per un posto nella lineup degli artisti 2027. Giudici internazionali e i migliori ballerini d'Europa.
 
@@ -3419,9 +3890,6 @@ I Premi: Il Tuo Futuro Inizia Qui
 
 Cerchiamo più di un semplice vincitore: cerchiamo un collega. I primi premi per l'International Jack & Jill 2026 includono:
 
-Premi in Denaro
-: Importanti premi pecuniari per supportare il tuo percorso professionale internazionale.
-
 Slot Artist Ufficiale 2027
 : Il vincitore riceverà un invito ufficiale per unirsi alla lineup degli artisti del Milano Sensual Congress 2027.
 
@@ -3442,49 +3910,31 @@ Acquista Prima il Tuo Pass
 
 ---
 
-## Page: David y Inés: The Masters of Technical Precision & Fluidity | Milano Sensual Congress (news/david-y-ines-bachata-sensual-masters-2026.html)
-Description: Meet David Morante and Inés Ferrero, the Spanish bachata icons bringing technical rigor and fluidity to Milano Sensual Congress 2026.
-
-David y Inés: The Masters of Technical Precision & Fluidity | Milano Sensual Congress
-
-"Our goal is to transform technical rigor into pure, fluid emotion on the dance floor." - David & Inés
-
-In the landscape of international Bachata, few couples command as much respect for their technical discipline as David Morante and Inés Ferrero. Based in Spain, their journey from founders of the renowned "Marimba" dance school to global icons is a testament to their unwavering commitment to the art of movement.
-
-The Sports Background Edge
-
-What truly distinguishes David y Inés is their foundation in competitive sports. This background infuses their dancing with a level of precision, athleticism, and body control that is rare in the social dance world. Every movement is calculated yet feels effortless, creating a visual harmony that has captivated audiences from Europe to Latin America.
-
-Masters of Bachata Fusion
-
-While deeply rooted in the principles of Bachata Sensual, they have pioneered a style that seamlessly blends the heat of the Sensual style with the technical rigor of contemporary fusion. This "Fusion" approach allows for greater musical interpretation and a dynamic range of expression, making their performances some of the most anticipated in the circuit.
-
-Workshops at Milano Sensual Congress 2026
-
-We are honored to have David y Inés conducting two specialized workshops designed for dancers who want to bridge the gap between social dancing and professional performance levels:
-
-- Technical Body Control: Breaking down the mechanics of isolation and fluid transitions.
-- Dynamic Connection: High-level lead and follow techniques for complex fusion patterns.
-
-Their pedagogical approach is highly structured, ensuring that every student leaves with a deeper understanding of the "why" behind the "how."
-
-Elevate Your Technique
-
-Don't miss the chance to learn from the Spanish masters at the Devero Hotel this November.
-
-Get Your Full Pass
-
----
-
-## Page: Congressi Bachata 2026 & Notizie | Milano Sensual Congress (it/news.html)
+## Page: Congressi Bachata 2026, Festival e Guide di Ballo (it/news.html)
 Description: Il portale ufficiale per i congressi bachata 2026. Tutte le ultime notizie, i festival europei e gli aggiornamenti dal Milano Sensual Congress.
 
-Congressi Bachata 2026 & Notizie | Milano Sensual Congress
+Congressi Bachata 2026, Festival e Guide di Ballo
 
 Congressi Bachata 2026 
 & Notizie Latine
 
 Traccia l'evoluzione dei migliori festival e congressi bachata 2026 in Italia e in Europa.
+
+30 Aprile 2026
+
+Congresso Bachata 2026 in Europa
+
+Una guida per ballerini internazionali che cercano congressi bachata 2026, workshop, party e un weekend di danza in Italia.
+
+Leggi la Guida 
+
+30 Aprile 2026
+
+Etichetta Congresso Bachata
+
+Una guida pratica a social dancing, workshop e party per ballerini internazionali che vogliono sentirsi sicuri e rispettosi sulla pista del congresso.
+
+Leggi l'Articolo 
 
 19 Aprile 2026
 
@@ -3861,6 +4311,128 @@ Allenati con Cristian y Gabriella
 Partecipa ai loro workshop esclusivi e assisti alla loro performance mozzafiato al Milano Sensual Congress 2026.
 
 Assicurati il tuo Full Pass
+
+---
+
+## Page: David y Inés: I Maestri della Precisione Tecnica e Fluidità | Milano Sensual Congress (it/news/david-y-ines-maestri-bachata-sensual-2026.html)
+Description: Vivi l'esperienza dei maestri mondiali David y Inés al Milano Sensual Congress 2026. Scopri la loro fusione unica di Bachata Sensual e disciplina atletica.
+
+David y Inés: I Maestri della Precisione Tecnica e Fluidità | Milano Sensual Congress
+
+Torna alle News
+
+Artist Spotlight
+
+David y Inés 
+Precisione Tecnica e Movimento Fluido
+
+Combinando 20 anni di esperienza con un background sportivo ad alte prestazioni, David & Inés rappresentano l'apice dell'eccellenza tecnica nella Bachata moderna.
+
+"Il nostro obiettivo è trasformare il rigore tecnico in pura emozione fluida sulla pista da ballo." - David & Inés
+
+Nel panorama della Bachata internazionale, poche coppie godono di tanto rispetto per la loro disciplina tecnica come 
+David Morante e Inés Ferrero
+. Con base in Spagna, il loro viaggio dai fondatori della rinomata scuola di danza "Marimba" a icone globali è una testimonianza del loro costante impegno nell'arte del movimento.
+
+Il Vantaggio del Background Sportivo
+
+Ciò che distingue veramente David y Inés è la loro formazione negli sport competitivi. Questo background infonde nel loro ballo un livello di 
+precisione, atletismo e controllo del corpo
+ raro nel mondo del social dance. Ogni movimento è calcolato ma appare naturale, creando un'armonia visiva che ha affascinato il pubblico dall'Europa all'America Latina.
+
+Maestri della Bachata Fusion
+
+Sebbene siano profondamente radicati nei principi della Bachata Sensual, hanno aperto la strada a uno stile che fonde armoniosamente il calore dello stile Sensual con il rigore tecnico della fusion contemporanea. Questo approccio "Fusion" permette una maggiore interpretazione musicale e una gamma dinamica di espressione, rendendo le loro performance tra le più attese nel circuito.
+
+Workshop al Milano Sensual Congress 2026
+
+Siamo onorati di avere David y Inés per 
+due workshop specializzati
+, pensati per i ballerini che vogliono colmare il divario tra il ballo sociale e i livelli professionali:
+
+Controllo Tecnico del Corpo
+: Scomporre la meccanica dell'isolamento e delle transizioni fluide.
+
+Connessione Dinamica
+: Tecniche di guida e ascolto di alto livello per pattern di fusion complessi.
+
+Il loro approccio pedagogico è altamente strutturato, garantendo che ogni studente lasci la lezione con una comprensione profonda del "perché" dietro il "come".
+
+Migliora la tua Tecnica
+
+Non perdere l'occasione di imparare dai maestri spagnoli al Devero Hotel questo novembre.
+
+Acquista il tuo Full Pass
+
+---
+
+## Page: Etichetta Congresso Bachata: Social, Workshop e Party (it/news/etichetta-congresso-bachata-social-workshop-party.html)
+Description: Scopri l'etichetta da seguire a un congresso di bachata: social dance, workshop e party. Una guida pratica per ballerini internazionali al Milano Sensual Congress 2026.
+
+Etichetta Congresso Bachata: Social, Workshop e Party
+
+Guida alla cultura del ballo
+
+Etichetta Congresso Bachata:
+Social, Workshop e Party
+
+Una guida pratica per ballerini internazionali che vogliono sentirsi sicuri, rispettosi e pronti sulla pista del congresso.
+
+Un congresso di bachata non è solo un programma di lezioni e party. È una comunità internazionale temporanea, costruita sulla fiducia, sulla musica, sullo spazio condiviso e sulle piccole scelte che i ballerini fanno tra loro.
+
+Se stai partecipando per la prima volta a un festival internazionale di bachata, l'etichetta può sembrare un insieme di regole invisibili. In realtà è molto semplice: serve a rendere la pista più sicura, più accogliente e più piacevole per tutti.
+
+1. Etichetta nel social dancing: connessione prima delle figure
+
+Le serate sono il cuore del congresso. I migliori ballerini social non sono sempre quelli con le figure più complesse, ma quelli che fanno sentire il partner a proprio agio.
+
+Chiedi con semplicità e accetta la risposta
+
+Un sorriso, contatto visivo e una domanda gentile bastano. Se qualcuno dice di no, accettalo serenamente: potrebbe essere stanco, in pausa o semplicemente non disponibile in quel momento.
+
+Adattati al partner
+
+In un congresso internazionale incontrerai stili diversi: bachata sensual, fusion, moderna, influenze dominicane e approcci locali. Inizia con calma, ascolta la risposta del partner e costruisci il ballo da lì.
+
+2. Etichetta nei workshop: attenzione e umiltà
+
+I workshop sono una delle ragioni principali per cui i ballerini viaggiano verso un congresso. Rispetta gli artisti, la rotazione e il processo di apprendimento.
+
+Arriva qualche minuto prima dell'inizio della lezione.
+
+Scegli un livello adatto al tuo ballo attuale.
+
+Ruota quando richiesto e fallo con atteggiamento positivo.
+
+Evita di correggere o insegnare sopra agli artisti.
+
+Registra solo quando è permesso.
+
+3. Etichetta nei party: freschezza, presenza e rispetto
+
+I party possono durare molte ore e si balla a stretto contatto. Portare magliette di ricambio, deodorante, mentine e un piccolo asciugamano è un gesto di rispetto verso se stessi e verso gli altri.
+
+Durante il ballo resta presente. Evita di guardare il telefono o cercare già il partner successivo. Ogni canzone merita attenzione.
+
+4. Bachata sensual e consenso
+
+La bachata sensual include connessione ravvicinata, onde, isolazioni e talvolta movimenti della testa. Proprio per questo consenso e sensibilità sono fondamentali. Il contatto non deve mai essere forzato.
+
+Guida con chiarezza, non con forza. Se il partner crea più distanza, rispettala. Se qualcosa non funziona, semplifica, sorridi e continua.
+
+5. Lo spirito del Milano Sensual Congress
+
+La migliore etichetta non è rigida. È generosa. Aiuta i principianti a sentirsi benvenuti, permette agli avanzati di esprimersi e rende l'esperienza migliore per gli ospiti internazionali.
+
+Questo è lo spirito del 
+Milano Sensual Congress
+: ballo di alto livello, connessione internazionale e una pista piena di persone pronte a imparare, condividere e vivere la bachata insieme.
+
+Pronto a ballare a Milano?
+
+Unisciti a ballerini da tutta Europa e oltre per workshop, party, social dancing e un weekend completo di bachata in Italia.
+
+Prenota il tuo Full Pass
 
 ---
 
@@ -4320,37 +4892,3 @@ Deve essere prenotato in anticipo.
 
 ---
 
-
-## Page: David y Inés: I Maestri della Precisione Tecnica e Fluidità | Milano Sensual Congress (it/news/david-y-ines-maestri-bachata-sensual-2026.html)
-Description: Incontra David Morante e Inés Ferrero, le icone spagnole della bachata che portano rigore tecnico e fluidità al Milano Sensual Congress 2026.
-
-David y Inés: I Maestri della Precisione Tecnica e Fluidità | Milano Sensual Congress
-
-"Il nostro obiettivo è trasformare il rigore tecnico in pura emozione fluida sulla pista da ballo." - David & Inés
-
-Nel panorama della Bachata internazionale, poche coppie godono di tanto rispetto per la loro disciplina tecnica come David Morante e Inés Ferrero. Con base in Spagna, il loro viaggio dai fondatori della rinomata scuola di danza "Marimba" a icone globali è una testimonianza del loro costante impegno nell'arte del movimento.
-
-Il Vantaggio del Background Sportivo
-
-Ciò che distingue veramente David y Inés è la loro formazione negli sport competitivi. Questo background infonde nel loro ballo un livello di precisione, atletismo e controllo del corpo raro nel mondo del social dance. Ogni movimento è calcolato ma appare naturale, creando un'armonia visiva che ha affascinato il pubblico dall'Europa all'America Latina.
-
-Maestri della Bachata Fusion
-
-Sebbene siano profondamente radicati nei principi della Bachata Sensual, hanno aperto la strada a uno stile che fonde armoniosamente il calore dello stile Sensual con il rigore tecnico della fusion contemporanea. Questo approccio "Fusion" permette una maggiore interpretazione musicale e una gamma dinamica di espressione, rendendo le loro performance tra le più attese nel circuito.
-
-Workshop al Milano Sensual Congress 2026
-
-Siamo onorati di avere David y Inés per due workshop specializzati, pensati per i ballerini che vogliono colmare il divario tra il ballo sociale e i livelli professionali:
-
-- Controllo Tecnico del Corpo: Scomporre la meccanica dell'isolamento e delle transizioni fluide.
-- Connessione Dinamica: Tecniche di guida e ascolto di alto livello per pattern di fusion complessi.
-
-Il loro approccio pedagogico è altamente strutturato, garantendo che ogni studente lasci la lezione con una comprensione profonda del "perché" dietro il "come".
-
-Migliora la tua Tecnica
-
-Non perdere l'occasione di imparare dai maestri spagnoli al Devero Hotel questo novembre.
-
-Acquista il tuo Full Pass
-
----

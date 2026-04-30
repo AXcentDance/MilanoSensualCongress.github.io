@@ -1,8 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
+    <loc>https://www.milanosensualcongress.com/BookHotel</loc>
+    <lastmod>2026-04-29</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.milanosensualcongress.com/BookHotel" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.milanosensualcongress.com/BookHotel" />
+    <image:image>
+      <image:loc>https://www.milanosensualcongress.com/images/logo.webp</image:loc>
+      <image:title>Milano Sensual Congress Logo</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://www.milanosensualcongress.com/artists</loc>
-    <lastmod>2026-04-20</lastmod>
+    <lastmod>2026-04-30</lastmod>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.milanosensualcongress.com/artists" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.milanosensualcongress.com/artists" />
@@ -54,7 +65,7 @@
   </url>
   <url>
     <loc>https://www.milanosensualcongress.com/it/artists</loc>
-    <lastmod>2026-04-20</lastmod>
+    <lastmod>2026-04-30</lastmod>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.milanosensualcongress.com/artists" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.milanosensualcongress.com/artists" />
@@ -105,8 +116,40 @@
     </image:image>
   </url>
   <url>
+    <loc>https://www.milanosensualcongress.com/bachata-congress-2026</loc>
+    <lastmod>2026-04-30</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.milanosensualcongress.com/bachata-congress-2026" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.milanosensualcongress.com/it/congresso-bachata-2026" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.milanosensualcongress.com/bachata-congress-2026" />
+    <image:image>
+      <image:loc>https://www.milanosensualcongress.com/images/logo.webp</image:loc>
+      <image:title>Milano Sensual Congress Logo</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.milanosensualcongress.com/images/poster.webp</image:loc>
+      <image:title>Milano Sensual Congress 2026 poster</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.milanosensualcongress.com/it/congresso-bachata-2026</loc>
+    <lastmod>2026-04-30</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.milanosensualcongress.com/bachata-congress-2026" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.milanosensualcongress.com/it/congresso-bachata-2026" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.milanosensualcongress.com/bachata-congress-2026" />
+    <image:image>
+      <image:loc>https://www.milanosensualcongress.com/images/logo.webp</image:loc>
+      <image:title>Logo Milano Sensual Congress</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.milanosensualcongress.com/images/poster.webp</image:loc>
+      <image:title>Poster Milano Sensual Congress 2026</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://www.milanosensualcongress.com/contact</loc>
-    <lastmod>2026-04-11</lastmod>
+    <lastmod>2026-04-26</lastmod>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.milanosensualcongress.com/contact" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.milanosensualcongress.com/contact" />
@@ -118,7 +161,7 @@
   </url>
   <url>
     <loc>https://www.milanosensualcongress.com/it/contact</loc>
-    <lastmod>2026-04-11</lastmod>
+    <lastmod>2026-04-26</lastmod>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.milanosensualcongress.com/contact" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.milanosensualcongress.com/contact" />
@@ -130,7 +173,7 @@
   </url>
   <url>
     <loc>https://www.milanosensualcongress.com/hotel</loc>
-    <lastmod>2026-04-26</lastmod>
+    <lastmod>2026-04-29</lastmod>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.milanosensualcongress.com/hotel" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.milanosensualcongress.com/hotel" />
@@ -193,25 +236,8 @@
     </image:image>
   </url>
   <url>
-    <loc>https://www.milanosensualcongress.com/BookHotel</loc>
-    <lastmod>2026-04-29</lastmod>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://www.milanosensualcongress.com/images/logo.webp</image:loc>
-      <image:title>Milano Sensual Congress Logo</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://www.milanosensualcongress.com/images/hotel/exterior_dusk.webp</image:loc>
-      <image:title>Devero Hotel Exterior at Dusk</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://www.milanosensualcongress.com/images/hotel/room_interior.webp</image:loc>
-      <image:title>Devero Hotel Room</image:title>
-    </image:image>
-  </url>
-  <url>
     <loc>https://www.milanosensualcongress.com/</loc>
-    <lastmod>2026-04-19</lastmod>
+    <lastmod>2026-04-30</lastmod>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.milanosensualcongress.com/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.milanosensualcongress.com/" />
@@ -239,7 +265,7 @@
   </url>
   <url>
     <loc>https://www.milanosensualcongress.com/it</loc>
-    <lastmod>2026-04-19</lastmod>
+    <lastmod>2026-04-26</lastmod>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.milanosensualcongress.com/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.milanosensualcongress.com/" />
@@ -267,7 +293,7 @@
   </url>
   <url>
     <loc>https://www.milanosensualcongress.com/jacknjill</loc>
-    <lastmod>2026-04-20</lastmod>
+    <lastmod>2026-04-26</lastmod>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.milanosensualcongress.com/jacknjill" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.milanosensualcongress.com/jacknjill" />
@@ -279,7 +305,7 @@
   </url>
   <url>
     <loc>https://www.milanosensualcongress.com/it/jacknjill</loc>
-    <lastmod>2026-04-20</lastmod>
+    <lastmod>2026-04-26</lastmod>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.milanosensualcongress.com/jacknjill" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.milanosensualcongress.com/jacknjill" />
@@ -291,7 +317,7 @@
   </url>
   <url>
     <loc>https://www.milanosensualcongress.com/news</loc>
-    <lastmod>2026-04-19</lastmod>
+    <lastmod>2026-04-30</lastmod>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.milanosensualcongress.com/news" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.milanosensualcongress.com/news" />
@@ -299,6 +325,14 @@
     <image:image>
       <image:loc>https://www.milanosensualcongress.com/images/logo.webp</image:loc>
       <image:title>Milano Sensual Congress Logo</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.milanosensualcongress.com/images/poster.webp</image:loc>
+      <image:title>Milano Sensual Congress 2026 poster</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.milanosensualcongress.com/images/news/bachata_dancing_realistic.png</image:loc>
+      <image:title>Bachata dancers social dancing at a congress</image:title>
     </image:image>
     <image:image>
       <image:loc>https://www.milanosensualcongress.com/images/artists/david_ines.webp</image:loc>
@@ -341,17 +375,13 @@
       <image:title>Classes vs Congresses</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://www.milanosensualcongress.com/images/news/bachata_dancing_realistic.png</image:loc>
-      <image:title>Top Bachata Congresses Europe</image:title>
-    </image:image>
-    <image:image>
       <image:loc>https://www.milanosensualcongress.com/images/news/msc_flyer_2026.jpg</image:loc>
       <image:title>Milano Sensual Congress 2026 Official Flyer</image:title>
     </image:image>
   </url>
   <url>
     <loc>https://www.milanosensualcongress.com/it/news</loc>
-    <lastmod>2026-04-19</lastmod>
+    <lastmod>2026-04-30</lastmod>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.milanosensualcongress.com/news" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.milanosensualcongress.com/news" />
@@ -359,6 +389,14 @@
     <image:image>
       <image:loc>https://www.milanosensualcongress.com/images/logo.webp</image:loc>
       <image:title>Milano Sensual Congress Logo</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.milanosensualcongress.com/images/poster.webp</image:loc>
+      <image:title>Poster Milano Sensual Congress 2026</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.milanosensualcongress.com/images/news/bachata_dancing_realistic.png</image:loc>
+      <image:title>Ballerini di bachata social a un congresso</image:title>
     </image:image>
     <image:image>
       <image:loc>https://www.milanosensualcongress.com/images/artists/david_ines.webp</image:loc>
@@ -401,17 +439,13 @@
       <image:title>Corsi vs Congressi</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://www.milanosensualcongress.com/images/news/bachata_dancing_realistic.png</image:loc>
-      <image:title>Top Bachata Congresses Europe</image:title>
-    </image:image>
-    <image:image>
       <image:loc>https://www.milanosensualcongress.com/images/news/msc_flyer_2026.jpg</image:loc>
       <image:title>Milano Sensual Congress 2026 Official Flyer</image:title>
     </image:image>
   </url>
   <url>
     <loc>https://www.milanosensualcongress.com/news/agustinyalba-bachata-sensual-rising-stars</loc>
-    <lastmod>2026-04-20</lastmod>
+    <lastmod>2026-04-26</lastmod>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.milanosensualcongress.com/news/agustinyalba-bachata-sensual-rising-stars" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.milanosensualcongress.com/news/agustinyalba-bachata-sensual-rising-stars" />
@@ -422,7 +456,7 @@
   </url>
   <url>
     <loc>https://www.milanosensualcongress.com/it/news/agustinyalba-stelle-nascenti-bachata-sensual</loc>
-    <lastmod>2026-04-20</lastmod>
+    <lastmod>2026-04-26</lastmod>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="it" href="https://www.milanosensualcongress.com/it/news/agustinyalba-stelle-nascenti-bachata-sensual" />
     <image:image>
@@ -432,7 +466,7 @@
   </url>
   <url>
     <loc>https://www.milanosensualcongress.com/news/aitor-gomez-bachata-sensual-dominican-roots</loc>
-    <lastmod>2026-04-20</lastmod>
+    <lastmod>2026-04-26</lastmod>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.milanosensualcongress.com/news/aitor-gomez-bachata-sensual-dominican-roots" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.milanosensualcongress.com/news/aitor-gomez-bachata-sensual-dominican-roots" />
@@ -443,7 +477,7 @@
   </url>
   <url>
     <loc>https://www.milanosensualcongress.com/it/news/aitor-gomez-bachata-sensuale-radici-dominicane</loc>
-    <lastmod>2026-04-20</lastmod>
+    <lastmod>2026-04-26</lastmod>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="it" href="https://www.milanosensualcongress.com/it/news/aitor-gomez-bachata-sensuale-radici-dominicane" />
     <image:image>
@@ -452,8 +486,19 @@
     </image:image>
   </url>
   <url>
+    <loc>https://www.milanosensualcongress.com/news/bachata-congress-etiquette-social-dancing-workshops-parties</loc>
+    <lastmod>2026-04-30</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.milanosensualcongress.com/news/bachata-congress-etiquette-social-dancing-workshops-parties" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.milanosensualcongress.com/news/bachata-congress-etiquette-social-dancing-workshops-parties" />
+    <image:image>
+      <image:loc>https://www.milanosensualcongress.com/images/logo.webp</image:loc>
+      <image:title>Milano Sensual Congress Logo</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://www.milanosensualcongress.com/it/news/corsi-settimanali-vs-congressi-bachata</loc>
-    <lastmod>2026-04-20</lastmod>
+    <lastmod>2026-04-26</lastmod>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="it" href="https://www.milanosensualcongress.com/it/news/corsi-settimanali-vs-congressi-bachata" />
     <image:image>
@@ -463,7 +508,7 @@
   </url>
   <url>
     <loc>https://www.milanosensualcongress.com/it/news/cosa-aspettarsi-da-un-congresso-di-bachata-2026</loc>
-    <lastmod>2026-04-20</lastmod>
+    <lastmod>2026-04-26</lastmod>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="it" href="https://www.milanosensualcongress.com/it/news/cosa-aspettarsi-da-un-congresso-di-bachata-2026" />
     <image:image>
@@ -473,7 +518,7 @@
   </url>
   <url>
     <loc>https://www.milanosensualcongress.com/news/cristian-y-gabriella-bachata-world-masters-2026</loc>
-    <lastmod>2026-04-20</lastmod>
+    <lastmod>2026-04-26</lastmod>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.milanosensualcongress.com/news/cristian-y-gabriella-bachata-world-masters-2026" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.milanosensualcongress.com/news/cristian-y-gabriella-bachata-world-masters-2026" />
@@ -484,7 +529,7 @@
   </url>
   <url>
     <loc>https://www.milanosensualcongress.com/it/news/cristian-y-gabriella-maestri-bachata-mondiali-2026</loc>
-    <lastmod>2026-04-20</lastmod>
+    <lastmod>2026-04-26</lastmod>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="it" href="https://www.milanosensualcongress.com/it/news/cristian-y-gabriella-maestri-bachata-mondiali-2026" />
     <image:image>
@@ -505,7 +550,7 @@
   </url>
   <url>
     <loc>https://www.milanosensualcongress.com/it/news/david-y-ines-maestri-bachata-sensual-2026</loc>
-    <lastmod>2026-04-20</lastmod>
+    <lastmod>2026-04-26</lastmod>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="it" href="https://www.milanosensualcongress.com/it/news/david-y-ines-maestri-bachata-sensual-2026" />
     <image:image>
@@ -514,8 +559,18 @@
     </image:image>
   </url>
   <url>
+    <loc>https://www.milanosensualcongress.com/it/news/etichetta-congresso-bachata-social-workshop-party</loc>
+    <lastmod>2026-04-30</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.milanosensualcongress.com/it/news/etichetta-congresso-bachata-social-workshop-party" />
+    <image:image>
+      <image:loc>https://www.milanosensualcongress.com/images/logo.webp</image:loc>
+      <image:title>Milano Sensual Congress Logo</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://www.milanosensualcongress.com/news/gero-y-migle-bachata-masters-2026</loc>
-    <lastmod>2026-04-20</lastmod>
+    <lastmod>2026-04-26</lastmod>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.milanosensualcongress.com/news/gero-y-migle-bachata-masters-2026" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.milanosensualcongress.com/news/gero-y-migle-bachata-masters-2026" />
@@ -526,7 +581,7 @@
   </url>
   <url>
     <loc>https://www.milanosensualcongress.com/it/news/gero-y-migle-maestri-bachata-sensual-2026</loc>
-    <lastmod>2026-04-20</lastmod>
+    <lastmod>2026-04-26</lastmod>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="it" href="https://www.milanosensualcongress.com/it/news/gero-y-migle-maestri-bachata-sensual-2026" />
     <image:image>
@@ -536,7 +591,7 @@
   </url>
   <url>
     <loc>https://www.milanosensualcongress.com/it/news/guida-viaggio-bachata-milano-2026</loc>
-    <lastmod>2026-04-20</lastmod>
+    <lastmod>2026-04-26</lastmod>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="it" href="https://www.milanosensualcongress.com/it/news/guida-viaggio-bachata-milano-2026" />
     <image:image>
@@ -546,7 +601,7 @@
   </url>
   <url>
     <loc>https://www.milanosensualcongress.com/it/news/i-5-migliori-congressi-bachata-europa-2026</loc>
-    <lastmod>2026-04-20</lastmod>
+    <lastmod>2026-04-26</lastmod>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="it" href="https://www.milanosensualcongress.com/it/news/i-5-migliori-congressi-bachata-europa-2026" />
     <image:image>
@@ -556,7 +611,7 @@
   </url>
   <url>
     <loc>https://www.milanosensualcongress.com/news/irene-y-tomas-bachata-sensual-masters</loc>
-    <lastmod>2026-04-20</lastmod>
+    <lastmod>2026-04-26</lastmod>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.milanosensualcongress.com/news/irene-y-tomas-bachata-sensual-masters" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.milanosensualcongress.com/news/irene-y-tomas-bachata-sensual-masters" />
@@ -567,7 +622,7 @@
   </url>
   <url>
     <loc>https://www.milanosensualcongress.com/it/news/irene-y-tomas-maestri-bachata-sensual</loc>
-    <lastmod>2026-04-20</lastmod>
+    <lastmod>2026-04-26</lastmod>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="it" href="https://www.milanosensualcongress.com/it/news/irene-y-tomas-maestri-bachata-sensual" />
     <image:image>
@@ -577,7 +632,7 @@
   </url>
   <url>
     <loc>https://www.milanosensualcongress.com/news/klau-y-ros-endless-bachata-masters-2026</loc>
-    <lastmod>2026-04-20</lastmod>
+    <lastmod>2026-04-26</lastmod>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.milanosensualcongress.com/news/klau-y-ros-endless-bachata-masters-2026" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.milanosensualcongress.com/news/klau-y-ros-endless-bachata-masters-2026" />
@@ -588,7 +643,7 @@
   </url>
   <url>
     <loc>https://www.milanosensualcongress.com/it/news/klau-y-ros-maestri-endless-bachata-2026</loc>
-    <lastmod>2026-04-20</lastmod>
+    <lastmod>2026-04-26</lastmod>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="it" href="https://www.milanosensualcongress.com/it/news/klau-y-ros-maestri-endless-bachata-2026" />
     <image:image>
@@ -608,23 +663,8 @@
     </image:image>
   </url>
   <url>
-    <loc>https://www.milanosensualcongress.com/news/bachata-congress-etiquette-social-dancing-workshops-parties</loc>
-    <lastmod>2026-04-30</lastmod>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.milanosensualcongress.com/news/bachata-congress-etiquette-social-dancing-workshops-parties" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.milanosensualcongress.com/news/bachata-congress-etiquette-social-dancing-workshops-parties" />
-    <image:image>
-      <image:loc>https://www.milanosensualcongress.com/images/logo.webp</image:loc>
-      <image:title>Milano Sensual Congress Logo</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://www.milanosensualcongress.com/images/news/bachata_dancing_realistic.png</image:loc>
-      <image:title>Bachata Congress Etiquette Guide</image:title>
-    </image:image>
-  </url>
-  <url>
     <loc>https://www.milanosensualcongress.com/news/nacho-y-silvia-bachata-esencia-new-generation</loc>
-    <lastmod>2026-04-20</lastmod>
+    <lastmod>2026-04-26</lastmod>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.milanosensualcongress.com/news/nacho-y-silvia-bachata-esencia-new-generation" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.milanosensualcongress.com/news/nacho-y-silvia-bachata-esencia-new-generation" />
@@ -635,7 +675,7 @@
   </url>
   <url>
     <loc>https://www.milanosensualcongress.com/it/news/nacho-y-silvia-bachata-esencia-nuova-generazione</loc>
-    <lastmod>2026-04-20</lastmod>
+    <lastmod>2026-04-26</lastmod>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="it" href="https://www.milanosensualcongress.com/it/news/nacho-y-silvia-bachata-esencia-nuova-generazione" />
     <image:image>
@@ -645,7 +685,7 @@
   </url>
   <url>
     <loc>https://www.milanosensualcongress.com/news/top-5-bachata-congresses-europe-2026</loc>
-    <lastmod>2026-04-20</lastmod>
+    <lastmod>2026-04-26</lastmod>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.milanosensualcongress.com/news/top-5-bachata-congresses-europe-2026" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.milanosensualcongress.com/news/top-5-bachata-congresses-europe-2026" />
@@ -656,7 +696,7 @@
   </url>
   <url>
     <loc>https://www.milanosensualcongress.com/news/weekly-classes-vs-bachata-congresses</loc>
-    <lastmod>2026-04-20</lastmod>
+    <lastmod>2026-04-26</lastmod>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.milanosensualcongress.com/news/weekly-classes-vs-bachata-congresses" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.milanosensualcongress.com/news/weekly-classes-vs-bachata-congresses" />
@@ -667,7 +707,7 @@
   </url>
   <url>
     <loc>https://www.milanosensualcongress.com/news/what-to-expect-bachata-congress-2026</loc>
-    <lastmod>2026-04-20</lastmod>
+    <lastmod>2026-04-26</lastmod>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.milanosensualcongress.com/news/what-to-expect-bachata-congress-2026" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.milanosensualcongress.com/news/what-to-expect-bachata-congress-2026" />
@@ -982,7 +1022,7 @@
   </url>
   <url>
     <loc>https://www.milanosensualcongress.com/terms</loc>
-    <lastmod>2026-04-11</lastmod>
+    <lastmod>2026-04-26</lastmod>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.milanosensualcongress.com/terms" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.milanosensualcongress.com/terms" />
@@ -994,7 +1034,7 @@
   </url>
   <url>
     <loc>https://www.milanosensualcongress.com/it/terms</loc>
-    <lastmod>2026-04-11</lastmod>
+    <lastmod>2026-04-26</lastmod>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.milanosensualcongress.com/terms" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.milanosensualcongress.com/terms" />
@@ -1006,7 +1046,7 @@
   </url>
   <url>
     <loc>https://www.milanosensualcongress.com/tickets</loc>
-    <lastmod>2026-04-20</lastmod>
+    <lastmod>2026-04-26</lastmod>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.milanosensualcongress.com/tickets" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.milanosensualcongress.com/tickets" />
@@ -1030,7 +1070,7 @@
   </url>
   <url>
     <loc>https://www.milanosensualcongress.com/it/tickets</loc>
-    <lastmod>2026-04-20</lastmod>
+    <lastmod>2026-04-26</lastmod>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.milanosensualcongress.com/tickets" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.milanosensualcongress.com/tickets" />
@@ -1054,7 +1094,7 @@
   </url>
   <url>
     <loc>https://www.milanosensualcongress.com/transfer</loc>
-    <lastmod>2026-04-20</lastmod>
+    <lastmod>2026-04-26</lastmod>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.milanosensualcongress.com/transfer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.milanosensualcongress.com/transfer" />
@@ -1070,7 +1110,7 @@
   </url>
   <url>
     <loc>https://www.milanosensualcongress.com/it/transfer</loc>
-    <lastmod>2026-04-20</lastmod>
+    <lastmod>2026-04-26</lastmod>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.milanosensualcongress.com/transfer" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.milanosensualcongress.com/transfer" />
