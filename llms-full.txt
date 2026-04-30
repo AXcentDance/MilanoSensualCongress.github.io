@@ -1,6 +1,6 @@
 # Milano Sensual Congress 2026 - Full Site Documentation
-# Generated automatically on 2026-04-30 15:08
-# Total Pages: 60
+# Generated automatically on 2026-04-30 16:41
+# Total Pages: 62
 
 ## Page: Milano Sensual Congress 2026 | Europe's Leading Bachata Congress (index.html)
 Description: The official Milano Sensual Congress 2026 (Nov 20-22). Europe's leading Bachata congress and the #1 Bachata Sensual event in Italy. Join world-class artists in Milan.
@@ -746,6 +746,8 @@ Workshops
 
  Get Tickets
 
+ Workshop Program
+
 Esencia Masterclass
 
  Gero y Migle
@@ -798,8 +800,8 @@ More coming soon...
 
 Don't miss their workshops
 
-Tickets are selling fast. Secure your spot to learn from and
- dance with these legends.
+Tickets are selling fast. Secure your spot to learn from these artists and check the workshop program preview.
+ View Program
  Buy Full Pass
 
 ---
@@ -834,6 +836,8 @@ Paesi
 Workshop
 
  Acquista Biglietti
+
+ Programma Workshop
 
 Masterclass Esencia
 
@@ -883,13 +887,13 @@ Leggi Spotlight →
 
  Svizzera
 
-More coming soon...
+Altri artisti in arrivo...
 
-Don't miss their workshops
+Non perdere i loro workshop
 
-Tickets are selling fast. Secure your spot to learn from and
- dance with these legends.
- Buy Full Pass
+I biglietti stanno andando veloci. Assicura il tuo posto per imparare da questi artisti e consulta l'anteprima del programma.
+ Vedi Programma
+ Acquista Full Pass
 
 ---
 
@@ -3706,6 +3710,58 @@ Book Your Full Pass Now
 
 ---
 
+## Page: Bachata Workshop Schedule 2026 | Milano Sensual Congress Program (program.html)
+Description: Preview the Milano Sensual Congress 2026 program: Bachata workshop schedule, party times and social dancing hours for Friday, Saturday and Sunday. Full schedule out in November.
+
+Bachata Workshop Schedule 2026 | Milano Sensual Congress Program
+
+Bachata Congress Program
+
+Bachata Workshop Schedule 2026
+
+The detailed class-by-class program is 
+out in November
+. This teaser gives the expected workshop and social dancing structure for the weekend.
+
+Friday
+
+Opening Night
+
+18:00 - 23:00
+Workshops
+
+23:00 - 05:00
+Social dancing
+
+Saturday
+
+Full Congress Day
+
+10:00 - 20:00
+Workshops
+
+00:00 - 05:00
+Social dancing
+
+Sunday
+
+Final Day
+
+10:00 - 16:00
+Workshops
+
+16:00 - 22:00
+Social dancing
+
+Out in November
+
+The complete workshop schedule, room assignments and artist-by-artist program will be published in November. The times above are subject to slight changes as the final Bachata congress program is confirmed.
+
+View Artists
+Buy Full Pass
+
+---
+
 ## Page: Transfer Service | Milano Sensual Congress 2026 (transfer.html)
 Description: Official transfer service for Milano Sensual Congress 2026. Book your ride from Malpensa, Linate, Bergamo, or Milano Centrale to Devero Hotel.
 
@@ -4893,6 +4949,58 @@ I workshop di Nacho y Silvia dovrebbero riempirsi rapidamente. Assicurati il tuo
 Acquista il tuo Full Pass
 
 Vedi il Lineup Artisti
+
+---
+
+## Page: Programma Workshop Bachata 2026 | Milano Sensual Congress (it/programma.html)
+Description: Anteprima del programma Milano Sensual Congress 2026: orari workshop bachata, party e social dancing per venerdi, sabato e domenica. Programma completo in uscita a novembre.
+
+Programma Workshop Bachata 2026 | Milano Sensual Congress
+
+Programma Congresso Bachata
+
+Programma Workshop Bachata 2026
+
+Il programma dettagliato lezione per lezione sara 
+in uscita a novembre
+. Questa anteprima mostra la struttura prevista di workshop e social dancing del weekend.
+
+Venerdi
+
+Serata di Apertura
+
+18:00 - 23:00
+Workshop
+
+23:00 - 05:00
+Social dancing
+
+Sabato
+
+Giornata Congressuale
+
+10:00 - 20:00
+Workshop
+
+00:00 - 05:00
+Social dancing
+
+Domenica
+
+Giornata Finale
+
+10:00 - 16:00
+Workshop
+
+16:00 - 22:00
+Social dancing
+
+In uscita a novembre
+
+Il programma completo con workshop, sale e artisti sara pubblicato a novembre. Gli orari sopra indicati sono soggetti a leggere variazioni mentre confermiamo il programma finale del congresso bachata.
+
+Vedi Artisti
+Acquista Full Pass
 
 ---
 
