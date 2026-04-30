@@ -135,6 +135,7 @@
       "location": {
         "@type": "Place",
         "name": "Devero Hotel",
+        "description": "Official congress venue and hotel for Milano Sensual Congress 2026, with workshop rooms, party spaces and on-site accommodation for dancers.",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "Largo Kennedy, 1",
@@ -152,39 +153,68 @@
       "organizer": {
         "@id": "https://milanosensualcongress.com/#organization"
       },
+      "performer": [
+        { "@type": "Person", "name": "Gero y Migle", "sameAs": "https://www.instagram.com/geroymigle_official/" },
+        { "@type": "Person", "name": "Klaus y Ros", "sameAs": "https://www.instagram.com/klausyros/" },
+        { "@type": "Person", "name": "Cristian y Gabriella", "sameAs": "https://www.instagram.com/cristianygabriella_official/" },
+        { "@type": "Person", "name": "David y Ines", "sameAs": "https://www.instagram.com/davidyines/" },
+        { "@type": "Person", "name": "Nacho y Silvia", "sameAs": "https://www.instagram.com/nachoysilvia/" },
+        { "@type": "Person", "name": "Agustín y Alba", "sameAs": "https://www.instagram.com/agustinyalba_official/" },
+        { "@type": "Person", "name": "Irene y Tomás", "sameAs": "https://www.instagram.com/ireneytomas/" },
+        { "@type": "Person", "name": "Aitor Gomez", "sameAs": "https://www.instagram.com/aitorgomez_bachata/" }
+      ],
       "offers": {
         "@type": "Offer",
         "url": "https://lasalsadelbaile.com/MSC2026",
         "priceCurrency": "EUR",
-        "price": "115.00",
-        "availability": "https://schema.org/InStock"
+        "availability": "https://schema.org/InStock",
+        "priceSpecification": [
+          {
+            "@type": "UnitPriceSpecification",
+            "name": "Early-Bird Full Pass",
+            "price": "115.00",
+            "priceCurrency": "EUR",
+            "validThrough": "2026-05-01T23:59:59"
+          },
+          {
+            "@type": "UnitPriceSpecification",
+            "name": "Full Pass Tier 2",
+            "price": "135.00",
+            "priceCurrency": "EUR"
+          }
+        ],
+        "price": "115.00"
       }
     },
     {
       "@type": "FAQPage",
+      "@id": "https://milanosensualcongress.com/bachata-congress-2026#faq",
+      "mainEntityOfPage": {
+        "@id": "https://milanosensualcongress.com/bachata-congress-2026#webpage"
+      },
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "What is a bachata congress?",
+          "name": "Is Milano Sensual Congress good for international dancers?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "A bachata congress is a multi-day dance event with workshops, social dancing, parties, shows and international artists. It is designed for dancers who want to learn, connect and dance intensively over one weekend."
+            "text": "Yes. The event is designed for an international audience, with dancers and artists traveling to Milan from across Europe and beyond."
           }
         },
         {
           "@type": "Question",
-          "name": "When is Milano Sensual Congress 2026?",
+          "name": "Do I need to be advanced to attend?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Milano Sensual Congress 2026 takes place from 20 to 22 November 2026 at Devero Hotel near Milan, Italy."
+            "text": "No. A bachata congress welcomes different levels. Choose workshops that match your experience and use the weekend to grow."
           }
         },
         {
           "@type": "Question",
-          "name": "Can international dancers attend?",
+          "name": "What makes a congress different from a normal party?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. The congress is built for an international bachata audience, with dancers, artists and guests traveling from across Europe and beyond."
+            "text": "A congress combines workshops, parties, social dancing, shows, artists and travel into one intensive weekend. It is both a learning event and a dance community experience."
           }
         }
       ]
@@ -376,7 +406,9 @@
             href="terms" class="hover:text-slate-400">Terms & Conditions</a></div>
       </div>
     </div>
-  </footer>
+  
+      <div class="mt-6 text-center text-xs text-slate-500"><a href="faq" class="hover:text-slate-300 transition-colors">FAQ</a></div>
+</footer>
 </body>
 
 </html>

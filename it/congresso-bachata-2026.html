@@ -135,6 +135,7 @@
       "location": {
         "@type": "Place",
         "name": "Devero Hotel",
+        "description": "Hotel e location ufficiale del Milano Sensual Congress 2026, con sale workshop, spazi per party e camere in loco per i ballerini.",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "Largo Kennedy, 1",
@@ -152,39 +153,68 @@
       "organizer": {
         "@id": "https://milanosensualcongress.com/#organization"
       },
+      "performer": [
+        { "@type": "Person", "name": "Gero y Migle", "sameAs": "https://www.instagram.com/geroymigle_official/" },
+        { "@type": "Person", "name": "Klaus y Ros", "sameAs": "https://www.instagram.com/klausyros/" },
+        { "@type": "Person", "name": "Cristian y Gabriella", "sameAs": "https://www.instagram.com/cristianygabriella_official/" },
+        { "@type": "Person", "name": "David y Ines", "sameAs": "https://www.instagram.com/davidyines/" },
+        { "@type": "Person", "name": "Nacho y Silvia", "sameAs": "https://www.instagram.com/nachoysilvia/" },
+        { "@type": "Person", "name": "Agustín y Alba", "sameAs": "https://www.instagram.com/agustinyalba_official/" },
+        { "@type": "Person", "name": "Irene y Tomás", "sameAs": "https://www.instagram.com/ireneytomas/" },
+        { "@type": "Person", "name": "Aitor Gomez", "sameAs": "https://www.instagram.com/aitorgomez_bachata/" }
+      ],
       "offers": {
         "@type": "Offer",
         "url": "https://lasalsadelbaile.com/MSC2026",
         "priceCurrency": "EUR",
-        "price": "115.00",
-        "availability": "https://schema.org/InStock"
+        "availability": "https://schema.org/InStock",
+        "priceSpecification": [
+          {
+            "@type": "UnitPriceSpecification",
+            "name": "Early-Bird Full Pass",
+            "price": "115.00",
+            "priceCurrency": "EUR",
+            "validThrough": "2026-05-01T23:59:59"
+          },
+          {
+            "@type": "UnitPriceSpecification",
+            "name": "Full Pass Fascia 2",
+            "price": "135.00",
+            "priceCurrency": "EUR"
+          }
+        ],
+        "price": "115.00"
       }
     },
     {
       "@type": "FAQPage",
+      "@id": "https://milanosensualcongress.com/it/congresso-bachata-2026#faq",
+      "mainEntityOfPage": {
+        "@id": "https://milanosensualcongress.com/it/congresso-bachata-2026#webpage"
+      },
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "Che cos'e un congresso bachata?",
+          "name": "Milano Sensual Congress e adatto ai ballerini internazionali?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Un congresso bachata e un evento di piu giorni con workshop, social dancing, party, show e artisti internazionali. E pensato per ballerini che vogliono imparare, connettersi e ballare intensamente durante un weekend."
+            "text": "Si. L'evento e pensato per un pubblico internazionale, con ballerini e artisti che arrivano a Milano da tutta Europa e oltre."
           }
         },
         {
           "@type": "Question",
-          "name": "Quando si svolge Milano Sensual Congress 2026?",
+          "name": "Devo essere avanzato per partecipare?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Milano Sensual Congress 2026 si svolge dal 20 al 22 novembre 2026 al Devero Hotel, vicino a Milano, Italia."
+            "text": "No. Un congresso bachata accoglie diversi livelli. Scegli i workshop adatti alla tua esperienza e usa il weekend per crescere."
           }
         },
         {
           "@type": "Question",
-          "name": "Possono partecipare ballerini internazionali?",
+          "name": "Cosa rende un congresso diverso da una normale serata?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Si. Il congresso e pensato per un pubblico bachata internazionale, con ballerini, artisti e ospiti che viaggiano da tutta Europa e oltre."
+            "text": "Un congresso unisce workshop, party, social dancing, show, artisti e viaggio in un weekend intenso. E sia un evento formativo sia un'esperienza di comunita."
           }
         }
       ]
@@ -376,7 +406,9 @@
             href="terms" class="hover:text-slate-400">Termini e Condizioni</a></div>
       </div>
     </div>
-  </footer>
+  
+      <div class="mt-6 text-center text-xs text-slate-500"><a href="faq" class="hover:text-slate-300 transition-colors">FAQ</a></div>
+</footer>
 </body>
 
 </html>
