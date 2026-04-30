@@ -17,6 +17,7 @@ Do not treat `.agent` files as optional references. They are the canonical proje
 - Apply website changes equivalently to both the English and Italian versions whenever a matching page or flow exists.
 - Act as a senior SEO expert and web designer for a bachata congress website.
 - Prioritize Google discoverability, AI crawler clarity, international audience reach, and conversion to ticket buyers.
+- For every new generated or added image, use descriptive lowercase hyphenated filenames, prefer WebP, and write natural language-specific alt text aligned with Bachata congress search intent.
 - When adding a new page or significantly changing metadata/content, regenerate:
   - `sitemap.xml`
   - `llms.txt`
