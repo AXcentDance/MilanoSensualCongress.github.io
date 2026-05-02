@@ -1,5 +1,5 @@
 # Milano Sensual Congress 2026 - Full Site Documentation
-# Generated automatically on 2026-05-02 14:07
+# Generated automatically on 2026-05-02 14:38
 # Total Pages: 64
 
 ## Page: Milano Sensual Congress 2026 | Europe's Leading Bachata Congress (index.html)
@@ -4401,14 +4401,14 @@ Acquista Prima il Tuo Pass
 
 ---
 
-## Page: Formazione Bachata Avanzata 2026 a Milano | Masterclass (it/masterclass.html)
-Description: Formazione Bachata avanzata, masterclass e workshop intensivi a Milano per tecnica, musicalità, connessione, body mechanics e social dance con artisti internazionali.
+## Page: Formazione di Bachata Avanzata 2026 a Milano | Masterclass (it/masterclass.html)
+Description: Formazione di Bachata avanzata, masterclass e workshop intensivi a Milano per tecnica, musicalità, connessione, body mechanics e social dance con artisti internazionali.
 
-Formazione Bachata Avanzata 2026 a Milano | Masterclass
+Formazione di Bachata Avanzata 2026 a Milano | Masterclass
 
-Formazione Bachata avanzata
+Formazione di Bachata avanzata
 
-Formazione Bachata avanzata e masterclass a Milano
+Formazione di Bachata avanzata e masterclass a Milano
 
 Milano Sensual Congress è pensato per ballerini che vogliono andare oltre le figure. Questo è il congresso per la formazione avanzata: workshop Bachata intensivi, masterclass, tecnica, musicalità, connessione, controllo del corpo e precisione per crescere come social dancer consapevoli.
 
@@ -4421,7 +4421,7 @@ Per partecipare alle masterclass serve un Full Pass valido.
 
 Workshop avanzati per chi cerca vera formazione
 
-Il percorso masterclass è un upgrade per ballerini che cercano formazione Bachata avanzata, workshop intensivi e obiettivi più mirati. Aspettati dettagli tecnici, correzioni raffinate e strumenti da portare nel social dancing, nella performance e nel tuo allenamento futuro.
+Il percorso masterclass è un upgrade per ballerini che cercano formazione di Bachata avanzata, workshop intensivi e obiettivi più mirati. Aspettati dettagli tecnici, correzioni raffinate e strumenti da portare nel social dancing, nella performance e nel tuo allenamento futuro.
 
 Tecnica e meccanica del corpo
 Migliora controllo, transizioni, isolazioni e qualità del movimento invece di accumulare combinazioni.
@@ -4434,9 +4434,9 @@ Affina la comunicazione lead-follow per rendere il movimento avanzato comodo, re
 
 Le ricerche a cui questa pagina risponde
 
-Se stai cercando workshop Bachata avanzati in Europa, una masterclass Bachata a Milano, formazione intensiva di tecnica Bachata, musicalità, connessione o formazione Bachata Sensual avanzata, questo è il percorso mirato del Milano Sensual Congress.
+Se stai cercando workshop Bachata avanzati in Europa, una masterclass Bachata a Milano, formazione intensiva di tecnica Bachata, musicalità, connessione o formazione di Bachata Sensual avanzata, questo è il percorso mirato del Milano Sensual Congress.
 
-Formazione Bachata Avanzata
+Formazione di Bachata Avanzata
 
 Masterclass Bachata 2026
 
@@ -4450,7 +4450,7 @@ Body Mechanics
 
 Artisti Masterclass
 
-Tre artisti internazionali di Bachata, tre prospettive di allenamento, un percorso di formazione avanzata a Milano.
+Tre artisti internazionali di Bachata, tre prospettive di allenamento, un percorso di formazione di Bachata avanzata a Milano.
 
 Gero y Migle
 Esencia, flow e controllo avanzato
@@ -4478,7 +4478,7 @@ Vedi Biglietti e Requisiti
 FAQ masterclass Bachata avanzata
 
 Questa masterclass Bachata è per ballerini avanzati?
-Sì. È pensata per ballerini con basi di Bachata che cercano formazione avanzata su tecnica, musicalità, connessione, body mechanics e qualità nel social dancing.
+Sì. È pensata per ballerini con basi di Bachata che cercano formazione di Bachata avanzata su tecnica, musicalità, connessione, body mechanics e qualità nel social dancing.
 
 Su cosa lavorano i workshop Bachata avanzati?
 I workshop lavorano su movimento raffinato, comunicazione lead-follow, interpretazione musicale, controllo del corpo, connessione e strumenti utili nel social dancing e nella performance.
@@ -5563,8 +5563,6 @@ in uscita a novembre
 
 Venerdi
 
-Serata di Apertura
-
 18:00 - 23:00
 Workshop
 
@@ -5573,8 +5571,6 @@ Social dancing
 
 Sabato
 
-Giornata Congressuale
-
 10:00 - 20:00
 Workshop
 
@@ -5582,8 +5578,6 @@ Workshop
 Social dancing
 
 Domenica
-
-Giornata Finale
 
 10:00 - 16:00
 Workshop
