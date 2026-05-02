@@ -4,7 +4,7 @@ import re
 ROOT_DIR = "."
 IT_DIR = os.path.join(ROOT_DIR, 'it')
 
-DOMAIN = "https://www.milanosensualcongress.com"
+DOMAIN = "https://milanosensualcongress.com"
 
 def get_corresponding_path(filename, lang):
     """

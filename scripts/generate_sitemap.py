@@ -9,7 +9,7 @@ except ImportError:
     HAS_BS4 = False
     
 ROOT_DIR = "."
-DOMAIN = 'https://www.milanosensualcongress.com'
+DOMAIN = 'https://milanosensualcongress.com'
 
 def is_noindex(filepath):
     """Checks if a file has <meta name="robots" content="noindex...">"""
