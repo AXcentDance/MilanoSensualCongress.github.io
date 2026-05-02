@@ -13,7 +13,7 @@
   </url>
   <url>
     <loc>https://www.milanosensualcongress.com/artists</loc>
-    <lastmod>2026-05-01</lastmod>
+    <lastmod>2026-05-02</lastmod>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.milanosensualcongress.com/artists" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.milanosensualcongress.com/artists" />
@@ -65,7 +65,7 @@
   </url>
   <url>
     <loc>https://www.milanosensualcongress.com/it/artists</loc>
-    <lastmod>2026-05-01</lastmod>
+    <lastmod>2026-05-02</lastmod>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.milanosensualcongress.com/artists" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.milanosensualcongress.com/artists" />
@@ -258,7 +258,7 @@
   </url>
   <url>
     <loc>https://www.milanosensualcongress.com/</loc>
-    <lastmod>2026-05-01</lastmod>
+    <lastmod>2026-05-02</lastmod>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.milanosensualcongress.com/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.milanosensualcongress.com/" />
@@ -286,7 +286,7 @@
   </url>
   <url>
     <loc>https://www.milanosensualcongress.com/it</loc>
-    <lastmod>2026-05-01</lastmod>
+    <lastmod>2026-05-02</lastmod>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.milanosensualcongress.com/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.milanosensualcongress.com/" />
@@ -334,6 +334,52 @@
     <image:image>
       <image:loc>https://www.milanosensualcongress.com/images/logo.webp</image:loc>
       <image:title>Milano Sensual Congress Logo</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.milanosensualcongress.com/masterclass</loc>
+    <lastmod>2026-05-02</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.milanosensualcongress.com/masterclass" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.milanosensualcongress.com/masterclass" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.milanosensualcongress.com/it/masterclass" />
+    <image:image>
+      <image:loc>https://www.milanosensualcongress.com/images/logo.webp</image:loc>
+      <image:title>Milano Sensual Congress Logo</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.milanosensualcongress.com/images/artists/gero-migle-bachata-esencia.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.milanosensualcongress.com/images/artists/klau-ros-bachata-sensual.webp</image:loc>
+      <image:title>Klau y Ros Bachata masterclass artists in Milan</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.milanosensualcongress.com/images/artists/cristian-gabriella-bachata-artists.webp</image:loc>
+      <image:title>Cristian y Gabriella advanced Bachata workshop instructors in Milan</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.milanosensualcongress.com/it/masterclass</loc>
+    <lastmod>2026-05-02</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.milanosensualcongress.com/masterclass" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.milanosensualcongress.com/masterclass" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.milanosensualcongress.com/it/masterclass" />
+    <image:image>
+      <image:loc>https://www.milanosensualcongress.com/images/logo.webp</image:loc>
+      <image:title>Logo Milano Sensual Congress</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.milanosensualcongress.com/images/artists/gero-migle-bachata-esencia.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.milanosensualcongress.com/images/artists/klau-ros-bachata-sensual.webp</image:loc>
+      <image:title>Klau y Ros artisti masterclass Bachata a Milano</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.milanosensualcongress.com/images/artists/cristian-gabriella-bachata-artists.webp</image:loc>
+      <image:title>Cristian y Gabriella istruttori workshop Bachata avanzati a Milano</image:title>
     </image:image>
   </url>
   <url>
