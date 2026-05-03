@@ -109,13 +109,33 @@
         { "@type": "Person", "name": "Cristian y Gabriella", "sameAs": "https://www.instagram.com/cristianygabriella_official/" }
       ],
       "offers": {
-        "@type": "Offer",
-        "name": "Masterclass Upgrade",
-        "description": "Advanced Bachata masterclass upgrade. A valid Full Pass is required to attend; the masterclass upgrade price increases over time.",
+        "@type": "AggregateOffer",
         "url": "https://lasalsadelbaile.com/MSC2026",
-        "price": "59.00",
         "priceCurrency": "EUR",
-        "availability": "https://schema.org/InStock"
+        "lowPrice": "59.00",
+        "highPrice": "65.00",
+        "offerCount": "2",
+        "availability": "https://schema.org/InStock",
+        "offers": [
+          {
+            "@type": "Offer",
+            "name": "Masterclass Upgrade",
+            "description": "Advanced Bachata masterclass upgrade. A valid Full Pass is required to attend.",
+            "url": "https://lasalsadelbaile.com/MSC2026",
+            "price": "59.00",
+            "priceCurrency": "EUR",
+            "availability": "https://schema.org/InStock"
+          },
+          {
+            "@type": "Offer",
+            "name": "Next Masterclass Upgrade Tier",
+            "description": "Next Masterclass upgrade price tier requiring a valid Full Pass.",
+            "url": "https://lasalsadelbaile.com/MSC2026",
+            "price": "65.00",
+            "priceCurrency": "EUR",
+            "availability": "https://schema.org/PreOrder"
+          }
+        ]
       }
     },
     {
