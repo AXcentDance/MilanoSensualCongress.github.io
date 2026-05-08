@@ -368,7 +368,7 @@
   </url>
   <url>
     <loc>https://milanosensualcongress.com/news</loc>
-    <lastmod>2026-05-03</lastmod>
+    <lastmod>2026-05-08</lastmod>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://milanosensualcongress.com/news" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://milanosensualcongress.com/news" />
@@ -376,6 +376,10 @@
     <image:image>
       <image:loc>https://milanosensualcongress.com/images/logo.webp</image:loc>
       <image:title>Milano Sensual Congress Logo</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://milanosensualcongress.com/images/news/bachata-workshops-vs-classes-2026.webp</image:loc>
+      <image:title>Bachata dancers choosing workshop levels at a congress in Milan</image:title>
     </image:image>
     <image:image>
       <image:loc>https://milanosensualcongress.com/images/news/bachata-congress-2026-preview.webp</image:loc>
@@ -422,17 +426,13 @@
       <image:title>Bachata dance connection and hand position at a congress workshop</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://milanosensualcongress.com/images/news/bachata-workshops-vs-classes-2026.webp</image:loc>
-      <image:title>Bachata workshops versus weekly classes for dancers planning a 2026 congress</image:title>
-    </image:image>
-    <image:image>
       <image:loc>https://milanosensualcongress.com/images/news/milano-sensual-congress-2026-official-flyer.webp</image:loc>
       <image:title>Milano Sensual Congress 2026 official Bachata congress flyer</image:title>
     </image:image>
   </url>
   <url>
     <loc>https://milanosensualcongress.com/it/news</loc>
-    <lastmod>2026-05-03</lastmod>
+    <lastmod>2026-05-08</lastmod>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://milanosensualcongress.com/news" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://milanosensualcongress.com/news" />
@@ -440,6 +440,10 @@
     <image:image>
       <image:loc>https://milanosensualcongress.com/images/logo.webp</image:loc>
       <image:title>Milano Sensual Congress Logo</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://milanosensualcongress.com/images/news/bachata-workshops-vs-classes-2026.webp</image:loc>
+      <image:title>Ballerini che scelgono il livello dei workshop Bachata a un congresso a Milano</image:title>
     </image:image>
     <image:image>
       <image:loc>https://milanosensualcongress.com/images/news/bachata-congress-2026-preview.webp</image:loc>
@@ -484,10 +488,6 @@
     <image:image>
       <image:loc>https://milanosensualcongress.com/images/news/bachata-congress-2026-dance-connection.webp</image:loc>
       <image:title>Connessione e posizione delle mani nella Bachata durante un workshop congressuale</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://milanosensualcongress.com/images/news/bachata-workshops-vs-classes-2026.webp</image:loc>
-      <image:title>Workshop Bachata e corsi settimanali per ballerini che scelgono un congresso 2026</image:title>
     </image:image>
     <image:image>
       <image:loc>https://milanosensualcongress.com/images/news/milano-sensual-congress-2026-official-flyer.webp</image:loc>
@@ -542,6 +542,17 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://milanosensualcongress.com/news/bachata-congress-etiquette-social-dancing-workshops-parties" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://milanosensualcongress.com/news/bachata-congress-etiquette-social-dancing-workshops-parties" />
+    <image:image>
+      <image:loc>https://milanosensualcongress.com/images/logo.webp</image:loc>
+      <image:title>Milano Sensual Congress Logo</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://milanosensualcongress.com/news/bachata-workshop-levels-guide-congress</loc>
+    <lastmod>2026-05-08</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://milanosensualcongress.com/news/bachata-workshop-levels-guide-congress" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://milanosensualcongress.com/news/bachata-workshop-levels-guide-congress" />
     <image:image>
       <image:loc>https://milanosensualcongress.com/images/logo.webp</image:loc>
       <image:title>Milano Sensual Congress Logo</image:title>
@@ -700,6 +711,16 @@
     <image:image>
       <image:loc>https://milanosensualcongress.com/images/logo.webp</image:loc>
       <image:title>Milano Sensual Congress Logo</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://milanosensualcongress.com/it/news/livelli-workshop-bachata-congresso</loc>
+    <lastmod>2026-05-08</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://milanosensualcongress.com/it/news/livelli-workshop-bachata-congresso" />
+    <image:image>
+      <image:loc>https://milanosensualcongress.com/images/logo.webp</image:loc>
+      <image:title>Logo Milano Sensual Congress</image:title>
     </image:image>
   </url>
   <url>
