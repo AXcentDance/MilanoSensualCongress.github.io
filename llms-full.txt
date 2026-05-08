@@ -1,5 +1,5 @@
 # Milano Sensual Congress 2026 - Full Site Documentation
-# Generated automatically on 2026-05-04 10:30
+# Generated automatically on 2026-05-08 13:51
 # Total Pages: 64
 
 ## Page: Milano Sensual Congress 2026 | Europe's Leading Bachata Congress (index.html)
@@ -1146,6 +1146,9 @@ Disponibile Presto
 
  In Arrivo
 
+ L'ingresso con biglietto social richiede la tessera associativa UnaMas, completata all'entrata con quota
+ di €2,50 da saldare all'arrivo.
+
 ---
 
 ## Page: Biglietti Congresso Bachata 2026 | Milano Sensual Congress (it/tickets.html)
@@ -1445,6 +1448,9 @@ Available Soon
  Professional Video
 
  Coming Soon
+
+ Social ticket entry requires the UnaMas association card, completed at the entrance with a €2.50 fee
+ payable on arrival.
 
 ---
 
