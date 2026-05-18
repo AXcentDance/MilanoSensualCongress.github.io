@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 520" role="img" aria-labelledby="mscLogoTitle mscLogoDesc">
+  <title id="mscLogoTitle">Milano Sensual Congress flexible color logo</title>
+  <desc id="mscLogoDesc">A premium Milano Sensual Congress logo with an angled frame, dance-inspired ribbon mark, and editable color variables.</desc>
+  <style>
+    svg {
+      --logo-text: #ffffff;
+      --logo-soft-text: #f8fafc;
+      --logo-primary: #ec4899;
+      --logo-secondary: #22c55e;
+      --logo-gold: #fbbf24;
+      --logo-shadow: rgba(236, 72, 153, 0.28);
+    }
+
+    .frame-shadow {
+      fill: none;
+      stroke: var(--logo-shadow);
+      stroke-width: 14;
+      stroke-linejoin: round;
+      transform: translate(9px, 10px);
+    }
+
+    .frame {
+      fill: none;
+      stroke: var(--logo-primary);
+      stroke-width: 11;
+      stroke-linejoin: round;
+    }
+
+    .frame-inner {
+      fill: none;
+      stroke: var(--logo-soft-text);
+      stroke-width: 5;
+      stroke-linejoin: round;
+      opacity: 0.9;
+    }
+
+    .kicker,
+    .city {
+      fill: var(--logo-soft-text);
+      font-family: Inter, Montserrat, Arial, sans-serif;
+      font-weight: 800;
+      letter-spacing: 0.16em;
+    }
+
+    .sensual {
+      fill: var(--logo-text);
+      font-family: "Playfair Display", Georgia, serif;
+      font-size: 146px;
+      font-style: italic;
+      font-weight: 700;
+      letter-spacing: 0;
+    }
+
+    .congress {
+      fill: var(--logo-text);
+      font-family: Inter, Montserrat, Arial, sans-serif;
+      font-size: 74px;
+      font-weight: 900;
+      letter-spacing: 0.14em;
+    }
+
+    .place {
+      fill: var(--logo-gold);
+      font-family: Inter, Montserrat, Arial, sans-serif;
+      font-size: 31px;
+      font-weight: 800;
+      letter-spacing: 0.18em;
+    }
+
+    .primary-stroke {
+      fill: none;
+      stroke: var(--logo-primary);
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .secondary-stroke {
+      fill: none;
+      stroke: var(--logo-secondary);
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .gold-stroke {
+      fill: none;
+      stroke: var(--logo-gold);
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .primary-fill {
+      fill: var(--logo-primary);
+    }
+
+    .gold-fill {
+      fill: var(--logo-gold);
+    }
+  </style>
+
+  <path class="frame-shadow" d="M154 93H538L574 60H1284L1226 427H864L827 460H92L154 93Z"/>
+  <path class="frame" d="M154 93H538L574 60H1284L1226 427H864L827 460H92L154 93Z"/>
+  <path class="frame-inner" d="M177 117H548L584 84H1254L1204 403H854L817 436H120L177 117Z"/>
+
+  <g transform="translate(184 104)">
+    <path class="gold-stroke" stroke-width="8" opacity="0.92" d="M149 245C83 241 38 211 42 171C48 115 132 84 218 104"/>
+    <path class="secondary-stroke" stroke-width="10" opacity="0.92" d="M87 270C143 304 227 287 256 226"/>
+    <path class="primary-stroke" stroke-width="22" d="M203 42C139 92 124 142 166 190C213 244 204 290 142 329"/>
+    <path class="primary-stroke" stroke-width="9" opacity="0.9" d="M174 83C219 99 247 128 258 171"/>
+    <circle class="gold-fill" cx="216" cy="32" r="20"/>
+    <circle class="primary-fill" cx="159" cy="197" r="11"/>
+  </g>
+
+  <text class="city" x="467" y="145" font-size="58">MILANO</text>
+  <text class="sensual" x="455" y="285">Sensual</text>
+  <text class="congress" x="462" y="386">CONGRESS</text>
+  <text class="place" x="994" y="386">BACHATA · MILAN</text>
+</svg>

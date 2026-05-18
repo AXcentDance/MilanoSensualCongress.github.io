@@ -1,6 +1,6 @@
 # Milano Sensual Congress 2026 - Full Site Documentation
-# Generated automatically on 2026-05-11 14:36
-# Total Pages: 68
+# Generated automatically on 2026-05-18 15:23
+# Total Pages: 58
 
 ## Page: Milano Sensual Congress 2026 | Europe's Leading Bachata Congress (index.html)
 Description: The official Milano Sensual Congress 2026 (Nov 20-22). Europe's leading Bachata congress and the reference Bachata event in Italy. Join world-class artists in Milan.
@@ -107,13 +107,6 @@ Join a diverse community of high-level social dancers from Spain, France, German
 World-class luxury venue
 .
 
- Interested in our
-
-Spring
- Bachata Congress?
-
- Go to Spring Website
-
 Full Passes
 
 Secure your spot at the best price. Prices increase
@@ -153,7 +146,7 @@ Congress Directors
  — International Sensual Bachata Artists with dance school established in Arcore, MB. Creators of
 
 Milano Sensual Congress
- and its Spring Edition. With a decade of teaching and performance
+. With a decade of teaching and performance
  experience, they are directors of the 
 Gero y Migle Project Performance Show
  in Milan, and
@@ -172,7 +165,7 @@ AXcent
  as judges for the International Swiss Championship for Salsa and Bachata. Ale y Xidan are the creators of
 
 Milano Sensual Congress
- and its Spring Edition with Marco y Valeria, and are the
+ with Marco y Valeria, and are the
  co-organizers of 
 Bailadoro Dance Weekend
 .
@@ -400,13 +393,6 @@ Unisciti a una community diversificata di ballerini di alto livello provenienti 
 location di lusso internazionale
 .
 
- Interessato al nostro
-
-Spring
- Bachata Congress?
-
- Vai al Sito Spring
-
 Full Pass
 
 Assicurati il tuo posto al miglior prezzo. I prezzi
@@ -447,7 +433,7 @@ Direttori del Congresso
  — Artisti Internazionali di Bachata Sensual con scuola di ballo stabilita ad Arcore, MB. Creatori del
 
 Milano Sensual Congress
- e del suo Spring Edition. Con un decennio di esperienza
+. Con un decennio di esperienza
  nell'insegnamento e nelle performance, sono direttori del 
 Gero y Migle Project Performance
  Show
@@ -467,7 +453,7 @@ AXcent
  artisti, sono giudici del Campionato Svizzero Internazionale di Salsa e Bachata. Ale y Xidan sono i
  creatori del 
 Milano Sensual Congress
- e della sua Spring Edition con Marco y Valeria, e
+ con Marco y Valeria, e
  sono i co-organizzatori del 
 Bailadoro Dance Weekend
 .
@@ -588,128 +574,6 @@ lingua inglese
 Milano Bergamo Orio al Serio (BGY) e Milano Linate (LIN) sono i più vicini, ma anche Milano Malpensa (MXP) è eccellente. Offriamo 
 navette dirette prenotabili
  da tutti e tre gli aeroporti all'hotel.
-
----
-
-## Page: Milano Sensual Spring Edition | Workshop & Festival Bachata Internazionale (it/spring/index.html)
-Description: Partecipa al Milano Sensual Congress Spring Edition (15-17 Maggio 2026). Una celebrazione floreale della Bachata a Milano. Il miglior congresso primaverile di Bachata Sensual in Italia.
-
-Milano Sensual Spring Edition | Workshop & Festival Bachata Internazionale
-
- Milano Sensual
-
-Spring Bachata Congress
-
- 15 - 16 - 17 Maggio 2026
-
- Acquista il tuo Pass Spring
-
- Vedi gli Artisti
-
- Torna al Sito Principale (MSC 2026)
-
-Lineup
-
-Lineup Internazionale di
- Bachata
-
-I migliori artisti di Bachata Sensual al mondo in arrivo a Milano.
-
- Melvin y Gatica
-
-Francia/Spagna
-
- Irene y Tomás
-
-Spagna
-
- Cristian y Gabriella
-
-Spagna
-
- Vedi la Lineup Completa 
-
-Pass per lo Spring Bachata Congress
-
-Unisciti a noi per l'edizione floreale. Il
- full pass include tutti i workshop e le serate.
-
- Acquista Biglietti
-
-Sede
-
-Unamas Club - Via Adamello, 21, 20010
- Bareggio MI. La location perfetta.
-
- Info Sede
-
-Contattaci
-
-Hai domande? Siamo qui per aiutarti a goderti
- la tua esperienza primaverile.
-
- Mettiti in Contatto
-
----
-
-## Page: Milano Sensual Spring Edition | International Bachata Workshop & Festival (spring/index.html)
-Description: Join the Milano Sensual Congress Spring Edition (May 15-17, 2026). A floral celebration of Bachata in Milan. The best Spring Bachata Sensual Congress in Italy.
-
-Milano Sensual Spring Edition | International Bachata Workshop & Festival
-
- Milano Sensual
-
-Spring Bachata Congress
-
- 15 - 16 - 17 May 2026
-
- Get Your Spring Pass
-
- See Artists
-
- Back to Main Site (MSC 2026)
-
-Lineup
-
-International Bachata
- Lineup
-
-The world's best Bachata Sensual artists coming to Milan.
-
- Melvin y Gatica
-
-France/Spain
-
- Irene y Tomás
-
-Spain
-
- Cristian y Gabriella
-
-Spain
-
- See Full Lineup 
-
-Spring Bachata Congress Passes
-
-Join us for the blooming edition. Full passes
- include all workshops and parties.
-
- Buy Tickets
-
-Venue
-
-Unamas Club - Via Adamello, 21, 20010
- Bareggio MI. The perfect location.
-
- Venue Info
-
-Contact Us
-
-Have questions? We are here to help you enjoy
- your spring experience.
-
- Get in Touch
 
 ---
 
@@ -932,222 +796,6 @@ I biglietti stanno andando veloci. Assicura il tuo posto per imparare da questi 
  Masterclass Avanzata
  Vedi Programma
  Acquista Full Pass
-
----
-
-## Page: Artisti | Milano Sensual Spring Edition (it/spring/artists.html)
-Description: Incontra i maestri internazionali di Bachata Sensual protagonisti del Milano Sensual Congress Spring Edition. Con Melvin y Gatica, Irene y Tomas, e altri artisti.
-
-Artisti | Milano Sensual Spring Edition
-
-Lineup
-
-I maestri della Bachata Sensual che si uniranno a noi per la Spring
- Edition.
-
-Melvin y Gatica
-
-Francia/Spagna
-
-Irene y Tomás
-
-Spagna
-
-Cristian y Gabriella
-
-Spagna
-
-Marco y Valeria
-
-Italia
-
-Ale y Xidan
-
-Svizzera
-
-Marco y Fabiola
-
-Italia
-
-Stefano y Stefania
-
-Italia
-
-Mattias y Marta
-
-Italia
-
-Elvis y Mary
-
-Italia
-
-Francesco y Narcisa
-
-Italia
-
-Andrea Pipicella
-
-Italia
-
-I DJ della Spring Edition
-
-DJ Fabrizio Zoro
-
-Italia
-
-DJ Patrik
-
-Italia
-
-DJ Marco
-
-Italia
-
-DJ Stefano Balla
-
-Italia
-
- Acquista il tuo Pass Spring
-
----
-
-## Page: Artists | Milano Sensual Spring Edition (spring/artists.html)
-Description: Meet the international Bachata Sensual masters headlining the Milano Sensual Congress Spring Edition. Featuring Melvin y Gatica, Irene y Tomas, and more.
-
-Artists | Milano Sensual Spring Edition
-
-Lineup
-
-The masters of Bachata Sense joining us for the Spring Edition.
-
-Melvin y Gatica
-
-France/Spain
-
-Irene y Tomás
-
-Spain
-
-Cristian y Gabriella
-
-Spain
-
-Marco y Valeria
-
-Italy
-
-Ale y Xidan
-
-Switzerland
-
-Marco y Fabiola
-
-Italy
-
-Stefano y Stefania
-
-Italy
-
-Mattias y Marta
-
-Italy
-
-Elvis y Mary
-
-Italy
-
-Francesco y Narcisa
-
-Italy
-
-Andrea Pipicella
-
-Italy
-
-The DJs of Spring Edition
-
-DJ Fabrizio Zoro
-
-Italy
-
-DJ Patrik
-
-Italy
-
-DJ Marco
-
-Italy
-
-DJ Stefano Balla
-
-Italy
-
- Get Your Spring Pass
-
----
-
-## Page: Biglietti | Milano Sensual Spring Edition (it/spring/tickets.html)
-Description: Acquista il tuo Full Pass per il Milano Sensual Congress Spring Edition. Workshop e serate con i migliori artisti di Bachata al mondo a Milano.
-
-Biglietti | Milano Sensual Spring Edition
-
-Pass Spring
-
-Scegli la tua esperienza per il Milano Sensual Congress Spring
- Edition.
-
- POPOLARE
-
-Full Pass
-
-Include tutti i workshop, gli show e le serate.
-
-€105 
-/ persona
-
- Tutti i
- Workshop
-
- 3 Serate
-
- Show
-
- Social
- Dance
-
-Acquista
- Full Pass
-
-Party Pass
-
-Accesso a tutte le serate e gli show.
-
-In arrivo
-
- Workshop
-
- 3 Serate
-
- Show
-
- Disponibile fine 2025
-
-Jack & Jill
-
-Partecipa alla nostra competizione internazionale.
-
-Disponibile Presto
-
- Giudici Internazionali
-
- Trofei Ufficiali
-
- Video Professionale
-
- In Arrivo
-
- L'ingresso con biglietto social richiede la tessera associativa UnaMas, completata all'entrata con quota
- di €2,50 da saldare all'arrivo.
 
 ---
 
@@ -1387,70 +1035,6 @@ L'evento si svolge interamente presso il
 Devero
  Hotel
  a Cavenago di Brianza. Questa esclusiva struttura a 4 stelle ospita tutti i workshop, i social pomeridiani e le feste serali sotto lo stesso tetto.
-
----
-
-## Page: Tickets | Milano Sensual Spring Edition (spring/tickets.html)
-Description: Get your Full Pass for the Milano Sensual Congress Spring Edition. Workshops and parties with the world's best Bachata artists in Milan.
-
-Tickets | Milano Sensual Spring Edition
-
-Spring Passes
-
-Choose your experience for the Milano Sensual Congress Spring Edition.
-
- POPULAR
-
-Full Pass
-
-Includes all workshops, shows, and parties.
-
-€105 
-/ person
-
- All
- Workshops
-
- 3 Parties
-
- Shows
-
- Social
- Dance
-
-Buy
- Full Pass
-
-Party Pass
-
-Access to all night parties and shows.
-
-Coming soon
-
- Workshops
-
- 3 Parties
-
- Shows
-
- Available late 2025
-
-Jack & Jill
-
-Participate in our international competition.
-
-Available Soon
-
- International Judges
-
- Official Trophies
-
- Professional Video
-
- Coming Soon
-
- Social ticket entry requires the UnaMas association card, completed at the entrance with a €2.50 fee
- payable on arrival.
 
 ---
 
@@ -1872,151 +1456,6 @@ Sì, i cambi di nome per le prenotazioni delle camere sono possibili. Se hai bis
 
 ---
 
-## Page: Sede & Hotel | Milano Sensual Spring Edition (it/spring/hotel.html)
-Description: Prenota il tuo soggiorno all'Hotel Le Favaglie, l'hotel ufficiale 4 stelle superior per il Milano Sensual Congress Spring Edition. Tariffe esclusive e servizi premium per i ballerini.
-
-Sede & Hotel | Milano Sensual Spring Edition
-
-Hotel Ufficiale
-
-Vivi il comfort e il lusso presso il nostro hotel
- partner, a pochi minuti dalla sede dell'evento.
-
- 4 Stelle Superior
-
-Hotel Le Favaglie
-
-Via R. Merendi, 24 ‑ 20007 Cornaredo (MI) ‑ Italia
-
- Goditi un soggiorno rilassante con servizi premium, tra cui un'area benessere con piscina
- coperta riscaldata, sauna e vasca idromassaggio. L'hotel offre Wi-Fi gratuito, un centro
- fitness e deliziose opzioni di ristorazione.
-
-Wi-Fi veloce gratuito
-
-Piscina coperta riscaldata & Spa
-
-Ristorante & Bar
-
-Parcheggio privato
-
- Tariffe Speciali
-
-Camera Singola
-
-€101
- / notte
-
-Camera Doppia
-
-€133
- / notte
-
- Come prenotare la tua camera
-
- 1
-
-Scarica il Modulo
-
-Scarica il modulo
- ufficiale di autorizzazione della carta di credito richiesto per la
- prenotazione.
-
- Scarica PDF
-
- 2
-
-Compilalo
-
-Completa tutti i dettagli
- richiesti nel documento.
-
- 3
-
-Invia Email all'Hotel
-
-Invia il modulo compilato
- direttamente al manager dell'hotel.
-
- Invia Email per Prenotare
-
-o invia manualmente a: 
-marco.soli@hotelfavaglie.it
-
----
-
-## Page: Venue & Hotel | Milano Sensual Spring Edition (spring/hotel.html)
-Description: Book your stay at Hotel Le Favaglie, the official 4-star superior hotel for Milano Sensual Congress Spring Edition. Exclusive rates and premium amenities for dancers.
-
-Venue & Hotel | Milano Sensual Spring Edition
-
-Official Hotel
-
-Experience comfort and luxury at our partner hotel,
- just minutes away from the venue.
-
- 4 Star Superior
-
-Hotel Le Favaglie
-
-Via R. Merendi, 24 ‑ 20007 Cornaredo (MI) ‑ Italy
-
- Enjoy a relaxing stay with premium amenities including a wellness area with heated indoor
- pool, sauna, and hot tub. The hotel offers free Wi-Fi, a fitness center, and delicious
- dining options.
-
-Fast Free Wi-Fi
-
-Indoor Heated Pool & Spa
-
-Restaurant & Bar
-
-Private Parking
-
- Special Rates
-
-Single Room
-
-€101
- / night
-
-Double Room
-
-€133
- / night
-
- How to Reserve Your Room
-
- 1
-
-Download the Form
-
-Get the official credit
- card authorization form required for the reservation.
-
- Download PDF
-
- 2
-
-Fill It Out
-
-Complete all required details
- in the document.
-
- 3
-
-Email the Hotel
-
-Send the filled form
- directly to the hotel manager.
-
- Send Email to Book
-
-or manually send to: 
-marco.soli@hotelfavaglie.it
-
----
-
 ## Page: Contact Us | Milano Sensual Congress - International Bachata Support (contact.html)
 Description: Have questions about Milano Sensual Congress? Contact our team for support regarding tickets, hotel booking, or event details.
 
@@ -2234,56 +1673,6 @@ Milano Bergamo Orio al Serio
 Milano Malpensa (MXP)
  dista circa
  45-50 minuti.
-
----
-
-## Page: Contatti | Milano Sensual Spring Edition (it/spring/contact.html)
-Description: Domande sul Milano Sensual Congress Spring Edition? Contatta il nostro team per informazioni su biglietti, hotel e il programma dell'evento.
-
-Contatti | Milano Sensual Spring Edition
-
-Mettiti in Contatto
-
-Hai domande sulla Spring Edition? Inviaci un messaggio.
-
-Nome
-
-Email
-
-Messaggio
-
- Invia Messaggio
-
-O contattaci direttamente via WhatsApp
-
- Alessandro: +41 79 966 84 81
-
- Marco: +39 333 3935911
-
----
-
-## Page: Contact | Milano Sensual Spring Edition (spring/contact.html)
-Description: Questions about Milano Sensual Congress Spring Edition? Contact our team for info on tickets, hotel, and the event schedule.
-
-Contact | Milano Sensual Spring Edition
-
-Get in Touch
-
-Have questions about the Spring Edition? Send us a message.
-
-Name
-
-Email
-
-Message
-
- Send Message
-
-Or reach us directly via WhatsApp
-
- Alessandro: +41 79 966 84 81
-
- Marco: +39 333 3935911
 
 ---
 
@@ -3553,7 +2942,7 @@ Why Party Lovers Should Book Early
 
 Big Bachata parties create momentum before the doors open. As the community sees the lineup, the dance floors, the hotel setup and the scale of the weekend, the atmosphere builds. Dancers who want the full experience should not wait until the last moment.
 
-Spots for Milano Sensual Congress 2026 will be limited, and last year's edition sold out. We will share the full sold-out story in a dedicated article later, but the practical message is already clear: if you want to be on the dance floor in Milan for one of the biggest
+Spots for Milano Sensual Congress 2026 will be limited, and last year's edition sold out. We will share the full sold-out story in a dedicated article later, but the practical message is already clear: if you want to be on the dance floor in Milan for one of the biggest 
 Bachata events in Italy
 , book before the final rush.
 
@@ -5940,7 +5329,7 @@ Perché chi ama i party dovrebbe prenotare presto
 
 Le grandi feste Bachata creano energia ancora prima dell'apertura delle porte. Quando la community vede la lineup, le sale, l'hotel e la dimensione del weekend, l'atmosfera cresce. Chi vuole vivere l'esperienza completa non dovrebbe aspettare l'ultimo momento.
 
-I posti per Milano Sensual Congress 2026 saranno limitati e lo scorso anno l'evento è andato sold out. Pubblicheremo più avanti un articolo dedicato alla storia del sold out, ma il messaggio pratico è già chiaro: se vuoi essere in pista a Milano per uno dei più grandi
+I posti per Milano Sensual Congress 2026 saranno limitati e lo scorso anno l'evento è andato sold out. Pubblicheremo più avanti un articolo dedicato alla storia del sold out, ma il messaggio pratico è già chiaro: se vuoi essere in pista a Milano per uno dei più grandi 
 eventi Bachata in Italia
 , prenota prima della corsa finale.
 
@@ -6189,3 +5578,4 @@ Deve essere prenotato in anticipo.
  g.suraci@yahoo.it
 
 ---
+

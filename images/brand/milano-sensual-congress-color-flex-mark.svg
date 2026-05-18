@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 520" role="img" aria-labelledby="mscMarkTitle mscMarkDesc">
+  <title id="mscMarkTitle">Milano Sensual Congress flexible color mark</title>
+  <desc id="mscMarkDesc">Compact MSC dance ribbon mark with editable color variables for annual congress palette updates.</desc>
+  <style>
+    svg {
+      --logo-text: #ffffff;
+      --logo-primary: #ec4899;
+      --logo-secondary: #22c55e;
+      --logo-gold: #fbbf24;
+      --logo-shadow: rgba(236, 72, 153, 0.28);
+    }
+
+    .frame-shadow {
+      fill: none;
+      stroke: var(--logo-shadow);
+      stroke-width: 16;
+      stroke-linejoin: round;
+      transform: translate(8px, 10px);
+    }
+
+    .frame {
+      fill: none;
+      stroke: var(--logo-primary);
+      stroke-width: 12;
+      stroke-linejoin: round;
+    }
+
+    .text {
+      fill: var(--logo-text);
+      font-family: Inter, Montserrat, Arial, sans-serif;
+      font-weight: 900;
+      letter-spacing: 0.08em;
+    }
+
+    .primary-stroke {
+      fill: none;
+      stroke: var(--logo-primary);
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .secondary-stroke {
+      fill: none;
+      stroke: var(--logo-secondary);
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .gold-stroke {
+      fill: none;
+      stroke: var(--logo-gold);
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .primary-fill {
+      fill: var(--logo-primary);
+    }
+
+    .gold-fill {
+      fill: var(--logo-gold);
+    }
+  </style>
+
+  <path class="frame-shadow" d="M99 74H430L388 446H59L99 74Z"/>
+  <path class="frame" d="M99 74H430L388 446H59L99 74Z"/>
+
+  <g transform="translate(75 72)">
+    <path class="gold-stroke" stroke-width="9" opacity="0.92" d="M196 246C120 241 69 207 75 161C82 99 178 62 276 85"/>
+    <path class="secondary-stroke" stroke-width="11" opacity="0.92" d="M124 277C187 318 282 300 316 230"/>
+    <path class="primary-stroke" stroke-width="25" d="M258 28C185 85 167 142 216 196C269 258 259 310 188 354"/>
+    <path class="primary-stroke" stroke-width="10" opacity="0.9" d="M225 75C276 93 308 127 320 175"/>
+    <circle class="gold-fill" cx="273" cy="17" r="23"/>
+    <circle class="primary-fill" cx="207" cy="205" r="13"/>
+  </g>
+
+  <text class="text" x="103" y="438" font-size="70">MSC</text>
+</svg>
