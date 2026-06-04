@@ -1,5 +1,5 @@
 # Milano Sensual Congress 2026 - Full Site Documentation
-# Generated automatically on 2026-06-04 13:59
+# Generated automatically on 2026-06-04 14:47
 # Total Pages: 60
 
 ## Page: Milano Sensual Congress 2026 | Europe's Leading Bachata Congress (index.html)
@@ -1479,11 +1479,11 @@ Chat with us on WhatsApp
 
  Italiano / Español
 
-+39 333 393 5911
+Chat on WhatsApp
 
  English
 
-+41 79 966 84 81
+Chat on WhatsApp
 
  Join the Community
 
@@ -1533,9 +1533,8 @@ Frequently Asked Questions
 
  How can I contact the organizers?
 
-You can contact us directly via WhatsApp in Italian/Spanish
- at +39 333 393 5911 or in English at +41 79 966 84 81 for any specific inquiries not covered on this
- website.
+You can contact us directly via WhatsApp in Italian,
+ Spanish, or English for any specific inquiries not covered on this website.
 
  Where exactly is the event located?
 
@@ -1587,11 +1586,11 @@ Chatta con noi su WhatsApp
 
  Italiano / Español
 
-+39 333 393 5911
+Chatta su WhatsApp
 
  English
 
-+41 79 966 84 81
+Chatta su WhatsApp
 
  Unisciti alla Community
 
@@ -1642,9 +1641,8 @@ Domande Frequenti
 
  Come posso contattare gli organizzatori?
 
-Puoi contattarci direttamente tramite WhatsApp in
- italiano/spagnolo al +39 333 393 5911 o in inglese al +41 79 966 84 81 per qualsiasi richiesta specifica
- non coperta su questo sito web.
+Puoi contattarci direttamente tramite WhatsApp in italiano,
+ spagnolo o inglese per qualsiasi richiesta specifica non coperta su questo sito web.
 
  Dove si trova esattamente l'evento?
 
@@ -1758,8 +1756,8 @@ Informativa resa ai sensi dell'Art. 13 del Regolamento Europeo 2016/679 (GDPR)
 Il Titolare del Trattamento è 
 Bachata Passion
 , con sede ad Arcore, Italia. Per
- qualsiasi richiesta riguardante la protezione dei dati, si prega di contattare: 
-slamitza@gmail.com
+ qualsiasi richiesta riguardante la protezione dei dati, si prega di usare la 
+pagina contatti
 .
 
 2. Finalità del Trattamento
@@ -1793,8 +1791,8 @@ Richiedere la cancellazione dei tuoi dati ("Diritto all'oblio"), fatti salvi gli
 
 Opporti al trattamento per finalità di marketing diretto.
 
-Per esercitare tali diritti, si prega di inviare una richiesta scritta a 
-slamitza@gmail.com
+Per esercitare tali diritti, si prega di inviare una richiesta scritta tramite la 
+pagina contatti
 .
 
 ---
@@ -1883,8 +1881,8 @@ Information provided pursuant to Art. 13 of the European
 The Data Controller is 
 Bachata Passion
 , located in Arcore, Italy. For
- any inquiries regarding data protection, please contact: 
-slamitza@gmail.com
+ any inquiries regarding data protection, please use the 
+contact page
 .
 
 2. Purpose of Processing
@@ -1921,8 +1919,8 @@ Request erasure of your data ("Right to be forgotten"), subject to legal retenti
 
 Object to processing for direct marketing purposes.
 
-To exercise these rights, please send a written request to 
-slamitza@gmail.com
+To exercise these rights, please send a written request through the 
+contact page
 .
 
 ---
