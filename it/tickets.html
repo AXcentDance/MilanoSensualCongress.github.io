@@ -793,6 +793,13 @@
 
         const formData = new FormData(form);
         const data = Object.fromEntries(formData.entries());
+        if (window.fbq) {
+          fbq("track", "Lead", {
+            content_name: "Price increase reminder",
+            content_category: "Email reminder",
+            source: "Tickets - IT"
+          });
+        }
 
         // ALL-IN-ONE URL (Sheet Only Version)
         const AIO_URL = "https://script.google.com/macros/s/AKfycbzNaU95FbDrYx2kp3uwYi5Kxu0_ziFrh2gL28OZicVla0zkfj7wVuafgDdeffkBaPKZmg/exec";
