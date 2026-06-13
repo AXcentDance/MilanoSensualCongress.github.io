@@ -352,7 +352,7 @@
   </url>
   <url>
     <loc>https://milanosensualcongress.com/news</loc>
-    <lastmod>2026-06-04</lastmod>
+    <lastmod>2026-06-13</lastmod>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://milanosensualcongress.com/news" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://milanosensualcongress.com/news" />
@@ -360,6 +360,10 @@
     <image:image>
       <image:loc>https://milanosensualcongress.com/images/logo.webp</image:loc>
       <image:title>Milano Sensual Congress Logo</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://milanosensualcongress.com/images/news/duomo-di-milano-bachata-italy-2026-dance-destination.webp</image:loc>
+      <image:title>Duomo di Milano at evening for the Bachata in Italy 2026 dance destination guide</image:title>
     </image:image>
     <image:image>
       <image:loc>https://milanosensualcongress.com/images/news/milano-sensual-congress-2026-official-flyer.webp</image:loc>
@@ -416,7 +420,7 @@
   </url>
   <url>
     <loc>https://milanosensualcongress.com/it/news</loc>
-    <lastmod>2026-06-04</lastmod>
+    <lastmod>2026-06-13</lastmod>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://milanosensualcongress.com/news" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://milanosensualcongress.com/news" />
@@ -424,6 +428,10 @@
     <image:image>
       <image:loc>https://milanosensualcongress.com/images/logo.webp</image:loc>
       <image:title>Milano Sensual Congress Logo</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://milanosensualcongress.com/images/news/duomo-di-milano-bachata-italy-2026-dance-destination.webp</image:loc>
+      <image:title>Duomo di Milano di sera per la guida Bachata in Italia 2026</image:title>
     </image:image>
     <image:image>
       <image:loc>https://milanosensualcongress.com/images/news/milano-sensual-congress-2026-official-flyer.webp</image:loc>
@@ -536,6 +544,27 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://milanosensualcongress.com/news/bachata-congress-etiquette-social-dancing-workshops-parties" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://milanosensualcongress.com/news/bachata-congress-etiquette-social-dancing-workshops-parties" />
+    <image:image>
+      <image:loc>https://milanosensualcongress.com/images/logo.webp</image:loc>
+      <image:title>Milano Sensual Congress Logo</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://milanosensualcongress.com/it/news/bachata-italia-2026-milano-meta-ballo</loc>
+    <lastmod>2026-06-13</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://milanosensualcongress.com/it/news/bachata-italia-2026-milano-meta-ballo" />
+    <image:image>
+      <image:loc>https://milanosensualcongress.com/images/logo.webp</image:loc>
+      <image:title>Logo Milano Sensual Congress</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://milanosensualcongress.com/news/bachata-italy-2026-milan-dance-destination</loc>
+    <lastmod>2026-06-13</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://milanosensualcongress.com/news/bachata-italy-2026-milan-dance-destination" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://milanosensualcongress.com/news/bachata-italy-2026-milan-dance-destination" />
     <image:image>
       <image:loc>https://milanosensualcongress.com/images/logo.webp</image:loc>
       <image:title>Milano Sensual Congress Logo</image:title>
