@@ -226,7 +226,7 @@
         "priceCurrency": "EUR",
         "lowPrice": "20.00",
         "highPrice": "125.00",
-        "offerCount": "5",
+        "offerCount": "3",
         "availability": "https://schema.org/InStock",
         "offers": [
           {
@@ -234,37 +234,19 @@
             "name": "Current Full Pass",
             "description": "Full access to Milano Sensual Congress 2026 workshops, parties and afternoon socials.",
             "url": "https://lasalsadelbaile.com/MSC2026",
-            "price": "120.00",
-            "priceCurrency": "EUR",
-            "availability": "https://schema.org/InStock",
-            "validFrom": "2026-05-01T00:00:00+02:00"
-          },
-          {
-            "@type": "Offer",
-            "name": "Next Full Pass Tier",
-            "description": "Next Full Pass price tier for Milano Sensual Congress 2026.",
-            "url": "https://lasalsadelbaile.com/MSC2026",
             "price": "125.00",
             "priceCurrency": "EUR",
-            "availability": "https://schema.org/PreOrder"
+            "availability": "https://schema.org/InStock",
+            "validThrough": "2026-07-31T23:59:59+02:00"
           },
           {
             "@type": "Offer",
             "name": "Masterclass Upgrade",
             "description": "Masterclass upgrade requiring a valid Full Pass.",
             "url": "https://lasalsadelbaile.com/MSC2026",
-            "price": "59.00",
-            "priceCurrency": "EUR",
-            "availability": "https://schema.org/InStock"
-          },
-          {
-            "@type": "Offer",
-            "name": "Next Masterclass Upgrade Tier",
-            "description": "Next Masterclass upgrade price tier requiring a valid Full Pass.",
-            "url": "https://lasalsadelbaile.com/MSC2026",
             "price": "65.00",
             "priceCurrency": "EUR",
-            "availability": "https://schema.org/PreOrder"
+            "availability": "https://schema.org/InStock"
           },
           {
             "@type": "Offer",
@@ -430,7 +412,7 @@
       <div id="countdown" class="animate-fade-in-up mb-12 flex justify-center" style="animation-delay:.1s">
         <div class="px-8 py-6 rounded-3xl border border-pink-500/40 shadow-[0_0_30px_rgba(236,72,153,0.3)] flex flex-col items-center" 
              style="background: rgba(15, 23, 42, 0.85); backdrop-filter: blur(20px);">
-          <div class="text-pink-400 text-xs font-bold tracking-widest uppercase mb-3 text-center">Prices will go up! Buy now</div>
+          <div class="text-pink-400 text-xs font-bold tracking-widest uppercase mb-3 text-center">Full Pass €125 until July 31 midnight</div>
           <div class="flex gap-4 text-white font-mono text-2xl md:text-3xl mb-6">
             <div class="text-center"><span id="days">00</span><p class="text-[10px] uppercase tracking-tighter opacity-50 font-sans">Days</p></div>
             <div class="text-pink-500/50">:</div>
@@ -442,7 +424,7 @@
           </div>
           
           <div id="reminder-container" class="w-full pt-6 border-t border-white/10">
-            <p class="text-white text-[10px] font-bold tracking-[0.2em] uppercase mb-4 text-center opacity-90">GET A REMINDER ON THE DAY OF THE INCREASE</p>
+            <p class="text-white text-[10px] font-bold tracking-[0.2em] uppercase mb-4 text-center opacity-90">GET A REMINDER BEFORE THE JULY 31 PRICE INCREASE</p>
             <form id="reminder-form" action="https://formspree.io/slamitzam@gmail.com" method="POST" class="flex flex-col md:flex-row gap-3 items-center justify-center">
               <input type="hidden" name="_subject" value="New Reminder Request - Milano Sensual Congress">
               <input type="hidden" name="_template" value="table">
@@ -474,15 +456,15 @@
         <div class="w-24 h-1 bg-gradient-to-r from-pink-500 to-purple-600 mx-auto rounded-full"></div>
         <p class="mt-4 text-slate-400">Secure your spot early for the best rates.</p>
       </div>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto mb-12">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto mb-12">
         <div
           class="glass-card rounded-2xl p-6 relative border-pink-500/50 transform lg:-translate-y-2 w-full flex flex-col">
           <div
             class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gradient-to-r from-amber-400 to-orange-500 text-brand-dark font-bold px-4 py-1 rounded-full text-xs shadow-lg uppercase tracking-wider whitespace-nowrap">
             Best Value</div>
           <h3 class="text-xl font-bold mb-2">Full Pass</h3>
-          <div class="flex items-baseline gap-1 mb-4"><span class="text-4xl font-bold text-white">€120</span> <span
-              class="text-slate-400 text-sm decoration-line-through">€125</span></div>
+          <div class="flex items-baseline gap-1 mb-2"><span class="text-4xl font-bold text-white">€125</span></div>
+          <p class="text-pink-200 text-xs font-bold uppercase tracking-wide mb-4">Valid until July 31 at midnight</p>
 
           <ul class="space-y-3 mb-8 text-slate-300 text-sm flex-grow">
             <li class="flex items-start gap-2"><i class="fa-solid fa-check text-green-400 mt-1 text-xs"></i> <span>Full
@@ -504,17 +486,17 @@
             <div
               class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center mb-3 backdrop-blur-md border border-white/20">
               <i class="fa-solid fa-lock text-xl text-slate-300"></i>
-            </div><span class="text-white font-bold text-sm uppercase tracking-widest">Next Price Tier</span> <span
-              class="text-slate-400 text-xs mt-1">Unlocks when Early Bird sells out</span>
+            </div><span class="text-white font-bold text-sm uppercase tracking-widest">Next Price Increase</span> <span
+              class="text-slate-400 text-xs mt-1">After July 31 at midnight</span>
           </div>
           <div class="opacity-30 blur-[1px] select-none h-full flex flex-col">
-            <h3 class="text-xl font-bold mb-2 text-slate-200">Full Pass Tier 2</h3>
-            <div class="flex items-baseline gap-1 mb-6"><span class="text-4xl font-bold text-white">€125</span></div>
+            <h3 class="text-xl font-bold mb-2 text-slate-200">Full Pass Next Tier</h3>
+            <div class="flex items-baseline gap-1 mb-6"><span class="text-4xl font-bold text-white">TBA</span></div>
             <ul class="space-y-3 mb-8 text-slate-300 text-sm flex-grow">
               <li class="flex items-start gap-2"><i class="fa-solid fa-check text-slate-400 mt-1"></i> <span>Full
                   Access</span></li>
-              <li class="flex items-start gap-2"><i class="fa-solid fa-check text-slate-400 mt-1"></i> <span>Next Price
-                  Tier</span></li>
+              <li class="flex items-start gap-2"><i class="fa-solid fa-check text-slate-400 mt-1"></i> <span>After July
+                  31</span></li>
             </ul><button disabled="disabled"
               class="block w-full py-3 rounded-xl border border-slate-600 text-slate-500 font-bold text-center cursor-not-allowed mt-auto">Locked</button>
           </div>
@@ -524,8 +506,8 @@
             class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-purple-600 text-white font-bold px-3 py-1 rounded-full text-xs shadow-lg uppercase tracking-wider whitespace-nowrap">
             Advanced</div>
           <h3 class="text-xl font-bold mb-2 text-slate-200 text-center">Masterclass Upgrade</h3>
-          <div class="flex items-baseline gap-1 mb-1"><span class="text-4xl font-bold text-white">€59</span> <span
-              class="text-slate-400 text-sm decoration-line-through">€65</span></div>
+          <div class="flex items-baseline gap-1 mb-1"><span class="text-4xl font-bold text-white">€65</span></div>
+          <p class="text-purple-200 text-xs font-bold uppercase tracking-wide mb-4">No further increases planned</p>
 
           <div class="bg-red-500/20 border border-red-500/50 rounded p-2 mb-6 flex items-center gap-2"><i
               class="fa-solid fa-triangle-exclamation text-red-400 text-xs"></i> <span
@@ -543,31 +525,6 @@
             Advanced Workshops</a><a href="https://lasalsadelbaile.com/MSC2026" target="_blank"
             class="block w-full py-3 rounded-xl bg-purple-600/20 border border-purple-500 text-purple-200 hover:bg-purple-600 hover:text-white font-bold text-center transition-all mt-auto">Buy
             Upgrade</a>
-        </div>
-        <div class="glass-card-locked rounded-2xl p-6 flex flex-col w-full">
-          <div
-            class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 flex flex-col items-center text-center w-full px-4">
-            <div
-              class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center mb-3 backdrop-blur-md border border-white/20">
-              <i class="fa-solid fa-lock text-xl text-slate-300"></i>
-            </div>
-          </div>
-          <div class="opacity-30 blur-[1px] select-none h-full flex flex-col">
-            <h3 class="text-xl font-bold mb-2 text-slate-200">Masterclass Upgrade</h3>
-            <div class="flex items-baseline gap-1 mb-6"><span class="text-4xl font-bold text-white">€65</span></div>
-            <div class="bg-red-500/20 border border-red-500/50 rounded p-2 mb-6 flex items-center gap-2"><i
-                class="fa-solid fa-triangle-exclamation text-red-400 text-xs"></i> <span
-                class="text-xs text-red-200 font-bold">Requires a valid Full Pass</span></div>
-            <ul class="space-y-3 mb-8 text-slate-300 text-sm flex-grow">
-              <li class="flex items-start gap-2"><i class="fa-solid fa-graduation-cap text-purple-400 mt-1 text-xs"></i>
-                <span>3 Hours of Masterclasses</span>
-              </li>
-              <li class="flex items-start gap-2"><i class="fa-solid fa-user-group text-purple-400 mt-1 text-xs"></i>
-                <span>Gero y Migle, Klau y Ros, Cristian y Gabriella</span>
-              </li>
-            </ul><button disabled="disabled"
-              class="block w-full py-3 rounded-xl border border-slate-600 text-slate-500 font-bold text-center cursor-not-allowed mt-auto">Locked</button>
-          </div>
         </div>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
@@ -769,7 +726,7 @@
 
   <script>
     // Countdown Timer
-    const targetDate = new Date("2026-06-15T23:59:59+02:00").getTime();
+    const targetDate = new Date("2026-07-31T23:59:59+02:00").getTime();
     function updateCountdown() {
       const now = new Date().getTime();
       const diff = targetDate - now;

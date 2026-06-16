@@ -1,5 +1,5 @@
 # Milano Sensual Congress 2026 - Full Site Documentation
-# Generated automatically on 2026-06-13 19:05
+# Generated automatically on 2026-06-16 08:03
 # Total Pages: 62
 
 ## Page: Milano Sensual Congress 2026 | Europe's Leading Bachata Congress (index.html)
@@ -22,7 +22,7 @@ Bachata Congress in Milan, Italy
 . Experience the luxury of a 4-star executive
  hotel in the heart of Lombardy, featuring world-class masters and a high-stakes International Jack & Jill competition.
 
-Prices will go up! Buy now
+Full Pass €125 until July 31 midnight
 
 00
 Days
@@ -42,7 +42,7 @@ Min
 00
 Sec
 
-GET A REMINDER ON THE DAY OF THE INCREASE
+GET A REMINDER BEFORE THE JULY 31 PRICE INCREASE
 
  Remind Me
 
@@ -113,7 +113,7 @@ Full Passes
 
 Secure your spot at the best price. Prices increase
  as the event approaches. Full pass includes all workshops, shows, and parties. 
-Read the June 15 ticket update
+Read the July 31 ticket update
 .
 Buy
  on LaSalsaDelBaile
@@ -310,7 +310,7 @@ Il Riferimento per i Congressi Bachata 2026 Italia
 
 Il Milano Sensual Congress è il punto di riferimento per gli amanti della bachata in Italia. Unisciti a noi per un'esperienza indimenticabile con i migliori artisti internazionali, workshop di alta qualità e feste esclusive in una location di lusso.
 
-I prezzi aumenteranno! Acquista ora
+Full Pass a 125€ fino alla mezzanotte del 31 luglio
 
 00
 Giorni
@@ -330,7 +330,7 @@ Min
 00
 Sec
 
-AVVISAMI IL GIORNO DELL'AUMENTO
+AVVISAMI PRIMA DELL'AUMENTO DEL 31 LUGLIO
 
  Avvisami
 
@@ -404,7 +404,7 @@ Full Pass
 Assicurati il tuo posto al miglior prezzo. I prezzi
  aumentano man mano che l'evento si avvicina. Il full pass include tutti i workshop, gli spettacoli e le
  feste. 
-Leggi l'aggiornamento biglietti del 15 giugno
+Leggi l'aggiornamento biglietti del 31 luglio
 .
 Acquista
  su LaSalsaDelBaile
@@ -823,7 +823,7 @@ Partecipa al più atteso dei
 congressi bachata 2026
 . Scegli il pass che fa per te e preparati a ballare.
 
-I prezzi aumenteranno! Acquista ora
+Full Pass a 125€ fino alla mezzanotte del 31 luglio
 
 00
 Giorni
@@ -843,7 +843,7 @@ Min
 00
 Sec
 
-AVVISAMI IL GIORNO DELL'AUMENTO
+AVVISAMI PRIMA DELL'AUMENTO DEL 31 LUGLIO
 
  Avvisami
 
@@ -857,9 +857,9 @@ Assicurati il tuo posto in anticipo per le migliori tariffe.
 
 Full Pass
 
-€120
-
 €125
+
+Valido fino alla mezzanotte del 31 luglio
 
 Accesso completo all'intero evento
 
@@ -874,19 +874,19 @@ Social Pomeridiani
 Acquista
  Full Pass
 
-Prossima Fascia di Prezzo
+Prossimo Aumento
 
-Si sblocca quando l'Early Bird è esaurito
+Dopo la mezzanotte del 31 luglio
 
-Full Pass Fascia 2
+Prossima Fascia Full Pass
 
-€125
+TBA
 
 Accesso
  Completo
 
-Prossima
- Fascia di Prezzo
+Dopo il 31
+ luglio
 
 Bloccato
 
@@ -894,9 +894,9 @@ Bloccato
 
 Upgrade Masterclass
 
-€59
-
 €65
+
+Nessun altro aumento previsto
 
 Richiede un Full Pass valido
 
@@ -910,22 +910,6 @@ Scopri
  Workshop Avanzati
 Acquista
  Upgrade
-
-Prossima Fascia di Prezzo
-
-Si sblocca quando la Fascia 1 è esaurita
-
-Upgrade Masterclass
-
-€65
-
-Richiede un Full Pass valido
-
-3 Ore di Masterclass
-
-Gero y Migle, Klau y Ros, Cristian y Gabriella
-
-Bloccato
 
  Competizione
 
@@ -1061,7 +1045,7 @@ Join us at the stunning Devero
  Hotel for the premier Bachata event. We went sold out last year! Experience over 40 hours of workshops,
  world-class artists, and unforgettable parties.
 
-Prices will go up! Buy now
+Full Pass €125 until July 31 midnight
 
 00
 Days
@@ -1081,7 +1065,7 @@ Min
 00
 Sec
 
-GET A REMINDER ON THE DAY OF THE INCREASE
+GET A REMINDER BEFORE THE JULY 31 PRICE INCREASE
 
  Remind Me
 
@@ -1095,9 +1079,9 @@ Secure your spot early for the best rates.
 
 Full Pass
 
-€120
-
 €125
+
+Valid until July 31 at midnight
 
 Full
  Access to entire event
@@ -1113,19 +1097,19 @@ Afternoon socials
 Buy
  Full Pass
 
-Next Price Tier
+Next Price Increase
 
-Unlocks when Early Bird sells out
+After July 31 at midnight
 
-Full Pass Tier 2
+Full Pass Next Tier
 
-€125
+TBA
 
 Full
  Access
 
-Next Price
- Tier
+After July
+ 31
 
 Locked
 
@@ -1133,9 +1117,9 @@ Locked
 
 Masterclass Upgrade
 
-€59
-
 €65
+
+No further increases planned
 
 Requires a valid Full Pass
 
@@ -1149,18 +1133,6 @@ Explore
  Advanced Workshops
 Buy
  Upgrade
-
-Masterclass Upgrade
-
-€65
-
-Requires a valid Full Pass
-
-3 Hours of Masterclasses
-
-Gero y Migle, Klau y Ros, Cristian y Gabriella
-
-Locked
 
  Competition
 
@@ -2291,7 +2263,7 @@ Buy Masterclass Upgrade
 View Program
 
 A valid Full Pass is required
- to attend the masterclasses. The masterclass is an upgrade added on top of your congress pass, and the upgrade price will increase over time as the event approaches.
+ to attend the masterclasses. The masterclass is a €65 upgrade added on top of your congress pass, with no further increases planned.
 
 Advanced workshops for dancers who want real formation
 
@@ -2329,7 +2301,7 @@ Who should join the masterclass?
 
 This advanced track is for dancers who already have Bachata foundations and want a more demanding training environment. You do not need to be a performer, but you should be ready to focus, repeat, receive details and work beyond comfortable social patterns.
 
-Important: the masterclass cannot be attended with the upgrade alone. You must first purchase a Full Pass, then add the Masterclass Upgrade. The upgrade price will rise over time.
+Important: the masterclass cannot be attended with the upgrade alone. You must first purchase a Full Pass, then add the €65 Masterclass Upgrade. No further Masterclass price increases are planned.
 
 See Tickets and Requirements
 
@@ -2370,9 +2342,9 @@ Photo: Marco Nuernberger, CC BY 2.0
 
 June 4, 2026
 
-Full Pass & Masterclass Prices Go Up June 15
+Full Pass €125 Until July 31
 
-The next ticket tier affects both the Full Pass and Masterclass upgrade. Last year both categories sold out completely, so dancers should book before the June 15 increase.
+The Full Pass is now €125 until July 31 at midnight. The Masterclass upgrade is now €65, with no further increases planned.
 
 Read Article 
 
@@ -3248,39 +3220,41 @@ Get Your Full Pass
 
 ---
 
-## Page: Full Pass & Masterclass Prices Go Up June 15 | Milano Sensual Congress 2026 (news/full-pass-masterclass-price-increase-june-15-2026.html)
-Description: Full Pass and Masterclass prices for Milano Sensual Congress 2026 go up on June 15. Last year sold out for both, so Bachata dancers should book early.
+## Page: Full Pass €125 Until July 31 | Bachata Congress Tickets (news/full-pass-masterclass-price-increase-june-15-2026.html)
+Description: Milano Sensual Congress 2026 ticket update: Full Pass is €125 until July 31 midnight, while the Masterclass upgrade is now €65 with no further increases planned.
 
-Full Pass & Masterclass Prices Go Up June 15 | Milano Sensual Congress 2026
+Full Pass €125 Until July 31 | Bachata Congress Tickets
 
 Back to News
 
 Ticket Update
 
-Full Pass & Masterclass Prices
-Go Up June 15
+Full Pass €125 Until
+July 31 Midnight
 
-The next price tier affects both the Full Pass and the Masterclass upgrade. Last year, both sold out completely.
+The Full Pass is now €125 until July 31 at midnight. The Masterclass upgrade is now €65, with no further increases planned.
 
-The next Milano Sensual Congress 2026 ticket increase is scheduled for 
-June 15, 2026
-. The change applies to both the 
+The current Milano Sensual Congress 2026 
 Full Pass
- and the 
+ price is 
+€125 until July 31, 2026 at midnight
+. The 
 Masterclass upgrade
-, with future ticket tiers expected as the event gets closer.
+ is now 
+€65
+, and no further Masterclass price increases are planned.
 
-June 15
+July 31
 
-next price increase
+Full Pass price deadline
 
-2 tiers
+€125
 
-Full Pass and Masterclass affected
+current Full Pass price
 
-Sold out
+€65
 
-Full Pass and Masterclasses last year
+fixed Masterclass upgrade
 
 If you are planning to join a 
 Bachata Congress
@@ -3290,21 +3264,25 @@ Bachata Event
 Bachata Festival
  in Europe this year, this is the moment to secure your spot. Milano Sensual Congress is a limited-capacity weekend, and the ticket structure is designed in tiers: the earlier you book, the better your price.
 
-What Changes on June 15?
+What Is the Current Ticket Price?
 
-On 
-June 15
-, the price goes up for the two ticket products dancers ask about most: the 
+The 
 Full Pass
- and the 
+ is now 
+€125
+ and remains available at this price until 
+July 31 at midnight
+. The Full Pass is the core congress ticket for dancers who want the complete Milano Sensual Congress experience: workshops, parties, shows and social dancing.
+
+The 
 Masterclass upgrade
-. The Full Pass is the core congress ticket for dancers who want the full Milano Sensual Congress experience. The Masterclass upgrade is for dancers who want the extra focused training with selected international artists.
+ is now 
+€65
+. This upgrade requires a valid Full Pass and adds focused high-level training with selected international artists. No further Masterclass price increases are planned.
 
-The current Full Pass price is available only until the June 15 tier change. The current Masterclass upgrade price also changes on the same date. If you already know you want the full weekend, waiting simply means entering a higher price tier.
+Full Pass Countdown to July 31
 
-Prices Will Keep Moving in Future Tiers
-
-June 15 is the next confirmed increase, and future ticket tiers may follow as the congress gets closer and availability becomes tighter.
+July 31 at midnight is the next confirmed Full Pass price deadline. After that date, the Full Pass price is expected to move into the next tier as the congress gets closer and availability becomes tighter.
 
 This is important because many dancers wait for the final lineup, the travel plan or the friend group confirmation. That is understandable, but for a limited 
 Bachata Workshop
@@ -3318,7 +3296,7 @@ last year's edition sold out completely for both Full Passes and Masterclasses
 
 For 2026, interest is already focused on the full package: workshops, parties, international artists, Jack & Jill energy, the official hotel and the chance to dance with a strong international crowd in Milan. A sold-out event creates a great atmosphere, but it also means real limits. Once a category is full, it is full.
 
-Who Should Book Before June 15?
+Who Should Book Before July 31?
 
 Dancers who want the complete 
 Full Pass
@@ -3326,7 +3304,7 @@ Full Pass
 
 Dancers who want the 
 Masterclass upgrade
- and do not want to risk the advanced training selling out again.
+ at the fixed €65 price and do not want to risk the advanced training selling out again.
 
 International dancers planning flights, hotel and transfers for 
 Milano Dance Events 2026
@@ -3336,7 +3314,7 @@ Groups of friends who want to attend the same congress without splitting across 
 
 Book the Ticket That Matches Your Weekend
 
-If Milano Sensual Congress is already on your calendar, the practical advice is clear: book before the June 15 increase. The Full Pass is the safest choice for dancers who want the full Bachata weekend, while the Masterclass upgrade is the best option for dancers who want additional high-level training.
+If Milano Sensual Congress is already on your calendar, the practical advice is clear: book the Full Pass before the July 31 deadline. The Full Pass is the safest choice for dancers who want the full Bachata weekend, while the Masterclass upgrade is the best option for dancers who want additional high-level training.
 
 You can review the current ticket options on the 
 Milano Sensual Congress tickets page
@@ -3350,11 +3328,11 @@ transfer information
 
 Ticket reminder
 
-The next price increase is June 15, 2026. Future price tiers may be announced later, and last year both Full Passes and Masterclasses sold out completely.
+The Full Pass is €125 until July 31, 2026 at midnight. The Masterclass upgrade is €65 with no further increases planned, and last year both Full Passes and Masterclasses sold out completely.
 
-Secure Your Full Pass Before June 15
+Secure Your Full Pass Before July 31
 
-Prices go up for both the Full Pass and Masterclass upgrade. Book early before the next tier and before limited categories sell out.
+The Full Pass is €125 until July 31 at midnight. Add the €65 Masterclass upgrade if you want the advanced training track.
 
 Book Your Ticket
 
@@ -4324,7 +4302,7 @@ Acquista Upgrade Masterclass
 Vedi Programma
 
 Per partecipare alle masterclass serve un Full Pass valido.
- La masterclass è un upgrade da aggiungere al pass del congresso, e il prezzo dell'upgrade aumenterà nel tempo man mano che l'evento si avvicina.
+ La masterclass è un upgrade da 65€ da aggiungere al pass del congresso, senza altri aumenti previsti.
 
 Workshop avanzati per chi cerca vera formazione
 
@@ -4362,7 +4340,7 @@ A chi è consigliata la masterclass?
 
 Questo percorso avanzato è per ballerini che hanno già basi di Bachata e cercano un ambiente di formazione più esigente. Non devi essere performer, ma devi essere pronto a concentrarti, ripetere, ricevere dettagli e lavorare oltre le figure più comode del social.
 
-Importante: non è possibile partecipare solo con l'upgrade masterclass. Devi prima acquistare un Full Pass, poi aggiungere l'Upgrade Masterclass. Il prezzo dell'upgrade aumenterà nel tempo.
+Importante: non è possibile partecipare solo con l'upgrade masterclass. Devi prima acquistare un Full Pass, poi aggiungere l'Upgrade Masterclass da 65€. Non sono previsti altri aumenti per la Masterclass.
 
 Vedi Biglietti e Requisiti
 
@@ -4403,9 +4381,9 @@ Foto: Marco Nuernberger, CC BY 2.0
 
 4 Giugno 2026
 
-Full Pass e Masterclass Aumentano il 15 Giugno
+Full Pass 125€ fino al 31 Luglio
 
-La prossima fascia riguarda sia Full Pass sia upgrade Masterclass. Lo scorso anno entrambe le categorie sono andate completamente sold out, quindi conviene prenotare prima dell'aumento del 15 giugno.
+Il Full Pass costa ora 125€ fino alla mezzanotte del 31 luglio. L'upgrade Masterclass costa ora 65€, senza altri aumenti previsti.
 
 Leggi l'Articolo 
 
@@ -4671,39 +4649,41 @@ Assicurati il tuo Full Pass
 
 ---
 
-## Page: Aumento Prezzi Full Pass e Masterclass il 15 Giugno | Milano Sensual Congress 2026 (it/news/aumento-prezzi-full-pass-masterclass-15-giugno-2026.html)
-Description: I prezzi di Full Pass e Masterclass per Milano Sensual Congress 2026 aumentano il 15 giugno. Lo scorso anno entrambi sono andati sold out.
+## Page: Full Pass 125€ fino al 31 Luglio | Biglietti Bachata Congress (it/news/aumento-prezzi-full-pass-masterclass-15-giugno-2026.html)
+Description: Aggiornamento biglietti Milano Sensual Congress 2026: Full Pass a 125€ fino alla mezzanotte del 31 luglio e Masterclass a 65€ senza altri aumenti previsti.
 
-Aumento Prezzi Full Pass e Masterclass il 15 Giugno | Milano Sensual Congress 2026
+Full Pass 125€ fino al 31 Luglio | Biglietti Bachata Congress
 
 Torna alle News
 
 Aggiornamento Biglietti
 
-Full Pass e Masterclass
-Aumentano il 15 Giugno
+Full Pass 125€ fino alla
+Mezzanotte del 31 Luglio
 
-La prossima fascia riguarda sia il Full Pass sia l'upgrade Masterclass. Lo scorso anno entrambi sono andati completamente sold out.
+Il Full Pass costa ora 125€ fino alla mezzanotte del 31 luglio. L'upgrade Masterclass costa ora 65€, senza altri aumenti previsti.
 
-Il prossimo aumento dei prezzi per Milano Sensual Congress 2026 è previsto per il 
-15 giugno 2026
-. Il cambiamento riguarda sia il 
+Il prezzo attuale del 
 Full Pass
- sia l'
+ per Milano Sensual Congress 2026 è 
+125€ fino alla mezzanotte del 31 luglio 2026
+. L'
 upgrade Masterclass
-, con ulteriori fasce previste man mano che l'evento si avvicina.
+ costa ora 
+65€
+ e non sono previsti altri aumenti per la Masterclass.
 
-15 giugno
+31 luglio
 
-prossimo aumento
+scadenza prezzo Full Pass
 
-2 fasce
+125€
 
-Full Pass e Masterclass coinvolti
+prezzo attuale Full Pass
 
-Sold out
+65€
 
-Full Pass e Masterclass lo scorso anno
+upgrade Masterclass fisso
 
 Se stai programmando un 
 Bachata Congress
@@ -4711,21 +4691,25 @@ Bachata Congress
 Bachata Festival
  in Europa quest'anno, questo è il momento giusto per bloccare il tuo posto. Milano Sensual Congress è un weekend a capienza limitata, con una struttura di prezzi a fasce: prima prenoti, migliore sarà il prezzo.
 
-Cosa Cambia il 15 Giugno?
+Qual è il prezzo attuale dei biglietti?
 
 Il 
-15 giugno
- aumentano i prezzi dei due prodotti più richiesti dai ballerini: il 
 Full Pass
- e l'
+ costa ora 
+125€
+ e resta disponibile a questo prezzo fino alla 
+mezzanotte del 31 luglio
+. Il Full Pass è il biglietto principale per vivere tutto il Milano Sensual Congress: workshop, party, show e social dancing.
+
+L'
 upgrade Masterclass
-. Il Full Pass è il biglietto principale per vivere l'intero congresso. L'upgrade Masterclass è pensato per chi vuole aggiungere una formazione più intensa con artisti internazionali selezionati.
+ costa ora 
+65€
+. Questo upgrade richiede un Full Pass valido e aggiunge una formazione avanzata con artisti internazionali selezionati. Non sono previsti altri aumenti per la Masterclass.
 
-Il prezzo attuale del Full Pass resta disponibile solo fino al cambio fascia del 15 giugno. Anche il prezzo attuale della Masterclass cambia nella stessa data. Se sai già di voler vivere tutto il weekend, aspettare significa semplicemente entrare in una fascia prezzo più alta.
+Countdown Full Pass al 31 Luglio
 
-I Prezzi Continueranno a Salire
-
-Il 15 giugno è il prossimo aumento confermato, e ulteriori fasce prezzo potranno seguire man mano che il congresso si avvicina e la disponibilità diminuisce.
+La mezzanotte del 31 luglio è la prossima scadenza confermata per il prezzo del Full Pass. Dopo quella data, il Full Pass entrerà nella fascia successiva man mano che il congresso si avvicina e la disponibilità diminuisce.
 
 Questo è importante perché molti ballerini aspettano la conferma del gruppo, del viaggio o del programma. È comprensibile, ma per un weekend di 
 Workshop Bachata
@@ -4739,7 +4723,7 @@ lo scorso anno sia i Full Pass sia le Masterclass sono andati completamente sold
 
 Per il 2026, l'interesse è già concentrato sul pacchetto completo: workshop, party, artisti internazionali, energia Jack & Jill, hotel ufficiale e una community internazionale di ballerini a Milano. Un evento sold out crea una grande atmosfera, ma porta anche limiti reali. Quando una categoria finisce, finisce.
 
-Chi Dovrebbe Prenotare Prima del 15 Giugno?
+Chi Dovrebbe Prenotare Prima del 31 Luglio?
 
 Ballerini che vogliono l'esperienza completa del 
 Full Pass
@@ -4747,7 +4731,7 @@ Full Pass
 
 Ballerini che vogliono l'
 upgrade Masterclass
- e non vogliono rischiare un nuovo sold out.
+ al prezzo fisso di 65€ e non vogliono rischiare un nuovo sold out.
 
 Ballerini internazionali che stanno pianificando voli, hotel e transfer per 
 Milano Dance Events 2026
@@ -4757,7 +4741,7 @@ Gruppi di amici che vogliono partecipare allo stesso congresso senza finire in f
 
 Scegli il Biglietto Giusto per il Tuo Weekend
 
-Se Milano Sensual Congress è già nella tua agenda, il consiglio pratico è chiaro: prenota prima dell'aumento del 15 giugno. Il Full Pass è la scelta più sicura per chi vuole vivere tutto il weekend Bachata, mentre l'upgrade Masterclass è l'opzione migliore per chi cerca formazione aggiuntiva di alto livello.
+Se Milano Sensual Congress è già nella tua agenda, il consiglio pratico è chiaro: prenota il Full Pass prima della scadenza del 31 luglio. Il Full Pass è la scelta più sicura per chi vuole vivere tutto il weekend Bachata, mentre l'upgrade Masterclass è l'opzione migliore per chi cerca formazione aggiuntiva di alto livello.
 
 Puoi controllare le opzioni attuali nella pagina 
 biglietti Milano Sensual Congress
@@ -4771,11 +4755,11 @@ transfer
 
 Promemoria biglietti
 
-Il prossimo aumento è il 15 giugno 2026. Ulteriori fasce prezzo potranno essere annunciate più avanti, e lo scorso anno Full Pass e Masterclass sono andati completamente sold out.
+Il Full Pass costa 125€ fino alla mezzanotte del 31 luglio 2026. L'upgrade Masterclass costa 65€ senza altri aumenti previsti, e lo scorso anno Full Pass e Masterclass sono andati completamente sold out.
 
-Blocca il Full Pass Prima del 15 Giugno
+Blocca il Full Pass Prima del 31 Luglio
 
-I prezzi aumentano sia per Full Pass sia per Masterclass. Prenota prima della prossima fascia e prima che le categorie limitate vadano sold out.
+Il Full Pass costa 125€ fino alla mezzanotte del 31 luglio. Aggiungi l'upgrade Masterclass da 65€ se vuoi il percorso avanzato.
 
 Prenota il Biglietto
 
