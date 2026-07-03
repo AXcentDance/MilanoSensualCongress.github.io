@@ -265,6 +265,16 @@
         "@type": "Rating",
         "ratingValue": "4"
       },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "Assistenza prenotazione hotel",
+        "telephone": "+393934407045",
+        "email": "info@oltreilviaggio.net",
+        "availableLanguage": [
+          "it",
+          "en"
+        ]
+      },
       "url": "https://milanosensualcongress.com/it/hotel"
     },
     {
@@ -292,6 +302,14 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Sì, i cambi di nome per le prenotazioni delle camere sono possibili. Se hai bisogno di trasferire la tua camera a un altro partecipante, ti preghiamo di contattare noi o l'ufficio prenotazioni dell'hotel."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Chi posso contattare per assistenza con la prenotazione hotel?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Per assistenza con la prenotazione hotel, contatta il riferimento ufficiale al numero +39 393 4407045 o via email a info@oltreilviaggio.net."
           }
         }
       ]
@@ -416,9 +434,8 @@
     <div class="absolute top-0 left-0 w-64 h-64 bg-purple-600/10 rounded-full blur-3xl -z-0"></div>
     <div class="container mx-auto px-6 relative z-10">
 
-      <div class="flex flex-col lg:flex-row items-center gap-16">
-        <div class="lg:w-1/2">
-          <div class="mb-10 p-6 rounded-2xl bg-gradient-to-r from-pink-500/10 to-purple-500/10 border border-pink-500/30 flex items-center justify-between shadow-[0_0_30px_rgba(236,72,153,0.15)] relative overflow-hidden group">
+      <div class="grid lg:grid-cols-2 gap-6 mb-12">
+          <div class="p-6 rounded-2xl bg-gradient-to-r from-pink-500/10 to-purple-500/10 border border-pink-500/30 flex items-center justify-between shadow-[0_0_30px_rgba(236,72,153,0.15)] relative overflow-hidden group">
             <div class="absolute inset-0 bg-gradient-to-r from-pink-500/20 to-purple-500/20 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000 ease-in-out"></div>
             <div class="flex-1 relative z-10">
               <h3 class="text-2xl font-serif font-bold text-white mb-2 flex items-center gap-3">
@@ -438,6 +455,32 @@
               <i class="fa-solid fa-coins"></i>
             </div>
           </div>
+          <div class="p-6 rounded-2xl bg-white/[0.04] border border-pink-500/30 shadow-[0_0_30px_rgba(236,72,153,0.12)]">
+            <h3 class="text-2xl font-serif font-bold text-white mb-2 flex items-center gap-3">
+              <i class="fa-solid fa-headset text-pink-400"></i> Assistenza Prenotazione Hotel
+            </h3>
+            <p class="text-slate-400 text-sm leading-relaxed mb-4">Per supporto con la prenotazione della camera, questo è il punto di riferimento ufficiale per gli ospiti del Milano Sensual Congress.</p>
+            <div class="grid sm:grid-cols-2 gap-3">
+              <a href="tel:+393934407045" class="flex items-center gap-3 rounded-xl bg-slate-950/40 border border-white/10 p-4 hover:border-pink-500/50 hover:text-pink-200 transition-colors">
+                <i class="fa-solid fa-phone text-pink-400"></i>
+                <span>
+                  <span class="block text-xs uppercase tracking-widest text-slate-500">Cellulare</span>
+                  <span class="font-semibold text-white">+39 393 4407045</span>
+                </span>
+              </a>
+              <a href="mailto:info@oltreilviaggio.net" class="flex items-center gap-3 rounded-xl bg-slate-950/40 border border-white/10 p-4 hover:border-pink-500/50 hover:text-pink-200 transition-colors">
+                <i class="fa-solid fa-envelope text-pink-400"></i>
+                <span>
+                  <span class="block text-xs uppercase tracking-widest text-slate-500">Mail</span>
+                  <span class="font-semibold text-white break-all">info@oltreilviaggio.net</span>
+                </span>
+              </a>
+            </div>
+          </div>
+      </div>
+
+      <div class="flex flex-col lg:flex-row items-center gap-16">
+        <div class="lg:w-1/2">
           <h2 class="text-3xl md:text-4xl font-serif font-bold mb-6 leading-tight">Vivi il Congresso<br>in <span
               class="text-pink-500">Stile Executive</span></h2>
           <div class="w-24 h-1 bg-gradient-to-r from-pink-500 to-purple-600 rounded-full mb-8"></div>
@@ -554,6 +597,16 @@
                 class="fa-solid fa-user-pen text-purple-500 mt-1"></i> Posso cambiare il nome sulla prenotazione?
             </h4>
             <p class="text-slate-300 pl-8 leading-relaxed">Sì, i cambi di nome per le prenotazioni delle camere sono possibili. Se hai bisogno di trasferire la tua camera a un altro partecipante, ti preghiamo di contattare noi o l'ufficio prenotazioni dell'hotel.</p>
+          </div>
+          <div class="glass-card p-6 hover:border-pink-500/30 transition-colors">
+            <h4 class="text-lg font-bold text-white mb-2 flex items-start gap-3"><i
+                class="fa-solid fa-headset text-pink-500 mt-1"></i> Chi posso contattare per assistenza con la prenotazione hotel?
+            </h4>
+            <p class="text-slate-300 pl-8 leading-relaxed">Per supporto con la prenotazione hotel, contatta il
+              riferimento ufficiale al <a href="tel:+393934407045"
+                class="text-pink-300 hover:text-pink-200 font-semibold">+39 393 4407045</a> o via email a <a
+                href="mailto:info@oltreilviaggio.net"
+                class="text-pink-300 hover:text-pink-200 font-semibold break-all">info@oltreilviaggio.net</a>.</p>
           </div>
         </div>
       </div>
