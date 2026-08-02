@@ -1,5 +1,5 @@
 # Milano Sensual Congress 2026 - Full Site Documentation
-# Generated automatically on 2026-07-03 10:43
+# Generated automatically on 2026-08-02 21:43
 # Total Pages: 62
 
 ## Page: Milano Sensual Congress 2026 | Europe's Leading Bachata Congress (index.html)
@@ -22,7 +22,7 @@ Bachata Congress in Milan, Italy
 . Experience the luxury of a 4-star executive
  hotel in the heart of Lombardy, featuring world-class masters and a high-stakes International Jack & Jill competition.
 
-Full Pass €125 until July 31 midnight
+Full Pass €130 until September 15 at midnight
 
 00
 Days
@@ -42,7 +42,7 @@ Min
 00
 Sec
 
-GET A REMINDER BEFORE THE JULY 31 PRICE INCREASE
+GET A REMINDER BEFORE THE SEPTEMBER 15 PRICE INCREASE
 
  Remind Me
 
@@ -310,7 +310,7 @@ Il Riferimento per i Congressi Bachata 2026 Italia
 
 Il Milano Sensual Congress è il punto di riferimento per gli amanti della bachata in Italia. Unisciti a noi per un'esperienza indimenticabile con i migliori artisti internazionali, workshop di alta qualità e feste esclusive in una location di lusso.
 
-Full Pass a 125€ fino alla mezzanotte del 31 luglio
+Full Pass a 130€ fino alla mezzanotte del 15 settembre
 
 00
 Giorni
@@ -330,7 +330,7 @@ Min
 00
 Sec
 
-AVVISAMI PRIMA DELL'AUMENTO DEL 31 LUGLIO
+AVVISAMI PRIMA DELL'AUMENTO DEL 15 SETTEMBRE
 
  Avvisami
 
@@ -823,7 +823,7 @@ Partecipa al più atteso dei
 congressi bachata 2026
 . Scegli il pass che fa per te e preparati a ballare.
 
-Full Pass a 125€ fino alla mezzanotte del 31 luglio
+Full Pass a 130€ fino alla mezzanotte del 15 settembre
 
 00
 Giorni
@@ -843,7 +843,7 @@ Min
 00
 Sec
 
-AVVISAMI PRIMA DELL'AUMENTO DEL 31 LUGLIO
+AVVISAMI PRIMA DELL'AUMENTO DEL 15 SETTEMBRE
 
  Avvisami
 
@@ -857,9 +857,9 @@ Assicurati il tuo posto in anticipo per le migliori tariffe.
 
 Full Pass
 
-€125
+€130
 
-Valido fino alla mezzanotte del 31 luglio
+Valido fino alla mezzanotte del 15 settembre
 
 Accesso completo all'intero evento
 
@@ -876,7 +876,7 @@ Acquista
 
 Prossimo Aumento
 
-Dopo la mezzanotte del 31 luglio
+Dopo la mezzanotte del 15 settembre
 
 Prossima Fascia Full Pass
 
@@ -885,8 +885,8 @@ TBA
 Accesso
  Completo
 
-Dopo il 31
- luglio
+Dopo il 15
+ settembre
 
 Bloccato
 
@@ -1045,7 +1045,7 @@ Join us at the stunning Devero
  Hotel for the premier Bachata event. We went sold out last year! Experience over 40 hours of workshops,
  world-class artists, and unforgettable parties.
 
-Full Pass €125 until July 31 midnight
+Full Pass €130 until September 15 at midnight
 
 00
 Days
@@ -1065,7 +1065,7 @@ Min
 00
 Sec
 
-GET A REMINDER BEFORE THE JULY 31 PRICE INCREASE
+GET A REMINDER BEFORE THE SEPTEMBER 15 PRICE INCREASE
 
  Remind Me
 
@@ -1079,9 +1079,9 @@ Secure your spot early for the best rates.
 
 Full Pass
 
-€125
+€130
 
-Valid until July 31 at midnight
+Valid until September 15 at midnight
 
 Full
  Access to entire event
@@ -1099,7 +1099,7 @@ Buy
 
 Next Price Increase
 
-After July 31 at midnight
+After September 15 at midnight
 
 Full Pass Next Tier
 
@@ -1108,8 +1108,8 @@ TBA
 Full
  Access
 
-After July
- 31
+After September
+ 15
 
 Locked
 

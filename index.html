@@ -231,12 +231,12 @@
           {
             "@type": "UnitPriceSpecification",
             "name": "Current Full Pass",
-            "price": "125.00",
+            "price": "130.00",
             "priceCurrency": "EUR",
-            "validThrough": "2026-07-31T23:59:59+02:00"
+            "validThrough": "2026-09-15T23:59:59+02:00"
           }
         ],
-        "price": "125.00"
+        "price": "130.00"
       }
     },
     {
@@ -457,7 +457,7 @@
       <div id="countdown" class="animate-fade-in-up mb-12 flex justify-center" style="animation-delay:.1s">
         <div class="px-8 py-6 rounded-3xl border border-pink-500/40 shadow-[0_0_30px_rgba(236,72,153,0.3)] flex flex-col items-center" 
              style="background: rgba(15, 23, 42, 0.85); backdrop-filter: blur(20px);">
-          <div class="text-pink-400 text-xs font-bold tracking-widest uppercase mb-3 text-center">Full Pass €125 until July 31 midnight</div>
+          <div class="text-pink-400 text-xs font-bold tracking-widest uppercase mb-3 text-center">Full Pass €130 until September 15 at midnight</div>
           <div class="flex gap-4 text-white font-mono text-2xl md:text-3xl mb-6">
             <div class="text-center"><span id="days">00</span><p class="text-[10px] uppercase tracking-tighter opacity-50 font-sans">Days</p></div>
             <div class="text-pink-500/50">:</div>
@@ -469,7 +469,7 @@
           </div>
           
           <div id="reminder-container" class="w-full pt-6 border-t border-white/10">
-            <p class="text-white text-[10px] font-bold tracking-[0.2em] uppercase mb-4 text-center opacity-90">GET A REMINDER BEFORE THE JULY 31 PRICE INCREASE</p>
+            <p class="text-white text-[10px] font-bold tracking-[0.2em] uppercase mb-4 text-center opacity-90">GET A REMINDER BEFORE THE SEPTEMBER 15 PRICE INCREASE</p>
             <form id="reminder-form" action="https://formspree.io/slamitzam@gmail.com" method="POST" class="flex flex-col md:flex-row gap-3 items-center justify-center">
               <input type="hidden" name="_subject" value="New Reminder Request - Milano Sensual Congress">
               <input type="hidden" name="_template" value="table">
@@ -859,7 +859,7 @@
       <div class="mt-6 text-center text-xs text-slate-500"><a href="faq" class="hover:text-slate-300 transition-colors">FAQ</a></div>
 </footer>
   <script>
-    const targetDate = new Date("2026-07-31T23:59:59+02:00").getTime();
+    const targetDate = new Date("2026-09-15T23:59:59+02:00").getTime();
     function updateCountdown() {
       const now = new Date().getTime();
       const diff = targetDate - now;
