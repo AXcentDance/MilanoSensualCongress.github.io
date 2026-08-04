@@ -363,7 +363,27 @@
     }
 
     .hero-overlay {
-      background: linear-gradient(to bottom, rgba(15, 23, 42, .4), rgba(15, 23, 42, .9) 90%, #0f172a 100%)
+      background: linear-gradient(to bottom, rgba(15, 23, 42, .55), rgba(15, 23, 42, .9) 90%, #0f172a 100%)
+    }
+
+    .hero-text-shadow {
+      text-shadow: 0 2px 6px rgba(15, 23, 42, .85), 0 8px 32px rgba(15, 23, 42, .6)
+    }
+
+    .hero-text-shadow .bg-clip-text {
+      text-shadow: none;
+      filter: drop-shadow(0 3px 8px rgba(15, 23, 42, .8))
+    }
+
+    .hero-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: .5rem;
+      padding: .55rem 1.1rem;
+      border-radius: 9999px;
+      background: rgba(15, 23, 42, .65);
+      border: 1px solid rgba(255, 255, 255, .14);
+      backdrop-filter: blur(10px)
     }
 
     .form-input {
@@ -466,15 +486,21 @@
     </script>
     <div class="hero-overlay absolute inset-0 z-10"></div>
     <div class="container mx-auto px-6 relative z-20 py-20 text-center">
-      <h1 class="text-5xl md:text-7xl lg:text-8xl font-serif font-bold mb-4 leading-tight animate-fade-in-up">Milano
+      <h1 class="hero-text-shadow text-5xl md:text-7xl lg:text-8xl font-serif font-bold mb-4 leading-tight animate-fade-in-up">Milano
         Sensual<br><span
           class="text-transparent bg-clip-text bg-gradient-to-r from-pink-400 via-purple-400 to-indigo-400">Bachata
           Congress</span>
       </h1>
-      <p class="text-xl md:text-2xl text-slate-300 font-light tracking-widest uppercase mb-4">20 - 21 - 22 November 2026</p>
-      <p class="text-slate-400 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed font-light mb-8">Join the most
-        exclusive <strong>Bachata Congress in Milan, Italy</strong>. Experience the luxury of a 4-star executive
-        hotel in the heart of Lombardy, featuring world-class masters and a high-stakes International Jack & Jill competition.</p>
+      <p class="hero-text-shadow text-xl md:text-2xl text-slate-200 font-light tracking-widest uppercase mb-4">20 - 21 - 22 November 2026</p>
+      <p class="hero-text-shadow text-slate-100 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed mb-6">The most
+        exclusive <strong class="text-white">Bachata Congress in Milan, Italy</strong> &mdash; three days and nights of
+        dancing with the world&rsquo;s best artists, all under one roof.</p>
+      <div class="flex flex-wrap justify-center gap-3 mb-8 animate-fade-in-up">
+        <span class="hero-chip text-sm font-semibold text-slate-100"><i class="fa-solid fa-star text-brand-gold"></i> 4-Star Hotel &amp; Spa Venue</span>
+        <span class="hero-chip text-sm font-semibold text-slate-100"><i class="fa-solid fa-graduation-cap text-pink-400"></i> World-Class Masters</span>
+        <span class="hero-chip text-sm font-semibold text-slate-100"><i class="fa-solid fa-trophy text-purple-400"></i> International Jack &amp; Jill</span>
+        <span class="hero-chip text-sm font-semibold text-slate-100"><i class="fa-solid fa-champagne-glasses text-pink-400"></i> Socials Till Sunrise</span>
+      </div>
 
       <!-- Countdown & Reminder -->
       <div id="countdown" class="animate-fade-in-up mb-12 flex justify-center" style="animation-delay:.1s">

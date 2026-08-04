@@ -363,7 +363,27 @@
     }
 
     .hero-overlay {
-      background: linear-gradient(to bottom, rgba(15, 23, 42, .4), rgba(15, 23, 42, .9) 90%, #0f172a 100%)
+      background: linear-gradient(to bottom, rgba(15, 23, 42, .55), rgba(15, 23, 42, .9) 90%, #0f172a 100%)
+    }
+
+    .hero-text-shadow {
+      text-shadow: 0 2px 6px rgba(15, 23, 42, .85), 0 8px 32px rgba(15, 23, 42, .6)
+    }
+
+    .hero-text-shadow .bg-clip-text {
+      text-shadow: none;
+      filter: drop-shadow(0 3px 8px rgba(15, 23, 42, .8))
+    }
+
+    .hero-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: .5rem;
+      padding: .55rem 1.1rem;
+      border-radius: 9999px;
+      background: rgba(15, 23, 42, .65);
+      border: 1px solid rgba(255, 255, 255, .14);
+      backdrop-filter: blur(10px)
     }
 
     .form-input {
@@ -454,15 +474,21 @@
     </script>
     <div class="hero-overlay absolute inset-0 z-10"></div>
     <div class="container mx-auto px-6 relative z-20 py-20 text-center">
-      <h1 class="text-5xl md:text-7xl lg:text-8xl font-serif font-bold mb-4 leading-tight animate-fade-in-up">Milano
+      <h1 class="hero-text-shadow text-5xl md:text-7xl lg:text-8xl font-serif font-bold mb-4 leading-tight animate-fade-in-up">Milano
         Sensual<br><span
           class="text-transparent bg-clip-text bg-gradient-to-r from-pink-400 via-purple-400 to-indigo-400">Congressi Bachata</span>
       </h1>
-      <p class="text-xl md:text-2xl text-slate-300 font-light tracking-widest uppercase mb-4">
+      <p class="hero-text-shadow text-xl md:text-2xl text-slate-200 font-light tracking-widest uppercase mb-4">
         20 - 21 - 22 Novembre 2026<br>
         <span class="text-pink-400 text-sm font-bold tracking-normal opacity-80 mt-2 block">Il Riferimento per i Congressi Bachata 2026 Italia</span>
       </p>
-      <p class="text-slate-400 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed font-light mb-8">Il Milano Sensual Congress è il punto di riferimento per gli amanti della bachata in Italia. Unisciti a noi per un'esperienza indimenticabile con i migliori artisti internazionali, workshop di alta qualità e feste esclusive in una location di lusso.</p>
+      <p class="hero-text-shadow text-slate-100 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed mb-6">Il <strong class="text-white">congresso di bachata più esclusivo d&rsquo;Italia</strong> &mdash; a Milano, tre giorni e tre notti di ballo con i migliori artisti internazionali, tutto sotto lo stesso tetto.</p>
+      <div class="flex flex-wrap justify-center gap-3 mb-8 animate-fade-in-up">
+        <span class="hero-chip text-sm font-semibold text-slate-100"><i class="fa-solid fa-star text-brand-gold"></i> Hotel 4 Stelle con Spa</span>
+        <span class="hero-chip text-sm font-semibold text-slate-100"><i class="fa-solid fa-graduation-cap text-pink-400"></i> Maestri di Livello Mondiale</span>
+        <span class="hero-chip text-sm font-semibold text-slate-100"><i class="fa-solid fa-trophy text-purple-400"></i> Jack &amp; Jill Internazionale</span>
+        <span class="hero-chip text-sm font-semibold text-slate-100"><i class="fa-solid fa-champagne-glasses text-pink-400"></i> Social Fino all&rsquo;Alba</span>
+      </div>
 
       <!-- Countdown & Reminder -->
       <div id="countdown" class="animate-fade-in-up mb-12 flex justify-center" style="animation-delay:.1s">
