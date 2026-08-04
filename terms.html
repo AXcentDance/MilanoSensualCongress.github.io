@@ -16,6 +16,9 @@
     <link rel="stylesheet" href="/vendor/fontawesome/fa-subset.min.css?v=1">
     <link rel="dns-prefetch" href="https://connect.facebook.net">
     <style>
+    /* lg:flex/lg:hidden are not in the prebuilt tailwind.min.css */
+    @media (min-width:1024px){.lg\:flex{display:flex}.lg\:hidden{display:none}}
+
         .hero-bg {
             background-image: linear-gradient(rgba(15, 23, 42, .85), rgba(76, 29, 149, .9)), url('/images/backgrounds/event-terms-desk-background.webp');
             background-size: cover;
@@ -156,18 +159,18 @@
                 class="flex items-center gap-3 group"><img decoding="async" width="1024" height="498" loading="lazy" src="images/logo.webp" alt="Milano Sensual Congress Logo"
                     class="h-12 w-auto group-hover:opacity-90 transition-opacity"> <span
                     class="text-white text-xs font-sans tracking-[0.2em] uppercase opacity-60 border-l border-white/20 pl-3 py-1">2026</span></a>
-            <div class="hidden md:flex space-x-8 text-sm font-medium tracking-wide items-center"><a href="./"
+            <div class="hidden lg:flex space-x-8 text-sm font-medium tracking-wide items-center"><a href="./"
                     class="hover:text-pink-400 transition-colors">Home</a> <a href="terms" class="text-pink-500">Terms &
                     Conditions</a> <a href="tickets" class="hover:text-pink-400 transition-colors">Tickets</a> <a
                     href="hotel" class="hover:text-pink-400 transition-colors">Hotel</a> <a href="transfer"
                     class="hover:text-pink-400 transition-colors">Transfer</a> <a href="jacknjill" class="hover:text-pink-400 transition-colors">JacknJill</a>  <a href="news"
                     class="hover:text-pink-400 transition-colors">News</a> <a href="contact"
                     class="hover:text-pink-400 transition-colors">Contact</a></div><button
-                class="md:hidden text-white focus:outline-none"
+                class="lg:hidden text-white focus:outline-none"
                 onclick='document.getElementById("mobile-menu").classList.toggle("hidden")'><i
                     class="fa-solid fa-bars text-xl"></i></button>
         </div>
-        <div id="mobile-menu" class="hidden md:hidden bg-brand-dark border-t border-white/10">
+        <div id="mobile-menu" class="hidden lg:hidden bg-brand-dark border-t border-white/10">
             <div class="flex flex-col p-4 space-y-4"><a href="./" class="block hover:text-pink-400">Home</a> <a
                     href="artists" class="block hover:text-pink-400">Artists</a> <a href="tickets"
                     class="block hover:text-pink-400">Tickets</a> <a href="hotel"

@@ -25,6 +25,9 @@
   <link rel="stylesheet" href="/vendor/fontawesome/fa-subset.min.css?v=1">
   <link rel="dns-prefetch" href="https://connect.facebook.net">
   <style>
+    /* lg:flex/lg:hidden are not in the prebuilt tailwind.min.css */
+    @media (min-width:1024px){.lg\:flex{display:flex}.lg\:hidden{display:none}}
+
     .glass-nav {
       background: rgba(15, 23, 42, .85);
       backdrop-filter: blur(12px);
@@ -286,7 +289,7 @@
   <nav class="fixed w-full z-50 glass-nav">
     <div class="container mx-auto px-6 py-3 flex justify-between items-center">
       <a href="./" class="flex items-center group"><img decoding="async" width="1024" height="498" loading="lazy" src="../images/logo.webp" alt="Logo Milano Sensual Congress" class="h-12 w-auto group-hover:opacity-90 transition-opacity"></a>
-      <div class="hidden md:flex space-x-8 text-sm font-medium tracking-wide items-center">
+      <div class="hidden lg:flex space-x-8 text-sm font-medium tracking-wide items-center">
         <a href="./" class="hover:text-pink-400 transition-colors">Home</a>
         <a href="artists" class="hover:text-pink-400 transition-colors">Artisti</a>
         <a href="tickets" class="hover:text-pink-400 transition-colors">Biglietti</a>
@@ -297,9 +300,9 @@
         <a href="contact" class="hover:text-pink-400 transition-colors">Contatti</a>
         <div class="border-l border-white/20 pl-6 ml-2 flex gap-3"><a href="../program" class="text-slate-400 hover:text-white transition-colors">EN</a><a href="#" class="text-white font-bold">IT</a></div>
       </div>
-      <button class="md:hidden text-white focus:outline-none" onclick='document.getElementById("mobile-menu").classList.toggle("hidden")'><i class="fa-solid fa-bars text-xl"></i></button>
+      <button class="lg:hidden text-white focus:outline-none" onclick='document.getElementById("mobile-menu").classList.toggle("hidden")'><i class="fa-solid fa-bars text-xl"></i></button>
     </div>
-    <div id="mobile-menu" class="hidden md:hidden bg-brand-dark border-t border-white/10">
+    <div id="mobile-menu" class="hidden lg:hidden bg-brand-dark border-t border-white/10">
       <div class="flex flex-col p-4 space-y-4">
         <a href="./" class="block hover:text-pink-400">Home</a>
         <a href="artists" class="block hover:text-pink-400">Artisti</a>

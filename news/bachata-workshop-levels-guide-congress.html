@@ -27,6 +27,9 @@
   <link rel="dns-prefetch" href="https://connect.facebook.net">
 
   <style>
+    /* lg:flex/lg:hidden are not in the prebuilt tailwind.min.css */
+    @media (min-width:1024px){.lg\:flex{display:flex}.lg\:hidden{display:none}}
+
     .glass-nav {
       background: rgba(15, 23, 42, .85);
       backdrop-filter: blur(12px);
@@ -337,7 +340,7 @@
         <img decoding="async" width="1024" height="498" loading="lazy" src="../images/logo.webp" alt="Milano Sensual Congress Logo" class="h-12 w-auto group-hover:opacity-90 transition-opacity">
         <span class="text-white text-xs font-sans tracking-[0.2em] uppercase opacity-60 border-l border-white/20 pl-3 py-1">2026</span>
       </a>
-      <div class="hidden md:flex space-x-8 text-sm font-medium tracking-wide">
+      <div class="hidden lg:flex space-x-8 text-sm font-medium tracking-wide">
         <a href="../" class="hover:text-pink-400 transition-colors">Home</a>
         <a href="../artists" class="hover:text-pink-400 transition-colors">Artists</a>
         <a href="../tickets" class="hover:text-pink-400 transition-colors">Tickets</a>
@@ -351,11 +354,11 @@
           <a href="../it/news/livelli-workshop-bachata-congresso" class="text-slate-400 hover:text-white transition-colors">IT</a>
         </div>
       </div>
-      <button class="md:hidden text-white focus:outline-none" onclick='document.getElementById("mobile-menu").classList.toggle("hidden")'>
+      <button class="lg:hidden text-white focus:outline-none" onclick='document.getElementById("mobile-menu").classList.toggle("hidden")'>
         <i class="fa-solid fa-bars text-xl"></i>
       </button>
     </div>
-    <div id="mobile-menu" class="hidden md:hidden bg-brand-dark border-t border-white/10">
+    <div id="mobile-menu" class="hidden lg:hidden bg-brand-dark border-t border-white/10">
       <div class="flex flex-col p-4 space-y-4">
         <a href="../" class="block hover:text-pink-400">Home</a>
         <a href="../artists" class="block hover:text-pink-400">Artists</a>
