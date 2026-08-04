@@ -342,6 +342,23 @@
       transition: all .3s ease
     }
 
+    .community-card {
+      position: relative;
+      overflow: hidden
+    }
+
+    .community-globe {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 13rem;
+      color: #818cf8;
+      opacity: .13;
+      z-index: -1;
+      pointer-events: none
+    }
+
     .glass-card:hover {
       box-shadow: 0 20px 40px -10px rgba(244, 63, 94, .3);
       border-color: rgba(244, 63, 94, .5);
@@ -599,12 +616,13 @@
           <p class="text-slate-400 text-sm leading-relaxed">Viaggia con facilità grazie alle nostre <strong class="text-white">navette dirette dedicate</strong> dagli aeroporti di Milano Malpensa, Linate e Bergamo direttamente all'hotel di lusso Devero. <a href="transfer" class="text-pink-400 font-bold hover:underline">Scopri le tratte e prenota il tuo transfer</a>.</p>
         </div>
 
-        <div class="glass-card p-10 rounded-3xl text-center flex flex-col items-center">
+        <div class="glass-card community-card p-10 rounded-3xl text-center flex flex-col items-center">
+          <i class="fa-solid fa-earth-europe community-globe" aria-hidden="true"></i>
           <div class="w-16 h-16 bg-indigo-500/10 rounded-2xl flex items-center justify-center mb-6 border border-indigo-500/20">
             <i class="fa-solid fa-users-rays text-3xl text-indigo-500"></i>
           </div>
           <h3 class="text-xl font-bold text-white mb-4">Community Europea</h3>
-          <p class="text-slate-400 text-sm leading-relaxed">Unisciti a una community diversificata di ballerini di alto livello provenienti da Spagna, Francia, Germania e Svizzera in una <strong class="text-white">location di lusso internazionale</strong>.</p>
+          <p class="text-slate-400 text-sm leading-relaxed">Unisciti a una community diversificata di ballerini di alto livello provenienti da Spagna, Francia, Germania e Svizzera in una <strong class="text-white">location di lusso internazionale</strong>. <a href="https://www.instagram.com/milanosensualcongress/" target="_blank" rel="noopener noreferrer" class="text-pink-400 font-bold hover:underline">Unisciti alla community su Instagram <i class="fa-brands fa-instagram"></i></a>.</p>
         </div>
       </div>
     </div>
