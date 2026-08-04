@@ -3,7 +3,9 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://connect.facebook.net; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://www.facebook.com; font-src 'self'; media-src 'self'; connect-src 'self' https://www.facebook.com https://connect.facebook.net; form-action 'self' https://formspree.io https://atmosferaeventi.it; frame-src https://www.facebook.com; object-src 'none'; base-uri 'self'">
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#0f172a">
   <title>Bachata in Italia 2026: Milano Meta di Ballo | Milano Sensual Congress</title>
   <meta name="description"
     content="Scopri perché Milano sta diventando una meta imperdibile per la Bachata in Italia 2026, con Congresso Bachata, workshop, party, Devero Hotel ed eventi latini europei.">
@@ -16,24 +18,13 @@
   <link rel="alternate" hreflang="en" href="https://milanosensualcongress.com/news/bachata-italy-2026-milan-dance-destination">
   <link rel="alternate" hreflang="x-default" href="https://milanosensualcongress.com/news/bachata-italy-2026-milan-dance-destination">
   <link rel="alternate" hreflang="it" href="https://milanosensualcongress.com/it/news/bachata-italia-2026-milano-meta-ballo">
-  <meta property="og:type" content="article">
-  <meta property="og:url" content="https://milanosensualcongress.com/it/news/bachata-italia-2026-milano-meta-ballo">
-  <meta property="og:title" content="Bachata in Italia 2026: Milano Meta di Ballo">
-  <meta property="og:description" content="Perché Milano sta diventando una meta imperdibile per la Bachata in Italia 2026: aeroporti, workshop, party e congresso al Devero Hotel.">
-  <meta property="og:image" content="https://milanosensualcongress.com/images/news/duomo-di-milano-bachata-italy-2026-dance-destination.webp">
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:title" content="Bachata in Italia 2026: Milano Meta di Ballo">
-  <meta property="twitter:description" content="Una guida per ballerini sul perché Milano sta diventando una delle mete Bachata più forti in Italia nel 2026.">
-  <meta property="twitter:image" content="https://milanosensualcongress.com/images/news/duomo-di-milano-bachata-italy-2026-dance-destination.webp">
 
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
-    rel="stylesheet">
-  <script>tailwind.config = { theme: { extend: { fontFamily: { sans: ["Inter", "sans-serif"], serif: ["Playfair Display", "serif"] }, colors: { brand: { dark: "#0f172a", purple: "#4c1d95", pink: "#be185d", accent: "#f43f5e", gold: "#fbbf24" } } } } }</script>
+  <link rel="preload" as="font" type="font/woff2" href="/fonts/inter-latin.woff2" crossorigin>
+  <link rel="preload" as="font" type="font/woff2" href="/fonts/playfair-display-latin.woff2" crossorigin>
+  <link rel="stylesheet" href="/css/fonts.css?v=1">
+  <link rel="stylesheet" href="/css/tailwind.min.css?v=1">
+  <link rel="stylesheet" href="/vendor/fontawesome/fa-subset.min.css?v=1">
+  <link rel="dns-prefetch" href="https://connect.facebook.net">
 
   <style>
     .glass-nav{background:rgba(15,23,42,.85);backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,.1)}
@@ -47,18 +38,42 @@
     .hero-bg{background-image:linear-gradient(rgba(15,23,42,.56),rgba(15,23,42,.94)),url('../../images/news/duomo-di-milano-bachata-italy-2026-dance-destination.webp');background-size:cover;background-position:center}
   </style>
 
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://milanosensualcongress.com/it/news/bachata-italia-2026-milano-meta-ballo">
+  <meta property="og:title" content="Bachata in Italia 2026: Milano Meta di Ballo | Milano Sensual Congress">
+  <meta property="og:description" content="Scopri perché Milano sta diventando una meta imperdibile per la Bachata in Italia 2026, con Congresso Bachata, workshop, party, Devero Hotel ed eventi latini europei.">
+  <meta property="og:image" content="https://milanosensualcongress.com/images/og/duomo-di-milano-bachata-2026.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Bachata in Italia 2026: Milano Meta di Ballo | Milano Sensual Congress">
+  <meta property="og:site_name" content="Milano Sensual Congress">
+  <meta property="og:locale" content="it_IT">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Bachata in Italia 2026: Milano Meta di Ballo | Milano Sensual Congress">
+  <meta name="twitter:description" content="Scopri perché Milano sta diventando una meta imperdibile per la Bachata in Italia 2026, con Congresso Bachata, workshop, party, Devero Hotel ed eventi latini europei.">
+  <meta name="twitter:image" content="https://milanosensualcongress.com/images/og/duomo-di-milano-bachata-2026.jpg">
+  <meta name="twitter:image:alt" content="Bachata in Italia 2026: Milano Meta di Ballo | Milano Sensual Congress">
   <!-- Meta Pixel Code -->
   <script>
-  !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version="2.0";
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window, document,"script",
-  "https://connect.facebook.net/en_US/fbevents.js");
-  fbq("init", "2083020305980459");
-  fbq("track", "PageView");
+  function initMetaPixel() {
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version="2.0";
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,"script",
+    "https://connect.facebook.net/en_US/fbevents.js");
+    fbq("init", "2083020305980459");
+    fbq("track", "PageView");
+  }
+  // Prerendered pages must not fire analytics until they are actually shown
+  if (document.prerendering) {
+    document.addEventListener("prerenderingchange", initMetaPixel, { once: true });
+  } else {
+    initMetaPixel();
+  }
   document.addEventListener("click", function(event) {
     var ticketLink = event.target.closest("a[href*=\"lasalsadelbaile.com/MSC2026\"]");
     if (ticketLink && window.fbq) {
@@ -246,6 +261,26 @@
       ]
     }
   </script>
+  <script type="speculationrules">
+  {
+    "prefetch": [{
+      "where": {"and": [
+        {"href_matches": "/*"},
+        {"not": {"href_matches": "/images/*"}},
+        {"not": {"href_matches": "/css/*"}},
+        {"not": {"href_matches": "/js/*"}},
+        {"not": {"href_matches": "/vendor/*"}},
+        {"not": {"href_matches": "/fonts/*"}}
+      ]},
+      "eagerness": "moderate"
+    }],
+    "prerender": [{
+      "where": {"href_matches": ["/", "/tickets", "/artists", "/hotel", "/contact", "/it/", "/it/tickets", "/it/artists", "/it/hotel", "/it/contact"]},
+      "eagerness": "moderate"
+    }]
+  }
+  </script>
+  <script src="/js/prefetch-fallback.js?v=1" defer></script>
 </head>
 
 <body class="bg-brand-dark text-slate-100 font-sans antialiased overflow-x-hidden">
@@ -303,7 +338,7 @@
       <span class="inline-block py-1 px-3 rounded-full bg-pink-500/20 border border-pink-500/50 text-pink-300 text-xs font-bold tracking-widest uppercase mb-6">Bachata Italia 2026</span>
       <h1 class="text-4xl md:text-7xl font-serif font-bold mb-6 leading-tight text-white">Bachata in Italia 2026:<br><span class="text-transparent bg-clip-text bg-gradient-to-r from-pink-400 via-purple-400 to-indigo-400">Perché Milano Sta Diventando una Meta Imperdibile per Ballare</span></h1>
       <p class="text-lg text-slate-300 max-w-3xl mx-auto font-light">Uno sguardo pratico al motivo per cui i ballerini scelgono Milano per workshop Bachata, party internazionali, viaggi facili e un weekend congressuale sotto lo stesso tetto.</p>
-      <p class="mt-6 text-[11px] text-slate-400">Foto: <a href="https://commons.wikimedia.org/wiki/File:Milan_Cathedral_(Duomo_di_Milano)_evening.jpg" target="_blank" rel="noopener" class="hover:text-pink-300 underline decoration-white/20">Marco Nuernberger</a>, <a href="https://creativecommons.org/licenses/by/2.0/" target="_blank" rel="noopener" class="hover:text-pink-300 underline decoration-white/20">CC BY 2.0</a>, via Wikimedia Commons.</p>
+      <p class="mt-6 text-[11px] text-slate-400">Foto: <a href="https://commons.wikimedia.org/wiki/File:Milan_Cathedral_(Duomo_di_Milano)_evening.jpg" target="_blank" rel="noopener noreferrer" class="hover:text-pink-300 underline decoration-white/20">Marco Nuernberger</a>, <a href="https://creativecommons.org/licenses/by/2.0/" target="_blank" rel="noopener noreferrer" class="hover:text-pink-300 underline decoration-white/20">CC BY 2.0</a>, via Wikimedia Commons.</p>
     </div>
   </header>
 
@@ -386,7 +421,7 @@
           <p class="text-slate-500 text-sm">L'esperienza Bachata definitiva in Italia.</p>
         </div>
         <div class="flex gap-6">
-          <a href="https://instagram.com/milano_sensual_congress" target="_blank" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-pink-600 hover:text-white transition-all text-slate-400"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://instagram.com/milano_sensual_congress" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-pink-600 hover:text-white transition-all text-slate-400"><i class="fa-brands fa-instagram"></i></a>
           <a href="https://wa.me/41799668481" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-green-500 hover:text-white transition-all text-slate-400"><i class="fa-brands fa-whatsapp"></i></a>
         </div>
       </div>

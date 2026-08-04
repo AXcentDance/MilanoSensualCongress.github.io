@@ -3,36 +3,18 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="theme-color" content="#0f172a">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://connect.facebook.net; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://www.facebook.com; font-src 'self'; media-src 'self'; connect-src 'self' https://www.facebook.com https://connect.facebook.net; form-action 'self' https://formspree.io https://atmosferaeventi.it; frame-src https://www.facebook.com; object-src 'none'; base-uri 'self'">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page Not Found | Milano Sensual Congress 2026</title>
     <meta name="description" content="The page you are looking for does not exist. Return to the Milano Sensual Congress home page to find your way.">
-    <meta name="robots" content="noindex, nofollow">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
-        rel="stylesheet">
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                        serif: ['Playfair Display', 'serif'],
-                    },
-                    colors: {
-                        brand: {
-                            dark: '#0f172a',
-                            purple: '#4c1d95',
-                            pink: '#be185d',
-                            accent: '#f43f5e',
-                            gold: '#fbbf24',
-                        }
-                    }
-                }
-            }
-        }
-    </script>
+    <meta name="robots" content="noindex, follow">
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/inter-latin.woff2" crossorigin>
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/playfair-display-latin.woff2" crossorigin>
+    <link rel="stylesheet" href="/css/fonts.css?v=1">
+    <link rel="stylesheet" href="/css/tailwind.min.css?v=1">
+    <link rel="stylesheet" href="/vendor/fontawesome/fa-subset.min.css?v=1">
+    <link rel="dns-prefetch" href="https://connect.facebook.net">
     <style>
         .hero-bg {
             background-image: linear-gradient(rgba(15, 23, 42, 0.9), rgba(76, 29, 149, 0.95)), url('images/poster.webp');
@@ -61,16 +43,24 @@
     </script>
   <!-- Meta Pixel Code -->
   <script>
-  !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version="2.0";
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window, document,"script",
-  "https://connect.facebook.net/en_US/fbevents.js");
-  fbq("init", "2083020305980459");
-  fbq("track", "PageView");
+  function initMetaPixel() {
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version="2.0";
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,"script",
+    "https://connect.facebook.net/en_US/fbevents.js");
+    fbq("init", "2083020305980459");
+    fbq("track", "PageView");
+  }
+  // Prerendered pages must not fire analytics until they are actually shown
+  if (document.prerendering) {
+    document.addEventListener("prerenderingchange", initMetaPixel, { once: true });
+  } else {
+    initMetaPixel();
+  }
   document.addEventListener("click", function(event) {
     var ticketLink = event.target.closest("a[href*=\"lasalsadelbaile.com/MSC2026\"]");
     if (ticketLink && window.fbq) {
@@ -79,6 +69,26 @@
   });
   </script>
   <!-- End Meta Pixel Code -->
+  <script type="speculationrules">
+  {
+    "prefetch": [{
+      "where": {"and": [
+        {"href_matches": "/*"},
+        {"not": {"href_matches": "/images/*"}},
+        {"not": {"href_matches": "/css/*"}},
+        {"not": {"href_matches": "/js/*"}},
+        {"not": {"href_matches": "/vendor/*"}},
+        {"not": {"href_matches": "/fonts/*"}}
+      ]},
+      "eagerness": "moderate"
+    }],
+    "prerender": [{
+      "where": {"href_matches": ["/", "/tickets", "/artists", "/hotel", "/contact", "/it/", "/it/tickets", "/it/artists", "/it/hotel", "/it/contact"]},
+      "eagerness": "moderate"
+    }]
+  }
+  </script>
+  <script src="/js/prefetch-fallback.js?v=1" defer></script>
 </head>
 
 <body class="bg-brand-dark text-slate-300 font-sans antialiased min-h-screen flex flex-col">

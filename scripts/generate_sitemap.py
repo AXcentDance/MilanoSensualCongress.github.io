@@ -1,6 +1,7 @@
 import os
 import re
 import datetime
+import subprocess
 from urllib.parse import quote, urljoin
 try:
     from bs4 import BeautifulSoup
@@ -23,12 +24,23 @@ def is_noindex(filepath):
     return False
 
 def get_lastmod(filepath):
-    """Returns file modification time in YYYY-MM-DD format."""
+    """Truthful lastmod: newest git commit touching the file (ISO 8601 with
+    timezone). Files with uncommitted changes are stamped now. Never hand-edit
+    lastmod values — search engines learn to distrust sitemaps that lie.
+    NOTE: CI must clone with full history (fetch-depth: 0) or dates collapse."""
     try:
-        timestamp = os.path.getmtime(filepath)
-        return datetime.datetime.fromtimestamp(timestamp).strftime('%Y-%m-%d')
+        dirty = subprocess.run(
+            ['git', 'status', '--porcelain', '--', filepath],
+            capture_output=True, text=True).stdout.strip()
+        if not dirty:
+            out = subprocess.run(
+                ['git', 'log', '-1', '--format=%cI', '--', filepath],
+                capture_output=True, text=True).stdout.strip()
+            if out:
+                return out
     except Exception:
-        return datetime.datetime.now().strftime('%Y-%m-%d')
+        pass
+    return datetime.datetime.now().astimezone().replace(microsecond=0).isoformat()
 
 def get_url_path(filepath):
     """Converts filesystem path to URL path."""
@@ -164,11 +176,11 @@ def generate_sitemap():
             url = DOMAIN + get_url_path(filepath)
             lastmod = get_lastmod(filepath)
             
-            # Priority
+            # Priority tiers: 1.0 home / 0.8 sections / 0.6 leaf pages
             if key in ['index.html', 'index']:
                 priority = '1.0'
-            elif key.startswith('spring'):
-                priority = '0.9'
+            elif key.startswith('news/') or key in ['terms.html', '404.html']:
+                priority = '0.6'
             else:
                 priority = '0.8'
                 

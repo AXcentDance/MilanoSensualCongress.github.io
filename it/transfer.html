@@ -2,7 +2,9 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://connect.facebook.net; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://www.facebook.com; font-src 'self'; media-src 'self'; connect-src 'self' https://www.facebook.com https://connect.facebook.net; form-action 'self' https://formspree.io https://atmosferaeventi.it; frame-src https://www.facebook.com; object-src 'none'; base-uri 'self'">
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#0f172a">
   <title>Servizio Transfer | Milano Sensual Congress 2026</title>
   <meta name="description"
     content="Servizio transfer ufficiale per il Milano Sensual Congress 2026. Prenota il tuo viaggio da Malpensa, Linate, Bergamo o Milano Centrale per l'Hotel Devero.">
@@ -18,18 +20,42 @@
   <link rel="alternate" hreflang="en" href="https://milanosensualcongress.com/transfer">
   <link rel="alternate" hreflang="x-default" href="https://milanosensualcongress.com/transfer">
   <link rel="alternate" hreflang="it" href="https://milanosensualcongress.com/it/transfer">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://milanosensualcongress.com/it/transfer">
+  <meta property="og:title" content="Servizio Transfer | Milano Sensual Congress 2026">
+  <meta property="og:description" content="Servizio transfer ufficiale per il Milano Sensual Congress 2026. Prenota il tuo viaggio da Malpensa, Linate, Bergamo o Milano Centrale per l'Hotel Devero.">
+  <meta property="og:image" content="https://milanosensualcongress.com/images/og/milano-sensual-congress-social-card.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Servizio Transfer | Milano Sensual Congress 2026">
+  <meta property="og:site_name" content="Milano Sensual Congress">
+  <meta property="og:locale" content="it_IT">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Servizio Transfer | Milano Sensual Congress 2026">
+  <meta name="twitter:description" content="Servizio transfer ufficiale per il Milano Sensual Congress 2026. Prenota il tuo viaggio da Malpensa, Linate, Bergamo o Milano Centrale per l'Hotel Devero.">
+  <meta name="twitter:image" content="https://milanosensualcongress.com/images/og/milano-sensual-congress-social-card.jpg">
+  <meta name="twitter:image:alt" content="Servizio Transfer | Milano Sensual Congress 2026">
   <!-- Meta Pixel Code -->
   <script>
-  !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version="2.0";
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window, document,"script",
-  "https://connect.facebook.net/en_US/fbevents.js");
-  fbq("init", "2083020305980459");
-  fbq("track", "PageView");
+  function initMetaPixel() {
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version="2.0";
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,"script",
+    "https://connect.facebook.net/en_US/fbevents.js");
+    fbq("init", "2083020305980459");
+    fbq("track", "PageView");
+  }
+  // Prerendered pages must not fire analytics until they are actually shown
+  if (document.prerendering) {
+    document.addEventListener("prerenderingchange", initMetaPixel, { once: true });
+  } else {
+    initMetaPixel();
+  }
   document.addEventListener("click", function(event) {
     var ticketLink = event.target.closest("a[href*=\"lasalsadelbaile.com/MSC2026\"]");
     if (ticketLink && window.fbq) {
@@ -200,23 +226,14 @@
   ]
 }
   </script>
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://milanosensualcongress.com/it/transfer">
-  <meta property="og:title" content="Servizio Transfer | Milano Sensual Congress 2026">
-  <meta property="og:description"
-    content="Servizio transfer ufficiale per il Milano Sensual Congress 2026. Prenota il tuo viaggio da Malpensa, Linate, Bergamo o Milano Centrale per l'Hotel Devero.">
-  <meta property="og:image" content="https://milanosensualcongress.com/images/logo.webp">
-  <meta property="og:locale" content="it_IT">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
-    rel="stylesheet">
+  <link rel="preload" as="font" type="font/woff2" href="/fonts/inter-latin.woff2" crossorigin>
+  <link rel="preload" as="font" type="font/woff2" href="/fonts/playfair-display-latin.woff2" crossorigin>
+  <link rel="stylesheet" href="/css/fonts.css?v=1">
+  <link rel="stylesheet" href="/css/tailwind.min.css?v=1">
+  <link rel="stylesheet" href="/vendor/fontawesome/fa-subset.min.css?v=1">
+  <link rel="dns-prefetch" href="https://connect.facebook.net">
   <link rel="preload" as="image"
-    href="https://milanosensualcongress.com/wp-content/uploads/2025/11/Devero-Hotel-SPA_principale_colori.webp">
-  <script>tailwind.config = { theme: { extend: { fontFamily: { sans: ["Inter", "sans-serif"], serif: ["Playfair Display", "serif"] }, colors: { brand: { dark: "#0f172a", purple: "#4c1d95", pink: "#be185d", accent: "#f43f5e", gold: "#fbbf24" } }, animation: { "fade-in-up": "fadeInUp 1s ease-out forwards" }, keyframes: { fadeInUp: { "0%": { opacity: "0", transform: "translateY(20px)" }, "100%": { opacity: "1", transform: "translateY(0)" } } } } } }</script>
+    href="https://milanosensualcongress.com/images/hotel/devero-hotel-pool-day.webp">
   <style>
     .glass-card {
       background: rgba(255, 255, 255, .03);
@@ -265,8 +282,26 @@
       background: rgba(255, 255, 255, .1)
     }
   </style>
-  <script
-    type="speculationrules">{"prerender":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"selector_matches":"a"}]},"eagerness":"moderate"}]}</script>
+  <script type="speculationrules">
+  {
+    "prefetch": [{
+      "where": {"and": [
+        {"href_matches": "/*"},
+        {"not": {"href_matches": "/images/*"}},
+        {"not": {"href_matches": "/css/*"}},
+        {"not": {"href_matches": "/js/*"}},
+        {"not": {"href_matches": "/vendor/*"}},
+        {"not": {"href_matches": "/fonts/*"}}
+      ]},
+      "eagerness": "moderate"
+    }],
+    "prerender": [{
+      "where": {"href_matches": ["/", "/tickets", "/artists", "/hotel", "/contact", "/it/", "/it/tickets", "/it/artists", "/it/hotel", "/it/contact"]},
+      "eagerness": "moderate"
+    }]
+  }
+  </script>
+  <script src="/js/prefetch-fallback.js?v=1" defer></script>
 </head>
 
 <body class="bg-brand-dark text-slate-100 font-sans antialiased overflow-x-hidden">
@@ -275,7 +310,7 @@
   alt="" /></noscript>
   <nav class="fixed w-full z-50 glass-nav">
     <div class="container mx-auto px-6 py-3 flex justify-between items-center"><a href="./"
-        class="flex items-center gap-3 group"><img height="600" width="800" loading="lazy" src="../images/logo.webp" alt="Milano Sensual Congress Logo"
+        class="flex items-center gap-3 group"><img decoding="async" width="1024" height="498" loading="lazy" src="../images/logo.webp" alt="Milano Sensual Congress Logo"
           class="h-12 w-auto group-hover:opacity-90 transition-opacity"> <span
           class="text-white text-xs font-sans tracking-[0.2em] uppercase opacity-60 border-l border-white/20 pl-3 py-1">2026</span></a>
       <div class="hidden md:flex space-x-8 text-sm font-medium tracking-wide"><a href="./"
@@ -308,7 +343,7 @@
   </nav>
   <section class="relative w-full h-[60vh] flex items-center justify-center overflow-hidden">
     <div class="absolute inset-0 z-0">
-      <img height="600" width="800" loading="lazy" src="../images/transfer-car.webp" alt="Servizio transfer di lusso per ballerini del Milano Sensual Congress in arrivo a Milano" class="w-full h-full object-cover">
+      <img decoding="async" width="1024" height="1024" loading="lazy" src="../images/transfer-car.webp" srcset="../images/transfer-car_480w.webp 480w, ../images/transfer-car_800w.webp 800w, ../images/transfer-car.webp 1024w" sizes="100vw" alt="Servizio transfer di lusso per ballerini del Milano Sensual Congress in arrivo a Milano" class="w-full h-full object-cover">
       <div class="absolute inset-0 bg-black/60"></div>
     </div>
     <div class="container mx-auto px-6 relative z-10 text-center">
@@ -440,7 +475,7 @@
           <h3 class="text-xl font-serif font-bold text-white mb-2">Milano Sensual Congress</h3>
           <p class="text-slate-500 text-sm">Il congresso di riferimento per la Bachata Sensual in Italia.</p>
         </div>
-        <div class="flex gap-6"><a href="https://instagram.com/milano_sensual_congress" target="_blank"
+        <div class="flex gap-6"><a href="https://instagram.com/milano_sensual_congress" target="_blank" rel="noopener noreferrer"
             class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-pink-600 hover:text-white transition-all text-slate-400"><i
               class="fa-brands fa-instagram"></i> </a><a href="https://wa.me/41799668481"
             class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-green-500 hover:text-white transition-all text-slate-400"><i

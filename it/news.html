@@ -4,7 +4,9 @@
 <head>
   <link rel="canonical" href="https://milanosensualcongress.com/it/news">
   <meta charset="UTF-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://connect.facebook.net; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://www.facebook.com; font-src 'self'; media-src 'self'; connect-src 'self' https://www.facebook.com https://connect.facebook.net; form-action 'self' https://formspree.io https://atmosferaeventi.it; frame-src https://www.facebook.com; object-src 'none'; base-uri 'self'">
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#0f172a">
   <title>Congressi Bachata 2026, Festival e Guide di Ballo</title>
   <meta name="description"
     content="Il portale ufficiale per i congressi bachata 2026. Tutte le ultime notizie, i festival europei e gli aggiornamenti dal Milano Sensual Congress.">
@@ -13,18 +15,42 @@
   <meta name="author" content="Milano Sensual Congress">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <link rel="icon" type="image/png" href="../images/logo.webp">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://milanosensualcongress.com/it/news">
+  <meta property="og:title" content="Congressi Bachata 2026, Festival e Guide di Ballo">
+  <meta property="og:description" content="Il portale ufficiale per i congressi bachata 2026. Tutte le ultime notizie, i festival europei e gli aggiornamenti dal Milano Sensual Congress.">
+  <meta property="og:image" content="https://milanosensualcongress.com/images/og/milano-sensual-congress-social-card.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Congressi Bachata 2026, Festival e Guide di Ballo">
+  <meta property="og:site_name" content="Milano Sensual Congress">
+  <meta property="og:locale" content="it_IT">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Congressi Bachata 2026, Festival e Guide di Ballo">
+  <meta name="twitter:description" content="Il portale ufficiale per i congressi bachata 2026. Tutte le ultime notizie, i festival europei e gli aggiornamenti dal Milano Sensual Congress.">
+  <meta name="twitter:image" content="https://milanosensualcongress.com/images/og/milano-sensual-congress-social-card.jpg">
+  <meta name="twitter:image:alt" content="Congressi Bachata 2026, Festival e Guide di Ballo">
   <!-- Meta Pixel Code -->
   <script>
-  !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version="2.0";
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window, document,"script",
-  "https://connect.facebook.net/en_US/fbevents.js");
-  fbq("init", "2083020305980459");
-  fbq("track", "PageView");
+  function initMetaPixel() {
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version="2.0";
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,"script",
+    "https://connect.facebook.net/en_US/fbevents.js");
+    fbq("init", "2083020305980459");
+    fbq("track", "PageView");
+  }
+  // Prerendered pages must not fire analytics until they are actually shown
+  if (document.prerendering) {
+    document.addEventListener("prerenderingchange", initMetaPixel, { once: true });
+  } else {
+    initMetaPixel();
+  }
   document.addEventListener("click", function(event) {
     var ticketLink = event.target.closest("a[href*=\"lasalsadelbaile.com/MSC2026\"]");
     if (ticketLink && window.fbq) {
@@ -92,14 +118,12 @@
     }
   </script>
   
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
-    rel="stylesheet">
-  <script>tailwind.config = { theme: { extend: { fontFamily: { sans: ["Inter", "sans-serif"], serif: ["Playfair Display", "serif"] }, colors: { brand: { dark: "#0f172a", purple: "#4c1d95", pink: "#be185d", accent: "#f43f5e", gold: "#fbbf24" } } } } }</script>
+  <link rel="preload" as="font" type="font/woff2" href="/fonts/inter-latin.woff2" crossorigin>
+  <link rel="preload" as="font" type="font/woff2" href="/fonts/playfair-display-latin.woff2" crossorigin>
+  <link rel="stylesheet" href="/css/fonts.css?v=1">
+  <link rel="stylesheet" href="/css/tailwind.min.css?v=1">
+  <link rel="stylesheet" href="/vendor/fontawesome/fa-subset.min.css?v=1">
+  <link rel="dns-prefetch" href="https://connect.facebook.net">
   <style>
     .glass-card {
       background: rgba(255, 255, 255, .03);
@@ -158,6 +182,26 @@
       }
     }
   </style>
+  <script type="speculationrules">
+  {
+    "prefetch": [{
+      "where": {"and": [
+        {"href_matches": "/*"},
+        {"not": {"href_matches": "/images/*"}},
+        {"not": {"href_matches": "/css/*"}},
+        {"not": {"href_matches": "/js/*"}},
+        {"not": {"href_matches": "/vendor/*"}},
+        {"not": {"href_matches": "/fonts/*"}}
+      ]},
+      "eagerness": "moderate"
+    }],
+    "prerender": [{
+      "where": {"href_matches": ["/", "/tickets", "/artists", "/hotel", "/contact", "/it/", "/it/tickets", "/it/artists", "/it/hotel", "/it/contact"]},
+      "eagerness": "moderate"
+    }]
+  }
+  </script>
+  <script src="/js/prefetch-fallback.js?v=1" defer></script>
 </head>
 
 <body class="bg-brand-dark text-slate-100 font-sans antialiased overflow-x-hidden">
@@ -167,7 +211,7 @@
   <nav class="fixed w-full z-50 glass-nav">
     <div class="container mx-auto px-6 py-3 flex justify-between items-center">
       <a href="./" class="flex items-center gap-3 group">
-        <img height="600" width="800" loading="lazy" src="../images/logo.webp" alt="Milano Sensual Congress Logo" class="h-12 w-auto group-hover:opacity-90 transition-opacity">
+        <img decoding="async" width="1024" height="498" loading="lazy" src="../images/logo.webp" alt="Milano Sensual Congress Logo" class="h-12 w-auto group-hover:opacity-90 transition-opacity">
         <span class="text-white text-xs font-sans tracking-[0.2em] uppercase opacity-60 border-l border-white/20 pl-3 py-1">2026</span>
       </a>
       <div class="hidden md:flex space-x-8 text-sm font-medium tracking-wide">
@@ -219,7 +263,7 @@
         <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-8 md:gap-20">
           <div class="hidden md:flex items-center justify-end order-1">
             <div class="w-full max-w-sm aspect-video rounded-xl overflow-hidden border border-white/10 shadow-2xl relative">
-               <img height="600" width="800" loading="lazy" src="../images/news/duomo-di-milano-bachata-italy-2026-dance-destination.webp" alt="Duomo di Milano di sera per la guida Bachata in Italia 2026" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700">
+               <img decoding="async" width="2000" height="1333" loading="lazy" src="../images/news/duomo-di-milano-bachata-italy-2026-dance-destination.webp" srcset="../images/news/duomo-di-milano-bachata-italy-2026-dance-destination_480w.webp 480w, ../images/news/duomo-di-milano-bachata-italy-2026-dance-destination_800w.webp 800w, ../images/news/duomo-di-milano-bachata-italy-2026-dance-destination_1200w.webp 1200w, ../images/news/duomo-di-milano-bachata-italy-2026-dance-destination.webp 2000w" sizes="(max-width: 640px) 87vw, (max-width: 1024px) 41vw, 382px" alt="Duomo di Milano di sera per la guida Bachata in Italia 2026" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700">
                <span class="absolute bottom-1 right-2 text-[9px] text-white/75 bg-black/45 px-2 py-0.5 rounded">Foto: Marco Nuernberger, CC BY 2.0</span>
             </div>
           </div>
@@ -233,7 +277,7 @@
           </div>
           <div class="md:hidden order-1">
             <div class="w-full max-w-sm aspect-video rounded-xl overflow-hidden border border-white/10 shadow-2xl relative">
-               <img height="600" width="800" loading="lazy" src="../images/news/duomo-di-milano-bachata-italy-2026-dance-destination.webp" alt="Duomo di Milano di sera per la guida Bachata in Italia 2026" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700">
+               <img decoding="async" width="2000" height="1333" loading="lazy" src="../images/news/duomo-di-milano-bachata-italy-2026-dance-destination.webp" srcset="../images/news/duomo-di-milano-bachata-italy-2026-dance-destination_480w.webp 480w, ../images/news/duomo-di-milano-bachata-italy-2026-dance-destination_800w.webp 800w, ../images/news/duomo-di-milano-bachata-italy-2026-dance-destination_1200w.webp 1200w, ../images/news/duomo-di-milano-bachata-italy-2026-dance-destination.webp 2000w" sizes="(max-width: 640px) 87vw, (max-width: 1024px) 41vw, 382px" alt="Duomo di Milano di sera per la guida Bachata in Italia 2026" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700">
                <span class="absolute bottom-1 right-2 text-[9px] text-white/75 bg-black/45 px-2 py-0.5 rounded">Foto: Marco Nuernberger, CC BY 2.0</span>
             </div>
           </div>
@@ -254,7 +298,7 @@
           </div>
           <div class="flex items-center order-1 md:order-2">
             <div class="w-full max-w-sm aspect-video rounded-xl overflow-hidden border border-white/10 shadow-2xl relative">
-               <img height="600" width="800" loading="lazy" src="../images/news/milano-sensual-congress-2026-official-flyer.webp" alt="Aggiornamento prezzi biglietti Milano Sensual Congress 2026 per Full Pass e Masterclass" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700">
+               <img decoding="async" width="819" height="1024" loading="lazy" src="../images/news/milano-sensual-congress-2026-official-flyer.webp" srcset="../images/news/milano-sensual-congress-2026-official-flyer_480w.webp 480w, ../images/news/milano-sensual-congress-2026-official-flyer_800w.webp 800w, ../images/news/milano-sensual-congress-2026-official-flyer.webp 819w" sizes="(max-width: 640px) 87vw, (max-width: 1024px) 41vw, 382px" alt="Aggiornamento prezzi biglietti Milano Sensual Congress 2026 per Full Pass e Masterclass" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700">
             </div>
           </div>
         </div>
@@ -266,7 +310,7 @@
         <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-8 md:gap-20">
           <div class="hidden md:flex items-center justify-end order-1">
             <div class="w-full max-w-sm aspect-video rounded-xl overflow-hidden border border-white/10 shadow-2xl relative">
-               <img height="600" width="800" loading="lazy" src="../images/news/bachata-congress-2026-social-dancing.webp" alt="Festa Bachata a Milano con ballerini internazionali al Milano Sensual Congress 2026" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700">
+               <img decoding="async" width="640" height="640" loading="lazy" src="../images/news/bachata-congress-2026-social-dancing.webp" srcset="../images/news/bachata-congress-2026-social-dancing_480w.webp 480w, ../images/news/bachata-congress-2026-social-dancing.webp 640w" sizes="(max-width: 640px) 87vw, (max-width: 1024px) 41vw, 382px" alt="Festa Bachata a Milano con ballerini internazionali al Milano Sensual Congress 2026" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700">
             </div>
           </div>
           <div class="flex flex-col justify-center order-2">
@@ -279,7 +323,7 @@
           </div>
           <div class="md:hidden order-1">
             <div class="w-full max-w-sm aspect-video rounded-xl overflow-hidden border border-white/10 shadow-2xl relative">
-               <img height="600" width="800" loading="lazy" src="../images/news/bachata-congress-2026-social-dancing.webp" alt="Festa Bachata a Milano con ballerini internazionali al Milano Sensual Congress 2026" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700">
+               <img decoding="async" width="640" height="640" loading="lazy" src="../images/news/bachata-congress-2026-social-dancing.webp" srcset="../images/news/bachata-congress-2026-social-dancing_480w.webp 480w, ../images/news/bachata-congress-2026-social-dancing.webp 640w" sizes="(max-width: 640px) 87vw, (max-width: 1024px) 41vw, 382px" alt="Festa Bachata a Milano con ballerini internazionali al Milano Sensual Congress 2026" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700">
             </div>
           </div>
         </div>
@@ -299,7 +343,7 @@
           </div>
           <div class="flex items-center order-1 md:order-2">
             <div class="w-full max-w-sm aspect-video rounded-xl overflow-hidden border border-white/10 shadow-2xl relative">
-               <img height="600" width="800" loading="lazy" src="../images/news/bachata-workshops-vs-classes-2026.webp" alt="Ballerini che scelgono il livello dei workshop Bachata a un congresso a Milano" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700">
+               <img decoding="async" width="990" height="636" loading="lazy" src="../images/news/bachata-workshops-vs-classes-2026.webp" srcset="../images/news/bachata-workshops-vs-classes-2026_480w.webp 480w, ../images/news/bachata-workshops-vs-classes-2026_800w.webp 800w, ../images/news/bachata-workshops-vs-classes-2026.webp 990w" sizes="(max-width: 640px) 87vw, (max-width: 1024px) 41vw, 382px" alt="Ballerini che scelgono il livello dei workshop Bachata a un congresso a Milano" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700">
             </div>
           </div>
         </div>
@@ -311,7 +355,7 @@
         <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-8 md:gap-20">
           <div class="flex items-center order-1">
             <div class="w-full max-w-sm aspect-video rounded-xl overflow-hidden border border-white/10 shadow-2xl relative md:ml-auto">
-               <img height="600" width="800" loading="lazy" src="../images/news/bachata-congress-2026-preview.webp" alt="Ballerini internazionali al Congresso Bachata 2026 a Milano" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700">
+               <img decoding="async" width="1672" height="941" loading="lazy" src="../images/news/bachata-congress-2026-preview.webp" srcset="../images/news/bachata-congress-2026-preview_480w.webp 480w, ../images/news/bachata-congress-2026-preview_800w.webp 800w, ../images/news/bachata-congress-2026-preview_1200w.webp 1200w, ../images/news/bachata-congress-2026-preview.webp 1672w" sizes="(max-width: 640px) 87vw, (max-width: 1024px) 41vw, 382px" alt="Ballerini internazionali al Congresso Bachata 2026 a Milano" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700">
             </div>
           </div>
           <div class="flex flex-col justify-center order-2">
@@ -339,7 +383,7 @@
           </div>
           <div class="flex items-center order-1 md:order-2">
             <div class="w-full max-w-sm aspect-video rounded-xl overflow-hidden border border-white/10 shadow-2xl relative">
-               <img height="600" width="800" loading="lazy" src="../images/news/bachata-congress-2026-social-dancing.webp" alt="Ballerini di bachata social a un congresso" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700">
+               <img decoding="async" width="640" height="640" loading="lazy" src="../images/news/bachata-congress-2026-social-dancing.webp" srcset="../images/news/bachata-congress-2026-social-dancing_480w.webp 480w, ../images/news/bachata-congress-2026-social-dancing.webp 640w" sizes="(max-width: 640px) 87vw, (max-width: 1024px) 41vw, 382px" alt="Ballerini di bachata social a un congresso" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700">
             </div>
           </div>
         </div>
@@ -351,7 +395,7 @@
         <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-8 md:gap-20">
           <div class="hidden md:flex items-center justify-end order-1">
             <div class="w-full max-w-sm aspect-video rounded-xl overflow-hidden border border-white/10 shadow-2xl relative">
-               <img height="600" width="800" loading="lazy" src="../images/artists/david-ines-bachata-sensual.webp" alt="David y Ines artisti di Bachata Sensual nei workshop a Milano 2026" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700">
+               <img decoding="async" width="819" height="1024" loading="lazy" src="../images/artists/david-ines-bachata-sensual.webp" srcset="../images/artists/david-ines-bachata-sensual_480w.webp 480w, ../images/artists/david-ines-bachata-sensual_800w.webp 800w, ../images/artists/david-ines-bachata-sensual.webp 819w" sizes="(max-width: 640px) 87vw, (max-width: 1024px) 41vw, 382px" alt="David y Ines artisti di Bachata Sensual nei workshop a Milano 2026" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700">
             </div>
           </div>
           <div class="flex flex-col justify-center order-2">
@@ -365,7 +409,7 @@
           <!-- Mobile Image -->
           <div class="md:hidden order-1">
             <div class="w-full max-w-sm aspect-video rounded-xl overflow-hidden border border-white/10 shadow-2xl relative">
-               <img height="600" width="800" loading="lazy" src="../images/artists/david-ines-bachata-sensual.webp" alt="David y Ines artisti di Bachata Sensual nei workshop a Milano 2026" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700">
+               <img decoding="async" width="819" height="1024" loading="lazy" src="../images/artists/david-ines-bachata-sensual.webp" srcset="../images/artists/david-ines-bachata-sensual_480w.webp 480w, ../images/artists/david-ines-bachata-sensual_800w.webp 800w, ../images/artists/david-ines-bachata-sensual.webp 819w" sizes="(max-width: 640px) 87vw, (max-width: 1024px) 41vw, 382px" alt="David y Ines artisti di Bachata Sensual nei workshop a Milano 2026" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700">
             </div>
           </div>
         </div>
@@ -385,13 +429,13 @@
           </div>
           <div class="hidden md:flex items-center justify-start order-1 md:order-2">
             <div class="w-full max-w-sm aspect-video rounded-xl overflow-hidden border border-white/10 shadow-2xl relative">
-               <img height="600" width="800" loading="lazy" src="../images/artists/agustin-alba-bachata-sensual.webp" alt="Agustin y Alba artisti di Bachata Sensual al Milano Sensual Congress 2026" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700">
+               <img decoding="async" width="540" height="675" loading="lazy" src="../images/artists/agustin-alba-bachata-sensual.webp" srcset="../images/artists/agustin-alba-bachata-sensual_480w.webp 480w, ../images/artists/agustin-alba-bachata-sensual.webp 540w" sizes="(max-width: 640px) 87vw, (max-width: 1024px) 41vw, 382px" alt="Agustin y Alba artisti di Bachata Sensual al Milano Sensual Congress 2026" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700">
             </div>
           </div>
           <!-- Mobile Image -->
           <div class="md:hidden order-1 mb-6">
             <div class="aspect-video rounded-xl overflow-hidden border border-white/10 shadow-lg">
-              <img height="600" width="800" loading="lazy" src="../images/artists/agustin-alba-bachata-sensual.webp" alt="Agustin y Alba artisti di Bachata Sensual al Milano Sensual Congress 2026" class="w-full h-full object-cover">
+              <img decoding="async" width="540" height="675" loading="lazy" src="../images/artists/agustin-alba-bachata-sensual.webp" srcset="../images/artists/agustin-alba-bachata-sensual_480w.webp 480w, ../images/artists/agustin-alba-bachata-sensual.webp 540w" sizes="(max-width: 640px) 87vw, (max-width: 1024px) 41vw, 382px" alt="Agustin y Alba artisti di Bachata Sensual al Milano Sensual Congress 2026" class="w-full h-full object-cover">
             </div>
           </div>
         </div>
@@ -403,7 +447,7 @@
         <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-8 md:gap-20">
           <div class="hidden md:flex items-center justify-end order-1">
             <div class="w-full max-w-sm aspect-video rounded-xl overflow-hidden border border-white/10 shadow-2xl relative">
-               <img height="600" width="800" loading="lazy" src="../images/artists/irene-tomas-bachata-sensual.webp" alt="Irene y Tomas artisti di Bachata Sensual nei workshop a Milano 2026" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700">
+               <img decoding="async" width="540" height="675" loading="lazy" src="../images/artists/irene-tomas-bachata-sensual.webp" srcset="../images/artists/irene-tomas-bachata-sensual_480w.webp 480w, ../images/artists/irene-tomas-bachata-sensual.webp 540w" sizes="(max-width: 640px) 87vw, (max-width: 1024px) 41vw, 382px" alt="Irene y Tomas artisti di Bachata Sensual nei workshop a Milano 2026" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700">
             </div>
           </div>
           <div class="flex flex-col justify-center order-2">
@@ -417,7 +461,7 @@
           <!-- Mobile Image -->
           <div class="md:hidden order-1">
             <div class="w-full max-w-sm aspect-video rounded-xl overflow-hidden border border-white/10 shadow-2xl relative">
-               <img height="600" width="800" loading="lazy" src="../images/artists/irene-tomas-bachata-sensual.webp" alt="Irene y Tomas artisti di Bachata Sensual nei workshop a Milano 2026" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700">
+               <img decoding="async" width="540" height="675" loading="lazy" src="../images/artists/irene-tomas-bachata-sensual.webp" srcset="../images/artists/irene-tomas-bachata-sensual_480w.webp 480w, ../images/artists/irene-tomas-bachata-sensual.webp 540w" sizes="(max-width: 640px) 87vw, (max-width: 1024px) 41vw, 382px" alt="Irene y Tomas artisti di Bachata Sensual nei workshop a Milano 2026" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700">
             </div>
           </div>
         </div>
@@ -438,7 +482,7 @@
           </div>
           <div class="flex items-center order-1 md:order-2">
             <div class="w-full max-w-sm aspect-video rounded-xl overflow-hidden border border-white/10 shadow-2xl relative">
-               <img height="600" width="800" loading="lazy" src="../images/artists/aitor-gomez-bachata-dominican-roots.webp" alt="Aitor Gomez artista di Bachata con radici dominicane a Milano 2026" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700">
+               <img decoding="async" width="540" height="675" loading="lazy" src="../images/artists/aitor-gomez-bachata-dominican-roots.webp" srcset="../images/artists/aitor-gomez-bachata-dominican-roots_480w.webp 480w, ../images/artists/aitor-gomez-bachata-dominican-roots.webp 540w" sizes="(max-width: 640px) 87vw, (max-width: 1024px) 41vw, 382px" alt="Aitor Gomez artista di Bachata con radici dominicane a Milano 2026" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700">
             </div>
           </div>
         </div>
@@ -450,7 +494,7 @@
         <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-8 md:gap-20">
           <div class="hidden md:flex items-center justify-end order-1">
             <div class="w-full max-w-sm aspect-video rounded-xl overflow-hidden border border-white/10 shadow-2xl relative">
-               <img height="600" width="800" loading="lazy" src="../images/artists/nacho-silvia-bachata-esencia.webp" alt="Nacho y Silvia artisti di Bachata Esencia al Milano Sensual Congress 2026" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700">
+               <img decoding="async" width="540" height="675" loading="lazy" src="../images/artists/nacho-silvia-bachata-esencia.webp" srcset="../images/artists/nacho-silvia-bachata-esencia_480w.webp 480w, ../images/artists/nacho-silvia-bachata-esencia.webp 540w" sizes="(max-width: 640px) 87vw, (max-width: 1024px) 41vw, 382px" alt="Nacho y Silvia artisti di Bachata Esencia al Milano Sensual Congress 2026" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700">
             </div>
           </div>
           <div class="flex flex-col justify-center order-2">
@@ -464,7 +508,7 @@
           <!-- Mobile Image -->
           <div class="md:hidden order-1">
             <div class="w-full max-w-sm aspect-video rounded-xl overflow-hidden border border-white/10 shadow-2xl relative">
-               <img height="600" width="800" loading="lazy" src="../images/artists/nacho-silvia-bachata-esencia.webp" alt="Nacho y Silvia artisti di Bachata Esencia al Milano Sensual Congress 2026" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700">
+               <img decoding="async" width="540" height="675" loading="lazy" src="../images/artists/nacho-silvia-bachata-esencia.webp" srcset="../images/artists/nacho-silvia-bachata-esencia_480w.webp 480w, ../images/artists/nacho-silvia-bachata-esencia.webp 540w" sizes="(max-width: 640px) 87vw, (max-width: 1024px) 41vw, 382px" alt="Nacho y Silvia artisti di Bachata Esencia al Milano Sensual Congress 2026" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700">
             </div>
           </div>
         </div>
@@ -484,7 +528,7 @@
           </div>
           <div class="flex items-center order-1 md:order-2">
             <div class="w-full max-w-sm aspect-video rounded-xl overflow-hidden border border-white/10 shadow-2xl relative">
-               <img height="600" width="800" loading="lazy" src="../images/artists/cristian-gabriella-bachata-artists.webp" alt="Cristian y Gabriella artisti di Bachata nei workshop a Milano 2026" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700">
+               <img decoding="async" width="540" height="675" loading="lazy" src="../images/artists/cristian-gabriella-bachata-artists.webp" srcset="../images/artists/cristian-gabriella-bachata-artists_480w.webp 480w, ../images/artists/cristian-gabriella-bachata-artists.webp 540w" sizes="(max-width: 640px) 87vw, (max-width: 1024px) 41vw, 382px" alt="Cristian y Gabriella artisti di Bachata nei workshop a Milano 2026" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700">
             </div>
           </div>
         </div>
@@ -508,7 +552,7 @@
           </div>
           <div class="flex items-center order-1 md:order-2">
             <div class="w-full max-w-sm aspect-video rounded-xl overflow-hidden border border-white/10 shadow-2xl">
-               <img height="600" width="800" loading="lazy" src="../images/artists/klau-ros-bachata-sensual.webp" alt="Klau y Ros artisti di Bachata Sensual nei workshop a Milano 2026" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700">
+               <img decoding="async" width="819" height="1024" loading="lazy" src="../images/artists/klau-ros-bachata-sensual.webp" srcset="../images/artists/klau-ros-bachata-sensual_480w.webp 480w, ../images/artists/klau-ros-bachata-sensual_800w.webp 800w, ../images/artists/klau-ros-bachata-sensual.webp 819w" sizes="(max-width: 640px) 87vw, (max-width: 1024px) 41vw, 382px" alt="Klau y Ros artisti di Bachata Sensual nei workshop a Milano 2026" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700">
             </div>
           </div>
         </div>
@@ -520,7 +564,7 @@
         <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-8 md:gap-20">
           <div class="hidden md:flex items-center justify-end order-1">
             <div class="w-full max-w-sm aspect-video rounded-xl overflow-hidden border border-white/10 shadow-2xl">
-               <img height="600" width="800" loading="lazy" src="../images/artists/gero-migle-bachata-esencia.webp" alt="Gero y Migle artisti di Bachata Esencia nei workshop a Milano 2026" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700">
+               <img decoding="async" width="540" height="675" loading="lazy" src="../images/artists/gero-migle-bachata-esencia.webp" srcset="../images/artists/gero-migle-bachata-esencia_480w.webp 480w, ../images/artists/gero-migle-bachata-esencia.webp 540w" sizes="(max-width: 640px) 87vw, (max-width: 1024px) 41vw, 382px" alt="Gero y Migle artisti di Bachata Esencia nei workshop a Milano 2026" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700">
             </div>
           </div>
           <div class="flex flex-col justify-center order-2">
@@ -534,7 +578,7 @@
           <!-- Mobile Image -->
           <div class="md:hidden order-1">
             <div class="w-full max-w-sm aspect-video rounded-xl overflow-hidden border border-white/10 shadow-2xl">
-               <img height="600" width="800" loading="lazy" src="../images/artists/gero-migle-bachata-esencia.webp" alt="Gero y Migle artisti di Bachata Esencia nei workshop a Milano 2026" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700">
+               <img decoding="async" width="540" height="675" loading="lazy" src="../images/artists/gero-migle-bachata-esencia.webp" srcset="../images/artists/gero-migle-bachata-esencia_480w.webp 480w, ../images/artists/gero-migle-bachata-esencia.webp 540w" sizes="(max-width: 640px) 87vw, (max-width: 1024px) 41vw, 382px" alt="Gero y Migle artisti di Bachata Esencia nei workshop a Milano 2026" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700">
             </div>
           </div>
         </div>
@@ -554,7 +598,7 @@
           </div>
           <div class="flex items-center order-1 md:order-2">
             <div class="w-full max-w-sm aspect-video rounded-xl overflow-hidden border border-white/10">
-               <img height="600" width="800" loading="lazy" src="../images/news/bachata-congress-2026-dance-connection.webp" alt="Connessione e posizione delle mani nella Bachata durante un workshop congressuale" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700">
+               <img decoding="async" width="640" height="640" loading="lazy" src="../images/news/bachata-congress-2026-dance-connection.webp" srcset="../images/news/bachata-congress-2026-dance-connection_480w.webp 480w, ../images/news/bachata-congress-2026-dance-connection.webp 640w" sizes="(max-width: 640px) 87vw, (max-width: 1024px) 41vw, 382px" alt="Connessione e posizione delle mani nella Bachata durante un workshop congressuale" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700">
             </div>
           </div>
         </div>
@@ -566,7 +610,7 @@
         <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-8 md:gap-20">
           <div class="hidden md:flex items-center justify-end order-1">
             <div class="w-full max-w-sm aspect-video rounded-xl overflow-hidden border border-white/10 shadow-2xl">
-               <img height="600" width="800" loading="lazy" src="../images/news/bachata-workshops-vs-classes-2026.webp" alt="Workshop Bachata e corsi settimanali per ballerini che scelgono un congresso 2026" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700">
+               <img decoding="async" width="990" height="636" loading="lazy" src="../images/news/bachata-workshops-vs-classes-2026.webp" srcset="../images/news/bachata-workshops-vs-classes-2026_480w.webp 480w, ../images/news/bachata-workshops-vs-classes-2026_800w.webp 800w, ../images/news/bachata-workshops-vs-classes-2026.webp 990w" sizes="(max-width: 640px) 87vw, (max-width: 1024px) 41vw, 382px" alt="Workshop Bachata e corsi settimanali per ballerini che scelgono un congresso 2026" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700">
             </div>
           </div>
           <div class="flex flex-col justify-center order-2">
@@ -580,7 +624,7 @@
           <!-- Mobile Image -->
           <div class="md:hidden order-1">
             <div class="w-full max-w-sm aspect-video rounded-xl overflow-hidden border border-white/10 shadow-2xl">
-               <img height="600" width="800" loading="lazy" src="../images/news/bachata-workshops-vs-classes-2026.webp" alt="Workshop Bachata e corsi settimanali per ballerini che scelgono un congresso 2026" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700">
+               <img decoding="async" width="990" height="636" loading="lazy" src="../images/news/bachata-workshops-vs-classes-2026.webp" srcset="../images/news/bachata-workshops-vs-classes-2026_480w.webp 480w, ../images/news/bachata-workshops-vs-classes-2026_800w.webp 800w, ../images/news/bachata-workshops-vs-classes-2026.webp 990w" sizes="(max-width: 640px) 87vw, (max-width: 1024px) 41vw, 382px" alt="Workshop Bachata e corsi settimanali per ballerini che scelgono un congresso 2026" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700">
             </div>
           </div>
         </div>
@@ -600,7 +644,7 @@
           </div>
           <div class="flex items-center order-1 md:order-2">
             <div class="w-full max-w-sm aspect-video rounded-xl overflow-hidden border border-white/10">
-               <img height="600" width="800" loading="lazy" src="../images/news/bachata-congress-2026-social-dancing.webp" alt="Ballerini internazionali di Bachata a un party congressuale europeo 2026" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700">
+               <img decoding="async" width="640" height="640" loading="lazy" src="../images/news/bachata-congress-2026-social-dancing.webp" srcset="../images/news/bachata-congress-2026-social-dancing_480w.webp 480w, ../images/news/bachata-congress-2026-social-dancing.webp 640w" sizes="(max-width: 640px) 87vw, (max-width: 1024px) 41vw, 382px" alt="Ballerini internazionali di Bachata a un party congressuale europeo 2026" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700">
             </div>
           </div>
         </div>
@@ -612,7 +656,7 @@
         <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-8 md:gap-20">
           <div class="hidden md:flex items-center justify-end order-1">
             <div class="w-full max-w-sm aspect-[3/4] rounded-xl overflow-hidden border border-white/10 shadow-2xl">
-               <img height="600" width="800" loading="lazy" src="../images/news/milano-sensual-congress-2026-official-flyer.webp" alt="Flyer ufficiale Milano Sensual Congress 2026 congresso Bachata" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700">
+               <img decoding="async" width="819" height="1024" loading="lazy" src="../images/news/milano-sensual-congress-2026-official-flyer.webp" srcset="../images/news/milano-sensual-congress-2026-official-flyer_480w.webp 480w, ../images/news/milano-sensual-congress-2026-official-flyer_800w.webp 800w, ../images/news/milano-sensual-congress-2026-official-flyer.webp 819w" sizes="(max-width: 640px) 87vw, (max-width: 1024px) 41vw, 382px" alt="Flyer ufficiale Milano Sensual Congress 2026 congresso Bachata" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700">
             </div>
           </div>
           <div class="flex flex-col justify-center order-2">
@@ -626,7 +670,7 @@
           <!-- Mobile Image -->
           <div class="md:hidden order-1">
             <div class="w-full max-w-sm aspect-[3/4] rounded-xl overflow-hidden border border-white/10 shadow-2xl">
-               <img height="600" width="800" loading="lazy" src="../images/news/milano-sensual-congress-2026-official-flyer.webp" alt="Flyer ufficiale Milano Sensual Congress 2026 congresso Bachata" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700">
+               <img decoding="async" width="819" height="1024" loading="lazy" src="../images/news/milano-sensual-congress-2026-official-flyer.webp" srcset="../images/news/milano-sensual-congress-2026-official-flyer_480w.webp 480w, ../images/news/milano-sensual-congress-2026-official-flyer_800w.webp 800w, ../images/news/milano-sensual-congress-2026-official-flyer.webp 819w" sizes="(max-width: 640px) 87vw, (max-width: 1024px) 41vw, 382px" alt="Flyer ufficiale Milano Sensual Congress 2026 congresso Bachata" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700">
             </div>
           </div>
         </div>
@@ -657,7 +701,7 @@
           <p class="text-slate-500 text-xs">Il congresso di riferimento per la Bachata Sensual in Italia.</p>
         </div>
         <div class="flex gap-6">
-          <a href="https://instagram.com/milano_sensual_congress" target="_blank" class="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center hover:bg-pink-600 hover:text-white transition-all text-slate-400 text-xs"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://instagram.com/milano_sensual_congress" target="_blank" rel="noopener noreferrer" class="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center hover:bg-pink-600 hover:text-white transition-all text-slate-400 text-xs"><i class="fa-brands fa-instagram"></i></a>
           <a href="https://wa.me/41799668481" class="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center hover:bg-green-500 hover:text-white transition-all text-slate-400 text-xs"><i class="fa-brands fa-whatsapp"></i></a>
         </div>
       </div>

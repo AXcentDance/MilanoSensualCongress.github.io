@@ -3,7 +3,9 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://connect.facebook.net; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://www.facebook.com; font-src 'self'; media-src 'self'; connect-src 'self' https://www.facebook.com https://connect.facebook.net; form-action 'self' https://formspree.io https://atmosferaeventi.it; frame-src https://www.facebook.com; object-src 'none'; base-uri 'self'">
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#0f172a">
   <title>Bachata Workshop Schedule 2026 | Milano Sensual Congress Program</title>
   <meta name="description"
     content="Preview the Milano Sensual Congress 2026 program: Bachata workshop schedule, party times and social dancing hours for Friday, Saturday and Sunday. Full schedule out in November.">
@@ -16,26 +18,12 @@
   <link rel="alternate" hreflang="en" href="https://milanosensualcongress.com/program">
   <link rel="alternate" hreflang="it" href="https://milanosensualcongress.com/it/programma">
   <link rel="alternate" hreflang="x-default" href="https://milanosensualcongress.com/program">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://milanosensualcongress.com/program">
-  <meta property="og:title" content="Bachata Workshop Schedule 2026 | Milano Sensual Congress">
-  <meta property="og:description"
-    content="Workshop, party and social dancing timetable preview for Milano Sensual Congress 2026.">
-  <meta property="og:image" content="https://milanosensualcongress.com/images/news/bachata-congress-2026-preview.webp">
-  <meta property="og:locale" content="en_GB">
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:title" content="Bachata Workshop Schedule 2026 | Milano Sensual Congress">
-  <meta property="twitter:description"
-    content="Preview the Bachata congress program for Friday, Saturday and Sunday in Milan.">
-  <meta property="twitter:image" content="https://milanosensualcongress.com/images/news/bachata-congress-2026-preview.webp">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
-    rel="stylesheet">
-  <script>tailwind.config = { theme: { extend: { fontFamily: { sans: ["Inter", "sans-serif"], serif: ["Playfair Display", "serif"] }, colors: { brand: { dark: "#0f172a", purple: "#4c1d95", pink: "#be185d", accent: "#f43f5e", gold: "#fbbf24" } } } } }</script>
+  <link rel="preload" as="font" type="font/woff2" href="/fonts/inter-latin.woff2" crossorigin>
+  <link rel="preload" as="font" type="font/woff2" href="/fonts/playfair-display-latin.woff2" crossorigin>
+  <link rel="stylesheet" href="/css/fonts.css?v=1">
+  <link rel="stylesheet" href="/css/tailwind.min.css?v=1">
+  <link rel="stylesheet" href="/vendor/fontawesome/fa-subset.min.css?v=1">
+  <link rel="dns-prefetch" href="https://connect.facebook.net">
   <style>
     .glass-nav {
       background: rgba(15, 23, 42, .85);
@@ -53,18 +41,42 @@
       background: linear-gradient(135deg, #ec4899 0, #8b5cf6 100%)
     }
   </style>
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://milanosensualcongress.com/program">
+  <meta property="og:title" content="Bachata Workshop Schedule 2026 | Milano Sensual Congress Program">
+  <meta property="og:description" content="Preview the Milano Sensual Congress 2026 program: Bachata workshop schedule, party times and social dancing hours for Friday, Saturday and Sunday. Full schedule out in November.">
+  <meta property="og:image" content="https://milanosensualcongress.com/images/og/bachata-congress-2026-preview.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Bachata Workshop Schedule 2026 | Milano Sensual Congress Program">
+  <meta property="og:site_name" content="Milano Sensual Congress">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="it_IT">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Bachata Workshop Schedule 2026 | Milano Sensual Congress Program">
+  <meta name="twitter:description" content="Preview the Milano Sensual Congress 2026 program: Bachata workshop schedule, party times and social dancing hours for Friday, Saturday and Sunday. Full schedule out in November.">
+  <meta name="twitter:image" content="https://milanosensualcongress.com/images/og/bachata-congress-2026-preview.jpg">
+  <meta name="twitter:image:alt" content="Bachata Workshop Schedule 2026 | Milano Sensual Congress Program">
   <!-- Meta Pixel Code -->
   <script>
-  !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version="2.0";
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window, document,"script",
-  "https://connect.facebook.net/en_US/fbevents.js");
-  fbq("init", "2083020305980459");
-  fbq("track", "PageView");
+  function initMetaPixel() {
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version="2.0";
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,"script",
+    "https://connect.facebook.net/en_US/fbevents.js");
+    fbq("init", "2083020305980459");
+    fbq("track", "PageView");
+  }
+  // Prerendered pages must not fire analytics until they are actually shown
+  if (document.prerendering) {
+    document.addEventListener("prerenderingchange", initMetaPixel, { once: true });
+  } else {
+    initMetaPixel();
+  }
   document.addEventListener("click", function(event) {
     var ticketLink = event.target.closest("a[href*=\"lasalsadelbaile.com/MSC2026\"]");
     if (ticketLink && window.fbq) {
@@ -245,6 +257,26 @@
   ]
 }
   </script>
+  <script type="speculationrules">
+  {
+    "prefetch": [{
+      "where": {"and": [
+        {"href_matches": "/*"},
+        {"not": {"href_matches": "/images/*"}},
+        {"not": {"href_matches": "/css/*"}},
+        {"not": {"href_matches": "/js/*"}},
+        {"not": {"href_matches": "/vendor/*"}},
+        {"not": {"href_matches": "/fonts/*"}}
+      ]},
+      "eagerness": "moderate"
+    }],
+    "prerender": [{
+      "where": {"href_matches": ["/", "/tickets", "/artists", "/hotel", "/contact", "/it/", "/it/tickets", "/it/artists", "/it/hotel", "/it/contact"]},
+      "eagerness": "moderate"
+    }]
+  }
+  </script>
+  <script src="/js/prefetch-fallback.js?v=1" defer></script>
 </head>
 
 <body class="bg-brand-dark text-slate-100 font-sans antialiased overflow-x-hidden">
@@ -253,7 +285,7 @@
   alt="" /></noscript>
   <nav class="fixed w-full z-50 glass-nav">
     <div class="container mx-auto px-6 py-3 flex justify-between items-center">
-      <a href="./" class="flex items-center group"><img height="600" width="800" loading="lazy" src="images/logo.webp" alt="Milano Sensual Congress Logo" class="h-12 w-auto group-hover:opacity-90 transition-opacity"></a>
+      <a href="./" class="flex items-center group"><img decoding="async" width="1024" height="498" loading="lazy" src="images/logo.webp" alt="Milano Sensual Congress Logo" class="h-12 w-auto group-hover:opacity-90 transition-opacity"></a>
       <div class="hidden md:flex space-x-8 text-sm font-medium tracking-wide items-center">
         <a href="./" class="hover:text-pink-400 transition-colors">Home</a>
         <a href="artists" class="hover:text-pink-400 transition-colors">Artists</a>
@@ -347,7 +379,7 @@
           <h2 class="text-xl font-serif font-bold text-white mb-2">Milano Sensual Congress</h2>
           <p class="text-slate-500 text-sm">The ultimate Bachata experience in Italy.</p>
         </div>
-        <div class="flex gap-6"><a href="https://instagram.com/milano_sensual_congress" target="_blank" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-pink-600 hover:text-white transition-all text-slate-400"><i class="fa-brands fa-instagram"></i></a><a href="https://wa.me/41799668481" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-green-500 hover:text-white transition-all text-slate-400"><i class="fa-brands fa-whatsapp"></i></a></div>
+        <div class="flex gap-6"><a href="https://instagram.com/milano_sensual_congress" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-pink-600 hover:text-white transition-all text-slate-400"><i class="fa-brands fa-instagram"></i></a><a href="https://wa.me/41799668481" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-green-500 hover:text-white transition-all text-slate-400"><i class="fa-brands fa-whatsapp"></i></a></div>
       </div>
       <div class="border-t border-white/5 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-slate-600">
         <p>&copy; 2026 Milano Sensual Congress. All rights reserved.</p>

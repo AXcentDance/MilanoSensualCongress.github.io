@@ -1,6 +1,6 @@
 # Milano Sensual Congress 2026 - Full Site Documentation
-# Generated automatically on 2026-08-02 21:43
-# Total Pages: 62
+# Generated automatically on 2026-08-04 13:36
+# Total Pages: 63
 
 ## Page: Milano Sensual Congress 2026 | Europe's Leading Bachata Congress (index.html)
 Description: The official Milano Sensual Congress 2026 (Nov 20-22). Europe's leading Bachata congress and the reference Bachata event in Italy. Join world-class artists in Milan.
@@ -4125,6 +4125,105 @@ Needs to be booked in advance.
  Book via WhatsApp
 
  g.suraci@yahoo.it
+
+---
+
+## Page: Prenota l'Hotel | Milano Sensual Congress 2026 (it/BookHotel.html)
+Description: Prenota la camera ufficiale del Milano Sensual Congress al Devero Hotel & Spa per il 20-22 novembre 2026.
+
+Prenota l'Hotel | Milano Sensual Congress 2026
+
+Dati personali / Residenza
+
+Modulo di prenotazione
+
+I campi contrassegnati con 
+*
+ sono obbligatori.
+
+Nome 
+*
+
+Cognome 
+*
+
+Email 
+*
+
+Inserisci un indirizzo email corretto: lì riceverai il codice di prenotazione.
+
+Cellulare, Telefono 
+*
+
+Indirizzo 
+*
+
+Città di residenza 
+*
+
+Provincia 
+*
+
+Cap 
+*
+
+Paese di residenza
+
+I residenti in Italia devono inserire correttamente il Codice Fiscale per la ricevuta.
+
+Data di nascita 
+*
+
+Comune di nascita 
+*
+
+Se non sei nato in Italia, seleziona "Nato NON in Italia".
+
+Codice Fiscale 
+*
+
+Pernottamento
+
+Scegli l'hotel e la camera
+
+La colazione è inclusa nella prenotazione. Pranzo e cena non sono inclusi, ma possono essere acquistati direttamente in hotel durante l'evento.
+
+Le prenotazioni sono disponibili solo per camera doppia o quadrupla. Camere singole, triple o altre configurazioni non sono disponibili.
+
+Camera doppia
+
+2 notti
+
+150 EUR
+
+a notte
+
+Camera quadrupla
+
+2 notti
+
+270 EUR
+
+a notte
+
+Indica eventuali preferenze
+
+Indica con precisione cognome e nome delle persone con cui vuoi stare in stanza.
+
+1
+
+2
+
+3
+
+Totale
+
+0,00
+ EUR
+
+Richiedo fattura
+
+ Conferma
 
 ---
 

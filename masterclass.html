@@ -3,7 +3,9 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://connect.facebook.net; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://www.facebook.com; font-src 'self'; media-src 'self'; connect-src 'self' https://www.facebook.com https://connect.facebook.net; form-action 'self' https://formspree.io https://atmosferaeventi.it; frame-src https://www.facebook.com; object-src 'none'; base-uri 'self'">
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#0f172a">
   <title>Advanced Bachata Training 2026 in Milan | Masterclass Workshops</title>
   <meta name="description"
     content="Advanced Bachata training, masterclasses and intensive workshops in Milan for dancers seeking technique, musicality, connection, body mechanics and social dance formation.">
@@ -16,44 +18,54 @@
   <link rel="alternate" hreflang="en" href="https://milanosensualcongress.com/masterclass">
   <link rel="alternate" hreflang="it" href="https://milanosensualcongress.com/it/masterclass">
   <link rel="alternate" hreflang="x-default" href="https://milanosensualcongress.com/masterclass">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://milanosensualcongress.com/masterclass">
-  <meta property="og:title" content="Advanced Bachata Training 2026 in Milan | Masterclass Workshops">
-  <meta property="og:description"
-    content="Advanced Bachata training, masterclasses and intensive workshops with Gero y Migle, Klau y Ros, and Cristian y Gabriella at Milano Sensual Congress 2026.">
-  <meta property="og:image" content="https://milanosensualcongress.com/images/artists/gero-migle-bachata-esencia.webp">
-  <meta property="og:locale" content="en_GB">
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:title" content="Advanced Bachata Training 2026 in Milan | Milano Sensual Congress">
-  <meta property="twitter:description"
-    content="Masterclass workshops for dancers who want advanced Bachata technique, musicality, connection and body mechanics.">
-  <meta property="twitter:image" content="https://milanosensualcongress.com/images/artists/gero-migle-bachata-esencia.webp">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
-    rel="stylesheet">
-  <script>tailwind.config = { theme: { extend: { fontFamily: { sans: ["Inter", "sans-serif"], serif: ["Playfair Display", "serif"] }, colors: { brand: { dark: "#0f172a", purple: "#4c1d95", pink: "#be185d", accent: "#f43f5e", gold: "#fbbf24" } } } } }</script>
+  <link rel="preload" as="font" type="font/woff2" href="/fonts/inter-latin.woff2" crossorigin>
+  <link rel="preload" as="font" type="font/woff2" href="/fonts/playfair-display-latin.woff2" crossorigin>
+  <link rel="stylesheet" href="/css/fonts.css?v=1">
+  <link rel="stylesheet" href="/css/tailwind.min.css?v=1">
+  <link rel="stylesheet" href="/vendor/fontawesome/fa-subset.min.css?v=1">
+  <link rel="dns-prefetch" href="https://connect.facebook.net">
   <style>
     .glass-nav { background: rgba(15, 23, 42, .86); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(255, 255, 255, .1) }
     .glass-card { background: rgba(255, 255, 255, .045); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, .1) }
     .btn-gradient { background: linear-gradient(135deg, #ec4899 0, #8b5cf6 100%) }
     .artist-image { aspect-ratio: 4 / 5; object-fit: cover }
   </style>
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://milanosensualcongress.com/masterclass">
+  <meta property="og:title" content="Advanced Bachata Training 2026 in Milan | Masterclass Workshops">
+  <meta property="og:description" content="Advanced Bachata training, masterclasses and intensive workshops in Milan for dancers seeking technique, musicality, connection, body mechanics and social dance formation.">
+  <meta property="og:image" content="https://milanosensualcongress.com/images/og/gero-migle-bachata-esencia.jpg">
+  <meta property="og:image:width" content="540">
+  <meta property="og:image:height" content="675">
+  <meta property="og:image:alt" content="Advanced Bachata Training 2026 in Milan | Masterclass Workshops">
+  <meta property="og:site_name" content="Milano Sensual Congress">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="it_IT">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Advanced Bachata Training 2026 in Milan | Masterclass Workshops">
+  <meta name="twitter:description" content="Advanced Bachata training, masterclasses and intensive workshops in Milan for dancers seeking technique, musicality, connection, body mechanics and social dance formation.">
+  <meta name="twitter:image" content="https://milanosensualcongress.com/images/og/gero-migle-bachata-esencia.jpg">
+  <meta name="twitter:image:alt" content="Advanced Bachata Training 2026 in Milan | Masterclass Workshops">
   <!-- Meta Pixel Code -->
   <script>
-  !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version="2.0";
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window, document,"script",
-  "https://connect.facebook.net/en_US/fbevents.js");
-  fbq("init", "2083020305980459");
-  fbq("track", "PageView");
+  function initMetaPixel() {
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version="2.0";
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,"script",
+    "https://connect.facebook.net/en_US/fbevents.js");
+    fbq("init", "2083020305980459");
+    fbq("track", "PageView");
+  }
+  // Prerendered pages must not fire analytics until they are actually shown
+  if (document.prerendering) {
+    document.addEventListener("prerenderingchange", initMetaPixel, { once: true });
+  } else {
+    initMetaPixel();
+  }
   document.addEventListener("click", function(event) {
     var ticketLink = event.target.closest("a[href*=\"lasalsadelbaile.com/MSC2026\"]");
     if (ticketLink && window.fbq) {
@@ -212,15 +224,35 @@
   ]
 }
   </script>
+  <script type="speculationrules">
+  {
+    "prefetch": [{
+      "where": {"and": [
+        {"href_matches": "/*"},
+        {"not": {"href_matches": "/images/*"}},
+        {"not": {"href_matches": "/css/*"}},
+        {"not": {"href_matches": "/js/*"}},
+        {"not": {"href_matches": "/vendor/*"}},
+        {"not": {"href_matches": "/fonts/*"}}
+      ]},
+      "eagerness": "moderate"
+    }],
+    "prerender": [{
+      "where": {"href_matches": ["/", "/tickets", "/artists", "/hotel", "/contact", "/it/", "/it/tickets", "/it/artists", "/it/hotel", "/it/contact"]},
+      "eagerness": "moderate"
+    }]
+  }
+  </script>
+  <script src="/js/prefetch-fallback.js?v=1" defer></script>
 </head>
 
 <body class="bg-brand-dark text-white font-sans antialiased selection:bg-pink-500 selection:text-white">
   <noscript><img height="1" width="1" style="display:none"
   src="https://www.facebook.com/tr?id=2083020305980459&ev=PageView&noscript=1"
-  alt="" /></noscript>
+  alt="Gero y Migle leading an advanced Bachata masterclass in Milan" /></noscript>
   <nav class="fixed w-full z-50 glass-nav">
     <div class="container mx-auto px-6 py-3 flex justify-between items-center">
-      <a href="./" class="flex items-center gap-3 group"><img height="600" width="800" loading="lazy" src="images/logo.webp" alt="Milano Sensual Congress Logo"
+      <a href="./" class="flex items-center gap-3 group"><img decoding="async" width="1024" height="498" loading="lazy" src="images/logo.webp" alt="Milano Sensual Congress Logo"
           class="h-12 w-auto group-hover:opacity-90 transition-opacity"> <span
           class="text-white text-xs font-sans tracking-[0.2em] uppercase opacity-60 border-l border-white/20 pl-3 py-1">2026</span></a>
       <div class="hidden md:flex space-x-8 text-sm font-medium tracking-wide items-center text-slate-300">
@@ -253,7 +285,7 @@
   <main>
     <section class="relative min-h-[92vh] flex items-center overflow-hidden pt-28">
       <div class="absolute inset-0 opacity-25">
-        <img src="images/artists/gero-migle-bachata-esencia.webp" alt="" class="w-full h-full object-cover">
+        <img decoding="async" loading="lazy" width="540" height="675" src="images/artists/gero-migle-bachata-esencia.webp" srcset="images/artists/gero-migle-bachata-esencia_480w.webp 480w, images/artists/gero-migle-bachata-esencia.webp 540w" sizes="(max-width: 640px) 87vw, (max-width: 1024px) 29vw, 366px" alt="Gero y Migle - Bachata Esencia masterclass teachers" class="w-full h-full object-cover">
       </div>
       <div class="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/90 to-purple-950/70"></div>
       <div class="container mx-auto px-6 relative z-10">
@@ -262,7 +294,7 @@
           <h1 class="text-5xl md:text-7xl font-serif font-bold leading-tight mb-6">Advanced Bachata Training and Masterclasses in Milan</h1>
           <p class="text-xl md:text-2xl text-slate-300 leading-relaxed mb-8">Milano Sensual Congress is built for dancers who want more than patterns. This is the congress for advanced formation: intensive Bachata workshops, masterclass training, technique, musicality, connection, body control and the precision needed to grow as a serious social dancer.</p>
           <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="https://lasalsadelbaile.com/MSC2026" target="_blank" class="btn-gradient px-8 py-4 rounded-full text-white font-bold text-center shadow-lg">Buy Masterclass Upgrade</a>
+            <a href="https://lasalsadelbaile.com/MSC2026" target="_blank" rel="noopener noreferrer" class="btn-gradient px-8 py-4 rounded-full text-white font-bold text-center shadow-lg">Buy Masterclass Upgrade</a>
             <a href="program" class="px-8 py-4 rounded-full border border-white/20 text-white font-bold text-center hover:border-pink-400 hover:text-pink-300">View Program</a>
           </div>
           <div class="mt-6 glass-card p-5 max-w-3xl mx-auto">
@@ -295,15 +327,15 @@
           </div>
           <div class="grid md:grid-cols-3 gap-6">
             <article class="glass-card overflow-hidden">
-              <img src="images/artists/gero-migle-bachata-esencia.webp" alt="Gero y Migle teaching Bachata Esencia masterclass in Milan" class="artist-image w-full" loading="lazy">
+              <img decoding="async" width="540" height="675" src="images/artists/gero-migle-bachata-esencia.webp" srcset="images/artists/gero-migle-bachata-esencia_480w.webp 480w, images/artists/gero-migle-bachata-esencia.webp 540w" sizes="(max-width: 640px) 87vw, (max-width: 1024px) 29vw, 366px" alt="Gero y Migle teaching Bachata Esencia masterclass in Milan" class="artist-image w-full" loading="lazy">
               <div class="p-6"><h3 class="text-2xl font-serif font-bold mb-2">Gero y Migle</h3><p class="text-pink-300 text-sm font-bold uppercase tracking-widest mb-3">Esencia, flow and advanced control</p><p class="text-slate-400 text-sm leading-relaxed mb-5">A masterclass for dancers who want more grounded technique, cleaner body pathways and deeper musical interpretation.</p><a href="news/gero-y-migle-bachata-masters-2026" class="text-pink-400 font-bold hover:text-white">Read their artist spotlight &rarr;</a></div>
             </article>
             <article class="glass-card overflow-hidden">
-              <img src="images/artists/klau-ros-bachata-sensual.webp" alt="Klau y Ros Bachata masterclass artists in Milan" class="artist-image w-full" loading="lazy">
+              <img decoding="async" width="819" height="1024" src="images/artists/klau-ros-bachata-sensual.webp" srcset="images/artists/klau-ros-bachata-sensual_480w.webp 480w, images/artists/klau-ros-bachata-sensual_800w.webp 800w, images/artists/klau-ros-bachata-sensual.webp 819w" sizes="(max-width: 640px) 87vw, (max-width: 1024px) 29vw, 366px" alt="Klau y Ros Bachata masterclass artists in Milan" class="artist-image w-full" loading="lazy">
               <div class="p-6"><h3 class="text-2xl font-serif font-bold mb-2">Klau y Ros</h3><p class="text-pink-300 text-sm font-bold uppercase tracking-widest mb-3">Endless Bachata and creative connection</p><p class="text-slate-400 text-sm leading-relaxed mb-5">Their training brings fluidity, partner response and advanced social-dance creativity into sharper focus.</p><a href="news/klau-y-ros-endless-bachata-masters-2026" class="text-pink-400 font-bold hover:text-white">Read their artist spotlight &rarr;</a></div>
             </article>
             <article class="glass-card overflow-hidden">
-              <img src="images/artists/cristian-gabriella-bachata-artists.webp" alt="Cristian y Gabriella advanced Bachata workshop instructors in Milan" class="artist-image w-full" loading="lazy">
+              <img decoding="async" width="540" height="675" src="images/artists/cristian-gabriella-bachata-artists.webp" srcset="images/artists/cristian-gabriella-bachata-artists_480w.webp 480w, images/artists/cristian-gabriella-bachata-artists.webp 540w" sizes="(max-width: 640px) 87vw, (max-width: 1024px) 29vw, 366px" alt="Cristian y Gabriella advanced Bachata workshop instructors in Milan" class="artist-image w-full" loading="lazy">
               <div class="p-6"><h3 class="text-2xl font-serif font-bold mb-2">Cristian y Gabriella</h3><p class="text-pink-300 text-sm font-bold uppercase tracking-widest mb-3">Technical precision and performance quality</p><p class="text-slate-400 text-sm leading-relaxed mb-5">Ideal for dancers who want sharper execution, clearer dynamics and a more professional movement standard.</p><a href="news/cristian-y-gabriella-bachata-world-masters-2026" class="text-pink-400 font-bold hover:text-white">Read their artist spotlight &rarr;</a></div>
             </article>
           </div>

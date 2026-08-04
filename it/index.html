@@ -2,7 +2,9 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://connect.facebook.net; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://www.facebook.com; font-src 'self'; media-src 'self'; connect-src 'self' https://www.facebook.com https://connect.facebook.net; form-action 'self' https://formspree.io https://atmosferaeventi.it; frame-src https://www.facebook.com; object-src 'none'; base-uri 'self'">
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#0f172a">
   <title>Congressi Bachata 2026: Milano Sensual Congress | L'evento di riferimento della Bachata in Italia</title>
   <meta name="description"
     content="Cerchi i migliori congressi bachata 2026? Il Milano Sensual Congress (20-22 Nov) è l'evento bachata leader in Italia con workshop internazionali e party esclusivi.">
@@ -14,23 +16,47 @@
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <meta name="google-site-verification" content="BzdsIbg1eCpceuVux9svyBa-bRgHE6EYFYbl4f49Aug">
   <link rel="icon" type="image/png" href="../images/logo.webp">
-  <link rel="canonical" href="https://milanosensualcongress.com/it/index">
+  <link rel="canonical" href="https://milanosensualcongress.com/it/">
   <link rel="alternate" hreflang="en" href="https://milanosensualcongress.com/">
   <link rel="alternate" hreflang="x-default" href="https://milanosensualcongress.com/">
   <link rel="alternate" hreflang="it" href="https://milanosensualcongress.com/it/">
   <link rel="image_src" href="https://milanosensualcongress.com/images/milano-sensual-congress-logo-preview.webp">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://milanosensualcongress.com/it/">
+  <meta property="og:title" content="Congressi Bachata 2026: Milano Sensual Congress | L'evento di riferimento della Bachata in Italia">
+  <meta property="og:description" content="Cerchi i migliori congressi bachata 2026? Il Milano Sensual Congress (20-22 Nov) è l'evento bachata leader in Italia con workshop internazionali e party esclusivi.">
+  <meta property="og:image" content="https://milanosensualcongress.com/images/og/milano-sensual-congress-social-card.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Congressi Bachata 2026: Milano Sensual Congress | L'evento di riferimento della Bachata in Italia">
+  <meta property="og:site_name" content="Milano Sensual Congress">
+  <meta property="og:locale" content="it_IT">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Congressi Bachata 2026: Milano Sensual Congress | L'evento di riferimento della Bachata in Italia">
+  <meta name="twitter:description" content="Cerchi i migliori congressi bachata 2026? Il Milano Sensual Congress (20-22 Nov) è l'evento bachata leader in Italia con workshop internazionali e party esclusivi.">
+  <meta name="twitter:image" content="https://milanosensualcongress.com/images/og/milano-sensual-congress-social-card.jpg">
+  <meta name="twitter:image:alt" content="Congressi Bachata 2026: Milano Sensual Congress | L'evento di riferimento della Bachata in Italia">
   <!-- Meta Pixel Code -->
   <script>
-  !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version="2.0";
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window, document,"script",
-  "https://connect.facebook.net/en_US/fbevents.js");
-  fbq("init", "2083020305980459");
-  fbq("track", "PageView");
+  function initMetaPixel() {
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version="2.0";
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,"script",
+    "https://connect.facebook.net/en_US/fbevents.js");
+    fbq("init", "2083020305980459");
+    fbq("track", "PageView");
+  }
+  // Prerendered pages must not fire analytics until they are actually shown
+  if (document.prerendering) {
+    document.addEventListener("prerenderingchange", initMetaPixel, { once: true });
+  } else {
+    initMetaPixel();
+  }
   document.addEventListener("click", function(event) {
     var ticketLink = event.target.closest("a[href*=\"lasalsadelbaile.com/MSC2026\"]");
     if (ticketLink && window.fbq) {
@@ -296,35 +322,14 @@
 }
     
   </script>
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://milanosensualcongress.com/it/">
-  <meta property="og:title" content="Milano Sensual Congress 2026 | Il Congresso Bachata Leader in Europa">
-  <meta property="og:description"
-    content="Il Milano Sensual Congress 2026 (20-22 Nov): il congresso bachata leader in Europa e l'evento di riferimento della Bachata in Italia. Workshop internazionali, hotel di lusso e party esclusivi.">
-  <meta property="og:image" content="https://milanosensualcongress.com/images/milano-sensual-congress-logo-preview.webp">
-  <meta property="og:image:secure_url" content="https://milanosensualcongress.com/images/milano-sensual-congress-logo-preview.webp">
-  <meta property="og:image:type" content="image/webp">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Anteprima del logo ufficiale del Milano Sensual Congress 2026 per il congresso Bachata a Milano">
-  <meta property="og:locale" content="it_IT">
   <meta name="thumbnail" content="https://milanosensualcongress.com/images/milano-sensual-congress-logo-preview.webp">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Milano Sensual Congress 2026 | Il Congresso Bachata Leader in Europa">
-  <meta name="twitter:description"
-    content="Il Milano Sensual Congress 2026 (20-22 Nov): il congresso bachata leader in Europa e l'evento di riferimento della Bachata in Italia. Workshop internazionali, hotel di lusso e party esclusivi.">
-  <meta name="twitter:image" content="https://milanosensualcongress.com/images/milano-sensual-congress-logo-preview.webp">
-  <meta name="twitter:image:alt" content="Anteprima del logo ufficiale del Milano Sensual Congress 2026 per il congresso Bachata a Milano">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
-    rel="stylesheet">
-  <link rel="preload" as="image"
-    href="https://milanosensualcongress.com/wp-content/uploads/2025/11/Devero-Hotel-SPA_principale_colori.webp">
-  <script>tailwind.config = { theme: { extend: { fontFamily: { sans: ["Inter", "sans-serif"], serif: ["Playfair Display", "serif"] }, colors: { brand: { dark: "#0f172a", purple: "#4c1d95", pink: "#be185d", accent: "#f43f5e", gold: "#fbbf24" } }, animation: { "fade-in-up": "fadeInUp 1s ease-out forwards" }, keyframes: { fadeInUp: { "0%": { opacity: "0", transform: "translateY(20px)" }, "100%": { opacity: "1", transform: "translateY(0)" } } } } } }</script>
+  <link rel="preload" as="font" type="font/woff2" href="/fonts/inter-latin.woff2" crossorigin>
+  <link rel="preload" as="font" type="font/woff2" href="/fonts/playfair-display-latin.woff2" crossorigin>
+  <link rel="stylesheet" href="/css/fonts.css?v=1">
+  <link rel="stylesheet" href="/css/tailwind.min.css?v=1">
+  <link rel="stylesheet" href="/vendor/fontawesome/fa-subset.min.css?v=1">
+  <link rel="dns-prefetch" href="https://connect.facebook.net">
+  <link rel="preload" as="image" href="/images/poster.webp" fetchpriority="high">
   <style>
     .glass-card {
       background: rgba(255, 255, 255, .03);
@@ -373,8 +378,26 @@
       background: rgba(255, 255, 255, .1)
     }
   </style>
-  <script
-    type="speculationrules">{"prerender":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"selector_matches":"a"}]},"eagerness":"moderate"}]}</script>
+  <script type="speculationrules">
+  {
+    "prefetch": [{
+      "where": {"and": [
+        {"href_matches": "/*"},
+        {"not": {"href_matches": "/images/*"}},
+        {"not": {"href_matches": "/css/*"}},
+        {"not": {"href_matches": "/js/*"}},
+        {"not": {"href_matches": "/vendor/*"}},
+        {"not": {"href_matches": "/fonts/*"}}
+      ]},
+      "eagerness": "moderate"
+    }],
+    "prerender": [{
+      "where": {"href_matches": ["/", "/tickets", "/artists", "/hotel", "/contact", "/it/", "/it/tickets", "/it/artists", "/it/hotel", "/it/contact"]},
+      "eagerness": "moderate"
+    }]
+  }
+  </script>
+  <script src="/js/prefetch-fallback.js?v=1" defer></script>
 </head>
 
 <body class="bg-brand-dark text-slate-100 font-sans antialiased overflow-x-hidden">
@@ -383,7 +406,7 @@
   alt="" /></noscript>
   <nav class="fixed w-full z-50 glass-nav">
     <div class="container mx-auto px-6 py-3 flex justify-between items-center"><a href="#"
-        class="flex items-center gap-3 group"><img height="600" width="800" loading="lazy" src="../images/logo.webp" alt="Milano Sensual Congress Logo"
+        class="flex items-center gap-3 group"><img decoding="async" width="1024" height="498" loading="lazy" src="../images/logo.webp" alt="Milano Sensual Congress Logo"
           class="h-12 w-auto group-hover:opacity-90 transition-opacity"> <span
           class="text-white text-xs font-sans tracking-[0.2em] uppercase opacity-60 border-l border-white/20 pl-3 py-1">2026</span></a>
       <div class="hidden md:flex space-x-8 text-sm font-medium tracking-wide"><a href="#" class="text-pink-500">Home</a>
@@ -412,10 +435,9 @@
     </div>
   </nav>
   <header class="relative w-full min-h-screen flex items-center justify-center overflow-hidden">
-    <video autoplay muted loop playsinline webkit-playsinline preload="auto" poster="../images/poster.webp"
-      class="absolute top-0 left-0 w-full h-full object-cover z-0" id="heroVideo">
-      <source src="../images/hero.webm" type="video/webm">
-      <source src="../images/hero.mp4" type="video/mp4">
+    <video autoplay muted loop playsinline webkit-playsinline preload="metadata" poster="../images/poster.webp"
+      width="1280" height="720" class="absolute top-0 left-0 w-full h-full object-cover z-0" id="heroVideo">
+      <source src="../images/hero-720.mp4" type="video/mp4">
       Il tuo browser non supporta il tag video.
     </video>
     <script>
@@ -512,7 +534,7 @@
       </div>
       <div class="mt-12 animate-fade-in-up flex flex-col items-center" style="animation-delay:.4s">
         <a href="https://lasalsadelbaile.com/MSC2026"
-          target="_blank"
+          target="_blank" rel="noopener noreferrer"
           class="btn-gradient px-10 py-4 rounded-full text-white font-bold tracking-wide shadow-lg text-lg inline-flex items-center gap-3"><i
             class="fa-solid fa-ticket"></i> Acquista il Pass</a>
       </div>
@@ -572,7 +594,7 @@
             <h3 class="text-2xl font-serif font-bold text-white mb-3">Full Pass</h3>
             <p class="text-slate-400 mb-6 text-sm leading-relaxed">Assicurati il tuo posto al miglior prezzo. I prezzi
               aumentano man mano che l'evento si avvicina. Il full pass include tutti i workshop, gli spettacoli e le
-              feste. <a href="news/aumento-prezzi-full-pass-masterclass-15-giugno-2026" class="text-pink-400 font-bold hover:underline">Leggi l'aggiornamento biglietti del 31 luglio</a>.</p><a href="https://lasalsadelbaile.com/MSC2026" target="_blank"
+              feste. <a href="news/aumento-prezzi-full-pass-masterclass-15-giugno-2026" class="text-pink-400 font-bold hover:underline">Leggi l'aggiornamento biglietti del 31 luglio</a>.</p><a href="https://lasalsadelbaile.com/MSC2026" target="_blank" rel="noopener noreferrer"
               class="inline-block w-full text-center py-3 rounded-xl border border-pink-500 text-pink-400 hover:bg-pink-500 hover:text-white transition-all font-medium">Acquista
               su LaSalsaDelBaile</a>
           </div>
@@ -624,7 +646,7 @@
         <div class="flex flex-col md:flex-row gap-6 items-start">
           <div
             class="w-48 h-64 md:w-56 md:h-72 rounded-xl overflow-hidden border-2 border-pink-500/50 flex-shrink-0 bg-slate-800 shadow-lg">
-            <img height="600" width="800" src="../images/artists/marco-valeria-bachata-artists.webp"
+            <img decoding="async" width="819" height="1024" src="../images/artists/marco-valeria-bachata-artists.webp" srcset="../images/artists/marco-valeria-bachata-artists_480w.webp 480w, ../images/artists/marco-valeria-bachata-artists_800w.webp 800w, ../images/artists/marco-valeria-bachata-artists.webp 819w" sizes="(max-width: 640px) 50vw, 220px"
               alt="Marco y Valeria organizzatori e artisti di Bachata del Milano Sensual Congress 2026"
               class="w-full h-full object-cover scale-125 hover:scale-135 transition-transform duration-500"
               loading="lazy">
@@ -644,7 +666,7 @@
         <div class="flex flex-col md:flex-row gap-6 items-start">
           <div
             class="w-48 h-64 md:w-56 md:h-72 rounded-xl overflow-hidden border-2 border-purple-500/50 flex-shrink-0 bg-slate-800 shadow-lg">
-            <img height="600" width="800" src="../images/artists/ale-xidan-bachata-artists.webp"
+            <img decoding="async" width="819" height="1024" src="../images/artists/ale-xidan-bachata-artists.webp" srcset="../images/artists/ale-xidan-bachata-artists_480w.webp 480w, ../images/artists/ale-xidan-bachata-artists_800w.webp 800w, ../images/artists/ale-xidan-bachata-artists.webp 819w" sizes="(max-width: 640px) 50vw, 220px"
               alt="Ale y Xidan organizzatori e artisti di Bachata del Milano Sensual Congress 2026"
               class="w-full h-full object-cover scale-125 hover:scale-135 transition-transform duration-500"
               loading="lazy">
@@ -653,7 +675,7 @@
             <h3 class="text-2xl font-bold text-white mb-1">Ale y Xidan</h3>
             <p class="text-purple-500 text-sm mb-4 font-medium">Direttori del Congresso</p>
             <p class="text-slate-400 text-sm leading-relaxed"><span class="text-white font-medium">@aleyxidan</span> —
-              Artisti Internazionali di Bachata Sensual. Hanno fondato <a href="https://axcentdance.com" target="_blank"
+              Artisti Internazionali di Bachata Sensual. Hanno fondato <a href="https://axcentdance.com" target="_blank" rel="noopener noreferrer"
                 class="text-pink-400 hover:text-white font-bold underline decoration-pink-500/30 transition-colors">AXcent
                 Dance</a>, la prima scuola specializzata in Bachata Sensual a Zurigo, fondata nel 2025. Oltre che
               artisti, sono giudici del Campionato Svizzero Internazionale di Salsa e Bachata. Ale y Xidan sono i
@@ -830,7 +852,7 @@
           <h3 class="text-xl font-serif font-bold text-white mb-2">Milano Sensual Congress</h3>
           <p class="text-slate-500 text-sm">Il congresso di riferimento per la Bachata Sensual in Italia.</p>
         </div>
-        <div class="flex gap-6"><a href="https://instagram.com/milano_sensual_congress" target="_blank"
+        <div class="flex gap-6"><a href="https://instagram.com/milano_sensual_congress" target="_blank" rel="noopener noreferrer"
             class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-pink-600 hover:text-white transition-all text-slate-400"><i
               class="fa-brands fa-instagram"></i> </a><a href="https://wa.me/41799668481"
             class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-green-500 hover:text-white transition-all text-slate-400"><i

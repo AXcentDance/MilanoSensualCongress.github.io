@@ -10,6 +10,21 @@ SEARCH_DIRS = [
 
 VARIANTS = [480, 800, 1200]
 
+# Non-content images that never need responsive variants
+EXCLUDE_BASENAMES = {"poster", "logo", "qr-code", "milano-sensual-congress-logo-preview"}
+
+
+def source_width(path):
+    """Return the pixel width of an image (0 if it cannot be read)."""
+    try:
+        out = subprocess.check_output([
+            "ffprobe", "-v", "error", "-show_entries", "stream=width",
+            "-of", "csv=p=0", path
+        ], stderr=subprocess.DEVNULL)
+        return int(out.strip().splitlines()[0])
+    except Exception:
+        return 0
+
 def generate_variants():
     count = 0
     skipped = 0
@@ -34,8 +49,16 @@ def generate_variants():
 
                 src_path = os.path.join(root, file)
                 base_name, _ = os.path.splitext(file)
-                
+
+                if base_name in EXCLUDE_BASENAMES:
+                    continue
+
+                src_w = source_width(src_path)
+
                 for width in VARIANTS:
+                    # Never upscale: skip ladder rungs at or above the source width
+                    if src_w and width >= src_w:
+                        continue
                     variant_name = f"{base_name}_{width}w.webp"
                     variant_path = os.path.join(root, variant_name)
                     

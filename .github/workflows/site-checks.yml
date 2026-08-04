@@ -1,0 +1,66 @@
+name: Site checks & freshness
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: write
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # full history: sitemap lastmod comes from git log
+
+      - name: Install checker dependencies
+        run: pip install beautifulsoup4
+
+      - name: Master site gate
+        run: python3 scripts/run_all_checks.py
+
+  regenerate:
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    needs: checks
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Install dependencies
+        run: pip install beautifulsoup4
+
+      - name: Regenerate sitemap and llms-full.txt
+        run: |
+          python3 scripts/generate_sitemap.py
+          python3 scripts/generate_llms_text.py
+
+      - name: Commit regenerated indexes
+        run: |
+          git config user.name "site-bot"
+          git config user.email "actions@users.noreply.github.com"
+          if ! git diff --quiet sitemap.xml llms-full.txt llms.txt 2>/dev/null; then
+            git add sitemap.xml llms-full.txt llms.txt
+            git commit -m "chore: regenerate sitemap and llms indexes [skip ci]"
+            git push
+          else
+            echo "Indexes unchanged"
+          fi
+
+      - name: IndexNow ping (changed URLs only)
+        continue-on-error: true
+        env:
+          INDEXNOW_KEY: 43f532d6b316423c8a1ac2ce7373d7ec
+        run: |
+          BEFORE="${{ github.event.before }}"
+          CHANGED=$(git diff --name-only "$BEFORE" HEAD -- '*.html' 2>/dev/null | grep -v '^404.html$' || true)
+          [ -z "$CHANGED" ] && echo "No changed pages" && exit 0
+          URLS=$(echo "$CHANGED" | sed -E 's/\.html$//; s/^index$//; s/\/index$/\//; s/^/"https:\/\/milanosensualcongress.com\//; s/$/",/' | tr -d '\n' | sed 's/,$//')
+          curl -s -X POST "https://api.indexnow.org/indexnow" \
+            -H "Content-Type: application/json; charset=utf-8" \
+            -d "{\"host\":\"milanosensualcongress.com\",\"key\":\"$INDEXNOW_KEY\",\"keyLocation\":\"https://milanosensualcongress.com/$INDEXNOW_KEY.txt\",\"urlList\":[$URLS]}" \
+            -w "\nIndexNow HTTP %{http_code}\n"

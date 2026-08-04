@@ -3,7 +3,9 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://connect.facebook.net; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://www.facebook.com; font-src 'self'; media-src 'self'; connect-src 'self' https://www.facebook.com https://connect.facebook.net; form-action 'self' https://formspree.io https://atmosferaeventi.it; frame-src https://www.facebook.com; object-src 'none'; base-uri 'self'">
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#0f172a">
   <title>Workshop Bachata 2026 a Milano | Artisti Internazionali e Masterclass</title>
   <meta name="description"
     content="Scopri la lineup di classe mondiale al Milano Sensual Congress. Con Gero y Migle (Esencia Style), Klaus y Ros, e altri top artisti di Bachata che terranno workshop e show a Milano.">
@@ -18,28 +20,39 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://milanosensualcongress.com/it/artists">
   <meta property="og:title" content="Workshop Bachata 2026 a Milano | Artisti Internazionali e Masterclass">
-  <meta property="og:description"
-    content="Scopri la lineup di classe mondiale al Milano Sensual Congress. Con Gero y Migle, Klaus y Ros, e altri top artisti di Bachata Sensual che terranno workshop e show a Milano.">
-  <meta property="og:image" content="https://milanosensualcongress.com/images/logo.webp">
+  <meta property="og:description" content="Scopri la lineup di classe mondiale al Milano Sensual Congress. Con Gero y Migle (Esencia Style), Klaus y Ros, e altri top artisti di Bachata che terranno workshop e show a Milano.">
+  <meta property="og:image" content="https://milanosensualcongress.com/images/og/milano-sensual-congress-social-card.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Workshop Bachata 2026 a Milano | Artisti Internazionali e Masterclass">
+  <meta property="og:site_name" content="Milano Sensual Congress">
   <meta property="og:locale" content="it_IT">
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:title" content="Workshop Bachata 2026 a Milano | Milano Sensual Congress">
-  <meta property="twitter:description"
-    content="Discover the passion. Over 30 artists from around the globe joining us in Milan.">
-  <meta property="twitter:image"
-    content="https://milanosensualcongress.com/wp-content/uploads/2025/10/GeroyMigle.webp">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Workshop Bachata 2026 a Milano | Artisti Internazionali e Masterclass">
+  <meta name="twitter:description" content="Scopri la lineup di classe mondiale al Milano Sensual Congress. Con Gero y Migle (Esencia Style), Klaus y Ros, e altri top artisti di Bachata che terranno workshop e show a Milano.">
+  <meta name="twitter:image" content="https://milanosensualcongress.com/images/og/milano-sensual-congress-social-card.jpg">
+  <meta name="twitter:image:alt" content="Workshop Bachata 2026 a Milano | Artisti Internazionali e Masterclass">
   <!-- Meta Pixel Code -->
   <script>
-  !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version="2.0";
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window, document,"script",
-  "https://connect.facebook.net/en_US/fbevents.js");
-  fbq("init", "2083020305980459");
-  fbq("track", "PageView");
+  function initMetaPixel() {
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version="2.0";
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,"script",
+    "https://connect.facebook.net/en_US/fbevents.js");
+    fbq("init", "2083020305980459");
+    fbq("track", "PageView");
+  }
+  // Prerendered pages must not fire analytics until they are actually shown
+  if (document.prerendering) {
+    document.addEventListener("prerenderingchange", initMetaPixel, { once: true });
+  } else {
+    initMetaPixel();
+  }
   document.addEventListener("click", function(event) {
     var ticketLink = event.target.closest("a[href*=\"lasalsadelbaile.com/MSC2026\"]");
     if (ticketLink && window.fbq) {
@@ -327,17 +340,15 @@
       ]
     }
   </script>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
-    rel="stylesheet">
-  <script>tailwind.config = { theme: { extend: { fontFamily: { sans: ["Inter", "sans-serif"], serif: ["Playfair Display", "serif"] }, colors: { brand: { dark: "#0f172a", purple: "#4c1d95", pink: "#be185d", accent: "#f43f5e", gold: "#fbbf24" } } } } }</script>
+  <link rel="preload" as="font" type="font/woff2" href="/fonts/inter-latin.woff2" crossorigin>
+  <link rel="preload" as="font" type="font/woff2" href="/fonts/playfair-display-latin.woff2" crossorigin>
+  <link rel="stylesheet" href="/css/fonts.css?v=1">
+  <link rel="stylesheet" href="/css/tailwind.min.css?v=1">
+  <link rel="stylesheet" href="/vendor/fontawesome/fa-subset.min.css?v=1">
+  <link rel="dns-prefetch" href="https://connect.facebook.net">
   <style>
     .hero-bg {
-      background-image: linear-gradient(rgba(15, 23, 42, .85), rgba(76, 29, 149, .9)), url('https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?q=80&w=2070&auto=format&fit=crop');
+      background-image: linear-gradient(rgba(15, 23, 42, .85), rgba(76, 29, 149, .9)), url('/images/backgrounds/bachata-concert-stage-lights-milan.webp');
       background-size: cover;
       background-position: center;
       background-attachment: fixed
@@ -413,8 +424,26 @@
       border-bottom: 1px solid rgba(255, 255, 255, .1)
     }
   </style>
-  <script
-    type="speculationrules">{"prerender":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"selector_matches":"a"}]},"eagerness":"moderate"}]}</script>
+  <script type="speculationrules">
+  {
+    "prefetch": [{
+      "where": {"and": [
+        {"href_matches": "/*"},
+        {"not": {"href_matches": "/images/*"}},
+        {"not": {"href_matches": "/css/*"}},
+        {"not": {"href_matches": "/js/*"}},
+        {"not": {"href_matches": "/vendor/*"}},
+        {"not": {"href_matches": "/fonts/*"}}
+      ]},
+      "eagerness": "moderate"
+    }],
+    "prerender": [{
+      "where": {"href_matches": ["/", "/tickets", "/artists", "/hotel", "/contact", "/it/", "/it/tickets", "/it/artists", "/it/hotel", "/it/contact"]},
+      "eagerness": "moderate"
+    }]
+  }
+  </script>
+  <script src="/js/prefetch-fallback.js?v=1" defer></script>
 </head>
 
 <body class="bg-brand-dark text-slate-100 font-sans antialiased overflow-x-hidden">
@@ -423,7 +452,7 @@
   alt="" /></noscript>
   <nav class="fixed w-full z-50 glass-nav">
     <div class="container mx-auto px-6 py-3 flex justify-between items-center"><a href="./"
-        class="flex items-center gap-3 group"><img height="600" width="800" loading="lazy" src="../images/logo.webp" alt="Milano Sensual Congress Logo"
+        class="flex items-center gap-3 group"><img decoding="async" width="1024" height="498" loading="lazy" src="../images/logo.webp" alt="Milano Sensual Congress Logo"
           class="h-12 w-auto group-hover:opacity-90 transition-opacity"> <span
           class="text-white text-xs font-sans tracking-[0.2em] uppercase opacity-60 border-l border-white/20 pl-3 py-1">2026</span></a>
       <div class="hidden md:flex space-x-8 text-sm font-medium tracking-wide items-center"><a href="./"
@@ -487,7 +516,7 @@
           <div class="text-indigo-400 text-xs uppercase tracking-widest font-bold">Workshop</div>
         </div>
       </div>
-      <div class="mt-10"><a href="https://lasalsadelbaile.com/MSC2026" target="_blank"
+      <div class="mt-10"><a href="https://lasalsadelbaile.com/MSC2026" target="_blank" rel="noopener noreferrer"
           class="btn-gradient px-8 py-3 rounded-full font-bold text-white shadow-lg shadow-pink-500/20 inline-flex items-center gap-2 hover:shadow-pink-500/40 transition-all transform hover:-translate-y-1"><i
             class="fa-solid fa-ticket"></i> Acquista Biglietti</a> <a href="programma"
           class="ml-0 mt-4 md:mt-0 md:ml-4 px-8 py-3 rounded-full font-bold text-white border border-white/20 hover:border-pink-400 hover:text-pink-300 transition-all inline-flex items-center gap-2"><i
@@ -516,8 +545,8 @@
       <div class="grid grid-cols-2 md:grid-cols-3 gap-6 mb-10">
         <div class="gradient-border-card group">
           <div class="card-content">
-            <div class="artist-img-container h-[18rem] md:h-[16rem] relative"><img
-                src="../images/artists/gero-migle-bachata-esencia.webp"
+            <div class="artist-img-container h-[18rem] md:h-[16rem] relative"><img decoding="async" width="540" height="675"
+                src="../images/artists/gero-migle-bachata-esencia.webp" srcset="../images/artists/gero-migle-bachata-esencia_480w.webp 480w, ../images/artists/gero-migle-bachata-esencia.webp 540w" sizes="(max-width: 640px) 40vw, (max-width: 1024px) 29vw, 391px"
                 alt="Gero y Migle - Maestri dell'Esencia Style dalla Spagna" class="artist-img"
                 loading="lazy">
               <div class="absolute top-4 right-4 z-20">
@@ -539,7 +568,7 @@
         </div>
         <div class="gradient-border-card group">
           <div class="card-content">
-            <div class="artist-img-container h-[18rem] md:h-[16rem] relative"><img height="600" width="800" src="../images/artists/klau-ros-bachata-sensual.webp"
+            <div class="artist-img-container h-[18rem] md:h-[16rem] relative"><img decoding="async" width="819" height="1024" src="../images/artists/klau-ros-bachata-sensual.webp" srcset="../images/artists/klau-ros-bachata-sensual_480w.webp 480w, ../images/artists/klau-ros-bachata-sensual_800w.webp 800w, ../images/artists/klau-ros-bachata-sensual.webp 819w" sizes="(max-width: 640px) 40vw, (max-width: 1024px) 29vw, 391px"
                 alt="Klau y Ros - Artisti di Bachata Sensual dalla Polonia e Spagna" class="artist-img" loading="lazy">
               <div class="absolute bottom-0 left-0 right-0 z-10 p-4">
                 <h3
@@ -557,8 +586,8 @@
         </div>
         <div class="gradient-border-card group">
           <div class="card-content">
-            <div class="artist-img-container h-[18rem] md:h-[16rem] relative"><img
-                src="../images/artists/cristian-gabriella-bachata-artists.webp"
+            <div class="artist-img-container h-[18rem] md:h-[16rem] relative"><img decoding="async" width="540" height="675"
+                src="../images/artists/cristian-gabriella-bachata-artists.webp" srcset="../images/artists/cristian-gabriella-bachata-artists_480w.webp 480w, ../images/artists/cristian-gabriella-bachata-artists.webp 540w" sizes="(max-width: 640px) 40vw, (max-width: 1024px) 29vw, 391px"
                 alt="Cristian y Gabriella - Ballerini di Bachata dalla Spagna" class="artist-img" loading="lazy">
               <div class="absolute bottom-0 left-0 right-0 z-10 p-4">
                 <h3
@@ -576,8 +605,8 @@
         </div>
         <div class="gradient-border-card group">
           <div class="card-content">
-            <div class="artist-img-container h-[18rem] md:h-[16rem] relative"><img
-                src="../images/artists/agustin-alba-bachata-sensual.webp" alt="Agustín y Alba - Insegnanti di Bachata dalla Spagna"
+            <div class="artist-img-container h-[18rem] md:h-[16rem] relative"><img decoding="async" width="540" height="675"
+                src="../images/artists/agustin-alba-bachata-sensual.webp" srcset="../images/artists/agustin-alba-bachata-sensual_480w.webp 480w, ../images/artists/agustin-alba-bachata-sensual.webp 540w" sizes="(max-width: 640px) 40vw, (max-width: 1024px) 29vw, 391px" alt="Agustín y Alba - Insegnanti di Bachata dalla Spagna"
                 class="artist-img" loading="lazy">
               <div class="absolute bottom-0 left-0 right-0 z-10 p-4">
                 <h3
@@ -593,8 +622,8 @@
         </div>
         <div class="gradient-border-card group">
           <div class="card-content">
-            <div class="artist-img-container h-[18rem] md:h-[16rem] relative"><img
-                src="../images/artists/david-ines-bachata-sensual.webp" alt="David y Ines - Artisti di Bachata dalla Spagna"
+            <div class="artist-img-container h-[18rem] md:h-[16rem] relative"><img decoding="async" width="819" height="1024"
+                src="../images/artists/david-ines-bachata-sensual.webp" srcset="../images/artists/david-ines-bachata-sensual_480w.webp 480w, ../images/artists/david-ines-bachata-sensual_800w.webp 800w, ../images/artists/david-ines-bachata-sensual.webp 819w" sizes="(max-width: 640px) 40vw, (max-width: 1024px) 29vw, 391px" alt="David y Ines - Artisti di Bachata dalla Spagna"
                 class="artist-img" loading="lazy">
               <div class="absolute bottom-0 left-0 right-0 z-10 p-4">
                 <h3
@@ -610,8 +639,8 @@
         </div>
         <div class="gradient-border-card group">
           <div class="card-content">
-            <div class="artist-img-container h-[18rem] md:h-[16rem] relative"><img
-                src="../images/artists/nacho-silvia-bachata-esencia.webp" alt="Nacho y Silvia - Istruttori di Bachata dalla Spagna"
+            <div class="artist-img-container h-[18rem] md:h-[16rem] relative"><img decoding="async" width="540" height="675"
+                src="../images/artists/nacho-silvia-bachata-esencia.webp" srcset="../images/artists/nacho-silvia-bachata-esencia_480w.webp 480w, ../images/artists/nacho-silvia-bachata-esencia.webp 540w" sizes="(max-width: 640px) 40vw, (max-width: 1024px) 29vw, 391px" alt="Nacho y Silvia - Istruttori di Bachata dalla Spagna"
                 class="artist-img" loading="lazy">
               <div class="absolute bottom-0 left-0 right-0 z-10 p-4">
                 <h3
@@ -627,7 +656,7 @@
         </div>
         <div class="gradient-border-card group">
           <div class="card-content">
-            <div class="artist-img-container h-[18rem] md:h-[16rem] relative"><img height="600" width="800" src="../images/artists/aitor-gomez-bachata-dominican-roots.webp"
+            <div class="artist-img-container h-[18rem] md:h-[16rem] relative"><img decoding="async" width="540" height="675" src="../images/artists/aitor-gomez-bachata-dominican-roots.webp" srcset="../images/artists/aitor-gomez-bachata-dominican-roots_480w.webp 480w, ../images/artists/aitor-gomez-bachata-dominican-roots.webp 540w" sizes="(max-width: 640px) 40vw, (max-width: 1024px) 29vw, 391px"
                 alt="Aitor Gomez insegna Bachata con radici dominicane al Milano Sensual Congress 2026" class="artist-img" loading="lazy">
               <div class="absolute bottom-0 left-0 right-0 z-10 p-4">
                 <h3
@@ -643,8 +672,8 @@
         </div>
         <div class="gradient-border-card group">
           <div class="card-content">
-            <div class="artist-img-container h-[18rem] md:h-[16rem] relative"><img
-                src="../images/artists/irene-tomas-bachata-sensual.webp" alt="Irene y Tomas - Artisti di Bachata dalla Spagna"
+            <div class="artist-img-container h-[18rem] md:h-[16rem] relative"><img decoding="async" width="540" height="675"
+                src="../images/artists/irene-tomas-bachata-sensual.webp" srcset="../images/artists/irene-tomas-bachata-sensual_480w.webp 480w, ../images/artists/irene-tomas-bachata-sensual.webp 540w" sizes="(max-width: 640px) 40vw, (max-width: 1024px) 29vw, 391px" alt="Irene y Tomas - Artisti di Bachata dalla Spagna"
                 class="artist-img" loading="lazy">
               <div class="absolute bottom-0 left-0 right-0 z-10 p-4">
                 <h3
@@ -667,7 +696,7 @@
           class="px-10 py-4 rounded-full font-bold text-white border border-purple-400/40 hover:border-purple-300 hover:text-purple-200 transition-all inline-flex items-center justify-center gap-3 text-lg"><i
             class="fa-solid fa-graduation-cap"></i> Masterclass Avanzata</a><a href="programma"
           class="px-10 py-4 rounded-full font-bold text-white border border-white/20 hover:border-pink-400 hover:text-pink-300 transition-all inline-flex items-center justify-center gap-3 text-lg"><i
-            class="fa-solid fa-calendar-days"></i> Vedi Programma</a><a href="https://lasalsadelbaile.com/MSC2026" target="_blank"
+            class="fa-solid fa-calendar-days"></i> Vedi Programma</a><a href="https://lasalsadelbaile.com/MSC2026" target="_blank" rel="noopener noreferrer"
           class="btn-gradient px-10 py-4 rounded-full font-bold text-white shadow-lg shadow-pink-500/20 inline-flex items-center gap-3 text-lg hover:shadow-pink-500/40 transition-all transform hover:-translate-y-1"><i
             class="fa-solid fa-ticket"></i> Acquista Full Pass</a></div>
       </div>
@@ -680,7 +709,7 @@
           <h2 class="text-xl font-serif font-bold text-white mb-2">Milano Sensual Congress</h2>
           <p class="text-slate-500 text-sm">Il congresso di riferimento per la Bachata Sensual in Italia.</p>
         </div>
-        <div class="flex gap-6"><a href="https://instagram.com/milano_sensual_congress" target="_blank"
+        <div class="flex gap-6"><a href="https://instagram.com/milano_sensual_congress" target="_blank" rel="noopener noreferrer"
             class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-pink-600 hover:text-white transition-all text-slate-400"><i
               class="fa-brands fa-instagram"></i> </a><a href="https://wa.me/41799668481"
             class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-green-500 hover:text-white transition-all text-slate-400"><i
