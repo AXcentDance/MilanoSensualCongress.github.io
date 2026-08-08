@@ -15,7 +15,8 @@ OUTPUT_FULL = os.path.join(ROOT_DIR, 'llms-full.txt')
 OUTPUT_SUMMARY = os.path.join(ROOT_DIR, 'llms.txt')
 
 IGNORE_PATTERNS = [
-    'node_modules', '.git', 'tmp', '.gemini', '__pycache__', 'scripts',
+    'node_modules', '.git', '.claude', '.agent', '.agents', '.github',
+    'tmp', '.gemini', '__pycache__', 'scripts', 'vendor', 'System',
     'google', 'assets', 'images', 'css', 'js'
 ]
 
@@ -50,6 +51,7 @@ def clean_text(text):
     # Remove excessive whitespace but keep some structure
     text = re.sub(r'\n\s*\n', '\n\n', text)
     text = re.sub(r'[ \t]+', ' ', text)
+    text = '\n'.join(line.rstrip() for line in text.splitlines())
     return text.strip()
 
 def process_file_regex(file_path):
@@ -176,4 +178,3 @@ def main():
 if __name__ == "__main__":
     import datetime
     main()
-

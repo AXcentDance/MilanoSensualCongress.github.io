@@ -11,6 +11,10 @@ except ImportError:
     
 ROOT_DIR = "."
 DOMAIN = 'https://milanosensualcongress.com'
+IGNORED_DIRS = {
+    '.git', '.claude', '.agent', '.agents', '.github',
+    'node_modules', 'scripts', '__pycache__'
+}
 
 def is_noindex(filepath):
     """Checks if a file has <meta name="robots" content="noindex...">"""
@@ -131,14 +135,49 @@ def get_page_images(filepath):
         
     return images
 
+def get_hreflang_links(filepath):
+    """Read explicit hreflang URLs from the page head.
+
+    Translated pages often use different slugs, so filesystem-name matching is
+    not sufficient to pair English and Italian URLs in the sitemap.
+    """
+    links = {}
+    try:
+        with open(filepath, 'r', encoding='utf-8') as f:
+            content = f.read()
+
+        if HAS_BS4:
+            soup = BeautifulSoup(content, 'html.parser')
+            for link in soup.find_all('link', hreflang=True, href=True):
+                rel = link.get('rel', [])
+                if 'alternate' not in rel:
+                    continue
+                lang = link.get('hreflang', '').lower()
+                href = link.get('href', '').strip()
+                if lang in {'en', 'it', 'x-default'} and href.startswith(DOMAIN):
+                    links[lang] = href
+        else:
+            pattern = re.compile(
+                r'<link\s+[^>]*rel=["\']alternate["\'][^>]*'
+                r'hreflang=["\'](en|it|x-default)["\'][^>]*'
+                r'href=["\']([^"\']+)["\']',
+                re.IGNORECASE
+            )
+            for lang, href in pattern.findall(content):
+                if href.startswith(DOMAIN):
+                    links[lang.lower()] = href
+    except Exception:
+        pass
+    return links
+
 def generate_sitemap():
     print("Generating sitemap.xml...")
     
     all_files = []
     for root, dirs, files in os.walk(ROOT_DIR):
-        if 'scripts' in dirs: dirs.remove('scripts')
-        if '.git' in dirs: dirs.remove('.git')
-        if 'node_modules' in dirs: dirs.remove('node_modules')
+        # Prune development-only directories before os.walk descends into them.
+        # Hidden worktrees must never become public sitemap URLs.
+        dirs[:] = [directory for directory in dirs if directory not in IGNORED_DIRS]
         
         for file in files:
             if file.endswith('.html'):
@@ -189,15 +228,23 @@ def generate_sitemap():
             xml_output += f'    <lastmod>{lastmod}</lastmod>\n'
             xml_output += f'    <priority>{priority}</priority>\n'
             
-            # Hreflang
-            if 'en' in variants:
-                en_url = DOMAIN + get_url_path(variants['en'])
-                xml_output += f'    <xhtml:link rel="alternate" hreflang="en" href="{en_url}" />\n'
-                xml_output += f'    <xhtml:link rel="alternate" hreflang="x-default" href="{en_url}" />\n'
-            
-            if 'it' in variants:
-                it_url = DOMAIN + get_url_path(variants['it'])
-                xml_output += f'    <xhtml:link rel="alternate" hreflang="it" href="{it_url}" />\n'
+            # Prefer the page's explicit hreflang declarations. This preserves
+            # language pairing when translated pages use localized slugs.
+            explicit_hreflangs = get_hreflang_links(filepath)
+            if explicit_hreflangs:
+                for hreflang in ('en', 'x-default', 'it'):
+                    href = explicit_hreflangs.get(hreflang)
+                    if href:
+                        xml_output += f'    <xhtml:link rel="alternate" hreflang="{hreflang}" href="{href}" />\n'
+            else:
+                if 'en' in variants:
+                    en_url = DOMAIN + get_url_path(variants['en'])
+                    xml_output += f'    <xhtml:link rel="alternate" hreflang="en" href="{en_url}" />\n'
+                    xml_output += f'    <xhtml:link rel="alternate" hreflang="x-default" href="{en_url}" />\n'
+
+                if 'it' in variants:
+                    it_url = DOMAIN + get_url_path(variants['it'])
+                    xml_output += f'    <xhtml:link rel="alternate" hreflang="it" href="{it_url}" />\n'
                 
             # Images
             page_images = get_page_images(filepath)
