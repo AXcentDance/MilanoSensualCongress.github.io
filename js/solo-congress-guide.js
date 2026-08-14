@@ -15,7 +15,14 @@ if (!reduceMotion && window.gsap && window.ScrollTrigger) {
   const { gsap, ScrollTrigger } = window;
   gsap.registerPlugin(ScrollTrigger);
 
-  gsap.from(".hero-copy > *", {
+  // The h1 is this page's LCP element: it must stay visible from first paint
+  // (transform-only intro), or the fade-from-0 pushes LCP past the animation.
+  gsap.from(".hero-copy > h1", {
+    y: 34,
+    duration: 1.15,
+    ease: "power3.out"
+  });
+  gsap.from(".hero-copy > p", {
     y: 34,
     opacity: 0,
     duration: 1.15,
