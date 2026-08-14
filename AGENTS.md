@@ -77,3 +77,11 @@ Report any checks that could not be run, and do not hide pre-existing failures.
 - **Videos**: never commit progressive full-length originals; encode with
   capped bitrate (see `images/hero-720.mp4`, ~1.5 Mbps 720p) and use
   `preload="metadata"` with a WebP poster.
+- **Lighthouse-safe pages** (apply to every new page): never animate the LCP
+  element (hero headline/image) from `opacity: 0` — transform-only intros;
+  preload every font face used above the fold, including italics; defer heavy
+  or decorative JS (analytics, three.js) to idle-after-load. Standalone
+  art-directed pages inline their CSS via `<style data-inline>` markers —
+  after editing an inlined CSS file, re-run
+  `python3 scripts/inline_critical_css.py` (register new pages in its PAGES
+  dict).
