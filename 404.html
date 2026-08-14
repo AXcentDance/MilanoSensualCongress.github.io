@@ -55,16 +55,34 @@
     fbq("init", "2083020305980459");
     fbq("track", "PageView");
   }
-  // Prerendered pages must not fire analytics until they are actually shown
-  if (document.prerendering) {
-    document.addEventListener("prerenderingchange", initMetaPixel, { once: true });
-  } else {
+  // Prerendered pages must not fire analytics until they are actually shown.
+  // Loading is deferred to idle time after window load so the pixel never
+  // competes with rendering the page (LCP/TBT).
+  var metaPixelStarted = false;
+  function startMetaPixel() {
+    if (metaPixelStarted) return;
+    metaPixelStarted = true;
     initMetaPixel();
+  }
+  function scheduleMetaPixel() {
+    if ("requestIdleCallback" in window) {
+      requestIdleCallback(startMetaPixel, { timeout: 3000 });
+    } else {
+      setTimeout(startMetaPixel, 1500);
+    }
+  }
+  if (document.prerendering) {
+    document.addEventListener("prerenderingchange", scheduleMetaPixel, { once: true });
+  } else if (document.readyState === "complete") {
+    scheduleMetaPixel();
+  } else {
+    window.addEventListener("load", scheduleMetaPixel, { once: true });
   }
   document.addEventListener("click", function(event) {
     var ticketLink = event.target.closest("a[href*=\"lasalsadelbaile.com/MSC2026\"]");
-    if (ticketLink && window.fbq) {
-      fbq("track", "InitiateCheckout");
+    if (ticketLink) {
+      startMetaPixel();
+      if (window.fbq) fbq("track", "InitiateCheckout");
     }
   });
   </script>
@@ -135,11 +153,11 @@
 
     <!-- Footer -->
     <footer class="bg-brand-dark border-t border-white/10 py-8">
-        <div class="container mx-auto px-6 text-center text-xs text-slate-600">
+        <div class="container mx-auto px-6 text-center text-xs text-slate-400">
             <p>&copy; 2026 Milano Sensual Congress. All rights reserved.</p>
         </div>
     
-      <div class="mt-6 text-center text-xs text-slate-500"><a href="faq" class="hover:text-slate-300 transition-colors">FAQ</a></div>
+      <div class="mt-6 text-center text-xs text-slate-400"><a href="faq" class="hover:text-slate-300 transition-colors">FAQ</a></div>
 </footer>
 
 </body>

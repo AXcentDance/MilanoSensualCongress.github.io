@@ -43,16 +43,34 @@
     fbq("init", "2083020305980459");
     fbq("track", "PageView");
   }
-  // Prerendered pages must not fire analytics until they are actually shown
-  if (document.prerendering) {
-    document.addEventListener("prerenderingchange", initMetaPixel, { once: true });
-  } else {
+  // Prerendered pages must not fire analytics until they are actually shown.
+  // Loading is deferred to idle time after window load so the pixel never
+  // competes with rendering the page (LCP/TBT).
+  var metaPixelStarted = false;
+  function startMetaPixel() {
+    if (metaPixelStarted) return;
+    metaPixelStarted = true;
     initMetaPixel();
+  }
+  function scheduleMetaPixel() {
+    if ("requestIdleCallback" in window) {
+      requestIdleCallback(startMetaPixel, { timeout: 3000 });
+    } else {
+      setTimeout(startMetaPixel, 1500);
+    }
+  }
+  if (document.prerendering) {
+    document.addEventListener("prerenderingchange", scheduleMetaPixel, { once: true });
+  } else if (document.readyState === "complete") {
+    scheduleMetaPixel();
+  } else {
+    window.addEventListener("load", scheduleMetaPixel, { once: true });
   }
   document.addEventListener("click", function(event) {
     var ticketLink = event.target.closest("a[href*=\"lasalsadelbaile.com/MSC2026\"]");
-    if (ticketLink && window.fbq) {
-      fbq("track", "InitiateCheckout");
+    if (ticketLink) {
+      startMetaPixel();
+      if (window.fbq) fbq("track", "InitiateCheckout");
     }
   });
   </script>
@@ -282,7 +300,7 @@
   <nav class="fixed w-full z-50 glass-nav">
     <div class="container mx-auto px-6 py-3 flex justify-between items-center">
       <a href="../../" class="flex items-center gap-3 group">
-        <img height="600" width="800" src="../../images/logo.webp" alt="Milano Sensual Congress Logo" class="h-12 w-auto group-hover:opacity-90 transition-opacity">
+        <img height="146" width="300" src="../../images/milano-sensual-congress-logo-nav.webp" alt="Milano Sensual Congress Logo" class="h-12 w-auto group-hover:opacity-90 transition-opacity">
         <span class="text-white text-xs font-sans tracking-[0.2em] uppercase opacity-60 border-l border-white/20 pl-3 py-1">2026</span>
       </a>
       <div class="hidden md:flex space-x-8 text-sm font-medium items-center">
@@ -373,11 +391,11 @@
         </div>
         <div class="flex gap-4 uppercase text-[10px] font-bold tracking-widest">
           <a href="cosa-aspettarsi-da-un-congresso-di-bachata-2026" class="text-pink-400 hover:text-white transition-colors">&larr; Post Precedente</a>
-          <span class="text-slate-600">|</span>
+          <span class="text-slate-400">|</span>
           <a href="corsi-settimanali-vs-congressi-bachata" class="text-pink-400 hover:text-white transition-colors">Post Successivo &rarr;</a>
         </div>
       
-      <div class="mt-6 text-center text-xs text-slate-500"><a href="../faq" class="hover:text-slate-300 transition-colors">FAQ</a></div>
+      <div class="mt-6 text-center text-xs text-slate-400"><a href="../faq" class="hover:text-slate-300 transition-colors">FAQ</a></div>
 </footer>
     </article>
   </main>

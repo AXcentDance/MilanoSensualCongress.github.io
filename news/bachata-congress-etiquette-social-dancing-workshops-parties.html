@@ -116,16 +116,34 @@
     fbq("init", "2083020305980459");
     fbq("track", "PageView");
   }
-  // Prerendered pages must not fire analytics until they are actually shown
-  if (document.prerendering) {
-    document.addEventListener("prerenderingchange", initMetaPixel, { once: true });
-  } else {
+  // Prerendered pages must not fire analytics until they are actually shown.
+  // Loading is deferred to idle time after window load so the pixel never
+  // competes with rendering the page (LCP/TBT).
+  var metaPixelStarted = false;
+  function startMetaPixel() {
+    if (metaPixelStarted) return;
+    metaPixelStarted = true;
     initMetaPixel();
+  }
+  function scheduleMetaPixel() {
+    if ("requestIdleCallback" in window) {
+      requestIdleCallback(startMetaPixel, { timeout: 3000 });
+    } else {
+      setTimeout(startMetaPixel, 1500);
+    }
+  }
+  if (document.prerendering) {
+    document.addEventListener("prerenderingchange", scheduleMetaPixel, { once: true });
+  } else if (document.readyState === "complete") {
+    scheduleMetaPixel();
+  } else {
+    window.addEventListener("load", scheduleMetaPixel, { once: true });
   }
   document.addEventListener("click", function(event) {
     var ticketLink = event.target.closest("a[href*=\"lasalsadelbaile.com/MSC2026\"]");
-    if (ticketLink && window.fbq) {
-      fbq("track", "InitiateCheckout");
+    if (ticketLink) {
+      startMetaPixel();
+      if (window.fbq) fbq("track", "InitiateCheckout");
     }
   });
   </script>
@@ -269,7 +287,7 @@
   <nav class="fixed w-full z-50 glass-nav">
     <div class="container mx-auto px-6 py-3 flex justify-between items-center">
       <a href="../" class="flex items-center gap-3 group">
-        <img decoding="async" width="1024" height="498" loading="lazy" src="../images/logo.webp" alt="Milano Sensual Congress Logo" class="h-12 w-auto group-hover:opacity-90 transition-opacity">
+        <img decoding="async" width="300" height="146" loading="lazy" src="../images/milano-sensual-congress-logo-nav.webp" alt="Milano Sensual Congress Logo" class="h-12 w-auto group-hover:opacity-90 transition-opacity">
         <span class="text-white text-xs font-sans tracking-[0.2em] uppercase opacity-60 border-l border-white/20 pl-3 py-1">2026</span>
       </a>
       <div class="hidden md:flex space-x-8 text-sm font-medium tracking-wide">
@@ -286,7 +304,7 @@
           <a href="../it/news/etichetta-congresso-bachata-social-workshop-party" class="text-slate-400 hover:text-white transition-colors">IT</a>
         </div>
       </div>
-      <button class="md:hidden text-white focus:outline-none" onclick='document.getElementById("mobile-menu").classList.toggle("hidden")'>
+      <button aria-label="Open navigation menu" class="md:hidden text-white focus:outline-none" onclick='document.getElementById("mobile-menu").classList.toggle("hidden")'>
         <i class="fa-solid fa-bars text-xl"></i>
       </button>
     </div>
@@ -404,14 +422,14 @@
       <div class="flex flex-col md:flex-row justify-between items-center gap-6">
         <div>
           <h3 class="text-xl font-serif font-bold text-white mb-2">Milano Sensual Congress</h3>
-          <p class="text-slate-500 text-sm">The ultimate Bachata experience in Italy.</p>
+          <p class="text-slate-400 text-sm">The ultimate Bachata experience in Italy.</p>
         </div>
         <div class="flex gap-6">
-          <a href="https://instagram.com/milano_sensual_congress" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-pink-600 hover:text-white transition-all text-slate-400"><i class="fa-brands fa-instagram"></i></a>
-          <a href="https://wa.me/41799668481" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-green-500 hover:text-white transition-all text-slate-400"><i class="fa-brands fa-whatsapp"></i></a>
+          <a aria-label="Milano Sensual Congress on Instagram" href="https://instagram.com/milano_sensual_congress" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-pink-600 hover:text-white transition-all text-slate-400"><i class="fa-brands fa-instagram"></i></a>
+          <a aria-label="Contact us on WhatsApp" href="https://wa.me/41799668481" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-green-500 hover:text-white transition-all text-slate-400"><i class="fa-brands fa-whatsapp"></i></a>
         </div>
       </div>
-      <div class="border-t border-white/5 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-slate-600">
+      <div class="border-t border-white/5 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-slate-400">
         <p>&copy; 2026 Milano Sensual Congress. All rights reserved.</p>
         <div class="flex gap-4 mt-4 md:mt-0">
           <a href="../terms" class="hover:text-slate-400">Privacy Policy</a>
@@ -420,7 +438,7 @@
       </div>
     </div>
   
-      <div class="mt-6 text-center text-xs text-slate-500"><a href="../faq" class="hover:text-slate-300 transition-colors">FAQ</a></div>
+      <div class="mt-6 text-center text-xs text-slate-400"><a href="../faq" class="hover:text-slate-300 transition-colors">FAQ</a></div>
 </footer>
 </body>
 

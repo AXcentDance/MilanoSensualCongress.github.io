@@ -60,16 +60,34 @@
     fbq("init", "2083020305980459");
     fbq("track", "PageView");
   }
-  // Prerendered pages must not fire analytics until they are actually shown
-  if (document.prerendering) {
-    document.addEventListener("prerenderingchange", initMetaPixel, { once: true });
-  } else {
+  // Prerendered pages must not fire analytics until they are actually shown.
+  // Loading is deferred to idle time after window load so the pixel never
+  // competes with rendering the page (LCP/TBT).
+  var metaPixelStarted = false;
+  function startMetaPixel() {
+    if (metaPixelStarted) return;
+    metaPixelStarted = true;
     initMetaPixel();
+  }
+  function scheduleMetaPixel() {
+    if ("requestIdleCallback" in window) {
+      requestIdleCallback(startMetaPixel, { timeout: 3000 });
+    } else {
+      setTimeout(startMetaPixel, 1500);
+    }
+  }
+  if (document.prerendering) {
+    document.addEventListener("prerenderingchange", scheduleMetaPixel, { once: true });
+  } else if (document.readyState === "complete") {
+    scheduleMetaPixel();
+  } else {
+    window.addEventListener("load", scheduleMetaPixel, { once: true });
   }
   document.addEventListener("click", function(event) {
     var ticketLink = event.target.closest("a[href*=\"lasalsadelbaile.com/MSC2026\"]");
-    if (ticketLink && window.fbq) {
-      fbq("track", "InitiateCheckout");
+    if (ticketLink) {
+      startMetaPixel();
+      if (window.fbq) fbq("track", "InitiateCheckout");
     }
   });
   </script>
@@ -252,7 +270,7 @@
   alt="Gero y Migle leading an advanced Bachata masterclass in Milan" /></noscript>
   <nav class="fixed w-full z-50 glass-nav">
     <div class="container mx-auto px-6 py-3 flex justify-between items-center">
-      <a href="./" class="flex items-center gap-3 group"><img decoding="async" width="1024" height="498" loading="lazy" src="images/logo.webp" alt="Milano Sensual Congress Logo"
+      <a href="./" class="flex items-center gap-3 group"><img decoding="async" width="300" height="146" loading="lazy" src="images/milano-sensual-congress-logo-nav.webp" alt="Milano Sensual Congress Logo"
           class="h-12 w-auto group-hover:opacity-90 transition-opacity"> <span
           class="text-white text-xs font-sans tracking-[0.2em] uppercase opacity-60 border-l border-white/20 pl-3 py-1">2026</span></a>
       <div class="hidden md:flex space-x-8 text-sm font-medium tracking-wide items-center text-slate-300">
@@ -265,7 +283,7 @@
         <a href="news" class="hover:text-pink-400 transition-colors">News</a>
         <a href="contact" class="hover:text-pink-400 transition-colors">Contact</a>
         <div class="border-l border-white/20 pl-6 ml-2 flex gap-3"><a href="#" class="text-white font-bold">EN</a><a href="it/masterclass" class="text-slate-400 hover:text-white transition-colors">IT</a></div>
-      </div><button class="md:hidden text-white focus:outline-none" onclick='document.getElementById("mobile-menu").classList.toggle("hidden")'><i class="fa-solid fa-bars text-xl"></i></button>
+      </div><button aria-label="Open navigation menu" class="md:hidden text-white focus:outline-none" onclick='document.getElementById("mobile-menu").classList.toggle("hidden")'><i class="fa-solid fa-bars text-xl"></i></button>
     </div>
     <div id="mobile-menu" class="hidden md:hidden bg-brand-dark border-t border-white/10">
       <div class="flex flex-col p-4 space-y-4">
@@ -369,7 +387,7 @@
   </main>
 
   <footer class="bg-brand-dark border-t border-white/10 py-12">
-    <div class="container mx-auto px-6 text-center text-slate-500 text-sm">
+    <div class="container mx-auto px-6 text-center text-slate-400 text-sm">
       <p>&copy; 2026 Milano Sensual Congress. All rights reserved.</p>
       <div class="mt-4 flex justify-center gap-4"><a href="faq" class="hover:text-slate-300">FAQ</a><a href="terms" class="hover:text-slate-300">Terms</a><a href="contact" class="hover:text-slate-300">Contact</a></div>
     </div>

@@ -49,16 +49,34 @@
     fbq("init", "2083020305980459");
     fbq("track", "PageView");
   }
-  // Prerendered pages must not fire analytics until they are actually shown
-  if (document.prerendering) {
-    document.addEventListener("prerenderingchange", initMetaPixel, { once: true });
-  } else {
+  // Prerendered pages must not fire analytics until they are actually shown.
+  // Loading is deferred to idle time after window load so the pixel never
+  // competes with rendering the page (LCP/TBT).
+  var metaPixelStarted = false;
+  function startMetaPixel() {
+    if (metaPixelStarted) return;
+    metaPixelStarted = true;
     initMetaPixel();
+  }
+  function scheduleMetaPixel() {
+    if ("requestIdleCallback" in window) {
+      requestIdleCallback(startMetaPixel, { timeout: 3000 });
+    } else {
+      setTimeout(startMetaPixel, 1500);
+    }
+  }
+  if (document.prerendering) {
+    document.addEventListener("prerenderingchange", scheduleMetaPixel, { once: true });
+  } else if (document.readyState === "complete") {
+    scheduleMetaPixel();
+  } else {
+    window.addEventListener("load", scheduleMetaPixel, { once: true });
   }
   document.addEventListener("click", function(event) {
     var ticketLink = event.target.closest("a[href*=\"lasalsadelbaile.com/MSC2026\"]");
-    if (ticketLink && window.fbq) {
-      fbq("track", "InitiateCheckout");
+    if (ticketLink) {
+      startMetaPixel();
+      if (window.fbq) fbq("track", "InitiateCheckout");
     }
   });
   </script>
@@ -177,7 +195,7 @@
   <link rel="dns-prefetch" href="https://connect.facebook.net">
   <style>
     .hero-bg {
-      background-image: linear-gradient(rgba(15, 23, 42, .85), rgba(76, 29, 149, .9)), url('https://milanosensualcongress.com/images/hotel/devero-hotel-exterior-dusk.webp');
+      background-image: linear-gradient(rgba(15, 23, 42, .85), rgba(76, 29, 149, .9)), url('../images/hotel/devero-hotel-exterior-dusk.webp');
       background-size: cover;
       background-position: center;
       background-attachment: fixed
@@ -246,7 +264,7 @@
   alt="" /></noscript>
   <nav class="fixed w-full z-50 glass-nav">
     <div class="container mx-auto px-6 py-3 flex justify-between items-center"><a href="./"
-        class="flex items-center gap-3 group"><img decoding="async" width="1024" height="498" loading="lazy" src="../images/logo.webp" alt="Milano Sensual Congress Logo"
+        class="flex items-center gap-3 group"><img decoding="async" width="300" height="146" loading="lazy" src="../images/milano-sensual-congress-logo-nav.webp" alt="Milano Sensual Congress Logo"
           class="h-12 w-auto group-hover:opacity-90 transition-opacity"> <span
           class="text-white text-xs font-sans tracking-[0.2em] uppercase opacity-60 border-l border-white/20 pl-3 py-1">2026</span></a>
       <div class="hidden md:flex space-x-8 text-sm font-medium tracking-wide"><a href="./"
@@ -259,7 +277,7 @@
         <div class="border-l border-white/20 pl-6 ml-2 flex gap-3"><a href="../contact"
             class="text-slate-400 hover:text-white transition-colors">EN</a> <a href="#"
             class="text-white font-bold">IT</a></div>
-      </div><button class="md:hidden text-white focus:outline-none"
+      </div><button aria-label="Apri il menu di navigazione" class="md:hidden text-white focus:outline-none"
         onclick='document.getElementById("mobile-menu").classList.toggle("hidden")'><i
           class="fa-solid fa-bars text-xl"></i></button>
     </div>
@@ -295,7 +313,7 @@
         <div>
           <h2 class="text-3xl font-serif font-bold text-white mb-8">Chatta con noi su WhatsApp</h2>
           <div class="flex flex-col md:flex-row gap-6 justify-center"><a href="https://wa.me/393333935911"
-              target="_blank" rel="noopener noreferrer" aria-label="Chatta su WhatsApp in italiano o spagnolo"
+              target="_blank" rel="noopener noreferrer"
               class="group relative overflow-hidden bg-green-600/10 hover:bg-green-600 border border-green-500/30 hover:border-green-500 transition-colors duration-300 rounded-xl p-5 flex items-center gap-4 flex-1 md:max-w-sm text-left">
               <div
                 class="w-12 h-12 rounded-full bg-green-500/20 flex items-center justify-center group-hover:bg-white/20 transition-colors flex-shrink-0">
@@ -306,7 +324,7 @@
                   Italiano / Español</div>
                 <div class="text-white font-bold text-lg">Chatta su WhatsApp</div>
               </div>
-            </a><a href="https://wa.me/41799668481" target="_blank" rel="noopener noreferrer" aria-label="Chatta su WhatsApp in inglese"
+            </a><a href="https://wa.me/41799668481" target="_blank" rel="noopener noreferrer"
               class="group relative overflow-hidden bg-green-600/10 hover:bg-green-600 border border-green-500/30 hover:border-green-500 transition-colors duration-300 rounded-xl p-5 flex items-center gap-4 flex-1 md:max-w-sm text-left">
               <div
                 class="w-12 h-12 rounded-full bg-green-500/20 flex items-center justify-center group-hover:bg-white/20 transition-colors flex-shrink-0">
@@ -388,7 +406,7 @@
             </div>
             <div class="w-full h-48 rounded-lg bg-slate-800 mb-6 overflow-hidden relative group cursor-pointer"><a
                 href="https://maps.app.goo.gl/HfGs2SmXuRViiYDq5" target="_blank" rel="noopener noreferrer"
-                aria-label="Open Devero Hotel in Google Maps"><img decoding="async" width="609" height="481"
+                aria-label="Apri su Google Maps – Devero Hotel"><img decoding="async" width="609" height="481"
                   src="../images/hotel/devero-hotel-exterior-dusk.webp" srcset="../images/hotel/devero-hotel-exterior-dusk_480w.webp 480w, ../images/hotel/devero-hotel-exterior-dusk.webp 609w" sizes="(max-width: 640px) 70vw, (max-width: 1024px) 85vw, 526px" loading="lazy"
                   alt="Devero Hotel Exterior"
                   class="w-full h-full object-cover opacity-60 group-hover:opacity-80 transition-opacity duration-500">
@@ -405,7 +423,7 @@
               </div>
               <div class="flex gap-4">
                 <div class="w-6 flex-shrink-0 text-center text-purple-500"><i class="fa-solid fa-crosshairs"></i></div>
-                <div><span class="text-slate-500 text-xs uppercase tracking-wider block mb-1">Plus Code</span> HCJ8+3J
+                <div><span class="text-slate-400 text-xs uppercase tracking-wider block mb-1">Plus Code</span> HCJ8+3J
                   Cavenago di Brianza, Province of Monza and Brianza</div>
               </div>
               <div class="flex gap-4 items-center">
@@ -416,7 +434,7 @@
               <div class="flex gap-4 items-center">
                 <div class="w-6 flex-shrink-0 text-center text-brand-gold"><i class="fa-solid fa-phone"></i></div><a
                   href="tel:+390295335412" class="hover:text-white transition-colors">+39 02 9533 5412 <span
-                    class="text-slate-500 text-xs ml-2">(Reception)</span></a>
+                    class="text-slate-400 text-xs ml-2">(Reception)</span></a>
               </div>
             </div>
             <div class="mt-auto pt-8"><a href="https://maps.app.goo.gl/HfGs2SmXuRViiYDq5" target="_blank" rel="noopener noreferrer"
@@ -466,8 +484,8 @@
       <div class="flex flex-col md:flex-row justify-between items-center gap-6">
         <div class="text-center md:text-left">
           <h2 class="text-xl font-serif font-bold text-white mb-2">Milano Sensual Congress</h2>
-          <p class="text-slate-500 text-sm">Il congresso di riferimento per la Bachata Sensual in Italia.</p>
-          <p class="text-slate-500 text-sm mt-1"><i class="fa-solid fa-location-dot mr-1 text-pink-500"></i> Sede:
+          <p class="text-slate-400 text-sm">Il congresso di riferimento per la Bachata Sensual in Italia.</p>
+          <p class="text-slate-400 text-sm mt-1"><i class="fa-solid fa-location-dot mr-1 text-pink-500"></i> Sede:
             Devero Hotel, Cavenago di Brianza</p>
         </div>
         <div class="flex gap-6"><a href="https://www.instagram.com/milanosensualcongress/" target="_blank" rel="noopener noreferrer"
@@ -479,7 +497,7 @@
               class="fa-brands fa-whatsapp"></i></a></div>
       </div>
       <div
-        class="border-t border-white/5 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-slate-600">
+        class="border-t border-white/5 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-slate-400">
         <p>&copy; 2026 Milano Sensual Congress. Tutti i diritti riservati.</p>
         <div class="flex flex-wrap justify-center gap-4 mt-4 md:mt-0"><a href="terms"
             class="hover:text-slate-400 transition-colors">Informativa sulla Privacy</a> <a href="terms"
@@ -487,7 +505,7 @@
       </div>
     </div>
   
-      <div class="mt-6 text-center text-xs text-slate-500"><a href="faq" class="hover:text-slate-300 transition-colors">FAQ</a></div>
+      <div class="mt-6 text-center text-xs text-slate-400"><a href="faq" class="hover:text-slate-300 transition-colors">FAQ</a></div>
 </footer>
 </body>
 

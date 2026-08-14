@@ -38,14 +38,29 @@
     fbq("init", "2083020305980459");
     fbq("track", "PageView");
   }
-  if (document.prerendering) {
-    document.addEventListener("prerenderingchange", initMetaPixel, { once: true });
-  } else {
+  var metaPixelStarted = false;
+  function startMetaPixel() {
+    if (metaPixelStarted) return;
+    metaPixelStarted = true;
     initMetaPixel();
+  }
+  function scheduleMetaPixel() {
+    if ("requestIdleCallback" in window) {
+      requestIdleCallback(startMetaPixel, { timeout: 3000 });
+    } else {
+      setTimeout(startMetaPixel, 1500);
+    }
+  }
+  if (document.prerendering) {
+    document.addEventListener("prerenderingchange", scheduleMetaPixel, { once: true });
+  } else if (document.readyState === "complete") {
+    scheduleMetaPixel();
+  } else {
+    window.addEventListener("load", scheduleMetaPixel, { once: true });
   }
   document.addEventListener("click", function(event) {
     var ticketLink = event.target.closest("a[href*=\"lasalsadelbaile.com/MSC2026\"]");
-    if (ticketLink && window.fbq) fbq("track", "InitiateCheckout");
+    if (ticketLink) { startMetaPixel(); if (window.fbq) fbq("track", "InitiateCheckout"); }
   });
   </script>
 
@@ -249,7 +264,7 @@
         </div>
       </div>
       <details class="mobile-nav">
-        <summary aria-label="Open navigation">Menu</summary>
+        <summary>Menu</summary>
         <div class="mobile-menu">
           <a href="../">Home</a><a href="../artists">Artists</a><a href="../tickets">Tickets</a>
           <a href="../hotel">Hotel</a><a href="../transfer">Transfer</a><a href="../news">News</a>
@@ -478,9 +493,9 @@
     </div>
   </footer>
 
-  <script src="/vendor/gsap/gsap.min.js"></script>
-  <script src="/vendor/gsap/ScrollTrigger.min.js"></script>
-  <script type="module" src="/js/solo-congress-guide.js?v=2"></script>
+  <script src="/vendor/gsap/gsap.min.js" defer></script>
+  <script src="/vendor/gsap/ScrollTrigger.min.js" defer></script>
+  <script type="module" src="/js/solo-congress-guide.js?v=3"></script>
 </body>
 
 </html>

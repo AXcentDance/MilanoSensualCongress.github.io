@@ -1,5 +1,3 @@
-import * as THREE from "/vendor/three/three.module.min.js";
-
 const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 const progress = document.querySelector(".reading-progress");
 
@@ -76,7 +74,29 @@ if (!reduceMotion && window.gsap && window.ScrollTrigger) {
 
 const canvas = document.querySelector("#connection-canvas");
 
+// three.js is ~600 KB of main-thread work for a decorative background:
+// load it lazily once the page is idle so it never delays interactivity.
 if (canvas && !reduceMotion) {
+  const startScene = () => {
+    import("/vendor/three/three.module.min.js")
+      .then(initConnectionScene)
+      .catch(() => { canvas.hidden = true; });
+  };
+  const scheduleScene = () => {
+    if ("requestIdleCallback" in window) {
+      requestIdleCallback(startScene, { timeout: 3000 });
+    } else {
+      setTimeout(startScene, 1500);
+    }
+  };
+  if (document.readyState === "complete") {
+    scheduleScene();
+  } else {
+    window.addEventListener("load", scheduleScene, { once: true });
+  }
+}
+
+function initConnectionScene(THREE) {
   try {
     const renderer = new THREE.WebGLRenderer({ canvas, alpha: true, antialias: true });
     const scene = new THREE.Scene();

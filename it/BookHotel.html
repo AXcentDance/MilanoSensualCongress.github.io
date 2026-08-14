@@ -111,16 +111,34 @@
     fbq("init", "2083020305980459");
     fbq("track", "PageView");
   }
-  // Prerendered pages must not fire analytics until they are actually shown
-  if (document.prerendering) {
-    document.addEventListener("prerenderingchange", initMetaPixel, { once: true });
-  } else {
+  // Prerendered pages must not fire analytics until they are actually shown.
+  // Loading is deferred to idle time after window load so the pixel never
+  // competes with rendering the page (LCP/TBT).
+  var metaPixelStarted = false;
+  function startMetaPixel() {
+    if (metaPixelStarted) return;
+    metaPixelStarted = true;
     initMetaPixel();
+  }
+  function scheduleMetaPixel() {
+    if ("requestIdleCallback" in window) {
+      requestIdleCallback(startMetaPixel, { timeout: 3000 });
+    } else {
+      setTimeout(startMetaPixel, 1500);
+    }
+  }
+  if (document.prerendering) {
+    document.addEventListener("prerenderingchange", scheduleMetaPixel, { once: true });
+  } else if (document.readyState === "complete") {
+    scheduleMetaPixel();
+  } else {
+    window.addEventListener("load", scheduleMetaPixel, { once: true });
   }
   document.addEventListener("click", function(event) {
     var ticketLink = event.target.closest("a[href*=\"lasalsadelbaile.com/MSC2026\"]");
-    if (ticketLink && window.fbq) {
-      fbq("track", "InitiateCheckout");
+    if (ticketLink) {
+      startMetaPixel();
+      if (window.fbq) fbq("track", "InitiateCheckout");
     }
   });
   </script>
@@ -154,7 +172,7 @@
   <nav class="fixed w-full z-50 glass-nav">
     <div class="container mx-auto px-6 py-3 flex justify-between items-center">
       <a href="./" class="flex items-center gap-3 group">
-        <img decoding="async" width="1024" height="498" loading="lazy" src="../images/logo.webp" alt="Milano Sensual Congress Logo"
+        <img decoding="async" width="300" height="146" loading="lazy" src="../images/milano-sensual-congress-logo-nav.webp" alt="Milano Sensual Congress Logo"
           class="h-12 w-auto group-hover:opacity-90 transition-opacity">
         <span
           class="text-white text-xs font-sans tracking-[0.2em] uppercase opacity-60 border-l border-white/20 pl-3 py-1">2026</span>
@@ -172,7 +190,7 @@
             class="text-slate-400 hover:text-white transition-colors">EN</a> <a href="#"
             class="text-white font-bold">IT</a></div>
       </div>
-      <button class="md:hidden text-white focus:outline-none"
+      <button aria-label="Apri il menu di navigazione" class="md:hidden text-white focus:outline-none"
         onclick='document.getElementById("mobile-menu").classList.toggle("hidden")' aria-label="Apri il menu">
         <i class="fa-solid fa-bars text-xl"></i>
       </button>
@@ -355,17 +373,17 @@
                 <p class="text-sm text-slate-400 mb-5">Indica con precisione cognome e nome delle persone con cui vuoi stare in stanza.</p>
                 <div class="grid gap-4">
                   <div class="grid grid-cols-[2rem_1fr_1fr] gap-3 items-center preference-row" data-row="1">
-                    <span class="text-slate-500 font-bold">1</span>
+                    <span class="text-slate-400 font-bold">1</span>
                     <input class="field" type="text" name="pref_surname[1]" placeholder="Cognome">
                     <input class="field" type="text" name="pref_name[1]" placeholder="Nome">
                   </div>
                   <div class="grid grid-cols-[2rem_1fr_1fr] gap-3 items-center preference-row" data-row="2">
-                    <span class="text-slate-500 font-bold">2</span>
+                    <span class="text-slate-400 font-bold">2</span>
                     <input class="field" type="text" name="pref_surname[2]" placeholder="Cognome">
                     <input class="field" type="text" name="pref_name[2]" placeholder="Nome">
                   </div>
                   <div class="grid grid-cols-[2rem_1fr_1fr] gap-3 items-center preference-row" data-row="3">
-                    <span class="text-slate-500 font-bold">3</span>
+                    <span class="text-slate-400 font-bold">3</span>
                     <input class="field" type="text" name="pref_surname[3]" placeholder="Cognome">
                     <input class="field" type="text" name="pref_name[3]" placeholder="Nome">
                   </div>
@@ -400,7 +418,7 @@
       <div class="flex flex-col md:flex-row justify-between items-center gap-6">
         <div class="text-center md:text-left">
           <h2 class="text-xl font-serif font-bold text-white mb-2">Milano Sensual Congress</h2>
-          <p class="text-slate-500 text-sm">Il congresso di riferimento per la Bachata Sensual in Italia.</p>
+          <p class="text-slate-400 text-sm">Il congresso di riferimento per la Bachata Sensual in Italia.</p>
         </div>
         <div class="flex gap-6">
           <a href="https://instagram.com/milano_sensual_congress" target="_blank" rel="noopener noreferrer"
@@ -412,7 +430,7 @@
         </div>
       </div>
       <div
-        class="border-t border-white/5 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-slate-600">
+        class="border-t border-white/5 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-slate-400">
         <p>&copy; 2026 Milano Sensual Congress. Tutti i diritti riservati.</p>
         <div class="flex gap-4 mt-4 md:mt-0">
           <a href="terms" class="hover:text-slate-400">Privacy Policy</a>
@@ -421,7 +439,7 @@
       </div>
     </div>
   
-      <div class="mt-6 text-center text-xs text-slate-500"><a href="faq" class="hover:text-slate-300 transition-colors">FAQ</a></div>
+      <div class="mt-6 text-center text-xs text-slate-400"><a href="faq" class="hover:text-slate-300 transition-colors">FAQ</a></div>
 </footer>
 
   <script>

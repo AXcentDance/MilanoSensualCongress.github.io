@@ -47,16 +47,34 @@
     fbq("init", "2083020305980459");
     fbq("track", "PageView");
   }
-  // Prerendered pages must not fire analytics until they are actually shown
-  if (document.prerendering) {
-    document.addEventListener("prerenderingchange", initMetaPixel, { once: true });
-  } else {
+  // Prerendered pages must not fire analytics until they are actually shown.
+  // Loading is deferred to idle time after window load so the pixel never
+  // competes with rendering the page (LCP/TBT).
+  var metaPixelStarted = false;
+  function startMetaPixel() {
+    if (metaPixelStarted) return;
+    metaPixelStarted = true;
     initMetaPixel();
+  }
+  function scheduleMetaPixel() {
+    if ("requestIdleCallback" in window) {
+      requestIdleCallback(startMetaPixel, { timeout: 3000 });
+    } else {
+      setTimeout(startMetaPixel, 1500);
+    }
+  }
+  if (document.prerendering) {
+    document.addEventListener("prerenderingchange", scheduleMetaPixel, { once: true });
+  } else if (document.readyState === "complete") {
+    scheduleMetaPixel();
+  } else {
+    window.addEventListener("load", scheduleMetaPixel, { once: true });
   }
   document.addEventListener("click", function(event) {
     var ticketLink = event.target.closest("a[href*=\"lasalsadelbaile.com/MSC2026\"]");
-    if (ticketLink && window.fbq) {
-      fbq("track", "InitiateCheckout");
+    if (ticketLink) {
+      startMetaPixel();
+      if (window.fbq) fbq("track", "InitiateCheckout");
     }
   });
   </script>
@@ -398,7 +416,7 @@
   alt="" /></noscript>
   <nav class="fixed w-full z-50 glass-nav">
     <div class="container mx-auto px-6 py-3 flex justify-between items-center"><a href="./"
-        class="flex items-center gap-3 group"><img decoding="async" width="1024" height="498" loading="lazy" src="images/logo.webp" alt="Milano Sensual Congress Logo"
+        class="flex items-center gap-3 group"><img decoding="async" width="300" height="146" loading="lazy" src="images/milano-sensual-congress-logo-nav.webp" alt="Milano Sensual Congress Logo"
           class="h-12 w-auto group-hover:opacity-90 transition-opacity"> <span
           class="text-white text-xs font-sans tracking-[0.2em] uppercase opacity-60 border-l border-white/20 pl-3 py-1">2026</span></a>
       <div class="hidden md:flex space-x-8 text-sm font-medium tracking-wide items-center"><a href="./"
@@ -410,7 +428,7 @@
           class="hover:text-pink-400 transition-colors">Contact</a>
         <div class="border-l border-white/20 pl-6 ml-2 flex gap-3"><a href="#" class="text-white font-bold">EN</a> <a
             href="it/tickets" class="text-slate-400 hover:text-white transition-colors">IT</a></div>
-      </div><button class="md:hidden text-white focus:outline-none"
+      </div><button aria-label="Open navigation menu" class="md:hidden text-white focus:outline-none"
         onclick='document.getElementById("mobile-menu").classList.toggle("hidden")'><i
           class="fa-solid fa-bars text-xl"></i></button>
     </div>
@@ -425,6 +443,7 @@
       </div>
     </div>
   </nav>
+<main>
   <header class="hero-bg min-h-[60vh] flex items-center justify-center pt-32 pb-10 relative">
     <div class="absolute inset-0 bg-gradient-to-b from-transparent to-brand-dark"></div>
     <div class="container mx-auto px-6 relative z-10 text-center"><span
@@ -527,7 +546,7 @@
               <li class="flex items-start gap-2"><i class="fa-solid fa-check text-slate-400 mt-1"></i> <span>After September
                   15</span></li>
             </ul><button disabled="disabled"
-              class="block w-full py-3 rounded-xl border border-slate-600 text-slate-500 font-bold text-center cursor-not-allowed mt-auto">Locked</button>
+              class="block w-full py-3 rounded-xl border border-slate-600 text-slate-400 font-bold text-center cursor-not-allowed mt-auto">Locked</button>
           </div>
         </div>
         <div class="glass-card rounded-2xl p-6 flex flex-col border-brand-purple/50 w-full relative">
@@ -548,7 +567,7 @@
             <li class="flex items-start gap-2"><i class="fa-solid fa-user-group text-purple-400 mt-1 text-xs"></i>
               <span>Gero y Migle, Klau y Ros, Cristian y Gabriella</span>
             </li>
-            <li class="flex items-start gap-2"><i class="fa-solid fa-ban text-slate-500 mt-1 text-xs"></i> <span
+            <li class="flex items-start gap-2"><i class="fa-solid fa-ban text-slate-400 mt-1 text-xs"></i> <span
                 class="text-slate-400">Full Pass NOT included</span></li>
           </ul><a href="masterclass" class="block w-full py-3 rounded-xl border border-purple-500/50 text-purple-200 hover:border-purple-300 hover:text-white font-bold text-center transition-all mb-3">Explore
             Advanced Workshops</a><a href="https://lasalsadelbaile.com/MSC2026" target="_blank" rel="noopener noreferrer"
@@ -599,7 +618,7 @@
               <li class="flex items-start gap-2"><i class="fa-solid fa-calendar text-indigo-400 mt-1"></i> <span>Friday,
                   Saturday & Sunday</span></li>
             </ul><button disabled="disabled"
-              class="block w-full py-3 rounded-xl border border-slate-600 text-slate-500 font-bold text-center cursor-not-allowed mt-auto">Locked</button>
+              class="block w-full py-3 rounded-xl border border-slate-600 text-slate-400 font-bold text-center cursor-not-allowed mt-auto">Locked</button>
           </div>
         </div>
       </div>
@@ -729,28 +748,29 @@
       </section>
     </div>
   </section>
-  <footer class="bg-brand-dark border-t border-white/10 py-12">
+  </main>
+<footer class="bg-brand-dark border-t border-white/10 py-12">
     <div class="container mx-auto px-6">
       <div class="flex flex-col md:flex-row justify-between items-center gap-6">
         <div class="text-center md:text-left">
           <h2 class="text-xl font-serif font-bold text-white mb-2">Milano Sensual Congress</h2>
-          <p class="text-slate-500 text-sm">The ultimate Bachata experience in Italy.</p>
+          <p class="text-slate-400 text-sm">The ultimate Bachata experience in Italy.</p>
         </div>
-        <div class="flex gap-6"><a href="https://instagram.com/milano_sensual_congress" target="_blank" rel="noopener noreferrer"
+        <div class="flex gap-6"><a aria-label="Milano Sensual Congress on Instagram" href="https://instagram.com/milano_sensual_congress" target="_blank" rel="noopener noreferrer"
             class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-pink-600 hover:text-white transition-all text-slate-400"><i
-              class="fa-brands fa-instagram"></i> </a><a href="https://wa.me/41799668481"
+              class="fa-brands fa-instagram"></i> </a><a aria-label="Contact us on WhatsApp" href="https://wa.me/41799668481"
             class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-green-500 hover:text-white transition-all text-slate-400"><i
               class="fa-brands fa-whatsapp"></i></a></div>
       </div>
       <div
-        class="border-t border-white/5 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-slate-600">
+        class="border-t border-white/5 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-slate-400">
         <p>&copy; 2026 Milano Sensual Congress. All rights reserved.</p>
         <div class="flex gap-4 mt-4 md:mt-0"><a href="terms" class="hover:text-slate-400">Privacy Policy</a> <a
             href="terms" class="hover:text-slate-400">Terms & Conditions</a></div>
       </div>
     </div>
   
-      <div class="mt-6 text-center text-xs text-slate-500"><a href="faq" class="hover:text-slate-300 transition-colors">FAQ</a></div>
+      <div class="mt-6 text-center text-xs text-slate-400"><a href="faq" class="hover:text-slate-300 transition-colors">FAQ</a></div>
 </footer>
 
   <script>
