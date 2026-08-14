@@ -378,7 +378,7 @@
   </url>
   <url>
     <loc>https://milanosensualcongress.com/news</loc>
-    <lastmod>2026-08-14T17:12:28+02:00</lastmod>
+    <lastmod>2026-08-14T21:00:32+02:00</lastmod>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://milanosensualcongress.com/news" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://milanosensualcongress.com/news" />
@@ -388,12 +388,12 @@
       <image:title>Milano Sensual Congress Logo</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://milanosensualcongress.com/images/news/bachata-congress-2026-social-dancing.webp</image:loc>
-      <image:title>International dancers meeting at a Bachata Congress in Milan</image:title>
+      <image:loc>https://milanosensualcongress.com/images/news/duomo-di-milano-bachata-italy-2026-dance-destination.webp</image:loc>
+      <image:title>Duomo di Milano, starting point of the European Bachata festival season 2026-2027</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://milanosensualcongress.com/images/news/duomo-di-milano-bachata-italy-2026-dance-destination.webp</image:loc>
-      <image:title>Duomo di Milano at evening for the Bachata in Italy 2026 dance destination guide</image:title>
+      <image:loc>https://milanosensualcongress.com/images/news/bachata-congress-2026-social-dancing.webp</image:loc>
+      <image:title>International dancers meeting at a Bachata Congress in Milan</image:title>
     </image:image>
     <image:image>
       <image:loc>https://milanosensualcongress.com/images/news/milano-sensual-congress-2026-official-flyer.webp</image:loc>
@@ -446,7 +446,7 @@
   </url>
   <url>
     <loc>https://milanosensualcongress.com/it/news</loc>
-    <lastmod>2026-08-14T17:12:28+02:00</lastmod>
+    <lastmod>2026-08-14T21:00:32+02:00</lastmod>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://milanosensualcongress.com/news" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://milanosensualcongress.com/news" />
@@ -456,12 +456,12 @@
       <image:title>Milano Sensual Congress Logo</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://milanosensualcongress.com/images/news/bachata-congress-2026-social-dancing.webp</image:loc>
-      <image:title>Ballerini internazionali che si incontrano a un Congresso Bachata a Milano</image:title>
+      <image:loc>https://milanosensualcongress.com/images/news/duomo-di-milano-bachata-italy-2026-dance-destination.webp</image:loc>
+      <image:title>Duomo di Milano, punto di partenza della stagione europea dei festival di Bachata 2026-2027</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://milanosensualcongress.com/images/news/duomo-di-milano-bachata-italy-2026-dance-destination.webp</image:loc>
-      <image:title>Duomo di Milano di sera per la guida Bachata in Italia 2026</image:title>
+      <image:loc>https://milanosensualcongress.com/images/news/bachata-congress-2026-social-dancing.webp</image:loc>
+      <image:title>Ballerini internazionali che si incontrano a un Congresso Bachata a Milano</image:title>
     </image:image>
     <image:image>
       <image:loc>https://milanosensualcongress.com/images/news/milano-sensual-congress-2026-official-flyer.webp</image:loc>
@@ -597,6 +597,18 @@
     </image:image>
   </url>
   <url>
+    <loc>https://milanosensualcongress.com/news/bachata-festivals-europe-2026-2027-calendar</loc>
+    <lastmod>2026-08-14T21:00:32+02:00</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://milanosensualcongress.com/news/bachata-festivals-europe-2026-2027-calendar" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://milanosensualcongress.com/news/bachata-festivals-europe-2026-2027-calendar" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://milanosensualcongress.com/it/news/calendario-festival-bachata-europa-2026-2027" />
+    <image:image>
+      <image:loc>https://milanosensualcongress.com/images/milano-sensual-congress-logo-nav.webp</image:loc>
+      <image:title>Milano Sensual Congress Logo</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://milanosensualcongress.com/it/news/bachata-italia-2026-milano-meta-ballo</loc>
     <lastmod>2026-08-14T17:12:28+02:00</lastmod>
     <priority>0.6</priority>
@@ -642,6 +654,18 @@
     <image:image>
       <image:loc>https://milanosensualcongress.com/images/milano-sensual-congress-logo-nav.webp</image:loc>
       <image:title>Milano Sensual Congress Logo</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://milanosensualcongress.com/it/news/calendario-festival-bachata-europa-2026-2027</loc>
+    <lastmod>2026-08-14T21:00:32+02:00</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://milanosensualcongress.com/news/bachata-festivals-europe-2026-2027-calendar" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://milanosensualcongress.com/news/bachata-festivals-europe-2026-2027-calendar" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://milanosensualcongress.com/it/news/calendario-festival-bachata-europa-2026-2027" />
+    <image:image>
+      <image:loc>https://milanosensualcongress.com/images/milano-sensual-congress-logo-nav.webp</image:loc>
+      <image:title>Logo Milano Sensual Congress</image:title>
     </image:image>
   </url>
   <url>
