@@ -801,6 +801,7 @@
 
         const formData = new FormData(form);
         const data = Object.fromEntries(formData.entries());
+        if (typeof startMetaPixel === "function") startMetaPixel();
         if (window.fbq) {
           fbq("track", "Lead", {
             content_name: "Price increase reminder",
