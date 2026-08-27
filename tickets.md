@@ -10,7 +10,7 @@ Official Ticket Sales • 2026 Edition
 
 Join us at the stunning Devero Hotel for the premier Bachata event. We went sold out last year! Experience over 40 hours of workshops, world-class artists, and unforgettable parties.
 
-1,000+ dancers · 20+ nations · 40+ hours of workshops · 22 hours of social dancing · 3 days
+1,000+ dancers · 20+ nations · 40+ hours of workshops · 20+ hours of social dancing · 3 days
 
 [Get Tickets](https://lasalsadelbaile.com/MSC2026)
 

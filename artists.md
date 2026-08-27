@@ -24,7 +24,7 @@ Workshops
 
 [Get Tickets](https://lasalsadelbaile.com/MSC2026) [Workshop Program](https://milanosensualcongress.com/program) [Advanced Masterclass](https://milanosensualcongress.com/masterclass)
 
-1,000+ dancers · 20+ nations · 40+ hours of workshops · 22 hours of social dancing · 3 days
+1,000+ dancers · 20+ nations · 40+ hours of workshops · 20+ hours of social dancing · 3 days
 
 Bachata Workshops in Milan
 

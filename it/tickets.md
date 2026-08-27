@@ -10,7 +10,7 @@ Biglietti Ufficiali
 
 Partecipa al più atteso dei **congressi bachata 2026**. Scegli il pass che fa per te e preparati a ballare.
 
-1.000+ ballerini · 20+ nazioni · 40+ ore di workshop · 22 ore di social dancing · 3 giorni
+1.000+ ballerini · 20+ nazioni · 40+ ore di workshop · 20+ ore di social dancing · 3 giorni
 
 [Acquista Biglietti](https://lasalsadelbaile.com/MSC2026)
 

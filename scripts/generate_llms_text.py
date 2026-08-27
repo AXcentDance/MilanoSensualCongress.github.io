@@ -147,8 +147,8 @@ def generate_llms_summary(html_files_data):
     summary += "- **Dates**: November 20-22, 2026\n"
     summary += "- **Location**: Devero Hotel & Spa, Cavenago di Brianza (MB), Italy\n"
     summary += "- **Focus**: Bachata Sensual, International Artists, Workshops, Social Parties\n"
-    summary += "- **Facts (EN)**: 1,000+ dancers · 20+ nations · 40+ hours of workshops · 22 hours of social dancing · 3 days\n"
-    summary += "- **Facts (IT)**: 1.000+ ballerini · 20+ nazioni · 40+ ore di workshop · 22 ore di social dancing · 3 giorni\n\n"
+    summary += "- **Facts (EN)**: 1,000+ dancers · 20+ nations · 40+ hours of workshops · 20+ hours of social dancing · 3 days\n"
+    summary += "- **Facts (IT)**: 1.000+ ballerini · 20+ nazioni · 40+ ore di workshop · 20+ ore di social dancing · 3 giorni\n\n"
     summary += "## Site Map (AI Context)\n"
 
     for data in html_files_data:

@@ -10,7 +10,7 @@ Canonical: https://milanosensualcongress.com/
 
 The most exclusive **Bachata Congress in Milan, Italy** — three days and nights of dancing with the world’s best artists, all under one roof.
 
-1,000+ dancers · 20+ nations · 40+ hours of workshops · 22 hours of social dancing · 3 days
+1,000+ dancers · 20+ nations · 40+ hours of workshops · 20+ hours of social dancing · 3 days
 
 4-Star Hotel & Spa Venue World-Class Masters International Jack & Jill Socials Till Sunrise
 
@@ -43,7 +43,7 @@ The International Choice
 
 ### Europe's Premier Bachata Gathering
 
-The Milano Sensual Congress has evolved into a global ecosystem for Bachata enthusiasts, attracting **more than 1000 dancers** from **over 20 nations** across the continent, with **22 hours of official social dancing** across three days and nights.
+The Milano Sensual Congress has evolved into a global ecosystem for Bachata enthusiasts, attracting **more than 1000 dancers** from **over 20 nations** across the continent, with **20+ hours of official social dancing** across three days and nights.
 
 #### English-Taught Workshops
 
@@ -59,7 +59,7 @@ Join a diverse community of high-level social dancers from Spain, France, German
 
 Social Dancing
 
-### 22 Hours of Social Dancing, Till Sunrise
+### 20+ Hours of Social Dancing, Till Sunrise
 
 Night parties until 5 AM on Friday and Saturday, plus afternoon socials on Saturday and Sunday — all under one roof at Devero Hotel.
 

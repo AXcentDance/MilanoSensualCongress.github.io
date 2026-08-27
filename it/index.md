@@ -10,7 +10,7 @@ Canonical: https://milanosensualcongress.com/it/
 
 Il **congresso di bachata più esclusivo d’Italia** — a Milano, tre giorni e tre notti di ballo con i migliori artisti internazionali, tutto sotto lo stesso tetto.
 
-1.000+ ballerini · 20+ nazioni · 40+ ore di workshop · 22 ore di social dancing · 3 giorni
+1.000+ ballerini · 20+ nazioni · 40+ ore di workshop · 20+ ore di social dancing · 3 giorni
 
 Hotel 4 Stelle con Spa Maestri di Livello Mondiale Jack & Jill Internazionale Social Fino all’Alba
 
@@ -43,7 +43,7 @@ La Scelta Internazionale
 
 ### L'Evento Leader tra i Congressi Bachata 2026
 
-Il Milano Sensual Congress è diventato un ecosistema globale e un punto di riferimento tra i **congressi bachata 2026** in Europa, attirando **oltre 1000 ballerini** da **più di 20 nazioni**, con **22 ore di social dancing ufficiale** in tre giorni e tre notti.
+Il Milano Sensual Congress è diventato un ecosistema globale e un punto di riferimento tra i **congressi bachata 2026** in Europa, attirando **oltre 1000 ballerini** da **più di 20 nazioni**, con **oltre 20 ore di social dancing ufficiale** in tre giorni e tre notti.
 
 #### Workshop in Inglese
 
@@ -59,7 +59,7 @@ Unisciti a una community diversificata di ballerini di alto livello provenienti 
 
 Social Dancing
 
-### 22 Ore di Social Dancing, Fino all'Alba
+### Oltre 20 Ore di Social Dancing, Fino all'Alba
 
 Party notturni fino alle 5 del mattino venerdì e sabato, più social pomeridiani sabato e domenica — tutto sotto lo stesso tetto al Devero Hotel.
 

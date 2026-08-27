@@ -2,7 +2,7 @@
 
 # Party Bachata e Social Dancing 2026 | Milano Sensual
 
-Orari ufficiali dei social del Milano Sensual Congress 2026: 22 ore di party bachata e social dancing fino alle 5 del mattino al Devero Hotel di Milano. Orari e pass.
+Orari ufficiali dei social del Milano Sensual Congress 2026: oltre 20 ore di party bachata e social dancing fino alle 5 del mattino al Devero Hotel di Milano. Orari e pass.
 
 Canonical: https://milanosensualcongress.com/it/party
 
@@ -94,7 +94,7 @@ Gli orari ufficiali dei social sono: venerdì social dance 23:00–05:00, sabato
 
 #### Quante ore di social dancing ci sono?
 
-Il Milano Sensual Congress 2026 offre 22 ore di social dancing ufficiale nel weekend: due party notturni fino alle 5 del mattino e due social pomeridiani, tutti all'interno del Devero Hotel.
+Il Milano Sensual Congress 2026 offre oltre 20 ore di social dancing ufficiale nel weekend: due party notturni fino alle 5 del mattino e due social pomeridiani, tutti all'interno del Devero Hotel.
 
 #### Quale biglietto serve per accedere ai party?
 

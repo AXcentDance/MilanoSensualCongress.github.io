@@ -2,7 +2,7 @@
 
 # Bachata Parties & Social Dancing 2026 | Milano Sensual
 
-Official social dance times for Milano Sensual Congress 2026: 22 hours of bachata parties and socials until 5 AM at Devero Hotel in Milan. Schedule, passes and party info.
+Official social dance times for Milano Sensual Congress 2026: 20+ hours of bachata parties and socials until 5 AM at Devero Hotel in Milan. Schedule, passes and party info.
 
 Canonical: https://milanosensualcongress.com/parties
 
@@ -94,7 +94,7 @@ The official social dance times are: Friday social dance 23:00–05:00, Saturday
 
 #### How many hours of social dancing are there?
 
-Milano Sensual Congress 2026 offers 22 hours of official social dancing across the weekend: two night parties until 5 AM and two afternoon socials, all inside Devero Hotel.
+Milano Sensual Congress 2026 offers 20+ hours of official social dancing across the weekend: two night parties until 5 AM and two afternoon socials, all inside Devero Hotel.
 
 #### Which ticket do I need to access the parties?
 

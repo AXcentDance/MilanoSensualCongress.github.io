@@ -24,7 +24,7 @@ Workshop
 
 [Acquista Biglietti](https://lasalsadelbaile.com/MSC2026) [Programma Workshop](https://milanosensualcongress.com/it/programma) [Masterclass Avanzata](https://milanosensualcongress.com/it/masterclass)
 
-1.000+ ballerini · 20+ nazioni · 40+ ore di workshop · 22 ore di social dancing · 3 giorni
+1.000+ ballerini · 20+ nazioni · 40+ ore di workshop · 20+ ore di social dancing · 3 giorni
 
 Workshop Bachata a Milano
 
