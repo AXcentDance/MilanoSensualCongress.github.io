@@ -34,17 +34,25 @@ jobs:
       - name: Install dependencies
         run: pip install beautifulsoup4
 
-      - name: Regenerate sitemap and llms-full.txt
+      - name: Regenerate sitemap, llms-full.txt, md twins and feeds
         run: |
           python3 scripts/generate_sitemap.py
           python3 scripts/generate_llms_text.py
+          if [ -f scripts/generate_md_twins.py ]; then
+            python3 scripts/generate_md_twins.py
+          fi
+          if [ -f scripts/generate_rss.py ]; then
+            python3 scripts/generate_rss.py
+          fi
 
       - name: Commit regenerated indexes
         run: |
           git config user.name "site-bot"
           git config user.email "actions@users.noreply.github.com"
-          if ! git diff --quiet sitemap.xml llms-full.txt llms.txt 2>/dev/null; then
-            git add sitemap.xml llms-full.txt llms.txt
+          git add sitemap.xml llms-full.txt llms.txt
+          git add -A -- '*.md' || true
+          if [ -f feed.xml ]; then git add feed.xml it/feed.xml; fi
+          if ! git diff --cached --quiet; then
             git commit -m "chore: regenerate sitemap and llms indexes [skip ci]"
             git push
           else

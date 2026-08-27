@@ -61,8 +61,8 @@ class HeadingAuditor(HTMLParser):
 def check_files(directory):
     html_files = []
     for root, dirs, files in os.walk(directory):
-        if 'node_modules' in dirs:
-            dirs.remove('node_modules')
+        # skip hidden dirs (.git, .claude worktrees) and node_modules
+        dirs[:] = [d for d in dirs if not d.startswith('.') and d != 'node_modules']
         for file in files:
             if file.endswith(".html"):
                 html_files.append(os.path.join(root, file))

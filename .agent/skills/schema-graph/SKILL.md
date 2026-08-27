@@ -48,7 +48,7 @@ Add the specific type of content for the page as a primary entity in the graph:
       "url": "https://milanosensualcongress.com",
       "logo": "https://milanosensualcongress.com/images/logo.webp",
       "sameAs": [
-        "https://www.instagram.com/milano_sensual_congress/"
+        "https://www.instagram.com/milanosensualcongress/"
       ]
     },
     {

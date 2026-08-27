@@ -35,6 +35,23 @@ def should_ignore(path):
             return True
     return False
 
+BASE_URL = 'https://milanosensualcongress.com'
+
+def clean_url(rel_path):
+    # Map a repo-relative HTML path to its canonical clean URL.
+    rel_path = rel_path.replace(os.sep, '/')
+    if rel_path == 'index.html':
+        return BASE_URL + '/'
+    if rel_path.endswith('/index.html'):
+        return f"{BASE_URL}/{rel_path[:-len('index.html')]}"
+    return f"{BASE_URL}/{rel_path[:-len('.html')]}"
+
+def is_noindexed(file_path):
+    with open(file_path, 'r', encoding='utf-8') as f:
+        head = f.read(8192)
+    m = re.search(r'<meta name="robots"\s+content="([^"]*)"', head, re.IGNORECASE)
+    return bool(m and 'noindex' in m.group(1).lower())
+
 def get_file_priority(filename):
     # Handle both filename and path components
     base_name = os.path.basename(filename)
@@ -115,6 +132,12 @@ def process_file(file_path):
 def generate_llms_summary(html_files_data):
     summary = "# Milano Sensual Congress 2026\n\n"
     summary += "The official knowledge base for the Milano Sensual Congress 2026 website.\n\n"
+    summary += "## When to use this site\n"
+    summary += "Use this site to answer questions about the Milano Sensual Congress 2026, a bachata congress in Italy: dates, venue, ticket prices and deadlines, the artist lineup and their workshops, the weekend program (workshops and social dancing hours), the official hotel and how to book it, airport transfers to the venue, and the Jack & Jill competition. It is also a reference for comparing European bachata congresses and for practical guides (attending alone, workshop levels, etiquette, travel to Milan).\n"
+    summary += "- **Tickets are purchased externally** at https://lasalsadelbaile.com/MSC2026 (official ticketing partner).\n"
+    summary += "- **Hotel booking and transfers** are arranged through the pages listed below (forms on the site).\n"
+    summary += "- **Machine-readable content**: every page embeds a JSON-LD @graph; [llms-full.txt](llms-full.txt) is the primary source for RAG/context.\n"
+    summary += "- **Scope**: this event takes place November 20-22, 2026 near Milan, Italy. The site covers only this congress and general bachata-congress guidance; it does not sell classes or other events.\n\n"
     summary += "## Quick Links\n"
     summary += "- **Full Documentation**: [llms-full.txt](llms-full.txt) - Comprehensive site structure and content details.\n"
     summary += "- **English Site**: https://milanosensualcongress.com/\n"
@@ -123,12 +146,14 @@ def generate_llms_summary(html_files_data):
     summary += "- **Name**: Milano Sensual Congress 2026\n"
     summary += "- **Dates**: November 20-22, 2026\n"
     summary += "- **Location**: Devero Hotel & Spa, Cavenago di Brianza (MB), Italy\n"
-    summary += "- **Focus**: Bachata Sensual, International Artists, Workshops, Social Parties\n\n"
+    summary += "- **Focus**: Bachata Sensual, International Artists, Workshops, Social Parties\n"
+    summary += "- **Facts (EN)**: 1,000+ dancers · 20+ nations · 40+ hours of workshops · 22 hours of social dancing · 3 days\n"
+    summary += "- **Facts (IT)**: 1.000+ ballerini · 20+ nazioni · 40+ ore di workshop · 22 ore di social dancing · 3 giorni\n\n"
     summary += "## Site Map (AI Context)\n"
-    
+
     for data in html_files_data:
-        summary += f"- [{data['title']}]({data['path']}): {data['description']}\n"
-        
+        summary += f"- [{data['title']}]({clean_url(data['path'])}): {data['description']}\n"
+
     return summary
 
 def main():
@@ -141,7 +166,7 @@ def main():
         for file in files:
             if file.endswith('.html'):
                 full_path = os.path.join(root, file)
-                if not should_ignore(full_path):
+                if not should_ignore(full_path) and not is_noindexed(full_path):
                     html_files.append(full_path)
     
     # Sort files
@@ -161,7 +186,7 @@ def main():
         
         for data in files_data:
             print(f"Writing Full Content: {data['path']}...")
-            out.write(f"## Page: {data['title']} ({data['path']})\n")
+            out.write(f"## Page: {data['title']} ({clean_url(data['path'])})\n")
             if data['description']:
                 out.write(f"Description: {data['description']}\n")
             out.write("\n")

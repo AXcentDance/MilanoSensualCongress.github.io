@@ -15,8 +15,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Inter', 'sans-serif'],
-        serif: ['Playfair Display', 'serif'],
+        sans: ['Inter', 'Inter Fallback', 'sans-serif'],
+        serif: ['Playfair Display', 'Playfair Display Fallback', 'serif'],
       },
       colors: {
         brand: {

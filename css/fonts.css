@@ -1,4 +1,21 @@
 /* Self-hosted variable fonts (formerly Google Fonts). Latin loads by default; latin-ext only when those characters appear. */
+/* Metrics-adjusted local fallbacks: values computed with fonttools from the shipped woff2 files vs the local fallback faces, so the swap from fallback to web font causes no reflow (CLS). */
+@font-face {
+  font-family: 'Inter Fallback';
+  src: local('Arial');
+  size-adjust: 109.38%;
+  ascent-override: 88.57%;
+  descent-override: 22.05%;
+  line-gap-override: 0%;
+}
+@font-face {
+  font-family: 'Playfair Display Fallback';
+  src: local('Times New Roman');
+  size-adjust: 110.64%;
+  ascent-override: 97.80%;
+  descent-override: 22.69%;
+  line-gap-override: 0%;
+}
 @font-face {
   font-family: 'Inter';
   font-style: normal;

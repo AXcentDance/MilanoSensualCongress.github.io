@@ -24,6 +24,23 @@
        python3 scripts/inline_critical_css.py -->
   <style data-inline="css/fonts.css">
 /* Self-hosted variable fonts (formerly Google Fonts). Latin loads by default; latin-ext only when those characters appear. */
+/* Metrics-adjusted local fallbacks: values computed with fonttools from the shipped woff2 files vs the local fallback faces, so the swap from fallback to web font causes no reflow (CLS). */
+@font-face {
+  font-family: 'Inter Fallback';
+  src: local('Arial');
+  size-adjust: 109.38%;
+  ascent-override: 88.57%;
+  descent-override: 22.05%;
+  line-gap-override: 0%;
+}
+@font-face {
+  font-family: 'Playfair Display Fallback';
+  src: local('Times New Roman');
+  size-adjust: 110.64%;
+  ascent-override: 97.80%;
+  descent-override: 22.69%;
+  line-gap-override: 0%;
+}
 @font-face {
   font-family: 'Inter';
   font-style: normal;
@@ -1271,13 +1288,26 @@ summary:focus-visible {
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": "Organization",
-        "@id": "https://milanosensualcongress.com/#organization",
-        "name": "Milano Sensual Congress",
-        "url": "https://milanosensualcongress.com",
-        "logo": "https://milanosensualcongress.com/images/logo.webp",
-        "sameAs": ["https://www.instagram.com/milano_sensual_congress/"]
-      },
+      "@type": "Organization",
+      "@id": "https://milanosensualcongress.com/#organization",
+      "name": "Milano Sensual Congress",
+      "url": "https://milanosensualcongress.com",
+      "logo": "https://milanosensualcongress.com/images/logo.webp",
+      "description": "Organizer of Milano Sensual Congress, the international Bachata Sensual congress in Milan, Italy, with workshops, shows and social dancing at Devero Hotel.",
+      "foundingDate": "2022-11-20",
+      "founder": [
+        { "@type": "Person", "name": "Marco Fracassi" },
+        { "@type": "Person", "name": "Alessandro Slamitz" }
+      ],
+      "address": { "@type": "PostalAddress", "streetAddress": "Largo Kennedy, 1", "addressLocality": "Cavenago di Brianza", "postalCode": "20873", "addressRegion": "MB", "addressCountry": "IT" },
+      "contactPoint": [
+        { "@type": "ContactPoint", "contactType": "customer service", "telephone": "+39-333-393-5911", "url": "https://milanosensualcongress.com/contact", "availableLanguage": ["English", "Italian"] },
+        { "@type": "ContactPoint", "contactType": "customer service", "telephone": "+41-79-966-84-81", "url": "https://milanosensualcongress.com/contact", "availableLanguage": ["English", "Italian"] }
+      ],
+      "sameAs": [
+        "https://www.instagram.com/milanosensualcongress/"
+      ]
+    },
       {
         "@type": "WebSite",
         "@id": "https://milanosensualcongress.com/#website",
@@ -1456,7 +1486,7 @@ summary:focus-visible {
       <div class="nav-links">
         <a href="../">Home</a>
         <a href="../artists">Artists</a>
-        <a href="../tickets">Tickets</a>
+        <a href="../tickets">Tickets</a><a href="../parties">Parties</a>
         <a href="../hotel">Hotel</a>
         <a href="../transfer">Transfer</a>
         <a class="active" href="../news">News</a>
@@ -1468,7 +1498,7 @@ summary:focus-visible {
       <details class="mobile-nav">
         <summary>Menu</summary>
         <div class="mobile-menu">
-          <a href="../">Home</a><a href="../artists">Artists</a><a href="../tickets">Tickets</a>
+          <a href="../">Home</a><a href="../artists">Artists</a><a href="../tickets">Tickets</a><a href="../parties">Parties</a>
           <a href="../hotel">Hotel</a><a href="../transfer">Transfer</a><a href="../news">News</a>
           <a href="../it/news/congresso-bachata-da-soli-guida-ballerini" lang="it">Italiano</a>
         </div>
@@ -1689,7 +1719,7 @@ summary:focus-visible {
         <p>Three days of Bachata, one international community.</p>
       </div>
       <nav aria-label="Footer navigation">
-        <a href="../tickets">Tickets</a><a href="../hotel">Hotel</a><a href="../transfer">Transfer</a>
+        <a href="../tickets">Tickets</a><a href="../parties">Parties</a><a href="../hotel">Hotel</a><a href="../transfer">Transfer</a>
         <a href="../faq">FAQ</a><a href="../terms">Terms &amp; privacy</a>
       </nav>
     </div>

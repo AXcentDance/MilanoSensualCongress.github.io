@@ -4,6 +4,11 @@ import re
 ROOT_DIR = "."
 IT_DIR = "it"
 
+# Pages allowed a deliberate og:title that diverges from <title>
+# (SERP-vs-social divergence). Repo-relative paths with forward slashes,
+# e.g. "news/some-article.html". Empty by default.
+OG_TITLE_DIVERGENCE_ALLOWLIST = set()
+
 def check_file(filepath, expected_locale):
     issues = []
     rel_path = os.path.relpath(filepath, ROOT_DIR)
@@ -36,7 +41,8 @@ def check_file(filepath, expected_locale):
         ot = og_title_match.group(1).strip()
         # Loose check: OG title should be contained in or equal to Title, or vice versa
         # Often Title has branding suffix "| Milano Sensual..."
-        if t != ot and ot not in t:
+        if t != ot and ot not in t \
+                and rel_path.replace(os.sep, '/') not in OG_TITLE_DIVERGENCE_ALLOWLIST:
              # Just a warning or note? User asked for mismatch check.
              issues.append(f"Title vs OG Title mismatch.\n      Title: {t}\n      OG:    {ot}")
 

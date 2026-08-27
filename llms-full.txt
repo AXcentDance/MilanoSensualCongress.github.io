@@ -1,8 +1,8 @@
 # Milano Sensual Congress 2026 - Full Site Documentation
-# Generated automatically on 2026-08-26 21:37
-# Total Pages: 67
+# Generated automatically on 2026-08-27 15:16
+# Total Pages: 68
 
-## Page: Milano Sensual Congress 2026 | Europe's Leading Bachata Congress (index.html)
+## Page: Milano Sensual Congress 2026 | Europe's Leading Bachata Congress (https://milanosensualcongress.com/)
 Description: The official Milano Sensual Congress 2026 (Nov 20-22). Europe's leading Bachata congress and the reference Bachata event in Italy. Join world-class artists in Milan.
 
 Milano Sensual Congress 2026 | Europe's Leading Bachata Congress
@@ -21,6 +21,8 @@ The most
 Bachata Congress in Milan, Italy
  — three days and nights of
  dancing with the world’s best artists, all under one roof.
+
+1,000+ dancers · 20+ nations · 40+ hours of workshops · 22 hours of social dancing · 3 days
 
  4-Star Hotel & Spa Venue
 
@@ -95,11 +97,13 @@ Europe's Premier Bachata Gathering
 more than 1000 dancers
  from
 over 20 nations
- across the continent.
+ across the continent, with
+22 hours of official social dancing
+ across three days and nights.
 
 English-Taught Workshops
 
-All 30+ hours of advanced workshops and masterclasses are conducted in
+All 40+ hours of advanced workshops and masterclasses are conducted in
 English
  by world-class artists to ensure full accessibility for our European attendees.
 
@@ -118,6 +122,31 @@ World-class luxury venue
 . Travelling independently? Read our practical guide to
 attending a Bachata Congress alone
 .
+
+Social Dancing
+
+22 Hours of Social Dancing, Till Sunrise
+
+Night parties until 5 AM on Friday and Saturday, plus afternoon socials on Saturday and Sunday — all under one roof at Devero Hotel.
+
+Friday
+
+Social Dance
+23:00 – 05:00
+
+Saturday
+
+Afternoon Social
+16:00 – 20:00
+Social Dance
+23:00 – 05:00
+
+Sunday
+
+Afternoon Social
+16:00 – 22:00
+
+ Parties & Social Dancing
 
 Full Passes
 
@@ -303,7 +332,7 @@ dedicated direct transport shuttles
 
 ---
 
-## Page: Congressi Bachata 2026: Milano Sensual Congress | L'evento di riferimento della Bachata in Italia (it/index.html)
+## Page: Congressi Bachata 2026: Milano Sensual Congress | L'evento di riferimento della Bachata in Italia (https://milanosensualcongress.com/it/)
 Description: Cerchi i migliori congressi bachata 2026? Il Milano Sensual Congress (20-22 Nov) è l'evento bachata leader in Italia con workshop internazionali e party esclusivi.
 
 Congressi Bachata 2026: Milano Sensual Congress | L'evento di riferimento della Bachata in Italia
@@ -321,6 +350,8 @@ Il Riferimento per i Congressi Bachata 2026 Italia
 Il
 congresso di bachata più esclusivo d’Italia
  — a Milano, tre giorni e tre notti di ballo con i migliori artisti internazionali, tutto sotto lo stesso tetto.
+
+1.000+ ballerini · 20+ nazioni · 40+ ore di workshop · 22 ore di social dancing · 3 giorni
 
  Hotel 4 Stelle con Spa
 
@@ -397,11 +428,13 @@ congressi bachata 2026
 oltre 1000 ballerini
  da
 più di 20 nazioni
-.
+, con
+22 ore di social dancing ufficiale
+ in tre giorni e tre notti.
 
 Workshop in Inglese
 
-Tutte le oltre 30 ore di workshop avanzati e masterclass sono tenute in
+Tutte le oltre 40 ore di workshop avanzati e masterclass sono tenute in
 Inglese
  da artisti di fama mondiale per garantire la piena accessibilità a tutti i partecipanti europei.
 
@@ -420,6 +453,31 @@ location di lusso internazionale
 . Viaggi in autonomia? Leggi la guida per
 andare da solo a un Congresso Bachata
 .
+
+Social Dancing
+
+22 Ore di Social Dancing, Fino all'Alba
+
+Party notturni fino alle 5 del mattino venerdì e sabato, più social pomeridiani sabato e domenica — tutto sotto lo stesso tetto al Devero Hotel.
+
+Venerdì
+
+Social Dance
+23:00 – 05:00
+
+Sabato
+
+Social Pomeridiano
+16:00 – 20:00
+Social Dance
+23:00 – 05:00
+
+Domenica
+
+Social Pomeridiano
+16:00 – 22:00
+
+ Party e Social Dancing
 
 Full Pass
 
@@ -607,7 +665,7 @@ navette dirette prenotabili
 
 ---
 
-## Page: Bachata Workshops 2026 in Milan | International Artists & Masterclasses (artists.html)
+## Page: Bachata Workshops 2026 in Milan | International Artists & Masterclasses (https://milanosensualcongress.com/artists)
 Description: Experience a world-class lineup at the International Milano Sensual Congress. Featuring Gero y Migle (Esencia Style), Klaus y Ros, and more top Bachata artists teaching workshops and performing in Milan.
 
 Bachata Workshops 2026 in Milan | International Artists & Masterclasses
@@ -621,7 +679,7 @@ International
 
 Bringing together artists from
 
-over 10 countries
+over 20 nations
  for one of the top events in Europe.
 New location, Devero Hotel 4 stars executive. 3 days of workshops, parties and an
  international Jack n Jill.
@@ -630,9 +688,9 @@ New location, Devero Hotel 4 stars executive. 3 days of workshops, parties and a
 
 Artists
 
- 10+
+ 20+
 
-Countries
+Nations
 
  40h
 
@@ -643,6 +701,8 @@ Workshops
  Workshop Program
 
  Advanced Masterclass
+
+1,000+ dancers · 20+ nations · 40+ hours of workshops · 22 hours of social dancing · 3 days
 
  Bachata Workshops in Milan
 
@@ -658,6 +718,8 @@ Musicality
 
 Social Dance Technique
 
+3 Workshops
+
 Esencia Masterclass
 
  Gero y Migle
@@ -666,11 +728,15 @@ Esencia Masterclass
 
 Read Spotlight →
 
+3 Workshops
+
  Klau y Ros
 
  Poland / Spain
 
 Read Spotlight →
+
+3 Workshops
 
  Cristian y Gabriella
 
@@ -678,11 +744,15 @@ Read Spotlight →
 
 Read Spotlight →
 
+2 Workshops
+
  Agustín y Alba
 
  Spain
 
 Read Spotlight →
+
+2 Workshops
 
  David y Ines
 
@@ -690,17 +760,23 @@ Read Spotlight →
 
 Read Spotlight →
 
+2 Workshops
+
  Nacho y Silvia
 
  Spain
 
 Read Spotlight →
 
+2 Workshops
+
  Aitor Gomez
 
  Spain
 
 Read Spotlight →
+
+2 Workshops
 
  Irene y Tomas
 
@@ -719,7 +795,7 @@ Tickets are selling fast. Secure your spot to learn from these artists and check
 
 ---
 
-## Page: Workshop Bachata 2026 a Milano | Artisti Internazionali e Masterclass (it/artists.html)
+## Page: Workshop Bachata 2026 a Milano | Artisti Internazionali e Masterclass (https://milanosensualcongress.com/it/artists)
 Description: Scopri la lineup di classe mondiale al Milano Sensual Congress. Con Gero y Migle (Esencia Style), Klaus y Ros, e altri top artisti di Bachata che terranno workshop e show a Milano.
 
 Workshop Bachata 2026 a Milano | Artisti Internazionali e Masterclass
@@ -740,9 +816,9 @@ congressi bachata 2026
 
 Artisti
 
- 10+
+ 20+
 
-Paesi
+Nazioni
 
  40h
 
@@ -753,6 +829,8 @@ Workshop
  Programma Workshop
 
  Masterclass Avanzata
+
+1.000+ ballerini · 20+ nazioni · 40+ ore di workshop · 22 ore di social dancing · 3 giorni
 
  Workshop Bachata a Milano
 
@@ -768,6 +846,8 @@ Musicalita
 
 Tecnica Social
 
+3 Workshop
+
 Masterclass Esencia
 
  Gero y Migle
@@ -776,11 +856,15 @@ Masterclass Esencia
 
 Leggi Spotlight →
 
+3 Workshop
+
  Klau y Ros
 
  Polonia / Spagna
 
 Leggi Spotlight →
+
+3 Workshop
 
  Cristian y Gabriella
 
@@ -788,11 +872,15 @@ Leggi Spotlight →
 
 Leggi Spotlight →
 
+2 Workshop
+
  Agustín y Alba
 
  Spagna
 
 Leggi Spotlight →
+
+2 Workshop
 
  David y Ines
 
@@ -800,17 +888,23 @@ Leggi Spotlight →
 
 Leggi Spotlight →
 
+2 Workshop
+
  Nacho y Silvia
 
  Spagna
 
 Leggi Spotlight →
 
+2 Workshop
+
  Aitor Gomez
 
  Spagna
 
 Leggi Spotlight →
+
+2 Workshop
 
  Irene y Tomas
 
@@ -829,7 +923,7 @@ I biglietti stanno andando veloci. Assicura il tuo posto per imparare da questi 
 
 ---
 
-## Page: Biglietti Congresso Bachata 2026 | Milano Sensual Congress (it/tickets.html)
+## Page: Biglietti Congresso Bachata 2026 | Milano Sensual Congress (https://milanosensualcongress.com/it/tickets)
 Description: Acquista i tuoi biglietti per il Milano Sensual Congress 2026. Scegli tra Full Pass, Party Pass e Day Pass. Assicurati il tuo posto al miglior prezzo oggi.
 
 Biglietti Congresso Bachata 2026 | Milano Sensual Congress
@@ -844,6 +938,8 @@ Partecipa al più atteso dei
 
 congressi bachata 2026
 . Scegli il pass che fa per te e preparati a ballare.
+
+1.000+ ballerini · 20+ nazioni · 40+ ore di workshop · 22 ore di social dancing · 3 giorni
 
 Full Pass a 130€ fino alla mezzanotte del 15 settembre
 
@@ -890,6 +986,9 @@ Tutte
 
 Oltre
  40 Ore di Workshop
+
+22
+ Ore di Social Dancing
 
 Social Pomeridiani
 
@@ -1052,7 +1151,7 @@ Devero
 
 ---
 
-## Page: Buy Tickets for Bachata Congress 2026 | Milano Sensual Congress (tickets.html)
+## Page: Buy Tickets for Bachata Congress 2026 | Milano Sensual Congress (https://milanosensualcongress.com/tickets)
 Description: Buy tickets for the top International Bachata Congress in Italy. Get your Full Pass for Milano Sensual Congress 2026. Best prices for the premier Bachata festival in Milan.
 
 Buy Tickets for Bachata Congress 2026 | Milano Sensual Congress
@@ -1066,6 +1165,8 @@ Tickets
 Join us at the stunning Devero
  Hotel for the premier Bachata event. We went sold out last year! Experience over 40 hours of workshops,
  world-class artists, and unforgettable parties.
+
+1,000+ dancers · 20+ nations · 40+ hours of workshops · 22 hours of social dancing · 3 days
 
 Full Pass €130 until September 15 at midnight
 
@@ -1113,6 +1214,9 @@ All
 
 40+
  Hours of Workshops
+
+22
+ Hours of Social Dancing
 
 Afternoon socials
 
@@ -1275,7 +1379,7 @@ Devero
 
 ---
 
-## Page: Official Congress Hotel | International Bachata Festival Venue (hotel.html)
+## Page: Official Congress Hotel | International Bachata Festival Venue (https://milanosensualcongress.com/hotel)
 Description: Book your stay at Devero Hotel & Spa, the official venue for Milano Sensual Congress 2026. Luxury accommodation with direct access to dance floors and spa facilities.
 
 Official Congress Hotel | International Bachata Festival Venue
@@ -1290,6 +1394,8 @@ Devero
 Where Comfort Meets Bachata
 
  Book Now
+
+ Booking Guide
 
  Exclusive Event Rates
 
@@ -1386,7 +1492,7 @@ info@oltreilviaggio.net
 
 ---
 
-## Page: Hotel Ufficiale e Alloggi | Milano Sensual Congress 2026 (it/hotel.html)
+## Page: Hotel Ufficiale e Alloggi | Milano Sensual Congress 2026 (https://milanosensualcongress.com/it/hotel)
 Description: Prenota il tuo soggiorno al Devero Hotel, la sede ufficiale del Milano Sensual Congress 2026. Camere di lusso, spa e servizi esclusivi per un'esperienza indimenticabile.
 
 Hotel Ufficiale e Alloggi | Milano Sensual Congress 2026
@@ -1404,6 +1510,8 @@ congressi bachata 2026
  workshop e delle feste.
 
  Prenota Ora
+
+ Guida alla Prenotazione
 
  Tariffe Esclusive Evento
 
@@ -1501,7 +1609,7 @@ info@oltreilviaggio.net
 
 ---
 
-## Page: Contact Us | Milano Sensual Congress - International Bachata Support (contact.html)
+## Page: Contact Us | Milano Sensual Congress - International Bachata Support (https://milanosensualcongress.com/contact)
 Description: Have questions about Milano Sensual Congress? Contact our team for support regarding tickets, hotel booking, or event details.
 
 Contact Us | Milano Sensual Congress - International Bachata Support
@@ -1610,7 +1718,7 @@ Milan Malpensa (MXP)
 
 ---
 
-## Page: Contattaci | Milano Sensual Congress 2026 (it/contact.html)
+## Page: Contattaci | Milano Sensual Congress 2026 (https://milanosensualcongress.com/it/contact)
 Description: Contatta il team del Milano Sensual Congress. Hai domande su biglietti, hotel o programma? Siamo qui per aiutarti.
 
 Contattaci | Milano Sensual Congress 2026
@@ -1719,7 +1827,7 @@ Milano Malpensa (MXP)
 
 ---
 
-## Page: Termini e Condizioni - Milano Sensual Congress 2026 (it/terms.html)
+## Page: Termini e Condizioni - Milano Sensual Congress 2026 (https://milanosensualcongress.com/it/terms)
 Description: Leggi i termini e le condizioni ufficiali del Milano Sensual Congress 2026, inclusi la polizza sui biglietti, la privacy policy e le regole dell'evento.
 
 Termini e Condizioni - Milano Sensual Congress 2026
@@ -1838,7 +1946,7 @@ pagina contatti
 
 ---
 
-## Page: Terms & Conditions - Milano Sensual Congress 2026 (terms.html)
+## Page: Terms & Conditions - Milano Sensual Congress 2026 (https://milanosensualcongress.com/terms)
 Description: Read the official terms and conditions for Milano Sensual Congress 2026, including our ticket policy, privacy policy, and event rules.
 
 Terms & Conditions - Milano Sensual Congress 2026
@@ -1966,23 +2074,7 @@ contact page
 
 ---
 
-## Page: Page Not Found | Milano Sensual Congress 2026 (404.html)
-Description: The page you are looking for does not exist. Return to the Milano Sensual Congress home page to find your way.
-
-Page Not Found | Milano Sensual Congress 2026
-
- 404
-
-Page Not Found
-
- The page you are looking for might have been removed, had its name changed, or is temporarily
- unavailable.
-
- Return Home
-
----
-
-## Page: BookHotel | Milano Sensual Congress 2026 (BookHotel.html)
+## Page: BookHotel | Milano Sensual Congress 2026 (https://milanosensualcongress.com/BookHotel)
 Description: Book your official Milano Sensual Congress hotel room at Devero Hotel & Spa for 20-22 November 2026.
 
 BookHotel | Milano Sensual Congress 2026
@@ -2111,7 +2203,7 @@ Richiedo fattura
 
 ---
 
-## Page: Bachata Congress 2026 in Europe | Milano Sensual Congress (bachata-congress-2026.html)
+## Page: Bachata Congress 2026 in Europe | Milano Sensual Congress (https://milanosensualcongress.com/bachata-congress-2026)
 Description: Looking for a bachata congress in 2026? Discover Milano Sensual Congress in Italy: international bachata workshops, parties, artists, hotel venue and social dancing in Milan.
 
 Bachata Congress 2026 in Europe | Milano Sensual Congress
@@ -2124,6 +2216,8 @@ in Milan, Italy
 Join Milano Sensual Congress from
  20 to 22 November 2026 for international bachata workshops, social dancing, parties, artists and a full weekend
  inside the official congress hotel.
+
+1,000+ dancers · 20+ nations · 40+ hours of workshops · 22 hours of social dancing · 3 days
 
  Get Tickets
 
@@ -2209,7 +2303,7 @@ A congress combines workshops, parties, social dancing, shows, artists and trave
 
 ---
 
-## Page: Bachata Congress FAQ 2026 | Workshops, Parties, Full Pass (faq.html)
+## Page: Bachata Congress FAQ 2026 | Workshops, Parties, Full Pass (https://milanosensualcongress.com/faq)
 Description: Answers to common Bachata congress questions: what a Bachata congress is, beginner levels, what to bring, Full Pass inclusions, workshops, parties and hotel tips.
 
 Bachata Congress FAQ 2026 | Workshops, Parties, Full Pass
@@ -2219,6 +2313,8 @@ Bachata Congress FAQ
 Bachata Congress FAQ 2026
 
 Practical answers for international dancers planning workshops, parties, social dancing and a full weekend at Milano Sensual Congress.
+
+1,000+ dancers · 20+ nations · 40+ hours of workshops · 22 hours of social dancing · 3 days
 
 What is a Bachata congress?
 
@@ -2246,7 +2342,7 @@ Bachata Congress 2026 in Europe guide
 
 ---
 
-## Page: From Social Dancer to International Artist: The Milano Sensual Jack & Jill 2026 (jacknjill.html)
+## Page: From Social Dancer to International Artist: The Milano Sensual Jack & Jill 2026 (https://milanosensualcongress.com/jacknjill)
 Description: Join the International Bachata Jack & Jill at Milano Sensual Congress 2026. Compete for a spot in the 2027 artist lineup and more. International judges and top dancers from Europe.
 
 From Social Dancer to International Artist: The Milano Sensual Jack & Jill 2026
@@ -2312,7 +2408,7 @@ Get Your Pass First
 
 ---
 
-## Page: Advanced Bachata Training 2026 in Milan | Masterclass Workshops (masterclass.html)
+## Page: Advanced Bachata Training 2026 in Milan | Masterclass Workshops (https://milanosensualcongress.com/masterclass)
 Description: Advanced Bachata training, masterclasses and intensive workshops in Milan for dancers seeking technique, musicality, connection, body mechanics and social dance formation.
 
 Advanced Bachata Training 2026 in Milan | Masterclass Workshops
@@ -2383,7 +2479,7 @@ Yes. A valid Full Pass is required before adding the Masterclass Upgrade. The ma
 
 ---
 
-## Page: Bachata Congress 2026 News, Festivals & Dance Guides (news.html)
+## Page: Bachata Congress 2026 News, Festivals & Dance Guides (https://milanosensualcongress.com/news)
 Description: Stay updated with the latest Bachata news, festival guides, and dance insights from the European Bachata scene.
 
 Bachata Congress 2026 News, Festivals & Dance Guides
@@ -2405,7 +2501,9 @@ August 8, 2026
 
 Going to a Bachata Congress Alone?
 
-A modern field guide to partner rotation, workshops, social dancing, safety and meeting people when you arrive without a partner or group.
+A modern field guide to partner rotation, workshops, social dancing, safety and meeting people when you arrive without a partner or group. Travelling in? See also the
+Milan travel guide
+ for airports and shuttles.
 
 Read the Solo Guide
 
@@ -2428,6 +2526,8 @@ Previous Full Pass Tier: €125 Until July 31
 This ticket tier ended on July 31. See the ticket page for the current Full Pass price and next confirmed deadline.
 
 See Current Tickets
+
+Read the Archive
 
 May 11, 2026
 
@@ -2565,7 +2665,7 @@ Join
 
 ---
 
-## Page: Agustin & Alba: The Rising Stars & Future of Bachata Sensual | Milano Sensual Congress (news/agustinyalba-bachata-sensual-rising-stars.html)
+## Page: Agustin & Alba: The Rising Stars & Future of Bachata Sensual | Milano Sensual Congress (https://milanosensualcongress.com/news/agustinyalba-bachata-sensual-rising-stars)
 Description: Meet Agustin & Alba, the super-young duo representing the future of Bachata Sensual worldwide. Join their 2 workshops at Milano Sensual Congress 2026.
 
 Agustin & Alba: The Rising Stars & Future of Bachata Sensual | Milano Sensual Congress
@@ -2629,7 +2729,7 @@ Get Your Full Pass
 
 ---
 
-## Page: Aitor Gomez: The Perfect Fusion of Bachata Sensual & Dominican Roots | Milano Sensual Congress (news/aitor-gomez-bachata-sensual-dominican-roots.html)
+## Page: Aitor Gomez: The Perfect Fusion of Bachata Sensual & Dominican Roots | Milano Sensual Congress (https://milanosensualcongress.com/news/aitor-gomez-bachata-sensual-dominican-roots)
 Description: Discover the unique style of Aitor Gomez. A master of Dominican footwork and Bachata Sensual, bringing his modern fusion to Milano Sensual Congress 2026.
 
 Aitor Gomez: The Perfect Fusion of Bachata Sensual & Dominican Roots | Milano Sensual Congress
@@ -2691,7 +2791,7 @@ Get Your Full Pass
 
 ---
 
-## Page: Bachata Congress Alone: Festival & Workshop Guide (news/bachata-congress-alone-solo-dancer-guide.html)
+## Page: Bachata Congress Alone: Festival & Workshop Guide (https://milanosensualcongress.com/news/bachata-congress-alone-solo-dancer-guide)
 Description: Going to a Bachata Congress alone? Learn how Bachata Workshops, partner rotation and social dancing work at international Bachata Festivals in Milan.
 
 Bachata Congress Alone: Festival & Workshop Guide
@@ -2907,7 +3007,7 @@ Get your Full Pass
 
 ---
 
-## Page: Bachata Congress Etiquette: Social Dancing, Workshops & Parties (news/bachata-congress-etiquette-social-dancing-workshops-parties.html)
+## Page: Bachata Congress Etiquette: Social Dancing, Workshops & Parties (https://milanosensualcongress.com/news/bachata-congress-etiquette-social-dancing-workshops-parties)
 Description: Learn bachata congress etiquette for social dancing, workshops and parties. A practical guide for international dancers attending Milano Sensual Congress 2026.
 
 Bachata Congress Etiquette: Social Dancing, Workshops & Parties
@@ -3023,7 +3123,7 @@ Book Your Full Pass
 
 ---
 
-## Page: Bachata Festivals in Europe 2026-2027: Month-by-Month Calendar (news/bachata-festivals-europe-2026-2027-calendar.html)
+## Page: Bachata Festivals in Europe 2026-2027: Month-by-Month Calendar (https://milanosensualcongress.com/news/bachata-festivals-europe-2026-2027-calendar)
 Description: The complete calendar of Bachata festivals and congresses in Europe for the 2026-2027 season. Dates for Milan, Spain, Romania and more Bachata events, month by month.
 
 Bachata Festivals in Europe 2026-2027: Month-by-Month Calendar
@@ -3147,7 +3247,7 @@ Book Your Full Pass Now
 
 ---
 
-## Page: Bachata in Italy 2026: Milan Dance Destination | Milano Sensual Congress (news/bachata-italy-2026-milan-dance-destination.html)
+## Page: Bachata in Italy 2026: Milan Dance Destination | Milano Sensual Congress (https://milanosensualcongress.com/news/bachata-italy-2026-milan-dance-destination)
 Description: Discover why Milan is becoming a must-visit Bachata destination in Italy for 2026, with Bachata Congress energy, workshops, parties, Devero Hotel and Latin Festivals in Europe appeal.
 
 Bachata in Italy 2026: Milan Dance Destination | Milano Sensual Congress
@@ -3273,7 +3373,7 @@ Book Your Full Pass
 
 ---
 
-## Page: Bachata Workshop Levels: Choose Classes at a Congress (news/bachata-workshop-levels-guide-congress.html)
+## Page: Bachata Workshop Levels: Choose Classes at a Congress (https://milanosensualcongress.com/news/bachata-workshop-levels-guide-congress)
 Description: Not sure which Bachata Workshop level to choose? Learn how beginner, intermediate and advanced dancers can enjoy Bachata Congress workshops in Milan.
 
 Bachata Workshop Levels: Choose Classes at a Congress
@@ -3401,7 +3501,7 @@ Book Your Full Pass
 
 ---
 
-## Page: Best Bachata Social in Italy 2026 | Milano Sensual (news/best-bachata-party-italy-2026.html)
+## Page: Best Bachata Social in Italy 2026 | Milano Sensual (https://milanosensualcongress.com/news/best-bachata-party-italy-2026)
 Description: Milano Sensual Congress 2026 is set to be the best Bachata social in Italy: 1,000+ dancers, limited spots and last year sold out.
 
 Best Bachata Social in Italy 2026 | Milano Sensual
@@ -3519,7 +3619,7 @@ Book Your Full Pass
 
 ---
 
-## Page: Cristian y Gabriella: The Masters of Technical Bachata | Milano Sensual Congress (news/cristian-y-gabriella-bachata-world-masters-2026.html)
+## Page: Cristian y Gabriella: The Masters of Technical Bachata | Milano Sensual Congress (https://milanosensualcongress.com/news/cristian-y-gabriella-bachata-world-masters-2026)
 Description: Discover the world-class precision of Cristian y Gabriella. The Spanish Bachata masters bring their technical excellence and creative fusion to Milano Sensual Congress 2026.
 
 Cristian y Gabriella: The Masters of Technical Bachata | Milano Sensual Congress
@@ -3579,7 +3679,7 @@ Secure Your Full Pass
 
 ---
 
-## Page: David y Inés: The Masters of Technical Precision & Fluidity | Milano Sensual Congress (news/david-y-ines-bachata-sensual-masters-2026.html)
+## Page: David y Inés: The Masters of Technical Precision & Fluidity | Milano Sensual Congress (https://milanosensualcongress.com/news/david-y-ines-bachata-sensual-masters-2026)
 Description: Experience the world-class expertise of David y Inés at Milano Sensual Congress 2026. Discover their unique fusion of Bachata Sensual and athletic discipline.
 
 David y Inés: The Masters of Technical Precision & Fluidity | Milano Sensual Congress
@@ -3643,7 +3743,7 @@ Get Your Full Pass
 
 ---
 
-## Page: Previous Full Pass Tier: €125 Until July 31 | Archive (news/full-pass-masterclass-price-increase-june-15-2026.html)
+## Page: Previous Full Pass Tier: €125 Until July 31 | Archive (https://milanosensualcongress.com/news/full-pass-masterclass-price-increase-june-15-2026)
 Description: Archived Milano Sensual Congress ticket update: the €125 Full Pass tier ended July 31. Check current Bachata Congress prices and deadlines.
 
 Previous Full Pass Tier: €125 Until July 31 | Archive
@@ -3754,7 +3854,7 @@ Book Your Ticket
 
 ---
 
-## Page: Gero y Migle Bachata: Discover the Masters of Esencia Style | Milano Sensual Congress 2026 (news/gero-y-migle-bachata-masters-2026.html)
+## Page: Gero y Migle Bachata: Discover the Masters of Esencia Style | Milano Sensual Congress 2026 (https://milanosensualcongress.com/news/gero-y-migle-bachata-masters-2026)
 Description: Discover the background, style, and unique chemistry of world-renowned Bachata artists Gero and Migle. Join their exclusive Esencia Style masterclasses at Milano Sensual Congress 2026.
 
 Gero y Migle Bachata: Discover the Masters of Esencia Style | Milano Sensual Congress 2026
@@ -3835,7 +3935,7 @@ View Artist Lineup
 
 ---
 
-## Page: Irene y Tomas Bachata: Master the Essence of Bachata Sensual | Milano Sensual Congress 2026 (news/irene-y-tomas-bachata-sensual-masters.html)
+## Page: Irene y Tomas Bachata: Master the Essence of Bachata Sensual | Milano Sensual Congress 2026 (https://milanosensualcongress.com/news/irene-y-tomas-bachata-sensual-masters)
 Description: Discover the journey of Irene and Tomas, official Bachata Sensual ambassadors trained by Korke and Judith. Join their exclusive workshops at Milano Sensual Congress 2026.
 
 Irene y Tomas Bachata: Master the Essence of Bachata Sensual | Milano Sensual Congress 2026
@@ -3911,7 +4011,7 @@ View Artist Lineup
 
 ---
 
-## Page: Klau y Ros: The Masters of Endless Bachata | Milano Sensual Congress (news/klau-y-ros-endless-bachata-masters-2026.html)
+## Page: Klau y Ros: The Masters of Endless Bachata | Milano Sensual Congress (https://milanosensualcongress.com/news/klau-y-ros-endless-bachata-masters-2026)
 Description: Discover the signature Endless Bachata style of Klau y Ros. Learn about their journey from Poland and Spain to international Bachata masters joining Milano Sensual Congress 2026.
 
 Klau y Ros: The Masters of Endless Bachata | Milano Sensual Congress
@@ -3969,7 +4069,7 @@ Get Your Full Pass
 
 ---
 
-## Page: Milan Bachata Travel Guide 2026: Airports, Transfers & Local Tips (news/milan-bachata-travel-guide-2026.html)
+## Page: Milan Bachata Travel Guide 2026: Airports, Transfers & Local Tips (https://milanosensualcongress.com/news/milan-bachata-travel-guide-2026)
 Description: Planning your trip to Milano Sensual Congress 2026? Read our complete travel guide for bachata dancers: airports, official shuttles, and how to navigate Milan.
 
 Milan Bachata Travel Guide 2026: Airports, Transfers & Local Tips
@@ -4043,7 +4143,7 @@ Full Pass tickets
 
 ---
 
-## Page: Nacho y Silvia: The Rising Stars of Bachata Esencia | Milano Sensual Congress 2026 (news/nacho-y-silvia-bachata-esencia-new-generation.html)
+## Page: Nacho y Silvia: The Rising Stars of Bachata Esencia | Milano Sensual Congress 2026 (https://milanosensualcongress.com/news/nacho-y-silvia-bachata-esencia-new-generation)
 Description: Experience the energy of the new generation. Nacho and Silvia bring their signature Esencia Style from Madrid to Milano Sensual Congress 2026. Discover their journey.
 
 Nacho y Silvia: The Rising Stars of Bachata Esencia | Milano Sensual Congress 2026
@@ -4119,7 +4219,7 @@ View Artist Lineup
 
 ---
 
-## Page: Top 5 Must-Visit Bachata Congresses in Europe 2026 | Milano Sensual Congress (news/top-5-bachata-congresses-europe-2026.html)
+## Page: Top 5 Must-Visit Bachata Congresses in Europe 2026 | Milano Sensual Congress (https://milanosensualcongress.com/news/top-5-bachata-congresses-europe-2026)
 Description: Our expert guide to the top 5 Bachata festivals in Europe for 2026. Discover why Milano Sensual, Bachaturo, and others are the must-visit events this year.
 
 Top 5 Must-Visit Bachata Congresses in Europe 2026 | Milano Sensual Congress
@@ -4200,7 +4300,7 @@ Book Your Full Pass Now
 
 ---
 
-## Page: Weekly Classes vs. Congresses: How to Elevate Your Bachata Style | Milano Sensual Congress (news/weekly-classes-vs-bachata-congresses.html)
+## Page: Weekly Classes vs. Congresses: How to Elevate Your Bachata Style | Milano Sensual Congress (https://milanosensualcongress.com/news/weekly-classes-vs-bachata-congresses)
 Description: Discover the difference between learning Bachata at weekly classes versus congresses. Learn why classes build foundation, but congresses develop your unique style.
 
 Weekly Classes vs. Congresses: How to Elevate Your Bachata Style | Milano Sensual Congress
@@ -4278,7 +4378,7 @@ Secure Your Full Pass
 
 ---
 
-## Page: What to Expect from a Bachata Congress | Milano Sensual Congress (news/what-to-expect-bachata-congress-2026.html)
+## Page: What to Expect from a Bachata Congress | Milano Sensual Congress (https://milanosensualcongress.com/news/what-to-expect-bachata-congress-2026)
 Description: Discover what to expect at a Bachata congress in 2026. Learn about workshops, social dancing, and why learning from international artists is vital.
 
 What to Expect from a Bachata Congress | Milano Sensual Congress
@@ -4352,7 +4452,137 @@ Book Your Full Pass Now
 
 ---
 
-## Page: Bachata Workshop Schedule 2026 | Milano Sensual Congress Program (program.html)
+## Page: Bachata Parties & Social Dancing 2026 | Milano Sensual (https://milanosensualcongress.com/parties)
+Description: Official social dance times for Milano Sensual Congress 2026: 22 hours of bachata parties and socials until 5 AM at Devero Hotel in Milan. Schedule, passes and party info.
+
+Bachata Parties & Social Dancing 2026 | Milano Sensual
+
+Official Social Dance Times 2026
+
+Bachata Parties
+& Social Dancing in Milan
+
+22 hours of official social dancing
+ from 20 to 22 November 2026 — night parties until 5 AM and afternoon socials, all under one roof at Devero Hotel.
+
+ Get Your Pass
+
+ See the Schedule
+
+22h
+
+Of social dancing
+
+05:00
+
+Socials till sunrise
+
+2
+
+Afternoon socials
+
+1000+
+
+International dancers
+
+20 - 21 - 22 November 2026
+
+Official Social Dance Times
+
+These are the confirmed party and social dancing hours for Milano Sensual Congress 2026 at Devero Hotel. DJ sets and shows will be announced closer to the event.
+
+Friday
+
+Opening Night
+
+Social Dance
+
+23:00 – 05:00
+
+Saturday
+
+Full Congress Day
+
+Afternoon Social
+
+16:00 – 20:00
+
+Social Dance
+
+23:00 – 05:00
+
+Sunday
+
+Final Day
+
+Afternoon Social
+
+16:00 – 22:00
+
+Workshop hours are listed on the
+congress program page
+. Times are the official social dance times and may be subject to slight adjustments.
+
+Access & Tickets
+
+Which pass gets you on the dance floor
+
+Full Pass — €130 until September 15:
+ includes all workshops, shows, night parties and afternoon socials of the weekend.
+
+Saturday Afternoon Social:
+ access with a Full Pass or a Saturday Day Pass.
+
+Full Party Pass:
+ access to all official parties (Friday, Saturday & Sunday) — available soon on the tickets page.
+
+See All Tickets
+
+Sleep On Site
+
+Why dancers stay till sunrise
+
+A social floor built for international dancers
+
+1000+ dancers, 20+ nations
+
+The socials bring together dancers from Italy, Spain, France, Germany, Switzerland and beyond — a truly international floor where every dance is a new connection. New to congress socials? Read our
+social dancing etiquette guide
+.
+
+Everything under one roof
+
+Parties, workshops and your room are all inside Devero Hotel. Dance until 5 AM, take the elevator to bed, and be back for the afternoon social — no taxis, no cold walks between venues.
+
+Shows & artist socials
+
+The night parties feature shows from the
+international artist lineup
+, and the artists stay to dance socials with attendees. Last edition sold out — read why it is set to be
+the best bachata social in Italy
+.
+
+Bachata Party FAQ
+
+What time are the bachata parties at Milano Sensual Congress 2026?
+
+The official social dance times are: Friday social dance 23:00–05:00, Saturday afternoon social 16:00–20:00, Saturday social dance 23:00–05:00, and Sunday afternoon social 16:00–22:00.
+
+How many hours of social dancing are there?
+
+Milano Sensual Congress 2026 offers 22 hours of official social dancing across the weekend: two night parties until 5 AM and two afternoon socials, all inside Devero Hotel.
+
+Which ticket do I need to access the parties?
+
+The Full Pass includes all parties and afternoon socials. To access the Saturday afternoon social you need either a Full Pass or a Saturday Day Pass. A Full Party Pass covering all official parties will be available soon.
+
+Where do the parties take place?
+
+All parties and socials take place at Devero Hotel in Cavenago di Brianza, the official congress venue. Workshops, parties and accommodation are under one roof, so you can dance until sunrise and sleep on site.
+
+---
+
+## Page: Bachata Workshop Schedule 2026 | Milano Sensual Congress Program (https://milanosensualcongress.com/program)
 Description: Preview the Milano Sensual Congress 2026 program: Bachata workshop schedule, party times and social dancing hours for Friday, Saturday and Sunday. Full schedule out in November.
 
 Bachata Workshop Schedule 2026 | Milano Sensual Congress Program
@@ -4363,7 +4593,11 @@ Bachata Workshop Schedule 2026
 
 The detailed class-by-class program is
 out in November
-. This teaser gives the expected workshop and social dancing structure for the weekend.
+. This teaser gives the expected structure for the weekend:
+40+ hours of workshops
+ and
+22 hours of official social dancing
+.
 
 Friday
 
@@ -4382,7 +4616,10 @@ Full Congress Day
 10:00 - 20:00
 Workshops
 
-00:00 - 05:00
+16:00 - 20:00
+Afternoon social
+
+23:00 - 05:00
 Social dancing
 
 Sunday
@@ -4393,7 +4630,7 @@ Final Day
 Workshops
 
 16:00 - 22:00
-Social dancing
+Afternoon social
 
 Out in November
 
@@ -4408,7 +4645,9 @@ The complete Milano Sensual Congress 2026 workshop schedule, including class-by-
 
 What time are the Bachata workshops and parties?
 
-The current preview has workshops from 18:00 to 23:00 on Friday, 10:00 to 20:00 on Saturday and 10:00 to 16:00 on Sunday. Social dancing is planned from 23:00 to 05:00 on Friday, 00:00 to 05:00 on Saturday and 16:00 to 22:00 on Sunday.
+The current preview has workshops from 18:00 to 23:00 on Friday, 10:00 to 20:00 on Saturday and 10:00 to 16:00 on Sunday. The official social dance times are 23:00 to 05:00 on Friday, 16:00 to 20:00 and 23:00 to 05:00 on Saturday, and 16:00 to 22:00 on Sunday. See the full details on the
+parties & social dancing page
+.
 
 Can the congress program change?
 
@@ -4416,7 +4655,7 @@ Yes. This preview is subject to slight changes while the final Bachata congress 
 
 ---
 
-## Page: Transfer Service | Milano Sensual Congress 2026 (transfer.html)
+## Page: Transfer Service | Milano Sensual Congress 2026 (https://milanosensualcongress.com/transfer)
 Description: Official transfer service for Milano Sensual Congress 2026. Book your ride from Malpensa, Linate, Bergamo, or Milano Centrale to Devero Hotel.
 
 Transfer Service | Milano Sensual Congress 2026
@@ -4501,7 +4740,7 @@ Needs to be booked in advance.
 
 ---
 
-## Page: Prenota l'Hotel | Milano Sensual Congress 2026 (it/BookHotel.html)
+## Page: Prenota l'Hotel | Milano Sensual Congress 2026 (https://milanosensualcongress.com/it/BookHotel)
 Description: Prenota la camera ufficiale del Milano Sensual Congress al Devero Hotel & Spa per il 20-22 novembre 2026.
 
 Prenota l'Hotel | Milano Sensual Congress 2026
@@ -4600,7 +4839,7 @@ Richiedo fattura
 
 ---
 
-## Page: Congresso Bachata 2026 in Europa | Milano Sensual Congress (it/congresso-bachata-2026.html)
+## Page: Congresso Bachata 2026 in Europa | Milano Sensual Congress (https://milanosensualcongress.com/it/congresso-bachata-2026)
 Description: Cerchi un congresso bachata nel 2026? Scopri Milano Sensual Congress in Italia: workshop bachata internazionali, party, artisti, hotel ufficiale e social dancing a Milano.
 
 Congresso Bachata 2026 in Europa | Milano Sensual Congress
@@ -4613,6 +4852,8 @@ a Milano, Italia
 Partecipa a Milano Sensual Congress dal
  20 al 22 novembre 2026 per workshop bachata internazionali, social dancing, party, artisti e un weekend completo
  dentro l'hotel ufficiale del congresso.
+
+1.000+ ballerini · 20+ nazioni · 40+ ore di workshop · 22 ore di social dancing · 3 giorni
 
  Acquista Biglietti
 
@@ -4698,7 +4939,7 @@ Un congresso unisce workshop, party, social dancing, show, artisti e viaggio in 
 
 ---
 
-## Page: FAQ Congresso Bachata 2026 | Workshop, Party, Full Pass (it/faq.html)
+## Page: FAQ Congresso Bachata 2026 | Workshop, Party, Full Pass (https://milanosensualcongress.com/it/faq)
 Description: Risposte alle domande comuni sui congressi bachata: cos'e un congresso, principianti, cosa portare, cosa include il Full Pass, workshop, party e hotel.
 
 FAQ Congresso Bachata 2026 | Workshop, Party, Full Pass
@@ -4708,6 +4949,8 @@ FAQ Congresso Bachata
 FAQ Congresso Bachata 2026
 
 Risposte pratiche per ballerini internazionali che pianificano workshop, party, social dancing e un weekend completo al Milano Sensual Congress.
+
+1.000+ ballerini · 20+ nazioni · 40+ ore di workshop · 22 ore di social dancing · 3 giorni
 
 Cos'e un congresso bachata?
 
@@ -4735,7 +4978,7 @@ Congresso Bachata 2026 in Europa
 
 ---
 
-## Page: Da Social Dancer ad Artista Internazionale: Il Jack & Jill del Milano Sensual Congress 2026 (it/jacknjill.html)
+## Page: Da Social Dancer ad Artista Internazionale: Il Jack & Jill del Milano Sensual Congress 2026 (https://milanosensualcongress.com/it/jacknjill)
 Description: Partecipa al Jack & Jill internazionale di Bachata al Milano Sensual Congress 2026. Competi per un posto nella lineup degli artisti 2027. Giudici internazionali e i migliori ballerini d'Europa.
 
 Da Social Dancer ad Artista Internazionale: Il Jack & Jill del Milano Sensual Congress 2026
@@ -4801,7 +5044,7 @@ Acquista Prima il Tuo Pass
 
 ---
 
-## Page: Formazione di Bachata Avanzata 2026 a Milano | Masterclass (it/masterclass.html)
+## Page: Formazione di Bachata Avanzata 2026 a Milano | Masterclass (https://milanosensualcongress.com/it/masterclass)
 Description: Formazione di Bachata avanzata, masterclass e workshop intensivi a Milano per tecnica, musicalità, connessione, body mechanics e social dance con artisti internazionali.
 
 Formazione di Bachata Avanzata 2026 a Milano | Masterclass
@@ -4872,7 +5115,7 @@ Sì. Per aggiungere l'Upgrade Masterclass serve un Full Pass valido. Non è poss
 
 ---
 
-## Page: Congressi Bachata 2026, Festival e Guide di Ballo (it/news.html)
+## Page: Congressi Bachata 2026, Festival e Guide di Ballo (https://milanosensualcongress.com/it/news)
 Description: Il portale ufficiale per i congressi bachata 2026. Tutte le ultime notizie, i festival europei e gli aggiornamenti dal Milano Sensual Congress.
 
 Congressi Bachata 2026, Festival e Guide di Ballo
@@ -4894,7 +5137,9 @@ Leggi il Calendario Festival
 
 Andare da Soli a un Congresso Bachata?
 
-Una guida moderna a rotazione partner, workshop, social, sicurezza e nuove conoscenze quando arrivi senza partner o gruppo.
+Una guida moderna a rotazione partner, workshop, social, sicurezza e nuove conoscenze quando arrivi senza partner o gruppo. Arrivi in aereo? Consulta anche la
+guida di viaggio per Milano
+ con aeroporti e navette.
 
 Leggi la Guida
 
@@ -4917,6 +5162,8 @@ Fascia Precedente: Full Pass 125€ fino al 31 Luglio
 Questa fascia è terminata il 31 luglio. Consulta la pagina biglietti per il prezzo attuale del Full Pass e la prossima scadenza confermata.
 
 Vedi Biglietti Attuali
+
+Leggi l'Archivio
 
 11 Maggio 2026
 
@@ -5054,7 +5301,7 @@ Iscriviti
 
 ---
 
-## Page: Agustin & Alba: Stelle Nascenti e il Futuro della Bachata Sensual | Milano Sensual Congress (it/news/agustinyalba-stelle-nascenti-bachata-sensual.html)
+## Page: Agustin & Alba: Stelle Nascenti e il Futuro della Bachata Sensual | Milano Sensual Congress (https://milanosensualcongress.com/it/news/agustinyalba-stelle-nascenti-bachata-sensual)
 Description: Incontra Agustin & Alba, il duo giovanissimo che rappresenta il futuro della Bachata Sensual nel mondo. Partecipa ai loro 2 workshop al Milano Sensual Congress 2026.
 
 Agustin & Alba: Stelle Nascenti e il Futuro della Bachata Sensual | Milano Sensual Congress
@@ -5118,7 +5365,7 @@ Ottieni il tuo Full Pass
 
 ---
 
-## Page: Aitor Gomez: La Fusione Perfetta tra Bachata Sensuale e Radici Dominicane | Milano Sensual Congress (it/news/aitor-gomez-bachata-sensuale-radici-dominicane.html)
+## Page: Aitor Gomez: La Fusione Perfetta tra Bachata Sensuale e Radici Dominicane | Milano Sensual Congress (https://milanosensualcongress.com/it/news/aitor-gomez-bachata-sensuale-radici-dominicane)
 Description: Scopri lo stile unico di Aitor Gomez. Un maestro del footwork domenicano e della Bachata Sensuale, che porta la sua fusione moderna al Milano Sensual Congress 2026.
 
 Aitor Gomez: La Fusione Perfetta tra Bachata Sensuale e Radici Dominicane | Milano Sensual Congress
@@ -5180,7 +5427,7 @@ Assicurati il tuo Full Pass
 
 ---
 
-## Page: Fascia Precedente: Full Pass 125€ fino al 31 Luglio (it/news/aumento-prezzi-full-pass-masterclass-15-giugno-2026.html)
+## Page: Fascia Precedente: Full Pass 125€ fino al 31 Luglio (https://milanosensualcongress.com/it/news/aumento-prezzi-full-pass-masterclass-15-giugno-2026)
 Description: Aggiornamento archiviato: la fascia Full Pass da 125€ è terminata il 31 luglio. Controlla prezzi e scadenze attuali del Congresso Bachata.
 
 Fascia Precedente: Full Pass 125€ fino al 31 Luglio
@@ -5291,7 +5538,7 @@ Prenota il Biglietto
 
 ---
 
-## Page: Bachata in Italia 2026: Milano Meta di Ballo | Milano Sensual Congress (it/news/bachata-italia-2026-milano-meta-ballo.html)
+## Page: Bachata in Italia 2026: Milano Meta di Ballo | Milano Sensual Congress (https://milanosensualcongress.com/it/news/bachata-italia-2026-milano-meta-ballo)
 Description: Scopri perché Milano sta diventando una meta imperdibile per la Bachata in Italia 2026, con Congresso Bachata, workshop, party, Devero Hotel ed eventi latini europei.
 
 Bachata in Italia 2026: Milano Meta di Ballo | Milano Sensual Congress
@@ -5417,7 +5664,7 @@ Prenota il tuo Full Pass
 
 ---
 
-## Page: Festival di Bachata in Europa 2026-2027: Calendario Mese per Mese (it/news/calendario-festival-bachata-europa-2026-2027.html)
+## Page: Festival di Bachata in Europa 2026-2027: Calendario Mese per Mese (https://milanosensualcongress.com/it/news/calendario-festival-bachata-europa-2026-2027)
 Description: Il calendario completo dei festival e congressi di Bachata in Europa per la stagione 2026-2027. Date per Milano, Spagna, Romania e altri eventi Bachata, mese per mese.
 
 Festival di Bachata in Europa 2026-2027: Calendario Mese per Mese
@@ -5541,7 +5788,7 @@ Prenota Ora il Tuo Full Pass
 
 ---
 
-## Page: Congresso Bachata da Soli: Festival e Workshop (it/news/congresso-bachata-da-soli-guida-ballerini.html)
+## Page: Congresso Bachata da Soli: Festival e Workshop (https://milanosensualcongress.com/it/news/congresso-bachata-da-soli-guida-ballerini)
 Description: Vuoi andare da solo a un Congresso Bachata? Scopri come funzionano Workshop Bachata, rotazione partner e social nei Festival Bachata internazionali.
 
 Congresso Bachata da Soli: Festival e Workshop
@@ -5757,7 +6004,7 @@ Acquista il Full Pass
 
 ---
 
-## Page: Corsi Settimanali vs Congressi: Come Migliorare il tuo Stile Bachata | Milano Sensual Congress (it/news/corsi-settimanali-vs-congressi-bachata.html)
+## Page: Corsi Settimanali vs Congressi: Come Migliorare il tuo Stile Bachata | Milano Sensual Congress (https://milanosensualcongress.com/it/news/corsi-settimanali-vs-congressi-bachata)
 Description: Scopri la differenza tra imparare la Bachata in corsi settimanali e ai congressi. I corsi costruiscono le basi, mentre i congressi sviluppano il tuo stile unico.
 
 Corsi Settimanali vs Congressi: Come Migliorare il tuo Stile Bachata | Milano Sensual Congress
@@ -5835,7 +6082,7 @@ Acquista il tuo Full Pass
 
 ---
 
-## Page: Cosa Aspettarsi ad un Congresso di Bachata | Milano Sensual Congress (it/news/cosa-aspettarsi-da-un-congresso-di-bachata-2026.html)
+## Page: Cosa Aspettarsi ad un Congresso di Bachata | Milano Sensual Congress (https://milanosensualcongress.com/it/news/cosa-aspettarsi-da-un-congresso-di-bachata-2026)
 Description: Scopri cosa aspettarti da un congresso di Bachata nel 2026. Informazioni su workshop, social dance e perché è fondamentale imparare dagli artisti internazionali.
 
 Cosa Aspettarsi ad un Congresso di Bachata | Milano Sensual Congress
@@ -5909,7 +6156,7 @@ Prenota il Tuo Full Pass Ora
 
 ---
 
-## Page: Cristian y Gabriella: I Maestri della Bachata Tecnica | Milano Sensual Congress (it/news/cristian-y-gabriella-maestri-bachata-mondiali-2026.html)
+## Page: Cristian y Gabriella: I Maestri della Bachata Tecnica | Milano Sensual Congress (https://milanosensualcongress.com/it/news/cristian-y-gabriella-maestri-bachata-mondiali-2026)
 Description: Scopri la precisione di livello mondiale di Cristian y Gabriella. I maestri spagnoli portano la loro eccellenza tecnica e la fusione creativa al Milano Sensual Congress 2026.
 
 Cristian y Gabriella: I Maestri della Bachata Tecnica | Milano Sensual Congress
@@ -5969,7 +6216,7 @@ Assicurati il tuo Full Pass
 
 ---
 
-## Page: David y Inés: I Maestri della Precisione Tecnica e Fluidità | Milano Sensual Congress (it/news/david-y-ines-maestri-bachata-sensual-2026.html)
+## Page: David y Inés: I Maestri della Precisione Tecnica e Fluidità | Milano Sensual Congress (https://milanosensualcongress.com/it/news/david-y-ines-maestri-bachata-sensual-2026)
 Description: Vivi l'esperienza dei maestri mondiali David y Inés al Milano Sensual Congress 2026. Scopri la loro fusione unica di Bachata Sensual e disciplina atletica.
 
 David y Inés: I Maestri della Precisione Tecnica e Fluidità | Milano Sensual Congress
@@ -6033,7 +6280,7 @@ Acquista il tuo Full Pass
 
 ---
 
-## Page: Etichetta Congresso Bachata: Social, Workshop e Party (it/news/etichetta-congresso-bachata-social-workshop-party.html)
+## Page: Etichetta Congresso Bachata: Social, Workshop e Party (https://milanosensualcongress.com/it/news/etichetta-congresso-bachata-social-workshop-party)
 Description: Scopri l'etichetta da seguire a un congresso di bachata: social dance, workshop e party. Una guida pratica per ballerini internazionali al Milano Sensual Congress 2026.
 
 Etichetta Congresso Bachata: Social, Workshop e Party
@@ -6115,7 +6362,7 @@ Prenota il tuo Full Pass
 
 ---
 
-## Page: Gero y Migle Bachata: Scopri i Maestri dell'Esencia Style | Milano Sensual Congress 2026 (it/news/gero-y-migle-maestri-bachata-sensual-2026.html)
+## Page: Gero y Migle Bachata: Scopri i Maestri dell'Esencia Style | Milano Sensual Congress 2026 (https://milanosensualcongress.com/it/news/gero-y-migle-maestri-bachata-sensual-2026)
 Description: Scopri la storia, lo stile e l'incredibile chimica degli artisti di Bachata di fama mondiale Gero e Migle. Partecipa alle loro masterclass esclusive in Esencia Style al Milano Sensual Congress 2026.
 
 Gero y Migle Bachata: Scopri i Maestri dell'Esencia Style | Milano Sensual Congress 2026
@@ -6196,7 +6443,7 @@ Vedi il Lineup Artisti
 
 ---
 
-## Page: Guida Viaggio Bachata Milano 2026: Aeroporti, Transfer e Consigli (it/news/guida-viaggio-bachata-milano-2026.html)
+## Page: Guida Viaggio Bachata Milano 2026: Aeroporti, Transfer e Consigli (https://milanosensualcongress.com/it/news/guida-viaggio-bachata-milano-2026)
 Description: Stai pianificando il tuo viaggio per il Milano Sensual Congress 2026? Leggi la nostra guida completa: aeroporti, navette ufficiali e come muoversi a Milano.
 
 Guida Viaggio Bachata Milano 2026: Aeroporti, Transfer e Consigli
@@ -6270,7 +6517,7 @@ biglietti Full Pass
 
 ---
 
-## Page: I Migliori Congressi Bachata 2026 in Europa: La Top 5 | Milano Sensual (it/news/i-5-migliori-congressi-bachata-europa-2026.html)
+## Page: I Migliori Congressi Bachata 2026 in Europa: La Top 5 | Milano Sensual (https://milanosensualcongress.com/it/news/i-5-migliori-congressi-bachata-europa-2026)
 Description: Scopri i migliori congressi bachata 2026 in Europa. Dalla lussuosa Milano al massiccio Bachaturo, ecco gli eventi imperdibili per ogni ballerino di bachata.
 
 I Migliori Congressi Bachata 2026 in Europa: La Top 5 | Milano Sensual
@@ -6351,7 +6598,7 @@ Prenota il tuo Full Pass ora
 
 ---
 
-## Page: Irene y Tomas Bachata: Scopri i Maestri della Bachata Sensual | Milano Sensual Congress 2026 (it/news/irene-y-tomas-maestri-bachata-sensual.html)
+## Page: Irene y Tomas Bachata: Scopri i Maestri della Bachata Sensual | Milano Sensual Congress 2026 (https://milanosensualcongress.com/it/news/irene-y-tomas-maestri-bachata-sensual)
 Description: Scopri la storia di Irene e Tomas, ambasciatori ufficiali di Bachata Sensual formati da Korke e Judith. Partecipa ai loro workshop esclusivi al Milano Sensual Congress 2026.
 
 Irene y Tomas Bachata: Scopri i Maestri della Bachata Sensual | Milano Sensual Congress 2026
@@ -6427,7 +6674,7 @@ Guarda la Lineup Artisti
 
 ---
 
-## Page: Klau y Ros: I Maestri della Endless Bachata | Milano Sensual Congress (it/news/klau-y-ros-maestri-endless-bachata-2026.html)
+## Page: Klau y Ros: I Maestri della Endless Bachata | Milano Sensual Congress (https://milanosensualcongress.com/it/news/klau-y-ros-maestri-endless-bachata-2026)
 Description: Scopri lo stile inconfondibile Endless Bachata di Klau y Ros. Scopri il loro viaggio dalla Polonia e dalla Spagna a maestri internazionali di Bachata che si uniscono al Milano Sensual Congress 2026.
 
 Klau y Ros: I Maestri della Endless Bachata | Milano Sensual Congress
@@ -6485,7 +6732,7 @@ Prendi il tuo Full Pass
 
 ---
 
-## Page: Livelli Workshop Bachata: Scegli le Lezioni al Congresso (it/news/livelli-workshop-bachata-congresso.html)
+## Page: Livelli Workshop Bachata: Scegli le Lezioni al Congresso (https://milanosensualcongress.com/it/news/livelli-workshop-bachata-congresso)
 Description: Non sai quale livello di Workshop Bachata scegliere? Scopri come principianti, intermedi e avanzati possono vivere i workshop di un Congresso Bachata a Milano.
 
 Livelli Workshop Bachata: Scegli le Lezioni al Congresso
@@ -6613,7 +6860,7 @@ Prenota il tuo Full Pass
 
 ---
 
-## Page: Miglior Social di Bachata in Italia 2026 | Milano Sensual (it/news/migliore-festa-bachata-italia-2026.html)
+## Page: Miglior Social di Bachata in Italia 2026 | Milano Sensual (https://milanosensualcongress.com/it/news/migliore-festa-bachata-italia-2026)
 Description: Milano Sensual Congress 2026 sarà il miglior social di Bachata in Italia: 1.000+ ballerini, posti limitati e sold out lo scorso anno.
 
 Miglior Social di Bachata in Italia 2026 | Milano Sensual
@@ -6731,7 +6978,7 @@ Prenota il tuo Full Pass
 
 ---
 
-## Page: Nacho y Silvia: Le Stelle Nascenti della Bachata Esencia | Milano Sensual Congress 2026 (it/news/nacho-y-silvia-bachata-esencia-nuova-generazione.html)
+## Page: Nacho y Silvia: Le Stelle Nascenti della Bachata Esencia | Milano Sensual Congress 2026 (https://milanosensualcongress.com/it/news/nacho-y-silvia-bachata-esencia-nuova-generazione)
 Description: Vivi l'energia della nuova generazione. Nacho e Silvia portano il loro esclusivo Esencia Style da Madrid al Milano Sensual Congress 2026. Scopri il loro viaggio.
 
 Nacho y Silvia: Le Stelle Nascenti della Bachata Esencia | Milano Sensual Congress 2026
@@ -6807,7 +7054,133 @@ Vedi il Lineup Artisti
 
 ---
 
-## Page: Programma Workshop Bachata 2026 | Milano Sensual Congress (it/programma.html)
+## Page: Party Bachata e Social Dancing 2026 | Milano Sensual (https://milanosensualcongress.com/it/party)
+Description: Orari ufficiali dei social del Milano Sensual Congress 2026: 22 ore di party bachata e social dancing fino alle 5 del mattino al Devero Hotel di Milano. Orari e pass.
+
+Party Bachata e Social Dancing 2026 | Milano Sensual
+
+Orari Ufficiali dei Social 2026
+
+Party Bachata
+e Social Dancing a Milano
+
+22 ore di social dancing ufficiale
+ dal 20 al 22 novembre 2026 — party notturni fino alle 5 del mattino e social pomeridiani, tutto sotto lo stesso tetto al Devero Hotel.
+
+ Prendi il tuo Pass
+
+ Vedi gli Orari
+
+22h
+
+Di social dancing
+
+05:00
+
+Social fino all'alba
+
+2
+
+Social pomeridiani
+
+1000+
+
+Ballerini internazionali
+
+20 - 21 - 22 Novembre 2026
+
+Orari Ufficiali dei Social
+
+Questi sono gli orari confermati dei party e del social dancing del Milano Sensual Congress 2026 al Devero Hotel. DJ set e show saranno annunciati più avanti.
+
+Venerdì
+
+Serata di Apertura
+
+Social Dance
+
+23:00 – 05:00
+
+Sabato
+
+Giornata Piena di Congresso
+
+Social Pomeridiano
+
+16:00 – 20:00
+
+Social Dance
+
+23:00 – 05:00
+
+Domenica
+
+Giornata Finale
+
+Social Pomeridiano
+
+16:00 – 22:00
+
+Gli orari dei workshop sono nella
+pagina del programma
+. Questi sono gli orari ufficiali dei social e potrebbero subire lievi variazioni.
+
+Accesso e Biglietti
+
+Quale pass ti porta in pista
+
+Full Pass — €130 fino al 15 settembre:
+ include tutti i workshop, gli show, i party notturni e i social pomeridiani del weekend.
+
+Social del Sabato Pomeriggio:
+ accesso con Full Pass oppure con un Day Pass del sabato.
+
+Full Party Pass:
+ accesso a tutti i party ufficiali (venerdì, sabato e domenica) — presto disponibile nella pagina biglietti.
+
+Vedi Tutti i Biglietti
+
+Dormi in Hotel
+
+Perché si balla fino all'alba
+
+Una pista social pensata per ballerini internazionali
+
+1000+ ballerini, 20+ nazioni
+
+I social riuniscono ballerini da Italia, Spagna, Francia, Germania, Svizzera e oltre — una pista davvero internazionale dove ogni ballo è una nuova connessione.
+
+Tutto sotto lo stesso tetto
+
+Party, workshop e la tua camera sono tutti all'interno del Devero Hotel. Balla fino alle 5, prendi l'ascensore per andare a dormire e torna in pista per il social pomeridiano — niente taxi, niente spostamenti al freddo.
+
+Show e social con gli artisti
+
+I party notturni includono gli show della
+lineup internazionale di artisti
+, che poi restano in pista a ballare con i partecipanti. La scorsa edizione è andata sold out.
+
+FAQ Party Bachata
+
+A che ora sono i party bachata del Milano Sensual Congress 2026?
+
+Gli orari ufficiali dei social sono: venerdì social dance 23:00–05:00, sabato social pomeridiano 16:00–20:00, sabato social dance 23:00–05:00 e domenica social pomeridiano 16:00–22:00.
+
+Quante ore di social dancing ci sono?
+
+Il Milano Sensual Congress 2026 offre 22 ore di social dancing ufficiale nel weekend: due party notturni fino alle 5 del mattino e due social pomeridiani, tutti all'interno del Devero Hotel.
+
+Quale biglietto serve per accedere ai party?
+
+Il Full Pass include tutti i party e i social pomeridiani. Per accedere al social del sabato pomeriggio serve un Full Pass oppure un Day Pass del sabato. A breve sarà disponibile anche un Full Party Pass per tutti i party ufficiali.
+
+Dove si svolgono i party?
+
+Tutti i party e i social si svolgono al Devero Hotel di Cavenago di Brianza, la sede ufficiale del congresso. Workshop, party e alloggio sono sotto lo stesso tetto: puoi ballare fino all'alba e dormire in hotel.
+
+---
+
+## Page: Programma Workshop Bachata 2026 | Milano Sensual Congress (https://milanosensualcongress.com/it/programma)
 Description: Anteprima del programma Milano Sensual Congress 2026: orari workshop bachata, party e social dancing per venerdi, sabato e domenica. Programma completo in uscita a novembre.
 
 Programma Workshop Bachata 2026 | Milano Sensual Congress
@@ -6818,7 +7191,11 @@ Programma Workshop Bachata 2026
 
 Il programma dettagliato lezione per lezione sara
 in uscita a novembre
-. Questa anteprima mostra la struttura prevista di workshop e social dancing del weekend.
+. Questa anteprima mostra la struttura prevista del weekend:
+oltre 40 ore di workshop
+ e
+22 ore di social dancing ufficiale
+.
 
 Venerdi
 
@@ -6833,7 +7210,10 @@ Sabato
 10:00 - 20:00
 Workshop
 
-00:00 - 05:00
+16:00 - 20:00
+Social pomeridiano
+
+23:00 - 05:00
 Social dancing
 
 Domenica
@@ -6842,7 +7222,7 @@ Domenica
 Workshop
 
 16:00 - 22:00
-Social dancing
+Social pomeridiano
 
 In uscita a novembre
 
@@ -6857,7 +7237,9 @@ Il programma completo del Milano Sensual Congress 2026, con orari lezione per le
 
 Quali sono gli orari di workshop e party Bachata?
 
-L'anteprima attuale prevede workshop dalle 18:00 alle 23:00 il venerdi, dalle 10:00 alle 20:00 il sabato e dalle 10:00 alle 16:00 la domenica. Il social dancing e previsto dalle 23:00 alle 05:00 il venerdi, dalle 00:00 alle 05:00 il sabato e dalle 16:00 alle 22:00 la domenica.
+L'anteprima attuale prevede workshop dalle 18:00 alle 23:00 il venerdi, dalle 10:00 alle 20:00 il sabato e dalle 10:00 alle 16:00 la domenica. Gli orari ufficiali dei social sono dalle 23:00 alle 05:00 il venerdi, dalle 16:00 alle 20:00 e dalle 23:00 alle 05:00 il sabato, e dalle 16:00 alle 22:00 la domenica. Tutti i dettagli nella
+pagina party e social dancing
+.
 
 Il programma del congresso puo cambiare?
 
@@ -6865,7 +7247,7 @@ Si. Questa anteprima e soggetta a leggere variazioni mentre vengono confermati i
 
 ---
 
-## Page: Servizio Transfer | Milano Sensual Congress 2026 (it/transfer.html)
+## Page: Servizio Transfer | Milano Sensual Congress 2026 (https://milanosensualcongress.com/it/transfer)
 Description: Servizio transfer ufficiale per il Milano Sensual Congress 2026. Prenota il tuo viaggio da Malpensa, Linate, Bergamo o Milano Centrale per l'Hotel Devero.
 
 Servizio Transfer | Milano Sensual Congress 2026

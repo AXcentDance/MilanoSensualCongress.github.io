@@ -7,7 +7,7 @@ IT_DIR = os.path.join(ROOT_DIR, 'it')
 
 def get_hreflangs(content):
     # Returns dict: {'en': 'url', 'it': 'url', ...}
-    matches = re.findall(r'<link rel="alternate" hreflang="([^"]+)" href="([^"]+)"', content)
+    matches = re.findall(r'<link rel="alternate"\s+hreflang="([^"]+)"\s+href="([^"]+)"', content)
     return {lang: url for lang, url in matches}
 
 def audit_hreflang():
@@ -17,6 +17,9 @@ def audit_hreflang():
     issues = []
     
     en_files = [f for f in os.listdir(ROOT_DIR) if f.endswith('.html')]
+    news_dir = os.path.join(ROOT_DIR, 'news')
+    if os.path.isdir(news_dir):
+        en_files += [os.path.join('news', f) for f in os.listdir(news_dir) if f.endswith('.html')]
     
     for en_file in en_files:
         path = os.path.join(ROOT_DIR, en_file)
@@ -27,9 +30,10 @@ def audit_hreflang():
         
         # Check if it has IT link
         if 'it' not in hreflangs:
-            # Maybe it doesn't exist in IT? 
-            # We only flag if we expect it. Assuming 1:1 for main pages.
-            # issues.append(f"[EN] {en_file}: Missing hreflang='it'")
+            # 404 is deliberately EN-only and noindexed; everything else must
+            # carry a full hreflang cluster.
+            if os.path.basename(en_file) != '404.html':
+                issues.append(f"[EN] {en_file}: Missing hreflang='it'")
             continue
             
         it_url = hreflangs['it']
