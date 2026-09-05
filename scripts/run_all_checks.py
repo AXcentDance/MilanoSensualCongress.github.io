@@ -50,6 +50,9 @@ def check_per_page_invariants():
         checks = {
             'CSP meta': 'http-equiv="Content-Security-Policy"' in html,
             'speculation rules': 'type="speculationrules"' in html,
+            'prefetch fallback': 'src="/js/prefetch-fallback.js?v=' in html,
+            'single shared analytics loader': html.count('src="/js/site-analytics.js?v=') == 1
+                and 'function initMetaPixel' not in html,
             'theme-color': 'name="theme-color"' in html,
             'single canonical or noindex': (
                 html.count('rel="canonical"') == 1 or 'noindex' in html),

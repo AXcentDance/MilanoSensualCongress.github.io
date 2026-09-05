@@ -53,7 +53,7 @@ def audit_assets():
             css_matches = re.finditer(r'url\([\"\']?([^)\"\']+)[\"\']?\)', content)
             for match in css_matches:
                 url = match.group(1)
-                if url.startswith(('http', '//', 'data:')):
+                if url.startswith(('http', '//', 'data:', '#', '%23')):
                     continue
                     
                 check_path = None

@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Build a subset of Font Awesome containing only the icons used on the site.
 
-Scans every HTML page for fa-* classes, maps them to codepoints via the full
-all.min.css (kept in vendor/fontawesome/ as the pinned upstream reference),
+Scans HTML pages and shared JavaScript for fa-* classes, maps them to codepoints
+via the full all.min.css (kept in vendor/fontawesome/ as the pinned reference),
 subsets the woff2 fonts with fontTools, and writes a minimal stylesheet to
 vendor/fontawesome/fa-subset.min.css.
 
@@ -21,6 +21,7 @@ PAGES = (
     + glob.glob('it/*.html')
     + glob.glob('news/*.html')
     + glob.glob('it/news/*.html')
+    + glob.glob('js/*.js')
 )
 
 FAMILY_FONTS = {
