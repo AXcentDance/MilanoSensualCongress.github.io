@@ -22,8 +22,8 @@ jobs:
       - name: Master site gate
         run: python3 scripts/run_all_checks.py
 
-      - name: Reminder form regression tests
-        run: node --test tests/reminder-forms.test.cjs
+      - name: Browser behavior regression tests
+        run: node --test tests/*.test.cjs
 
   regenerate:
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'

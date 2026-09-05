@@ -8,10 +8,12 @@ const pages = ['index.html', 'tickets.html', 'it/index.html', 'it/tickets.html']
 
 function mount(page, { reply = 'success', httpOK = true, networkError = false, analyticsError = false } = {}) {
   const html = readFileSync(resolve(__dirname, '..', page), 'utf8');
-  const handler = html.slice(html.indexOf('    // Wait for the Apps Script acknowledgement'))
-    .split('</script>')[0];
+  const script = /<script src="(\/js\/reminder-form\.js\?v=\d+)" defer><\/script>/.exec(html);
+  assert.ok(script, `${page} loads the shared reminder handler`);
+  const handler = readFileSync(resolve(__dirname, '..', script[1].split('?')[0].slice(1)), 'utf8');
+  const success = { innerHTML: /<template id="reminder-success">([\s\S]*?)<\/template>/.exec(html)[1] };
   const source = /name="source" value="([^"]+)"/.exec(html)[1];
-  const action = /id="reminder-form" action="([^"]+)"/.exec(html)[1];
+  const action = /id="reminder-form"[^>]+action="([^"]+)"/.exec(html)[1];
   const button = { innerHTML: 'Submit', disabled: false };
   const container = { innerHTML: 'Original form', setAttribute() {} };
   const status = { hidden: true, style: {}, setAttribute() {} };
@@ -19,13 +21,17 @@ function mount(page, { reply = 'success', httpOK = true, networkError = false, a
   const leads = [];
   const form = {
     action,
+    dataset: {
+      processing: /data-processing="([^"]+)"/.exec(html)[1],
+      error: /data-error="([^"]+)"/.exec(html)[1]
+    },
     querySelector: () => button,
     setAttribute() {}, removeAttribute() {}, after() {},
     addEventListener: (_, listener) => { submit = listener; }
   };
   const context = {
     document: {
-      getElementById: id => id === 'reminder-form' ? form : container,
+      getElementById: id => ({ 'reminder-form': form, 'reminder-container': container, 'reminder-success': success })[id],
       createElement: () => status
     },
     FormData: class { get(key) { return key === 'email' ? '  test+reminder@example.com  ' : source; } },
@@ -76,6 +82,7 @@ for (const page of pages) {
     assert.equal(request.options.mode, 'cors');
     assert.equal(request.options.cache, 'no-store');
     assert.equal(app.button.disabled, true);
+    assert.match(app.button.innerHTML, page.startsWith('it/') ? /Invio in corso/ : /Processing/);
     assert.equal(app.container.innerHTML, 'Original form');
     assert.equal(app.leads.length, 0);
     await app.submit();
@@ -83,6 +90,7 @@ for (const page of pages) {
     app.finish();
     await pending;
     assert.match(app.container.innerHTML, page.startsWith('it/') ? /Grazie!/ : /Thank you!/);
+    assert.equal(app.container.innerHTML.includes('href="artists"'), page.endsWith('index.html'));
     assert.equal(app.leads.length, 1);
     assert.equal(app.leads[0][2].source, app.source);
     assert.equal(app.timer(), null);

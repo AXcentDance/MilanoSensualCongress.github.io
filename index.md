@@ -2,13 +2,15 @@
 
 # Milano Sensual Bachata Congress
 
-The official Milano Sensual Congress 2026 (Nov 20-22). Europe's leading Bachata congress and the reference Bachata event in Italy. Join world-class artists in Milan.
+Join Milano Sensual Congress, November 20–22, 2026 at Devero Hotel near Milan. Explore bachata workshops, parties, international artists and tickets.
 
 Canonical: https://milanosensualcongress.com/
 
 20 - 21 - 22 November 2026
 
-The most exclusive **Bachata Congress in Milan, Italy** — three days and nights of dancing with the world’s best artists, all under one roof.
+Three days of bachata workshops, parties and social dancing at Devero Hotel, near Milan, with international artists and dancers from across Europe.
+
+[Get Tickets](https://milanosensualcongress.com/tickets)
 
 1,000+ dancers · 20+ nations · 40+ hours of workshops · 20+ hours of social dancing · 3 days
 
@@ -41,9 +43,7 @@ Compete with the best.
 
 The International Choice
 
-### Europe's Premier Bachata Gathering
-
-The Milano Sensual Congress has evolved into a global ecosystem for Bachata enthusiasts, attracting **more than 1000 dancers** from **over 20 nations** across the continent, with **20+ hours of official social dancing** across three days and nights.
+### A Bachata Weekend for International Dancers
 
 #### English-Taught Workshops
 
@@ -77,24 +77,6 @@ Afternoon Social **16:00 – 22:00**
 
 [Parties & Social Dancing](https://milanosensualcongress.com/parties)
 
-#### Full Passes
-
-Secure your spot at the best price. Prices increase as the event approaches. Full pass includes all workshops, shows, and parties. [See the current ticket price and deadline](https://milanosensualcongress.com/tickets).
-
-[Buy on LaSalsaDelBaile](https://lasalsadelbaile.com/MSC2026)
-
-NEW VENUE
-
-#### Devero Hotel ****
-
-Experience the congress in our **brand new** location. A 4-star executive hotel offering premium comfort, spa facilities, and direct access to the dance floors.
-
-[View New Rooms & Info](https://milanosensualcongress.com/hotel)
-
-#### Master Classes
-
-Level up your dancing with exclusive master classes from our headlining artists. Limited spots available for intimate learning.
-
 The Team Behind The Magic
 
 ### Organizers of the Bachata Congress Italy
@@ -111,57 +93,11 @@ Congress Directors
 
 @aleyxidan — International Sensual Bachata Artists. They founded [AXcent Dance](https://axcentdance.com), the first Bachata Sensual specialized school in Zurich, established in 2025. They also serve as judges for the International Swiss Championship for Salsa and Bachata. Ale y Xidan are the creators of **Milano Sensual Congress** with Marco y Valeria, and are the co-organizers of **Bailadoro Dance Weekend**.
 
-Travel & Logistics
-
 ### Official Transfer Service
 
-Do you want a direct transfer from the airport or train station directly to our location? We have a service which is right for you.
+Reach Devero Hotel from Malpensa, Linate, Bergamo or Milano Centrale. Transfers must be booked in advance.
 
-Airport Transfer
-
-#### Malpensa
-
-to Devero Hotel
-
-Car (4 spots) 135€
-
-Minivan (6 spots) 175€
-
-Airport Transfer
-
-#### Linate
-
-to Devero Hotel
-
-Car (4 spots) 75€
-
-Minivan (6 spots) 115€
-
-Airport Transfer
-
-#### Bergamo Orio
-
-to Devero Hotel
-
-Car (4 spots) 75€
-
-Minivan (6 spots) 115€
-
-Train Station Transfer
-
-#### Milano Centrale
-
-to Devero Hotel
-
-Car (4 spots) 75€
-
-Minivan (6 spots) 115€
-
-##### Important Information
-
-Limited spots available. This service will be available all weekend at every hour of the day. **Needs to be booked in advance.**
-
-[Book via WhatsApp](https://wa.me/393662073769) [g.suraci@yahoo.it](mailto:g.suraci@yahoo.it)
+[See transfer prices and booking details →](https://milanosensualcongress.com/transfer)
 
 ### Bachata Congress FAQ
 
@@ -175,11 +111,11 @@ Yes! We host an International Jack & Jill competition. Registration details and 
 
 #### How do I book the hotel?
 
-Sales for the official hotel open in January 2026. Please visit our [Hotel Page](https://milanosensualcongress.com/hotel) for the official booking link to get the group rate.
+Book through the official link on our [Hotel page](https://milanosensualcongress.com/hotel), where you can also find room information and booking support.
 
 #### Will there be day socials?
 
-Yes, both Saturday and Sunday will have day socials only accessible for who has the Full Pass (not party pass).
+Yes, there are afternoon socials on Saturday and Sunday. See the [Parties page](https://milanosensualcongress.com/parties) for times and pass requirements.
 
 #### Are the Bachata Masterclasses taught in English?
 
