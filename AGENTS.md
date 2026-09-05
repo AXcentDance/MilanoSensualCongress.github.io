@@ -22,7 +22,6 @@ Do not treat `.agent` files as optional references. They are the canonical proje
   - `sitemap.xml`
   - `llms.txt`
   - `llms-full.txt`
-- For questions or requests that need planning, present the implementation plan first and ask before changing files, unless the user has already explicitly asked to make the change.
 
 ## Required Skill Checks
 

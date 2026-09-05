@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://connect.facebook.net; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://www.facebook.com; font-src 'self'; media-src 'self'; connect-src 'self' https://www.facebook.com https://connect.facebook.net; form-action 'self' https://formspree.io https://atmosferaeventi.it; frame-src https://www.facebook.com; object-src 'none'; base-uri 'self'">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://connect.facebook.net; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://www.facebook.com; font-src 'self'; media-src 'self'; connect-src 'self' https://www.facebook.com https://connect.facebook.net https://script.google.com https://script.googleusercontent.com; form-action 'self' https://script.google.com https://script.googleusercontent.com https://atmosferaeventi.it; frame-src https://www.facebook.com; object-src 'none'; base-uri 'self'">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="#0f172a">
   <title>Congressi Bachata 2026: Milano Sensual Congress | L'evento di riferimento della Bachata in Italia</title>
@@ -606,12 +606,8 @@
           
           <div id="reminder-container" class="w-full pt-6 border-t border-white/10">
             <p class="text-white text-[10px] font-bold tracking-[0.2em] uppercase mb-4 text-center opacity-90">AVVISAMI PRIMA DELL'AUMENTO DEL 15 SETTEMBRE</p>
-            <form id="reminder-form" action="https://formspree.io/slamitzam@gmail.com" method="POST" class="flex flex-col md:flex-row gap-3 items-center justify-center">
-              <input type="hidden" name="_subject" value="Nuova Richiesta Promemoria - Milano Sensual Congress">
-              <input type="hidden" name="_template" value="table">
-              <input type="hidden" name="_captcha" value="false">
-              <input type="text" name="_honey" style="display:none">
-              <input type="hidden" name="_autoresponse" value="Grazie per averci contattato! Ti invieremo un promemoria prima che i prezzi cambino.">
+            <form id="reminder-form" action="https://script.google.com/macros/s/AKfycbzNaU95FbDrYx2kp3uwYi5Kxu0_ziFrh2gL28OZicVla0zkfj7wVuafgDdeffkBaPKZmg/exec" method="GET" class="flex flex-col md:flex-row gap-3 items-center justify-center">
+              <input type="hidden" name="source" value="Home - IT">
               <input type="email" name="email" placeholder="Inserisci la tua email" required 
                 class="form-input px-6 py-2.5 rounded-full text-xs w-64 focus:ring-2 focus:ring-pink-500/50 outline-none">
               <button type="submit" class="btn-gradient px-6 py-2.5 rounded-full text-white font-bold text-xs tracking-wide shadow-lg whitespace-nowrap">
@@ -1034,39 +1030,50 @@
     setInterval(updateCountdown, 1000);
     updateCountdown();
 
-    // Interazione Modulo Promemoria
+    // Wait for the Apps Script acknowledgement before confirming the reminder.
     const reminderForm = document.getElementById('reminder-form');
     if (reminderForm) {
-      reminderForm.addEventListener('submit', function (e) {
+      const status = document.createElement('p');
+      status.setAttribute('role', 'alert');
+      status.style.cssText = 'color: #fda4af; font-size: 0.875rem; text-align: center; margin-top: 0.75rem';
+      status.hidden = true;
+      reminderForm.after(status);
+
+      reminderForm.addEventListener('submit', async function (e) {
         e.preventDefault();
         const form = this;
         const container = document.getElementById('reminder-container');
         const button = form.querySelector('button');
-        button.innerHTML = '<i class="fa-solid fa-circle-notch animate-spin"></i> Processing...';
+        if (button.disabled) return;
+        const originalButtonText = button.innerHTML;
+        button.innerHTML = '<i class="fa-solid fa-circle-notch animate-spin"></i> Invio in corso...';
         button.disabled = true;
+        form.setAttribute('aria-busy', 'true');
+        status.hidden = true;
+        status.textContent = '';
 
-        const formData = new FormData(form);
-        const data = Object.fromEntries(formData.entries());
-        if (typeof startMetaPixel === "function") startMetaPixel();
-        if (window.fbq) {
-          fbq("track", "Lead", {
-            content_name: "Price increase reminder",
-            content_category: "Email reminder",
-            source: "Home - IT"
+        const data = new FormData(form);
+        const submitUrl = new URL(form.action);
+        submitUrl.searchParams.set('email', data.get('email').trim());
+        submitUrl.searchParams.set('source', data.get('source'));
+        const controller = new AbortController();
+        const timeout = setTimeout(() => controller.abort(), 30000);
+
+        try {
+          // A simple CORS GET matches the deployed doGet handler. Google redirects
+          // the acknowledgement to script.googleusercontent.com (allowed by CSP).
+          const response = await fetch(submitUrl, {
+            mode: 'cors',
+            credentials: 'omit',
+            redirect: 'follow',
+            cache: 'no-store',
+            referrerPolicy: 'no-referrer',
+            signal: controller.signal
           });
-        }
-
-        // ALL-IN-ONE URL (Sheet Only Version)
-        const AIO_URL = "https://script.google.com/macros/s/AKfycbzNaU95FbDrYx2kp3uwYi5Kxu0_ziFrh2gL28OZicVla0zkfj7wVuafgDdeffkBaPKZmg/exec";
-        const submitUrl = `${AIO_URL}?email=${encodeURIComponent(data.email)}&source=${encodeURIComponent('Home - IT')}`;
-        
-        // "Indestructible" Method: Hidden Iframe (Bypasses all CORS blocks)
-        const hiddenIframe = document.createElement('iframe');
-        hiddenIframe.style.display = 'none';
-        hiddenIframe.src = submitUrl;
-        document.body.appendChild(hiddenIframe);
-
-        setTimeout(() => {
+          if (!response.ok || (await response.text()).trim() !== 'success') {
+            throw new Error('Reminder was not acknowledged');
+          }
+          container.setAttribute('role', 'status');
           container.innerHTML = `
             <div class="animate-fade-in-up text-center py-2">
               <p class="text-white text-xl font-serif mb-2">Grazie! 😊</p>
@@ -1074,8 +1081,27 @@
               <a href="artists" class="text-pink-400 text-xs font-bold tracking-widest uppercase hover:text-pink-300 transition-colors underline decoration-pink-500/30">Guarda la lineup mentre aspetti &rarr;</a>
             </div>
           `;
-          document.body.removeChild(hiddenIframe);
-        }, 1000);
+
+          // Analytics must not prevent saving or turn a saved reminder into an error.
+          try {
+            if (typeof startMetaPixel === 'function') startMetaPixel();
+            if (window.fbq) {
+              fbq('track', 'Lead', {
+                content_name: 'Price increase reminder',
+                content_category: 'Email reminder',
+                source: data.get('source')
+              });
+            }
+          } catch (_) { /* The reminder is already confirmed. */ }
+        } catch (_) {
+          status.textContent = 'Non è stato possibile confermare il promemoria. Riprova o contattaci su WhatsApp.';
+          status.hidden = false;
+        } finally {
+          clearTimeout(timeout);
+          button.innerHTML = originalButtonText;
+          button.disabled = false;
+          form.removeAttribute('aria-busy');
+        }
       });
     }
   </script>
