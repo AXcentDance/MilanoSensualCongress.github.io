@@ -20,6 +20,9 @@ VARIANT_WIDTHS = [480, 800, 1200]
 # (page glob, src substring, sizes) — first match wins.
 # Measured: 375px / 768px / 1440px viewports, real rendered widths.
 CONTEXT_RULES = [
+    # Workshop feature poster: measured 333 / 335 / 488px at 375 / 768 / 1440px.
+    ('news/bachata-workshop-levels-guide-congress.html', 'bachata-congress-milan-2026-workshop-levels', '(max-width: 640px) calc(100vw - 42px), (max-width: 900px) calc((100vw - 94px) / 2 - 2px), (max-width: 1050px) calc((100vw - 102px) / 2.15 - 2px), (max-width: 1181px) calc((100vw - 128px) / 2.15 - 2px), 488px'),
+    ('it/news/livelli-workshop-bachata-congresso.html', 'bachata-congress-milan-2026-workshop-levels', '(max-width: 640px) calc(100vw - 42px), (max-width: 900px) calc((100vw - 94px) / 2 - 2px), (max-width: 1050px) calc((100vw - 102px) / 2.15 - 2px), (max-width: 1181px) calc((100vw - 128px) / 2.15 - 2px), 488px'),
     ('index.html', 'images/artists/', '(max-width: 640px) 50vw, 220px'),
     ('it/index.html', 'images/artists/', '(max-width: 640px) 50vw, 220px'),
     ('artists.html', 'images/artists/', '(max-width: 640px) 40vw, (max-width: 1024px) 29vw, 391px'),
@@ -97,6 +100,8 @@ def process_page(page):
         # Normalize absolute production URLs to local relative paths
         local_src = re.sub(r'https://milanosensualcongress\.com/', prefix, src)
         fs_path = local_src[len(prefix):] if prefix and local_src.startswith(prefix) else local_src
+        if local_src.startswith('/'):
+            fs_path = local_src.lstrip('/')
         if not fs_path.endswith('.webp') or not os.path.exists(fs_path):
             return tag
         if src != local_src:
@@ -113,7 +118,7 @@ def process_page(page):
         sizes, is_hero = sizes_for(page, src, tag)
         if rungs and sizes and 'srcset=' not in tag:
             srcset = ', '.join(
-                [f'{prefix}{os.path.splitext(fs_path)[0]}_{rw}w.webp {rw}w' for rw, _ in rungs]
+                [f'{os.path.splitext(src)[0]}_{rw}w.webp {rw}w' for rw, _ in rungs]
                 + [f'{src} {w}w'])
             tag = tag.replace(f'src="{src}"', f'src="{src}" srcset="{srcset}" sizes="{sizes}"', 1)
 

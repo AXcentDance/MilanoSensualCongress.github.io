@@ -89,6 +89,14 @@ PAGE_GLOBS = ["*.html", "it/*.html", "news/*.html", "it/news/*.html"]
 # markers. These pages have no stylesheet <link> tags at all, so the
 # critical-CSS pipeline skips them.
 PAGES = {
+    "news/bachata-workshop-levels-guide-congress.html": [
+        "css/fonts.css",
+        "css/workshop-levels-guide.css",
+    ],
+    "it/news/livelli-workshop-bachata-congresso.html": [
+        "css/fonts.css",
+        "css/workshop-levels-guide.css",
+    ],
     "news/bachata-congress-alone-solo-dancer-guide.html": [
         "css/fonts.css",
         "css/solo-congress-guide.css",

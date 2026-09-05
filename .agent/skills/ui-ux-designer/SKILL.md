@@ -45,7 +45,7 @@ When the user asks to modify pages to target different search terms or improve r
 -   **Heading Hierarchy**: Strictly one `<h1>`. Logical `<h2>` -> `<h3>`.
 -   **Breadcrumbs**: Every subpage (blog, guide, course) MUST have both:
     1.  **JSON-LD BreadcrumbList**: In the `<head>`, correctly reflecting the site hierarchy.
-    2.  **Visual Breadcrumbs**: A `<nav class="breadcrumb-nav">` component placed within the Hero section, clearly displaying the navigation path (e.g., Home > Blog > Post Title).
+    2.  **Hidden HTML Breadcrumbs**: A functional `<nav aria-label="Breadcrumb" hidden style="display:none!important">` trail at the top of the content, preserving the hierarchy while remaining hidden at every viewport. Follow `.agent/rules/breadcrumbs.md`.
 -   **Blog Post Updates**: Whenever ANY change is made to a blog post, the `dateModified` property in the blog post's schema (JSON-LD) MUST be updated to the current date (format: YYYY-MM-DD).
 
 ### 5.2. Context Synchronization

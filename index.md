@@ -47,7 +47,7 @@ The International Choice
 
 #### English-Taught Workshops
 
-All 40+ hours of advanced workshops and masterclasses are conducted in **English** by world-class artists to ensure full accessibility for our European attendees.
+Workshops welcome beginners, intermediate and advanced dancers, with three rooms running in parallel during every workshop hour. Teaching is in **English**. [Explore Bachata workshops for every level](https://milanosensualcongress.com/news/bachata-workshop-levels-guide-congress).
 
 #### International Accessibility
 

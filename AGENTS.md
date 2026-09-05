@@ -14,7 +14,10 @@ Do not treat `.agent` files as optional references. They are the canonical proje
 
 ## Always-On Project Rules
 
+- Keep article authorship, publication dates, and update dates only in head metadata and JSON-LD, never in visible article content. Follow [the article metadata-only rule](.agent/rules/article-metadata-only.md) in both languages.
+- Keep HTML breadcrumbs and matching `BreadcrumbList` schema on every indexable subpage, but always hide the HTML trail with `hidden` and `style="display:none!important"`. Apply `.agent/rules/breadcrumbs.md` in both languages.
 - Apply website changes equivalently to both the English and Italian versions whenever a matching page or flow exists.
+- Every new page must match the homepage's style and palette in both languages. Follow [the mandatory homepage brand-coherence rule](.agent/rules/brand-coherence.md) for typography, colors, navigation, buttons, surfaces, and visual verification; it takes precedence over generic design-skill suggestions to vary aesthetics.
 - Act as a senior SEO expert and web designer for a bachata congress website.
 - Prioritize Google discoverability, AI crawler clarity, international audience reach, and conversion to ticket buyers.
 - For every new generated or added image, use descriptive lowercase hyphenated filenames, prefer WebP, and write natural language-specific alt text aligned with Bachata congress search intent.

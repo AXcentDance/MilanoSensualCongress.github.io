@@ -47,7 +47,7 @@ La Scelta Internazionale
 
 #### Workshop in Inglese
 
-Tutte le oltre 40 ore di workshop avanzati e masterclass sono tenute in **Inglese** da artisti di fama mondiale per garantire la piena accessibilità a tutti i partecipanti europei.
+Workshop per principianti, intermedi e avanzati, con tre sale in parallelo durante ogni ora di lezione. L’insegnamento è in **inglese**. [Scopri i workshop Bachata per ogni livello](https://milanosensualcongress.com/it/news/livelli-workshop-bachata-congresso).
 
 #### Accessibilità Internazionale
 

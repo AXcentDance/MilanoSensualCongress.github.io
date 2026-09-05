@@ -6,6 +6,14 @@ Il portale ufficiale per i congressi bachata 2026. Tutte le ultime notizie, i fe
 
 Canonical: https://milanosensualcongress.com/it/news
 
+Aggiornato il 5 settembre 2026
+
+### Un Congresso Bachata per Tutti
+
+Tre sale, ogni ora di workshop: principianti / open, intermedi e avanzati. Trova il tuo spazio al Milano Sensual Congress 2026.
+
+[Scopri il Tuo Livello](https://milanosensualcongress.com/it/news/livelli-workshop-bachata-congresso)
+
 14 Agosto 2026
 
 ### Festival di Bachata in Europa: il Calendario 2026-2027
@@ -51,14 +59,6 @@ Questa fascia è terminata il 31 luglio. Consulta la pagina biglietti per il pre
 Oltre 1.000 ballerini, artisti in pista, posti limitati, sold out lo scorso anno, due sale e più di 800 metri quadrati per ballare a Milano.
 
 [Leggi l'Articolo](https://milanosensualcongress.com/it/news/migliore-festa-bachata-italia-2026)
-
-8 Maggio 2026
-
-### Livelli Workshop Bachata
-
-Una guida pratica per scegliere classi principianti, intermedie o avanzate nei Workshop Bachata di un congresso a Milano.
-
-[Leggi l'Articolo](https://milanosensualcongress.com/it/news/livelli-workshop-bachata-congresso)
 
 30 Aprile 2026
 

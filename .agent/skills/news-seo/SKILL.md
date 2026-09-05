@@ -27,14 +27,14 @@ And any supporting sub-pages in their respective language directories.
 
 ## 4. Meta-Data & Schema
 - Update the `llms.txt` and `llms-full.txt` after adding news content using the `sync-indexes` skill.
-- Ensure the news article has a relevant `date` in both English and Italian formats.
+- Keep article authorship, publication dates, and update dates only in `<head>` metadata and the unified JSON-LD graph; never render bylines or editorial timestamps in article content in either language. Preserve accurate `author`, `datePublished`, and `dateModified` values in the `BlogPosting` entity. Follow [the article metadata-only rule](../../rules/article-metadata-only.md).
 - **JSON-LD Unified Graph Standard**:
     - You MUST use the `schema-graph` skill to inject a single JSON-LD `<script>` tag in the `<head>`.
     - This graph must include a `BlogPosting` object with all required properties (`headline`, `image`, `datePublished`, etc.).
     - **DanceEvent Inclusion (MANDATORY)**: Every news article MUST also include the full `DanceEvent` object from the `schema-graph` gold-standard template. 
     - **Linking**: Ensure the `DanceEvent` object has a `mainEntityOfPage` property pointing to the article's `#webpage` ID.
     - Reference the global `Organization` and `WebSite` IDs as defined in the `schema-graph` standard.
-- **Visual Breadcrumbs**: In addition to JSON-LD, implement visible breadcrumb links (e.g., "Back to News") at the top of the article.
+- **Hidden Breadcrumbs**: In addition to JSON-LD, retain an HTML breadcrumb trail at the top of the article, always hidden with `hidden` and `style="display:none!important"`. Existing “Back to News” links used as breadcrumbs must also be hidden. Follow `.agent/rules/breadcrumbs.md`.
 
 ## 5. URL Structure
 - Every news article file should be located within a relevant directory structure or logically mapped.

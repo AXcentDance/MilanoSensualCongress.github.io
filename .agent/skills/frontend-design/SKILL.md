@@ -38,7 +38,7 @@ NEVER use generic AI-generated aesthetics like overused font families (Inter, Ro
 Interpret creatively and make unexpected choices that feel genuinely designed for the context. No design should be the same. Vary between light and dark themes, different fonts, different aesthetics. NEVER converge on common choices (Space Grotesk, for example) across generations.
 
 ## Mandatory Components
-- **Breadcrumbs**: Every page (except the Homepage) must have a functional breadcrumb navigation at the top of the content area.
+- **Breadcrumbs**: Every page (except the Homepage) must have functional breadcrumb navigation at the top of the content area, always hidden with `hidden` and `style="display:none!important"`, following `.agent/rules/breadcrumbs.md`.
     - **SEO Benefit**: Enhances crawlability and gives context to search engines.
     - **Hierarchy**: Pages should link back to their parent and the Home page.
     - **JSON-LD**: Always include `BreadcrumbList` schema in the `<head>` of any sub-page.

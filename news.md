@@ -6,6 +6,14 @@ Stay updated with the latest Bachata news, festival guides, and dance insights f
 
 Canonical: https://milanosensualcongress.com/news
 
+Updated September 5, 2026
+
+### A Bachata Congress for Everyone
+
+Three rooms, every workshop hour: beginner / open, intermediate and advanced. Find your place at Milano Sensual Congress 2026.
+
+[Find Your Workshop Level](https://milanosensualcongress.com/news/bachata-workshop-levels-guide-congress)
+
 August 14, 2026
 
 ### Bachata Festivals in Europe: The 2026-2027 Calendar
@@ -51,14 +59,6 @@ May 11, 2026
 Over 1,000 dancers, all artists on the dance floor, limited spots, last year sold out, two dance floors and 800+ square meters to dance in Milan.
 
 [Read Article](https://milanosensualcongress.com/news/best-bachata-party-italy-2026)
-
-May 8, 2026
-
-### Bachata Workshop Levels
-
-A practical guide for dancers choosing beginner, intermediate or advanced Bachata Workshop classes at a congress in Milan.
-
-[Read Article](https://milanosensualcongress.com/news/bachata-workshop-levels-guide-congress)
 
 April 30, 2026
 
