@@ -33,6 +33,7 @@ def audit_page(html, page):
         directives = {parts[0]: set(parts[1:]) for directive in csp[0]['content'].split(';')
                       if (parts := directive.split())}
         required_tracking = {
+            'img-src': {'https://www.facebook.com', 'https://connect.facebook.net'},
             'form-action': {'https://www.facebook.com/tr/'},
             'connect-src': {'https://www.facebook.com', 'https://connect.facebook.net',
                 'https://dv-c3e594c6d429469e90b54478358619c3.ecs.us-east-1.on.aws',
