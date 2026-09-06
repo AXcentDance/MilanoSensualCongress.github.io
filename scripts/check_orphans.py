@@ -1,33 +1,20 @@
 #!/usr/bin/env python3
-"""Orphan-page check: every indexable page needs at least one inbound
-internal link.
-
-Builds the internal-link graph over all indexable pages (root, it/, news/,
-it/news/). All href="" values count: body links (clean extensionless URLs
-like ``artists``, ``./``, ``/it/tickets``, ``news/foo``), hreflang
-alternates and the language switcher. A link only counts as inbound when it
-comes from a *different* indexable page (self-references such as the
-canonical tag do not rescue a page).
-
-Fails (exit 1) listing any indexable page with zero inbound internal links;
-404.html is exempt. Success marker: "no orphan pages".
+"""Every indexable page must be reachable from a homepage via HTML links.
+Hreflang metadata and isolated pairs of translated pages cannot rescue orphans.
 """
-import glob
+from site_files import site_pages
 import os
 import posixpath
 import re
 import sys
 from urllib.parse import urlsplit
+from bs4 import BeautifulSoup
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SITE_HOSTS = {'milanosensualcongress.com', 'www.milanosensualcongress.com'}
 
-HREF_RE = re.compile(r'href=["\']([^"\']+)["\']')
-
-
 def pages():
-    return sorted(glob.glob('*.html') + glob.glob('it/*.html')
-                  + glob.glob('news/*.html') + glob.glob('it/news/*.html'))
+    return site_pages()
 
 
 def resolve(href, source, page_set):
@@ -66,28 +53,38 @@ def resolve(href, source, page_set):
     return None
 
 
+def unreachable_pages(html):
+    parsed = {page: BeautifulSoup(content, 'html.parser') for page, content in html.items()}
+    indexable = {page for page, soup in parsed.items() if not any(
+        'noindex' in meta.get('content', '').lower()
+        for meta in soup.find_all('meta', attrs={'name': 'robots'}))}
+    graph = {page: set() for page in indexable}
+    for source in indexable:
+        body = parsed[source].body
+        for link in body.find_all('a', href=True) if body else []:
+            target = resolve(link['href'], source, indexable)
+            if target:
+                graph[source].add(target)
+    pending = list(indexable & {'index.html', 'it/index.html'})
+    reached = set()
+    while pending:
+        page = pending.pop()
+        if page not in reached:
+            reached.add(page)
+            pending.extend(graph[page] - reached)
+    return sorted(indexable - reached)
+
+
 def main():
     os.chdir(REPO_ROOT)
-    all_pages = pages()
-    html = {p: open(p, encoding='utf-8').read() for p in all_pages}
-    indexable = [p for p in all_pages if 'noindex' not in html[p]]
-    page_set = set(all_pages)
-
-    inbound = {p: set() for p in all_pages}
-    for source in indexable:
-        for href in HREF_RE.findall(html[source]):
-            target = resolve(href, source, page_set)
-            if target and target != source:
-                inbound[target].add(source)
-
-    orphans = [p for p in indexable if p != '404.html' and not inbound[p]]
+    html = {page: open(page, encoding='utf-8').read() for page in pages()}
+    orphans = unreachable_pages(html)
     if orphans:
-        print(f'FAILED: {len(orphans)} orphan page(s) with zero inbound internal links:')
+        print(f'FAILED: {len(orphans)} page(s) unreachable from the homepages:')
         for p in orphans:
             print(' -', p)
         sys.exit(1)
-    print(f'no orphan pages ({len(indexable)} indexable pages all reachable '
-          f'via internal links)')
+    print('no orphan pages (all indexable pages reachable via HTML links from the homepages)')
 
 
 if __name__ == '__main__':

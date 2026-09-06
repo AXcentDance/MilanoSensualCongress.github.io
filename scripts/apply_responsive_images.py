@@ -14,12 +14,18 @@ import glob
 import os
 import re
 import subprocess
+from urllib.parse import urlsplit
+from site_files import site_pages
+from pathlib import Path
 
 VARIANT_WIDTHS = [480, 800, 1200]
 
 # (page glob, src substring, sizes) — first match wins.
 # Measured: 375px / 768px / 1440px viewports, real rendered widths.
 CONTEXT_RULES = [
+    # AS Cambiago card: measured 277 / 654 / 567px at 375 / 768 / 1440px.
+    ('hotel.html', 'as-hotel-cambiago-entrance-fountain', '(max-width: 639px) calc(100vw - 98px), (max-width: 767px) 542px, (max-width: 1023px) 654px, (max-width: 1279px) 439px, (max-width: 1535px) 567px, 695px'),
+    ('it/hotel.html', 'as-hotel-cambiago-entrance-fountain', '(max-width: 639px) calc(100vw - 98px), (max-width: 767px) 542px, (max-width: 1023px) 654px, (max-width: 1279px) 439px, (max-width: 1535px) 567px, 695px'),
     # Workshop feature poster: measured 333 / 335 / 488px at 375 / 768 / 1440px.
     ('news/bachata-workshop-levels-guide-congress.html', 'bachata-congress-milan-2026-workshop-levels', '(max-width: 640px) calc(100vw - 42px), (max-width: 900px) calc((100vw - 94px) / 2 - 2px), (max-width: 1050px) calc((100vw - 102px) / 2.15 - 2px), (max-width: 1181px) calc((100vw - 128px) / 2.15 - 2px), 488px'),
     ('it/news/livelli-workshop-bachata-congresso.html', 'bachata-congress-milan-2026-workshop-levels', '(max-width: 640px) calc(100vw - 42px), (max-width: 900px) calc((100vw - 94px) / 2 - 2px), (max-width: 1050px) calc((100vw - 102px) / 2.15 - 2px), (max-width: 1181px) calc((100vw - 128px) / 2.15 - 2px), 488px'),
@@ -73,7 +79,7 @@ def variants_for(fs_path):
 
 
 def sizes_for(page, src, tag):
-    is_hero = all(m in tag for m in EAGER_MARKERS) or (
+    is_hero = 'fetchpriority="high"' in tag or all(m in tag for m in EAGER_MARKERS) or (
         'w-full' in tag and 'h-full' in tag and 'absolute' in tag)
     for page_glob, needle, sizes in CONTEXT_RULES:
         if page != page_glob:
@@ -88,8 +94,7 @@ def sizes_for(page, src, tag):
 
 
 def process_page(page):
-    html = orig = open(page).read()
-    prefix = '../' if page.startswith(('it/', 'news/')) or page.startswith('it/news/') else ''
+    html = orig = Path(page).read_text(encoding='utf-8')
 
     def rewrite(m):
         tag = m.group(0)
@@ -98,10 +103,12 @@ def process_page(page):
             return tag
         src = src_m.group(1)
         # Normalize absolute production URLs to local relative paths
-        local_src = re.sub(r'https://milanosensualcongress\.com/', prefix, src)
-        fs_path = local_src[len(prefix):] if prefix and local_src.startswith(prefix) else local_src
-        if local_src.startswith('/'):
-            fs_path = local_src.lstrip('/')
+        local_src = re.sub(r'https://milanosensualcongress\.com/', '/', src)
+        parsed = urlsplit(local_src)
+        if parsed.scheme or parsed.netloc:
+            return tag
+        fs_path = (parsed.path.lstrip('/') if parsed.path.startswith('/') else
+                   os.path.normpath(os.path.join(os.path.dirname(page), parsed.path)))
         if not fs_path.endswith('.webp') or not os.path.exists(fs_path):
             return tag
         if src != local_src:
@@ -125,8 +132,9 @@ def process_page(page):
         # Loading policy: heroes eager+high priority, everything else lazy
         if is_hero:
             tag = re.sub(r'\sloading="\w+"', '', tag)
+            tag = tag.replace('<img', '<img loading="eager"', 1)
             if 'fetchpriority=' not in tag:
-                tag = tag.replace('<img', '<img loading="eager" fetchpriority="high"', 1)
+                tag = tag.replace('<img', '<img fetchpriority="high"', 1)
         elif 'loading=' not in tag:
             tag = tag.replace('<img', '<img loading="lazy"', 1)
         if 'decoding=' not in tag:
@@ -135,14 +143,13 @@ def process_page(page):
 
     html = re.sub(r'<img[^>]*>', rewrite, html)
     if html != orig:
-        open(page, 'w').write(html)
+        Path(page).write_text(html, encoding='utf-8')
         return True
     return False
 
 
 def main():
-    pages = (glob.glob('*.html') + glob.glob('it/*.html')
-             + glob.glob('news/*.html') + glob.glob('it/news/*.html'))
+    pages = site_pages()
     changed = [p for p in pages if process_page(p)]
     print(f'{len(changed)} pages updated')
 

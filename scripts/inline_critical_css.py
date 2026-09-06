@@ -16,14 +16,15 @@ Two mechanisms live here:
        filtered recursively; @keyframes are kept when referenced;
      - vendor/fontawesome/fa-subset.min.css filtered the same way (it is a
        flat list of single-class selectors with root-absolute font URLs, so
-       the tailwind treatment is trivially safe for it).
+       the tailwind treatment is trivially safe for it);
+     - all of css/site.css (small shared accessibility/responsive defaults).
 
    The bundle is injected as ONE marker block where the stylesheets sat:
 
      <style data-critical="HASH">...</style>
 
    where HASH is a stable content hash of the generated CSS plus the source
-   CSS files. The three stylesheet links are converted to the async pattern
+   CSS files. The shared stylesheet links are converted to the async pattern
    (media="print" onload="this.media='all'") with a single
    <noscript data-critical-fallback> block, so no render-blocking CSS
    request remains. Relative url() references are rewritten root-absolute.
@@ -45,7 +46,7 @@ Usage:
 stale or missing critical blocks, and on success prints the line
 "critical css fresh".
 
-Run this script after editing css/fonts.css, css/tailwind.min.css,
+Run this script after editing css/fonts.css, css/tailwind.min.css, css/site.css,
 vendor/fontawesome/fa-subset.min.css, any CSS file listed in PAGES, or any
 page's markup (class changes alter that page's critical subset).
 """
@@ -56,6 +57,7 @@ import os
 import re
 import statistics
 import sys
+from site_files import site_pages
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -70,6 +72,7 @@ CRITICAL_SOURCES = [
     ("css/fonts.css", "full"),
     ("css/tailwind.min.css", "purge"),
     ("vendor/fontawesome/fa-subset.min.css", "purge"),
+    ("css/site.css", "full"),
 ]
 
 # Classes that scripts toggle at runtime and must always survive purging.
@@ -92,18 +95,22 @@ PAGES = {
     "news/bachata-workshop-levels-guide-congress.html": [
         "css/fonts.css",
         "css/workshop-levels-guide.css",
+        "css/site.css",
     ],
     "it/news/livelli-workshop-bachata-congresso.html": [
         "css/fonts.css",
         "css/workshop-levels-guide.css",
+        "css/site.css",
     ],
     "news/bachata-congress-alone-solo-dancer-guide.html": [
         "css/fonts.css",
         "css/solo-congress-guide.css",
+        "css/site.css",
     ],
     "it/news/congresso-bachata-da-soli-guida-ballerini.html": [
         "css/fonts.css",
         "css/solo-congress-guide.css",
+        "css/site.css",
     ],
 }
 
@@ -473,7 +480,8 @@ def process_page(page, sources, css_universe, check):
 
     if check:
         found = DATA_CRITICAL_RE.findall(html)
-        if len(found) != 1 or found[0] != digest:
+        content = re.search(r'<style data-critical="[0-9a-f]+">(.*?)</style>', html, re.S)
+        if len(found) != 1 or found[0] != digest or not content or content.group(1) != critical:
             state = "missing" if not found else "stale"
             print("STALE: %s critical block is %s" % (page, state))
             return False, size, False
@@ -531,14 +539,14 @@ def sync_data_inline_page(page, css_files, check):
 # ---------------------------------------------------------------------------
 
 
+INLINE_SUPPLEMENTS = {
+    "hotel.html": ["css/hotel-views.css"],
+    "it/hotel.html": ["css/hotel-views.css"],
+}
+
+
 def iter_pages():
-    pages = []
-    for pattern in PAGE_GLOBS:
-        for path in sorted(glob.glob(os.path.join(ROOT, pattern))):
-            rel = os.path.relpath(path, ROOT).replace(os.sep, "/")
-            if rel not in PAGES:
-                pages.append(rel)
-    return pages
+    return [page for page in site_pages() if page not in PAGES]
 
 
 def main():
@@ -565,7 +573,7 @@ def main():
         ok = page_ok and ok
         if size is not None:
             sizes.append(size)
-    for page, css_files in PAGES.items():
+    for page, css_files in {**PAGES, **INLINE_SUPPLEMENTS}.items():
         ok = sync_data_inline_page(page, css_files, check=args.check) and ok
 
     if sizes:

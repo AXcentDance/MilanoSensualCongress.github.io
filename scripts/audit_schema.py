@@ -3,6 +3,7 @@ import re
 import json
 import sys
 from urllib.parse import urlsplit
+from site_files import site_pages
 
 ROOT_DIR = "."
 SITE = "https://milanosensualcongress.com"
@@ -126,14 +127,7 @@ def check_forbidden_types(rel, data, issues):
 
 
 def html_files():
-    files = []
-    for root, dirs, filenames in os.walk(ROOT_DIR):
-        dirs[:] = [d for d in dirs
-                   if not d.startswith('.') and d not in ('node_modules', 'scripts', 'vendor')]
-        for f in filenames:
-            if f.endswith('.html'):
-                files.append(os.path.join(root, f))
-    return sorted(files)
+    return [os.path.join(ROOT_DIR, page) for page in site_pages(ROOT_DIR)]
 
 
 def audit_schema():

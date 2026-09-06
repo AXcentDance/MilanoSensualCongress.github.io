@@ -4,7 +4,7 @@
 Every page that embeds a DanceEvent Offer (root pages, it/, news/, it/news/)
 must agree on the current Full Pass price and its validThrough deadline.
 The canonical values live at the top of this script; the master gate runs
-``--check`` so any page that drifts fails CI.
+``--check`` so any page that drifts fails the local quality gate.
 
 Usage:
     python3 scripts/update_price.py --check
@@ -29,7 +29,7 @@ What counts as a Full Pass node:
 Named non-Full-Pass offers (Masterclass Upgrade, Jack & Jill, "Next Full
 Pass Tier") are left untouched.
 """
-import glob
+from site_files import site_pages
 import json
 import os
 import re
@@ -47,8 +47,7 @@ LDJSON_RE = re.compile(r'(<script type="application/ld\+json">)(.*?)(</script>)'
 
 def pages():
     os.chdir(REPO_ROOT)
-    return sorted(glob.glob('*.html') + glob.glob('it/*.html')
-                  + glob.glob('news/*.html') + glob.glob('it/news/*.html'))
+    return site_pages()
 
 
 def is_full_pass_name(name):

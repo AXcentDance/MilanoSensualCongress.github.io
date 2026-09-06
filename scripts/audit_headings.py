@@ -2,6 +2,7 @@ import os
 import re
 import sys
 from html.parser import HTMLParser
+from site_files import site_pages
 
 class HeadingAuditor(HTMLParser):
     def __init__(self, filename):
@@ -59,13 +60,7 @@ class HeadingAuditor(HTMLParser):
             previous_level = level
 
 def check_files(directory):
-    html_files = []
-    for root, dirs, files in os.walk(directory):
-        # skip hidden dirs (.git, .claude worktrees) and node_modules
-        dirs[:] = [d for d in dirs if not d.startswith('.') and d != 'node_modules']
-        for file in files:
-            if file.endswith(".html"):
-                html_files.append(os.path.join(root, file))
+    html_files = [os.path.join(directory, page) for page in site_pages(directory)]
 
     has_errors = False
     for file_path in html_files:
@@ -87,9 +82,11 @@ def check_files(directory):
                 
         except Exception as e:
             print(f"Error processing {file_path}: {e}")
+            has_errors = True
 
     if not has_errors:
         print("Heading structure audit passed!")
+    return has_errors
 
 if __name__ == "__main__":
-    check_files(".")
+    sys.exit(1 if check_files(".") else 0)

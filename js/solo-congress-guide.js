@@ -79,151 +79,90 @@ if (!reduceMotion && window.gsap && window.ScrollTrigger) {
   });
 }
 
+// Preserve the constellation with Canvas 2D: no WebGL startup or 3D downloads.
 const canvas = document.querySelector("#connection-canvas");
-
-// three.js is ~600 KB of main-thread work for a decorative background:
-// load it lazily once the page is idle so it never delays interactivity.
-if (canvas && !reduceMotion) {
-  const startScene = () => {
-    import("/vendor/three/three.module.min.js")
-      .then(initConnectionScene)
-      .catch(() => { canvas.hidden = true; });
-  };
-  const scheduleScene = () => {
-    if ("requestIdleCallback" in window) {
-      requestIdleCallback(startScene, { timeout: 3000 });
-    } else {
-      setTimeout(startScene, 1500);
-    }
-  };
-  if (document.readyState === "complete") {
-    scheduleScene();
-  } else {
-    window.addEventListener("load", scheduleScene, { once: true });
-  }
-}
-
-function initConnectionScene(THREE) {
-  try {
-    const renderer = new THREE.WebGLRenderer({ canvas, alpha: true, antialias: true });
-    const scene = new THREE.Scene();
-    const camera = new THREE.PerspectiveCamera(46, 1, .1, 100);
-    const group = new THREE.Group();
-    const pointCount = window.innerWidth < 700 ? 54 : 84;
-    const positions = new Float32Array(pointCount * 3);
-    const colors = new Float32Array(pointCount * 3);
-    const pink = new THREE.Color(0xec4899);
-    const purple = new THREE.Color(0x8b5cf6);
-    const white = new THREE.Color(0xf8fafc);
-    const points = [];
-
-    camera.position.z = 8.4;
-    scene.add(group);
-
-    for (let i = 0; i < pointCount; i += 1) {
+if (canvas) {
+  const context = canvas.getContext("2d");
+  if (context) {
+    const points = Array.from({ length: innerWidth < 700 ? 54 : 84 }, (_, i) => {
       const angle = i * 2.399963;
-      const radius = 1.2 + Math.sqrt(i / pointCount) * 4.9;
-      const x = Math.cos(angle) * radius + 1.55;
-      const y = Math.sin(angle) * radius * .72;
-      const z = (Math.sin(i * 1.73) * 1.35) - .4;
-      const point = new THREE.Vector3(x, y, z);
-      const color = i % 11 === 0 ? pink : (i % 7 === 0 ? purple : white);
-
-      points.push(point);
-      positions.set([x, y, z], i * 3);
-      colors.set([color.r, color.g, color.b], i * 3);
-    }
-
-    const pointGeometry = new THREE.BufferGeometry();
-    pointGeometry.setAttribute("position", new THREE.BufferAttribute(positions, 3));
-    pointGeometry.setAttribute("color", new THREE.BufferAttribute(colors, 3));
-
-    const pointMaterial = new THREE.PointsMaterial({
-      size: .075,
-      transparent: true,
-      opacity: .9,
-      vertexColors: true,
-      sizeAttenuation: true
+      const radius = 1.2 + Math.sqrt(i / (innerWidth < 700 ? 54 : 84)) * 4.9;
+      return { x: Math.cos(angle) * radius + 1.55, y: Math.sin(angle) * radius * .72,
+        z: Math.sin(i * 1.73) * 1.35 - .4,
+        color: i % 11 === 0 ? "#ec4899" : i % 7 === 0 ? "#8b5cf6" : "#f8fafc" };
     });
-    group.add(new THREE.Points(pointGeometry, pointMaterial));
-
-    const lineCoordinates = [];
-    let lineCount = 0;
-    for (let i = 0; i < points.length && lineCount < 118; i += 1) {
-      for (let j = i + 1; j < points.length && lineCount < 118; j += 1) {
-        if (points[i].distanceTo(points[j]) < 1.28) {
-          lineCoordinates.push(
-            points[i].x, points[i].y, points[i].z,
-            points[j].x, points[j].y, points[j].z
-          );
-          lineCount += 1;
-        }
+    const edges = [];
+    for (let i = 0; i < points.length; i++) for (let j = i + 1; j < points.length && edges.length < 118; j++) {
+      const a = points[i], b = points[j];
+      if (Math.hypot(a.x-b.x, a.y-b.y, a.z-b.z) < 1.28) edges.push([i,j]);
+    }
+    let width, height, raf, last = 0, visible = true;
+    const pointer = { x: 0, y: 0 }, target = { x: 0, y: 0 };
+    function project(point, angle) {
+      const x = point.x * Math.cos(angle) + point.z * Math.sin(angle);
+      const z = -point.x * Math.sin(angle) + point.z * Math.cos(angle);
+      const tilt = -.05 + pointer.y;
+      const y = point.y * Math.cos(tilt) - z * Math.sin(tilt);
+      const depth = 8.4 - (point.y * Math.sin(tilt) + z * Math.cos(tilt));
+      const scale = height / (2 * Math.tan(23 * Math.PI / 180) * depth);
+      return { x: width / 2 + x * scale, y: height / 2 - y * scale, scale };
+    }
+    function draw(time = 0) {
+      context.clearRect(0, 0, width, height);
+      pointer.x += (target.x - pointer.x) * .07;
+      pointer.y += (target.y - pointer.y) * .07;
+      const angle = time * .000035 + pointer.x;
+      const projected = points.map(point => project(point, angle));
+      context.globalAlpha = .13;
+      context.strokeStyle = "#8b5cf6";
+      context.lineWidth = 1;
+      context.beginPath();
+      for (const [i,j] of edges) {
+        context.moveTo(projected[i].x, projected[i].y);
+        context.lineTo(projected[j].x, projected[j].y);
       }
+      context.stroke();
+      context.strokeStyle = "#ec4899";
+      context.beginPath();
+      for (let i = 0; i <= 120; i++) {
+        const a = i / 120 * Math.PI * 2 + time * .00009;
+        const x = Math.cos(a) * 2.15, y = Math.sin(a) * 2.15;
+        const point = project({ x: x * Math.cos(-.35) + y * Math.sin(.72) * Math.sin(-.35) + 1.65,
+          y: y * Math.cos(.72) - .2, z: -x * Math.sin(-.35) + y * Math.sin(.72) * Math.cos(-.35) - .8 }, angle);
+        if (i === 0) context.moveTo(point.x, point.y); else context.lineTo(point.x, point.y);
+      }
+      context.stroke();
+      context.globalAlpha = .9;
+      points.forEach((point,i) => {
+        context.fillStyle = point.color;
+        context.beginPath();
+        context.arc(projected[i].x, projected[i].y, Math.max(.7, projected[i].scale * .025), 0, Math.PI * 2);
+        context.fill();
+      });
     }
-
-    const lineGeometry = new THREE.BufferGeometry();
-    lineGeometry.setAttribute("position", new THREE.Float32BufferAttribute(lineCoordinates, 3));
-    const lineMaterial = new THREE.LineBasicMaterial({
-      color: 0x8b5cf6,
-      transparent: true,
-      opacity: .13
-    });
-    group.add(new THREE.LineSegments(lineGeometry, lineMaterial));
-
-    const ringMaterial = new THREE.MeshBasicMaterial({
-      color: 0xec4899,
-      wireframe: true,
-      transparent: true,
-      opacity: .13
-    });
-    const ring = new THREE.Mesh(new THREE.TorusGeometry(2.15, .018, 6, 120), ringMaterial);
-    ring.position.set(1.65, -.2, -.8);
-    ring.rotation.x = .72;
-    ring.rotation.y = -.35;
-    group.add(ring);
-
-    const pointer = { x: 0, y: 0 };
-    const target = { x: 0, y: 0 };
-    let rafId;
-
+    function frame(time) {
+      if (time - last >= 1000 / 30) { draw(time); last = time; }
+      raf = requestAnimationFrame(frame);
+    }
+    function updateAnimation() {
+      cancelAnimationFrame(raf);
+      if (!reduceMotion && visible && !document.hidden) raf = requestAnimationFrame(frame);
+    }
     function resize() {
-      const width = canvas.clientWidth;
-      const height = canvas.clientHeight;
-      renderer.setPixelRatio(Math.min(window.devicePixelRatio, 1.75));
-      renderer.setSize(width, height, false);
-      camera.aspect = width / Math.max(height, 1);
-      camera.updateProjectionMatrix();
+      width = canvas.clientWidth; height = canvas.clientHeight;
+      const ratio = Math.min(devicePixelRatio, 1.75);
+      canvas.width = Math.round(width * ratio); canvas.height = Math.round(height * ratio);
+      context.setTransform(ratio, 0, 0, ratio, 0, 0);
+      draw(last);
     }
-
-    function onPointerMove(event) {
-      target.x = (event.clientX / window.innerWidth - .5) * .22;
-      target.y = (event.clientY / window.innerHeight - .5) * .16;
-    }
-
-    function render(time = 0) {
-      pointer.x += (target.x - pointer.x) * .035;
-      pointer.y += (target.y - pointer.y) * .035;
-      group.rotation.y = time * .000035 + pointer.x;
-      group.rotation.x = -.05 + pointer.y;
-      ring.rotation.z = time * .00009;
-      renderer.render(scene, camera);
-      rafId = requestAnimationFrame(render);
-    }
-
-    function onVisibilityChange() {
-      if (document.hidden) {
-        cancelAnimationFrame(rafId);
-      } else {
-        rafId = requestAnimationFrame(render);
-      }
-    }
-
     window.addEventListener("resize", resize, { passive: true });
-    window.addEventListener("pointermove", onPointerMove, { passive: true });
-    document.addEventListener("visibilitychange", onVisibilityChange);
+    window.addEventListener("pointermove", event => {
+      target.x = (event.clientX / innerWidth - .5) * .22;
+      target.y = (event.clientY / innerHeight - .5) * .16;
+    }, { passive: true });
+    document.addEventListener("visibilitychange", updateAnimation);
+    new IntersectionObserver(entries => { visible = entries[0].isIntersecting; updateAnimation(); }).observe(canvas);
     resize();
-    render();
-  } catch (error) {
-    canvas.hidden = true;
+    updateAnimation();
   }
 }
