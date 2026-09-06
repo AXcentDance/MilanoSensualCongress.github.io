@@ -11,7 +11,7 @@
 
 Run from the repo root: python3 scripts/sync_social_meta.py
 """
-import glob
+from site_files import site_pages
 import os
 import re
 import subprocess
@@ -131,8 +131,7 @@ def process(path):
 
 
 def main():
-    pages = (glob.glob('*.html') + glob.glob('it/*.html')
-             + glob.glob('news/*.html') + glob.glob('it/news/*.html'))
+    pages = site_pages()
     pages = [p for p in pages if os.path.basename(p) != '404.html']
     skipped = [r for p in pages if (r := process(p))]
     print(f'{len(pages) - len(skipped)} pages normalized')

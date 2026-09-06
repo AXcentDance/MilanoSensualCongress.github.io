@@ -1,4 +1,5 @@
 import os
+from site_files import ignored_directory
 import re
 # Check if bs4 is available, if not, handle gracefully or use regex fallback?
 # User snippet imports bs4. I will assume it is available or I should check.
@@ -30,6 +31,9 @@ PRIORITY = [
 ]
 
 def should_ignore(path):
+    path = os.path.relpath(path, ROOT_DIR)
+    if any(ignored_directory(p) for p in path.split(os.sep) if p != "."):
+        return True
     for pattern in IGNORE_PATTERNS:
         if pattern in path.split(os.sep):
             return True
@@ -161,6 +165,7 @@ def main():
     
     html_files = []
     for root, dirs, files in os.walk(ROOT_DIR):
+        dirs[:] = sorted(d for d in dirs if not ignored_directory(d))
         if should_ignore(root):
             continue
         for file in files:

@@ -4,12 +4,17 @@
  *   npx tailwindcss@3.4.17 -c tailwind.config.js -o css/tailwind.min.css --minify
  * (Union of every inline `tailwind.config` block that previously shipped on the pages.)
  */
+const { execFileSync } = require('node:child_process');
+const { readFileSync } = require('node:fs');
+const { resolve } = require('node:path');
+const pages = JSON.parse(execFileSync('python3', [resolve(__dirname, 'scripts/site_files.py')], { encoding: 'utf8' }));
 module.exports = {
+  // The same inventory as the quality gates includes future nested pages.
+  // Generated inline CSS must not preserve classes removed from the actual HTML.
   content: [
-    './*.html',
-    './it/*.html',
-    './news/*.html',
-    './it/news/*.html',
+    ...pages.map(file => ({ extension: 'html', raw: readFileSync(resolve(__dirname, file), 'utf8')
+      .replace(/<style\b[^>]*>[\s\S]*?<\/style>/gi, '') })),
+    './js/**/*.js',
   ],
   safelist: ['hidden', 'animate-spin'],
   theme: {

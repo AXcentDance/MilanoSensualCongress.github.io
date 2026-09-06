@@ -1,4 +1,5 @@
 import os
+from site_files import ignored_directory
 import re
 import datetime
 import subprocess
@@ -60,7 +61,7 @@ def get_url_path(filepath):
     if rel_path == 'index':
         return '/'
     if rel_path.endswith('/index'):
-        return '/' + rel_path[:-6]
+        return '/' + rel_path[:-5]
     
     return '/' + rel_path
 
@@ -177,7 +178,7 @@ def generate_sitemap():
     for root, dirs, files in os.walk(ROOT_DIR):
         # Prune development-only directories before os.walk descends into them.
         # Hidden worktrees must never become public sitemap URLs.
-        dirs[:] = [directory for directory in dirs if directory not in IGNORED_DIRS]
+        dirs[:] = [directory for directory in dirs if not ignored_directory(directory) and directory not in IGNORED_DIRS]
         
         for file in files:
             if file.endswith('.html'):

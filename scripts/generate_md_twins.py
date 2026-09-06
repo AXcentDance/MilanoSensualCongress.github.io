@@ -24,6 +24,7 @@ Usage:
 """
 
 import os
+from site_files import ignored_directory
 import posixpath
 import re
 import sys
@@ -64,7 +65,7 @@ BLOCK_TAGS = {
 
 def should_ignore(rel_path):
     parts = rel_path.replace(os.sep, '/').split('/')
-    return any(p in IGNORE_PATTERNS for p in parts)
+    return any(ignored_directory(p) or p in IGNORE_PATTERNS for p in parts)
 
 
 def clean_url(rel_html_path, fragment=''):

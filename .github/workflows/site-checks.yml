@@ -1,12 +1,24 @@
-name: Site checks & freshness
+name: Site quality and deployment
 
 on:
   push:
     branches: [main]
+    paths-ignore: ['.agent/**', 'AGENTS.md', 'System/**']
   pull_request:
+    paths-ignore: ['.agent/**', 'AGENTS.md', 'System/**']
+  workflow_dispatch:
+    inputs:
+      live_audit:
+        description: Audit the currently published site
+        type: boolean
+        default: false
+
+concurrency:
+  group: site-${{ github.ref }}
+  cancel-in-progress: true
 
 permissions:
-  contents: write
+  contents: read
 
 jobs:
   checks:
@@ -17,61 +29,129 @@ jobs:
           fetch-depth: 0  # full history: sitemap lastmod comes from git log
 
       - name: Install checker dependencies
-        run: pip install beautifulsoup4
+        run: pip install -r requirements-dev.txt
 
-      - name: Master site gate
-        run: python3 scripts/run_all_checks.py
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
 
-      - name: Browser behavior regression tests
-        run: node --test tests/*.test.cjs
+      - run: npm ci
 
-  regenerate:
-    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+      - name: Verify compiled Tailwind includes the current page classes
+        run: |
+          npm run build:css
+          git diff --exit-code -- css/tailwind.min.css
+
+      - name: Refresh generated indexes
+        run: |
+          python3 scripts/generate_md_twins.py
+          python3 scripts/generate_rss.py
+          python3 scripts/generate_sitemap.py
+          python3 scripts/generate_llms_text.py
+
+      - name: Master site gate and regression tests
+        run: npm run check
+
+      - name: Package public files
+        if: ${{ !inputs.live_audit }}
+        run: |
+          python3 scripts/build_site.py
+          # Preserve .well-known and .nojekyll; upload-pages-artifact v4 excludes them.
+          tar -cf "$RUNNER_TEMP/artifact.tar" -C .quality/site .
+
+      - uses: actions/upload-artifact@v4
+        if: ${{ !inputs.live_audit }}
+        with:
+          name: github-pages
+          path: ${{ runner.temp }}/artifact.tar
+          retention-days: 3
+
+  browsers:
+    needs: checks
+    if: ${{ !inputs.live_audit }}
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        browser: [chromium, firefox, webkit]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: npx playwright install --with-deps ${{ matrix.browser }}
+      - name: Every page on phone, tablet and desktop
+        run: npx playwright test --project=${{ matrix.browser }}-phone --project=${{ matrix.browser }}-tablet --project=${{ matrix.browser }}-desktop
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: browser-${{ matrix.browser }}
+          path: |
+            .quality/browser-results.json
+            .quality/browser-artifacts/
+          include-hidden-files: true
+          retention-days: 14
+
+  lighthouse:
     needs: checks
     runs-on: ubuntu-latest
+    timeout-minutes: 120
+    strategy:
+      fail-fast: false
+      matrix:
+        profile: [phone, tablet, desktop]
     steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: npx playwright install --with-deps chromium
+      - name: All-page 95+ Lighthouse gate
+        env:
+          LIVE_AUDIT: ${{ inputs.live_audit }}
+        run: |
+          export CHROME_PATH="$(node --input-type=module -e "import { chromium } from '@playwright/test'; process.stdout.write(chromium.executablePath())")"
+          AUDIT_ARGS=()
+          if [ "$LIVE_AUDIT" = "true" ]; then
+            AUDIT_ARGS+=(--base-url=https://milanosensualcongress.com)
+          fi
+          npm run audit:lighthouse -- --profiles=${{ matrix.profile }} --output=.quality/lighthouse-${{ matrix.profile }} "${AUDIT_ARGS[@]}"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: lighthouse-${{ matrix.profile }}
+          path: .quality/lighthouse-${{ matrix.profile }}/
+          include-hidden-files: true
+          retention-days: 14
+
+  deploy:
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main' && !inputs.live_audit
+    needs: [checks, browsers, lighthouse]
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/configure-pages@v5
+      - name: Publish the artifact that passed every quality gate
+        id: deployment
+        uses: actions/deploy-pages@v4
+
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-
-      - name: Install dependencies
-        run: pip install beautifulsoup4
-
-      - name: Regenerate sitemap, llms-full.txt, md twins and feeds
-        run: |
-          python3 scripts/generate_sitemap.py
-          python3 scripts/generate_llms_text.py
-          if [ -f scripts/generate_md_twins.py ]; then
-            python3 scripts/generate_md_twins.py
-          fi
-          if [ -f scripts/generate_rss.py ]; then
-            python3 scripts/generate_rss.py
-          fi
-
-      - name: Commit regenerated indexes
-        run: |
-          git config user.name "site-bot"
-          git config user.email "actions@users.noreply.github.com"
-          git add sitemap.xml llms-full.txt llms.txt
-          git add -A -- '*.md' || true
-          if [ -f feed.xml ]; then git add feed.xml it/feed.xml; fi
-          if ! git diff --cached --quiet; then
-            git commit -m "chore: regenerate sitemap and llms indexes [skip ci]"
-            git push
-          else
-            echo "Indexes unchanged"
-          fi
-
-      - name: IndexNow ping (changed URLs only)
+      - name: IndexNow ping after successful deployment
         continue-on-error: true
         env:
           INDEXNOW_KEY: 43f532d6b316423c8a1ac2ce7373d7ec
-        run: |
-          BEFORE="${{ github.event.before }}"
-          CHANGED=$(git diff --name-only "$BEFORE" HEAD -- '*.html' 2>/dev/null | grep -v '^404.html$' || true)
-          [ -z "$CHANGED" ] && echo "No changed pages" && exit 0
-          URLS=$(echo "$CHANGED" | sed -E 's/\.html$//; s/^index$//; s/\/index$/\//; s/^/"https:\/\/milanosensualcongress.com\//; s/$/",/' | tr -d '\n' | sed 's/,$//')
-          curl -s -X POST "https://api.indexnow.org/indexnow" \
-            -H "Content-Type: application/json; charset=utf-8" \
-            -d "{\"host\":\"milanosensualcongress.com\",\"key\":\"$INDEXNOW_KEY\",\"keyLocation\":\"https://milanosensualcongress.com/$INDEXNOW_KEY.txt\",\"urlList\":[$URLS]}" \
-            -w "\nIndexNow HTTP %{http_code}\n"
+          BEFORE: ${{ github.event.before }}
+        run: python3 scripts/ping_indexnow.py

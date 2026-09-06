@@ -1,4 +1,5 @@
 import os
+from site_files import ignored_directory
 import sys
 from html.parser import HTMLParser
 
@@ -66,7 +67,8 @@ def check_structure(root_dir=ROOT_DIR):
     print(f"Starting Strict HTML Syntax Check in {os.path.abspath(root_dir)}...\n")
     found_errors = False
     
-    for root, _, files in os.walk(root_dir):
+    for root, dirs, files in os.walk(root_dir):
+        dirs[:] = [d for d in dirs if not ignored_directory(d)]
         if "node_modules" in root or ".git" in root or "scripts" in root:
             continue
             

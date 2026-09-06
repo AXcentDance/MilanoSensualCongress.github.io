@@ -1,0 +1,17 @@
+{
+  "name": "milano-sensual-congress",
+  "private": true,
+  "engines": { "node": ">=22.19" },
+  "scripts": {
+    "serve": "node scripts/site-server.mjs",
+    "check": "python3 scripts/run_all_checks.py && python3 -m unittest discover -s tests -p 'test_*.py' && node --test tests/*.test.cjs",
+    "build:css": "tailwindcss -c tailwind.config.js -o css/tailwind.min.css --minify",
+    "test:browser": "playwright test",
+    "audit:lighthouse": "node scripts/lighthouse.mjs"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.63.0",
+    "lighthouse": "13.4.1",
+    "tailwindcss": "3.4.17"
+  }
+}

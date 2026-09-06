@@ -8,16 +8,18 @@ duplicate meta descriptions).
 
 Run from the repo root:  python3 scripts/run_all_checks.py
 """
-import glob
 import re
 import subprocess
 import sys
 import xml.etree.ElementTree as ET
+from site_files import site_pages
 
 FAILURES = []
 
 # ---- absorbed checkers: (command args, success marker in stdout) ----
 CHECKERS = [
+    (['scripts/check_page_contract.py'], 'page contracts passed'),
+    (['scripts/check_image_seo.py'], 'image attributes passed'),
     (['scripts/check_html_syntax.py'], 'No syntax errors'),
     (['scripts/audit_links.py'], 'No broken relative links'),
     (['scripts/audit_schema.py'], 'valid JSON'),
@@ -32,16 +34,19 @@ CHECKERS = [
 
 
 def pages():
-    return (glob.glob('*.html') + glob.glob('it/*.html')
-            + glob.glob('news/*.html') + glob.glob('it/news/*.html'))
+    return site_pages()
 
 
 def run_absorbed_checkers():
     for args, marker in CHECKERS:
         proc = subprocess.run([sys.executable] + args, capture_output=True, text=True)
-        if marker not in proc.stdout:
-            FAILURES.append(f'{" ".join(args)}: success marker "{marker}" not found')
-            print(proc.stdout[-1500:])
+        if proc.returncode != 0 or marker not in proc.stdout:
+            FAILURES.append(f'{" ".join(args)}: failed (exit {proc.returncode})')
+            print((proc.stdout + proc.stderr)[-6000:])
+        else:
+            for line in (proc.stdout + proc.stderr).splitlines():
+                if 'warning' in line.lower() or line.lstrip().startswith('!'):
+                    print(line)
 
 
 def check_per_page_invariants():

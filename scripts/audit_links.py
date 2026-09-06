@@ -1,4 +1,5 @@
 import os
+from site_files import ignored_directory
 import sys
 from html.parser import HTMLParser
 from urllib.parse import urlparse
@@ -25,7 +26,7 @@ class LinkAuditor(HTMLParser):
                 return
                 
             # Handle in-page anchors with path e.g. "index.html#contact"
-            href_clean = href.split('#')[0]
+            href_clean = urlparse(href).path
             if not href_clean: # Was just "#" or "#something"
                 return
             
@@ -70,6 +71,7 @@ def audit_relative_links():
     all_broken = []
     
     for root, dirs, files in os.walk(ROOT_DIR):
+        dirs[:] = [d for d in dirs if not ignored_directory(d)]
         if 'node_modules' in dirs: dirs.remove('node_modules')
         if '.git' in dirs: dirs.remove('.git')
         if 'scripts' in dirs: dirs.remove('scripts')

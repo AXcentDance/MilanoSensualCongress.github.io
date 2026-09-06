@@ -1,5 +1,7 @@
 import os
 import re
+import sys
+from site_files import site_pages
 
 ROOT_DIR = "."
 IT_DIR = "it"
@@ -65,40 +67,21 @@ def audit_og_tags():
     
     total_issues = 0
     
-    # 1. Check English (Root)
-    for root, dirs, files in os.walk(ROOT_DIR):
-        if ".git" in root or "node_modules" in root or "scripts" in root or "it" in root.split(os.sep) or "spring" in root.split(os.sep):
+    for path in site_pages():
+        if path == '404.html':
             continue
-        # Only direct root children or non-lang subfolders if any
-        # Assuming EN is root.
-        
-        for file in files:
-            if file.endswith('.html') and file != '404.html':
-                 path = os.path.join(root, file)
-                 file_issues = check_file(path, "en_US")
-                 if file_issues:
-                     print(f"{os.path.relpath(path, ROOT_DIR):<40} | Found {len(file_issues)} issues:")
-                     for i in file_issues:
-                         print(f"{'':<40} | - {i}")
-                     total_issues += len(file_issues)
-
-    # 2. Check Italian (it/)
-    if os.path.exists(IT_DIR):
-        for root, dirs, files in os.walk(IT_DIR):
-            for file in files:
-                if file.endswith('.html'):
-                    path = os.path.join(root, file)
-                    file_issues = check_file(path, "it_IT")
-                    if file_issues:
-                        print(f"{os.path.relpath(path, ROOT_DIR):<40} | Found {len(file_issues)} issues:")
-                        for i in file_issues:
-                            print(f"{'':<40} | - {i}")
-                        total_issues += len(file_issues)
+        file_issues = check_file(path, 'it_IT' if path.startswith('it/') else 'en_US')
+        if file_issues:
+            print(f"{path:<40} | Found {len(file_issues)} issues:")
+            for issue in file_issues:
+                print(f"  - {issue}")
+            total_issues += len(file_issues)
 
     if total_issues == 0:
         print("\n✅ All Open Graph tags are consistent and valid.")
     else:
         print(f"\n⚠️ Found {total_issues} total OG issues.")
+    return 1 if total_issues else 0
 
 if __name__ == "__main__":
-    audit_og_tags()
+    sys.exit(audit_og_tags())
