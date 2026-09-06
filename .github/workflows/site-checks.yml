@@ -110,12 +110,13 @@ jobs:
           node-version: 24
           cache: npm
       - run: npm ci
-      - run: npx playwright install --with-deps chromium
       - name: All-page and hotel-view 95+ Lighthouse gate
         env:
           LIVE_AUDIT: ${{ inputs.live_audit }}
         run: |
-          export CHROME_PATH="$(node --input-type=module -e "import { chromium } from '@playwright/test'; process.stdout.write(chromium.executablePath())")"
+          # The runner's installed Chrome has Ubuntu's supported sandbox profile.
+          export CHROME_PATH="$(command -v google-chrome)"
+          "$CHROME_PATH" --version
           AUDIT_ARGS=()
           if [ "$LIVE_AUDIT" = "true" ]; then
             AUDIT_ARGS+=(--base-url=https://milanosensualcongress.com)

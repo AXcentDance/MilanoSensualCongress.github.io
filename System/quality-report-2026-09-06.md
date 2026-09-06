@@ -1,52 +1,49 @@
 # Website quality and project rules — 6 September 2026
 
-**Current status: the hotel-guide change is complete; release verification
-and publication are pending.** The final hotel and guide changes passed their
-scoped static, behavior, browser and Lighthouse checks; see
-`System/as-hotel-booking-guide-button-2026-09-06.md` for measured coverage.
-The user has requested push and merge of the combined branch. The first frozen
-candidate included the two hotel views, updated booking copy and swipe-image
-fix; its 287 public files matched the source. Full-site release CI must include
-the completed button and guide changes.
+**Local acceptance passed. CI fixes are being verified; publication and live
+verification are still pending.**
+All 68 indexable English and Italian pages meet the four 95+ Lighthouse targets
+on phone, tablet and desktop. The run also covers the intentional 404 and the
+AS Cambiago direct-link view in both languages: 213 page/view/profile
+combinations, 243 raw reports, zero failing combinations.
 
-All 846 browser cases passed against that frozen candidate, with zero failures,
-skips or flaky results, on 6 September 2026, 18:07–18:12 UTC. The static gate,
-41 Node tests, nine Python tests and Actionlint also passed. The opening
-Lighthouse samples overlapped the separate guide task's browser run and were
-stopped. They remain in .quality/acceptance-frozen-overlap as diagnostics.
-Final acceptance will include the new guide changes and run in isolation.
-
-The earlier full-site sweep in .quality/acceptance-with-cambiago was stopped
-after 213 reports / 178 page-profile pairs because the source files changed.
-It also overlapped the hotel browser suite at 16:49–16:55 UTC. The English price
-archive's tablet median was 94; its subsequent isolated recheck was also 94.
-Preloading the same hero image in both languages resolved the measured failure:
-English and Italian tablet repeats each scored 96/96/96. Their image, layout,
-text and metadata were preserved. All interrupted reports remain diagnostics,
-not final acceptance evidence.
-
-**Earlier accepted version (before the hotel changes).** All 68 indexable
-English and Italian pages passed all four categories on phone, tablet, and
-desktop. The final sweep produced 233 reports covering all 207 page/profile
-pairs, including the intentional 404. Every individual normal-page result was
-at least 95; no averaging was needed to rescue a failing run. The final browser
-suite passed all 774 cases against the same rendered files, with zero failures,
-skips, or flaky results.
-
-| Profile | Performance range | Accessibility range | Best Practices | SEO |
+| Profile | Performance | Accessibility | Best Practices | SEO |
 | --- | --- | --- | --- | --- |
 | Phone | 96–100 | 95–100 | 100 | 100 |
 | Tablet | 95–100 | 95–100 | 100 | 100 |
 | Desktop | 100 | 95–100 | 100 | 100 |
 
-These ranges cover the 68 indexable pages. The 404 keeps noindex: its raw SEO
-score is 63, with Performance 99/99/100 and Accessibility/Best Practices 100.
+The ranges include every indexable page and both hotel views. Performance uses
+the documented repeated-run median; the other categories use their lowest
+result. Every individual indexable-page run in this final acceptance also scored at least 95 in every category.
 
-[Every page’s scores and repeated-run ranges](/Users/slamitza/MilanoSensualCongress/System/quality-scores-2026-09-06.csv)
+The 404 deliberately remains noindex. Its raw SEO score is 63 because an error
+page should stay out of search results; its other categories still pass the
+95+ target. Removing noindex just to raise that score would be a regression.
 
-The live site has not received these changes. Upload, review, and gated
-publication await the user’s explicit approval after automatic approval review
-rejected the upload/PR operation. The original main branch remains unchanged.
+[Every page's scores and repeated-run ranges](/Users/slamitza/MilanoSensualCongress/System/quality-scores-2026-09-06.csv)
+
+Browser verification passed 846 cases across Chromium, Firefox and WebKit,
+followed by 108 passing checks for the four pages affected by the final hotel
+guide addition. Both runs had zero failures, skips or flaky results. Checksums
+confirm that all other rendered pages and shared assets were unchanged.
+The static gate, 41 Node tests, nine Python tests and workflow validation pass.
+
+The final candidate includes all completed hotel work: AS Cambiago, the two
+hotel views, booking copy, stable swipe-image framing, and the matching booking
+guide buttons/content in both languages. Its 287 public files match the
+tested fixed copy byte-for-byte. The live site has not received these changes.
+
+The separate hotel task subsequently received the instruction to push and
+merge. It pushed commit 871d173 and opened
+[PR #2](https://github.com/AXcentDance/MilanoSensualCongress.github.io/pull/2).
+The first CI run passed the static gate and Chromium, but all three Lighthouse
+jobs failed during Chrome startup, before producing scores. Firefox and WebKit
+each passed 281 of 282 cases; their remaining reminder-form tests clicked while
+the form was still scrolling and sent no request. Those failures remain in
+.quality/ci-phone-first.log, .quality/ci-firefox-first/ and
+.quality/ci-webkit-first/. The release is still blocked on CI and the pending
+GitHub Pages setting approval.
 
 **Agreed scope**
 
@@ -204,52 +201,74 @@ The artifact preserves .well-known/security.txt and .nojekyll. Actionlint
 Lighthouse profiles on separate CI machines against the published site, without
 entering the deployment job. This allows live verification to finish faster.
 
-The final local release package contains 280 public files. Its HTML and loaded
+The CI startup fix uses the Google Chrome already installed on the Ubuntu
+runner and prints its version. Ubuntu's supported Chrome installation has the
+relevant sandbox profile; downloaded developer/test binaries can fail during
+startup under its user-namespace restrictions. This is consistent with the
+observed connection-refused failure; the new CI run will verify the correction.
+The change keeps the browser sandbox and all Lighthouse audits enabled.
+See the [runner image inventory](https://github.com/actions/runner-images/blob/main/images/ubuntu/Ubuntu2404-Readme.md)
+and [Chromium's Ubuntu sandbox explanation](https://chromium.googlesource.com/chromium/src/+/main/docs/security/apparmor-userns-restrictions.md).
+
+The form-test correction waits for fonts and positions the form before filling
+and clicking it. It retains real pointer clicks, the original success/error
+assertions, preserved email value and exactly-one-request check. It does not
+change form implementation, add test retries or relax assertions.
+All 216 repeated form cases pass locally across the three engines and three
+viewports; the static gate and all 50 Node/Python regression tests also pass.
+Evidence: .quality/browser-reminder-ci-fix-results.json and
+.quality/check-ci-fix.log. The compiled Tailwind rebuild is byte-identical,
+and all 287 public files remain identical to the accepted snapshot.
+
+The final local release package contains 287 public files. Its HTML and loaded
 CSS references resolve inside that package, including clean page URLs, images,
 fonts, scripts, styles, favicons, and responsive candidates.
 
-**Verification**
+**Verification and evidence**
 
-- Master static gate: passed across 69 HTML pages.
-- Existing behavior tests plus new quality-result tests: 40 passed.
-- Python quality-gate regression tests: nine passed.
-- Final browser suite: 774 passed, zero skipped/flaky/failed, in 187 seconds.
-  It ran 6 September 2026, 14:58–15:01 UTC. Earlier focused and complete runs
-  remain in .quality for comparison.
-- All eight rewritten project skills passed skill validation.
-- Before/after visual comparison: solo guide at phone/tablet/desktop; additional
-  inspection of Italian homepage, tickets, news, levels guide, and terms.
-  The transfer image before/after comparison preserves the same composition
-  and layout after the 85% size reduction.
-- Complete diagnostic Lighthouse sweep: 267 reports covering all 207
-  page/profile pairs. It exposed the final tracking, preload, and image defects.
-- Targeted verification of those fixes: four tablet cases passed; contact
-  99/100/100/100, Italy guide 97/100/100/100, party article 100/100/100/100,
-  transfer 97/100/100/100.
-- Subsequent complete sweep: 229 reports for 207 pairs; 205 passed. The two
-  failures were Best Practices 92 from the same occasional Meta diagnostic
-  image blocked by CSP. Normal-page Performance was 96–100 on phone/tablet
-  and 100 on desktop; Accessibility 95–100 and SEO 100 throughout.
-- Final acceptance sweep after that shared CSP correction: 233 reports, all
-  207 page/profile pairs passed. It ran 6 September 2026, 14:31–14:57 UTC.
-  The runner confirmed that rendered sources were unchanged throughout.
-  Source fingerprint: e253c80e067fb8562305f6203034ed2d9013fe9753aac7917d0736e1acc7c246.
-- Final static gate, nine Python tests, 40 Node tests, Actionlint, and diff
-  whitespace checks passed. All 280 packaged files match their source bytes.
+- Master static gate: all 69 public HTML pages pass; all 50 Node/Python
+  regression tests pass. Actionlint 1.7.12 and diff whitespace checks pass.
+- Browser suite: 846/846 passed, 18:07–18:12 UTC. Only the four hotel/guide
+  HTML files and their generated content changed afterward; 108/108 affected
+  browser cases then passed at 18:23–18:24 UTC on the final frozen source.
+  The coverage record lists both snapshots and the precise differences.
+- All eight rewritten project skills passed validation. The reconciled
+  AGENTS.md, six rules and eight skills total 495 lines, versus 1,096 before.
+- The final public artifact contains 287 files. Local HTML and loaded CSS
+  references resolve inside the package, and the packaged bytes match the
+  source and fixed copy used for testing.
+- Lighthouse: 243 reports, 213 accepted page/view/profile combinations.
+  The normal runner retained its throttling and third-party requests; marginal
+  results were repeated using the documented rule. No audits were suppressed.
+  The summaries confirm unchanged sources throughout both runs.
+  After 139 completed combinations, a Chrome debugging-connection error
+  interrupted the runner before its next measurement. The unchanged snapshot
+  was resumed with the built-in source/configuration guard; completed reports
+  were retained. The interruption remains visible in the audit log.
+- Audit timestamps: 2026-09-06T18:24:52.407Z through 2026-09-06T18:53:00.063Z.
+  Source SHA-256: a53a63f14ef44a0b0c97531b036c686773113211f3982b717bf1c7ad501a8bc8.
+- Visual checks covered representative pages before/after the performance
+  fixes, the re-encoded transfer image, both hotel views and guide layouts.
+  The hotel task also checked the swipe transition in all three engines at
+  375, 661, 768 and 1440px; the photo framing remains stable.
 
-Detailed final evidence:
+Final evidence:
 
-- [Lighthouse summary](/Users/slamitza/MilanoSensualCongress/.quality/acceptance-lighthouse/summary.json)
-- [Browser results](/Users/slamitza/MilanoSensualCongress/.quality/browser-acceptance-results.json)
-- [Static and regression checks](/Users/slamitza/MilanoSensualCongress/.quality/check-acceptance.log)
+- [All-page Lighthouse summary](/Users/slamitza/MilanoSensualCongress/.quality/acceptance-frozen-release/summary.json)
+- [AS hotel-view Lighthouse summary](/Users/slamitza/MilanoSensualCongress/.quality/acceptance-frozen-as-hotel/summary.json)
+- [Complete browser suite](/Users/slamitza/MilanoSensualCongress/.quality/browser-frozen-release-results.json)
+- [Final affected-page browser suite](/Users/slamitza/MilanoSensualCongress/.quality/browser-frozen-guide-results.json)
+- [Browser evidence coverage](/Users/slamitza/MilanoSensualCongress/.quality/browser-evidence-coverage.json)
+- [Static and regression checks](/Users/slamitza/MilanoSensualCongress/.quality/check-final-candidate.log)
+- [Final file checksums](/Users/slamitza/MilanoSensualCongress/.quality/frozen-release-complete-manifest.json)
 
-Representative initial baseline samples compared with final acceptance on the
+Representative baseline samples compared with the final acceptance on the
 same machine and Chrome version:
 
 | Page/profile | Performance before → after | Accessibility after | Best Practices after | SEO after |
 | --- | --- | --- | --- | --- |
 | Homepage / phone | 96 → 96 | 100 | 100 | 100 |
-| Homepage / tablet | 95 → 95 | 100 | 100 | 100 |
+| Homepage / tablet | 95 → 96 | 100 | 100 | 100 |
 | News / phone | 83 → 98 | 100 | 100 | 100 |
 | News / tablet | 95 → 97 | 100 | 100 | 100 |
 | Solo guide / phone | 62 → 98 | 100 | 100 | 100 |
@@ -257,17 +276,29 @@ same machine and Chrome version:
 | Tickets / phone | 95 → 97 | 100 | 100 | 100 |
 | Tickets / tablet | 95 → 96 | 100 | 100 | 100 |
 
-The baseline was a representative sample, not an original all-page sweep.
-Final values above come from the complete acceptance run. Raw baseline and
-earlier recheck reports remain in .quality/baseline and
-.quality/after-shared-fixes. An interrupted sweep in .quality/lighthouse-complete
-also remains available: it exposed the artists defects and was affected by a
-confirmed orphaned audit browser consuming a CPU core. That process was stopped
-before the diagnostic all-page sweep; no results were silently deleted.
-That complete diagnostic sweep is retained in .quality/lighthouse-final; the
-229-report follow-up is retained in .quality/release-lighthouse. The final
-acceptance reports are in .quality/acceptance-lighthouse. Each phase is kept
-separately so earlier failures remain inspectable.
+The baseline was a sample of eight pages on two profiles, not an original
+all-page sweep. The after values come from the final complete acceptance.
+Raw baseline reports remain in .quality/baseline.
+
+Earlier failures remain inspectable. The prior 267-report diagnostic sweep
+exposed image/preload and integration problems; the 229-report follow-up caught
+two intermittent Meta diagnostic-image CSP failures. The shared CSP correction
+then passed all 207 pairs in a 233-report sweep before the hotel changes.
+Those phases remain in .quality/lighthouse-final, .quality/release-lighthouse
+and .quality/acceptance-lighthouse respectively.
+
+The separate hotel-guide task's earlier focused run recorded an English Event
+Hotel tablet median of 95, with a 94–96 range. That raw 94 remains in its report
+and .quality/hotel-guide-pages; it was not deleted. The final site-wide
+acceptance above is a separately identified complete run.
+
+After the hotel work, the English price archive had an isolated tablet median
+of 94. Preloading its existing hero image in both languages produced 96/96/96
+in each language's focused tablet recheck. Interrupted sweeps in
+.quality/acceptance-with-cambiago and .quality/as-hotel-combined-final are marked
+incomplete because the source changed. The opening frozen-copy attempt in
+.quality/acceptance-frozen-overlap overlapped another task's browser tests and
+was stopped. These diagnostic runs were not counted as final acceptance.
 
 **Where the current rules live**
 
@@ -311,17 +342,20 @@ The intentional noindex 404 has a raw Lighthouse SEO score of 63; its other
 categories are still subject to the target. The remaining baseline tooling
 warning is Tailwind's outdated caniuse-lite database message.
 
-Remaining actions requiring the pending remote authorization:
+Remaining release work:
 
-1. Upload the reviewed branch to AXcentDance/MilanoSensualCongress.github.io
-   and open the prepared draft pull request.
-2. Run and inspect the remote quality checks. Configure GitHub Pages to publish
-   through Actions before merging, so direct branch publishing cannot race CI.
-3. Merge the verified change and let the main-branch gates publish its artifact.
+1. Finish verification of the CI setup fixes and update the existing PR #2.
+2. Obtain the pending approval to configure GitHub Pages to publish through
+   Actions before merging, so direct branch publishing cannot race CI.
+   Automatic approval review rejected that setting change because the separate
+   "push and merge" instruction did not explicitly authorize a production
+   deployment-setting change.
+3. After every remote check passes, merge the verified change and let the
+   main-branch gates publish its artifact.
 4. Use the workflow’s manual live-audit option to check every public page against
    the actual domain, recording live results separately from this local evidence.
 
 Publishing is not protected by the prepared workflow until the Pages setting
-is activated. No push, pull request, merge, or hosting change has been made.
+is activated. The branch and PR exist; no merge or hosting change has been made.
 After the update reaches main, existing working branches/worktrees should
 incorporate it before future page work, preserving their own uncommitted changes.

@@ -118,6 +118,9 @@ for (const path of ['/', '/it/', '/tickets', '/it/tickets']) {
     });
     await page.goto(path);
     const form = page.locator('#reminder-form');
+    await page.evaluate(() => document.fonts.ready);
+    // Finish positioning before focus/click can start competing smooth scrolls.
+    await form.evaluate(el => el.scrollIntoView({ block: 'center', behavior: 'instant' }));
     await form.locator('input[type="email"]').fill('audit@example.invalid');
     await form.locator('button[type="submit"]').click();
     if (outcome === 'success') await expect(page.locator('#reminder-container')).toContainText(path.startsWith('/it') ? 'Grazie' : 'Thank you');
