@@ -1,5 +1,5 @@
 # Milano Sensual Congress 2026 - Full Site Documentation
-# Generated automatically on 2026-09-06 20:17
+# Generated automatically on 2026-09-06 23:27
 # Total Pages: 68
 
 ## Page: Milano Sensual Congress 2026 | Bachata in Milan (https://milanosensualcongress.com/)
@@ -1869,6 +1869,24 @@ Per esercitare tali diritti, si prega di inviare una richiesta scritta tramite l
 pagina contatti
 .
 
+6. Analisi del Sito e Marketing
+
+Utilizziamo Google Analytics per misurare visite alle pagine, sorgenti di traffico, informazioni sul dispositivo, interazioni con il sito, clic sui link ai biglietti e iscrizioni confermate ai promemoria. La nostra integrazione di tracciamento non invia a Google Analytics nomi, indirizzi email o numeri di telefono inseriti nei moduli. Le funzionalità pubblicitarie di Google sono disattivate. I cookie di analisi, incluso
+_ga
+, sono configurati per scadere dopo 180 giorni e rinnovarsi alle visite successive.
+
+Utilizziamo anche Meta Pixel per misurare visite, clic sui link ai biglietti e iscrizioni confermate ai promemoria, così da valutare l'efficacia delle campagne pubblicitarie. Può utilizzare cookie di prima parte come
+_fbp
+ e
+_fbc
+.
+
+Consulta l'
+Informativa sulla privacy di Google
+ e l'
+Informativa sulla privacy di Meta
+ per sapere come questi fornitori trattano i dati. L'acquisto dei biglietti avviene su La Salsa del Baile ed è soggetto all'informativa privacy di quella piattaforma.
+
 ---
 
 ## Page: Terms & Conditions - Milano Sensual Congress 2026 (https://milanosensualcongress.com/terms)
@@ -1996,6 +2014,24 @@ Object to processing for direct marketing purposes.
 To exercise these rights, please send a written request through the
 contact page
 .
+
+6. Website Analytics and Marketing
+
+We use Google Analytics to measure page visits, traffic sources, device information, site interactions, ticket-link clicks and confirmed reminder sign-ups. Our tracking integration does not send the names, email addresses or phone numbers entered in our forms to Google Analytics. Google advertising features are disabled. Analytics cookies, including
+_ga
+, are configured to expire after 180 days and renew on subsequent visits.
+
+We also use Meta Pixel to measure visits, ticket-link clicks and confirmed reminder sign-ups to help evaluate advertising campaigns. It may use first-party cookies such as
+_fbp
+ and
+_fbc
+.
+
+Read the
+Google Privacy Policy
+ and the
+Meta Privacy Policy
+ for information about how these providers process data. Ticket purchases take place on La Salsa del Baile and are subject to that platform's privacy policy.
 
 ---
 

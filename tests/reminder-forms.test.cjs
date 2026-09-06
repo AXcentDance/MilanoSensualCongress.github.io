@@ -46,9 +46,10 @@ function mount(page, { reply = 'success', httpOK = true, networkError = false, a
         options.signal.addEventListener('abort', () => reject(new Error('Timeout')));
       });
     },
-    startMetaPixel: () => { if (analyticsError) throw new Error('Analytics unavailable'); },
-    window: { fbq: true },
-    fbq: (...args) => leads.push(args)
+    window: { mscAnalytics: { trackReminder: source => {
+      if (analyticsError) throw new Error('Analytics unavailable');
+      leads.push({ source });
+    } } }
   };
   vm.runInNewContext(handler, context);
   return {
@@ -92,7 +93,7 @@ for (const page of pages) {
     assert.match(app.container.innerHTML, page.startsWith('it/') ? /Grazie!/ : /Thank you!/);
     assert.equal(app.container.innerHTML.includes('href="artists"'), page.endsWith('index.html'));
     assert.equal(app.leads.length, 1);
-    assert.equal(app.leads[0][2].source, app.source);
+    assert.deepEqual(app.leads[0], { source: app.source });
     assert.equal(app.timer(), null);
   });
 

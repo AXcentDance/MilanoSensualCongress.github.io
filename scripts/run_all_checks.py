@@ -58,6 +58,16 @@ def check_per_page_invariants():
             'prefetch fallback': 'src="/js/prefetch-fallback.js?v=' in html,
             'single shared analytics loader': html.count('src="/js/site-analytics.js?v=') == 1
                 and 'function initMetaPixel' not in html,
+            'Google Analytics CSP permissions': all(
+                re.search(r'(?<![\w-])' + directive + r' [^;\"]*' + re.escape(host), html)
+                for directive, host in [
+                    ('script-src', 'https://www.googletagmanager.com'),
+                    ('img-src', 'https://*.google-analytics.com'),
+                    ('img-src', 'https://www.googletagmanager.com'),
+                    ('connect-src', 'https://*.google-analytics.com'),
+                    ('connect-src', 'https://*.analytics.google.com'),
+                    ('connect-src', 'https://www.googletagmanager.com'),
+                ]),
             'theme-color': 'name="theme-color"' in html,
             'single canonical or noindex': (
                 html.count('rel="canonical"') == 1 or 'noindex' in html),

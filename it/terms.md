@@ -80,3 +80,11 @@ Ai sensi del GDPR, hai il diritto di:
 - Opporti al trattamento per finalità di marketing diretto.
 
 Per esercitare tali diritti, si prega di inviare una richiesta scritta tramite la [pagina contatti](https://milanosensualcongress.com/it/contact).
+
+#### 6. Analisi del Sito e Marketing
+
+Utilizziamo Google Analytics per misurare visite alle pagine, sorgenti di traffico, informazioni sul dispositivo, interazioni con il sito, clic sui link ai biglietti e iscrizioni confermate ai promemoria. La nostra integrazione di tracciamento non invia a Google Analytics nomi, indirizzi email o numeri di telefono inseriti nei moduli. Le funzionalità pubblicitarie di Google sono disattivate. I cookie di analisi, incluso **_ga**, sono configurati per scadere dopo 180 giorni e rinnovarsi alle visite successive.
+
+Utilizziamo anche Meta Pixel per misurare visite, clic sui link ai biglietti e iscrizioni confermate ai promemoria, così da valutare l'efficacia delle campagne pubblicitarie. Può utilizzare cookie di prima parte come **_fbp** e **_fbc**.
+
+Consulta l'[Informativa sulla privacy di Google](https://policies.google.com/privacy?hl=it) e l'[Informativa sulla privacy di Meta](https://www.facebook.com/privacy/policy/) per sapere come questi fornitori trattano i dati. L'acquisto dei biglietti avviene su La Salsa del Baile ed è soggetto all'informativa privacy di quella piattaforma.

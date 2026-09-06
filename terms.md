@@ -80,3 +80,11 @@ Under GDPR, you have the right to:
 - Object to processing for direct marketing purposes.
 
 To exercise these rights, please send a written request through the [contact page](https://milanosensualcongress.com/contact).
+
+#### 6. Website Analytics and Marketing
+
+We use Google Analytics to measure page visits, traffic sources, device information, site interactions, ticket-link clicks and confirmed reminder sign-ups. Our tracking integration does not send the names, email addresses or phone numbers entered in our forms to Google Analytics. Google advertising features are disabled. Analytics cookies, including **_ga**, are configured to expire after 180 days and renew on subsequent visits.
+
+We also use Meta Pixel to measure visits, ticket-link clicks and confirmed reminder sign-ups to help evaluate advertising campaigns. It may use first-party cookies such as **_fbp** and **_fbc**.
+
+Read the [Google Privacy Policy](https://policies.google.com/privacy) and the [Meta Privacy Policy](https://www.facebook.com/privacy/policy/) for information about how these providers process data. Ticket purchases take place on La Salsa del Baile and are subject to that platform's privacy policy.
