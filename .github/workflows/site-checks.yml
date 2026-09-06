@@ -111,7 +111,7 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npx playwright install --with-deps chromium
-      - name: All-page 95+ Lighthouse gate
+      - name: All-page and hotel-view 95+ Lighthouse gate
         env:
           LIVE_AUDIT: ${{ inputs.live_audit }}
         run: |
@@ -121,6 +121,7 @@ jobs:
             AUDIT_ARGS+=(--base-url=https://milanosensualcongress.com)
           fi
           npm run audit:lighthouse -- --profiles=${{ matrix.profile }} --output=.quality/lighthouse-${{ matrix.profile }} "${AUDIT_ARGS[@]}"
+          npm run audit:lighthouse -- --profiles=${{ matrix.profile }} --pages=hotel.html,it/hotel.html --fragment=as-hotel-cambiago --output=.quality/lighthouse-${{ matrix.profile }}/as-hotel "${AUDIT_ARGS[@]}"
       - uses: actions/upload-artifact@v4
         if: always()
         with:

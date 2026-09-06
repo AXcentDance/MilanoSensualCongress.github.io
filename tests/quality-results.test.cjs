@@ -4,6 +4,15 @@ const assert = require('node:assert/strict');
 const result = (performance, other = {}) => ({ file: 'index.html', profile: 'phone', indexable: true,
   scores: { performance, accessibility: 100, 'best-practices': 100, seo: 100 }, ...other });
 
+test('A misspelled requested page fails instead of silently reducing audit coverage', async () => {
+  const { selectPages } = await import('../scripts/site-pages.mjs');
+  const pages = [{ file: 'hotel.html', path: '/hotel' }, { file: 'it/hotel.html', path: '/it/hotel' }];
+  assert.deepEqual(selectPages(pages), pages);
+  assert.deepEqual(selectPages(pages, 'hotel.html, /it/hotel'), pages);
+  assert.throws(() => selectPages(pages, 'hotel.html,it/hotell.html'), /Unknown audit pages: it\/hotell.html/);
+  assert.throws(() => selectPages(pages, ''), /Unknown audit pages: \(empty\)/);
+});
+
 test('Lighthouse gate uses the median and preserves a bad run in the range', async () => {
   const { aggregateResults, belowTarget } = await import('../scripts/quality-results.mjs');
   const [summary] = aggregateResults([result(91), result(94), result(100)]);

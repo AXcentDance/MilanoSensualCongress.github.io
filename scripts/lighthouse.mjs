@@ -7,13 +7,14 @@ import { parseArgs } from 'node:util';
 import { createHash } from 'node:crypto';
 import { platform, arch } from 'node:os';
 import desktopConfig from 'lighthouse/core/config/desktop-config.js';
-import { root, sitePages } from './site-pages.mjs';
+import { root, sitePages, selectPages } from './site-pages.mjs';
 import { startServer } from './site-server.mjs';
 import { categories, belowTarget, aggregateResults } from './quality-results.mjs';
 
 const { values: args } = parseArgs({ options: {
   'base-url': { type: 'string' }, profiles: { type: 'string', default: 'phone,tablet,desktop' },
   pages: { type: 'string' }, output: { type: 'string', default: '.quality/lighthouse' },
+  fragment: { type: 'string' },
   runs: { type: 'string', default: 'auto' }, resume: { type: 'boolean', default: false },
 } });
 const profiles = {
@@ -23,7 +24,8 @@ const profiles = {
 };
 const selected = args.profiles.split(',');
 if (selected.some(p => !(p in profiles))) throw new Error('Profiles: phone, tablet, desktop');
-const pages = sitePages().filter(p => !args.pages || args.pages.split(',').includes(p.file) || args.pages.split(',').includes(p.path));
+const pages = selectPages(sitePages(), args.pages)
+  .map(p => ({ ...p, path: p.path + (args.fragment ? '#' + args.fragment : '') }));
 if (!pages.length) throw new Error('No matching pages');
 const automatic = args.runs === 'auto';
 const runs = automatic ? 1 : Number(args.runs);
@@ -45,7 +47,7 @@ function sourceFingerprint() {
   return hash.digest('hex');
 }
 const manifest = { sourceHash: sourceFingerprint(), profiles: Object.fromEntries(selected.map(p => [p, profiles[p]])),
-  pages: pages.map(p => p.file), runs: args.runs, base: args['base-url'] || 'local preview', node: process.version, platform: platform(), arch: arch() };
+  pages: pages.map(p => p.file), fragment: args.fragment || '', runs: args.runs, base: args['base-url'] || 'local preview', node: process.version, platform: platform(), arch: arch() };
 const manifestPath = resolve(args.output, 'manifest.json');
 if (args.resume && (!existsSync(manifestPath) || JSON.stringify(JSON.parse(readFileSync(manifestPath, 'utf8'))) !== JSON.stringify(manifest))) {
   throw new Error('Cannot resume: source or audit configuration changed. Use a new output directory.');

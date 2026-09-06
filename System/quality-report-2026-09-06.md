@@ -1,6 +1,31 @@
 # Website quality and project rules — 6 September 2026
 
-**Local Lighthouse target achieved; publication pending.** All 68 indexable
+**Current status: the hotel-guide change is complete; release verification
+and publication are pending.** The final hotel and guide changes passed their
+scoped static, behavior, browser and Lighthouse checks; see
+`System/as-hotel-booking-guide-button-2026-09-06.md` for measured coverage.
+The user has requested push and merge of the combined branch. The first frozen
+candidate included the two hotel views, updated booking copy and swipe-image
+fix; its 287 public files matched the source. Full-site release CI must include
+the completed button and guide changes.
+
+All 846 browser cases passed against that frozen candidate, with zero failures,
+skips or flaky results, on 6 September 2026, 18:07–18:12 UTC. The static gate,
+41 Node tests, nine Python tests and Actionlint also passed. The opening
+Lighthouse samples overlapped the separate guide task's browser run and were
+stopped. They remain in .quality/acceptance-frozen-overlap as diagnostics.
+Final acceptance will include the new guide changes and run in isolation.
+
+The earlier full-site sweep in .quality/acceptance-with-cambiago was stopped
+after 213 reports / 178 page-profile pairs because the source files changed.
+It also overlapped the hotel browser suite at 16:49–16:55 UTC. The English price
+archive's tablet median was 94; its subsequent isolated recheck was also 94.
+Preloading the same hero image in both languages resolved the measured failure:
+English and Italian tablet repeats each scored 96/96/96. Their image, layout,
+text and metadata were preserved. All interrupted reports remain diagnostics,
+not final acceptance evidence.
+
+**Earlier accepted version (before the hotel changes).** All 68 indexable
 English and Italian pages passed all four categories on phone, tablet, and
 desktop. The final sweep produced 233 reports covering all 207 page/profile
 pairs, including the intentional 404. Every individual normal-page result was
@@ -56,13 +81,18 @@ Playwright does not offer Firefox’s mobile emulation flag.
 | Meta Pixel gateways, POST fallback, and occasional diagnostic images were blocked by CSP | Allow the two verified gateway origins, the existing Facebook /tr/ transport, and diagnostic images from the existing Meta script domain |
 | Transfer hero was a large JPEG with a misleading .webp extension | Convert it to real WebP at the same 1024×1024 dimensions: 868 KiB → 133 KiB; load it eagerly |
 | Italy guide used a 346 KiB background where an existing 88 KiB variant was available | Use and preload the bounded variant in both languages |
+| Archived Full Pass article missed the tablet performance target in repeated measurements | Preload its existing hero image in both languages |
 | Five pages lacked an explicit favicon; many icons advertised the wrong image type | Reuse the existing logo and declare its actual WebP type |
 | One English article pointed hreflang at the wrong Italian article | Correct the Klau y Ros alternate URL |
 | Two article graphs referenced an undefined WebSite | Add the missing WebSite definitions |
 | Italian homepage sitemap URL lacked its canonical slash | Generate /it/ consistently |
 
-Prices, event dates, ticket destinations, form endpoints, and Pixel ID/events
-remain as before. The new code retains self-hosted Inter, Playfair Display,
+The performance fixes preserve existing prices, event dates, ticket
+destinations, form endpoints and Pixel ID/events. Separate user-requested hotel
+work adds AS Cambiago, its supplied rates and booking destination, a bilingual
+hotel selector and the corresponding booking guide. Its comparison with public
+hotel rates is organizer-supplied copy, not an independently verified rate
+comparison. The new code retains self-hosted Inter, Playfair Display,
 Tailwind 3.4.17, the Font Awesome subset, existing photos, and the navy/pink/purple
 visual identity.
 
@@ -87,7 +117,7 @@ normally and does not hide their errors or processing cost.
 **Instruction conflicts resolved**
 
 The original AGENTS.md and .agent instructions contained 1,096 lines. The
-reconciled set contains 490 lines, a reduction of approximately 55%.
+reconciled set contains 495 lines, a reduction of approximately 55%.
 The audit covered all seven original rule files, all eight project skills,
 AGENTS.md, the preview configuration, and the verification/deployment workflow. Local Claude settings contain only
 permissions. Two older Claude worktrees contain historical copies of the
@@ -137,6 +167,13 @@ loading defaults, browser coverage, and reporting limits.
   the median and retains the whole range; the other categories use their
   lowest result, so intermittent defects cannot be averaged into a pass.
   A run also fails if its source files change while it is running.
+- The release workflow also audits the AS Cambiago direct-link view in both
+  languages on all three profiles, in addition to the default Devero view.
+- Targeted audit lists reject unknown page names instead of silently omitting
+  a mistyped language counterpart. A regression test protects this behavior.
+- Tailwind builds only require a shared cache-version bump when the compiled
+  CSS bytes change. Existing utilities can be reused without changing every
+  page's cache key; critical CSS is still regenerated and checked.
 - The browser suite checks every page in nine engine/viewport combinations,
   plus form outcomes, native controls, missing URLs, reduced motion, and
   representative pages without JavaScript.
@@ -256,6 +293,7 @@ rebuild/version changed assets, and run the relevant generators once. Then:
     npm run check
     npm run test:browser
     npm run audit:lighthouse
+    npm run audit:lighthouse -- --pages=hotel.html,it/hotel.html --fragment=as-hotel-cambiago --output=.quality/lighthouse-as-hotel
 
 The Lighthouse runner supports selecting pages/profiles for diagnosis and
 resuming an interrupted run only when sources and configuration are unchanged.

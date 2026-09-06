@@ -12,6 +12,7 @@ pinned tooling with `npm ci` (Node 22.19+), then:
 
 ```bash
 npm run audit:lighthouse
+npm run audit:lighthouse -- --pages=hotel.html,it/hotel.html --fragment=as-hotel-cambiago --output=.quality/lighthouse-as-hotel
 npm run test:browser
 ```
 
@@ -35,6 +36,8 @@ third parties, or detect Lighthouse to manufacture a passing score.
 The runner does these repetitions automatically for initial performance below
 97 or another failed category. `--runs 3` forces three runs for a specified
 comparison. `--resume` requires unchanged sources and configuration.
+Audit switchable primary-content views through their direct URLs as well;
+the second hotel view above is also enforced by CI.
 
 The intentional `404.html` remains noindex. Report its raw SEO result as an
 indexability exception, while still checking its performance, accessibility,
@@ -59,8 +62,10 @@ future dependency version, real-user Core Web Vitals, or complete accessibility.
 - Keep `css/fonts.css`, compiled Tailwind **3.4.17**, and the Font Awesome subset.
   No runtime Tailwind CDN or external font/icon CDN. Existing approved form and
   analytics integrations are separate from this static-asset rule.
-- After Tailwind class changes, run `npm run build:css`, bump its shared `?v=`
-  consistently on every referencing page, then regenerate critical CSS.
+- After Tailwind class changes, run `npm run build:css`. If the compiled CSS
+  bytes changed, bump its shared `?v=` consistently on every referencing page;
+  otherwise retain the version. Then regenerate critical CSS. Reusing an
+  already compiled utility does not require invalidating every page's cache.
 - After a new Font Awesome icon, run `python3 scripts/build_fontawesome_subset.py`
   (fonttools + brotli), bump its asset version, and regenerate critical CSS.
 - After HTML class changes or any source stylesheet changes, run

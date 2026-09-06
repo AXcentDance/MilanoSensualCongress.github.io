@@ -23,6 +23,9 @@ VARIANT_WIDTHS = [480, 800, 1200]
 # (page glob, src substring, sizes) — first match wins.
 # Measured: 375px / 768px / 1440px viewports, real rendered widths.
 CONTEXT_RULES = [
+    # AS Cambiago card: measured 277 / 654 / 567px at 375 / 768 / 1440px.
+    ('hotel.html', 'as-hotel-cambiago-entrance-fountain', '(max-width: 639px) calc(100vw - 98px), (max-width: 767px) 542px, (max-width: 1023px) 654px, (max-width: 1279px) 439px, (max-width: 1535px) 567px, 695px'),
+    ('it/hotel.html', 'as-hotel-cambiago-entrance-fountain', '(max-width: 639px) calc(100vw - 98px), (max-width: 767px) 542px, (max-width: 1023px) 654px, (max-width: 1279px) 439px, (max-width: 1535px) 567px, 695px'),
     # Workshop feature poster: measured 333 / 335 / 488px at 375 / 768 / 1440px.
     ('news/bachata-workshop-levels-guide-congress.html', 'bachata-congress-milan-2026-workshop-levels', '(max-width: 640px) calc(100vw - 42px), (max-width: 900px) calc((100vw - 94px) / 2 - 2px), (max-width: 1050px) calc((100vw - 102px) / 2.15 - 2px), (max-width: 1181px) calc((100vw - 128px) / 2.15 - 2px), 488px'),
     ('it/news/livelli-workshop-bachata-congresso.html', 'bachata-congress-milan-2026-workshop-levels', '(max-width: 640px) calc(100vw - 42px), (max-width: 900px) calc((100vw - 94px) / 2 - 2px), (max-width: 1050px) calc((100vw - 102px) / 2.15 - 2px), (max-width: 1181px) calc((100vw - 128px) / 2.15 - 2px), 488px'),

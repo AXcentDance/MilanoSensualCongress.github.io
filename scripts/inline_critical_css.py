@@ -539,6 +539,12 @@ def sync_data_inline_page(page, css_files, check):
 # ---------------------------------------------------------------------------
 
 
+INLINE_SUPPLEMENTS = {
+    "hotel.html": ["css/hotel-views.css"],
+    "it/hotel.html": ["css/hotel-views.css"],
+}
+
+
 def iter_pages():
     return [page for page in site_pages() if page not in PAGES]
 
@@ -567,7 +573,7 @@ def main():
         ok = page_ok and ok
         if size is not None:
             sizes.append(size)
-    for page, css_files in PAGES.items():
+    for page, css_files in {**PAGES, **INLINE_SUPPLEMENTS}.items():
         ok = sync_data_inline_page(page, css_files, check=args.check) and ok
 
     if sizes:

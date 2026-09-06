@@ -1,0 +1,41 @@
+/* Native radio controls keep both hotel views usable without JavaScript. */
+.hotel-switcher { min-width: 0; margin: 0; padding: 0; border: 0; }
+.hotel-switch-heading { padding: 100px 24px 16px; text-align: center; }
+.hotel-page-title { color: #fff; font-family: 'Playfair Display', 'Playfair Display Fallback', serif; font-size: 28px; font-weight: 700; }
+.hotel-switch-input { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+.hotel-selector { position: sticky; top: 72px; z-index: 40; padding: 12px 24px 18px; background: rgba(15, 23, 42, .95); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(255, 255, 255, .08); }
+.hotel-switch-track { position: relative; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); max-width: 580px; margin: 0 auto; padding: 5px; border: 1px solid rgba(255, 255, 255, .16); border-radius: 999px; background: rgba(255, 255, 255, .04); }
+.hotel-switch-thumb { position: absolute; top: 5px; bottom: 5px; left: 5px; width: calc((100% - 10px) / 2); border-radius: 999px; background: linear-gradient(135deg, #be185d, #4c1d95); transition: transform 300ms ease; }
+.hotel-switch-label { position: relative; z-index: 1; display: flex; min-height: 60px; flex-direction: column; align-items: center; justify-content: center; gap: 3px; padding: 9px 12px; border-radius: 999px; color: #cbd5e1; cursor: pointer; text-align: center; -webkit-user-select: none; user-select: none; }
+.hotel-switch-label strong { font-size: 15px; font-weight: 700; }
+.hotel-switch-label span { font-size: 12px; }
+.hotel-switch-label:hover { color: #fff; }
+#hotel-choice-event:checked ~ .hotel-selector label[for="hotel-choice-event"],
+#hotel-choice-second:checked ~ .hotel-selector label[for="hotel-choice-second"] { color: #fff; }
+#hotel-choice-second:checked ~ .hotel-selector .hotel-switch-thumb { transform: translateX(100%); }
+/* Keep focus visible after native radio arrow navigation in every engine. */
+#hotel-choice-event:focus ~ .hotel-selector label[for="hotel-choice-event"],
+#hotel-choice-second:focus ~ .hotel-selector label[for="hotel-choice-second"] { outline: 3px solid #f9a8d4; outline-offset: 5px; }
+.hotel-views { position: relative; overflow: hidden; }
+.hotel-view { display: none; min-width: 0; scroll-margin-top: 184px; }
+#hotel-choice-event:checked ~ .hotel-views > #hotel-view-event,
+#hotel-choice-second:checked ~ .hotel-views > #hotel-view-second { display: block; }
+.hotel-views > .hotel-view[data-leaving] { position: absolute; top: 0; left: 0; display: block; width: 100%; pointer-events: none; }
+.hotel-view > .hero-bg,
+.hotel-second-hero { min-height: 480px; padding: 56px 24px; }
+.hotel-second-hero { display: flex; align-items: center; justify-content: center; text-align: center; background: linear-gradient(rgba(15, 23, 42, .72), rgba(15, 23, 42, .97)), url('/images/hotel/as-hotel-cambiago-entrance-hero.webp') center 55% / cover; }
+.hotel-second-hero > div { width: 100%; max-width: 800px; }
+.hotel-second-help { max-width: 900px; margin: 0 auto; padding: 0 24px 64px; }
+@media (max-width: 639px) {
+  .hotel-switch-heading { padding-top: 92px; padding-bottom: 10px; }
+  .hotel-page-title { font-size: 24px; }
+  .hotel-selector { padding: 10px 18px 14px; }
+  .hotel-switch-label { min-height: 58px; padding: 8px; }
+  .hotel-switch-label strong { font-size: 14px; }
+  .hotel-switch-label span { font-size: 11px; }
+  .hotel-view > .hero-bg, .hotel-second-hero { min-height: 0; padding: 44px 0; }
+  .hotel-second-hero > div { padding: 0 24px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hotel-switch-thumb { transition: none; }
+}
