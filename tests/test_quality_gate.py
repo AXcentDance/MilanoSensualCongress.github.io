@@ -62,7 +62,8 @@ class QualityGateTests(unittest.TestCase):
             for name in public + private:
                 file = root / name
                 file.parent.mkdir(parents=True, exist_ok=True)
-                file.write_bytes(name.encode())
+                content = f'<html><body>{name}</body></html>' if name.endswith('.html') else name
+                file.write_bytes(content.encode())
             output = Path(directory, 'release')
             self.assertEqual(build_site(output, root), len(public))
             for name in public:
@@ -80,6 +81,15 @@ class QualityGateTests(unittest.TestCase):
                 file.parent.mkdir(parents=True, exist_ok=True)
                 file.write_text('<html></html>')
             self.assertEqual(site_pages(directory), ['index.html', 'news/new/topic.html'])
+
+    def test_release_rejects_a_link_to_a_file_omitted_from_the_package(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory, 'source')
+            root.mkdir()
+            (root / 'index.html').write_text('<a href="/download.pdf">Download</a>')
+            (root / 'download.pdf').write_bytes(b'Present in checkout, outside the public file list')
+            with self.assertRaisesRegex(ValueError, 'Missing packaged resources.*'):
+                build_site(Path(directory, 'release'), root)
 
     def test_a_return_link_to_the_wrong_english_page_is_not_reciprocal(self):
         links = {'en': 'https://site/a', 'it': 'https://site/it/a', 'x-default': 'https://site/a'}
