@@ -2,9 +2,6 @@ page,language,profile,performance,accessibility,best_practices,seo,runs,performa
 /,en,phone,96,100,100,100,3,96,96,PASS,,a53a63f14ef44a0b0c97531b036c686773113211f3982b717bf1c7ad501a8bc8
 /,en,tablet,96,100,100,100,3,95,96,PASS,,a53a63f14ef44a0b0c97531b036c686773113211f3982b717bf1c7ad501a8bc8
 /,en,desktop,100,100,100,100,1,100,100,PASS,,a53a63f14ef44a0b0c97531b036c686773113211f3982b717bf1c7ad501a8bc8
-/404,en,phone,99,100,100,63,1,99,99,PASS,Intentional noindex 404: raw SEO shown; other categories gated,a53a63f14ef44a0b0c97531b036c686773113211f3982b717bf1c7ad501a8bc8
-/404,en,tablet,99,100,100,63,1,99,99,PASS,Intentional noindex 404: raw SEO shown; other categories gated,a53a63f14ef44a0b0c97531b036c686773113211f3982b717bf1c7ad501a8bc8
-/404,en,desktop,100,100,100,63,1,100,100,PASS,Intentional noindex 404: raw SEO shown; other categories gated,a53a63f14ef44a0b0c97531b036c686773113211f3982b717bf1c7ad501a8bc8
 /artists,en,phone,97,100,100,100,1,97,97,PASS,,a53a63f14ef44a0b0c97531b036c686773113211f3982b717bf1c7ad501a8bc8
 /artists,en,tablet,96,100,100,100,3,96,97,PASS,,a53a63f14ef44a0b0c97531b036c686773113211f3982b717bf1c7ad501a8bc8
 /artists,en,desktop,100,100,100,100,1,100,100,PASS,,a53a63f14ef44a0b0c97531b036c686773113211f3982b717bf1c7ad501a8bc8

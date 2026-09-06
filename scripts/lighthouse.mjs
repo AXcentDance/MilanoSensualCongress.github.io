@@ -24,7 +24,7 @@ const profiles = {
 };
 const selected = args.profiles.split(',');
 if (selected.some(p => !(p in profiles))) throw new Error('Profiles: phone, tablet, desktop');
-const pages = selectPages(sitePages(), args.pages)
+const pages = selectPages(sitePages().filter(page => page.indexable), args.pages)
   .map(p => ({ ...p, path: p.path + (args.fragment ? '#' + args.fragment : '') }));
 if (!pages.length) throw new Error('No matching pages');
 const automatic = args.runs === 'auto';
@@ -99,7 +99,7 @@ try {
 if (sourceFingerprint() !== manifest.sourceHash) {
   throw new Error('Sources changed during the audit. Reports are incomplete; run again against the final files.');
 }
-// Keep the intentional noindex page's raw SEO score visible; it is not an indexability target.
+// Acceptance covers indexable pages only, including any explicitly selected content view.
 const summaries = aggregateResults(results);
 const failures = summaries.filter(belowTarget);
 writeFileSync(resolve(args.output, 'summary.json'), JSON.stringify({ base, manifest, complete: true, results, pages: summaries }, null, 2));

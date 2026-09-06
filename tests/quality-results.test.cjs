@@ -36,11 +36,15 @@ test('An intermittent integration error cannot be averaged into a pass', async (
   assert.equal(belowTarget(summary), true);
 });
 
-test('Intentional noindex only exempts SEO, preserving all other quality targets', async () => {
+test('Intentional noindex pages are outside Lighthouse acceptance in every category', async () => {
   const { belowTarget } = await import('../scripts/quality-results.mjs');
   const errorPage = result(100, { file: '404.html', indexable: false });
   errorPage.scores.seo = 70;
   assert.equal(belowTarget(errorPage), false);
   errorPage.scores.accessibility = 90;
+  assert.equal(belowTarget(errorPage), false);
+  errorPage.runtimeError = { code: 'NO_FCP' };
+  assert.equal(belowTarget(errorPage), false);
+  errorPage.indexable = true;
   assert.equal(belowTarget(errorPage), true);
 });

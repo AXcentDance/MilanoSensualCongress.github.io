@@ -1,11 +1,13 @@
 # Website quality and project rules — 6 September 2026
 
-**Local acceptance passed. CI fixes are being verified; publication and live
-verification are still pending.**
+**Local acceptance passed, but CI Lighthouse acceptance failed. Publication
+and live verification remain pending.**
 All 68 indexable English and Italian pages meet the four 95+ Lighthouse targets
-on phone, tablet and desktop. The run also covers the intentional 404 and the
-AS Cambiago direct-link view in both languages: 213 page/view/profile
-combinations, 243 raw reports, zero failing combinations.
+on phone, tablet and desktop in the local run. Including the AS Cambiago
+direct-link view in both languages, the indexable-page scope contains 210
+page/view/profile combinations and 240 raw reports, with zero local failures.
+The user subsequently excluded intentionally non-indexed pages from acceptance;
+the runner and this score table now skip them.
 
 | Profile | Performance | Accessibility | Best Practices | SEO |
 | --- | --- | --- | --- | --- |
@@ -17,9 +19,8 @@ The ranges include every indexable page and both hotel views. Performance uses
 the documented repeated-run median; the other categories use their lowest
 result. Every individual indexable-page run in this final acceptance also scored at least 95 in every category.
 
-The 404 deliberately remains noindex. Its raw SEO score is 63 because an error
-page should stay out of search results; its other categories still pass the
-95+ target. Removing noindex just to raise that score would be a regression.
+Intentionally non-indexed pages are outside the requested quality target.
+Their noindex behavior remains unchanged.
 
 [Every page's scores and repeated-run ranges](/Users/slamitza/MilanoSensualCongress/System/quality-scores-2026-09-06.csv)
 
@@ -42,14 +43,40 @@ jobs failed during Chrome startup, before producing scores. Firefox and WebKit
 each passed 281 of 282 cases; their remaining reminder-form tests clicked while
 the form was still scrolling and sent no request. Those failures remain in
 .quality/ci-phone-first.log, .quality/ci-firefox-first/ and
-.quality/ci-webkit-first/. The release is still blocked on CI and the pending
-GitHub Pages setting approval.
+.quality/ci-webkit-first/.
+
+The replacement CI run on commit 1d5595a passed the static gate and all 846
+browser cases without failures, skips or flaky results. Chrome startup is
+fixed. Its full Lighthouse sweep nevertheless failed:
+
+| CI profile | Performance range | Accessibility | Best Practices | SEO |
+| --- | --- | --- | --- | --- |
+| Phone | 88–95 | 95–100 | 77 | 100 |
+| Tablet | 82–94 | 95–100 | 100 | 100 |
+| Desktop | 100 | 95–100 | 77–100 | 100 |
+
+These are medians for Performance and lowest scores for the other categories
+across all 68 indexable pages. The AS fragment step did not run after the
+default-page command failed, so this CI result is not complete view coverage.
+The phone/desktop reports identify Meta's third-party `fr` cookie and the
+associated DevTools cookie issue. The slower CI processors also record longer
+Meta script tasks. These failures were not present in the local acceptance
+and are not being hidden or waived. A user decision is pending on loading Meta
+only after visitor consent, which changes tracking coverage. The separate
+GitHub Pages setting approval is also still pending.
+
+[Every indexable page's CI scores](/Users/slamitza/MilanoSensualCongress/System/quality-ci-scores-2026-09-06.csv)
+and [the completed CI run](https://github.com/AXcentDance/MilanoSensualCongress.github.io/actions/runs/34053732940)
+record 610 indexable-page reports, 204 combinations and 203 failures.
+Complete raw reports are preserved in the three verified ZIP archives under
+.quality/ci-run-34053732940; their expanded duplicates were removed after
+archive integrity checks to conserve disk space.
 
 **Agreed scope**
 
 All 68 indexable English and Italian pages must reach at least 95/100 in
-Performance, Accessibility, Best Practices, and SEO. Lighthouse also checks the
-intentional 404 page, with its noindex SEO result shown separately. The current
+Performance, Accessibility, Best Practices, and SEO. Intentionally non-indexed
+pages are excluded, following the user's latest scope clarification. The current
 appearance is preserved, with small responsive and accessibility fixes.
 The user approved preserving tracking and allowing its two verified gateway
 origins, and publishing future releases only after the quality checks pass.
@@ -61,6 +88,7 @@ Browser behavior is checked separately in Chromium, Firefox, and WebKit at
 Chrome 152.0.7977.76, and Playwright 1.63.0 with Chromium 153.0.8010.12,
 Firefox 155, and WebKit 26.6. Firefox uses touch-enabled viewport checks;
 Playwright does not offer Firefox’s mobile emulation flag.
+The completed Linux CI Lighthouse run used Google Chrome 152.0.7977.64.
 
 **What changed on the site**
 
@@ -159,7 +187,7 @@ loading defaults, browser coverage, and reporting limits.
   and report directories. CI checks that committed CSS matches current classes.
 - Critical CSS is regenerated from its source files and checked by content,
   including the shared accessibility defaults.
-- Every page enters all three Lighthouse profiles. Each category must reach
+- Every indexable page enters all three Lighthouse profiles. Each category must reach
   95; marginal or failing results are repeated three times. Performance uses
   the median and retains the whole range; the other categories use their
   lowest result, so intermittent defects cannot be averaged into a pass.
@@ -205,7 +233,7 @@ The CI startup fix uses the Google Chrome already installed on the Ubuntu
 runner and prints its version. Ubuntu's supported Chrome installation has the
 relevant sandbox profile; downloaded developer/test binaries can fail during
 startup under its user-namespace restrictions. This is consistent with the
-observed connection-refused failure; the new CI run will verify the correction.
+observed connection-refused failure; the replacement CI run verified the correction.
 The change keeps the browser sandbox and all Lighthouse audits enabled.
 See the [runner image inventory](https://github.com/actions/runner-images/blob/main/images/ubuntu/Ubuntu2404-Readme.md)
 and [Chromium's Ubuntu sandbox explanation](https://chromium.googlesource.com/chromium/src/+/main/docs/security/apparmor-userns-restrictions.md).
@@ -237,7 +265,8 @@ fonts, scripts, styles, favicons, and responsive candidates.
 - The final public artifact contains 287 files. Local HTML and loaded CSS
   references resolve inside the package, and the packaged bytes match the
   source and fixed copy used for testing.
-- Lighthouse: 243 reports, 213 accepted page/view/profile combinations.
+- Local Lighthouse: 240 reports for 210 accepted indexable page/view/profile
+  combinations. The original 243-report archive is preserved unchanged.
   The normal runner retained its throttling and third-party requests; marginal
   results were repeated using the documented rule. No audits were suppressed.
   The summaries confirm unchanged sources throughout both runs.
@@ -261,6 +290,8 @@ Final evidence:
 - [Browser evidence coverage](/Users/slamitza/MilanoSensualCongress/.quality/browser-evidence-coverage.json)
 - [Static and regression checks](/Users/slamitza/MilanoSensualCongress/.quality/check-final-candidate.log)
 - [Final file checksums](/Users/slamitza/MilanoSensualCongress/.quality/frozen-release-complete-manifest.json)
+- [CI Lighthouse summary and failures](/Users/slamitza/MilanoSensualCongress/.quality/ci-run-34053732940/acceptance-summary.json)
+- [Indexable-only scope regression checks](/Users/slamitza/MilanoSensualCongress/.quality/check-indexable-scope.log)
 
 Representative baseline samples compared with the final acceptance on the
 same machine and Chrome version:
@@ -338,13 +369,14 @@ physical iPad. Playwright WebKit is not installed Safari or physical iOS.
 Real devices, field Core Web Vitals, Search Console, rankings, and live payment
 completion are outside this measured evidence.
 
-The intentional noindex 404 has a raw Lighthouse SEO score of 63; its other
-categories are still subject to the target. The remaining baseline tooling
-warning is Tailwind's outdated caniuse-lite database message.
+Intentionally non-indexed pages are excluded from the Lighthouse target.
+The remaining baseline tooling warning is Tailwind's outdated caniuse-lite
+database message.
 
 Remaining release work:
 
-1. Finish verification of the CI setup fixes and update the existing PR #2.
+1. Resolve the Meta tracking decision and the CI Lighthouse failures, then
+   verify the final change and update the existing PR #2.
 2. Obtain the pending approval to configure GitHub Pages to publish through
    Actions before merging, so direct branch publishing cannot race CI.
    Automatic approval review rejected that setting change because the separate
@@ -352,7 +384,7 @@ Remaining release work:
    deployment-setting change.
 3. After every remote check passes, merge the verified change and let the
    main-branch gates publish its artifact.
-4. Use the workflow’s manual live-audit option to check every public page against
+4. Use the workflow’s manual live-audit option to check every indexable page against
    the actual domain, recording live results separately from this local evidence.
 
 Publishing is not protected by the prepared workflow until the Pages setting

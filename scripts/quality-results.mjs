@@ -1,8 +1,8 @@
 export const categories = ['performance', 'accessibility', 'best-practices', 'seo'];
 
 export function belowTarget(result) {
+  if (result.indexable === false) return false;
   return !!result.runtimeError || categories.some(category =>
-    (category !== 'seo' || result.indexable) &&
     (!Number.isFinite(result.scores[category]) || result.scores[category] < 95));
 }
 

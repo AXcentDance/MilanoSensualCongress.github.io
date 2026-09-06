@@ -39,10 +39,10 @@ comparison. `--resume` requires unchanged sources and configuration.
 Audit switchable primary-content views through their direct URLs as well;
 the second hotel view above is also enforced by CI.
 
-The intentional `404.html` remains noindex. Report its raw SEO result as an
-indexability exception, while still checking its performance, accessibility,
-best practices, useful navigation, and missing-URL behavior. Do not remove
-noindex to improve a score. Scores cannot guarantee every browser, network,
+Lighthouse acceptance and score tables cover indexable pages only. Skip
+intentionally non-indexed utility/error pages, including `404.html`, unless the
+user specifically requests an audit of them. Preserve their correct noindex
+behavior. Scores cannot guarantee every browser, network,
 future dependency version, real-user Core Web Vitals, or complete accessibility.
 
 ## Render and load
