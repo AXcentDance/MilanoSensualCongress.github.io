@@ -4,7 +4,7 @@
 Every page that embeds a DanceEvent Offer (root pages, it/, news/, it/news/)
 must agree on the current Full Pass price and its validThrough deadline.
 The canonical values live at the top of this script; the master gate runs
-``--check`` so any page that drifts fails CI.
+``--check`` so any page that drifts fails the local quality gate.
 
 Usage:
     python3 scripts/update_price.py --check

@@ -37,7 +37,8 @@ The runner does these repetitions automatically for initial performance below
 97 or another failed category. `--runs 3` forces three runs for a specified
 comparison. `--resume` requires unchanged sources and configuration.
 Audit switchable primary-content views through their direct URLs as well;
-the second hotel view above is also enforced by CI.
+include the second hotel view above in local verification. These commands
+discover pages automatically when run; GitHub Actions does not run quality checks.
 
 Lighthouse acceptance and score tables cover indexable pages only. Skip
 intentionally non-indexed utility/error pages, including `404.html`, unless the

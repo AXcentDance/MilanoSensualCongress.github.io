@@ -33,9 +33,10 @@ Run the master static gate after the necessary generators, then the relevant
 behavior and browser tests. Fix causes instead of weakening checks. Report
 pre-existing warnings and failures separately from regressions.
 
-Publishing uses the GitHub Actions workflow in .github/workflows/site-checks.yml.
-Every main-branch release must pass the static, browser, and Lighthouse gates
-before the public artifact is deployed. Keep GitHub Pages' source set to GitHub
-Actions; branch publishing bypasses the gates. CI regenerates indexes inside
-the artifact without making extra bot commits. Local content changes still
-include their regenerated files for review. Do not bypass a failed gate.
+GitHub Pages publishes from the root of the `main` branch. Quality verification
+is local: run the relevant checks, preserve their results, and report failures
+before a release. Include regenerated indexes with the corresponding content
+change; no CI job regenerates or commits them. The user removed GitHub Actions
+quality automation, so do not recreate it or require an Actions-based publishing
+source unless the user requests that change. GitHub's own Pages build/deployment
+process remains separate from project quality checks.

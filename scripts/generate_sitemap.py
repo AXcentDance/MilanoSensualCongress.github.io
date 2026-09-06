@@ -32,7 +32,7 @@ def get_lastmod(filepath):
     """Truthful lastmod: newest git commit touching the file (ISO 8601 with
     timezone). Files with uncommitted changes are stamped now. Never hand-edit
     lastmod values — search engines learn to distrust sitemaps that lie.
-    NOTE: CI must clone with full history (fetch-depth: 0) or dates collapse."""
+    NOTE: Use a clone with full history or dates collapse."""
     try:
         dirty = subprocess.run(
             ['git', 'status', '--porcelain', '--', filepath],

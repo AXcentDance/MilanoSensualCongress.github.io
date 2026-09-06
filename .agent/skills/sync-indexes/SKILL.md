@@ -26,6 +26,6 @@ without inventing an editorial `dateModified`.
 Inspect the diff: include all indexable pages, exclude intentional noindex,
 reports and tooling, preserve truthful dates and translated canonical URLs.
 Confirm new pages in both `llms.txt` and `llms-full.txt` and relevant feeds.
-Review inbound links and matching hidden HTML/schema breadcrumbs. The CI gate
-must pass before generated indexes are published; automation is not a substitute
-for reviewing a change locally.
+Review inbound links and matching hidden HTML/schema breadcrumbs. Run the local
+master gate before publishing generated indexes. Include the regenerated files
+in the reviewed change; GitHub Actions does not generate or verify them.

@@ -1,7 +1,12 @@
 # Website quality and project rules — 6 September 2026
 
-**Local acceptance passed, but CI Lighthouse acceptance failed. Publication
-and live verification remain pending.**
+**Quality checks now run locally. The user requested removal of GitHub Actions
+quality automation and authorized pushing and merging this release.**
+The custom quality/deployment workflow has been removed; GitHub Pages continues
+publishing from the root of `main`. Local acceptance passed. The earlier CI
+Lighthouse failures remain documented below; removing automation does not
+change those measurements. Publication status is recorded in
+[PR #2](https://github.com/AXcentDance/MilanoSensualCongress.github.io/pull/2).
 All 68 indexable English and Italian pages meet the four 95+ Lighthouse targets
 on phone, tablet and desktop in the local run. Including the AS Cambiago
 direct-link view in both languages, the indexable-page scope contains 210
@@ -33,7 +38,8 @@ The static gate, 41 Node tests, nine Python tests and workflow validation pass.
 The final candidate includes all completed hotel work: AS Cambiago, the two
 hotel views, booking copy, stable swipe-image framing, and the matching booking
 guide buttons/content in both languages. Its 287 public files match the
-tested fixed copy byte-for-byte. The live site has not received these changes.
+tested fixed copy byte-for-byte. These measurements were made on the release
+candidate before publication.
 
 The separate hotel task subsequently received the instruction to push and
 merge. It pushed commit 871d173 and opened
@@ -61,9 +67,10 @@ default-page command failed, so this CI result is not complete view coverage.
 The phone/desktop reports identify Meta's third-party `fr` cookie and the
 associated DevTools cookie issue. The slower CI processors also record longer
 Meta script tasks. These failures were not present in the local acceptance
-and are not being hidden or waived. A user decision is pending on loading Meta
-only after visitor consent, which changes tracking coverage. The separate
-GitHub Pages setting approval is also still pending.
+and are not being hidden or relabeled as passes. Meta tracking remains unchanged.
+The user subsequently removed GitHub Actions quality automation and requested
+the prepared release be merged. The earlier proposal to switch Pages to an
+Actions publishing source is superseded; no Pages setting change is required.
 
 [Every indexable page's CI scores](/Users/slamitza/MilanoSensualCongress/System/quality-ci-scores-2026-09-06.csv)
 and [the completed CI run](https://github.com/AXcentDance/MilanoSensualCongress.github.io/actions/runs/34053732940)
@@ -79,7 +86,8 @@ Performance, Accessibility, Best Practices, and SEO. Intentionally non-indexed
 pages are excluded, following the user's latest scope clarification. The current
 appearance is preserved, with small responsive and accessibility fixes.
 The user approved preserving tracking and allowing its two verified gateway
-origins, and publishing future releases only after the quality checks pass.
+origins. Their later instruction removes GitHub Actions quality automation;
+the local quality target and tools remain available.
 
 Lighthouse runs in Chrome with three profiles: its standard phone profile, a
 custom 768×1024 tablet profile using mobile throttling, and desktop at 1440×900.
@@ -142,7 +150,7 @@ normally and does not hide their errors or processing cost.
 **Instruction conflicts resolved**
 
 The original AGENTS.md and .agent instructions contained 1,096 lines. The
-reconciled set contains 495 lines, a reduction of approximately 55%.
+reconciled set contains 497 lines, a reduction of approximately 55%.
 The audit covered all seven original rule files, all eight project skills,
 AGENTS.md, the preview configuration, and the verification/deployment workflow. Local Claude settings contain only
 permissions. Two older Claude worktrees contain historical copies of the
@@ -184,7 +192,8 @@ loading defaults, browser coverage, and reporting limits.
 - Checker exit codes and warnings are respected. A success-looking message
   can no longer hide a failing process.
 - Tailwind builds use the same page inventory, excluding generated inline CSS
-  and report directories. CI checks that committed CSS matches current classes.
+  and report directories. The local workflow rebuilds CSS after class changes
+  and verifies that committed CSS matches the build.
 - Critical CSS is regenerated from its source files and checked by content,
   including the shared accessibility defaults.
 - Every indexable page enters all three Lighthouse profiles. Each category must reach
@@ -192,8 +201,8 @@ loading defaults, browser coverage, and reporting limits.
   the median and retains the whole range; the other categories use their
   lowest result, so intermittent defects cannot be averaged into a pass.
   A run also fails if its source files change while it is running.
-- The release workflow also audits the AS Cambiago direct-link view in both
-  languages on all three profiles, in addition to the default Devero view.
+- The local verification instructions also audit the AS Cambiago direct-link
+  view in both languages on all three profiles, in addition to the default Devero view.
 - Targeted audit lists reject unknown page names instead of silently omitting
   a mistyped language counterpart. A regression test protects this behavior.
 - Tailwind builds only require a shared cache-version bump when the compiled
@@ -202,39 +211,37 @@ loading defaults, browser coverage, and reporting limits.
 - The browser suite checks every page in nine engine/viewport combinations,
   plus form outcomes, native controls, missing URLs, reduced motion, and
   representative pages without JavaScript.
-- Release files contain public content/assets only. Agent instructions,
-  tooling, dependencies, and reports are excluded from the deployed artifact.
-  The packager checks local HTML and loaded CSS references against the actual
+- The optional public-file packager excludes agent instructions, tooling,
+  dependencies and reports. It checks local HTML and loaded CSS references against the actual
   package, rejecting resources omitted from the public file list. A regression
-  test covers a download present in the checkout but absent from the release.
+  test covers a download present in the checkout but absent from the package.
+  The current branch-based Pages publishing does not use this custom artifact.
 
-These checks make future pages subject to the same acceptance criteria.
+These local checks discover future pages and apply the same acceptance criteria
+when run. They are no longer enforced automatically by GitHub Actions.
 New content still needs truthful facts, translation review, visual inspection,
 and fixes if its measurements fail.
 
 **Publishing**
 
-The previous GitHub Pages configuration published directly from unprotected
-main, independently of the quality workflow. The prepared replacement deploys
-the public artifact only after static checks, all browser jobs, and all
-Lighthouse jobs pass. Index generation happens inside the artifact, eliminating
-the old follow-up bot commits; IndexNow is notified after successful deployment.
+GitHub Pages keeps its existing source: the root of the `main` branch. The user
+explicitly requested removing GitHub Actions quality automation. The named
+quality workflow was disabled, its active run was canceled, and
+.github/workflows/site-checks.yml was removed from the release. GitHub's own
+Pages build/deployment remains enabled. No Pages-source change is needed.
 
-GitHub Pages must use GitHub Actions as its publishing source for this to take
-effect. The workflow uses GitHub's artifact deployment and job dependencies.
-See [GitHub's custom Pages workflow documentation](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages).
+The local static, browser and Lighthouse commands remain intact. Generated
+indexes must be updated locally and committed with content changes; no quality
+workflow regenerates indexes, uploads a custom release artifact, pings IndexNow,
+or waits on Lighthouse before publication. The delivery/performance rules and
+index skill now describe this same local workflow.
 
-The artifact preserves .well-known/security.txt and .nojekyll. Actionlint
-1.7.12 validates the workflow. A manual live-audit option runs the three
-Lighthouse profiles on separate CI machines against the published site, without
-entering the deployment job. This allows live verification to finish faster.
-
-The CI startup fix uses the Google Chrome already installed on the Ubuntu
-runner and prints its version. Ubuntu's supported Chrome installation has the
+The following CI diagnostics are historical evidence. The earlier startup fix
+used the Google Chrome already installed on the Ubuntu runner. That installation has the
 relevant sandbox profile; downloaded developer/test binaries can fail during
 startup under its user-namespace restrictions. This is consistent with the
 observed connection-refused failure; the replacement CI run verified the correction.
-The change keeps the browser sandbox and all Lighthouse audits enabled.
+The diagnostic change retained the browser sandbox and all Lighthouse audits.
 See the [runner image inventory](https://github.com/actions/runner-images/blob/main/images/ubuntu/Ubuntu2404-Readme.md)
 and [Chromium's Ubuntu sandbox explanation](https://chromium.googlesource.com/chromium/src/+/main/docs/security/apparmor-userns-restrictions.md).
 
@@ -255,13 +262,14 @@ fonts, scripts, styles, favicons, and responsive candidates.
 **Verification and evidence**
 
 - Master static gate: all 69 public HTML pages pass; all 50 Node/Python
-  regression tests pass. Actionlint 1.7.12 and diff whitespace checks pass.
+  regression tests pass. Diff whitespace checks pass. Actionlint 1.7.12 passed
+  for the earlier workflow before its removal at the user's request.
 - Browser suite: 846/846 passed, 18:07–18:12 UTC. Only the four hotel/guide
   HTML files and their generated content changed afterward; 108/108 affected
   browser cases then passed at 18:23–18:24 UTC on the final frozen source.
   The coverage record lists both snapshots and the precise differences.
 - All eight rewritten project skills passed validation. The reconciled
-  AGENTS.md, six rules and eight skills total 495 lines, versus 1,096 before.
+  AGENTS.md, six rules and eight skills total 497 lines, versus 1,096 before.
 - The final public artifact contains 287 files. Local HTML and loaded CSS
   references resolve inside the package, and the packaged bytes match the
   source and fixed copy used for testing.
@@ -338,8 +346,8 @@ was stopped. These diagnostic runs were not counted as final acceptance.
   defines the bilingual editing and verification workflow.
 - [Quality rule](/Users/slamitza/MilanoSensualCongress/.agent/rules/performance.md)
   defines the 95+ target and rendering defaults.
-- [Publishing workflow](/Users/slamitza/MilanoSensualCongress/.github/workflows/site-checks.yml)
-  enforces the gates before deployment once activated.
+- The delivery rule records branch-based Pages publishing and local quality
+  checks. There is no project GitHub Actions quality workflow.
 
 **How to maintain this**
 
@@ -359,7 +367,10 @@ rebuild/version changed assets, and run the relevant generators once. Then:
 
 The Lighthouse runner supports selecting pages/profiles for diagnosis and
 resuming an interrupted run only when sources and configuration are unchanged.
-Local detailed output lives in .quality; CI retains quality artifacts for 14 days.
+Local detailed output lives in .quality. Historical CI artifacts had a 14-day
+retention period; downloaded evidence remains available locally.
+For a manual live audit, add `--base-url=https://milanosensualcongress.com`
+and a fresh `--output` directory to the Lighthouse commands above.
 
 **Measurement limits and remaining work**
 
@@ -373,21 +384,15 @@ Intentionally non-indexed pages are excluded from the Lighthouse target.
 The remaining baseline tooling warning is Tailwind's outdated caniuse-lite
 database message.
 
-Remaining release work:
+The current release request is to remove GitHub Actions quality automation,
+push and merge the prepared changes, then verify normal Pages publication.
+This supersedes the earlier proposed Actions deployment gate and its pending
+setting approval. The historical CI scores still prevent claiming that 95+
+has been demonstrated in every measured environment. Changing Meta's loading
+or tracking coverage still requires the user's decision.
 
-1. Resolve the Meta tracking decision and the CI Lighthouse failures, then
-   verify the final change and update the existing PR #2.
-2. Obtain the pending approval to configure GitHub Pages to publish through
-   Actions before merging, so direct branch publishing cannot race CI.
-   Automatic approval review rejected that setting change because the separate
-   "push and merge" instruction did not explicitly authorize a production
-   deployment-setting change.
-3. After every remote check passes, merge the verified change and let the
-   main-branch gates publish its artifact.
-4. Use the workflow’s manual live-audit option to check every indexable page against
-   the actual domain, recording live results separately from this local evidence.
-
-Publishing is not protected by the prepared workflow until the Pages setting
-is activated. The branch and PR exist; no merge or hosting change has been made.
+The earlier Pages-setting proposal was rejected by automatic approval review
+because the then-current push/merge instruction did not explicitly authorize a
+production-setting change. That proposal is no longer part of this release.
 After the update reaches main, existing working branches/worktrees should
 incorporate it before future page work, preserving their own uncommitted changes.

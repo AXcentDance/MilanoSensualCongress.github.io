@@ -43,9 +43,9 @@ canonical design and index skills. Do not maintain separate rules in them.
 
 ## Completion
 
-Run `python3 scripts/run_all_checks.py` after each completed change set and
+Run `python3 scripts/run_all_checks.py` locally after each completed change set and
 `node --test tests/*.test.cjs` for the protected form/analytics behavior.
-For rendered site changes, also run the browser and Lighthouse gates described
+For rendered site changes, also run the local browser and Lighthouse checks described
 in the performance rule. Report measured coverage, failures, warnings, and
 anything not tested. A static pass alone never proves a Lighthouse score.
 
