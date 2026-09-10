@@ -274,7 +274,7 @@
   </url>
   <url>
     <loc>https://milanosensualcongress.com/</loc>
-    <lastmod>2026-09-10T23:11:27+02:00</lastmod>
+    <lastmod>2026-09-10T23:16:13+02:00</lastmod>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://milanosensualcongress.com/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://milanosensualcongress.com/" />
@@ -294,7 +294,7 @@
   </url>
   <url>
     <loc>https://milanosensualcongress.com/it/</loc>
-    <lastmod>2026-09-10T23:11:27+02:00</lastmod>
+    <lastmod>2026-09-10T23:16:13+02:00</lastmod>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://milanosensualcongress.com/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://milanosensualcongress.com/" />
@@ -386,7 +386,7 @@
   </url>
   <url>
     <loc>https://milanosensualcongress.com/news</loc>
-    <lastmod>2026-09-06T23:36:28+02:00</lastmod>
+    <lastmod>2026-09-10T23:46:17+02:00</lastmod>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://milanosensualcongress.com/news" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://milanosensualcongress.com/news" />
@@ -396,12 +396,12 @@
       <image:title>Milano Sensual Congress Logo</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://milanosensualcongress.com/images/news/bachata-workshops-vs-classes-2026.webp</image:loc>
-      <image:title>Bachata dancers choosing workshop levels at a congress in Milan</image:title>
+      <image:loc>https://milanosensualcongress.com/images/news/duomo-di-milano-bachata-italy-2026-dance-destination.webp</image:loc>
+      <image:title>The illuminated Duomo di Milano at dusk</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://milanosensualcongress.com/images/news/duomo-di-milano-bachata-italy-2026-dance-destination.webp</image:loc>
-      <image:title>Duomo di Milano, starting point of the European Bachata festival season 2026-2027</image:title>
+      <image:loc>https://milanosensualcongress.com/images/news/bachata-workshops-vs-classes-2026.webp</image:loc>
+      <image:title>Bachata dancers choosing workshop levels at a congress in Milan</image:title>
     </image:image>
     <image:image>
       <image:loc>https://milanosensualcongress.com/images/news/bachata-congress-2026-social-dancing.webp</image:loc>
@@ -454,7 +454,7 @@
   </url>
   <url>
     <loc>https://milanosensualcongress.com/it/news</loc>
-    <lastmod>2026-09-06T23:36:28+02:00</lastmod>
+    <lastmod>2026-09-10T23:46:17+02:00</lastmod>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://milanosensualcongress.com/news" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://milanosensualcongress.com/news" />
@@ -464,12 +464,12 @@
       <image:title>Milano Sensual Congress Logo</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://milanosensualcongress.com/images/news/bachata-workshops-vs-classes-2026.webp</image:loc>
-      <image:title>Ballerini che scelgono il livello dei workshop Bachata a un congresso a Milano</image:title>
+      <image:loc>https://milanosensualcongress.com/images/news/duomo-di-milano-bachata-italy-2026-dance-destination.webp</image:loc>
+      <image:title>Il Duomo di Milano illuminato al crepuscolo</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://milanosensualcongress.com/images/news/duomo-di-milano-bachata-italy-2026-dance-destination.webp</image:loc>
-      <image:title>Duomo di Milano, punto di partenza della stagione europea dei festival di Bachata 2026-2027</image:title>
+      <image:loc>https://milanosensualcongress.com/images/news/bachata-workshops-vs-classes-2026.webp</image:loc>
+      <image:title>Ballerini che scelgono il livello dei workshop Bachata a un congresso a Milano</image:title>
     </image:image>
     <image:image>
       <image:loc>https://milanosensualcongress.com/images/news/bachata-congress-2026-social-dancing.webp</image:loc>
@@ -606,7 +606,7 @@
   </url>
   <url>
     <loc>https://milanosensualcongress.com/news/bachata-festivals-europe-2026-2027-calendar</loc>
-    <lastmod>2026-09-06T23:36:28+02:00</lastmod>
+    <lastmod>2026-09-10T23:46:17+02:00</lastmod>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://milanosensualcongress.com/news/bachata-festivals-europe-2026-2027-calendar" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://milanosensualcongress.com/news/bachata-festivals-europe-2026-2027-calendar" />
@@ -614,6 +614,22 @@
     <image:image>
       <image:loc>https://milanosensualcongress.com/images/milano-sensual-congress-logo-nav.webp</image:loc>
       <image:title>Milano Sensual Congress Logo</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://milanosensualcongress.com/news/bachata-festivals-milan-2026-2027</loc>
+    <lastmod>2026-09-10T23:46:17+02:00</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://milanosensualcongress.com/news/bachata-festivals-milan-2026-2027" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://milanosensualcongress.com/news/bachata-festivals-milan-2026-2027" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://milanosensualcongress.com/it/news/festival-bachata-milano-2026-2027" />
+    <image:image>
+      <image:loc>https://milanosensualcongress.com/images/milano-sensual-congress-logo-nav.webp</image:loc>
+      <image:title>Milano Sensual Congress Logo</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://milanosensualcongress.com/images/news/duomo-di-milano-bachata-italy-2026-dance-destination_800w.webp</image:loc>
+      <image:title>The illuminated Duomo di Milano at dusk</image:title>
     </image:image>
   </url>
   <url>
@@ -670,7 +686,7 @@
   </url>
   <url>
     <loc>https://milanosensualcongress.com/it/news/calendario-festival-bachata-europa-2026-2027</loc>
-    <lastmod>2026-09-06T23:36:28+02:00</lastmod>
+    <lastmod>2026-09-10T23:46:17+02:00</lastmod>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://milanosensualcongress.com/news/bachata-festivals-europe-2026-2027-calendar" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://milanosensualcongress.com/news/bachata-festivals-europe-2026-2027-calendar" />
@@ -774,6 +790,22 @@
     <image:image>
       <image:loc>https://milanosensualcongress.com/images/milano-sensual-congress-logo-nav.webp</image:loc>
       <image:title>Milano Sensual Congress Logo</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://milanosensualcongress.com/it/news/festival-bachata-milano-2026-2027</loc>
+    <lastmod>2026-09-10T23:46:17+02:00</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://milanosensualcongress.com/news/bachata-festivals-milan-2026-2027" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://milanosensualcongress.com/news/bachata-festivals-milan-2026-2027" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://milanosensualcongress.com/it/news/festival-bachata-milano-2026-2027" />
+    <image:image>
+      <image:loc>https://milanosensualcongress.com/images/milano-sensual-congress-logo-nav.webp</image:loc>
+      <image:title>Logo Milano Sensual Congress</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://milanosensualcongress.com/images/news/duomo-di-milano-bachata-italy-2026-dance-destination_800w.webp</image:loc>
+      <image:title>Il Duomo di Milano illuminato al crepuscolo</image:title>
     </image:image>
   </url>
   <url>

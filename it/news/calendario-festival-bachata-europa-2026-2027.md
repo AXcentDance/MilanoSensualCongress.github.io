@@ -28,13 +28,13 @@ L'Italia risponde con qualcosa di unico: **Wild Divas** a Roma, il festival tutt
 
 La scena dell'Europa orientale è esplosa, e il **Sensual Bachata Festival** di Bucarest ne è la prova. Giunto alla quarta edizione a metà febbraio, porta una grande line-up internazionale in una moderna events hall della capitale rumena, con quel pubblico caloroso e affamato di ballo che rende irresistibili le scene emergenti. I voli per Bucarest sono economici da quasi tutta Europa — una scelta intelligente per chi guarda al budget.
 
+### Marzo 2027 Bachata Day — Milano, Italia
+
+**Bachata Day** si svolge dal **5 al 7 marzo 2027** al Crowne Plaza Milano Linate di San Donato Milanese, con workshop, show e feste. Per date, location e consigli pratici per organizzare il weekend di novembre al Milano Sensual, leggi la nostra [guida ai festival di Bachata a Milano 2026–2027](https://milanosensualcongress.com/it/news/festival-bachata-milano-2026-2027), che comprende anche Europe Bachata Festival.
+
 ### Aprile 2027 Fever Bachata World Meeting — Gandia, Spagna
 
 Primavera significa costa. Dal **22 al 26 aprile 2027** il **Fever Bachata World Meeting** arriva all'Hotel Gandia Palace di Gandia, València — quattro giorni e notti con oltre 60 ore di social, pool party e feste in spiaggia, un Jack & Jill internazionale e la Dance Game World Cup con più di 10.000€ in premi. È quanto di più vicino a un festival-vacanza estiva esista nella Bachata, aria di mare inclusa.
-
-### Date da annunciare Bachata Day — Milano, Italia
-
-Tieni d'occhio Milano tutto l'anno: **Bachata Day** è l'evento in formato festival della città dedicato alla Bachata, e un ottimo modo per assaggiare la scena milanese tra i grandi weekend di congresso. Le date vengono annunciate stagionalmente — segui la scena o torna sulla nostra [pagina news](https://milanosensualcongress.com/it/news), dove raccontiamo tutto ciò che accade nella [scena Bachata italiana](https://milanosensualcongress.com/it/news/bachata-italia-2026-milano-meta-ballo).
 
 ### Come Scegliere la Tua Stagione di Festival
 

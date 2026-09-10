@@ -6,6 +6,16 @@ Stay updated with the latest Bachata news, festival guides, and dance insights f
 
 Canonical: https://milanosensualcongress.com/news
 
+September 10, 2026
+
+### Bachata Festivals in Milan 2026–2027: Which to Choose?
+
+Plan your Milano Sensual weekend with a guide to Milan festival dates, venues, workshop levels and travel, including Europe Bachata Festival and Bachata Day.
+
+[Read the Milan Festival Guide](https://milanosensualcongress.com/news/bachata-festivals-milan-2026-2027)
+
+Photo: Marco Nuernberger, CC BY 2.0
+
 Updated September 5, 2026
 
 ### A Bachata Congress for Everyone

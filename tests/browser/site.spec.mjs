@@ -148,7 +148,7 @@ for (const path of ['/', '/it/']) test(`${path}: reduced motion retains the post
   expect(await page.locator('#heroVideo').evaluate(video => video.paused)).toBe(true);
 });
 
-for (const path of ['/', '/it/', '/news/bachata-workshop-levels-guide-congress', '/it/news/livelli-workshop-bachata-congresso', '/news/bachata-congress-alone-solo-dancer-guide', '/it/news/congresso-bachata-da-soli-guida-ballerini']) {
+for (const path of ['/', '/it/', '/news/bachata-workshop-levels-guide-congress', '/it/news/livelli-workshop-bachata-congresso', '/news/bachata-congress-alone-solo-dancer-guide', '/it/news/congresso-bachata-da-soli-guida-ballerini', '/news/bachata-festivals-milan-2026-2027', '/it/news/festival-bachata-milano-2026-2027']) {
   test(`${path}: content with JavaScript disabled`, async ({ browser, baseURL }, info) => {
     const context = await browser.newContext({ javaScriptEnabled: false, viewport: info.project.use.viewport });
     const page = await context.newPage();

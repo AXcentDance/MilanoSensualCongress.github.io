@@ -28,13 +28,13 @@ Italy answers with something unique: **Wild Divas** in Rome, the all-female fest
 
 Eastern Europe's scene has exploded, and the **Sensual Bachata Festival** in Bucharest is its proof. Reaching its fourth edition in mid-February, it brings a big international line-up to a modern events hall in the Romanian capital, with the warm, hungry-to-dance crowd that makes emerging scenes so addictive. Flights to Bucharest are cheap from most of Europe — a smart pick for dancers watching their budget.
 
+### March 2027 Bachata Day — Milan, Italy
+
+**Bachata Day** takes place on **5–7 March 2027** at Crowne Plaza Milano Linate in San Donato Milanese, with workshops, shows and parties. For dates, venues and practical planning around the November Milano Sensual weekend, see our [guide to Bachata festivals in Milan 2026–2027](https://milanosensualcongress.com/news/bachata-festivals-milan-2026-2027), which also covers Europe Bachata Festival.
+
 ### April 2027 Fever Bachata World Meeting — Gandia, Spain
 
 Spring means the coast. From **22 to 26 April 2027** the **Fever Bachata World Meeting** lands at the Hotel Gandia Palace in Gandia, València — four days and nights with over 60 hours of socials, pool and beach parties, an international Jack & Jill and the Dance Game World Cup with more than €10,000 in prizes. It is the closest thing Bachata has to a summer-holiday festival, with sea air included.
-
-### Dates TBA Bachata Day — Milan, Italy
-
-Keep an eye on Milan year-round: **Bachata Day** is the city's festival-format event dedicated to Bachata, and a great way to sample the Milanese scene between the big congress weekends. Dates are announced seasonally — follow the scene or check back on our [news page](https://milanosensualcongress.com/news), where we track everything happening in the [Italian Bachata scene](https://milanosensualcongress.com/news/bachata-italy-2026-milan-dance-destination).
 
 ### How to Choose Your Festival Season
 
