@@ -10,11 +10,7 @@ Canonical: https://milanosensualcongress.com/
 
 Three days of bachata workshops, parties and social dancing at Devero Hotel, near Milan, with international artists and dancers from across Europe.
 
-[Get Tickets](https://milanosensualcongress.com/tickets)
-
 1,000+ dancers · 20+ nations · 40+ hours of workshops · 20+ hours of social dancing · 3 days
-
-4-Star Hotel & Spa Venue World-Class Masters International Jack & Jill Socials Till Sunrise
 
 ### International Bachata Lineup
 

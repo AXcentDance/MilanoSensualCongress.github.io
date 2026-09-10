@@ -10,11 +10,7 @@ Canonical: https://milanosensualcongress.com/it/
 
 Tre giorni di workshop di bachata, party e social dancing al Devero Hotel, vicino a Milano, con artisti internazionali e ballerini da tutta Europa.
 
-[Acquista i biglietti](https://milanosensualcongress.com/it/tickets)
-
 1.000+ ballerini · 20+ nazioni · 40+ ore di workshop · 20+ ore di social dancing · 3 giorni
-
-Hotel 4 Stelle con Spa Maestri di Livello Mondiale Jack & Jill Internazionale Social Fino all’Alba
 
 ### Lineup Internazionale di Bachata
 
