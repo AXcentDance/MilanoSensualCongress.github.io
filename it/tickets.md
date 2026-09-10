@@ -49,7 +49,7 @@ Avanzato
 
 #### Upgrade Masterclass
 
-€65
+€59
 
 Nessun altro aumento previsto
 

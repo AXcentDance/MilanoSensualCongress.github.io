@@ -12,7 +12,7 @@ Milano Sensual Congress is built for dancers who want more than patterns. This i
 
 [Buy Masterclass Upgrade](https://lasalsadelbaile.com/MSC2026) [View Program](https://milanosensualcongress.com/program)
 
-**A valid Full Pass is required** to attend the masterclasses. The masterclass is a €65 upgrade added on top of your congress pass, with no further increases planned.
+**A valid Full Pass is required** to attend the masterclasses. The masterclass is a €59 upgrade added on top of your congress pass, with no further increases planned.
 
 ### Advanced workshops for dancers who want real formation
 
@@ -62,7 +62,7 @@ Ideal for dancers who want sharper execution, clearer dynamics and a more profes
 
 This advanced track is for dancers who already have Bachata foundations and want a more demanding training environment. You do not need to be a performer, but you should be ready to focus, repeat, receive details and work beyond comfortable social patterns.
 
-Important: the masterclass cannot be attended with the upgrade alone. You must first purchase a Full Pass, then add the €65 Masterclass Upgrade. No further Masterclass price increases are planned.
+Important: the masterclass cannot be attended with the upgrade alone. You must first purchase a Full Pass, then add the €59 Masterclass Upgrade. No further Masterclass price increases are planned.
 
 [See Tickets and Requirements](https://milanosensualcongress.com/tickets)
 

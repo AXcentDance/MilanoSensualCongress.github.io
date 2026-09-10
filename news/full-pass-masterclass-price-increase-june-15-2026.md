@@ -6,7 +6,7 @@ Archived Milano Sensual Congress ticket update: the €125 Full Pass tier ended 
 
 Canonical: https://milanosensualcongress.com/news/full-pass-masterclass-price-increase-june-15-2026
 
-**Archive notice:** the €125 Full Pass tier described below ended on July 31, 2026. The [current Bachata Congress ticket page](https://milanosensualcongress.com/tickets) lists the active €130 tier through September 15. The Masterclass upgrade remains €65, with no further Masterclass increases planned.
+**Archive notice:** the €125 Full Pass tier described below ended on July 31, 2026. The [current Bachata Congress ticket page](https://milanosensualcongress.com/tickets) lists the active €130 tier through September 15. The Masterclass upgrade remains €59, with no further Masterclass increases planned.
 
 July 31
 
@@ -16,7 +16,7 @@ previous tier deadline
 
 previous Full Pass tier
 
-€65
+€59
 
 fixed Masterclass upgrade
 
@@ -26,7 +26,7 @@ This archive records a previous **Bachata Congress** ticket tier for transparenc
 
 The [Full Pass](https://milanosensualcongress.com/tickets) was available for **€125** until **July 31 at midnight**. It included the core congress experience: workshops, parties, shows and social dancing. The active ticket page now shows the current €130 tier through September 15.
 
-The [Masterclass upgrade](https://milanosensualcongress.com/masterclass) is now **€65**. This upgrade requires a valid Full Pass and adds focused high-level training with selected international artists. No further Masterclass price increases are planned.
+The [Masterclass upgrade](https://milanosensualcongress.com/masterclass) is now **€59**. This upgrade requires a valid Full Pass and adds focused high-level training with selected international artists. No further Masterclass price increases are planned.
 
 ### How the July 31 Price Deadline Worked
 
@@ -47,7 +47,7 @@ For 2026, interest is already focused on the full package: workshops, parties, i
   experience: workshops, parties, shows and socials.
 - Dancers who want the
   **Masterclass upgrade**
-  at the fixed €65 price and do not want to risk the advanced training selling out again.
+  at the fixed €59 price and do not want to risk the advanced training selling out again.
 - International dancers planning flights, hotel and transfers for
   **Milano Dance Events 2026**
   .
@@ -61,10 +61,10 @@ You can review the current ticket options on the [Milano Sensual Congress ticket
 
 #### Archive summary
 
-The €125 Full Pass tier ended on July 31, 2026. The current Full Pass is €130 until September 15 at midnight. The Masterclass upgrade remains €65 with no further increases planned.
+The €125 Full Pass tier ended on July 31, 2026. The current Full Pass is €130 until September 15 at midnight. The Masterclass upgrade remains €59 with no further increases planned.
 
 #### See the Current Full Pass
 
-The active Full Pass tier is €130 until September 15 at midnight. Add the €65 Masterclass upgrade if you want the advanced training track.
+The active Full Pass tier is €130 until September 15 at midnight. Add the €59 Masterclass upgrade if you want the advanced training track.
 
 [Book Your Ticket](https://milanosensualcongress.com/tickets)

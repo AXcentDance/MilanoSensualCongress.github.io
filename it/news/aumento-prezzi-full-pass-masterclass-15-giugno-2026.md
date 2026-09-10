@@ -6,7 +6,7 @@ Aggiornamento archiviato: la fascia Full Pass da 125€ è terminata il 31 lugli
 
 Canonical: https://milanosensualcongress.com/it/news/aumento-prezzi-full-pass-masterclass-15-giugno-2026
 
-**Avviso archivio:** la fascia Full Pass da 125€ descritta qui sotto è terminata il 31 luglio 2026. La [pagina attuale dei biglietti del Congresso Bachata](https://milanosensualcongress.com/it/tickets) mostra la fascia da 130€ valida fino al 15 settembre. L'upgrade Masterclass resta a 65€, senza altri aumenti previsti.
+**Avviso archivio:** la fascia Full Pass da 125€ descritta qui sotto è terminata il 31 luglio 2026. La [pagina attuale dei biglietti del Congresso Bachata](https://milanosensualcongress.com/it/tickets) mostra la fascia da 130€ valida fino al 15 settembre. L'upgrade Masterclass resta a 59€, senza altri aumenti previsti.
 
 31 luglio
 
@@ -16,7 +16,7 @@ scadenza fascia precedente
 
 fascia Full Pass precedente
 
-65€
+59€
 
 upgrade Masterclass fisso
 
@@ -26,7 +26,7 @@ Questo archivio documenta una fascia precedente dei biglietti del **Congresso Ba
 
 Il [Full Pass](https://milanosensualcongress.com/it/tickets) era disponibile a **125€** fino alla **mezzanotte del 31 luglio**. Includeva l'esperienza principale del congresso: workshop, party, show e social. La pagina attuale dei biglietti mostra ora la fascia da 130€ fino al 15 settembre.
 
-L'[upgrade Masterclass](https://milanosensualcongress.com/it/masterclass) costa ora **65€**. Questo upgrade richiede un Full Pass valido e aggiunge una formazione avanzata con artisti internazionali selezionati. Non sono previsti altri aumenti per la Masterclass.
+L'[upgrade Masterclass](https://milanosensualcongress.com/it/masterclass) costa ora **59€**. Questo upgrade richiede un Full Pass valido e aggiunge una formazione avanzata con artisti internazionali selezionati. Non sono previsti altri aumenti per la Masterclass.
 
 ### Come Funzionava la Scadenza del 31 Luglio
 
@@ -47,7 +47,7 @@ Per il 2026, l'interesse è già concentrato sul pacchetto completo: workshop, p
   : workshop, party, show e social.
 - Ballerini che vogliono l'
   **upgrade Masterclass**
-  al prezzo fisso di 65€ e non vogliono rischiare un nuovo sold out.
+  al prezzo fisso di 59€ e non vogliono rischiare un nuovo sold out.
 - Ballerini internazionali che stanno pianificando voli, hotel e transfer per
   **Milano Dance Events 2026**
   .
@@ -61,10 +61,10 @@ Puoi controllare le opzioni attuali nella pagina [biglietti Milano Sensual Congr
 
 #### Riepilogo archivio
 
-La fascia Full Pass da 125€ è terminata il 31 luglio 2026. Il Full Pass attuale costa 130€ fino alla mezzanotte del 15 settembre. L'upgrade Masterclass resta a 65€ senza altri aumenti previsti.
+La fascia Full Pass da 125€ è terminata il 31 luglio 2026. Il Full Pass attuale costa 130€ fino alla mezzanotte del 15 settembre. L'upgrade Masterclass resta a 59€ senza altri aumenti previsti.
 
 #### Scopri il Full Pass Attuale
 
-La fascia Full Pass attiva costa 130€ fino alla mezzanotte del 15 settembre. Aggiungi l'upgrade Masterclass da 65€ se vuoi il percorso avanzato.
+La fascia Full Pass attiva costa 130€ fino alla mezzanotte del 15 settembre. Aggiungi l'upgrade Masterclass da 59€ se vuoi il percorso avanzato.
 
 [Prenota il Biglietto](https://milanosensualcongress.com/it/tickets)
