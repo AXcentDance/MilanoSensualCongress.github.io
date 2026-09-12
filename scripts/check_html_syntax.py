@@ -1,5 +1,5 @@
 import os
-from site_files import ignored_directory
+from site_files import site_pages
 import sys
 from html.parser import HTMLParser
 
@@ -67,23 +67,15 @@ def check_structure(root_dir=ROOT_DIR):
     print(f"Starting Strict HTML Syntax Check in {os.path.abspath(root_dir)}...\n")
     found_errors = False
     
-    for root, dirs, files in os.walk(root_dir):
-        dirs[:] = [d for d in dirs if not ignored_directory(d)]
-        if "node_modules" in root or ".git" in root or "scripts" in root:
-            continue
-            
-        for file in files:
-            if file.endswith(".html"):
-                path = os.path.join(root, file)
-                checker = SyntaxChecker(path)
-                errors = checker.check()
-                
-                if errors:
-                    found_errors = True
-                    print(f"❌ {os.path.relpath(path, root_dir)}:")
-                    for error in errors:
-                        print(f"  - {error}")
-                    print("")
+    for page in site_pages(root_dir):
+        checker = SyntaxChecker(os.path.join(root_dir, page))
+        errors = checker.check()
+        if errors:
+            found_errors = True
+            print(f"❌ {page}:")
+            for error in errors:
+                print(f"  - {error}")
+            print("")
     
     if not found_errors:
         print("✅ No syntax errors found in HTML files.")

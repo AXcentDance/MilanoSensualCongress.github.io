@@ -1,17 +1,13 @@
 import os
-from site_files import ignored_directory
+from site_files import classified_pages, page_url_path
 import datetime
 import subprocess
 import xml.etree.ElementTree as ET
 from xml.sax.saxutils import escape, quoteattr
-from generation_support import GenerationError, is_noindexed, read_page, run_generator, scan_error, write_outputs
+from generation_support import GenerationError, read_page, run_generator, write_outputs
     
 ROOT_DIR = "."
 DOMAIN = 'https://milanosensualcongress.com'
-IGNORED_DIRS = {
-    '.git', '.claude', '.agent', '.agents', '.github',
-    'node_modules', 'scripts', '__pycache__'
-}
 
 def get_lastmod(filepath):
     """Truthful lastmod: newest git commit touching the file (ISO 8601 with
@@ -39,16 +35,7 @@ def get_url_path(filepath):
     # Handle Windows backslashes
     rel_path = rel_path.replace(os.sep, '/')
     
-    # Remove .html extension for clean URLs
-    if rel_path.endswith('.html'):
-        rel_path = rel_path[:-5]
-        
-    if rel_path == 'index':
-        return '/'
-    if rel_path.endswith('/index'):
-        return '/' + rel_path[:-5]
-    
-    return '/' + rel_path
+    return page_url_path(rel_path)
 
 def get_page_images(filepath, soup=None):
     """Extracts images from an HTML file for sitemap."""
@@ -144,18 +131,11 @@ def generate_sitemap():
     
     all_files = []
     parsed_pages = {}
-    for root, dirs, files in os.walk(ROOT_DIR, onerror=scan_error):
-        # Prune development-only directories before os.walk descends into them.
-        # Hidden worktrees must never become public sitemap URLs.
-        dirs[:] = [directory for directory in dirs if not ignored_directory(directory) and directory not in IGNORED_DIRS]
-        
-        for file in files:
-            if file.endswith('.html'):
-                filepath = os.path.join(root, file)
-                soup = read_page(filepath)
-                if not is_noindexed(soup):
-                    all_files.append(filepath)
-                    parsed_pages[filepath] = soup
+    for page, soup, indexable in classified_pages(ROOT_DIR):
+        if indexable:
+            filepath = os.path.join(ROOT_DIR, page)
+            all_files.append(filepath)
+            parsed_pages[filepath] = soup
 
     if not all_files:
         raise GenerationError(f'No indexable HTML pages found under {ROOT_DIR}; refusing to replace existing outputs')
@@ -190,18 +170,9 @@ def generate_sitemap():
             url = DOMAIN + get_url_path(filepath)
             lastmod = get_lastmod(filepath)
             
-            # Priority tiers: 1.0 home / 0.8 sections / 0.6 leaf pages
-            if key in ['index.html', 'index']:
-                priority = '1.0'
-            elif key.startswith('news/') or key in ['terms.html', '404.html']:
-                priority = '0.6'
-            else:
-                priority = '0.8'
-                
             xml_output += '  <url>\n'
             xml_output += f'    <loc>{escape(url)}</loc>\n'
             xml_output += f'    <lastmod>{lastmod}</lastmod>\n'
-            xml_output += f'    <priority>{priority}</priority>\n'
             
             # Prefer the page's explicit hreflang declarations. This preserves
             # language pairing when translated pages use localized slugs.

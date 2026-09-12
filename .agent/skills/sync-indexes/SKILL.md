@@ -26,9 +26,19 @@ CSS-only changes use the performance rule's
 If an HTML source changed, sitemap freshness can be updated while preserving
 the [editorial date policy](../../rules/article-metadata-only.md).
 
-Inspect the diff: include all indexable pages, exclude intentional noindex,
-reports and tooling, preserve truthful dates and translated canonical URLs.
-Confirm new pages in both `llms.txt` and `llms-full.txt` and relevant feeds.
+Public-page discovery and indexing decisions belong to
+[`scripts/site_files.py`](../../../scripts/site_files.py). Its directory exclusions
+and explicit utility-page registry are shared by generators and checks. A new
+nonindexed utility page needs both a justified registry entry and a robots
+`noindex` directive in its head; do not add ordinary content or sales pages to
+silence a failure. Utility HTML remains public and receives functional checks,
+but is excluded from sitemap, Markdown/LLM exports, feeds and IndexNow selection.
+`noindex` is not a privacy protection; private material must stay outside public
+and publishable files.
+
+Inspect the diff: include all indexable pages, apply that shared policy,
+preserve truthful dates and translated canonical URLs.
+Confirm new indexable pages in both `llms.txt` and `llms-full.txt` and relevant feeds.
 Review inbound links and [HTML/schema breadcrumbs](../../rules/breadcrumbs.md).
 Include regenerated files in the reviewed change, then follow
 [delivery completion](../../rules/delivery.md#verification-and-completion).

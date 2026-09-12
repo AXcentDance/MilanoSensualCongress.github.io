@@ -12,6 +12,8 @@ import json
 import html as html_mod
 from datetime import datetime, timezone
 from email.utils import format_datetime
+from generation_support import GenerationError, run_generator
+from site_files import indexable_pages, page_url_path
 
 ROOT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BASE_URL = 'https://milanosensualcongress.com'
@@ -72,7 +74,7 @@ def parse_article(path):
     return {
         'title': html_mod.unescape(title_m.group(1).strip()) if title_m else os.path.basename(path),
         'description': html_mod.unescape(desc_m.group(1).strip()) if desc_m else '',
-        'link': f"{BASE_URL}/{rel[:-len('.html')]}",
+        'link': BASE_URL + page_url_path(rel),
         'dt': dt,
     }
 
@@ -81,13 +83,14 @@ def esc(s):
     return html_mod.escape(s, quote=False)
 
 
-def build_feed(cfg):
-    src_dir = os.path.join(ROOT_DIR, cfg['src'])
+def build_feed(cfg, pages=None):
+    if pages is None:
+        pages = indexable_pages(ROOT_DIR)
     items = []
-    for name in sorted(os.listdir(src_dir)):
-        if not name.endswith('.html'):
+    for page in pages:
+        if os.path.dirname(page) != cfg['src']:
             continue
-        item = parse_article(os.path.join(src_dir, name))
+        item = parse_article(os.path.join(ROOT_DIR, page))
         if item:
             items.append(item)
     items.sort(key=lambda i: (i['dt'], i['link']), reverse=True)
@@ -117,16 +120,19 @@ def build_feed(cfg):
 
 
 def main():
+    pages = indexable_pages(ROOT_DIR)
+    outputs = {}
     for cfg in FEEDS:
-        feed = build_feed(cfg)
+        feed = build_feed(cfg, pages)
         if feed is None:
-            print(f"WARNING: no items for {cfg['out']}")
-            continue
-        out_path = os.path.join(ROOT_DIR, cfg['out'])
+            raise GenerationError(f"No indexable dated articles for {cfg['out']}; refusing to leave a stale feed")
+        outputs[cfg['out']] = feed
+    for name, feed in outputs.items():
+        out_path = os.path.join(ROOT_DIR, name)
         with open(out_path, 'w', encoding='utf-8') as f:
             f.write(feed)
-        print(f"Wrote {cfg['out']} ({feed.count('<item>')} items)")
+        print(f"Wrote {name} ({feed.count('<item>')} items)")
 
 
 if __name__ == '__main__':
-    main()
+    raise SystemExit(run_generator(main))

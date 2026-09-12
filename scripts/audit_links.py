@@ -1,5 +1,5 @@
 import os
-from site_files import ignored_directory
+from site_files import site_pages
 import sys
 from html.parser import HTMLParser
 from urllib.parse import urlparse
@@ -70,36 +70,21 @@ def audit_relative_links():
     
     all_broken = []
     
-    for root, dirs, files in os.walk(ROOT_DIR):
-        dirs[:] = [d for d in dirs if not ignored_directory(d)]
-        if 'node_modules' in dirs: dirs.remove('node_modules')
-        if '.git' in dirs: dirs.remove('.git')
-        if 'scripts' in dirs: dirs.remove('scripts')
-            
-        for file in files:
-            if not file.endswith('.html'):
-                continue
-                
-            source_path = os.path.join(root, file)
-            
-            try:
-                with open(source_path, 'r', encoding='utf-8') as f:
-                    content = f.read()
-                
-                auditor = LinkAuditor(source_path, ROOT_DIR)
-                auditor.feed(content)
-                
-                if auditor.broken_links:
-                    relative_source = os.path.relpath(source_path, ROOT_DIR)
-                    for issue in auditor.broken_links:
-                        all_broken.append({
-                            'source': relative_source,
-                            'link': issue['link'],
-                            'missing': issue['resolved_to']
-                        })
-                        
-            except Exception as e:
-                print(f"Error parsing {source_path}: {e}")
+    for page in site_pages(ROOT_DIR):
+        source_path = os.path.join(ROOT_DIR, page)
+        try:
+            with open(source_path, 'r', encoding='utf-8') as f:
+                content = f.read()
+            auditor = LinkAuditor(source_path, ROOT_DIR)
+            auditor.feed(content)
+            for issue in auditor.broken_links:
+                all_broken.append({
+                    'source': page,
+                    'link': issue['link'],
+                    'missing': issue['resolved_to']
+                })
+        except Exception as e:
+            print(f"Error parsing {source_path}: {e}")
 
     # Report
     if all_broken:

@@ -2,7 +2,7 @@
 """Every indexable page must be reachable from a homepage via HTML links.
 Hreflang metadata and isolated pairs of translated pages cannot rescue orphans.
 """
-from site_files import site_pages
+from site_files import page_is_indexable, site_pages
 import os
 import posixpath
 import re
@@ -55,9 +55,7 @@ def resolve(href, source, page_set):
 
 def unreachable_pages(html):
     parsed = {page: BeautifulSoup(content, 'html.parser') for page, content in html.items()}
-    indexable = {page for page, soup in parsed.items() if not any(
-        'noindex' in meta.get('content', '').lower()
-        for meta in soup.find_all('meta', attrs={'name': 'robots'}))}
+    indexable = {page for page, soup in parsed.items() if page_is_indexable(page, soup)}
     graph = {page: set() for page in indexable}
     for source in indexable:
         body = parsed[source].body

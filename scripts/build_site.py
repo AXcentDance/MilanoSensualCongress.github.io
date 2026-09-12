@@ -5,7 +5,7 @@ import shutil
 from pathlib import Path
 from urllib.parse import unquote, urljoin, urlsplit
 from bs4 import BeautifulSoup
-from site_files import ROOT, site_pages
+from site_files import ROOT, page_manifest
 
 ASSET_DIRECTORIES = ('css', 'js', 'fonts', 'images', 'vendor', '.well-known')
 PUBLIC_FILES = ('robots.txt', 'humans.txt', 'llms.txt', 'llms-full.txt',
@@ -57,9 +57,10 @@ def build_site(destination, root=ROOT):
     root, destination = Path(root).resolve(), Path(destination).resolve()
     if destination.exists():
         raise ValueError('Use a fresh output directory; existing files are never removed.')
-    files = set(site_pages(root))
-    files.update(str(Path(page).with_suffix('.md')) for page in list(files)
-                 if (root / Path(page).with_suffix('.md')).is_file())
+    pages = page_manifest(root)
+    files = {page['file'] for page in pages}
+    files.update(str(Path(page['file']).with_suffix('.md')) for page in pages
+                 if page['indexable'] and (root / Path(page['file']).with_suffix('.md')).is_file())
     files.update(name for name in PUBLIC_FILES if (root / name).is_file())
     # IndexNow's public verification key is intentionally served at the root.
     files.update(path.name for path in root.glob('*.txt')

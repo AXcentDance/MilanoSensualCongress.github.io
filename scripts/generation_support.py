@@ -1,7 +1,6 @@
 """Shared parser, error reporting, and staged writes for public index generators."""
 import os
 from pathlib import Path
-import re
 import shlex
 import shutil
 import sys
@@ -27,11 +26,6 @@ def read_page(filepath):
         return BeautifulSoup(content, 'html.parser')
     except Exception as error:
         raise GenerationError(f'Cannot read or parse {filepath}: {error}') from error
-
-
-def is_noindexed(soup):
-    return any('noindex' in meta.get('content', '').lower()
-               for meta in soup.find_all('meta', attrs={'name': re.compile('^robots$', re.I)}))
 
 
 def scan_error(error):

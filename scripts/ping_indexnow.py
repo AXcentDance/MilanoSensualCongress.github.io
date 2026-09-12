@@ -3,7 +3,7 @@ import json
 import os
 import subprocess
 from urllib.request import Request, urlopen
-from site_files import site_pages
+from site_files import indexable_pages, page_url_path
 
 DOMAIN = 'https://milanosensualcongress.com'
 
@@ -13,8 +13,8 @@ def changed_urls(before):
         return []
     changed = subprocess.check_output(
         ['git', 'diff', '--name-only', before, 'HEAD', '--', '*.html'], text=True).splitlines()
-    pages = set(site_pages()) - {'404.html'}
-    return [DOMAIN + '/' + (file[:-10] if file.endswith('index.html') else file[:-5])
+    pages = set(indexable_pages())
+    return [DOMAIN + page_url_path(file)
             for file in changed if file in pages]
 
 

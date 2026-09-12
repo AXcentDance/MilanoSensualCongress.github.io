@@ -25,6 +25,9 @@ For a new page, start from the closest current page and follow the
 Include a useful internal link from an existing page and the translated partner.
 The all-page gates discover new HTML pages automatically; copied markup still
 needs inspection and testing.
+[`scripts/site_files.py`](../../scripts/site_files.py) owns public-page discovery
+and the approved nonindexed utility-page policy; use it for page selection
+instead of maintaining another exclusion list or robots parser.
 
 For page additions, removals, renames, metadata or substantive content changes,
 follow [sync-indexes](../skills/sync-indexes/SKILL.md) once after the edits; it

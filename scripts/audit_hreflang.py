@@ -1,8 +1,7 @@
 #!/usr/bin/env python3
 """Check complete, genuinely reciprocal language clusters on every public page."""
 import sys
-from bs4 import BeautifulSoup
-from site_files import ROOT, site_pages
+from site_files import classified_pages
 
 
 def validate_clusters(pages):
@@ -26,9 +25,8 @@ def validate_clusters(pages):
 
 def main():
     pages = {}
-    for name in site_pages():
-        soup = BeautifulSoup((ROOT / name).read_text(), 'html.parser')
-        if any('noindex' in meta.get('content', '') for meta in soup.select('meta[name="robots"]')):
+    for name, soup, indexable in classified_pages():
+        if not indexable:
             continue
         canonical = soup.select_one('link[rel="canonical"]')
         pages[name] = {

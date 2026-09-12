@@ -43,7 +43,7 @@ function sourceFingerprint() {
   }
   for (const page of sitePages()) hashFile(page.file);
   for (const directory of ['css', 'js', 'fonts', 'images', 'vendor']) hashDirectory(directory);
-  for (const file of ['robots.txt', 'package-lock.json', 'scripts/site-server.mjs', 'scripts/lighthouse.mjs', 'scripts/quality-results.mjs', 'scripts/site-pages.mjs', 'scripts/site_files.py']) hashFile(file);
+  for (const file of ['robots.txt', 'package-lock.json', 'scripts/site-server.mjs', 'scripts/lighthouse.mjs', 'scripts/quality-results.mjs', 'scripts/site-pages.mjs', 'scripts/site_files.py', 'scripts/generation_support.py']) hashFile(file);
   return hash.digest('hex');
 }
 const manifest = { sourceHash: sourceFingerprint(), profiles: Object.fromEntries(selected.map(p => [p, profiles[p]])),

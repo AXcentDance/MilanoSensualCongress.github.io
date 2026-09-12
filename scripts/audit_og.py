@@ -1,7 +1,7 @@
 import os
 import re
 import sys
-from site_files import site_pages
+from site_files import indexable_pages
 
 ROOT_DIR = "."
 IT_DIR = "it"
@@ -67,9 +67,7 @@ def audit_og_tags():
     
     total_issues = 0
     
-    for path in site_pages():
-        if path == '404.html':
-            continue
+    for path in indexable_pages():
         file_issues = check_file(path, 'it_IT' if path.startswith('it/') else 'en_US')
         if file_issues:
             print(f"{path:<40} | Found {len(file_issues)} issues:")

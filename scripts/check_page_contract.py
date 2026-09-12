@@ -6,7 +6,7 @@ import sys
 from collections import defaultdict
 from urllib.parse import urlsplit
 from bs4 import BeautifulSoup
-from site_files import ROOT, site_pages
+from site_files import ROOT, indexing_issues, page_is_indexable, page_url_path, site_pages
 
 
 def audit_page(html, page):
@@ -47,15 +47,14 @@ def audit_page(html, page):
             missing = origins - directives.get(directive, set())
             require(not missing, f'CSP {directive} missing verified tracking sources: {", ".join(sorted(missing))}')
     canonicals = soup.find_all('link', rel='canonical')
-    noindex = any('noindex' in m.get('content', '').lower() for m in soup.head.find_all('meta', attrs={'name': 'robots'}))
-    require(page == '404.html' or not noindex, 'unexpected noindex on public page')
-    require(page != '404.html' or noindex, '404 must remain noindex')
+    policy_errors = indexing_issues(page, soup)
+    errors.extend(policy_errors)
+    # Invalid noindex never grants exemptions from the normal page contract.
+    noindex = not policy_errors and not page_is_indexable(page, soup)
     require(len(canonicals) <= 1 and (noindex or len(canonicals) == 1)
             and all(link.find_parent('head') is not None for link in canonicals), 'single canonical or intentional noindex required')
     if canonicals:
-        expected = '/' + page.removesuffix('.html')
-        if expected.endswith('/index'):
-            expected = expected[:-5]
+        expected = page_url_path(page)
         require(canonicals[0].get('href') == 'https://milanosensualcongress.com' + expected, 'canonical must match the clean page URL')
     require(len(soup.find_all('main')) == 1, 'exactly one main landmark required')
     require(len(soup.find_all('h1')) == 1, 'exactly one H1 required')

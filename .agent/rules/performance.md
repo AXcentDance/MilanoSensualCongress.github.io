@@ -42,9 +42,10 @@ discover pages automatically when run; execution and publication follow
 [delivery](delivery.md#verification-and-completion).
 
 Lighthouse acceptance and score tables cover indexable pages only. Skip
-intentionally non-indexed utility/error pages, including `404.html`, unless the
-user specifically requests an audit of them. Preserve their correct noindex
-behavior. Scores cannot guarantee every browser, network,
+utility/error pages approved by the shared
+[`site_files.py` policy](../../scripts/site_files.py), unless the user specifically
+requests an audit of them. Functional browser checks still cover all public HTML.
+Preserve their correct noindex behavior. Scores cannot guarantee every browser, network,
 future dependency version, real-user Core Web Vitals, or complete accessibility.
 
 ## Render and load

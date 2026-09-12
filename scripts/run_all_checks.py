@@ -12,7 +12,8 @@ import subprocess
 import sys
 import xml.etree.ElementTree as ET
 from bs4 import BeautifulSoup
-from site_files import site_pages
+from generation_support import GenerationError
+from site_files import page_is_indexable, page_url_path, site_pages
 
 FAILURES = []
 
@@ -79,17 +80,25 @@ def check_sitemap():
         return
     ns = {'sm': 'http://www.sitemaps.org/schemas/sitemap/0.9'}
     locs = {u.findtext('sm:loc', namespaces=ns) for u in tree.getroot().findall('sm:url', ns)}
-    # every indexable page must be in the sitemap
+    expected = set()
+    # Require complete coverage and reject stale/nonindexed/tooling entries.
     for page in pages():
-        html = open(page).read()
-        if 'noindex' in html:
+        with open(page, encoding='utf-8') as source:
+            soup = BeautifulSoup(source.read(), 'html.parser')
+        try:
+            indexable = page_is_indexable(page, soup)
+        except GenerationError as error:
+            FAILURES.append(f'sitemap.xml: {error}')
             continue
-        path = '/' + page[:-5]
-        if path.endswith('/index'):
-            path = path[:-5]
-        url = 'https://milanosensualcongress.com' + path
+        if not indexable:
+            continue
+        url = 'https://milanosensualcongress.com' + page_url_path(page)
+        expected.add(url.rstrip('/'))
         if url not in locs and url.rstrip('/') not in locs:
             FAILURES.append(f'sitemap.xml: missing indexable page {url}')
+    for url in sorted(locs, key=str):
+        if not url or url.rstrip('/') not in expected:
+            FAILURES.append(f'sitemap.xml: URL is not an indexable public page: {url}')
 
 
 def main():

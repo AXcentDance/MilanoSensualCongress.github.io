@@ -1,19 +1,13 @@
 import os
-from site_files import ignored_directory
+from site_files import classified_pages, page_url_path
 import re
 import datetime
 import io
-from generation_support import GenerationError, is_noindexed, read_page, run_generator, scan_error, write_outputs
+from generation_support import GenerationError, read_page, run_generator, write_outputs
 
 ROOT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUTPUT_FULL = os.path.join(ROOT_DIR, 'llms-full.txt')
 OUTPUT_SUMMARY = os.path.join(ROOT_DIR, 'llms.txt')
-
-IGNORE_PATTERNS = [
-    'node_modules', '.git', '.claude', '.agent', '.agents', '.github',
-    'tmp', '.gemini', '__pycache__', 'scripts', 'vendor', 'System',
-    'google', 'assets', 'images', 'css', 'js'
-]
 
 PRIORITY = [
     'index.html',
@@ -24,25 +18,11 @@ PRIORITY = [
     'terms.html'
 ]
 
-def should_ignore(path):
-    path = os.path.relpath(path, ROOT_DIR)
-    if any(ignored_directory(p) for p in path.split(os.sep) if p != "."):
-        return True
-    for pattern in IGNORE_PATTERNS:
-        if pattern in path.split(os.sep):
-            return True
-    return False
-
 BASE_URL = 'https://milanosensualcongress.com'
 
 def clean_url(rel_path):
     # Map a repo-relative HTML path to its canonical clean URL.
-    rel_path = rel_path.replace(os.sep, '/')
-    if rel_path == 'index.html':
-        return BASE_URL + '/'
-    if rel_path.endswith('/index.html'):
-        return f"{BASE_URL}/{rel_path[:-len('index.html')]}"
-    return f"{BASE_URL}/{rel_path[:-len('.html')]}"
+    return BASE_URL + page_url_path(rel_path.replace(os.sep, '/'))
 
 def get_file_priority(filename):
     # Handle both filename and path components
@@ -121,18 +101,8 @@ def generate_llms_summary(html_files_data):
 def main():
     print(f"Scanning {ROOT_DIR} for HTML files...")
     
-    html_files = []
-    for root, dirs, files in os.walk(ROOT_DIR, onerror=scan_error):
-        dirs[:] = sorted(d for d in dirs if not ignored_directory(d))
-        if should_ignore(root):
-            continue
-        for file in files:
-            if file.endswith('.html'):
-                full_path = os.path.join(root, file)
-                if not should_ignore(full_path):
-                    soup = read_page(full_path)
-                    if not is_noindexed(soup):
-                        html_files.append((full_path, soup))
+    html_files = [(os.path.join(ROOT_DIR, page), soup)
+                  for page, soup, indexable in classified_pages(ROOT_DIR) if indexable]
     
     # Sort files
     html_files.sort(key=lambda item: (get_file_priority(os.path.relpath(item[0], ROOT_DIR)), os.path.relpath(item[0], ROOT_DIR)))

@@ -16,6 +16,7 @@ sys.path.insert(0, str(SCRIPTS))
 import generate_llms_text as llms
 import generate_sitemap as sitemap
 import generation_support as support
+import site_files
 
 
 class GeneratorFailureTests(unittest.TestCase):
@@ -123,6 +124,7 @@ class GeneratorFailureTests(unittest.TestCase):
             for generate in [llms.main, sitemap.generate_sitemap]:
                 self.assert_failed(generate, 'Cannot scan input directory')
 
+    @patch.dict(site_files.NONINDEXED_PAGES, {'confirmation.html': 'Test-only approved confirmation'})
     def test_valid_optional_omissions_and_noindex_are_preserved(self):
         self.add_page()
         self.add_page('it/index.html', title='Congresso', body='<main>Informazioni</main>')
