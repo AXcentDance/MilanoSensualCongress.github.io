@@ -14,7 +14,8 @@ Reuse the global IDs `https://milanosensualcongress.com/#organization`,
 `https://milanosensualcongress.com/#website`, and
 `https://milanosensualcongress.com/#event`. Give the local WebPage its canonical
 URL plus `#webpage`; connect it to the WebSite and its `#breadcrumb`. Keep
-subpage HTML/schema hierarchy consistent with the breadcrumb rule. A homepage
+subpage HTML/schema hierarchy consistent with the
+[breadcrumb rule](../../rules/breadcrumbs.md). A homepage
 may retain its existing one-item schema trail.
 
 Select a primary entity that matches the page: Article/BlogPosting for an
@@ -33,13 +34,15 @@ FAQ markup must match real questions and answers that visitors can access.
   a fixed number of performers.
 - A complete event uses actual name, timezone-aware start/end, status, attendance
   mode, venue/address, image, description, organizer, and current ticket offers.
-  Keep timezone offsets on timed deadlines. Preserve historical article dates.
+  Keep timezone offsets on timed deadlines. For article dates, follow the
+  [article metadata rule](../../rules/article-metadata-only.md).
 - Do not copy stale example prices, year-specific offers, or unverified facts
   into new pages. Do not add unsupported ratings or irrelevant schema types.
 
 Use one canonical URL, reciprocal `en`/`it`/`x-default`, language-correct titles,
 descriptions and `inLanguage`. Apply equivalent graph changes to both languages.
-Run `sync_social_meta.py` after title/description changes, follow `sync-indexes`
-for generated files, and run the master gate. Its schema checks validate local
-invariants, not search-engine eligibility; inspect warnings and verify official
-search documentation when making eligibility claims.
+Follow [sync-indexes](../sync-indexes/SKILL.md) for social metadata and generated
+files, then [delivery completion](../../rules/delivery.md#verification-and-completion).
+The schema checks validate local invariants, not search-engine eligibility;
+inspect warnings and verify official search documentation when making
+eligibility claims.

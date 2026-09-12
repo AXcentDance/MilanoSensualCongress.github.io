@@ -14,18 +14,21 @@ python3 scripts/generate_md_twins.py
 python3 scripts/generate_rss.py
 python3 scripts/generate_sitemap.py
 python3 scripts/generate_llms_text.py
-python3 scripts/run_all_checks.py
 ```
 
 Install `beautifulsoup4` if needed; `requirements-dev.txt` records the supported
 checker dependency. Do not maintain hand-edited versions of generated outputs.
-CSS-only changes need the critical-CSS workflow and checks, not this entire
-content workflow. If an HTML source changed, sitemap freshness can be updated
-without inventing an editorial `dateModified`.
+If a generator fails, resolve its reported error and rerun it before proceeding
+with dependent generation or publication. Preserved older outputs do not count
+as a successful update; optional omissions such as a page without images are valid.
+CSS-only changes use the performance rule's
+[build and critical-CSS workflow](../../rules/performance.md#render-and-load).
+If an HTML source changed, sitemap freshness can be updated while preserving
+the [editorial date policy](../../rules/article-metadata-only.md).
 
 Inspect the diff: include all indexable pages, exclude intentional noindex,
 reports and tooling, preserve truthful dates and translated canonical URLs.
 Confirm new pages in both `llms.txt` and `llms-full.txt` and relevant feeds.
-Review inbound links and matching hidden HTML/schema breadcrumbs. Run the local
-master gate before publishing generated indexes. Include the regenerated files
-in the reviewed change; GitHub Actions does not generate or verify them.
+Review inbound links and [HTML/schema breadcrumbs](../../rules/breadcrumbs.md).
+Include regenerated files in the reviewed change, then follow
+[delivery completion](../../rules/delivery.md#verification-and-completion).

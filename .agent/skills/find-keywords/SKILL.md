@@ -22,4 +22,6 @@ minimum word-count quotas.
 
 Return a concise table of intent, language, target page, evidence, and priority,
 with dated sources and clear uncertainty. Apply content changes only within the
-user's task; follow the news/schema/index skills when implementing them.
+user's task; when implementing them, follow [news](../news-seo/SKILL.md),
+[schema](../schema-graph/SKILL.md), and [sync-indexes](../sync-indexes/SKILL.md)
+as applicable, then [delivery completion](../../rules/delivery.md#verification-and-completion).

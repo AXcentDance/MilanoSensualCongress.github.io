@@ -6,11 +6,11 @@ description: Audit this site's static health, Lighthouse scores, accessibility, 
 # Site audit
 
 Use the domain, goal, and scope already supplied by the user/repository. Ask
-only for missing information that affects a decision. Read the performance
-rule for targets and measurement limits.
+only for missing information that affects a decision. Read the
+[performance rule](../../rules/performance.md) for targets and measurement limits.
 
-1. Record the working-tree state and baseline. Run
-   `python3 scripts/run_all_checks.py` and `node --test tests/*.test.cjs`.
+1. Record the working-tree state and baseline using the static and behavior
+   checks in [delivery completion](../../rules/delivery.md#verification-and-completion).
    Keep the individual checker's warnings visible as well as pass/fail.
 2. For speed/browser work, run the pinned Lighthouse and Playwright gates.
    Attribute failures to specific pages, profiles, audits, and elements.
@@ -20,8 +20,9 @@ rule for targets and measurement limits.
    structured data. Check live statuses/headers when delivery is in scope.
 4. Make the smallest justified fix in both languages. Preserve the current
    look, URLs, event facts, forms, ticket links, and tracking requirements.
-5. Regenerate affected derived files, run the static gate, then verify the
-   affected behavior and repeat performance measurements when needed.
+5. Regenerate affected derived files through
+   [sync-indexes](../sync-indexes/SKILL.md), then follow delivery completion,
+   including the required browser checks and repeat performance measurements.
 
 Report coverage and versions, before/after measurements, defects fixed,
 pre-existing issues, limitations, and remaining decisions. Distinguish lab

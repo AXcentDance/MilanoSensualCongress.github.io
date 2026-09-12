@@ -1,17 +1,17 @@
 #!/usr/bin/env python3
 """Master site gate: runs every checker and fails (exit 1) on any violation.
 
-Absorbs the single-purpose audit scripts by matching their success markers,
-and adds repo-wide invariant checks (CSP presence, speculation rules presence,
-theme-color presence, sitemap validity/coverage, duplicate titles and
-duplicate meta descriptions).
+Runs the single-purpose checkers and checks their exit codes and success markers.
+Page requirements belong to check_page_contract.py; image alt/source requirements
+belong to check_image_seo.py. This orchestrator adds cross-page title/description
+uniqueness and sitemap validity/coverage checks.
 
 Run from the repo root:  python3 scripts/run_all_checks.py
 """
-import re
 import subprocess
 import sys
 import xml.etree.ElementTree as ET
+from bs4 import BeautifulSoup
 from site_files import site_pages
 
 FAILURES = []
@@ -49,64 +49,26 @@ def run_absorbed_checkers():
                     print(line)
 
 
-def check_per_page_invariants():
+def check_metadata_unique():
+    seen = {'title': {}, 'meta description': {}}
     for page in pages():
-        html = open(page).read()
-        checks = {
-            'CSP meta': 'http-equiv="Content-Security-Policy"' in html,
-            'speculation rules': 'type="speculationrules"' in html,
-            'prefetch fallback': 'src="/js/prefetch-fallback.js?v=' in html,
-            'single shared analytics loader': html.count('src="/js/site-analytics.js?v=') == 1
-                and 'function initMetaPixel' not in html,
-            'Google Analytics CSP permissions': all(
-                re.search(r'(?<![\w-])' + directive + r' [^;\"]*' + re.escape(host), html)
-                for directive, host in [
-                    ('script-src', 'https://www.googletagmanager.com'),
-                    ('img-src', 'https://*.google-analytics.com'),
-                    ('img-src', 'https://www.googletagmanager.com'),
-                    ('connect-src', 'https://*.google-analytics.com'),
-                    ('connect-src', 'https://*.analytics.google.com'),
-                    ('connect-src', 'https://www.googletagmanager.com'),
-                ]),
-            'theme-color': 'name="theme-color"' in html,
-            'single canonical or noindex': (
-                html.count('rel="canonical"') == 1 or 'noindex' in html),
+        with open(page) as source:
+            head = BeautifulSoup(source.read(), 'html.parser').head
+        # Presence/cardinality are owned by the page-contract checker.
+        if head is None:
+            continue
+        title = head.find('title')
+        description = head.find('meta', attrs={'name': 'description'})
+        values = {
+            'title': title.get_text().strip() if title is not None else None,
+            'meta description': ' '.join(description.get('content', '').split()) if description is not None else None,
         }
-        for name, ok in checks.items():
-            if not ok:
-                FAILURES.append(f'{page}: missing {name}')
-        # exactly one CSP meta
-        if html.count('http-equiv="Content-Security-Policy"') > 1:
-            FAILURES.append(f'{page}: more than one CSP meta')
-
-
-def check_titles_unique():
-    seen = {}
-    for page in pages():
-        m = re.search(r'<title>(.*?)</title>', open(page).read(), re.S)
-        if not m:
-            FAILURES.append(f'{page}: missing <title>')
-            continue
-        t = m.group(1).strip()
-        if t in seen:
-            FAILURES.append(f'duplicate title in {page} and {seen[t]}: "{t[:60]}"')
-        seen[t] = page
-
-
-def check_descriptions_unique():
-    seen = {}
-    for page in pages():
-        html = open(page).read()
-        m = (re.search(r'<meta name="description"\s+content="([^"]*)"', html)
-             or re.search(r"<meta name='description'\s+content='([^']*)'", html))
-        if not m:
-            FAILURES.append(f'{page}: missing meta description')
-            continue
-        d = ' '.join(m.group(1).split())
-        if d in seen:
-            FAILURES.append(
-                f'duplicate meta description in {page} and {seen[d]}: "{d[:60]}"')
-        seen[d] = page
+        for name, value in values.items():
+            if value is None:
+                continue
+            if value in seen[name]:
+                FAILURES.append(f'duplicate {name} in {page} and {seen[name][value]}: "{value[:60]}"')
+            seen[name][value] = page
 
 
 def check_sitemap():
@@ -132,9 +94,7 @@ def check_sitemap():
 
 def main():
     run_absorbed_checkers()
-    check_per_page_invariants()
-    check_titles_unique()
-    check_descriptions_unique()
+    check_metadata_unique()
     check_sitemap()
     if FAILURES:
         print(f'\nFAILED: {len(FAILURES)} violation(s)')

@@ -5,20 +5,21 @@ description: Change Milano Sensual Congress layouts, styling, navigation, and re
 
 # Site design
 
-Read `AGENTS.md`, `.agent/rules/brand-coherence.md`, and
-`.agent/rules/performance.md`. Inspect `index.html`, `it/index.html`,
-`tailwind.config.js`, and `css/fonts.css` before choosing components.
+Follow the [homepage brand rule](../../rules/brand-coherence.md) for reference
+files, palette, typography, and shared components, and the
+[performance rule](../../rules/performance.md) for loading and interactions.
 
-Reuse the dark navy palette, pink/purple accents, Inter body text, Playfair
-Display headings, rounded CTAs, and existing navigation/footer. Keep layout
-changes proportional to the issue; do not redesign for novelty or introduce
-another stack. Use plain HTML/CSS and small JS only where behavior needs it.
+Keep layout changes proportional to the issue; do not redesign for novelty.
+Use the existing stack described in [delivery](../../rules/delivery.md).
 
-Implement and inspect both languages at 375, 768, and 1440px. Let navigation
-breakpoints follow the space its links actually need. Check logo proportions,
+Implement and inspect both languages at the brand rule's required widths.
+Let navigation breakpoints follow the space its links actually need. Check logo proportions,
 text wrapping, tap targets, keyboard focus, reduced motion, and horizontal
 overflow. Test open menus and controls as well as the initial screen.
 
-After class/CSS changes, follow the performance rule's build and critical-CSS
-steps, then the static/browser/Lighthouse gates. Preserve content and metadata
-unless the task requires changes; style edits do not reset article dates.
+After class/CSS changes, follow the performance rule's
+[build and critical-CSS steps](../../rules/performance.md#render-and-load).
+Preserve content and metadata unless the task requires changes, including the
+[editorial date policy](../../rules/article-metadata-only.md). When content or
+metadata changes, use [sync-indexes](../sync-indexes/SKILL.md). Finish with
+[delivery completion](../../rules/delivery.md#verification-and-completion).

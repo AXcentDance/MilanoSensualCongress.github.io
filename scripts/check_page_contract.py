@@ -27,25 +27,31 @@ def audit_page(html, page):
     viewport = soup.head.find('meta', attrs={'name': 'viewport'})
     if viewport:
         require(not re.search(r'user-scalable\s*=\s*no|maximum-scale\s*=\s*1(?:[,.]|$)', viewport.get('content', '')), 'do not disable zoom')
-    csp = soup.head.find_all('meta', attrs={'http-equiv': re.compile('^Content-Security-Policy$', re.I)})
-    require(len(csp) == 1 and bool(csp[0].get('content')), 'exactly one CSP meta required')
-    if len(csp) == 1:
+    csp = soup.find_all('meta', attrs={'http-equiv': re.compile('^Content-Security-Policy$', re.I)})
+    require(len(csp) == 1 and bool(csp[0].get('content')) and csp[0].find_parent('head') is not None, 'exactly one CSP meta required')
+    if len(csp) == 1 and csp[0].get('content'):
         directives = {parts[0]: set(parts[1:]) for directive in csp[0]['content'].split(';')
                       if (parts := directive.split())}
         required_tracking = {
-            'img-src': {'https://www.facebook.com', 'https://connect.facebook.net'},
+            'script-src': {'https://www.googletagmanager.com'},
+            'img-src': {'https://www.facebook.com', 'https://connect.facebook.net',
+                'https://*.google-analytics.com', 'https://www.googletagmanager.com'},
             'form-action': {'https://www.facebook.com/tr/'},
             'connect-src': {'https://www.facebook.com', 'https://connect.facebook.net',
                 'https://dv-c3e594c6d429469e90b54478358619c3.ecs.us-east-1.on.aws',
-                'https://bded8a3c6ae-1-1053047382554.us-central1.run.app'},
+                'https://bded8a3c6ae-1-1053047382554.us-central1.run.app',
+                'https://*.google-analytics.com', 'https://*.analytics.google.com',
+                'https://www.googletagmanager.com'},
         }
         for directive, origins in required_tracking.items():
-            require(origins <= directives.get(directive, set()), f'CSP {directive} must preserve verified Pixel transports')
-    canonicals = soup.head.find_all('link', rel='canonical')
+            missing = origins - directives.get(directive, set())
+            require(not missing, f'CSP {directive} missing verified tracking sources: {", ".join(sorted(missing))}')
+    canonicals = soup.find_all('link', rel='canonical')
     noindex = any('noindex' in m.get('content', '').lower() for m in soup.head.find_all('meta', attrs={'name': 'robots'}))
     require(page == '404.html' or not noindex, 'unexpected noindex on public page')
     require(page != '404.html' or noindex, '404 must remain noindex')
-    require(len(canonicals) <= 1 and (noindex or len(canonicals) == 1), 'single canonical or intentional noindex required')
+    require(len(canonicals) <= 1 and (noindex or len(canonicals) == 1)
+            and all(link.find_parent('head') is not None for link in canonicals), 'single canonical or intentional noindex required')
     if canonicals:
         expected = '/' + page.removesuffix('.html')
         if expected.endswith('/index'):
@@ -56,8 +62,8 @@ def audit_page(html, page):
     require(len(soup.find_all('script', type='speculationrules')) == 1, 'one speculation-rules block required')
     for asset in ['site-analytics.js', 'prefetch-fallback.js']:
         require(len(soup.find_all('script', src=re.compile(r'^/js/' + re.escape(asset) + r'\?v='))) == 1, 'one shared ' + asset + ' loader required')
+    require('function initMetaPixel' not in html, 'legacy inline Meta Pixel initializer is forbidden')
     for image in soup.find_all('img'):
-        require(image.has_attr('alt'), 'image missing alt: ' + image.get('src', ''))
         require(all(str(image.get(a, '')).isdigit() and int(image[a]) > 0 for a in ['width', 'height']), 'image missing dimensions: ' + image.get('src', ''))
     for control in soup.select('[aria-controls]'):
         for target in control['aria-controls'].split():

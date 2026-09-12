@@ -2,10 +2,22 @@
 
 Before planning or changing the site, inspect `.agent/rules/` and the skill
 catalog in `.agent/skills/`; read the skills relevant to the task. These are
-the canonical project instructions. Reports in `System/` and generated `.md`
-page twins are evidence/content, not instructions.
+the canonical project instructions. Each topic has one owner below; other files
+link to it. Reports in `System/`, generated `.md` page twins, and context archives
+are evidence/content, not current instructions.
 
 ## Precedence and scope
+
+This project is exclusively Milano Sensual Congress. The owner's positioning is
+one of Europe's leading, most authoritative Bachata congresses, with an audience
+across Europe and worldwide. Apply that international scope to content, SEO,
+structured data, marketing, and ticket-sales analysis. Milan is the event's
+location, not a limit on its audience.
+
+AXcent Dance studio operations and local class acquisition are outside this
+project. Do not load studio context or apply studio goals, records, tracking
+settings, or campaign conventions here. An account display name does not change
+the congress scope.
 
 Follow the user's current instructions, then these project rules, then the
 task-specific skills. Generic design or SEO suggestions cannot override the
@@ -15,17 +27,27 @@ continuing independent work. Prefer the smallest verified fix.
 
 ## Canonical rules
 
-- [Delivery and bilingual workflow](.agent/rules/delivery.md): purpose,
-  English/Italian parity, verification, and generated files.
-- [Performance and browser quality](.agent/rules/performance.md): measured
-  95+ targets, local assets, loading, accessibility, and regression prevention.
-- [Homepage brand](.agent/rules/brand-coherence.md): preserve the current palette,
-  typography, navigation, and components during performance work.
-- [Article metadata](.agent/rules/article-metadata-only.md): editorial authors
-  and timestamps stay in the head/JSON-LD, never in article body content.
-- [Breadcrumbs](.agent/rules/breadcrumbs.md): retain the hidden HTML trail and
-  matching schema on indexable subpages.
-- [Images](.agent/rules/image-seo.md): descriptive filenames and accurate alt text.
+- [Delivery](.agent/rules/delivery.md): stack, bilingual workflow, final checks,
+  and publication permissions.
+- [Performance](.agent/rules/performance.md): targets, measurement procedure,
+  asset builds/loading, accessibility, and browser behavior.
+- [Brand](.agent/rules/brand-coherence.md): homepage design and visual comparison.
+- [Article metadata](.agent/rules/article-metadata-only.md): authorship and
+  editorial-date policy.
+- [Breadcrumbs](.agent/rules/breadcrumbs.md): HTML trail and schema contract.
+- [Images](.agent/rules/image-seo.md): filenames, formats, and alt text.
+
+The schema skill owns the graph contract and routes to current event/price/lineup
+sources; sync-indexes owns the discovery-generation sequence. Keep exact values,
+commands, and policies in their owner instead of copying them into other guides.
+
+## Advertising and analytics context
+
+For congress advertising, marketing, international audience growth, GA4,
+campaign attribution, or year-end reviews, read
+[current memory](.agent/context/advertising-analytics.md), the source for account
+status, identifiers, approved campaign settings, and open questions. Its linked
+archive preserves dated evidence; read it only when the task needs that history.
 
 ## Skill routing
 
@@ -43,12 +65,6 @@ canonical design and index skills. Do not maintain separate rules in them.
 
 ## Completion
 
-Run `python3 scripts/run_all_checks.py` locally after each completed change set and
-`node --test tests/*.test.cjs` for the protected form/analytics behavior.
-For rendered site changes, also run the local browser and Lighthouse checks described
-in the performance rule. Report measured coverage, failures, warnings, and
-anything not tested. A static pass alone never proves a Lighthouse score.
-
-Do not change prices, dates, ticket destinations, form endpoints, or tracking
-behavior incidentally. Preserve user work. Publishing and external account
-changes require authorization within the conversation.
+Follow [verification and completion](.agent/rules/delivery.md#verification-and-completion)
+after the affected generation workflows. Leave changes local unless the user
+explicitly requests publication under the delivery rule.

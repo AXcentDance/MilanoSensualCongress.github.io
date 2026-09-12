@@ -1,15 +1,9 @@
 import os
 from site_files import ignored_directory
 import re
-# Check if bs4 is available, if not, handle gracefully or use regex fallback?
-# User snippet imports bs4. I will assume it is available or I should check.
-# If not available, I'll attempt a regex extraction for body text.
-try:
-    from bs4 import BeautifulSoup
-    HAS_BS4 = True
-except ImportError:
-    HAS_BS4 = False
-    import html
+import datetime
+import io
+from generation_support import GenerationError, is_noindexed, read_page, run_generator, scan_error, write_outputs
 
 ROOT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUTPUT_FULL = os.path.join(ROOT_DIR, 'llms-full.txt')
@@ -50,12 +44,6 @@ def clean_url(rel_path):
         return f"{BASE_URL}/{rel_path[:-len('index.html')]}"
     return f"{BASE_URL}/{rel_path[:-len('.html')]}"
 
-def is_noindexed(file_path):
-    with open(file_path, 'r', encoding='utf-8') as f:
-        head = f.read(8192)
-    m = re.search(r'<meta name="robots"\s+content="([^"]*)"', head, re.IGNORECASE)
-    return bool(m and 'noindex' in m.group(1).lower())
-
 def get_file_priority(filename):
     # Handle both filename and path components
     base_name = os.path.basename(filename)
@@ -75,47 +63,18 @@ def clean_text(text):
     text = '\n'.join(line.rstrip() for line in text.splitlines())
     return text.strip()
 
-def process_file_regex(file_path):
-    # Fallback if bs4 is missing
-    with open(file_path, 'r', encoding='utf-8') as f:
-        content = f.read()
-    
-    title_m = re.search(r'<title>(.*?)</title>', content, re.IGNORECASE | re.S)
-    title = html.unescape(title_m.group(1).strip()) if title_m else "No Title"
-    
-    desc_m = re.search(r'<meta name="description"\s+content=["\'](.*?)["\']', content, re.IGNORECASE)
-    description = html.unescape(desc_m.group(1).strip()) if desc_m else ""
-    
-    # Remove script/style/nav/footer for cleaner content dump
-    clean = re.sub(r'<(script|style|noscript|iframe|svg|nav|footer)[^>]*>.*?</\1>', '', content, flags=re.IGNORECASE | re.S)
-    # Remove tags
-    text = re.sub(r'<[^>]+>', ' ', clean)
-    text = html.unescape(text)
-    
-    rel_path = os.path.relpath(file_path, ROOT_DIR)
-    
-    return {
-        'path': rel_path,
-        'title': title,
-        'description': description,
-        'content': clean_text(text)
-    }
-
-def process_file(file_path):
-    if not HAS_BS4:
-        return process_file_regex(file_path)
-        
+def process_file(file_path, soup=None):
     try:
-        with open(file_path, 'r', encoding='utf-8') as f:
-            html_content = f.read()
-        
-        soup = BeautifulSoup(html_content, 'html.parser')
+        if soup is None:
+            soup = read_page(file_path)
         
         # Remove nav and footer to keep the content focused on page content
         for element in soup(["nav", "footer", "script", "style", "noscript", "iframe", "svg"]):
             element.extract()
             
-        title = soup.title.string.strip() if soup.title and soup.title.string else "No Title"
+        title = soup.title.get_text().strip() if soup.title else ''
+        if not title:
+            raise ValueError('page title is missing or empty')
         
         meta_desc = ""
         meta = soup.find('meta', attrs={'name': 'description'})
@@ -129,9 +88,8 @@ def process_file(file_path):
             'description': meta_desc,
             'content': clean_text(text)
         }
-    except Exception as e:
-        print(f"Error processing {file_path}: {e}")
-        return None
+    except Exception as error:
+        raise GenerationError(f'Cannot extract LLM content from {file_path}: {error}') from error
 
 def generate_llms_summary(html_files_data):
     summary = "# Milano Sensual Congress 2026\n\n"
@@ -164,47 +122,48 @@ def main():
     print(f"Scanning {ROOT_DIR} for HTML files...")
     
     html_files = []
-    for root, dirs, files in os.walk(ROOT_DIR):
+    for root, dirs, files in os.walk(ROOT_DIR, onerror=scan_error):
         dirs[:] = sorted(d for d in dirs if not ignored_directory(d))
         if should_ignore(root):
             continue
         for file in files:
             if file.endswith('.html'):
                 full_path = os.path.join(root, file)
-                if not should_ignore(full_path) and not is_noindexed(full_path):
-                    html_files.append(full_path)
+                if not should_ignore(full_path):
+                    soup = read_page(full_path)
+                    if not is_noindexed(soup):
+                        html_files.append((full_path, soup))
     
     # Sort files
-    html_files.sort(key=lambda p: (get_file_priority(os.path.relpath(p, ROOT_DIR)), os.path.relpath(p, ROOT_DIR)))
+    html_files.sort(key=lambda item: (get_file_priority(os.path.relpath(item[0], ROOT_DIR)), os.path.relpath(item[0], ROOT_DIR)))
+    if not html_files:
+        raise GenerationError(f'No indexable HTML pages found under {ROOT_DIR}; refusing to replace existing outputs')
     
     files_data = []
-    for file_path in html_files:
-        data = process_file(file_path)
-        if data:
-            files_data.append(data)
+    for file_path, soup in html_files:
+        files_data.append(process_file(file_path, soup))
             
-    # Write Full Content
-    with open(OUTPUT_FULL, 'w', encoding='utf-8') as out:
+    # Render both outputs before replacing either existing file.
+    with io.StringIO() as out:
         out.write("# Milano Sensual Congress 2026 - Full Site Documentation\n")
         out.write(f"# Generated automatically on {datetime.datetime.now().strftime('%Y-%m-%d %H:%M')}\n")
         out.write(f"# Total Pages: {len(files_data)}\n\n")
         
         for data in files_data:
-            print(f"Writing Full Content: {data['path']}...")
+            print(f"Preparing Full Content: {data['path']}...")
             out.write(f"## Page: {data['title']} ({clean_url(data['path'])})\n")
             if data['description']:
                 out.write(f"Description: {data['description']}\n")
             out.write("\n")
             out.write(data['content'])
             out.write("\n\n---\n\n")
+        full_content = out.getvalue()
             
-    # Write Summary Content
-    with open(OUTPUT_SUMMARY, 'w', encoding='utf-8') as out:
-        print("Generating llms.txt summary...")
-        out.write(generate_llms_summary(files_data))
+    print("Generating llms.txt summary...")
+    summary = generate_llms_summary(files_data)
+    write_outputs({OUTPUT_FULL: full_content, OUTPUT_SUMMARY: summary})
                 
     print(f"Successfully generated {OUTPUT_FULL} and {OUTPUT_SUMMARY}")
 
 if __name__ == "__main__":
-    import datetime
-    main()
+    raise SystemExit(run_generator(main))

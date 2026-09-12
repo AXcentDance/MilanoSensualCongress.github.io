@@ -30,8 +30,8 @@ updated direction on subsequent new pages.
   scale, and use of italics. Do not introduce a different font pairing.
 - **Navigation and footer:** Carry over the homepage's logo treatment, glass
   navigation, mobile menu, language switcher, and footer styling. Adapt link
-  paths and active states to the page and language, and retain hidden subpage
-  breadcrumbs as required by `.agent/rules/breadcrumbs.md`.
+  paths and active states to the page and language; follow the
+  [breadcrumb contract](breadcrumbs.md).
 - **Buttons and controls:** Reuse the rounded primary CTA with the homepage's
   pink-to-purple gradient (`135deg`, `#ec4899` to `#8b5cf6`) and hover gradient
   (`#db2777` to `#7c3aed`). Match existing secondary buttons, links, and dark
@@ -47,13 +47,12 @@ updated direction on subsequent new pages.
 
 ## Precedence and verification
 
-This project rule takes precedence over generic design-skill suggestions to
-vary fonts, themes, palettes, or aesthetics between pages. Creativity must stay
-within the homepage's brand system. A separate visual identity requires an
-explicit user instruction.
+A separate visual identity requires an explicit user instruction; use the
+precedence in [AGENTS.md](../../AGENTS.md#precedence-and-scope).
 
 Before considering a new page complete, compare it visually with the homepage
 at mobile, tablet, and desktop widths (375, 768, and 1440px), and check equivalent
 styling in both languages. Fix unintended differences in palette, typography,
-navigation, buttons, and surfaces. Run `python3 scripts/run_all_checks.py` as
-required by `AGENTS.md`; automated checks do not replace this visual comparison.
+navigation, buttons, and surfaces. Complete the shared
+[delivery checks](delivery.md#verification-and-completion); automated checks do
+not replace this visual comparison.

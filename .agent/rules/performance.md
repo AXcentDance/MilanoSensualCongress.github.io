@@ -38,7 +38,8 @@ The runner does these repetitions automatically for initial performance below
 comparison. `--resume` requires unchanged sources and configuration.
 Audit switchable primary-content views through their direct URLs as well;
 include the second hotel view above in local verification. These commands
-discover pages automatically when run; GitHub Actions does not run quality checks.
+discover pages automatically when run; execution and publication follow
+[delivery](delivery.md#verification-and-completion).
 
 Lighthouse acceptance and score tables cover indexable pages only. Skip
 intentionally non-indexed utility/error pages, including `404.html`, unless the

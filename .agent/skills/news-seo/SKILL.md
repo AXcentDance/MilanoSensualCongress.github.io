@@ -5,7 +5,8 @@ description: Create or update bilingual congress news, articles, and guides with
 
 # News and articles
 
-Read the project rules plus the design and schema skills for a new article.
+Read the project rules plus [design](../frontend-design/SKILL.md) and
+[schema](../schema-graph/SKILL.md) for a new article.
 Choose a clear visitor question and answer it accurately in natural language.
 Use a descriptive unique title, one H1, an honest meta description, and logical
 headings. Mention Bachata/event/location context when relevant; no keyword or
@@ -16,16 +17,17 @@ Create/update the English article in `news/` and its Italian counterpart in
 an article, link it from both news indexes and relevant existing pages; add
 contextual links to tickets, artists, hotel, or transport where useful.
 
-Keep article author, publication and modification dates exclusively in head
-metadata and JSON-LD, following `.agent/rules/article-metadata-only.md`.
-Preserve original publication dates. Update modification dates truthfully for
-substantive editorial changes; CSS/build changes do not reset them.
+Follow the [article metadata rule](../../rules/article-metadata-only.md) for
+authorship, date placement, and when editorial dates may change.
 
 Use one head JSON-LD graph with `BlogPosting`/`Article` as the article's primary
 entity. Include the congress entity when the article discusses it, using current
 facts from the sources in the schema skill. Do not relabel the global event's
-primary page as every article. Keep hidden `Home > News > Article` HTML
-breadcrumbs and matching schema per the breadcrumb rule.
+primary page as every article. Use the `Home > News > Article` hierarchy;
+implement its HTML trail and schema according to the
+[breadcrumb rule](../../rules/breadcrumbs.md).
 
-Use relevant, accurately described images; follow the image/performance rules.
-Finish with the canonical `sync-indexes` workflow and required gates.
+Use relevant images following the [image](../../rules/image-seo.md) and
+[performance](../../rules/performance.md) rules. Finish with
+[sync-indexes](../sync-indexes/SKILL.md), then
+[delivery completion](../../rules/delivery.md#verification-and-completion).
