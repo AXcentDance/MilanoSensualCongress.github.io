@@ -42,7 +42,7 @@
       "@type": "Organization",
       "@id": "https://milanosensualcongress.com/#organization",
       "name": "Milano Sensual Congress",
-      "url": "https://milanosensualcongress.com",
+      "url": "https://milanosensualcongress.com/",
       "logo": "https://milanosensualcongress.com/images/logo.webp",
       "description": "Organizer of Milano Sensual Congress, the international Bachata Sensual congress in Milan, Italy, with workshops, shows and social dancing at Devero Hotel.",
       "foundingDate": "2022-11-20",
@@ -71,8 +71,8 @@
           "telephone": "+39-333-393-5911",
           "url": "https://milanosensualcongress.com/contact",
           "availableLanguage": [
-            "English",
-            "Italian"
+            "Italian",
+            "Spanish"
           ]
         },
         {
@@ -81,8 +81,7 @@
           "telephone": "+41-79-966-84-81",
           "url": "https://milanosensualcongress.com/contact",
           "availableLanguage": [
-            "English",
-            "Italian"
+            "English"
           ]
         }
       ],
@@ -93,11 +92,15 @@
     {
       "@type": "WebSite",
       "@id": "https://milanosensualcongress.com/#website",
-      "url": "https://milanosensualcongress.com",
+      "url": "https://milanosensualcongress.com/",
       "name": "Milano Sensual Congress",
       "publisher": {
         "@id": "https://milanosensualcongress.com/#organization"
-      }
+      },
+      "inLanguage": [
+        "en",
+        "it"
+      ]
     },
     {
       "@type": "WebPage",
@@ -111,7 +114,16 @@
       "breadcrumb": {
         "@id": "https://milanosensualcongress.com/it/masterclass#breadcrumb"
       },
-      "inLanguage": "it-IT"
+      "inLanguage": "it",
+      "about": {
+        "@id": "https://milanosensualcongress.com/#event"
+      },
+      "mainEntity": {
+        "@id": "https://milanosensualcongress.com/it/masterclass#course"
+      },
+      "hasPart": {
+        "@id": "https://milanosensualcongress.com/it/masterclass#faq"
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -134,9 +146,7 @@
     {
       "@type": "DanceEvent",
       "@id": "https://milanosensualcongress.com/#event",
-      "mainEntityOfPage": {
-        "@id": "https://milanosensualcongress.com/it/masterclass#webpage"
-      },
+      "mainEntityOfPage": "https://milanosensualcongress.com/",
       "name": "Milano Sensual Congress 2026",
       "startDate": "2026-11-20T18:00:00+01:00",
       "endDate": "2026-11-22T22:00:00+01:00",
@@ -155,7 +165,6 @@
         }
       },
       "image": [
-        "https://milanosensualcongress.com/images/artists/gero-migle-bachata-esencia.webp",
         "https://milanosensualcongress.com/images/logo.webp"
       ],
       "description": "Un congresso Bachata a Milano con formazione di Bachata avanzata, masterclass, workshop intensivi, artisti internazionali, party e social dancing.",
@@ -164,30 +173,88 @@
       },
       "performer": [
         {
-          "@type": "Person",
+          "@type": "PerformingGroup",
           "name": "Gero y Migle",
-          "sameAs": "https://www.instagram.com/geroymigle_official/"
+          "sameAs": "https://www.instagram.com/geroymigle_official/",
+          "@id": "https://milanosensualcongress.com/artists#gero-y-migle",
+          "member": [
+            {
+              "@type": "Person",
+              "@id": "https://milanosensualcongress.com/artists#gero",
+              "name": "Gero",
+              "memberOf": {
+                "@id": "https://milanosensualcongress.com/artists#gero-y-migle"
+              }
+            },
+            {
+              "@type": "Person",
+              "@id": "https://milanosensualcongress.com/artists#migle",
+              "name": "Migle",
+              "memberOf": {
+                "@id": "https://milanosensualcongress.com/artists#gero-y-migle"
+              }
+            }
+          ]
         },
         {
-          "@type": "Person",
+          "@type": "PerformingGroup",
           "name": "Klau y Ros",
-          "sameAs": "https://www.instagram.com/klausyros/"
+          "sameAs": "https://www.instagram.com/klausyros/",
+          "@id": "https://milanosensualcongress.com/artists#klau-y-ros",
+          "member": [
+            {
+              "@type": "Person",
+              "@id": "https://milanosensualcongress.com/artists#klau",
+              "name": "Klau",
+              "memberOf": {
+                "@id": "https://milanosensualcongress.com/artists#klau-y-ros"
+              }
+            },
+            {
+              "@type": "Person",
+              "@id": "https://milanosensualcongress.com/artists#ros",
+              "name": "Ros",
+              "memberOf": {
+                "@id": "https://milanosensualcongress.com/artists#klau-y-ros"
+              }
+            }
+          ]
         },
         {
-          "@type": "Person",
+          "@type": "PerformingGroup",
           "name": "Cristian y Gabriella",
-          "sameAs": "https://www.instagram.com/cristianygabriella_official/"
+          "sameAs": "https://www.instagram.com/cristianygabriella_official/",
+          "@id": "https://milanosensualcongress.com/artists#cristian-y-gabriella",
+          "member": [
+            {
+              "@type": "Person",
+              "@id": "https://milanosensualcongress.com/artists#cristian",
+              "name": "Cristian",
+              "memberOf": {
+                "@id": "https://milanosensualcongress.com/artists#cristian-y-gabriella"
+              }
+            },
+            {
+              "@type": "Person",
+              "@id": "https://milanosensualcongress.com/artists#gabriella",
+              "name": "Gabriella",
+              "memberOf": {
+                "@id": "https://milanosensualcongress.com/artists#cristian-y-gabriella"
+              }
+            }
+          ]
         }
       ],
       "offers": {
-        "@type": "AggregateOffer",
+        "@type": "Offer",
+        "name": "Full Pass attuale",
         "url": "https://lasalsadelbaile.com/MSC2026",
+        "price": "130.00",
         "priceCurrency": "EUR",
-        "lowPrice": "59.00",
-        "highPrice": "59.00",
-        "offerCount": "1",
         "availability": "https://schema.org/InStock",
-        "offers": [
+        "validThrough": "2026-09-15T23:59:59+02:00",
+        "@id": "https://milanosensualcongress.com/tickets#full-pass",
+        "addOn": [
           {
             "@type": "Offer",
             "name": "Upgrade Masterclass",
@@ -195,10 +262,13 @@
             "url": "https://lasalsadelbaile.com/MSC2026",
             "price": "59.00",
             "priceCurrency": "EUR",
-            "availability": "https://schema.org/InStock"
+            "availability": "https://schema.org/InStock",
+            "@id": "https://milanosensualcongress.com/tickets#masterclass-upgrade"
           }
-        ]
-      }
+        ],
+        "validFrom": "2026-08-01T00:00:00+02:00"
+      },
+      "url": "https://milanosensualcongress.com/"
     },
     {
       "@type": "Course",
@@ -217,48 +287,76 @@
         "Tecnica social dance",
         "Qualità performativa"
       ],
-      "inLanguage": "it-IT",
+      "inLanguage": "en",
       "hasCourseInstance": {
         "@type": "CourseInstance",
         "courseMode": "InPerson",
-        "startDate": "2026-11-20T18:00:00+01:00",
+        "startDate": "2026-11-20",
         "endDate": "2026-11-22",
         "location": {
           "@type": "Place",
-          "name": "Devero Hotel"
+          "name": "Devero Hotel",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Largo Kennedy, 1",
+            "addressLocality": "Cavenago di Brianza",
+            "postalCode": "20873",
+            "addressRegion": "MB",
+            "addressCountry": "IT"
+          }
         },
         "instructor": [
           {
-            "@type": "Person",
-            "name": "Gero y Migle",
-            "sameAs": "https://www.instagram.com/geroymigle_official/"
+            "@id": "https://milanosensualcongress.com/artists#gero"
           },
           {
-            "@type": "Person",
-            "name": "Klau y Ros",
-            "sameAs": "https://www.instagram.com/klausyros/"
+            "@id": "https://milanosensualcongress.com/artists#migle"
           },
           {
-            "@type": "Person",
-            "name": "Cristian y Gabriella",
-            "sameAs": "https://www.instagram.com/cristianygabriella_official/"
+            "@id": "https://milanosensualcongress.com/artists#klau"
+          },
+          {
+            "@id": "https://milanosensualcongress.com/artists#ros"
+          },
+          {
+            "@id": "https://milanosensualcongress.com/artists#cristian"
+          },
+          {
+            "@id": "https://milanosensualcongress.com/artists#gabriella"
           }
-        ]
-      }
+        ],
+        "@id": "https://milanosensualcongress.com/masterclass#instance",
+        "name": "Formazione di Bachata Avanzata e Masterclass",
+        "inLanguage": "en",
+        "superEvent": {
+          "@id": "https://milanosensualcongress.com/#event"
+        },
+        "organizer": {
+          "@id": "https://milanosensualcongress.com/#organization"
+        },
+        "eventStatus": "https://schema.org/EventScheduled",
+        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "offers": {
+          "@id": "https://milanosensualcongress.com/tickets#masterclass-upgrade"
+        }
+      },
+      "url": "https://milanosensualcongress.com/it/masterclass",
+      "mainEntityOfPage": {
+        "@id": "https://milanosensualcongress.com/it/masterclass#webpage"
+      },
+      "coursePrerequisites": "Basi di Bachata e un Full Pass valido; upgrade Masterclass acquistato separatamente.",
+      "timeRequired": "PT3H"
     },
     {
       "@type": "FAQPage",
       "@id": "https://milanosensualcongress.com/it/masterclass#faq",
-      "mainEntityOfPage": {
-        "@id": "https://milanosensualcongress.com/it/masterclass#webpage"
-      },
       "mainEntity": [
         {
           "@type": "Question",
           "name": "Questa masterclass Bachata è per ballerini avanzati?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Sì. Il percorso masterclass è pensato per ballerini con basi di Bachata che cercano formazione di Bachata avanzata su tecnica, musicalità, connessione, body mechanics e qualità nel social dancing."
+            "text": "Sì. È pensata per ballerini con basi di Bachata che cercano formazione di Bachata avanzata su tecnica, musicalità, connessione, body mechanics e qualità nel social dancing."
           }
         },
         {
@@ -266,7 +364,7 @@
           "name": "Su cosa lavorano i workshop Bachata avanzati?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "I workshop avanzati lavorano su movimento raffinato, comunicazione lead-follow, interpretazione musicale, controllo del corpo, connessione e strumenti da usare nel social dancing e nella performance."
+            "text": "I workshop lavorano su movimento raffinato, comunicazione lead-follow, interpretazione musicale, controllo del corpo, connessione e strumenti utili nel social dancing e nella performance."
           }
         },
         {
@@ -277,7 +375,11 @@
             "text": "Sì. Per aggiungere l'Upgrade Masterclass serve un Full Pass valido. Non è possibile partecipare alla masterclass solo con l'upgrade."
           }
         }
-      ]
+      ],
+      "inLanguage": "it",
+      "isPartOf": {
+        "@id": "https://milanosensualcongress.com/it/masterclass#webpage"
+      }
     }
   ]
 }
@@ -373,7 +475,7 @@
             <a href="programma" class="px-8 py-4 rounded-full border border-white/20 text-white font-bold text-center hover:border-pink-400 hover:text-pink-300">Vedi Programma</a>
           </div>
           <div class="mt-6 glass-card p-5 max-w-3xl mx-auto">
-            <p class="text-slate-200 leading-relaxed"><i class="fa-solid fa-circle-info text-pink-400 mr-2"></i><strong>Per partecipare alle masterclass serve un Full Pass valido.</strong> La masterclass è un upgrade da 59€ da aggiungere al pass del congresso, senza altri aumenti previsti.</p>
+            <p class="text-slate-200 leading-relaxed"><i class="fa-solid fa-circle-info text-pink-400 mr-2"></i><strong>Per partecipare alle masterclass serve un Full Pass valido.</strong> La masterclass è un upgrade da 59€ per 3 ore di formazione avanzata, da aggiungere al pass del congresso, senza altri aumenti previsti.</p>
           </div>
         </div>
       </div>
@@ -398,7 +500,7 @@
         <div class="max-w-6xl mx-auto">
           <div class="text-center mb-12">
             <h2 class="text-3xl md:text-5xl font-serif font-bold mb-4">Artisti Masterclass</h2>
-            <p class="text-slate-300 max-w-3xl mx-auto">Tre artisti internazionali di Bachata, tre prospettive di allenamento, un percorso di formazione di Bachata avanzata a Milano.</p>
+            <p class="text-slate-300 max-w-3xl mx-auto">Tre coppie internazionali di Bachata, tre prospettive di allenamento, un percorso di formazione di Bachata avanzata a Milano.</p>
           </div>
           <div class="grid md:grid-cols-3 gap-6">
             <article class="glass-card overflow-hidden">

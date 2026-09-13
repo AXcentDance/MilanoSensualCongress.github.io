@@ -77,17 +77,17 @@ The Team Behind The Magic
 
 ### Organizers of the Bachata Congress Italy
 
-#### Marco y Valeria
+#### Marco Fracassi
 
-Congress Directors
+Congress Co-founder & Organizer
 
-@marcoyvaleria — International Sensual Bachata Artists with dance school established in Arcore, MB. Creators of **Milano Sensual Congress**. With a decade of teaching and performance experience, they are directors of the **Gero y Migle Project Performance Show** in Milan, and Marco serves as artistic director for one of the top Latin club in Milan, the UnaMas Club.
+@marcoyvaleria — Marco and his dance partner Valeria are international Sensual Bachata artists with a dance school in Arcore, MB. Marco co-founded **Milano Sensual Congress** with Alessandro Slamitz. With a decade of teaching and performance experience, they are directors of the **Gero y Migle Project Performance Show** in Milan, and Marco serves as artistic director for one of the top Latin club in Milan, the UnaMas Club.
 
-#### Ale y Xidan
+#### Alessandro Slamitz (Ale)
 
-Congress Directors
+Congress Co-founder & Organizer
 
-@aleyxidan — International Sensual Bachata Artists. They founded [AXcent Dance](https://axcentdance.com), the first Bachata Sensual specialized school in Zurich, established in 2025. They also serve as judges for the International Swiss Championship for Salsa and Bachata. Ale y Xidan are the creators of **Milano Sensual Congress** with Marco y Valeria, and are the co-organizers of **Bailadoro Dance Weekend**.
+@aleyxidan — Ale and his dance partner Xidan are international Sensual Bachata artists. They founded [AXcent Dance](https://axcentdance.com), the first Bachata Sensual specialized school in Zurich, established in 2025. They also serve as judges for the International Swiss Championship for Salsa and Bachata. Alessandro co-founded **Milano Sensual Congress** with Marco Fracassi. Ale y Xidan are also the co-organizers of **Bailadoro Dance Weekend**.
 
 ### Official Transfer Service
 

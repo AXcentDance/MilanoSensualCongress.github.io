@@ -23,7 +23,7 @@
       "@type": "Organization",
       "@id": "https://milanosensualcongress.com/#organization",
       "name": "Milano Sensual Congress",
-      "url": "https://milanosensualcongress.com",
+      "url": "https://milanosensualcongress.com/",
       "logo": "https://milanosensualcongress.com/images/logo.webp",
       "description": "Organizer of Milano Sensual Congress, the international Bachata Sensual congress in Milan, Italy, with workshops, shows and social dancing at Devero Hotel.",
       "foundingDate": "2022-11-20",
@@ -52,8 +52,8 @@
           "telephone": "+39-333-393-5911",
           "url": "https://milanosensualcongress.com/contact",
           "availableLanguage": [
-            "English",
-            "Italian"
+            "Italian",
+            "Spanish"
           ]
         },
         {
@@ -62,8 +62,7 @@
           "telephone": "+41-79-966-84-81",
           "url": "https://milanosensualcongress.com/contact",
           "availableLanguage": [
-            "English",
-            "Italian"
+            "English"
           ]
         }
       ],
@@ -74,11 +73,15 @@
     {
       "@type": "WebSite",
       "@id": "https://milanosensualcongress.com/#website",
-      "url": "https://milanosensualcongress.com",
+      "url": "https://milanosensualcongress.com/",
       "name": "Milano Sensual Congress",
       "publisher": {
         "@id": "https://milanosensualcongress.com/#organization"
-      }
+      },
+      "inLanguage": [
+        "en",
+        "it"
+      ]
     },
     {
       "@type": "NewsArticle",
@@ -108,10 +111,20 @@
       "@type": "WebPage",
       "@id": "https://milanosensualcongress.com/news/milan-bachata-travel-guide-2026#webpage",
       "url": "https://milanosensualcongress.com/news/milan-bachata-travel-guide-2026",
-      "name": "Milan Bachata Travel Guide 2026",
-      "description": "Travel logistics for Milano Sensual Congress attendees.",
+      "name": "Milan Bachata Travel Guide 2026: Airports, Transfers & Local Tips",
+      "description": "Planning your trip to Milano Sensual Congress 2026? Read our complete travel guide for bachata dancers: airports, official shuttles, and how to navigate Milan.",
       "breadcrumb": {
         "@id": "https://milanosensualcongress.com/news/milan-bachata-travel-guide-2026#breadcrumb"
+      },
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://milanosensualcongress.com/#website"
+      },
+      "about": {
+        "@id": "https://milanosensualcongress.com/#event"
+      },
+      "mainEntity": {
+        "@id": "https://milanosensualcongress.com/news/milan-bachata-travel-guide-2026#article"
       }
     },
     {
@@ -142,15 +155,9 @@
       "@id": "https://milanosensualcongress.com/#event",
       "audience": {
         "@type": "Audience",
-        "audienceType": "Bachata Dancers",
-        "geographicArea": {
-          "@type": "AdministrativeArea",
-          "name": "Europe"
-        }
+        "audienceType": "Bachata Dancers"
       },
-      "mainEntityOfPage": {
-        "@id": "https://milanosensualcongress.com/news/milan-bachata-travel-guide-2026#webpage"
-      },
+      "mainEntityOfPage": "https://milanosensualcongress.com/",
       "name": "Milano Sensual Congress 2026",
       "startDate": "2026-11-20T18:00:00+01:00",
       "endDate": "2026-11-22T22:00:00+01:00",
@@ -175,71 +182,18 @@
       "organizer": {
         "@id": "https://milanosensualcongress.com/#organization"
       },
-      "performer": [
-        {
-          "@type": "Person",
-          "name": "Gero y Migle",
-          "sameAs": "https://www.instagram.com/geroymigle_official/"
-        },
-        {
-          "@type": "Person",
-          "name": "Klau y Ros",
-          "sameAs": "https://www.instagram.com/klausyros/"
-        },
-        {
-          "@type": "Person",
-          "name": "Cristian y Gabriella",
-          "sameAs": "https://www.instagram.com/cristianygabriella_official/"
-        },
-        {
-          "@type": "Person",
-          "name": "David y Ines",
-          "sameAs": "https://www.instagram.com/davidyines/"
-        },
-        {
-          "@type": "Person",
-          "name": "Nacho y Silvia",
-          "sameAs": "https://www.instagram.com/nachoysilvia/"
-        },
-        {
-          "@type": "Person",
-          "name": "Agustín y Alba",
-          "sameAs": "https://www.instagram.com/agustinyalba_official/"
-        },
-        {
-          "@type": "Person",
-          "name": "Irene y Tomás",
-          "sameAs": "https://www.instagram.com/ireneytomas/"
-        },
-        {
-          "@type": "Person",
-          "name": "Aitor Gomez",
-          "sameAs": "https://www.instagram.com/aitorgomez_bachata/"
-        }
-      ],
       "offers": {
         "@type": "Offer",
+        "name": "Current Full Pass",
         "url": "https://lasalsadelbaile.com/MSC2026",
+        "price": "130.00",
         "priceCurrency": "EUR",
         "availability": "https://schema.org/InStock",
-        "priceSpecification": [
-          {
-            "@type": "UnitPriceSpecification",
-            "name": "Current Full Pass",
-            "price": "130.00",
-            "priceCurrency": "EUR",
-            "validThrough": "2026-09-15T23:59:59+02:00"
-          },
-          {
-            "@type": "UnitPriceSpecification",
-            "name": "Next Full Pass Tier",
-            "price": "130.00",
-            "priceCurrency": "EUR",
-            "validThrough": "2026-09-15T23:59:59+02:00"
-          }
-        ],
-        "price": "130.00"
-      }
+        "validThrough": "2026-09-15T23:59:59+02:00",
+        "@id": "https://milanosensualcongress.com/tickets#full-pass",
+        "validFrom": "2026-08-01T00:00:00+02:00"
+      },
+      "url": "https://milanosensualcongress.com/"
     }
   ]
 }

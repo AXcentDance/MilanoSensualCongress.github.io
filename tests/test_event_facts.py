@@ -151,6 +151,42 @@ class EventFactsTests(unittest.TestCase):
         with self.assertRaisesRegex(GenerationError, 'organization name disagrees'):
             check_event_facts.check(self.root)
 
+    def test_congress_admission_cannot_be_replaced_by_an_upgrade(self):
+        data = facts()
+        data['event']['offers'].update(price='150.00', priceCurrency='EUR')
+        write_homepages(self.root, data)
+        event = deepcopy(data['event'])
+        event['offers']['price'] = '59.00'
+        target = self.root / 'masterclass.html'
+        target.write_text('<head><script type="application/ld+json">' +
+                          json.dumps({'@graph': [event]}) + '</script></head>')
+        with self.assertRaisesRegex(GenerationError, 'congress admission price disagrees'):
+            check_event_facts.check(self.root)
+
+    def test_contact_language_drift_is_not_silently_ignored(self):
+        data = facts()
+        data['organization']['contactPoint'] = [{'telephone': '+3912345678', 'availableLanguage': ['Italian', 'Spanish']}]
+        write_homepages(self.root, data)
+        page = self.root / 'it/index.html'
+        page.write_text(page.read_text().replace('Spanish', 'English'))
+        with self.assertRaisesRegex(GenerationError, 'organization contactPoint disagrees'):
+            check_event_facts.check(self.root)
+
+    def test_translated_course_occurrence_keeps_the_same_teaching_language(self):
+        instance = {'@type': 'CourseInstance', '@id': event_facts.SITE + '/masterclass#instance',
+                    'inLanguage': 'en', 'startDate': '2030-06-01', 'endDate': '2030-06-03'}
+        def write(page, language):
+            node = {**instance, 'inLanguage': language}
+            self.root.joinpath(page).write_text('<head><script type="application/ld+json">' +
+                                               json.dumps({'@graph': [node]}) + '</script></head>')
+        write('masterclass.html', 'en')
+        write('it/masterclass.html', 'it')
+        with self.assertRaisesRegex(GenerationError, 'CourseInstance inLanguage disagrees'):
+            check_event_facts.check(self.root)
+        write('it/masterclass.html', 'en')
+        with redirect_stdout(io.StringIO()):
+            check_event_facts.check(self.root)
+
 
 if __name__ == '__main__':
     unittest.main()

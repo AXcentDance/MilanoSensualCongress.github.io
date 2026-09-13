@@ -12,7 +12,7 @@ Milano Sensual Congress è pensato per ballerini che vogliono andare oltre le fi
 
 [Acquista Upgrade Masterclass](https://lasalsadelbaile.com/MSC2026) [Vedi Programma](https://milanosensualcongress.com/it/programma)
 
-**Per partecipare alle masterclass serve un Full Pass valido.** La masterclass è un upgrade da 59€ da aggiungere al pass del congresso, senza altri aumenti previsti.
+**Per partecipare alle masterclass serve un Full Pass valido.** La masterclass è un upgrade da 59€ per 3 ore di formazione avanzata, da aggiungere al pass del congresso, senza altri aumenti previsti.
 
 ### Workshop avanzati per chi cerca vera formazione
 
@@ -32,7 +32,7 @@ Affina la comunicazione con il partner per rendere il movimento avanzato comodo,
 
 ### Artisti Masterclass
 
-Tre artisti internazionali di Bachata, tre prospettive di allenamento, un percorso di formazione di Bachata avanzata a Milano.
+Tre coppie internazionali di Bachata, tre prospettive di allenamento, un percorso di formazione di Bachata avanzata a Milano.
 
 #### Gero y Migle
 

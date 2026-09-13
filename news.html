@@ -21,20 +21,26 @@
   <link rel="alternate" hreflang="x-default" href="https://milanosensualcongress.com/news">
   <script src="/js/site-analytics.js?v=2" defer></script>
   <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
     {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
       "@type": "Organization",
       "@id": "https://milanosensualcongress.com/#organization",
       "name": "Milano Sensual Congress",
-      "url": "https://milanosensualcongress.com",
+      "url": "https://milanosensualcongress.com/",
       "logo": "https://milanosensualcongress.com/images/logo.webp",
       "description": "Organizer of Milano Sensual Congress, the international Bachata Sensual congress in Milan, Italy, with workshops, shows and social dancing at Devero Hotel.",
       "foundingDate": "2022-11-20",
       "founder": [
-        { "@type": "Person", "name": "Marco Fracassi" },
-        { "@type": "Person", "name": "Alessandro Slamitz" }
+        {
+          "@type": "Person",
+          "name": "Marco Fracassi"
+        },
+        {
+          "@type": "Person",
+          "name": "Alessandro Slamitz"
+        }
       ],
       "address": {
         "@type": "PostalAddress",
@@ -50,64 +56,73 @@
           "contactType": "customer service",
           "telephone": "+39-333-393-5911",
           "url": "https://milanosensualcongress.com/contact",
-          "availableLanguage": ["English", "Italian"]
+          "availableLanguage": [
+            "Italian",
+            "Spanish"
+          ]
         },
         {
           "@type": "ContactPoint",
           "contactType": "customer service",
           "telephone": "+41-79-966-84-81",
           "url": "https://milanosensualcongress.com/contact",
-          "availableLanguage": ["English", "Italian"]
+          "availableLanguage": [
+            "English"
+          ]
         }
       ],
       "sameAs": [
         "https://www.instagram.com/milanosensualcongress/"
       ]
     },
+    {
+      "@type": "WebSite",
+      "@id": "https://milanosensualcongress.com/#website",
+      "url": "https://milanosensualcongress.com/",
+      "name": "Milano Sensual Congress",
+      "publisher": {
+        "@id": "https://milanosensualcongress.com/#organization"
+      },
+      "inLanguage": [
+        "en",
+        "it"
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://milanosensualcongress.com/news#webpage",
+      "url": "https://milanosensualcongress.com/news",
+      "name": "Bachata Congress 2026 News, Festivals & Dance Guides",
+      "isPartOf": {
+        "@id": "https://milanosensualcongress.com/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://milanosensualcongress.com/news#breadcrumb"
+      },
+      "inLanguage": "en",
+      "description": "Stay updated with the latest Bachata news, festival guides, and dance insights from the European Bachata scene."
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://milanosensualcongress.com/news#breadcrumb",
+      "itemListElement": [
         {
-          "@type": "WebSite",
-          "@id": "https://milanosensualcongress.com/#website",
-          "url": "https://milanosensualcongress.com",
-          "name": "Milano Sensual Congress",
-          "publisher": {
-            "@id": "https://milanosensualcongress.com/#organization"
-          }
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://milanosensualcongress.com/"
         },
         {
-          "@type": "WebPage",
-          "@id": "https://milanosensualcongress.com/news#webpage",
-          "url": "https://milanosensualcongress.com/news",
-          "name": "Bachata Congress 2026 News, Festivals & Dance Guides",
-          "isPartOf": {
-            "@id": "https://milanosensualcongress.com/#website"
-          },
-          "breadcrumb": {
-            "@id": "https://milanosensualcongress.com/news#breadcrumb"
-          },
-          "inLanguage": "en",
-          "description": "Stay updated with the latest Bachata news, festival guides, and dance insights from the European Bachata scene."
-        },
-        {
-          "@type": "BreadcrumbList",
-          "@id": "https://milanosensualcongress.com/news#breadcrumb",
-          "itemListElement": [
-            {
-              "@type": "ListItem",
-              "position": 1,
-              "name": "Home",
-              "item": "https://milanosensualcongress.com/"
-            },
-            {
-              "@type": "ListItem",
-              "position": 2,
-              "name": "News",
-              "item": "https://milanosensualcongress.com/news"
-            }
-          ]
+          "@type": "ListItem",
+          "position": 2,
+          "name": "News",
+          "item": "https://milanosensualcongress.com/news"
         }
       ]
     }
-  </script>
+  ]
+}
+</script>
   
   <link rel="preload" as="font" type="font/woff2" href="/fonts/inter-latin.woff2" crossorigin>
   <link rel="preload" as="font" type="font/woff2" href="/fonts/playfair-display-latin.woff2" crossorigin>

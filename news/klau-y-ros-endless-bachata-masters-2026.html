@@ -66,20 +66,26 @@
   
   <script src="/js/site-analytics.js?v=2" defer></script>
   <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
     {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
       "@type": "Organization",
       "@id": "https://milanosensualcongress.com/#organization",
       "name": "Milano Sensual Congress",
-      "url": "https://milanosensualcongress.com",
+      "url": "https://milanosensualcongress.com/",
       "logo": "https://milanosensualcongress.com/images/logo.webp",
       "description": "Organizer of Milano Sensual Congress, the international Bachata Sensual congress in Milan, Italy, with workshops, shows and social dancing at Devero Hotel.",
       "foundingDate": "2022-11-20",
       "founder": [
-        { "@type": "Person", "name": "Marco Fracassi" },
-        { "@type": "Person", "name": "Alessandro Slamitz" }
+        {
+          "@type": "Person",
+          "name": "Marco Fracassi"
+        },
+        {
+          "@type": "Person",
+          "name": "Alessandro Slamitz"
+        }
       ],
       "address": {
         "@type": "PostalAddress",
@@ -95,198 +101,199 @@
           "contactType": "customer service",
           "telephone": "+39-333-393-5911",
           "url": "https://milanosensualcongress.com/contact",
-          "availableLanguage": ["English", "Italian"]
+          "availableLanguage": [
+            "Italian",
+            "Spanish"
+          ]
         },
         {
           "@type": "ContactPoint",
           "contactType": "customer service",
           "telephone": "+41-79-966-84-81",
           "url": "https://milanosensualcongress.com/contact",
-          "availableLanguage": ["English", "Italian"]
+          "availableLanguage": [
+            "English"
+          ]
         }
       ],
       "sameAs": [
         "https://www.instagram.com/milanosensualcongress/"
       ]
     },
+    {
+      "@type": "WebSite",
+      "@id": "https://milanosensualcongress.com/#website",
+      "url": "https://milanosensualcongress.com/",
+      "name": "Milano Sensual Congress",
+      "publisher": {
+        "@id": "https://milanosensualcongress.com/#organization"
+      },
+      "inLanguage": [
+        "en",
+        "it"
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://milanosensualcongress.com/news/klau-y-ros-endless-bachata-masters-2026#webpage",
+      "url": "https://milanosensualcongress.com/news/klau-y-ros-endless-bachata-masters-2026",
+      "name": "Klau y Ros: The Masters of Endless Bachata | Milano Sensual Congress",
+      "isPartOf": {
+        "@id": "https://milanosensualcongress.com/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://milanosensualcongress.com/news/klau-y-ros-endless-bachata-masters-2026#breadcrumb"
+      },
+      "inLanguage": "en",
+      "description": "Discover the signature Endless Bachata style of Klau y Ros. Learn about their journey from Poland and Spain to international Bachata masters joining Milano Sensual Congress 2026.",
+      "about": {
+        "@id": "https://milanosensualcongress.com/#event"
+      },
+      "mainEntity": {
+        "@id": "https://milanosensualcongress.com/news/klau-y-ros-endless-bachata-masters-2026#article"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://milanosensualcongress.com/news/klau-y-ros-endless-bachata-masters-2026#breadcrumb",
+      "itemListElement": [
         {
-          "@type": "WebSite",
-          "@id": "https://milanosensualcongress.com/#website",
-          "url": "https://milanosensualcongress.com",
-          "name": "Milano Sensual Congress",
-          "publisher": {
-            "@id": "https://milanosensualcongress.com/#organization"
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://milanosensualcongress.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "News",
+          "item": "https://milanosensualcongress.com/news"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Klau y Ros Spotlight",
+          "item": "https://milanosensualcongress.com/news/klau-y-ros-endless-bachata-masters-2026"
+        }
+      ]
+    },
+    {
+      "@type": "BlogPosting",
+      "mainEntityOfPage": {
+        "@id": "https://milanosensualcongress.com/news/klau-y-ros-endless-bachata-masters-2026#webpage"
+      },
+      "headline": "Klau y Ros: The Masters of Endless Bachata",
+      "image": "https://milanosensualcongress.com/images/artists/klau-ros-bachata-sensual.webp",
+      "author": {
+        "@id": "https://milanosensualcongress.com/#organization"
+      },
+      "publisher": {
+        "@id": "https://milanosensualcongress.com/#organization"
+      },
+      "about": {
+        "@type": "PerformingGroup",
+        "name": "Klau y Ros",
+        "sameAs": "https://www.instagram.com/klausyros/",
+        "@id": "https://milanosensualcongress.com/artists#klau-y-ros",
+        "member": [
+          {
+            "@type": "Person",
+            "@id": "https://milanosensualcongress.com/artists#klau",
+            "name": "Klau",
+            "memberOf": {
+              "@id": "https://milanosensualcongress.com/artists#klau-y-ros"
+            }
+          },
+          {
+            "@type": "Person",
+            "@id": "https://milanosensualcongress.com/artists#ros",
+            "name": "Ros",
+            "memberOf": {
+              "@id": "https://milanosensualcongress.com/artists#klau-y-ros"
+            }
           }
-        },
+        ]
+      },
+      "datePublished": "2026-03-26T09:00:00+01:00",
+      "dateModified": "2026-03-26T09:00:00+01:00",
+      "description": "Discover the signature Endless Bachata style of Klau y Ros. Learn about their journey from Poland and Spain to international Bachata masters joining Milano Sensual Congress 2026.",
+      "@id": "https://milanosensualcongress.com/news/klau-y-ros-endless-bachata-masters-2026#article",
+      "inLanguage": "en"
+    },
+    {
+      "@type": "DanceEvent",
+      "@id": "https://milanosensualcongress.com/#event",
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Bachata Dancers"
+      },
+      "mainEntityOfPage": "https://milanosensualcongress.com/",
+      "name": "Milano Sensual Congress 2026",
+      "startDate": "2026-11-20T18:00:00+01:00",
+      "endDate": "2026-11-22T22:00:00+01:00",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "location": {
+        "@type": "Place",
+        "name": "Devero Hotel",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Largo Kennedy, 1",
+          "addressLocality": "Cavenago di Brianza",
+          "postalCode": "20873",
+          "addressRegion": "MB",
+          "addressCountry": "IT"
+        }
+      },
+      "image": [
+        "https://milanosensualcongress.com/images/logo.webp"
+      ],
+      "description": "The ultimate Bachata experience in Italy. World-class lineup, executive venue, and unforgettable parties.",
+      "organizer": {
+        "@id": "https://milanosensualcongress.com/#organization"
+      },
+      "performer": [
         {
-          "@type": "WebPage",
-          "@id": "https://milanosensualcongress.com/news/klau-y-ros-endless-bachata-masters-2026#webpage",
-          "url": "https://milanosensualcongress.com/news/klau-y-ros-endless-bachata-masters-2026",
-          "name": "Klau y Ros: The Masters of Endless Bachata | Milano Sensual Congress",
-          "isPartOf": {
-            "@id": "https://milanosensualcongress.com/#website"
-          },
-          "breadcrumb": {
-            "@id": "https://milanosensualcongress.com/news/klau-y-ros-endless-bachata-masters-2026#breadcrumb"
-          },
-          "inLanguage": "en",
-          "description": "Discover the signature Endless Bachata style of Klau y Ros. Learn about their journey from Poland and Spain to international masters joining Milano Sensual Congress 2026."
-        },
-        {
-          "@type": "BreadcrumbList",
-          "@id": "https://milanosensualcongress.com/news/klau-y-ros-endless-bachata-masters-2026#breadcrumb",
-          "itemListElement": [
+          "@type": "PerformingGroup",
+          "name": "Klau y Ros",
+          "sameAs": "https://www.instagram.com/klausyros/",
+          "@id": "https://milanosensualcongress.com/artists#klau-y-ros",
+          "member": [
             {
-              "@type": "ListItem",
-              "position": 1,
-              "name": "Home",
-              "item": "https://milanosensualcongress.com/"
+              "@type": "Person",
+              "@id": "https://milanosensualcongress.com/artists#klau",
+              "name": "Klau",
+              "memberOf": {
+                "@id": "https://milanosensualcongress.com/artists#klau-y-ros"
+              }
             },
             {
-              "@type": "ListItem",
-              "position": 2,
-              "name": "News",
-              "item": "https://milanosensualcongress.com/news"
-            },
-            {
-              "@type": "ListItem",
-              "position": 3,
-              "name": "Klau y Ros Spotlight",
-              "item": "https://milanosensualcongress.com/news/klau-y-ros-endless-bachata-masters-2026"
+              "@type": "Person",
+              "@id": "https://milanosensualcongress.com/artists#ros",
+              "name": "Ros",
+              "memberOf": {
+                "@id": "https://milanosensualcongress.com/artists#klau-y-ros"
+              }
             }
           ]
-        },
-        
-        {
-          "@type": "BlogPosting",
-          "mainEntityOfPage": {
-            "@id": "https://milanosensualcongress.com/news/klau-y-ros-endless-bachata-masters-2026#webpage"
-          },
-          "headline": "Klau y Ros: The Masters of Endless Bachata",
-          "image": "https://milanosensualcongress.com/images/artists/klau-ros-bachata-sensual.webp",
-          "author": {
-            "@id": "https://milanosensualcongress.com/#organization"
-          },
-          "publisher": {
-            "@id": "https://milanosensualcongress.com/#organization"
-          },
-          "about": {
-            "@type": "Person",
-            "name": "Klau y Ros",
-            "sameAs": "https://www.instagram.com/klausyros/"
-          },
-          "datePublished": "2026-03-26T09:00:00+01:00",
-          "dateModified": "2026-03-26T09:00:00+01:00",
-          "description": "Discover the signature Endless Bachata style of Klau y Ros. Learn about their journey from Poland and Spain to international Bachata masters joining Milano Sensual Congress 2026."
-        },
-        {
-          "@type": "DanceEvent",
-          "@id": "https://milanosensualcongress.com/#event",
-          "audience": {
-            "@type": "Audience",
-            "audienceType": "Bachata Dancers",
-            "geographicArea": {
-              "@type": "AdministrativeArea",
-              "name": "Europe"
-            }
-          },
-          "mainEntityOfPage": {
-            "@id": "https://milanosensualcongress.com/news/klau-y-ros-endless-bachata-masters-2026#webpage"
-          },
-          "name": "Milano Sensual Congress 2026",
-          "startDate": "2026-11-20T18:00:00+01:00",
-          "endDate": "2026-11-22T22:00:00+01:00",
-          "eventStatus": "https://schema.org/EventScheduled",
-          "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-          "location": {
-            "@type": "Place",
-            "name": "Devero Hotel",
-            "address": {
-              "@type": "PostalAddress",
-              "streetAddress": "Largo Kennedy, 1",
-              "addressLocality": "Cavenago di Brianza",
-              "postalCode": "20873",
-              "addressRegion": "MB",
-              "addressCountry": "IT"
-            }
-          },
-          "image": [
-            "https://milanosensualcongress.com/images/logo.webp"
-          ],
-          "description": "The ultimate Bachata experience in Italy. World-class lineup, executive venue, and unforgettable parties.",
-          "organizer": {
-            "@id": "https://milanosensualcongress.com/#organization"
-          },
-          "performer": [
-            {
-              "@type": "Person",
-              "name": "Gero y Migle",
-              "sameAs": "https://www.instagram.com/geroymigle_official/"
-            },
-            {
-              "@type": "Person",
-              "name": "Klau y Ros",
-              "sameAs": "https://www.instagram.com/klausyros/"
-            },
-            {
-              "@type": "Person",
-              "name": "Cristian y Gabriella",
-              "sameAs": "https://www.instagram.com/cristianygabriella_official/"
-            },
-            {
-              "@type": "Person",
-              "name": "David y Ines",
-              "sameAs": "https://www.instagram.com/davidyines/"
-            },
-            {
-              "@type": "Person",
-              "name": "Nacho y Silvia",
-              "sameAs": "https://www.instagram.com/nachoysilvia/"
-            },
-            {
-              "@type": "Person",
-              "name": "Agustín y Alba",
-              "sameAs": "https://www.instagram.com/agustinyalba_official/"
-            },
-            {
-              "@type": "Person",
-              "name": "Irene y Tomás",
-              "sameAs": "https://www.instagram.com/ireneytomas/"
-            },
-            {
-              "@type": "Person",
-              "name": "Aitor Gomez",
-              "sameAs": "https://www.instagram.com/aitorgomez_bachata/"
-            }
-          ],
-          "offers": {
-            "@type": "Offer",
-            "url": "https://lasalsadelbaile.com/MSC2026",
-            "priceCurrency": "EUR",
-            "availability": "https://schema.org/InStock",
-            "priceSpecification": [
-              {
-                "@type": "UnitPriceSpecification",
-                "name": "Current Full Pass",
-                "price": "130.00",
-                "priceCurrency": "EUR",
-                "validThrough": "2026-09-15T23:59:59+02:00"
-              },
-              {
-                "@type": "UnitPriceSpecification",
-                "name": "Next Full Pass Tier",
-                "price": "130.00",
-                "priceCurrency": "EUR",
-                "validThrough": "2026-09-15T23:59:59+02:00"
-              }
-            ],
-            "price": "130.00"
-          }
         }
-    
-      ]
+      ],
+      "offers": {
+        "@type": "Offer",
+        "name": "Current Full Pass",
+        "url": "https://lasalsadelbaile.com/MSC2026",
+        "price": "130.00",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock",
+        "validThrough": "2026-09-15T23:59:59+02:00",
+        "@id": "https://milanosensualcongress.com/tickets#full-pass",
+        "validFrom": "2026-08-01T00:00:00+02:00"
+      },
+      "url": "https://milanosensualcongress.com/"
     }
-  </script>
+  ]
+}
+</script>
   <script type="speculationrules">
   {
     "prefetch": [{

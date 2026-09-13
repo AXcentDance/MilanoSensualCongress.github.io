@@ -92,20 +92,26 @@
 
   <script src="/js/site-analytics.js?v=2" defer></script>
   <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
     {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
       "@type": "Organization",
       "@id": "https://milanosensualcongress.com/#organization",
       "name": "Milano Sensual Congress",
-      "url": "https://milanosensualcongress.com",
+      "url": "https://milanosensualcongress.com/",
       "logo": "https://milanosensualcongress.com/images/logo.webp",
       "description": "Organizer of Milano Sensual Congress, the international Bachata Sensual congress in Milan, Italy, with workshops, shows and social dancing at Devero Hotel.",
       "foundingDate": "2022-11-20",
       "founder": [
-        { "@type": "Person", "name": "Marco Fracassi" },
-        { "@type": "Person", "name": "Alessandro Slamitz" }
+        {
+          "@type": "Person",
+          "name": "Marco Fracassi"
+        },
+        {
+          "@type": "Person",
+          "name": "Alessandro Slamitz"
+        }
       ],
       "address": {
         "@type": "PostalAddress",
@@ -121,193 +127,145 @@
           "contactType": "customer service",
           "telephone": "+39-333-393-5911",
           "url": "https://milanosensualcongress.com/contact",
-          "availableLanguage": ["English", "Italian"]
+          "availableLanguage": [
+            "Italian",
+            "Spanish"
+          ]
         },
         {
           "@type": "ContactPoint",
           "contactType": "customer service",
           "telephone": "+41-79-966-84-81",
           "url": "https://milanosensualcongress.com/contact",
-          "availableLanguage": ["English", "Italian"]
+          "availableLanguage": [
+            "English"
+          ]
         }
       ],
       "sameAs": [
         "https://www.instagram.com/milanosensualcongress/"
       ]
     },
+    {
+      "@type": "WebSite",
+      "@id": "https://milanosensualcongress.com/#website",
+      "url": "https://milanosensualcongress.com/",
+      "name": "Milano Sensual Congress",
+      "publisher": {
+        "@id": "https://milanosensualcongress.com/#organization"
+      },
+      "inLanguage": [
+        "en",
+        "it"
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://milanosensualcongress.com/news/best-bachata-party-italy-2026#webpage",
+      "url": "https://milanosensualcongress.com/news/best-bachata-party-italy-2026",
+      "name": "Best Bachata Social in Italy 2026 | Milano Sensual",
+      "isPartOf": {
+        "@id": "https://milanosensualcongress.com/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://milanosensualcongress.com/news/best-bachata-party-italy-2026#breadcrumb"
+      },
+      "inLanguage": "en",
+      "description": "Milano Sensual Congress 2026 is set to be the best Bachata social in Italy: 1,000+ dancers, limited spots and last year sold out.",
+      "about": {
+        "@id": "https://milanosensualcongress.com/#event"
+      },
+      "mainEntity": {
+        "@id": "https://milanosensualcongress.com/news/best-bachata-party-italy-2026#article"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://milanosensualcongress.com/news/best-bachata-party-italy-2026#breadcrumb",
+      "itemListElement": [
         {
-          "@type": "WebSite",
-          "@id": "https://milanosensualcongress.com/#website",
-          "url": "https://milanosensualcongress.com",
-          "name": "Milano Sensual Congress",
-          "publisher": {
-            "@id": "https://milanosensualcongress.com/#organization"
-          }
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://milanosensualcongress.com/"
         },
         {
-          "@type": "WebPage",
-          "@id": "https://milanosensualcongress.com/news/best-bachata-party-italy-2026#webpage",
-          "url": "https://milanosensualcongress.com/news/best-bachata-party-italy-2026",
-          "name": "Best Bachata Social in Italy 2026 | Milano Sensual",
-          "isPartOf": {
-            "@id": "https://milanosensualcongress.com/#website"
-          },
-          "breadcrumb": {
-            "@id": "https://milanosensualcongress.com/news/best-bachata-party-italy-2026#breadcrumb"
-          },
-          "inLanguage": "en",
-          "description": "Milano Sensual Congress 2026 is set to be the best Bachata social in Italy with over 1,000 dancers, limited spots, two dance floors and 800+ square meters of dance space."
+          "@type": "ListItem",
+          "position": 2,
+          "name": "News",
+          "item": "https://milanosensualcongress.com/news"
         },
         {
-          "@type": "BreadcrumbList",
-          "@id": "https://milanosensualcongress.com/news/best-bachata-party-italy-2026#breadcrumb",
-          "itemListElement": [
-            {
-              "@type": "ListItem",
-              "position": 1,
-              "name": "Home",
-              "item": "https://milanosensualcongress.com/"
-            },
-            {
-              "@type": "ListItem",
-              "position": 2,
-              "name": "News",
-              "item": "https://milanosensualcongress.com/news"
-            },
-            {
-              "@type": "ListItem",
-              "position": 3,
-              "name": "Best Bachata Social in Italy 2026",
-              "item": "https://milanosensualcongress.com/news/best-bachata-party-italy-2026"
-            }
-          ]
-        },
-        {
-          "@type": "BlogPosting",
-          "mainEntityOfPage": {
-            "@id": "https://milanosensualcongress.com/news/best-bachata-party-italy-2026#webpage"
-          },
-          "headline": "Best Bachata Social in Italy 2026: 1,000+ Dancers in Milan",
-          "image": "https://milanosensualcongress.com/images/news/bachata-congress-2026-social-dancing.webp",
-          "author": {
-            "@id": "https://milanosensualcongress.com/#organization"
-          },
-          "publisher": {
-            "@id": "https://milanosensualcongress.com/#organization"
-          },
-          "datePublished": "2026-05-11T09:00:00+02:00",
-          "dateModified": "2026-05-11T12:00:00+02:00",
-          "description": "A party-focused guide to Milano Sensual Congress 2026: over 1,000 dancers, limited spots, last year's sold-out momentum, all artists on the social dance floor, two dance floors and 800+ square meters to dance."
-        },
-        {
-          "@type": "FAQPage",
-          "@id": "https://milanosensualcongress.com/news/best-bachata-party-italy-2026#faq",
-          "mainEntityOfPage": {
-            "@id": "https://milanosensualcongress.com/news/best-bachata-party-italy-2026#webpage"
-          },
-          "mainEntity": [
-            {
-              "@type": "Question",
-              "name": "What makes Milano Sensual Congress one of the best Bachata social parties in Italy?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "The congress combines over 1,000 dancers, international Bachata artists on the dance floor, two dance floors, 800+ square meters of space and multiple Bachata styles in one weekend in Milan."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Will the artists dance at the Bachata parties?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Yes. Milano Sensual Congress is built around a close social atmosphere where the invited artists are part of the dance floor energy, not only the workshop and show program."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "How many dance floors will there be?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Milano Sensual Congress 2026 is planned with two dance floors and more than 800 square meters of total dance space for Bachata, social dancing and Latin party energy."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Will Milano Sensual Congress 2026 have limited spots?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Yes. Spots for Milano Sensual Congress 2026 will be limited, and last year's edition sold out. Dancers who want the full Bachata weekend should book early."
-              }
-            }
-          ]
-        },
-        {
-          "@type": "DanceEvent",
-          "@id": "https://milanosensualcongress.com/#event",
-          "mainEntityOfPage": {
-            "@id": "https://milanosensualcongress.com/news/best-bachata-party-italy-2026#webpage"
-          },
-          "name": "Milano Sensual Congress 2026",
-          "startDate": "2026-11-20T18:00:00+01:00",
-          "endDate": "2026-11-22T22:00:00+01:00",
-          "eventStatus": "https://schema.org/EventScheduled",
-          "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-          "location": {
-            "@type": "Place",
-            "name": "Devero Hotel",
-            "address": {
-              "@type": "PostalAddress",
-              "streetAddress": "Largo Kennedy, 1",
-              "addressLocality": "Cavenago di Brianza",
-              "postalCode": "20873",
-              "addressRegion": "MB",
-              "addressCountry": "IT"
-            }
-          },
-          "image": [
-            "https://milanosensualcongress.com/images/news/bachata-congress-2026-social-dancing.webp",
-            "https://milanosensualcongress.com/images/logo.webp"
-          ],
-          "description": "A major Bachata Congress and party weekend in Milan, Italy with international artists, workshops, parties, two dance floors and over 800 square meters of social dancing space.",
-          "organizer": {
-            "@id": "https://milanosensualcongress.com/#organization"
-          },
-          "performer": [
-            { "@type": "Person", "name": "Gero y Migle", "sameAs": "https://www.instagram.com/geroymigle_official/" },
-            { "@type": "Person", "name": "Klau y Ros", "sameAs": "https://www.instagram.com/klausyros/" },
-            { "@type": "Person", "name": "Cristian y Gabriella", "sameAs": "https://www.instagram.com/cristianygabriella_official/" },
-            { "@type": "Person", "name": "David y Ines", "sameAs": "https://www.instagram.com/davidyines/" },
-            { "@type": "Person", "name": "Nacho y Silvia", "sameAs": "https://www.instagram.com/nachoysilvia/" },
-            { "@type": "Person", "name": "Agustin y Alba", "sameAs": "https://www.instagram.com/agustinyalba_official/" },
-            { "@type": "Person", "name": "Irene y Tomas", "sameAs": "https://www.instagram.com/ireneytomas/" },
-            { "@type": "Person", "name": "Aitor Gomez", "sameAs": "https://www.instagram.com/aitorgomez_bachata/" }
-          ],
-          "offers": {
-            "@type": "Offer",
-            "url": "https://lasalsadelbaile.com/MSC2026",
-            "priceCurrency": "EUR",
-            "availability": "https://schema.org/InStock",
-            "priceSpecification": [
-              {
-                "@type": "UnitPriceSpecification",
-                "name": "Current Full Pass",
-                "price": "130.00",
-                "priceCurrency": "EUR",
-                "validThrough": "2026-09-15T23:59:59+02:00"
-              },
-              {
-                "@type": "UnitPriceSpecification",
-                "name": "Next Full Pass Tier",
-                "price": "130.00",
-                "priceCurrency": "EUR",
-                "validThrough": "2026-09-15T23:59:59+02:00"
-              }
-            ],
-            "price": "130.00"
-          }
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Best Bachata Social in Italy 2026",
+          "item": "https://milanosensualcongress.com/news/best-bachata-party-italy-2026"
         }
       ]
+    },
+    {
+      "@type": "BlogPosting",
+      "mainEntityOfPage": {
+        "@id": "https://milanosensualcongress.com/news/best-bachata-party-italy-2026#webpage"
+      },
+      "headline": "Best Bachata Social in Italy 2026: 1,000+ Dancers in Milan",
+      "image": "https://milanosensualcongress.com/images/news/bachata-congress-2026-social-dancing.webp",
+      "author": {
+        "@id": "https://milanosensualcongress.com/#organization"
+      },
+      "publisher": {
+        "@id": "https://milanosensualcongress.com/#organization"
+      },
+      "datePublished": "2026-05-11T09:00:00+02:00",
+      "dateModified": "2026-05-11T12:00:00+02:00",
+      "description": "A party-focused guide to Milano Sensual Congress 2026: over 1,000 dancers, limited spots, last year's sold-out momentum, all artists on the social dance floor, two dance floors and 800+ square meters to dance.",
+      "@id": "https://milanosensualcongress.com/news/best-bachata-party-italy-2026#article",
+      "inLanguage": "en"
+    },
+    {
+      "@type": "DanceEvent",
+      "@id": "https://milanosensualcongress.com/#event",
+      "mainEntityOfPage": "https://milanosensualcongress.com/",
+      "name": "Milano Sensual Congress 2026",
+      "startDate": "2026-11-20T18:00:00+01:00",
+      "endDate": "2026-11-22T22:00:00+01:00",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "location": {
+        "@type": "Place",
+        "name": "Devero Hotel",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Largo Kennedy, 1",
+          "addressLocality": "Cavenago di Brianza",
+          "postalCode": "20873",
+          "addressRegion": "MB",
+          "addressCountry": "IT"
+        }
+      },
+      "image": [
+        "https://milanosensualcongress.com/images/logo.webp"
+      ],
+      "description": "A major Bachata Congress and party weekend in Milan, Italy with international artists, workshops, parties, two dance floors and over 800 square meters of social dancing space.",
+      "organizer": {
+        "@id": "https://milanosensualcongress.com/#organization"
+      },
+      "offers": {
+        "@type": "Offer",
+        "name": "Current Full Pass",
+        "url": "https://lasalsadelbaile.com/MSC2026",
+        "price": "130.00",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock",
+        "validThrough": "2026-09-15T23:59:59+02:00",
+        "@id": "https://milanosensualcongress.com/tickets#full-pass",
+        "validFrom": "2026-08-01T00:00:00+02:00"
+      },
+      "url": "https://milanosensualcongress.com/"
     }
-  </script>
+  ]
+}
+</script>
   <script type="speculationrules">
   {
     "prefetch": [{

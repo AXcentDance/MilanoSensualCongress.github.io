@@ -77,17 +77,17 @@ Il Team Dietro la Magia
 
 ### Gli Organizzatori del Bachata Congress Italia
 
-#### Marco y Valeria
+#### Marco Fracassi
 
-Direttori del Congresso
+Cofondatore e Organizzatore del Congresso
 
-@marcoyvaleria — Artisti Internazionali di Bachata Sensual con scuola di ballo stabilita ad Arcore, MB. Creatori del **Milano Sensual Congress**. Con un decennio di esperienza nell'insegnamento e nelle performance, sono direttori del **Gero y Migle Project Performance Show** a Milano, e Marco lavora come direttore artistico per uno dei migliori club latini a Milano, l' UnaMas Club.
+@marcoyvaleria — Marco e la sua partner di ballo Valeria sono artisti internazionali di Bachata Sensual con una scuola ad Arcore, MB. Marco ha fondato il **Milano Sensual Congress** insieme ad Alessandro Slamitz. Con un decennio di esperienza nell'insegnamento e nelle performance, sono direttori del **Gero y Migle Project Performance Show** a Milano, e Marco lavora come direttore artistico per uno dei migliori club latini a Milano, l' UnaMas Club.
 
-#### Ale y Xidan
+#### Alessandro Slamitz (Ale)
 
-Direttori del Congresso
+Cofondatore e Organizzatore del Congresso
 
-@aleyxidan — Artisti Internazionali di Bachata Sensual. Hanno fondato [AXcent Dance](https://axcentdance.com), la prima scuola specializzata in Bachata Sensual a Zurigo, fondata nel 2025. Oltre che artisti, sono giudici del Campionato Svizzero Internazionale di Salsa e Bachata. Ale y Xidan sono i creatori del **Milano Sensual Congress** con Marco y Valeria, e sono i co-organizzatori del **Bailadoro Dance Weekend**.
+@aleyxidan — Ale e la sua partner di ballo Xidan sono artisti internazionali di Bachata Sensual. Hanno fondato [AXcent Dance](https://axcentdance.com), la prima scuola specializzata in Bachata Sensual a Zurigo, fondata nel 2025. Oltre che artisti, sono giudici del Campionato Svizzero Internazionale di Salsa e Bachata. Alessandro ha fondato il **Milano Sensual Congress** insieme a Marco Fracassi. Ale y Xidan sono anche i co-organizzatori del **Bailadoro Dance Weekend**.
 
 ### Servizio Transfer Ufficiale
 

@@ -29,7 +29,7 @@
       "@type": "Organization",
       "@id": "https://milanosensualcongress.com/#organization",
       "name": "Milano Sensual Congress",
-      "url": "https://milanosensualcongress.com",
+      "url": "https://milanosensualcongress.com/",
       "logo": "https://milanosensualcongress.com/images/logo.webp",
       "description": "Organizer of Milano Sensual Congress, the international Bachata Sensual congress in Milan, Italy, with workshops, shows and social dancing at Devero Hotel.",
       "foundingDate": "2022-11-20",
@@ -58,8 +58,8 @@
           "telephone": "+39-333-393-5911",
           "url": "https://milanosensualcongress.com/contact",
           "availableLanguage": [
-            "English",
-            "Italian"
+            "Italian",
+            "Spanish"
           ]
         },
         {
@@ -68,8 +68,7 @@
           "telephone": "+41-79-966-84-81",
           "url": "https://milanosensualcongress.com/contact",
           "availableLanguage": [
-            "English",
-            "Italian"
+            "English"
           ]
         }
       ],
@@ -80,14 +79,21 @@
     {
       "@type": "WebSite",
       "@id": "https://milanosensualcongress.com/#website",
-      "url": "https://milanosensualcongress.com",
+      "url": "https://milanosensualcongress.com/",
       "name": "Milano Sensual Congress",
       "publisher": {
         "@id": "https://milanosensualcongress.com/#organization"
-      }
+      },
+      "inLanguage": [
+        "en",
+        "it"
+      ]
     },
     {
-      "@type": "WebPage",
+      "@type": [
+        "WebPage",
+        "ContactPage"
+      ],
       "@id": "https://milanosensualcongress.com/it/contact#webpage",
       "url": "https://milanosensualcongress.com/it/contact",
       "name": "Contattaci | Milano Sensual Congress 2026",
@@ -97,8 +103,14 @@
       "breadcrumb": {
         "@id": "https://milanosensualcongress.com/it/contact#breadcrumb"
       },
-      "inLanguage": "it-IT",
-      "description": "Contatta il team del Milano Sensual Congress. Hai domande su biglietti, hotel o programma? Siamo qui per aiutarti."
+      "inLanguage": "it",
+      "description": "Contatta il team del Milano Sensual Congress. Hai domande su biglietti, hotel o programma? Siamo qui per aiutarti.",
+      "mainEntity": {
+        "@id": "https://milanosensualcongress.com/#organization"
+      },
+      "hasPart": {
+        "@id": "https://milanosensualcongress.com/it/contact#faq"
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -119,17 +131,6 @@
       ]
     },
     {
-      "@type": "ContactPage",
-      "mainEntityOfPage": {
-        "@id": "https://milanosensualcongress.com/it/contact#webpage"
-      },
-      "name": "Milano Sensual Congress",
-      "description": "Contattaci per qualsiasi domanda riguardante il Milano Sensual Congress 2026.",
-      "mainEntity": {
-        "@id": "https://milanosensualcongress.com/#organization"
-      }
-    },
-    {
       "@type": "FAQPage",
       "mainEntity": [
         {
@@ -137,7 +138,7 @@
           "name": "Come posso contattare gli organizzatori?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Puoi contattarci direttamente tramite WhatsApp in italiano, spagnolo o inglese per qualsiasi richiesta specifica non coperta su questo sito web."
+            "text": "Puoi contattarci direttamente tramite WhatsApp in italiano,\n              spagnolo o inglese per qualsiasi richiesta specifica non coperta su questo sito web."
           }
         },
         {
@@ -145,7 +146,7 @@
           "name": "Dove si trova esattamente l'evento?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "L'evento si svolge interamente presso il <strong>Devero\n                Hotel</strong> a Cavenago di Brianza. Questa esclusiva location a 4 stelle ospita tutti i workshop, i\n              social diurni e le feste serali."
+            "text": "L'evento si svolge interamente presso il Devero\n                Hotel a Cavenago di Brianza. Questa esclusiva location a 4 stelle ospita tutti i workshop, i\n              social diurni e le feste serali."
           }
         },
         {
@@ -153,7 +154,7 @@
           "name": "Come posso acquistare i biglietti?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "I biglietti sono disponibili tramite il nostro partner\n              ufficiale <strong>Lasalsadelbaile.com</strong>. Puoi accedere direttamente alla pagina di acquisto tramite\n              il link \"Biglietti\" nel nostro menu di navigazione."
+            "text": "I biglietti sono disponibili tramite il nostro partner\n              ufficiale Lasalsadelbaile.com . Puoi accedere direttamente alla pagina di acquisto tramite\n              il link \"Biglietti\" nel nostro menu di navigazione."
           }
         },
         {
@@ -161,10 +162,15 @@
           "name": "Qual è l'aeroporto più vicino?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "La sede è strategicamente posizionata.<br/>• <strong>Milano\n                Linate (LIN)</strong> è il più vicino (circa 20 minuti).<br/>• <strong>Milano Bergamo Orio al Serio\n                (BGY)</strong> è molto comodo (circa 25 minuti).<br/>• <strong>Milano Malpensa (MXP)</strong> dista circa\n              45-50 minuti."
+            "text": "La sede è strategicamente posizionata. • Milano\n                Linate (LIN) è il più vicino (circa 20 minuti). • Milano Bergamo Orio al Serio\n                (BGY) è molto comodo (circa 25 minuti). • Milano Malpensa (MXP) dista circa\n              45-50 minuti."
           }
         }
-      ]
+      ],
+      "@id": "https://milanosensualcongress.com/it/contact#faq",
+      "inLanguage": "it",
+      "isPartOf": {
+        "@id": "https://milanosensualcongress.com/it/contact#webpage"
+      }
     }
   ]
 }

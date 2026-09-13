@@ -29,46 +29,10 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "Airport",
-      "@id": "https://en.wikipedia.org/wiki/Milan_Malpensa_Airport",
-      "name": "Milan Malpensa Airport",
-      "iataCode": "MXP",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Fernon",
-        "addressRegion": "VA",
-        "addressCountry": "IT"
-      }
-    },
-    {
-      "@type": "Airport",
-      "@id": "https://en.wikipedia.org/wiki/Linate_Airport",
-      "name": "Linate Airport",
-      "iataCode": "LIN",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Milan",
-        "addressRegion": "MI",
-        "addressCountry": "IT"
-      }
-    },
-    {
-      "@type": "Airport",
-      "@id": "https://en.wikipedia.org/wiki/Orio_al_Serio_International_Airport",
-      "name": "Orio al Serio International Airport",
-      "iataCode": "BGY",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Bergamo",
-        "addressRegion": "BG",
-        "addressCountry": "IT"
-      }
-    },
-    {
       "@type": "Organization",
       "@id": "https://milanosensualcongress.com/#organization",
       "name": "Milano Sensual Congress",
-      "url": "https://milanosensualcongress.com",
+      "url": "https://milanosensualcongress.com/",
       "logo": "https://milanosensualcongress.com/images/logo.webp",
       "description": "Organizer of Milano Sensual Congress, the international Bachata Sensual congress in Milan, Italy, with workshops, shows and social dancing at Devero Hotel.",
       "foundingDate": "2022-11-20",
@@ -97,8 +61,8 @@
           "telephone": "+39-333-393-5911",
           "url": "https://milanosensualcongress.com/contact",
           "availableLanguage": [
-            "English",
-            "Italian"
+            "Italian",
+            "Spanish"
           ]
         },
         {
@@ -107,8 +71,7 @@
           "telephone": "+41-79-966-84-81",
           "url": "https://milanosensualcongress.com/contact",
           "availableLanguage": [
-            "English",
-            "Italian"
+            "English"
           ]
         }
       ],
@@ -128,11 +91,15 @@
     {
       "@type": "WebSite",
       "@id": "https://milanosensualcongress.com/#website",
-      "url": "https://milanosensualcongress.com",
+      "url": "https://milanosensualcongress.com/",
       "name": "Milano Sensual Congress",
       "publisher": {
         "@id": "https://milanosensualcongress.com/#organization"
-      }
+      },
+      "inLanguage": [
+        "en",
+        "it"
+      ]
     },
     {
       "@type": "WebPage",
@@ -149,39 +116,27 @@
         "@id": "https://milanosensualcongress.com/images/milano-sensual-congress-logo-preview.webp#primaryimage"
       },
       "thumbnailUrl": "https://milanosensualcongress.com/images/milano-sensual-congress-logo-preview.webp",
-      "breadcrumb": {
-        "@id": "https://milanosensualcongress.com/#breadcrumb"
-      },
       "inLanguage": "en",
       "description": "Join Milano Sensual Congress, November 20–22, 2026 at Devero Hotel near Milan. Explore bachata workshops, parties, international artists and tickets.",
-      "keywords": "Bachata Congress Europe, Europe's Leading Bachata Congress, International Bachata Festival 2026, Bachata Congress Italy, Bachata Sensual Congress"
-    },
-    {
-      "@type": "BreadcrumbList",
-      "@id": "https://milanosensualcongress.com/#breadcrumb",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://milanosensualcongress.com/"
-        }
-      ]
+      "keywords": "Bachata Congress Europe, Europe's Leading Bachata Congress, International Bachata Festival 2026, Bachata Congress Italy, Bachata Sensual Congress",
+      "about": {
+        "@id": "https://milanosensualcongress.com/#event"
+      },
+      "mainEntity": {
+        "@id": "https://milanosensualcongress.com/#event"
+      },
+      "hasPart": {
+        "@id": "https://milanosensualcongress.com/#faq"
+      }
     },
     {
       "@type": "DanceEvent",
       "@id": "https://milanosensualcongress.com/#event",
       "audience": {
         "@type": "Audience",
-        "audienceType": "Bachata Dancers",
-        "geographicArea": {
-          "@type": "AdministrativeArea",
-          "name": "Europe"
-        }
+        "audienceType": "Bachata Dancers"
       },
-      "mainEntityOfPage": {
-        "@id": "https://milanosensualcongress.com/#webpage"
-      },
+      "mainEntityOfPage": "https://milanosensualcongress.com/",
       "name": "Milano Sensual Congress 2026",
       "startDate": "2026-11-20T18:00:00+01:00",
       "endDate": "2026-11-22T22:00:00+01:00",
@@ -208,60 +163,179 @@
       },
       "performer": [
         {
-          "@type": "Person",
+          "@type": "PerformingGroup",
           "@id": "https://milanosensualcongress.com/artists#gero-y-migle",
           "name": "Gero y Migle",
-          "jobTitle": "Esencia Style Bachata Artists & Instructors",
           "url": "https://milanosensualcongress.com/news/gero-y-migle-bachata-masters-2026",
-          "sameAs": "https://www.instagram.com/geroymigle_official/"
+          "sameAs": "https://www.instagram.com/geroymigle_official/",
+          "member": [
+            {
+              "@type": "Person",
+              "@id": "https://milanosensualcongress.com/artists#gero",
+              "name": "Gero",
+              "memberOf": {
+                "@id": "https://milanosensualcongress.com/artists#gero-y-migle"
+              }
+            },
+            {
+              "@type": "Person",
+              "@id": "https://milanosensualcongress.com/artists#migle",
+              "name": "Migle",
+              "memberOf": {
+                "@id": "https://milanosensualcongress.com/artists#gero-y-migle"
+              }
+            }
+          ]
         },
         {
-          "@type": "Person",
+          "@type": "PerformingGroup",
           "@id": "https://milanosensualcongress.com/artists#klau-y-ros",
           "name": "Klau y Ros",
-          "jobTitle": "Endless Bachata Artists & Instructors",
           "url": "https://milanosensualcongress.com/news/klau-y-ros-endless-bachata-masters-2026",
-          "sameAs": "https://www.instagram.com/klausyros/"
+          "sameAs": "https://www.instagram.com/klausyros/",
+          "member": [
+            {
+              "@type": "Person",
+              "@id": "https://milanosensualcongress.com/artists#klau",
+              "name": "Klau",
+              "memberOf": {
+                "@id": "https://milanosensualcongress.com/artists#klau-y-ros"
+              }
+            },
+            {
+              "@type": "Person",
+              "@id": "https://milanosensualcongress.com/artists#ros",
+              "name": "Ros",
+              "memberOf": {
+                "@id": "https://milanosensualcongress.com/artists#klau-y-ros"
+              }
+            }
+          ]
         },
         {
-          "@type": "Person",
+          "@type": "PerformingGroup",
           "@id": "https://milanosensualcongress.com/artists#cristian-y-gabriella",
           "name": "Cristian y Gabriella",
-          "jobTitle": "World Champion Bachata Artists & Instructors",
           "url": "https://milanosensualcongress.com/news/cristian-y-gabriella-bachata-world-masters-2026",
-          "sameAs": "https://www.instagram.com/cristianygabriella_official/"
+          "sameAs": "https://www.instagram.com/cristianygabriella_official/",
+          "member": [
+            {
+              "@type": "Person",
+              "@id": "https://milanosensualcongress.com/artists#cristian",
+              "name": "Cristian",
+              "memberOf": {
+                "@id": "https://milanosensualcongress.com/artists#cristian-y-gabriella"
+              }
+            },
+            {
+              "@type": "Person",
+              "@id": "https://milanosensualcongress.com/artists#gabriella",
+              "name": "Gabriella",
+              "memberOf": {
+                "@id": "https://milanosensualcongress.com/artists#cristian-y-gabriella"
+              }
+            }
+          ]
         },
         {
-          "@type": "Person",
+          "@type": "PerformingGroup",
           "@id": "https://milanosensualcongress.com/artists#david-y-ines",
           "name": "David y Ines",
-          "jobTitle": "Bachata Sensual Artists & Instructors",
           "url": "https://milanosensualcongress.com/news/david-y-ines-bachata-sensual-masters-2026",
-          "sameAs": "https://www.instagram.com/davidyines/"
+          "sameAs": "https://www.instagram.com/davidyines/",
+          "member": [
+            {
+              "@type": "Person",
+              "@id": "https://milanosensualcongress.com/artists#david",
+              "name": "David",
+              "memberOf": {
+                "@id": "https://milanosensualcongress.com/artists#david-y-ines"
+              }
+            },
+            {
+              "@type": "Person",
+              "@id": "https://milanosensualcongress.com/artists#ines",
+              "name": "Ines",
+              "memberOf": {
+                "@id": "https://milanosensualcongress.com/artists#david-y-ines"
+              }
+            }
+          ]
         },
         {
-          "@type": "Person",
+          "@type": "PerformingGroup",
           "@id": "https://milanosensualcongress.com/artists#nacho-y-silvia",
           "name": "Nacho y Silvia",
-          "jobTitle": "Bachata Esencia Artists & Instructors",
           "url": "https://milanosensualcongress.com/news/nacho-y-silvia-bachata-esencia-new-generation",
-          "sameAs": "https://www.instagram.com/nachoysilvia/"
+          "sameAs": "https://www.instagram.com/nachoysilvia/",
+          "member": [
+            {
+              "@type": "Person",
+              "@id": "https://milanosensualcongress.com/artists#nacho",
+              "name": "Nacho",
+              "memberOf": {
+                "@id": "https://milanosensualcongress.com/artists#nacho-y-silvia"
+              }
+            },
+            {
+              "@type": "Person",
+              "@id": "https://milanosensualcongress.com/artists#silvia",
+              "name": "Silvia",
+              "memberOf": {
+                "@id": "https://milanosensualcongress.com/artists#nacho-y-silvia"
+              }
+            }
+          ]
         },
         {
-          "@type": "Person",
+          "@type": "PerformingGroup",
           "@id": "https://milanosensualcongress.com/artists#agustin-y-alba",
           "name": "Agustín y Alba",
-          "jobTitle": "Bachata Sensual Rising Stars & Instructors",
           "url": "https://milanosensualcongress.com/news/agustinyalba-bachata-sensual-rising-stars",
-          "sameAs": "https://www.instagram.com/agustinyalba_official/"
+          "sameAs": "https://www.instagram.com/agustinyalba_official/",
+          "member": [
+            {
+              "@type": "Person",
+              "@id": "https://milanosensualcongress.com/artists#agustin",
+              "name": "Agustín",
+              "memberOf": {
+                "@id": "https://milanosensualcongress.com/artists#agustin-y-alba"
+              }
+            },
+            {
+              "@type": "Person",
+              "@id": "https://milanosensualcongress.com/artists#alba",
+              "name": "Alba",
+              "memberOf": {
+                "@id": "https://milanosensualcongress.com/artists#agustin-y-alba"
+              }
+            }
+          ]
         },
         {
-          "@type": "Person",
+          "@type": "PerformingGroup",
           "@id": "https://milanosensualcongress.com/artists#irene-y-tomas",
           "name": "Irene y Tomás",
-          "jobTitle": "Official Bachata Sensual Ambassadors & Instructors",
           "url": "https://milanosensualcongress.com/news/irene-y-tomas-bachata-sensual-masters",
-          "sameAs": "https://www.instagram.com/ireneytomas/"
+          "sameAs": "https://www.instagram.com/ireneytomas/",
+          "member": [
+            {
+              "@type": "Person",
+              "@id": "https://milanosensualcongress.com/artists#irene",
+              "name": "Irene",
+              "memberOf": {
+                "@id": "https://milanosensualcongress.com/artists#irene-y-tomas"
+              }
+            },
+            {
+              "@type": "Person",
+              "@id": "https://milanosensualcongress.com/artists#tomas",
+              "name": "Tomás",
+              "memberOf": {
+                "@id": "https://milanosensualcongress.com/artists#irene-y-tomas"
+              }
+            }
+          ]
         },
         {
           "@type": "Person",
@@ -274,20 +348,16 @@
       ],
       "offers": {
         "@type": "Offer",
+        "name": "Current Full Pass",
         "url": "https://lasalsadelbaile.com/MSC2026",
+        "price": "130.00",
         "priceCurrency": "EUR",
         "availability": "https://schema.org/InStock",
-        "priceSpecification": [
-          {
-            "@type": "UnitPriceSpecification",
-            "name": "Current Full Pass",
-            "price": "130.00",
-            "priceCurrency": "EUR",
-            "validThrough": "2026-09-15T23:59:59+02:00"
-          }
-        ],
-        "price": "130.00"
-      }
+        "validThrough": "2026-09-15T23:59:59+02:00",
+        "@id": "https://milanosensualcongress.com/tickets#full-pass",
+        "validFrom": "2026-08-01T00:00:00+02:00"
+      },
+      "url": "https://milanosensualcongress.com/"
     },
     {
       "@type": "FAQPage",
@@ -297,7 +367,7 @@
           "name": "Where is the event located?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "The entire event takes place at the <strong>New Devero Hotel &amp; Spa</strong>\n            (4\n            Stars Executive), located in Cavenago di Brianza. It is easily accessible from Milan airports."
+            "text": "The entire event takes place at the New Devero Hotel & Spa (4\n            Stars Executive), located in Cavenago di Brianza. It is easily accessible from Milan airports."
           }
         },
         {
@@ -313,7 +383,7 @@
           "name": "How do I book the hotel?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Book through the official link on our Hotel page, where you can also find room information and booking support."
+            "text": "Book through the official link on our Hotel page , where you can also find room information and booking support."
           }
         },
         {
@@ -329,7 +399,7 @@
           "name": "Are the Bachata Masterclasses taught in English?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes, all our international workshops, masterclasses, and main stage communications at the Milano Sensual Congress are conducted in <strong class=\"text-white\">English</strong> to accommodate our European and global attendees."
+            "text": "Yes, all our international workshops, masterclasses, and main stage communications at the Milano Sensual Congress are conducted in English to accommodate our European and global attendees."
           }
         },
         {
@@ -337,14 +407,19 @@
           "name": "Which airport is best for the Milano Sensual Congress?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Milan Bergamo Orio al Serio (BGY) and Milan Linate (LIN) are the closest, but Milan Malpensa (MXP) is also highly convenient. We offer <a class=\"text-pink-400 underline\" href=\"transfer\">dedicated direct transport shuttles</a> from all three airports to the hotel."
+            "text": "Milan Bergamo Orio al Serio (BGY) and Milan Linate (LIN) are the closest, but Milan Malpensa (MXP) is also highly convenient. We offer dedicated direct transport shuttles from all three airports to the hotel."
           }
         }
-      ]
+      ],
+      "@id": "https://milanosensualcongress.com/#faq",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://milanosensualcongress.com/#webpage"
+      }
     }
   ]
 }
-  </script>
+</script>
   <meta name="thumbnail" content="https://milanosensualcongress.com/images/milano-sensual-congress-logo-preview.webp">
   <link rel="preload" as="font" type="font/woff2" href="/fonts/inter-latin.woff2" crossorigin>
   <link rel="preload" as="font" type="font/woff2" href="/fonts/playfair-display-latin.woff2" crossorigin>
@@ -690,16 +765,16 @@
           <div
             class="w-48 h-64 md:w-56 md:h-72 rounded-xl overflow-hidden border-2 border-pink-500/50 flex-shrink-0 bg-slate-800 shadow-lg">
             <img decoding="async" width="819" height="1024" src="images/artists/marco-valeria-bachata-artists.webp" srcset="images/artists/marco-valeria-bachata-artists_480w.webp 480w, images/artists/marco-valeria-bachata-artists_800w.webp 800w, images/artists/marco-valeria-bachata-artists.webp 819w" sizes="(max-width: 640px) 50vw, 220px"
-              alt="Marco y Valeria - Bachata Passion Directors and Milano Sensual Congress Organizers"
+              alt="Congress co-founder Marco Fracassi with his dance partner Valeria"
               class="w-full h-full object-cover scale-125 hover:scale-135 transition-transform duration-500"
               loading="lazy">
           </div>
           <div>
-            <h3 class="text-2xl font-bold text-white mb-1">Marco y Valeria</h3>
-            <p class="text-pink-500 text-sm mb-4 font-medium">Congress Directors</p>
+            <h3 class="text-2xl font-bold text-white mb-1">Marco Fracassi</h3>
+            <p class="text-pink-500 text-sm mb-4 font-medium">Congress Co-founder &amp; Organizer</p>
             <p class="text-slate-400 text-sm leading-relaxed"><span class="text-white font-medium">@marcoyvaleria</span>
-              — International Sensual Bachata Artists with dance school established in Arcore, MB. Creators of
-              <strong>Milano Sensual Congress</strong>. With a decade of teaching and performance
+              — Marco and his dance partner Valeria are international Sensual Bachata artists with a dance school in Arcore, MB.
+              Marco co-founded <strong>Milano Sensual Congress</strong> with Alessandro Slamitz. With a decade of teaching and performance
               experience, they are directors of the <strong>Gero y Migle Project Performance Show</strong> in Milan, and
               Marco serves as artistic director for one of the top Latin club in Milan, the UnaMas Club.
             </p>
@@ -709,19 +784,19 @@
           <div
             class="w-48 h-64 md:w-56 md:h-72 rounded-xl overflow-hidden border-2 border-purple-500/50 flex-shrink-0 bg-slate-800 shadow-lg">
             <img decoding="async" width="819" height="1024" src="images/artists/ale-xidan-bachata-artists.webp" srcset="images/artists/ale-xidan-bachata-artists_480w.webp 480w, images/artists/ale-xidan-bachata-artists_800w.webp 800w, images/artists/ale-xidan-bachata-artists.webp 819w" sizes="(max-width: 640px) 50vw, 220px"
-              alt="Ale y Xidan - AXcent Dance Directors and Milano Sensual Congress Organizers"
+              alt="Congress co-founder Alessandro Slamitz, known as Ale, with his dance partner Xidan"
               class="w-full h-full object-cover scale-125 hover:scale-135 transition-transform duration-500"
               loading="lazy">
           </div>
           <div>
-            <h3 class="text-2xl font-bold text-white mb-1">Ale y Xidan</h3>
-            <p class="text-purple-500 text-sm mb-4 font-medium">Congress Directors</p>
+            <h3 class="text-2xl font-bold text-white mb-1">Alessandro Slamitz (Ale)</h3>
+            <p class="text-purple-500 text-sm mb-4 font-medium">Congress Co-founder &amp; Organizer</p>
             <p class="text-slate-400 text-sm leading-relaxed"><span class="text-white font-medium">@aleyxidan</span> —
-              International Sensual Bachata Artists. They founded <a href="https://axcentdance.com" target="_blank" rel="noopener noreferrer"
+              Ale and his dance partner Xidan are international Sensual Bachata artists. They founded <a href="https://axcentdance.com" target="_blank" rel="noopener noreferrer"
                 class="text-pink-400 hover:text-white font-bold underline decoration-pink-500/30 transition-colors">AXcent
                 Dance</a>, the first Bachata Sensual specialized school in Zurich, established in 2025. They also serve
-              as judges for the International Swiss Championship for Salsa and Bachata. Ale y Xidan are the creators of
-              <strong>Milano Sensual Congress</strong> with Marco y Valeria, and are the
+              as judges for the International Swiss Championship for Salsa and Bachata. Alessandro co-founded
+              <strong>Milano Sensual Congress</strong> with Marco Fracassi. Ale y Xidan are also the
               co-organizers of <strong>Bailadoro Dance Weekend</strong>.
             </p>
           </div>

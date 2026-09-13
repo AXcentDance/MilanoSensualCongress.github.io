@@ -92,7 +92,7 @@
       "@type": "Organization",
       "@id": "https://milanosensualcongress.com/#organization",
       "name": "Milano Sensual Congress",
-      "url": "https://milanosensualcongress.com",
+      "url": "https://milanosensualcongress.com/",
       "logo": "https://milanosensualcongress.com/images/logo.webp",
       "description": "Organizer of Milano Sensual Congress, the international Bachata Sensual congress in Milan, Italy, with workshops, shows and social dancing at Devero Hotel.",
       "foundingDate": "2022-11-20",
@@ -121,8 +121,8 @@
           "telephone": "+39-333-393-5911",
           "url": "https://milanosensualcongress.com/contact",
           "availableLanguage": [
-            "English",
-            "Italian"
+            "Italian",
+            "Spanish"
           ]
         },
         {
@@ -131,8 +131,7 @@
           "telephone": "+41-79-966-84-81",
           "url": "https://milanosensualcongress.com/contact",
           "availableLanguage": [
-            "English",
-            "Italian"
+            "English"
           ]
         }
       ],
@@ -143,11 +142,15 @@
     {
       "@type": "WebSite",
       "@id": "https://milanosensualcongress.com/#website",
-      "url": "https://milanosensualcongress.com",
+      "url": "https://milanosensualcongress.com/",
       "name": "Milano Sensual Congress",
       "publisher": {
         "@id": "https://milanosensualcongress.com/#organization"
-      }
+      },
+      "inLanguage": [
+        "en",
+        "it"
+      ]
     },
     {
       "@type": "WebPage",
@@ -161,7 +164,13 @@
         "@id": "https://milanosensualcongress.com/it/news/calendario-festival-bachata-europa-2026-2027#breadcrumb"
       },
       "inLanguage": "it",
-      "description": "Il calendario completo dei festival e congressi di Bachata in Europa per la stagione 2026-2027. Date per Milano, Spagna, Romania e altri eventi Bachata, mese per mese."
+      "description": "Il calendario completo dei festival e congressi di Bachata in Europa per la stagione 2026-2027. Date per Milano, Spagna, Romania e altri eventi Bachata, mese per mese.",
+      "about": {
+        "@id": "https://milanosensualcongress.com/#event"
+      },
+      "mainEntity": {
+        "@id": "https://milanosensualcongress.com/it/news/calendario-festival-bachata-europa-2026-2027#blogposting"
+      }
     },
     {
       "@type": "BlogPosting",
@@ -179,22 +188,17 @@
       },
       "datePublished": "2026-08-14T10:00:00+02:00",
       "dateModified": "2026-09-10T23:30:38+02:00",
-      "description": "Pianifica la tua stagione europea di Bachata: tutti i principali festival e congressi da novembre 2026 alla primavera 2027, organizzati mese per mese."
+      "description": "Pianifica la tua stagione europea di Bachata: tutti i principali festival e congressi da novembre 2026 alla primavera 2027, organizzati mese per mese.",
+      "inLanguage": "it"
     },
     {
       "@type": "DanceEvent",
       "@id": "https://milanosensualcongress.com/#event",
       "audience": {
         "@type": "Audience",
-        "audienceType": "Ballerini di Bachata",
-        "geographicArea": {
-          "@type": "AdministrativeArea",
-          "name": "Europa"
-        }
+        "audienceType": "Ballerini di Bachata"
       },
-      "mainEntityOfPage": {
-        "@id": "https://milanosensualcongress.com/it/news/calendario-festival-bachata-europa-2026-2027#webpage"
-      },
+      "mainEntityOfPage": "https://milanosensualcongress.com/",
       "name": "Milano Sensual Congress 2026",
       "startDate": "2026-11-20T18:00:00+01:00",
       "endDate": "2026-11-22T22:00:00+01:00",
@@ -221,62 +225,114 @@
       },
       "performer": [
         {
-          "@type": "Person",
+          "@type": "PerformingGroup",
           "name": "Gero y Migle",
-          "sameAs": "https://www.instagram.com/geroymigle_official/"
+          "sameAs": "https://www.instagram.com/geroymigle_official/",
+          "@id": "https://milanosensualcongress.com/artists#gero-y-migle",
+          "member": [
+            {
+              "@type": "Person",
+              "@id": "https://milanosensualcongress.com/artists#gero",
+              "name": "Gero",
+              "memberOf": {
+                "@id": "https://milanosensualcongress.com/artists#gero-y-migle"
+              }
+            },
+            {
+              "@type": "Person",
+              "@id": "https://milanosensualcongress.com/artists#migle",
+              "name": "Migle",
+              "memberOf": {
+                "@id": "https://milanosensualcongress.com/artists#gero-y-migle"
+              }
+            }
+          ]
         },
         {
-          "@type": "Person",
+          "@type": "PerformingGroup",
           "name": "Klau y Ros",
-          "sameAs": "https://www.instagram.com/klausyros/"
+          "sameAs": "https://www.instagram.com/klausyros/",
+          "@id": "https://milanosensualcongress.com/artists#klau-y-ros",
+          "member": [
+            {
+              "@type": "Person",
+              "@id": "https://milanosensualcongress.com/artists#klau",
+              "name": "Klau",
+              "memberOf": {
+                "@id": "https://milanosensualcongress.com/artists#klau-y-ros"
+              }
+            },
+            {
+              "@type": "Person",
+              "@id": "https://milanosensualcongress.com/artists#ros",
+              "name": "Ros",
+              "memberOf": {
+                "@id": "https://milanosensualcongress.com/artists#klau-y-ros"
+              }
+            }
+          ]
         },
         {
-          "@type": "Person",
+          "@type": "PerformingGroup",
           "name": "Cristian y Gabriella",
-          "sameAs": "https://www.instagram.com/cristianygabriella_official/"
+          "sameAs": "https://www.instagram.com/cristianygabriella_official/",
+          "@id": "https://milanosensualcongress.com/artists#cristian-y-gabriella",
+          "member": [
+            {
+              "@type": "Person",
+              "@id": "https://milanosensualcongress.com/artists#cristian",
+              "name": "Cristian",
+              "memberOf": {
+                "@id": "https://milanosensualcongress.com/artists#cristian-y-gabriella"
+              }
+            },
+            {
+              "@type": "Person",
+              "@id": "https://milanosensualcongress.com/artists#gabriella",
+              "name": "Gabriella",
+              "memberOf": {
+                "@id": "https://milanosensualcongress.com/artists#cristian-y-gabriella"
+              }
+            }
+          ]
         },
         {
-          "@type": "Person",
+          "@type": "PerformingGroup",
           "name": "David y Ines",
-          "sameAs": "https://www.instagram.com/davidyines/"
-        },
-        {
-          "@type": "Person",
-          "name": "Nacho y Silvia",
-          "sameAs": "https://www.instagram.com/nachoysilvia/"
-        },
-        {
-          "@type": "Person",
-          "name": "Agustín y Alba",
-          "sameAs": "https://www.instagram.com/agustinyalba_official/"
-        },
-        {
-          "@type": "Person",
-          "name": "Irene y Tomás",
-          "sameAs": "https://www.instagram.com/ireneytomas/"
-        },
-        {
-          "@type": "Person",
-          "name": "Aitor Gomez",
-          "sameAs": "https://www.instagram.com/aitorgomez_bachata/"
+          "sameAs": "https://www.instagram.com/davidyines/",
+          "@id": "https://milanosensualcongress.com/artists#david-y-ines",
+          "member": [
+            {
+              "@type": "Person",
+              "@id": "https://milanosensualcongress.com/artists#david",
+              "name": "David",
+              "memberOf": {
+                "@id": "https://milanosensualcongress.com/artists#david-y-ines"
+              }
+            },
+            {
+              "@type": "Person",
+              "@id": "https://milanosensualcongress.com/artists#ines",
+              "name": "Ines",
+              "memberOf": {
+                "@id": "https://milanosensualcongress.com/artists#david-y-ines"
+              }
+            }
+          ]
         }
       ],
       "offers": {
         "@type": "Offer",
+        "name": "Full Pass attuale",
         "url": "https://lasalsadelbaile.com/MSC2026",
+        "price": "130.00",
         "priceCurrency": "EUR",
         "availability": "https://schema.org/InStock",
-        "priceSpecification": [
-          {
-            "@type": "UnitPriceSpecification",
-            "name": "Full Pass Attuale",
-            "price": "130.00",
-            "priceCurrency": "EUR",
-            "validThrough": "2026-09-15T23:59:59+02:00"
-          }
-        ],
-        "price": "130.00"
-      }
+        "validThrough": "2026-09-15T23:59:59+02:00",
+        "@id": "https://milanosensualcongress.com/tickets#full-pass",
+        "validFrom": "2026-08-01T00:00:00+02:00"
+      },
+      "url": "https://milanosensualcongress.com/"
     },
     {
       "@type": "BreadcrumbList",

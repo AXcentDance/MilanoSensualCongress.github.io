@@ -73,7 +73,7 @@
       "@type": "Organization",
       "@id": "https://milanosensualcongress.com/#organization",
       "name": "Milano Sensual Congress",
-      "url": "https://milanosensualcongress.com",
+      "url": "https://milanosensualcongress.com/",
       "logo": "https://milanosensualcongress.com/images/logo.webp",
       "description": "Organizer of Milano Sensual Congress, the international Bachata Sensual congress in Milan, Italy, with workshops, shows and social dancing at Devero Hotel.",
       "foundingDate": "2022-11-20",
@@ -102,8 +102,8 @@
           "telephone": "+39-333-393-5911",
           "url": "https://milanosensualcongress.com/contact",
           "availableLanguage": [
-            "English",
-            "Italian"
+            "Italian",
+            "Spanish"
           ]
         },
         {
@@ -112,8 +112,7 @@
           "telephone": "+41-79-966-84-81",
           "url": "https://milanosensualcongress.com/contact",
           "availableLanguage": [
-            "English",
-            "Italian"
+            "English"
           ]
         }
       ],
@@ -124,17 +123,21 @@
     {
       "@type": "WebSite",
       "@id": "https://milanosensualcongress.com/#website",
-      "url": "https://milanosensualcongress.com",
+      "url": "https://milanosensualcongress.com/",
       "name": "Milano Sensual Congress",
       "publisher": {
         "@id": "https://milanosensualcongress.com/#organization"
-      }
+      },
+      "inLanguage": [
+        "en",
+        "it"
+      ]
     },
     {
       "@type": "WebPage",
       "@id": "https://milanosensualcongress.com/it/news/nacho-y-silvia-bachata-esencia-nuova-generazione#webpage",
       "url": "https://milanosensualcongress.com/it/news/nacho-y-silvia-bachata-esencia-nuova-generazione",
-      "name": "Nacho y Silvia: Le Stelle Nascenti della Bachata Esencia",
+      "name": "Nacho y Silvia: Le Stelle Nascenti della Bachata Esencia | Milano Sensual Congress 2026",
       "isPartOf": {
         "@id": "https://milanosensualcongress.com/#website"
       },
@@ -142,7 +145,13 @@
         "@id": "https://milanosensualcongress.com/it/news/nacho-y-silvia-bachata-esencia-nuova-generazione#breadcrumb"
       },
       "inLanguage": "it",
-      "description": "Incontra Nacho e Silvia, la nuova coppia di punta dell'Esencia Group di Madrid. Scopri il loro stile unico e il viaggio verso il MSC 2026."
+      "description": "Vivi l'energia della nuova generazione. Nacho e Silvia portano il loro esclusivo Esencia Style da Madrid al Milano Sensual Congress 2026. Scopri il loro viaggio.",
+      "about": {
+        "@id": "https://milanosensualcongress.com/#event"
+      },
+      "mainEntity": {
+        "@id": "https://milanosensualcongress.com/it/news/nacho-y-silvia-bachata-esencia-nuova-generazione#article"
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -183,22 +192,18 @@
       },
       "datePublished": "2026-04-03T11:00:00+02:00",
       "dateModified": "2026-04-03T11:00:00+02:00",
-      "description": "Scopri Nacho e Silvia, il dinamico duo di Madrid che rappresenta gli artisti d'élite dell'Esencia Group."
+      "description": "Scopri Nacho e Silvia, il dinamico duo di Madrid che rappresenta gli artisti d'élite dell'Esencia Group.",
+      "@id": "https://milanosensualcongress.com/it/news/nacho-y-silvia-bachata-esencia-nuova-generazione#article",
+      "inLanguage": "it"
     },
     {
       "@type": "DanceEvent",
       "@id": "https://milanosensualcongress.com/#event",
       "audience": {
         "@type": "Audience",
-        "audienceType": "Bachata Dancers",
-        "geographicArea": {
-          "@type": "AdministrativeArea",
-          "name": "Europe"
-        }
+        "audienceType": "Bachata Dancers"
       },
-      "mainEntityOfPage": {
-        "@id": "https://milanosensualcongress.com/it/news/nacho-y-silvia-bachata-esencia-nuova-generazione#webpage"
-      },
+      "mainEntityOfPage": "https://milanosensualcongress.com/",
       "name": "Milano Sensual Congress 2026",
       "startDate": "2026-11-20T18:00:00+01:00",
       "endDate": "2026-11-22T22:00:00+01:00",
@@ -225,69 +230,66 @@
       },
       "performer": [
         {
-          "@type": "Person",
+          "@type": "PerformingGroup",
           "name": "Gero y Migle",
-          "sameAs": "https://www.instagram.com/geroymigle_official/"
+          "sameAs": "https://www.instagram.com/geroymigle_official/",
+          "@id": "https://milanosensualcongress.com/artists#gero-y-migle",
+          "member": [
+            {
+              "@type": "Person",
+              "@id": "https://milanosensualcongress.com/artists#gero",
+              "name": "Gero",
+              "memberOf": {
+                "@id": "https://milanosensualcongress.com/artists#gero-y-migle"
+              }
+            },
+            {
+              "@type": "Person",
+              "@id": "https://milanosensualcongress.com/artists#migle",
+              "name": "Migle",
+              "memberOf": {
+                "@id": "https://milanosensualcongress.com/artists#gero-y-migle"
+              }
+            }
+          ]
         },
         {
-          "@type": "Person",
-          "name": "Klau y Ros",
-          "sameAs": "https://www.instagram.com/klausyros/"
-        },
-        {
-          "@type": "Person",
-          "name": "Cristian y Gabriella",
-          "sameAs": "https://www.instagram.com/cristianygabriella_official/"
-        },
-        {
-          "@type": "Person",
-          "name": "David y Ines",
-          "sameAs": "https://www.instagram.com/davidyines/"
-        },
-        {
-          "@type": "Person",
+          "@type": "PerformingGroup",
           "name": "Nacho y Silvia",
-          "sameAs": "https://www.instagram.com/nachoysilvia/"
-        },
-        {
-          "@type": "Person",
-          "name": "Agustín y Alba",
-          "sameAs": "https://www.instagram.com/agustinyalba_official/"
-        },
-        {
-          "@type": "Person",
-          "name": "Irene y Tomás",
-          "sameAs": "https://www.instagram.com/ireneytomas/"
-        },
-        {
-          "@type": "Person",
-          "name": "Aitor Gomez",
-          "sameAs": "https://www.instagram.com/aitorgomez_bachata/"
+          "sameAs": "https://www.instagram.com/nachoysilvia/",
+          "@id": "https://milanosensualcongress.com/artists#nacho-y-silvia",
+          "member": [
+            {
+              "@type": "Person",
+              "@id": "https://milanosensualcongress.com/artists#nacho",
+              "name": "Nacho",
+              "memberOf": {
+                "@id": "https://milanosensualcongress.com/artists#nacho-y-silvia"
+              }
+            },
+            {
+              "@type": "Person",
+              "@id": "https://milanosensualcongress.com/artists#silvia",
+              "name": "Silvia",
+              "memberOf": {
+                "@id": "https://milanosensualcongress.com/artists#nacho-y-silvia"
+              }
+            }
+          ]
         }
       ],
       "offers": {
         "@type": "Offer",
+        "name": "Full Pass attuale",
         "url": "https://lasalsadelbaile.com/MSC2026",
+        "price": "130.00",
         "priceCurrency": "EUR",
         "availability": "https://schema.org/InStock",
-        "priceSpecification": [
-          {
-            "@type": "UnitPriceSpecification",
-            "name": "Full Pass attuale",
-            "price": "130.00",
-            "priceCurrency": "EUR",
-            "validThrough": "2026-09-15T23:59:59+02:00"
-          },
-          {
-            "@type": "UnitPriceSpecification",
-            "name": "Prossima fascia Full Pass",
-            "price": "130.00",
-            "priceCurrency": "EUR",
-            "validThrough": "2026-09-15T23:59:59+02:00"
-          }
-        ],
-        "price": "130.00"
-      }
+        "validThrough": "2026-09-15T23:59:59+02:00",
+        "@id": "https://milanosensualcongress.com/tickets#full-pass",
+        "validFrom": "2026-08-01T00:00:00+02:00"
+      },
+      "url": "https://milanosensualcongress.com/"
     }
   ]
 }

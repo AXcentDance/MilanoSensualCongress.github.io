@@ -91,20 +91,26 @@
 
   <script src="/js/site-analytics.js?v=2" defer></script>
   <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
     {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
       "@type": "Organization",
       "@id": "https://milanosensualcongress.com/#organization",
       "name": "Milano Sensual Congress",
-      "url": "https://milanosensualcongress.com",
+      "url": "https://milanosensualcongress.com/",
       "logo": "https://milanosensualcongress.com/images/logo.webp",
       "description": "Organizer of Milano Sensual Congress, the international Bachata Sensual congress in Milan, Italy, with workshops, shows and social dancing at Devero Hotel.",
       "foundingDate": "2022-11-20",
       "founder": [
-        { "@type": "Person", "name": "Marco Fracassi" },
-        { "@type": "Person", "name": "Alessandro Slamitz" }
+        {
+          "@type": "Person",
+          "name": "Marco Fracassi"
+        },
+        {
+          "@type": "Person",
+          "name": "Alessandro Slamitz"
+        }
       ],
       "address": {
         "@type": "PostalAddress",
@@ -120,116 +126,101 @@
           "contactType": "customer service",
           "telephone": "+39-333-393-5911",
           "url": "https://milanosensualcongress.com/contact",
-          "availableLanguage": ["English", "Italian"]
+          "availableLanguage": [
+            "Italian",
+            "Spanish"
+          ]
         },
         {
           "@type": "ContactPoint",
           "contactType": "customer service",
           "telephone": "+41-79-966-84-81",
           "url": "https://milanosensualcongress.com/contact",
-          "availableLanguage": ["English", "Italian"]
+          "availableLanguage": [
+            "English"
+          ]
         }
       ],
       "sameAs": [
         "https://www.instagram.com/milanosensualcongress/"
       ]
     },
+    {
+      "@type": "WebSite",
+      "@id": "https://milanosensualcongress.com/#website",
+      "url": "https://milanosensualcongress.com/",
+      "name": "Milano Sensual Congress",
+      "publisher": {
+        "@id": "https://milanosensualcongress.com/#organization"
+      },
+      "inLanguage": [
+        "en",
+        "it"
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://milanosensualcongress.com/news/bachata-congress-etiquette-social-dancing-workshops-parties#webpage",
+      "url": "https://milanosensualcongress.com/news/bachata-congress-etiquette-social-dancing-workshops-parties",
+      "name": "Bachata Congress Etiquette: Social Dancing, Workshops & Parties",
+      "isPartOf": {
+        "@id": "https://milanosensualcongress.com/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://milanosensualcongress.com/news/bachata-congress-etiquette-social-dancing-workshops-parties#breadcrumb"
+      },
+      "inLanguage": "en",
+      "description": "Learn bachata congress etiquette for social dancing, workshops and parties. A practical guide for international dancers attending Milano Sensual Congress 2026.",
+      "mainEntity": {
+        "@id": "https://milanosensualcongress.com/news/bachata-congress-etiquette-social-dancing-workshops-parties#article"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://milanosensualcongress.com/news/bachata-congress-etiquette-social-dancing-workshops-parties#breadcrumb",
+      "itemListElement": [
         {
-          "@type": "WebSite",
-          "@id": "https://milanosensualcongress.com/#website",
-          "url": "https://milanosensualcongress.com",
-          "name": "Milano Sensual Congress",
-          "publisher": {
-            "@id": "https://milanosensualcongress.com/#organization"
-          }
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://milanosensualcongress.com/"
         },
         {
-          "@type": "WebPage",
-          "@id": "https://milanosensualcongress.com/news/bachata-congress-etiquette-social-dancing-workshops-parties#webpage",
-          "url": "https://milanosensualcongress.com/news/bachata-congress-etiquette-social-dancing-workshops-parties",
-          "name": "Bachata Congress Etiquette: Social Dancing, Workshops and Parties",
-          "isPartOf": {
-            "@id": "https://milanosensualcongress.com/#website"
-          },
-          "breadcrumb": {
-            "@id": "https://milanosensualcongress.com/news/bachata-congress-etiquette-social-dancing-workshops-parties#breadcrumb"
-          },
-          "inLanguage": "en",
-          "description": "Learn bachata congress etiquette for social dancing, workshops and parties before attending an international bachata festival."
+          "@type": "ListItem",
+          "position": 2,
+          "name": "News",
+          "item": "https://milanosensualcongress.com/news"
         },
         {
-          "@type": "BreadcrumbList",
-          "@id": "https://milanosensualcongress.com/news/bachata-congress-etiquette-social-dancing-workshops-parties#breadcrumb",
-          "itemListElement": [
-            {
-              "@type": "ListItem",
-              "position": 1,
-              "name": "Home",
-              "item": "https://milanosensualcongress.com/"
-            },
-            {
-              "@type": "ListItem",
-              "position": 2,
-              "name": "News",
-              "item": "https://milanosensualcongress.com/news"
-            },
-            {
-              "@type": "ListItem",
-              "position": 3,
-              "name": "Bachata Congress Etiquette",
-              "item": "https://milanosensualcongress.com/news/bachata-congress-etiquette-social-dancing-workshops-parties"
-            }
-          ]
-        },
-        {
-          "@type": "BlogPosting",
-          "mainEntityOfPage": {
-            "@id": "https://milanosensualcongress.com/news/bachata-congress-etiquette-social-dancing-workshops-parties#webpage"
-          },
-          "headline": "Bachata Congress Etiquette: Social Dancing, Workshops and Parties",
-          "image": "https://milanosensualcongress.com/images/news/bachata-congress-2026-social-dancing.webp",
-          "author": {
-            "@id": "https://milanosensualcongress.com/#organization"
-          },
-          "publisher": {
-            "@id": "https://milanosensualcongress.com/#organization"
-          },
-          "datePublished": "2026-04-30T09:00:00+02:00",
-          "dateModified": "2026-04-30T09:00:00+02:00",
-          "description": "A practical etiquette guide for bachata dancers attending international congresses, including workshops, social dancing and parties."
-        },
-        {
-          "@type": "FAQPage",
-          "mainEntity": [
-            {
-              "@type": "Question",
-              "name": "Can beginners attend a bachata congress?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Yes. Beginners are welcome at bachata congresses. The best etiquette is to choose workshops that match your level, rotate respectfully, and ask for help when needed."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "How do I ask someone to dance at a bachata party?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Keep it simple and respectful. Smile, make eye contact, and ask if they would like to dance. If they say no, accept it gracefully and ask someone else."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "What should I bring to bachata workshops and parties?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Bring comfortable dance shoes, water, fresh shirts, deodorant, a towel, and anything you need to feel clean and ready for long workshop and party hours."
-              }
-            }
-          ]
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Bachata Congress Etiquette",
+          "item": "https://milanosensualcongress.com/news/bachata-congress-etiquette-social-dancing-workshops-parties"
         }
       ]
+    },
+    {
+      "@type": "BlogPosting",
+      "mainEntityOfPage": {
+        "@id": "https://milanosensualcongress.com/news/bachata-congress-etiquette-social-dancing-workshops-parties#webpage"
+      },
+      "headline": "Bachata Congress Etiquette: Social Dancing, Workshops and Parties",
+      "image": "https://milanosensualcongress.com/images/news/bachata-congress-2026-social-dancing.webp",
+      "author": {
+        "@id": "https://milanosensualcongress.com/#organization"
+      },
+      "publisher": {
+        "@id": "https://milanosensualcongress.com/#organization"
+      },
+      "datePublished": "2026-04-30T09:00:00+02:00",
+      "dateModified": "2026-04-30T09:00:00+02:00",
+      "description": "A practical etiquette guide for bachata dancers attending international congresses, including workshops, social dancing and parties.",
+      "@id": "https://milanosensualcongress.com/news/bachata-congress-etiquette-social-dancing-workshops-parties#article",
+      "inLanguage": "en"
     }
-  </script>
+  ]
+}
+</script>
   <script type="speculationrules">
   {
     "prefetch": [{

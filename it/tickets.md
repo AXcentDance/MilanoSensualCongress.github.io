@@ -34,16 +34,13 @@ Valido fino alla mezzanotte del 15 settembre
 
 [Acquista Full Pass](https://lasalsadelbaile.com/MSC2026)
 
-Prossimo Aumento
-
-Dopo la mezzanotte del 15 settembre
-
 #### Prossima Fascia Full Pass
 
-TBA
+€135
 
-- Accesso Completo
-- Dopo il 15 settembre
+Dal 16 settembre 2026, ore 00:00 (ora di Milano)
+
+Accesso completo al congresso. Upgrade Masterclass acquistabile separatamente.
 
 Avanzato
 

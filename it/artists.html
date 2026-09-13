@@ -24,46 +24,10 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "Airport",
-      "@id": "https://en.wikipedia.org/wiki/Milan_Malpensa_Airport",
-      "name": "Aeroporto di Milano-Malpensa",
-      "iataCode": "MXP",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Fernon",
-        "addressRegion": "VA",
-        "addressCountry": "IT"
-      }
-    },
-    {
-      "@type": "Airport",
-      "@id": "https://en.wikipedia.org/wiki/Linate_Airport",
-      "name": "Aeroporto di Milano-Linate",
-      "iataCode": "LIN",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Milan",
-        "addressRegion": "MI",
-        "addressCountry": "IT"
-      }
-    },
-    {
-      "@type": "Airport",
-      "@id": "https://en.wikipedia.org/wiki/Orio_al_Serio_International_Airport",
-      "name": "Aeroporto di Bergamo-Orio al Serio",
-      "iataCode": "BGY",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Bergamo",
-        "addressRegion": "BG",
-        "addressCountry": "IT"
-      }
-    },
-    {
       "@type": "Organization",
       "@id": "https://milanosensualcongress.com/#organization",
       "name": "Milano Sensual Congress",
-      "url": "https://milanosensualcongress.com",
+      "url": "https://milanosensualcongress.com/",
       "logo": "https://milanosensualcongress.com/images/logo.webp",
       "description": "Organizer of Milano Sensual Congress, the international Bachata Sensual congress in Milan, Italy, with workshops, shows and social dancing at Devero Hotel.",
       "foundingDate": "2022-11-20",
@@ -92,8 +56,8 @@
           "telephone": "+39-333-393-5911",
           "url": "https://milanosensualcongress.com/contact",
           "availableLanguage": [
-            "English",
-            "Italian"
+            "Italian",
+            "Spanish"
           ]
         },
         {
@@ -102,8 +66,7 @@
           "telephone": "+41-79-966-84-81",
           "url": "https://milanosensualcongress.com/contact",
           "availableLanguage": [
-            "English",
-            "Italian"
+            "English"
           ]
         }
       ],
@@ -114,11 +77,15 @@
     {
       "@type": "WebSite",
       "@id": "https://milanosensualcongress.com/#website",
-      "url": "https://milanosensualcongress.com",
+      "url": "https://milanosensualcongress.com/",
       "name": "Milano Sensual Congress",
       "publisher": {
         "@id": "https://milanosensualcongress.com/#organization"
-      }
+      },
+      "inLanguage": [
+        "en",
+        "it"
+      ]
     },
     {
       "@type": "WebPage",
@@ -131,8 +98,14 @@
       "breadcrumb": {
         "@id": "https://milanosensualcongress.com/it/artists#breadcrumb"
       },
-      "inLanguage": "it-IT",
-      "description": "Scopri la lineup di classe mondiale al Milano Sensual Congress. Con Gero y Migle, Klaus y Ros, e altri top artisti di Bachata Sensual che terranno workshop e show a Milano."
+      "inLanguage": "it",
+      "description": "Scopri la lineup di classe mondiale al Milano Sensual Congress. Con Gero y Migle (Esencia Style), Klaus y Ros, e altri top artisti di Bachata che terranno workshop e show a Milano.",
+      "about": {
+        "@id": "https://milanosensualcongress.com/#event"
+      },
+      "mainEntity": {
+        "@id": "https://milanosensualcongress.com/it/artists#artists"
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -157,15 +130,9 @@
       "@id": "https://milanosensualcongress.com/#event",
       "audience": {
         "@type": "Audience",
-        "audienceType": "Bachata Dancers",
-        "geographicArea": {
-          "@type": "AdministrativeArea",
-          "name": "Europe"
-        }
+        "audienceType": "Bachata Dancers"
       },
-      "mainEntityOfPage": {
-        "@id": "https://milanosensualcongress.com/it/artists#webpage"
-      },
+      "mainEntityOfPage": "https://milanosensualcongress.com/",
       "name": "Milano Sensual Congress 2026",
       "startDate": "2026-11-20T18:00:00+01:00",
       "endDate": "2026-11-22T22:00:00+01:00",
@@ -192,124 +159,193 @@
       },
       "performer": [
         {
-          "@type": "Person",
+          "@type": "PerformingGroup",
           "@id": "https://milanosensualcongress.com/artists#gero-y-migle",
           "name": "Gero y Migle",
-          "jobTitle": "Artisti e insegnanti di Bachata Esencia Style",
           "description": "Creatori dell'Esencia Style, Gero y Migle uniscono la disciplina tecnica di Spagna e Lituania a un carisma esplosivo che li ha portati al vertice della scena bachata internazionale.",
-          "nationality": [
-            {
-              "@type": "Country",
-              "name": "Spain"
-            },
-            {
-              "@type": "Country",
-              "name": "Lithuania"
-            }
-          ],
           "url": "https://milanosensualcongress.com/it/news/gero-y-migle-maestri-bachata-sensual-2026",
           "image": "https://milanosensualcongress.com/images/artists/gero-migle-bachata-esencia.webp",
-          "sameAs": "https://www.instagram.com/geroymigle_official/"
-        },
-        {
-          "@type": "Person",
-          "@id": "https://milanosensualcongress.com/artists#klau-y-ros",
-          "name": "Klau y Ros",
-          "jobTitle": "Artisti e insegnanti di Endless Bachata",
-          "description": "Conosciuti in tutto il mondo per la loro metodologia Endless Bachata, Klau y Ros combinano fluidità estrema, intensa connessione musicale e narrazione emotiva in pista.",
-          "nationality": [
+          "sameAs": "https://www.instagram.com/geroymigle_official/",
+          "member": [
             {
-              "@type": "Country",
-              "name": "Poland"
+              "@type": "Person",
+              "@id": "https://milanosensualcongress.com/artists#gero",
+              "name": "Gero",
+              "memberOf": {
+                "@id": "https://milanosensualcongress.com/artists#gero-y-migle"
+              }
             },
             {
-              "@type": "Country",
-              "name": "Spain"
+              "@type": "Person",
+              "@id": "https://milanosensualcongress.com/artists#migle",
+              "name": "Migle",
+              "memberOf": {
+                "@id": "https://milanosensualcongress.com/artists#gero-y-migle"
+              }
             }
-          ],
+          ]
+        },
+        {
+          "@type": "PerformingGroup",
+          "@id": "https://milanosensualcongress.com/artists#klau-y-ros",
+          "name": "Klau y Ros",
+          "description": "Conosciuti in tutto il mondo per la loro metodologia Endless Bachata, Klau y Ros combinano fluidità estrema, intensa connessione musicale e narrazione emotiva in pista.",
           "url": "https://milanosensualcongress.com/it/news/klau-y-ros-maestri-endless-bachata-2026",
           "image": "https://milanosensualcongress.com/images/artists/klau-ros-bachata-sensual.webp",
-          "sameAs": "https://www.instagram.com/klausyros/"
+          "sameAs": "https://www.instagram.com/klausyros/",
+          "member": [
+            {
+              "@type": "Person",
+              "@id": "https://milanosensualcongress.com/artists#klau",
+              "name": "Klau",
+              "memberOf": {
+                "@id": "https://milanosensualcongress.com/artists#klau-y-ros"
+              }
+            },
+            {
+              "@type": "Person",
+              "@id": "https://milanosensualcongress.com/artists#ros",
+              "name": "Ros",
+              "memberOf": {
+                "@id": "https://milanosensualcongress.com/artists#klau-y-ros"
+              }
+            }
+          ]
         },
         {
-          "@type": "Person",
+          "@type": "PerformingGroup",
           "@id": "https://milanosensualcongress.com/artists#cristian-y-gabriella",
           "name": "Cristian y Gabriella",
-          "jobTitle": "Artisti e insegnanti di bachata campioni del mondo",
           "description": "Campioni del mondo con base a Siviglia, Cristian y Gabriella elevano l'essenza tradizionale della bachata attraverso perfezione tecnica e libertà creativa.",
-          "nationality": [
-            {
-              "@type": "Country",
-              "name": "Spain"
-            }
-          ],
           "url": "https://milanosensualcongress.com/it/news/cristian-y-gabriella-maestri-bachata-mondiali-2026",
           "image": "https://milanosensualcongress.com/images/artists/cristian-gabriella-bachata-artists.webp",
-          "sameAs": "https://www.instagram.com/cristianygabriella_official/"
+          "sameAs": "https://www.instagram.com/cristianygabriella_official/",
+          "member": [
+            {
+              "@type": "Person",
+              "@id": "https://milanosensualcongress.com/artists#cristian",
+              "name": "Cristian",
+              "memberOf": {
+                "@id": "https://milanosensualcongress.com/artists#cristian-y-gabriella"
+              }
+            },
+            {
+              "@type": "Person",
+              "@id": "https://milanosensualcongress.com/artists#gabriella",
+              "name": "Gabriella",
+              "memberOf": {
+                "@id": "https://milanosensualcongress.com/artists#cristian-y-gabriella"
+              }
+            }
+          ]
         },
         {
-          "@type": "Person",
+          "@type": "PerformingGroup",
           "@id": "https://milanosensualcongress.com/artists#david-y-ines",
           "name": "David y Ines",
-          "jobTitle": "Artisti e insegnanti di Bachata Sensual",
           "description": "Fondatori della rinomata scuola di ballo Marimba, David y Ines fondono la Bachata Sensual con la disciplina atletica, trasformando il rigore tecnico in pura emozione fluida.",
-          "nationality": [
-            {
-              "@type": "Country",
-              "name": "Spain"
-            }
-          ],
           "url": "https://milanosensualcongress.com/it/news/david-y-ines-maestri-bachata-sensual-2026",
           "image": "https://milanosensualcongress.com/images/artists/david-ines-bachata-sensual.webp",
-          "sameAs": "https://www.instagram.com/davidyines/"
+          "sameAs": "https://www.instagram.com/davidyines/",
+          "member": [
+            {
+              "@type": "Person",
+              "@id": "https://milanosensualcongress.com/artists#david",
+              "name": "David",
+              "memberOf": {
+                "@id": "https://milanosensualcongress.com/artists#david-y-ines"
+              }
+            },
+            {
+              "@type": "Person",
+              "@id": "https://milanosensualcongress.com/artists#ines",
+              "name": "Ines",
+              "memberOf": {
+                "@id": "https://milanosensualcongress.com/artists#david-y-ines"
+              }
+            }
+          ]
         },
         {
-          "@type": "Person",
+          "@type": "PerformingGroup",
           "@id": "https://milanosensualcongress.com/artists#nacho-y-silvia",
           "name": "Nacho y Silvia",
-          "jobTitle": "Artisti e insegnanti di Bachata Esencia",
           "description": "Stelle emergenti dell'Esencia Group di Madrid, Nacho y Silvia rappresentano la nuova generazione della bachata con precisione tecnica ed estro creativo.",
-          "nationality": [
-            {
-              "@type": "Country",
-              "name": "Spain"
-            }
-          ],
           "url": "https://milanosensualcongress.com/it/news/nacho-y-silvia-bachata-esencia-nuova-generazione",
           "image": "https://milanosensualcongress.com/images/artists/nacho-silvia-bachata-esencia.webp",
-          "sameAs": "https://www.instagram.com/nachoysilvia/"
+          "sameAs": "https://www.instagram.com/nachoysilvia/",
+          "member": [
+            {
+              "@type": "Person",
+              "@id": "https://milanosensualcongress.com/artists#nacho",
+              "name": "Nacho",
+              "memberOf": {
+                "@id": "https://milanosensualcongress.com/artists#nacho-y-silvia"
+              }
+            },
+            {
+              "@type": "Person",
+              "@id": "https://milanosensualcongress.com/artists#silvia",
+              "name": "Silvia",
+              "memberOf": {
+                "@id": "https://milanosensualcongress.com/artists#nacho-y-silvia"
+              }
+            }
+          ]
         },
         {
-          "@type": "Person",
+          "@type": "PerformingGroup",
           "@id": "https://milanosensualcongress.com/artists#agustin-y-alba",
           "name": "Agustín y Alba",
-          "jobTitle": "Stelle emergenti e insegnanti di Bachata Sensual",
           "description": "Stelle emergenti di Barcellona il cui background di danza contemporanea porta un'energia fresca e giovane che sta trasformando le piste di Bachata Sensual in tutta Europa.",
-          "nationality": [
-            {
-              "@type": "Country",
-              "name": "Spain"
-            }
-          ],
           "url": "https://milanosensualcongress.com/it/news/agustinyalba-stelle-nascenti-bachata-sensual",
           "image": "https://milanosensualcongress.com/images/artists/agustin-alba-bachata-sensual.webp",
-          "sameAs": "https://www.instagram.com/agustinyalba_official/"
+          "sameAs": "https://www.instagram.com/agustinyalba_official/",
+          "member": [
+            {
+              "@type": "Person",
+              "@id": "https://milanosensualcongress.com/artists#agustin",
+              "name": "Agustín",
+              "memberOf": {
+                "@id": "https://milanosensualcongress.com/artists#agustin-y-alba"
+              }
+            },
+            {
+              "@type": "Person",
+              "@id": "https://milanosensualcongress.com/artists#alba",
+              "name": "Alba",
+              "memberOf": {
+                "@id": "https://milanosensualcongress.com/artists#agustin-y-alba"
+              }
+            }
+          ]
         },
         {
-          "@type": "Person",
+          "@type": "PerformingGroup",
           "@id": "https://milanosensualcongress.com/artists#irene-y-tomas",
           "name": "Irene y Tomás",
-          "jobTitle": "Ambasciatori ufficiali e insegnanti di Bachata Sensual",
           "description": "Ambasciatori ufficiali della Bachata Sensual da Maiorca, formati direttamente da Korke y Judith, Irene y Tomas portano nel mondo l'eccellenza tecnica e la connessione organica dello stile.",
-          "nationality": [
-            {
-              "@type": "Country",
-              "name": "Spain"
-            }
-          ],
           "url": "https://milanosensualcongress.com/it/news/irene-y-tomas-maestri-bachata-sensual",
           "image": "https://milanosensualcongress.com/images/artists/irene-tomas-bachata-sensual.webp",
-          "sameAs": "https://www.instagram.com/ireneytomas/"
+          "sameAs": "https://www.instagram.com/ireneytomas/",
+          "member": [
+            {
+              "@type": "Person",
+              "@id": "https://milanosensualcongress.com/artists#irene",
+              "name": "Irene",
+              "memberOf": {
+                "@id": "https://milanosensualcongress.com/artists#irene-y-tomas"
+              }
+            },
+            {
+              "@type": "Person",
+              "@id": "https://milanosensualcongress.com/artists#tomas",
+              "name": "Tomás",
+              "memberOf": {
+                "@id": "https://milanosensualcongress.com/artists#irene-y-tomas"
+              }
+            }
+          ]
         },
         {
           "@type": "Person",
@@ -330,20 +366,16 @@
       ],
       "offers": {
         "@type": "Offer",
+        "name": "Full Pass attuale",
         "url": "https://lasalsadelbaile.com/MSC2026",
+        "price": "130.00",
         "priceCurrency": "EUR",
         "availability": "https://schema.org/InStock",
-        "priceSpecification": [
-          {
-            "@type": "UnitPriceSpecification",
-            "name": "Full Pass attuale",
-            "price": "130.00",
-            "priceCurrency": "EUR",
-            "validThrough": "2026-09-15T23:59:59+02:00"
-          }
-        ],
-        "price": "130.00"
-      }
+        "validThrough": "2026-09-15T23:59:59+02:00",
+        "@id": "https://milanosensualcongress.com/tickets#full-pass",
+        "validFrom": "2026-08-01T00:00:00+02:00"
+      },
+      "url": "https://milanosensualcongress.com/"
     },
     {
       "@type": "ItemList",
@@ -408,7 +440,8 @@
             "@id": "https://milanosensualcongress.com/artists#aitor-gomez"
           }
         }
-      ]
+      ],
+      "@id": "https://milanosensualcongress.com/it/artists#artists"
     }
   ]
 }

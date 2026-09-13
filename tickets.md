@@ -34,16 +34,13 @@ Valid until September 15 at midnight
 
 [Buy Full Pass](https://lasalsadelbaile.com/MSC2026)
 
-Next Price Increase
-
-After September 15 at midnight
-
 #### Full Pass Next Tier
 
-TBA
+€135
 
-- Full Access
-- After September 15
+From 16 September 2026, 00:00 (Milan time)
+
+Full congress access. Masterclass upgrade purchased separately.
 
 Advanced
 

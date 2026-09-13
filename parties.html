@@ -66,13 +66,19 @@
       "@type": "Organization",
       "@id": "https://milanosensualcongress.com/#organization",
       "name": "Milano Sensual Congress",
-      "url": "https://milanosensualcongress.com",
+      "url": "https://milanosensualcongress.com/",
       "logo": "https://milanosensualcongress.com/images/logo.webp",
       "description": "Organizer of Milano Sensual Congress, the international Bachata Sensual congress in Milan, Italy, with workshops, shows and social dancing at Devero Hotel.",
       "foundingDate": "2022-11-20",
       "founder": [
-        { "@type": "Person", "name": "Marco Fracassi" },
-        { "@type": "Person", "name": "Alessandro Slamitz" }
+        {
+          "@type": "Person",
+          "name": "Marco Fracassi"
+        },
+        {
+          "@type": "Person",
+          "name": "Alessandro Slamitz"
+        }
       ],
       "address": {
         "@type": "PostalAddress",
@@ -88,14 +94,19 @@
           "contactType": "customer service",
           "telephone": "+39-333-393-5911",
           "url": "https://milanosensualcongress.com/contact",
-          "availableLanguage": ["English", "Italian"]
+          "availableLanguage": [
+            "Italian",
+            "Spanish"
+          ]
         },
         {
           "@type": "ContactPoint",
           "contactType": "customer service",
           "telephone": "+41-79-966-84-81",
           "url": "https://milanosensualcongress.com/contact",
-          "availableLanguage": ["English", "Italian"]
+          "availableLanguage": [
+            "English"
+          ]
         }
       ],
       "sameAs": [
@@ -105,11 +116,15 @@
     {
       "@type": "WebSite",
       "@id": "https://milanosensualcongress.com/#website",
-      "url": "https://milanosensualcongress.com",
+      "url": "https://milanosensualcongress.com/",
       "name": "Milano Sensual Congress",
       "publisher": {
         "@id": "https://milanosensualcongress.com/#organization"
-      }
+      },
+      "inLanguage": [
+        "en",
+        "it"
+      ]
     },
     {
       "@type": "WebPage",
@@ -123,7 +138,16 @@
         "@id": "https://milanosensualcongress.com/parties#breadcrumb"
       },
       "inLanguage": "en",
-      "description": "Official social dance times for Milano Sensual Congress 2026: 20+ hours of bachata parties and socials until 5 AM at Devero Hotel in Milan. Schedule, passes and party info."
+      "description": "Official social dance times for Milano Sensual Congress 2026: 20+ hours of bachata parties and socials until 5 AM at Devero Hotel in Milan. Schedule, passes and party info.",
+      "about": {
+        "@id": "https://milanosensualcongress.com/#event"
+      },
+      "mainEntity": {
+        "@id": "https://milanosensualcongress.com/#event"
+      },
+      "hasPart": {
+        "@id": "https://milanosensualcongress.com/parties#faq"
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -151,9 +175,7 @@
       "endDate": "2026-11-22T22:00:00+01:00",
       "eventStatus": "https://schema.org/EventScheduled",
       "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-      "mainEntityOfPage": {
-        "@id": "https://milanosensualcongress.com/parties#webpage"
-      },
+      "mainEntityOfPage": "https://milanosensualcongress.com/",
       "location": {
         "@type": "Place",
         "name": "Devero Hotel",
@@ -175,16 +197,6 @@
       "organizer": {
         "@id": "https://milanosensualcongress.com/#organization"
       },
-      "performer": [
-        { "@type": "Person", "name": "Gero y Migle", "sameAs": "https://www.instagram.com/geroymigle_official/" },
-        { "@type": "Person", "name": "Klau y Ros", "sameAs": "https://www.instagram.com/klausyros/" },
-        { "@type": "Person", "name": "Cristian y Gabriella", "sameAs": "https://www.instagram.com/cristianygabriella_official/" },
-        { "@type": "Person", "name": "David y Ines", "sameAs": "https://www.instagram.com/davidyines/" },
-        { "@type": "Person", "name": "Nacho y Silvia", "sameAs": "https://www.instagram.com/nachoysilvia/" },
-        { "@type": "Person", "name": "Agustín y Alba", "sameAs": "https://www.instagram.com/agustinyalba_official/" },
-        { "@type": "Person", "name": "Irene y Tomás", "sameAs": "https://www.instagram.com/ireneytomas/" },
-        { "@type": "Person", "name": "Aitor Gomez", "sameAs": "https://www.instagram.com/aitorgomez_bachata/" }
-      ],
       "subEvent": [
         {
           "@type": "DanceEvent",
@@ -193,7 +205,30 @@
           "endDate": "2026-11-21T05:00:00+01:00",
           "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
           "eventStatus": "https://schema.org/EventScheduled",
-          "location": { "@type": "Place", "name": "Devero Hotel", "address": { "@type": "PostalAddress", "streetAddress": "Largo Kennedy, 1", "addressLocality": "Cavenago di Brianza", "postalCode": "20873", "addressRegion": "MB", "addressCountry": "IT" } }
+          "location": {
+            "@type": "Place",
+            "name": "Devero Hotel",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Largo Kennedy, 1",
+              "addressLocality": "Cavenago di Brianza",
+              "postalCode": "20873",
+              "addressRegion": "MB",
+              "addressCountry": "IT"
+            }
+          },
+          "@id": "https://milanosensualcongress.com/parties#friday-night-social",
+          "superEvent": {
+            "@id": "https://milanosensualcongress.com/#event"
+          },
+          "organizer": {
+            "@id": "https://milanosensualcongress.com/#organization"
+          },
+          "description": "Friday Night Bachata Social at Devero Hotel during Milano Sensual Congress 2026. Included in the Full Pass.",
+          "image": "https://milanosensualcongress.com/images/backgrounds/bachata-party-crowd-celebration.webp",
+          "offers": {
+            "@id": "https://milanosensualcongress.com/tickets#full-pass"
+          }
         },
         {
           "@type": "DanceEvent",
@@ -202,7 +237,30 @@
           "endDate": "2026-11-21T20:00:00+01:00",
           "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
           "eventStatus": "https://schema.org/EventScheduled",
-          "location": { "@type": "Place", "name": "Devero Hotel", "address": { "@type": "PostalAddress", "streetAddress": "Largo Kennedy, 1", "addressLocality": "Cavenago di Brianza", "postalCode": "20873", "addressRegion": "MB", "addressCountry": "IT" } }
+          "location": {
+            "@type": "Place",
+            "name": "Devero Hotel",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Largo Kennedy, 1",
+              "addressLocality": "Cavenago di Brianza",
+              "postalCode": "20873",
+              "addressRegion": "MB",
+              "addressCountry": "IT"
+            }
+          },
+          "@id": "https://milanosensualcongress.com/parties#saturday-afternoon-social",
+          "superEvent": {
+            "@id": "https://milanosensualcongress.com/#event"
+          },
+          "organizer": {
+            "@id": "https://milanosensualcongress.com/#organization"
+          },
+          "description": "Saturday Afternoon Bachata Social at Devero Hotel during Milano Sensual Congress 2026. Included in the Full Pass.",
+          "image": "https://milanosensualcongress.com/images/backgrounds/bachata-party-crowd-celebration.webp",
+          "offers": {
+            "@id": "https://milanosensualcongress.com/tickets#full-pass"
+          }
         },
         {
           "@type": "DanceEvent",
@@ -211,7 +269,30 @@
           "endDate": "2026-11-22T05:00:00+01:00",
           "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
           "eventStatus": "https://schema.org/EventScheduled",
-          "location": { "@type": "Place", "name": "Devero Hotel", "address": { "@type": "PostalAddress", "streetAddress": "Largo Kennedy, 1", "addressLocality": "Cavenago di Brianza", "postalCode": "20873", "addressRegion": "MB", "addressCountry": "IT" } }
+          "location": {
+            "@type": "Place",
+            "name": "Devero Hotel",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Largo Kennedy, 1",
+              "addressLocality": "Cavenago di Brianza",
+              "postalCode": "20873",
+              "addressRegion": "MB",
+              "addressCountry": "IT"
+            }
+          },
+          "@id": "https://milanosensualcongress.com/parties#saturday-night-social",
+          "superEvent": {
+            "@id": "https://milanosensualcongress.com/#event"
+          },
+          "organizer": {
+            "@id": "https://milanosensualcongress.com/#organization"
+          },
+          "description": "Saturday Night Bachata Social at Devero Hotel during Milano Sensual Congress 2026. Included in the Full Pass.",
+          "image": "https://milanosensualcongress.com/images/backgrounds/bachata-party-crowd-celebration.webp",
+          "offers": {
+            "@id": "https://milanosensualcongress.com/tickets#full-pass"
+          }
         },
         {
           "@type": "DanceEvent",
@@ -220,39 +301,55 @@
           "endDate": "2026-11-22T22:00:00+01:00",
           "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
           "eventStatus": "https://schema.org/EventScheduled",
-          "location": { "@type": "Place", "name": "Devero Hotel", "address": { "@type": "PostalAddress", "streetAddress": "Largo Kennedy, 1", "addressLocality": "Cavenago di Brianza", "postalCode": "20873", "addressRegion": "MB", "addressCountry": "IT" } }
+          "location": {
+            "@type": "Place",
+            "name": "Devero Hotel",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Largo Kennedy, 1",
+              "addressLocality": "Cavenago di Brianza",
+              "postalCode": "20873",
+              "addressRegion": "MB",
+              "addressCountry": "IT"
+            }
+          },
+          "@id": "https://milanosensualcongress.com/parties#sunday-afternoon-social",
+          "superEvent": {
+            "@id": "https://milanosensualcongress.com/#event"
+          },
+          "organizer": {
+            "@id": "https://milanosensualcongress.com/#organization"
+          },
+          "description": "Sunday Afternoon Bachata Social at Devero Hotel during Milano Sensual Congress 2026. Included in the Full Pass.",
+          "image": "https://milanosensualcongress.com/images/backgrounds/bachata-party-crowd-celebration.webp",
+          "offers": {
+            "@id": "https://milanosensualcongress.com/tickets#full-pass"
+          }
         }
       ],
       "offers": {
         "@type": "Offer",
+        "name": "Current Full Pass",
         "url": "https://lasalsadelbaile.com/MSC2026",
+        "price": "130.00",
         "priceCurrency": "EUR",
         "availability": "https://schema.org/InStock",
-        "priceSpecification": [
-          {
-            "@type": "UnitPriceSpecification",
-            "name": "Current Full Pass",
-            "price": "130.00",
-            "priceCurrency": "EUR",
-            "validThrough": "2026-09-15T23:59:59+02:00"
-          }
-        ],
-        "price": "130.00"
-      }
+        "validThrough": "2026-09-15T23:59:59+02:00",
+        "@id": "https://milanosensualcongress.com/tickets#full-pass",
+        "validFrom": "2026-08-01T00:00:00+02:00"
+      },
+      "url": "https://milanosensualcongress.com/"
     },
     {
       "@type": "FAQPage",
       "@id": "https://milanosensualcongress.com/parties#faq",
-      "mainEntityOfPage": {
-        "@id": "https://milanosensualcongress.com/parties#webpage"
-      },
       "mainEntity": [
         {
           "@type": "Question",
           "name": "What time are the bachata parties at Milano Sensual Congress 2026?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "The official social dance times are: Friday social dance 23:00-05:00, Saturday afternoon social 16:00-20:00, Saturday social dance 23:00-05:00, and Sunday afternoon social 16:00-22:00."
+            "text": "The official social dance times are: Friday social dance 23:00–05:00, Saturday afternoon social 16:00–20:00, Saturday social dance 23:00–05:00, and Sunday afternoon social 16:00–22:00."
           }
         },
         {
@@ -279,11 +376,15 @@
             "text": "All parties and socials take place at Devero Hotel in Cavenago di Brianza, the official congress venue. Workshops, parties and accommodation are under one roof, so you can dance until sunrise and sleep on site."
           }
         }
-      ]
+      ],
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://milanosensualcongress.com/parties#webpage"
+      }
     }
   ]
 }
-  </script>
+</script>
   <script type="speculationrules">
   {
     "prefetch": [{

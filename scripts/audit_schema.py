@@ -6,6 +6,8 @@ from datetime import date
 from urllib.parse import urlsplit
 from bs4 import BeautifulSoup
 from site_files import site_pages
+from iso_dates import iso_datetime
+from schema_contract import check_graph
 
 ROOT_DIR = "."
 SITE = "https://milanosensualcongress.com"
@@ -16,7 +18,7 @@ DATE_ONLY_RE = re.compile(r'^\d{4}-\d{2}-\d{2}$')
 
 # Timed fields normally carry offsets. CourseInstance start/end may instead use
 # a truthful calendar date when no precise lesson time has been established.
-STRICT_DATE_FIELDS = ('datePublished', 'startDate', 'endDate', 'validThrough')
+STRICT_DATE_FIELDS = ('datePublished', 'startDate', 'endDate', 'validThrough', 'validFrom', 'availabilityStarts')
 
 
 def node_types(node):
@@ -87,6 +89,8 @@ def check_id_integrity(rel, defined, referenced, sitewide_defined, issues, warni
                 issues.append(f"[{rel}] @id {ref} referenced but defined nowhere on the site")
         elif not target_file_exists(split.path):
             issues.append(f"[{rel}] @id {ref} points at a missing page ({split.path})")
+        elif split.fragment and ref not in sitewide_defined:
+            issues.append(f"[{rel}] @id {ref} points at an undefined entity on an existing page")
 
 
 def check_dates(rel, data, issues, warnings):
@@ -97,8 +101,17 @@ def check_dates(rel, data, issues, warnings):
             if not isinstance(value, str):
                 continue
             if FULL_ISO_RE.match(value):
+                try:
+                    iso_datetime(value)
+                except ValueError:
+                    issues.append(f'[{rel}] malformed {field}: "{value}"')
                 continue
             if DATE_ONLY_RE.match(value):
+                try:
+                    date.fromisoformat(value)
+                except ValueError:
+                    issues.append(f'[{rel}] malformed {field}: "{value}"')
+                    continue
                 # A DanceEvent keeps its precise-time contract even if a node
                 # also declares CourseInstance. Other warning policies remain.
                 if field != 'datePublished' and 'DanceEvent' in types:
@@ -106,10 +119,7 @@ def check_dates(rel, data, issues, warnings):
                         f"[{rel}] {field} on DanceEvent is date-only: \"{value}\" "
                         f"(needs timezone offset)")
                 elif field in ('startDate', 'endDate') and 'CourseInstance' in types:
-                    try:
-                        date.fromisoformat(value)
-                    except ValueError:
-                        issues.append(f"[{rel}] malformed {field}: \"{value}\"")
+                    pass
                 else:
                     warnings.append(
                         f"[{rel}] date-only {field} \"{value}\" on "
@@ -119,6 +129,24 @@ def check_dates(rel, data, issues, warnings):
         dm = node.get('dateModified')
         if isinstance(dm, str) and not (FULL_ISO_RE.match(dm) or DATE_ONLY_RE.match(dm)):
             issues.append(f"[{rel}] malformed dateModified: \"{dm}\"")
+        elif isinstance(dm, str):
+            try:
+                iso_datetime(dm, allow_date_only=True)
+            except ValueError:
+                issues.append(f'[{rel}] malformed dateModified: "{dm}"')
+        for start_field, end_field in [('startDate', 'endDate'), ('datePublished', 'dateModified'),
+                                      ('validFrom', 'validThrough')]:
+            start, end = node.get(start_field), node.get(end_field)
+            if not isinstance(start, str) or not isinstance(end, str):
+                continue
+            # Do not infer an hour for a date-only value when precision differs.
+            if bool(DATE_ONLY_RE.match(start)) != bool(DATE_ONLY_RE.match(end)):
+                continue
+            try:
+                if iso_datetime(end, allow_date_only=True) < iso_datetime(start, allow_date_only=True):
+                    issues.append(f'[{rel}] {end_field} precedes {start_field}')
+            except ValueError:
+                pass  # The individual field check supplies the diagnostic.
 
 
 def check_forbidden_types(rel, data, issues):
@@ -153,7 +181,9 @@ def audit_schema():
         for script in soup.find_all('script', attrs={'type': re.compile(r'^application/ld\+json$', re.I)}):
             json_str = script.string or script.get_text()
             try:
-                blocks.append(json.loads(json_str))
+                data = json.loads(json_str)
+                blocks.append(data)
+                issues.extend(check_graph(os.path.relpath(filepath, ROOT_DIR), soup, data))
             except json.JSONDecodeError as e:
                 issues.append(f"[{os.path.relpath(filepath, ROOT_DIR)}] Invalid JSON-LD Schema: {e}")
         if blocks:
@@ -188,8 +218,8 @@ def audit_schema():
             print(i)
         return 1
     else:
-        print("✅ JSON-LD Schemas are valid JSON and pass deep checks "
-              "(@id integrity, date formats, forbidden types).")
+        print(f"✅ {len(parsed)} page graphs pass JSON, entity relationships, "
+              "breadcrumbs, content parity, offers and date checks.")
         return 0
 
 if __name__ == "__main__":

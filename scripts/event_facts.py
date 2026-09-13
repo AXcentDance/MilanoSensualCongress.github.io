@@ -80,7 +80,7 @@ def core_event(event, source):
 
 def core_organization(entity):
     """Compare present identifying facts; minimal references can omit details."""
-    result = {key: entity[key] for key in ('name', 'logo', 'foundingDate') if key in entity}
+    result = {key: entity[key] for key in ('name', 'logo', 'foundingDate', 'telephone', 'email') if key in entity}
     if isinstance(entity.get('url'), str):
         result['url'] = entity['url'].rstrip('/')
     address = entity.get('address', {})
@@ -96,7 +96,8 @@ def core_organization(entity):
             values = [{k: v[k] for k in ('@id', 'name', 'sameAs') if k in v}
                       if isinstance(v, dict) else v for v in values]
         elif key == 'contactPoint':
-            values = [{k: v[k] for k in ('telephone', 'url', 'email') if k in v}
+            values = [{k: (sorted(v[k]) if isinstance(v[k], list) else v[k])
+                       for k in ('telephone', 'url', 'email', 'contactType', 'availableLanguage') if k in v}
                       if isinstance(v, dict) else v for v in values]
         result[key] = sorted(json.dumps(value, sort_keys=True, ensure_ascii=False) for value in values)
     return result
