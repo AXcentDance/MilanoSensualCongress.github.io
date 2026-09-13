@@ -14,8 +14,6 @@ Plan your Milano Sensual weekend with a guide to Milan festival dates, venues, w
 
 [Read the Milan Festival Guide](https://milanosensualcongress.com/news/bachata-festivals-milan-2026-2027)
 
-Photo: Marco Nuernberger, CC BY 2.0
-
 Updated September 5, 2026
 
 ### A Bachata Congress for Everyone
@@ -40,8 +38,6 @@ A modern field guide to partner rotation, workshops, social dancing, safety and 
 
 [Read the Solo Guide](https://milanosensualcongress.com/news/bachata-congress-alone-solo-dancer-guide)
 
-Photo: Marco Nuernberger, CC BY 2.0
-
 June 13, 2026
 
 ### Bachata in Italy 2026: Why Milan Is Becoming a Must-Visit Dance Destination
@@ -49,8 +45,6 @@ June 13, 2026
 A fresh look at why Milan is becoming a strong Bachata destination: international access, Devero Hotel, workshops, parties, social dancing and a full congress weekend built for dancers.
 
 [Read Article](https://milanosensualcongress.com/news/bachata-italy-2026-milan-dance-destination)
-
-Photo: Marco Nuernberger, CC BY 2.0
 
 June 4, 2026
 

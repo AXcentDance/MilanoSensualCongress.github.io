@@ -14,8 +14,6 @@ Organizza il tuo weekend Milano Sensual con una guida a date, location, livelli 
 
 [Leggi la Guida ai Festival di Milano](https://milanosensualcongress.com/it/news/festival-bachata-milano-2026-2027)
 
-Foto: Marco Nuernberger, CC BY 2.0
-
 Aggiornato il 5 settembre 2026
 
 ### Un Congresso Bachata per Tutti
@@ -40,8 +38,6 @@ Una guida moderna a rotazione partner, workshop, social, sicurezza e nuove conos
 
 [Leggi la Guida](https://milanosensualcongress.com/it/news/congresso-bachata-da-soli-guida-ballerini)
 
-Foto: Marco Nuernberger, CC BY 2.0
-
 13 Giugno 2026
 
 ### Bachata in Italia 2026: Perché Milano Sta Diventando una Meta Imperdibile per Ballare
@@ -49,8 +45,6 @@ Foto: Marco Nuernberger, CC BY 2.0
 Un nuovo sguardo su Milano come meta Bachata: accessibilità internazionale, Devero Hotel, workshop, party, social dancing e un weekend congressuale pensato per ballerini.
 
 [Leggi l'Articolo](https://milanosensualcongress.com/it/news/bachata-italia-2026-milano-meta-ballo)
-
-Foto: Marco Nuernberger, CC BY 2.0
 
 4 Giugno 2026
 
