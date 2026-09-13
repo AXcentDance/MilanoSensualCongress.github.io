@@ -24,6 +24,14 @@ only for missing information that affects a decision. Read the
    [sync-indexes](../sync-indexes/SKILL.md), then follow delivery completion,
    including the required browser checks and repeat performance measurements.
 
+For a saved static report, run `python3 scripts/generate_report.py`; the default
+creates a new dated report under `.quality/reports/`. Use `--output PATH` for a
+specific destination. Existing reports are preserved unless `--overwrite` is
+explicitly supplied; historical `System/` reports remain evidence.
+It uses the maintained master checker, preserves diagnostics, and exits nonzero
+on failed verification or report writing. It does not replace browser, Lighthouse
+or regression-test coverage and does not calculate a made-up aggregate SEO score.
+
 Report coverage and versions, before/after measurements, defects fixed,
 pre-existing issues, limitations, and remaining decisions. Distinguish lab
 scores from real-user Core Web Vitals and search performance. Do not fabricate

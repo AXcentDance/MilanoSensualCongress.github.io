@@ -5,6 +5,7 @@
   "scripts": {
     "serve": "node scripts/site-server.mjs",
     "check": "python3 scripts/run_all_checks.py && python3 -m unittest discover -s tests -p 'test_*.py' && node --test tests/*.test.cjs",
+    "sync:indexes": "python3 scripts/sync_indexes.py",
     "build:css": "tailwindcss -c tailwind.config.js -o css/tailwind.min.css --minify",
     "test:browser": "playwright test",
     "audit:lighthouse": "node scripts/lighthouse.mjs"

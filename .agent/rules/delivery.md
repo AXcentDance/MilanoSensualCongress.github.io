@@ -37,8 +37,23 @@ follow [performance](performance.md#render-and-load). Editorial dates follow
 
 ## Verification and completion
 
+Private `.agent/context/` notes and `output/` drafts stay ignored and outside
+the Git index. The master gate verifies these exclusions. Before a requested
+commit, review new files explicitly and run
+`python3 scripts/check_release_files.py --staged` after staging the intended
+files; this catches omitted new helpers as well as accidentally included private
+paths. The command only reads Git and never stages, commits or publishes.
+Its staged mode also rejects tracked changes omitted from the selection,
+including unstaged exclusion rules; ignored Finder metadata is left alone.
+
 Choose checks for the complete change set. Before a release, consider all files
 being released, not only the latest task.
+
+While editing, run the checker or regression tests that cover the affected
+behavior. Use the focused browser/performance commands in the
+[performance rule](performance.md#focused-iteration) when investigating a rendered
+change. This shortens feedback during work; it does not replace the final gates
+or reduce their page, language, browser or score coverage.
 
 An internal-instructions or memory-only change set may contain only:
 
@@ -62,9 +77,12 @@ below. Explicitly requested checks still apply.
 For all other change sets, after the necessary generators, run locally:
 
 ```bash
-python3 scripts/run_all_checks.py
-node --test tests/*.test.cjs
+npm run check
 ```
+
+This is the maintained entry point for the static site gate, Python generator
+and checker regression tests, and protected Node form/analytics tests. Its
+implementation belongs to `package.json`; do not maintain a second command list.
 
 For rendered site changes, also run the local browser and Lighthouse checks in
 [performance](performance.md#measured-acceptance). Keep this as the shared final

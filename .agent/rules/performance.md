@@ -48,6 +48,24 @@ requests an audit of them. Functional browser checks still cover all public HTML
 Preserve their correct noindex behavior. Scores cannot guarantee every browser, network,
 future dependency version, real-user Core Web Vitals, or complete accessibility.
 
+## Focused iteration
+
+During an edit, use `npm run test:browser -- --list` to find the actual test names
+and projects, then select the affected cases with `--grep` and, when useful,
+`--project`. Include the translated page and affected interaction states.
+For a performance investigation, select explicit pages:
+
+```bash
+npm run audit:lighthouse -- --pages=hotel.html,it/hotel.html --output=.quality/lighthouse-focused
+```
+
+Keep the measured-acceptance settings, thresholds and repeat policy. Shared CSS,
+scripts, fonts, navigation or generator changes can affect every page; include
+representative affected layouts during iteration and retain the full final
+coverage above for rendered changes. A focused pass is evidence for those cases,
+not a site-wide result. Do not rerun an unchanged passing final gate just because
+another instruction links to it.
+
 ## Render and load
 
 - Keep main content in HTML and readable with JavaScript disabled. Keep the
@@ -61,7 +79,11 @@ future dependency version, real-user Core Web Vitals, or complete accessibility.
   and preload it when measurement shows it is critical. Check actual image
   encoding: a JPEG renamed to .webp has not been converted or optimized.
 - Preload only font faces used above the fold, including italic when needed.
-  Keep self-hosted WOFF2, `font-display: swap`, and metric-adjusted fallbacks.
+  Keep self-hosted WOFF2, `font-display: swap` for text fonts, and metric-adjusted
+  text fallbacks. The small Font Awesome icon subset deliberately uses
+  `font-display: block` to avoid rendering private-use codepoints as wrong glyphs
+  while loading. Keep accessible names independent of icon fonts and verify
+  this behavior in browser/Lighthouse checks after font changes.
 - Keep `css/fonts.css`, compiled Tailwind **3.4.17**, and the Font Awesome subset.
   No runtime Tailwind CDN or external font/icon CDN. Existing approved form and
   analytics integrations are separate from this static-asset rule.
@@ -70,7 +92,9 @@ future dependency version, real-user Core Web Vitals, or complete accessibility.
   otherwise retain the version. Then regenerate critical CSS. Reusing an
   already compiled utility does not require invalidating every page's cache.
 - After a new Font Awesome icon, run `python3 scripts/build_fontawesome_subset.py`
-  (fonttools + brotli), bump its asset version, and regenerate critical CSS.
+  (fonttools + brotli), update its stylesheet version and changed font preloads,
+  and regenerate critical CSS. Generated font filenames include their content
+  hash; retain older font files while cached pages may still reference them.
 - After HTML class changes or any source stylesheet changes, run
   `python3 scripts/inline_critical_css.py`. Generated `data-critical` and
   `data-inline` blocks are not edited by hand. Register a standalone page's
@@ -79,6 +103,16 @@ future dependency version, real-user Core Web Vitals, or complete accessibility.
   `generate_responsive_images.py` and `apply_responsive_images.py`; never upscale
   a smaller source merely to make every variant. Measure `sizes` at 375, 768,
   and 1440px before changing the generator's values.
+  The generator owns source/recipe/output hashes in `.quality/responsive-images.json`;
+  a missing cache rebuilds verified derivatives. Run generation before applying
+  HTML variants. After shrinking a source, the generator refuses to remove a
+  derivative that HTML or CSS still uses and lists its references. First run the
+  applier to prune standard sets; review any remaining custom crop/picture/CSS
+  references explicitly, then rerun generation and application. Custom choices
+  must not be silently overwritten. Missing tools, unreadable images or failed conversions stop the
+  build and preserve prior outputs; resolve the error instead of accepting a
+  partial build. Image builds require ffmpeg/ffprobe and WebP tools; do not restore
+  retired bulk image mutators.
 - Keep full-length originals out of Git. Use compressed, capped-bitrate video
   with a WebP poster (the existing hero is 720p, about 1.5 Mbps). Decorative
   video may use `preload="none"` and delayed source attachment; user-requested

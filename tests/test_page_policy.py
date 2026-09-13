@@ -24,6 +24,7 @@ import sync_social_meta
 from build_site import build_site
 from check_page_contract import audit_page
 from check_orphans import unreachable_pages
+from congress_test_fixtures import facts
 
 
 class PagePolicyTests(unittest.TestCase):
@@ -120,7 +121,8 @@ class PagePolicyTests(unittest.TestCase):
         (self.root / 'notes.md').write_text('Handwritten note')
         (self.root / 'output/draft.md').write_text(markdown.MARKER + '\nUnrelated draft')
         with redirect_stdout(io.StringIO()), patch.object(sys, 'argv', ['generate_md_twins.py']), \
-             patch.object(sitemap, 'get_lastmod', return_value='2026-09-12T12:00:00+02:00'):
+             patch.object(sitemap, 'get_lastmod', return_value='2026-09-12T12:00:00+02:00'), \
+             patch.object(llms, 'load_current_facts', return_value=facts()):
             sitemap.generate_sitemap()
             llms.main()
             self.assertEqual(markdown.main(), 0)
@@ -164,7 +166,9 @@ class PagePolicyTests(unittest.TestCase):
 
     @patch.dict(policy.NONINDEXED_PAGES, {'news/confirmation.html': 'Test-only utility'})
     def test_feed_selection_excludes_approved_utility_even_when_it_has_article_metadata(self):
-        dated = '<script type="application/ld+json">{"datePublished":"2026-09-12"}</script>'
+        dated = ('<meta name="description" content="Congress article">'
+                 '<script type="application/ld+json">'
+                 '{"@type":"BlogPosting","datePublished":"2026-09-12"}</script>')
         self.page('news/guide.html', dated)
         self.page('news/confirmation.html', dated + '<meta name="robots" content="noindex">')
         self.page('news/.hidden.html', dated)

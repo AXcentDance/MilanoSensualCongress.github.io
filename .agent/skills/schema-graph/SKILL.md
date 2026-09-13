@@ -25,7 +25,15 @@ FAQ markup must match real questions and answers that visitors can access.
 
 ## Current facts, not frozen templates
 
-- Read `index.html` and `it/index.html` for current organization/event facts.
+- `index.html` owns shared organization/event identity, dates, venue and ticket
+  destination. `it/index.html` supplies translated copy. The visible
+  `#congress-facts` paragraph on each homepage owns that language's statistics;
+  the LLM summary reads these sources through `scripts/event_facts.py`.
+  `scripts/check_event_facts.py` checks copied global event/organization facts
+  and bilingual statistics quantities. Keep translations and subevents distinct.
+  Timed facts accept valid `Z` or numeric offsets and compare the actual instant;
+  the LLM summary renders event calendar dates in Europe/Rome. Preserve the
+  original schema spelling and editorial timestamps.
 - Read `scripts/update_price.py` for the canonical current Full Pass price and
   deadline. Use its `--check` gate. A price update must also reconcile visible
   tickets/copy/countdowns; the script does not update every visible price.
@@ -38,6 +46,26 @@ FAQ markup must match real questions and answers that visitors can access.
   [article metadata rule](../../rules/article-metadata-only.md).
 - Do not copy stale example prices, year-specific offers, or unverified facts
   into new pages. Do not add unsupported ratings or irrelevant schema types.
+
+## Review visible copy when facts change
+
+After changing event dates, venue, statistics, ticket destination, or the Full
+Pass price/deadline, run this read-only review aid before final synchronization:
+
+```bash
+python3 scripts/check_event_facts.py --review-copy --base HEAD
+```
+
+For already committed edits, replace `HEAD` with the commit before those facts
+changed. The report compares the homepage sources and canonical price constants,
+then lists candidate public passages with file/line locations. Review their
+translated counterparts and any schedule images/countdowns; reconcile current
+sales copy and dates with the new source. Preserve clearly historical article
+prices/dates, independent offers and other hotels/events when their context is
+still accurate. Record the reviewed pages and intentional exceptions in the task
+result. The report does not rewrite prose or certify factual accuracy; its
+candidate matching is a search aid. If Git/source comparison fails, resolve it
+or perform the same explicit review against the verified prior facts.
 
 Use one canonical URL, reciprocal `en`/`it`/`x-default`, language-correct titles,
 descriptions and `inLanguage`. Apply equivalent graph changes to both languages.

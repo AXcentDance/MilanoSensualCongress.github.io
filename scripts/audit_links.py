@@ -2,7 +2,7 @@ import os
 from site_files import site_pages
 import sys
 from html.parser import HTMLParser
-from urllib.parse import urlparse
+from urllib.parse import unquote, urlparse
 
 ROOT_DIR = "."
 
@@ -14,7 +14,9 @@ class LinkAuditor(HTMLParser):
         self.broken_links = []
 
     def handle_starttag(self, tag, attrs):
-        if tag == 'a':
+        # Include head links and other href-bearing elements, preserving the
+        # useful coverage of the retired report-only link audit.
+        if any(name == 'href' for name, _value in attrs):
             attrs_dict = dict(attrs)
             href = attrs_dict.get('href')
             
@@ -26,7 +28,7 @@ class LinkAuditor(HTMLParser):
                 return
                 
             # Handle in-page anchors with path e.g. "index.html#contact"
-            href_clean = urlparse(href).path
+            href_clean = unquote(urlparse(href).path)
             if not href_clean: # Was just "#" or "#something"
                 return
             
@@ -65,17 +67,17 @@ class LinkAuditor(HTMLParser):
                     'resolved_to': os.path.relpath(target_path, self.root_dir)
                 })
 
-def audit_relative_links():
-    print(f"Starting Relative Link Audit in {os.path.abspath(ROOT_DIR)}...\n")
+def audit_relative_links(root_dir=ROOT_DIR):
+    print(f"Starting Relative Link Audit in {os.path.abspath(root_dir)}...\n")
     
     all_broken = []
     
-    for page in site_pages(ROOT_DIR):
-        source_path = os.path.join(ROOT_DIR, page)
+    for page in site_pages(root_dir):
+        source_path = os.path.join(root_dir, page)
         try:
             with open(source_path, 'r', encoding='utf-8') as f:
                 content = f.read()
-            auditor = LinkAuditor(source_path, ROOT_DIR)
+            auditor = LinkAuditor(source_path, root_dir)
             auditor.feed(content)
             for issue in auditor.broken_links:
                 all_broken.append({
@@ -84,7 +86,8 @@ def audit_relative_links():
                     'missing': issue['resolved_to']
                 })
         except Exception as e:
-            print(f"Error parsing {source_path}: {e}")
+            all_broken.append({'source': page, 'link': '(page could not be checked)',
+                               'missing': str(e)})
 
     # Report
     if all_broken:
@@ -94,10 +97,10 @@ def audit_relative_links():
             print(f"  LINK:   {issue['link']}")
             print(f"  MISSING: {issue['missing']}")
             print("-" * 40)
-        sys.exit(1)
+        return 1
     else:
         print("SUCCESS: No broken relative links found!")
-        sys.exit(0)
+        return 0
 
 if __name__ == "__main__":
-    audit_relative_links()
+    sys.exit(audit_relative_links())

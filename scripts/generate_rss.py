@@ -7,12 +7,11 @@ article's JSON-LD datePublished. Deterministic: lastBuildDate is the newest item
 date, never "now", so regeneration without content changes is a no-op.
 """
 import os
-import re
-import json
 import html as html_mod
-from datetime import datetime, timezone
 from email.utils import format_datetime
-from generation_support import GenerationError, run_generator
+import xml.etree.ElementTree as ET
+from article_metadata import article_entity, publication_datetime
+from generation_support import GenerationError, read_page, run_generator, verify_outputs, write_outputs
 from site_files import indexable_pages, page_url_path
 
 ROOT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -41,39 +40,24 @@ FEEDS = [
 
 
 def parse_article(path):
-    with open(path, 'r', encoding='utf-8') as f:
-        content = f.read()
-    title_m = re.search(r'<title>(.*?)</title>', content, re.S)
-    desc_m = re.search(r'<meta name="description"\s+content=["\'](.*?)["\']', content, re.S)
-    date = None
-    for block in re.findall(r'<script type="application/ld\+json">(.*?)</script>', content, re.S):
-        try:
-            data = json.loads(block)
-        except ValueError:
-            continue
-        for node in data.get('@graph', [data]):
-            d = node.get('datePublished')
-            if d:
-                date = d
-                break
-        if date:
-            break
-    if not date:
+    soup = read_page(path)
+    article = article_entity(soup, path)
+    if article is None:
         return None
-    # Accept date-only or full ISO datetimes.
-    try:
-        if 'T' in date:
-            dt = datetime.fromisoformat(date)
-        else:
-            dt = datetime.fromisoformat(date + 'T08:00:00+01:00')
-    except ValueError:
-        return None
-    if dt.tzinfo is None:
-        dt = dt.replace(tzinfo=timezone.utc)
+    title = soup.head.find('title') if soup.head else None
+    title = title.get_text(' ', strip=True) if title else ''
+    descriptions = [str(meta.get('content', '')).strip()
+                    for meta in soup.head.find_all('meta')
+                    if str(meta.get('name', '')).strip().lower() == 'description']
+    if not title:
+        raise GenerationError(f'{path}: article page title is missing or empty')
+    if len(descriptions) != 1 or not descriptions[0]:
+        raise GenerationError(f'{path}: article requires one nonempty meta description')
+    dt = publication_datetime(article.get('datePublished'), path)
     rel = os.path.relpath(path, ROOT_DIR).replace(os.sep, '/')
     return {
-        'title': html_mod.unescape(title_m.group(1).strip()) if title_m else os.path.basename(path),
-        'description': html_mod.unescape(desc_m.group(1).strip()) if desc_m else '',
+        'title': title,
+        'description': descriptions[0],
         'link': BASE_URL + page_url_path(rel),
         'dt': dt,
     }
@@ -116,23 +100,35 @@ def build_feed(cfg, pages=None):
         out.append('    </item>')
     out.append('  </channel>')
     out.append('</rss>')
-    return '\n'.join(out) + '\n'
+    xml = '\n'.join(out) + '\n'
+    try:
+        ET.fromstring(xml)
+    except ET.ParseError as error:
+        raise GenerationError(f"{cfg['out']}: generated RSS XML is invalid: {error}") from error
+    return xml
 
 
-def main():
+def render_outputs():
     pages = indexable_pages(ROOT_DIR)
     outputs = {}
     for cfg in FEEDS:
         feed = build_feed(cfg, pages)
         if feed is None:
             raise GenerationError(f"No indexable dated articles for {cfg['out']}; refusing to leave a stale feed")
-        outputs[cfg['out']] = feed
+        outputs[os.path.join(ROOT_DIR, cfg['out'])] = feed
+    return outputs
+
+
+def main(check=False):
+    outputs = render_outputs()
+    (verify_outputs if check else write_outputs)(outputs)
     for name, feed in outputs.items():
-        out_path = os.path.join(ROOT_DIR, name)
-        with open(out_path, 'w', encoding='utf-8') as f:
-            f.write(feed)
-        print(f"Wrote {name} ({feed.count('<item>')} items)")
+        print(f"{'Verified' if check else 'Wrote'} {name} ({feed.count('<item>')} items)")
 
 
 if __name__ == '__main__':
-    raise SystemExit(run_generator(main))
+    import argparse
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--check', action='store_true', help='verify freshness without writing')
+    args = parser.parse_args()
+    raise SystemExit(run_generator(lambda: main(check=args.check)))

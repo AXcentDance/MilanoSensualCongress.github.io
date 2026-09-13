@@ -5,3 +5,6 @@ playwright-report/
 __pycache__/
 *.pyc
 .DS_Store
+# Private saved account context and local drafts are never publication inputs.
+.agent/context/
+output/

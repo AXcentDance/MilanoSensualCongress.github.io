@@ -1,32 +1,23 @@
 import os
+from pathlib import Path
 from site_files import classified_pages, page_url_path
-import datetime
-import subprocess
 import xml.etree.ElementTree as ET
 from xml.sax.saxutils import escape, quoteattr
-from generation_support import GenerationError, read_page, run_generator, write_outputs
+from generation_support import GenerationError, read_page, run_generator, verify_outputs, write_outputs
     
 ROOT_DIR = "."
 DOMAIN = 'https://milanosensualcongress.com'
+_freshness = None
 
 def get_lastmod(filepath):
-    """Truthful lastmod: newest git commit touching the file (ISO 8601 with
-    timezone). Files with uncommitted changes are stamped now. Never hand-edit
-    lastmod values — search engines learn to distrust sitemaps that lie.
-    NOTE: Use a clone with full history or dates collapse."""
-    try:
-        dirty = subprocess.run(
-            ['git', 'status', '--porcelain', '--', filepath],
-            capture_output=True, text=True).stdout.strip()
-        if not dirty:
-            out = subprocess.run(
-                ['git', 'log', '-1', '--format=%cI', '--', filepath],
-                capture_output=True, text=True).stdout.strip()
-            if out:
-                return out
-    except Exception:
-        pass
-    return datetime.datetime.now().astimezone().replace(microsecond=0).isoformat()
+    """Reuse the recorded substantive revision, independently of commit order."""
+    global _freshness
+    if _freshness is None:
+        # Lazy import/initialization keeps shared parsing failures actionable and
+        # allows extraction-only callers to operate without a revision record.
+        from content_freshness import PageRevisions
+        _freshness = PageRevisions(ROOT_DIR)
+    return _freshness.lastmod(filepath)
 
 def get_url_path(filepath):
     """Converts filesystem path to URL path."""
@@ -126,7 +117,12 @@ def get_hreflang_links(filepath, soup=None):
         raise GenerationError(f'Cannot extract sitemap language links from {filepath}: {error}') from error
     return links
 
-def generate_sitemap():
+def render_outputs(check=False):
+    global _freshness
+    _freshness = None
+    if check:
+        from content_freshness import PageRevisions
+        _freshness = PageRevisions(ROOT_DIR, check=True)
     print("Generating sitemap.xml...")
     
     all_files = []
@@ -166,13 +162,14 @@ def generate_sitemap():
     
     for key in sorted_keys:
         variants = page_map[key]
-        for lang, filepath in variants.items():
+        for lang, filepath in sorted(variants.items()):
             url = DOMAIN + get_url_path(filepath)
             lastmod = get_lastmod(filepath)
             
             xml_output += '  <url>\n'
             xml_output += f'    <loc>{escape(url)}</loc>\n'
-            xml_output += f'    <lastmod>{lastmod}</lastmod>\n'
+            if lastmod:
+                xml_output += f'    <lastmod>{escape(lastmod)}</lastmod>\n'
             
             # Prefer the page's explicit hreflang declarations. This preserves
             # language pairing when translated pages use localized slugs.
@@ -211,9 +208,24 @@ def generate_sitemap():
         ET.fromstring(xml_output)
     except ET.ParseError as error:
         raise GenerationError(f'{output_path}: generated XML is invalid: {error}') from error
-    write_outputs({output_path: xml_output})
+    outputs = {output_path: xml_output}
+    if _freshness is not None:
+        outputs.update(_freshness.output())
     
-    print(f"Sitemap generated at {output_path} with {len(all_files)} URLs.")
+    return outputs
+
+
+def generate_sitemap(check=False):
+    outputs = render_outputs(check=check)
+    if not check:
+        for path in outputs:
+            Path(path).parent.mkdir(parents=True, exist_ok=True)
+    (verify_outputs if check else write_outputs)(outputs)
+    print('Sitemap freshness verified.' if check else 'Sitemap and content revisions generated successfully.')
 
 if __name__ == "__main__":
-    raise SystemExit(run_generator(generate_sitemap))
+    import argparse
+    parser = argparse.ArgumentParser(description='Generate the complete public sitemap and recorded content revisions.')
+    parser.add_argument('--check', action='store_true', help='verify freshness without writing or changing revision dates')
+    args = parser.parse_args()
+    raise SystemExit(run_generator(lambda: generate_sitemap(check=args.check)))

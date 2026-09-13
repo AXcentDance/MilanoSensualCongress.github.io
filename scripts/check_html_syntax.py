@@ -79,6 +79,7 @@ def check_structure(root_dir=ROOT_DIR):
     
     if not found_errors:
         print("✅ No syntax errors found in HTML files.")
+    return 1 if found_errors else 0
 
 if __name__ == "__main__":
-    check_structure()
+    sys.exit(check_structure())

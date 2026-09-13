@@ -2,7 +2,9 @@ import os
 import re
 import json
 import sys
+from datetime import date
 from urllib.parse import urlsplit
+from bs4 import BeautifulSoup
 from site_files import site_pages
 
 ROOT_DIR = "."
@@ -12,7 +14,8 @@ SITE = "https://milanosensualcongress.com"
 FULL_ISO_RE = re.compile(r'^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}(:\d{2})?(\.\d+)?([+-]\d{2}:\d{2}|Z)$')
 DATE_ONLY_RE = re.compile(r'^\d{4}-\d{2}-\d{2}$')
 
-# Fields that must be full ISO-8601 with offset (dateModified may be date-only).
+# Timed fields normally carry offsets. CourseInstance start/end may instead use
+# a truthful calendar date when no precise lesson time has been established.
 STRICT_DATE_FIELDS = ('datePublished', 'startDate', 'endDate', 'validThrough')
 
 
@@ -96,13 +99,17 @@ def check_dates(rel, data, issues, warnings):
             if FULL_ISO_RE.match(value):
                 continue
             if DATE_ONLY_RE.match(value):
-                # Date-only: the site's own DanceEvent must carry offsets;
-                # datePublished and secondary nodes (CourseInstance, listed
-                # third-party events) are warn-only.
+                # A DanceEvent keeps its precise-time contract even if a node
+                # also declares CourseInstance. Other warning policies remain.
                 if field != 'datePublished' and 'DanceEvent' in types:
                     issues.append(
                         f"[{rel}] {field} on DanceEvent is date-only: \"{value}\" "
                         f"(needs timezone offset)")
+                elif field in ('startDate', 'endDate') and 'CourseInstance' in types:
+                    try:
+                        date.fromisoformat(value)
+                    except ValueError:
+                        issues.append(f"[{rel}] malformed {field}: \"{value}\"")
                 else:
                     warnings.append(
                         f"[{rel}] date-only {field} \"{value}\" on "
@@ -141,10 +148,10 @@ def audit_schema():
     for filepath in html_files():
         with open(filepath, 'r', encoding='utf-8') as f:
             content = f.read()
-        matches = re.findall(r'<script type="application/ld\+json">(.*?)</script>',
-                             content, re.DOTALL)
         blocks = []
-        for json_str in matches:
+        soup = BeautifulSoup(content, 'html.parser')
+        for script in soup.find_all('script', attrs={'type': re.compile(r'^application/ld\+json$', re.I)}):
+            json_str = script.string or script.get_text()
             try:
                 blocks.append(json.loads(json_str))
             except json.JSONDecodeError as e:
@@ -179,10 +186,11 @@ def audit_schema():
         print(f"⚠️ Found {len(issues)} Schema issues:")
         for i in issues:
             print(i)
-        sys.exit(1)
+        return 1
     else:
         print("✅ JSON-LD Schemas are valid JSON and pass deep checks "
               "(@id integrity, date formats, forbidden types).")
+        return 0
 
 if __name__ == "__main__":
-    audit_schema()
+    sys.exit(audit_schema())

@@ -1,0 +1,22 @@
+{
+  "images/og/devero-hotel-exterior-dusk.jpg": {
+    "output_sha256": "d91847dfb6d37300326e7162d166a31a2c52067fd6c3f968307d672d7f0287ae",
+    "recipe": {
+      "jpeg_quality": 4,
+      "max_height_for_wide_cards": 630,
+      "max_width": 1200
+    },
+    "source": "images/hotel/devero-hotel-exterior-dusk.webp",
+    "source_sha256": "f1a554ea2fe08be16c9a6d2b12bda45cff67258514c0f3f1451fb6653344e8a7"
+  },
+  "images/og/gero-migle-bachata-esencia.jpg": {
+    "output_sha256": "5950a6bbfa16bc2ebfcc1848a97a1ab9e3b456c4c8296d316a0f0dcf763933cd",
+    "recipe": {
+      "jpeg_quality": 4,
+      "max_height_for_wide_cards": 630,
+      "max_width": 1200
+    },
+    "source": "images/artists/gero-migle-bachata-esencia.webp",
+    "source_sha256": "e85602ed7f7afaa22adb97ab00e0b1a7d3bfd1ab57d56f4cb406f8e64bd9fc78"
+  }
+}

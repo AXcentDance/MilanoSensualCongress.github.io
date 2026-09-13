@@ -10,15 +10,17 @@ Also fixes width/height to the intrinsic dimensions of the referenced file
 
 Run from the repo root: python3 scripts/apply_responsive_images.py
 """
-import glob
 import os
 import re
-import subprocess
-from urllib.parse import urlsplit
+from html import unescape
+from html.parser import HTMLParser
+from urllib.parse import parse_qsl, unquote, urlsplit
 from site_files import site_pages
 from pathlib import Path
+from generation_support import BeautifulSoup, GenerationError, run_generator, write_outputs
+from generate_responsive_images import VARIANTS, run_tool
 
-VARIANT_WIDTHS = [480, 800, 1200]
+VARIANT_WIDTHS = VARIANTS
 
 # (page glob, src substring, sizes) — first match wins.
 # Measured: 375px / 768px / 1440px viewports, real rendered widths.
@@ -59,11 +61,14 @@ _dims_cache = {}
 
 def dims(path):
     if path not in _dims_cache:
-        out = subprocess.check_output(
-            ['ffprobe', '-v', 'error', '-show_entries', 'stream=width,height',
-             '-of', 'csv=p=0', path], stderr=subprocess.DEVNULL)
-        w, h = out.decode().strip().splitlines()[0].split(',')
-        _dims_cache[path] = (int(w), int(h))
+        try:
+            out = run_tool(['ffprobe', '-v', 'error', '-show_entries', 'stream=width,height', '-of', 'csv=p=0', path])
+            dimensions = tuple(map(int, out.splitlines()[0].split(',')))
+            if len(dimensions) != 2 or min(dimensions) <= 0:
+                raise ValueError('width and height must be positive')
+            _dims_cache[path] = dimensions
+        except Exception as error:
+            raise GenerationError(f'Cannot measure {path}: {error}') from error
     return _dims_cache[path]
 
 
@@ -74,13 +79,22 @@ def variants_for(fs_path):
     for w in VARIANT_WIDTHS:
         v = f'{base}_{w}w{ext}'
         if os.path.exists(v):
+            # Old larger derivatives can remain on disk until references have
+            # been safely pruned; they must not re-enter a smaller source's set.
+            if w >= dims(fs_path)[0]:
+                continue
+            if dims(v)[0] != w:
+                raise GenerationError(f'{v}: invalid responsive width; run generate_responsive_images.py before applying variants')
             out.append((w, v))
     return out
 
 
 def sizes_for(page, src, tag):
-    is_hero = 'fetchpriority="high"' in tag or all(m in tag for m in EAGER_MARKERS) or (
-        'w-full' in tag and 'h-full' in tag and 'absolute' in tag)
+    if isinstance(tag, str):
+        tag = BeautifulSoup(tag, 'html.parser').find('img')
+    classes = set(tag.get('class', []))
+    is_hero = tag.get('fetchpriority') == 'high' or set(EAGER_MARKERS) <= classes or (
+        {'w-full', 'h-full', 'absolute'} <= classes)
     for page_glob, needle, sizes in CONTEXT_RULES:
         if page != page_glob:
             continue
@@ -93,66 +107,138 @@ def sizes_for(page, src, tag):
     return None, is_hero
 
 
-def process_page(page):
+def generated_candidate(value, source):
+    """Recognize this source's ladder without confusing URL queries with paths."""
+    parts = value.strip().rsplit(None, 1)
+    if len(parts) != 2 or not re.fullmatch(r'\d+w', parts[1]):
+        return False
+    candidate = urlsplit(re.sub(r'^https://milanosensualcongress\.com/', '/', parts[0]))
+    if candidate.scheme or candidate.netloc:
+        return False
+    widths = '|'.join(map(str, VARIANT_WIDTHS))
+    pattern = re.escape(os.path.splitext(source.path)[0]) + rf'(?:_(?:{widths})w)?\.webp'
+    cache_only = lambda query: all(key == 'v' for key, _ in parse_qsl(unescape(query), keep_blank_values=True))
+    same_query = candidate.query == source.query or (cache_only(candidate.query) and cache_only(source.query))
+    return bool(re.fullmatch(pattern, candidate.path) and same_query
+                and (not candidate.fragment or candidate.fragment == source.fragment))
+
+
+def process_page(page, *, write=True):
+    page = str(page)
     html = orig = Path(page).read_text(encoding='utf-8')
 
-    def rewrite(m):
-        tag = m.group(0)
-        src_m = re.search(r'src="([^"]+)"', tag)
-        if not src_m:
-            return tag
-        src = src_m.group(1)
+    def rewrite(raw, attributes, ancestors):
+        if len({name for name, _ in attributes}) != len(attributes):
+            raise GenerationError(f'{page}: duplicate image attributes must be resolved before rewriting')
+        tag = BeautifulSoup(raw, 'html.parser').find('img')
+        original_attributes = dict(tag.attrs)
+        src = tag.get('src')
+        if not src:
+            return raw
         # Normalize absolute production URLs to local relative paths
         local_src = re.sub(r'https://milanosensualcongress\.com/', '/', src)
         parsed = urlsplit(local_src)
         if parsed.scheme or parsed.netloc:
-            return tag
-        fs_path = (parsed.path.lstrip('/') if parsed.path.startswith('/') else
-                   os.path.normpath(os.path.join(os.path.dirname(page), parsed.path)))
+            return raw
+        path = unquote(parsed.path)
+        fs_path = (path.lstrip('/') if path.startswith('/') else
+                   os.path.normpath(os.path.join(os.path.dirname(page), path)))
         if not fs_path.endswith('.webp') or not os.path.exists(fs_path):
-            return tag
+            return raw
         if src != local_src:
-            tag = tag.replace(f'src="{src}"', f'src="{local_src}"')
+            tag['src'] = local_src
             src = local_src
 
         w, h = dims(fs_path)
         # Fix intrinsic dimensions (wrong ratio = layout shift)
-        tag = re.sub(r'\swidth="\d+"', '', tag)
-        tag = re.sub(r'\sheight="\d+"', '', tag)
-        tag = tag.replace('<img', f'<img width="{w}" height="{h}"', 1)
+        tag['width'], tag['height'] = str(w), str(h)
 
         rungs = variants_for(fs_path)
         sizes, is_hero = sizes_for(page, src, tag)
-        if rungs and sizes and 'srcset=' not in tag:
+        is_brand_logo = 'logo-nav' in Path(path).name.lower() or any(
+            name == 'a' and 'brand' in str(dict(attrs).get('class', '')).split()
+            for name, attrs in ancestors)
+        existing = tag.get('srcset')
+        generated = existing is not None and all(
+            generated_candidate(value, parsed)
+            for value in existing.split(','))
+        sizes = tag.get('sizes') or sizes
+        if generated:
+            del tag['srcset']
+        if rungs and sizes and (existing is None or generated):
             srcset = ', '.join(
-                [f'{os.path.splitext(src)[0]}_{rw}w.webp {rw}w' for rw, _ in rungs]
+                [f'{parsed._replace(path=f"{os.path.splitext(parsed.path)[0]}_{rw}w.webp").geturl()} {rw}w' for rw, _ in rungs]
                 + [f'{src} {w}w'])
-            tag = tag.replace(f'src="{src}"', f'src="{src}" srcset="{srcset}" sizes="{sizes}"', 1)
+            tag['srcset'], tag['sizes'] = srcset, sizes
 
-        # Loading policy: heroes eager+high priority, everything else lazy
-        if is_hero:
-            tag = re.sub(r'\sloading="\w+"', '', tag)
-            tag = tag.replace('<img', '<img loading="eager"', 1)
-            if 'fetchpriority=' not in tag:
-                tag = tag.replace('<img', '<img fetchpriority="high"', 1)
-        elif 'loading=' not in tag:
-            tag = tag.replace('<img', '<img loading="lazy"', 1)
-        if 'decoding=' not in tag:
-            tag = tag.replace('<img', '<img decoding="async"', 1)
-        return tag
+        # A small brand logo is visible immediately but is not the LCP image.
+        # Keep authored loading on other images: dimensions or a responsive
+        # ladder do not tell us whether an unclassified image is below the fold.
+        if is_brand_logo:
+            tag['loading'] = 'eager'
+            if tag.get('fetchpriority') == 'high':
+                del tag['fetchpriority']
+        elif is_hero:
+            tag['loading'] = 'eager'
+            if 'fetchpriority' not in tag.attrs:
+                tag['fetchpriority'] = 'high'
+        if 'decoding' not in tag.attrs:
+            tag['decoding'] = 'async'
+        rewritten = raw if tag.attrs == original_attributes else str(tag)
+        # HTML img is void, not XML. A '/>' serialization can make the project's
+        # downstream HTML parser attach following text to an img in real pages.
+        return re.sub(r'/\s*>$', '>', rewritten)
 
-    html = re.sub(r'<img[^>]*>', rewrite, html)
+    # HTMLParser finds actual image elements without interpreting examples in
+    # comments or script strings as markup. Only changed image tags are serialized.
+    offsets = [0]
+    for line in html.splitlines(keepends=True):
+        offsets.append(offsets[-1] + len(line))
+    replacements = []
+
+    class ImageParser(HTMLParser):
+        def __init__(self):
+            super().__init__()
+            self.ancestors = []
+
+        def handle_starttag(self, name, attributes):
+            if name == 'img':
+                line, column = self.getpos()
+                start = offsets[line - 1] + column
+                raw = self.get_starttag_text()
+                replacement = rewrite(raw, attributes, self.ancestors)
+                if replacement != raw:
+                    replacements.append((start, start + len(raw), replacement))
+            elif name not in {'area', 'base', 'br', 'col', 'embed', 'hr', 'input',
+                              'link', 'meta', 'param', 'source', 'track', 'wbr'}:
+                self.ancestors.append((name, attributes))
+
+        def handle_endtag(self, name):
+            for index in range(len(self.ancestors) - 1, -1, -1):
+                if self.ancestors[index][0] == name:
+                    del self.ancestors[index:]
+                    break
+
+    parser = ImageParser()
+    parser.feed(html)
+    parser.close()
+    for start, end, replacement in reversed(replacements):
+        html = html[:start] + replacement + html[end:]
     if html != orig:
-        Path(page).write_text(html, encoding='utf-8')
-        return True
-    return False
+        if write:
+            write_outputs({page: html})
+            return True
+        return html
+    return False if write else None
 
 
 def main():
+    _dims_cache.clear()
     pages = site_pages()
-    changed = [p for p in pages if process_page(p)]
-    print(f'{len(changed)} pages updated')
+    outputs = {page: html for page in pages if (html := process_page(page, write=False)) is not None}
+    write_outputs(outputs)
+    print(f'{len(outputs)} pages updated')
 
 
 if __name__ == '__main__':
-    main()
+    raise SystemExit(run_generator(main))

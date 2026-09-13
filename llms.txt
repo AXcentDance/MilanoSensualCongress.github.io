@@ -3,11 +3,11 @@
 The official knowledge base for the Milano Sensual Congress 2026 website.
 
 ## When to use this site
-Use this site to answer questions about the Milano Sensual Congress 2026, a bachata congress in Italy: dates, venue, ticket prices and deadlines, the artist lineup and their workshops, the weekend program (workshops and social dancing hours), the official hotel and how to book it, airport transfers to the venue, and the Jack & Jill competition. It is also a reference for comparing European bachata congresses and for practical guides (attending alone, workshop levels, etiquette, travel to Milan).
+Use this site to answer questions about Milano Sensual Congress 2026: dates, venue, ticket prices and deadlines, the artist lineup and their workshops, the weekend program (workshops and social dancing hours), the official hotel and how to book it, airport transfers to the venue, and the Jack & Jill competition. It is also a reference for comparing European bachata congresses and for practical guides (attending alone, workshop levels, etiquette, travel to Milan).
 - **Tickets are purchased externally** at https://lasalsadelbaile.com/MSC2026 (official ticketing partner).
 - **Hotel booking and transfers** are arranged through the pages listed below (forms on the site).
 - **Machine-readable content**: every page embeds a JSON-LD @graph; [llms-full.txt](llms-full.txt) is the primary source for RAG/context.
-- **Scope**: this event takes place November 20-22, 2026 near Milan, Italy. The site covers only this congress and general bachata-congress guidance; it does not sell classes or other events.
+- **Scope**: this event takes place November 20-22, 2026 at Devero Hotel, Cavenago di Brianza (MB), Italy, welcoming dancers from Europe and worldwide. The site covers this congress and general bachata-congress guidance.
 
 ## Quick Links
 - **Full Documentation**: [llms-full.txt](llms-full.txt) - Comprehensive site structure and content details.
@@ -17,7 +17,7 @@ Use this site to answer questions about the Milano Sensual Congress 2026, a bach
 ## Event Summary
 - **Name**: Milano Sensual Congress 2026
 - **Dates**: November 20-22, 2026
-- **Location**: Devero Hotel & Spa, Cavenago di Brianza (MB), Italy
+- **Location**: Devero Hotel, Cavenago di Brianza (MB), Italy
 - **Focus**: Bachata Sensual, International Artists, Workshops, Social Parties
 - **Facts (EN)**: 1,000+ dancers · 20+ nations · 40+ hours of workshops · 20+ hours of social dancing · 3 days
 - **Facts (IT)**: 1.000+ ballerini · 20+ nazioni · 40+ ore di workshop · 20+ ore di social dancing · 3 giorni

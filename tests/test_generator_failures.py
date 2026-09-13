@@ -17,6 +17,7 @@ import generate_llms_text as llms
 import generate_sitemap as sitemap
 import generation_support as support
 import site_files
+from congress_test_fixtures import facts
 
 
 class GeneratorFailureTests(unittest.TestCase):
@@ -40,6 +41,9 @@ class GeneratorFailureTests(unittest.TestCase):
             replacement = patch.object(module, name, value)
             replacement.start()
             self.addCleanup(replacement.stop)
+        fact_source = patch.object(llms, 'load_current_facts', return_value=facts())
+        fact_source.start()
+        self.addCleanup(fact_source.stop)
         dates = patch.object(sitemap, 'get_lastmod', return_value='2026-09-12T12:00:00+02:00')
         dates.start()
         self.addCleanup(dates.stop)
@@ -71,7 +75,8 @@ class GeneratorFailureTests(unittest.TestCase):
     def copy_cli_scripts(self):
         directory = self.root / 'scripts'
         directory.mkdir(exist_ok=True)
-        for name in ['generate_llms_text.py', 'generate_sitemap.py', 'generation_support.py', 'site_files.py']:
+        for name in ['generate_llms_text.py', 'generate_sitemap.py', 'generation_support.py',
+                     'site_files.py', 'event_facts.py', 'iso_dates.py', 'content_freshness.py']:
             shutil.copy2(SCRIPTS / name, directory / name)
         shutil.copy2(SCRIPTS.parent / 'requirements-dev.txt', self.root / 'requirements-dev.txt')
         return directory

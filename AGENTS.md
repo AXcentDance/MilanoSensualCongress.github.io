@@ -60,9 +60,6 @@ archive preserves dated evidence; read it only when the task needs that history.
 | Page/content/metadata additions, removals, changes | `.agent/skills/sync-indexes/SKILL.md` |
 | Keyword research | `.agent/skills/find-keywords/SKILL.md` |
 
-`ui-ux-designer` and `site_metadata_sync` are compatibility aliases to the
-canonical design and index skills. Do not maintain separate rules in them.
-
 ## Completion
 
 Follow [verification and completion](.agent/rules/delivery.md#verification-and-completion)

@@ -5,6 +5,11 @@ trigger: always_on
 For every new generated or added website image:
 
 - Use descriptive, lowercase, hyphen-separated filenames before adding the asset to the site.
+- A different photograph or materially changed visual gets a new descriptive
+  source filename and updated references. Retain a filename for compression or
+  size optimization of the same image. This keeps cached visitors, image identity
+  and recorded sitemap revisions consistent without treating recompression as
+  new editorial content.
 - Generated responsive derivatives retain the existing `_480w`, `_800w`, and `_1200w` suffix convention; apply the naming rule to the source basename.
 - Include the main page intent when relevant, for example `bachata-congress-2026-milan-workshops.webp`, `bachata-social-dancing-milan-2026.webp`, or `devero-hotel-bachata-congress-2026.webp`.
 - Prefer `.webp` for photographic, generated, and preview images unless a different format is technically required.

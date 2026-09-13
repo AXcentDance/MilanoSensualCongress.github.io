@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Master site gate: runs every checker and fails (exit 1) on any violation.
 
-Runs the single-purpose checkers and checks their exit codes and success markers.
+Runs the single-purpose checkers and checks their exit codes.
 Page requirements belong to check_page_contract.py; image alt/source requirements
 belong to check_image_seo.py. This orchestrator adds cross-page title/description
 uniqueness and sitemap validity/coverage checks.
@@ -17,20 +17,27 @@ from site_files import page_is_indexable, page_url_path, site_pages
 
 FAILURES = []
 
-# ---- absorbed checkers: (command args, success marker in stdout) ----
+# Single-purpose checkers return 0 for success, nonzero for failure. The label is
+# for readers; changing human-readable checker output cannot change the result.
 CHECKERS = [
-    (['scripts/check_page_contract.py'], 'page contracts passed'),
-    (['scripts/check_image_seo.py'], 'image attributes passed'),
-    (['scripts/check_html_syntax.py'], 'No syntax errors'),
-    (['scripts/audit_links.py'], 'No broken relative links'),
-    (['scripts/audit_schema.py'], 'valid JSON'),
-    (['scripts/audit_hreflang.py'], 'perfectly reciprocal'),
-    (['scripts/audit_og.py'], 'consistent and valid'),
-    (['scripts/audit_headings.py'], 'Heading structure audit passed!'),
-    (['scripts/check_orphans.py'], 'no orphan pages'),
-    (['scripts/update_price.py', '--check'], 'price facts consistent'),
-    (['scripts/generate_md_twins.py', '--check'], 'md twins up to date'),
-    (['scripts/inline_critical_css.py', '--check'], 'critical css fresh'),
+    (['scripts/check_release_files.py'], 'Publication file protections'),
+    (['scripts/check_page_contract.py'], 'Page contracts'),
+    (['scripts/check_image_seo.py'], 'Image semantics and sources'),
+    (['scripts/check_html_syntax.py'], 'HTML syntax'),
+    (['scripts/audit_links.py'], 'Internal links'),
+    (['scripts/audit_assets.py'], 'Local resource integrity'),
+    (['scripts/audit_schema.py'], 'Structured data'),
+    (['scripts/check_event_facts.py'], 'Shared congress facts'),
+    (['scripts/audit_hreflang.py'], 'Language relationships'),
+    (['scripts/audit_og.py'], 'Social metadata'),
+    (['scripts/audit_headings.py'], 'Heading structure'),
+    (['scripts/check_orphans.py'], 'Page reachability'),
+    (['scripts/update_price.py', '--check'], 'Price facts'),
+    (['scripts/generate_md_twins.py', '--check'], 'Markdown freshness'),
+    (['scripts/generate_rss.py', '--check'], 'RSS freshness'),
+    (['scripts/generate_llms_text.py', '--check'], 'LLM export freshness'),
+    (['scripts/generate_sitemap.py', '--check'], 'Sitemap freshness'),
+    (['scripts/inline_critical_css.py', '--check'], 'Critical CSS freshness'),
 ]
 
 
@@ -39,12 +46,17 @@ def pages():
 
 
 def run_absorbed_checkers():
-    for args, marker in CHECKERS:
-        proc = subprocess.run([sys.executable] + args, capture_output=True, text=True)
-        if proc.returncode != 0 or marker not in proc.stdout:
+    for args, label in CHECKERS:
+        try:
+            proc = subprocess.run([sys.executable] + args, capture_output=True, text=True)
+        except OSError as error:
+            FAILURES.append(f'{" ".join(args)}: could not run: {error}')
+            continue
+        if proc.returncode != 0:
             FAILURES.append(f'{" ".join(args)}: failed (exit {proc.returncode})')
-            print((proc.stdout + proc.stderr)[-6000:])
+            print(proc.stdout + proc.stderr)
         else:
+            print(f'PASS: {label}')
             for line in (proc.stdout + proc.stderr).splitlines():
                 if 'warning' in line.lower() or line.lstrip().startswith('!'):
                     print(line)
@@ -75,7 +87,7 @@ def check_metadata_unique():
 def check_sitemap():
     try:
         tree = ET.parse('sitemap.xml')
-    except ET.ParseError as e:
+    except (ET.ParseError, OSError) as e:
         FAILURES.append(f'sitemap.xml: XML parse error {e}')
         return
     ns = {'sm': 'http://www.sitemaps.org/schemas/sitemap/0.9'}
@@ -102,6 +114,7 @@ def check_sitemap():
 
 
 def main():
+    FAILURES.clear()
     run_absorbed_checkers()
     check_metadata_unique()
     check_sitemap()
@@ -109,9 +122,10 @@ def main():
         print(f'\nFAILED: {len(FAILURES)} violation(s)')
         for f in FAILURES:
             print(' -', f)
-        sys.exit(1)
+        return 1
     print('OK: all site checks passed')
+    return 0
 
 
 if __name__ == '__main__':
-    main()
+    sys.exit(main())

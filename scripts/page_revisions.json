@@ -1,0 +1,285 @@
+{
+  "pages": {
+    "BookHotel.html": {
+      "fingerprint": "957a0fb0d64a350e2dbbdb48196fa9476c9d400f24be471fb1eece305363d15e",
+      "lastmod": "2026-09-06T22:16:11+02:00"
+    },
+    "artists.html": {
+      "fingerprint": "5f76a81461052424b34badc9377bc81b7aef884e5d2a591893e32f380dc9cba1",
+      "lastmod": "2026-09-12T20:21:48+00:00"
+    },
+    "bachata-congress-2026.html": {
+      "fingerprint": "8e9dc63a0f03089c3c3a80fc300709bc291d4fb483dd03e1899fe30e7d1cc787",
+      "lastmod": "2026-09-12T20:21:48+00:00"
+    },
+    "contact.html": {
+      "fingerprint": "c17ca9660063dad9aba99c83cc700f2cefde5dcd05912f099ee63b12d3e64ab0",
+      "lastmod": "2026-09-05T23:22:02+02:00"
+    },
+    "faq.html": {
+      "fingerprint": "722c0805b9d91090209cfd0a4b30b2a579b49f6f47fe633e94512412f9a1e0d4",
+      "lastmod": "2026-09-05T23:22:02+02:00"
+    },
+    "hotel.html": {
+      "fingerprint": "296641b0658304e54173dee13c7ceee71625265faa42515a9d9a116dc1fd843d",
+      "lastmod": "2026-09-12T20:21:48+00:00"
+    },
+    "index.html": {
+      "fingerprint": "67127e2bac19189f7ad3e77971057320d327d0a9ab74fb1c5d53342b76f58428",
+      "lastmod": "2026-09-12T20:21:48+00:00"
+    },
+    "it/BookHotel.html": {
+      "fingerprint": "9e3ab054d90062bfb5d42056e19c104ceba32c9b1af72e05b66a903cf5161808",
+      "lastmod": "2026-09-06T22:16:11+02:00"
+    },
+    "it/artists.html": {
+      "fingerprint": "3675938002405ba3b1cc0a43eb78a3c82802ca5db3a783ba9217b643c6b70d4a",
+      "lastmod": "2026-09-12T20:21:48+00:00"
+    },
+    "it/congresso-bachata-2026.html": {
+      "fingerprint": "72c508c769c7c74d633cf259b2ee8ce5c69b353e786dd7832cfb6319404733ae",
+      "lastmod": "2026-09-12T20:21:48+00:00"
+    },
+    "it/contact.html": {
+      "fingerprint": "a22a69f170df5f4186a564c9fd266fbdbcc2bcf3effa3ef13bcabca7aefe9528",
+      "lastmod": "2026-09-05T23:22:02+02:00"
+    },
+    "it/faq.html": {
+      "fingerprint": "bacbecb9844513f6d888114c74a594262ba2281ba515128d8e09ec7fa8ea4bdf",
+      "lastmod": "2026-09-05T23:22:02+02:00"
+    },
+    "it/hotel.html": {
+      "fingerprint": "ac6f97247ca225ba949aa6ea189415030087f0f056703a4213708b343e12fd6d",
+      "lastmod": "2026-09-12T20:21:48+00:00"
+    },
+    "it/index.html": {
+      "fingerprint": "5205adfeafd57136f670e323ace8197e9f1a01607cb7bd16e38ec479bb5a3a97",
+      "lastmod": "2026-09-12T20:21:48+00:00"
+    },
+    "it/jacknjill.html": {
+      "fingerprint": "b040e919a34f96b897e944c26d2dadfa4e220037f5b2636e2a86ad173ee45bad",
+      "lastmod": "2026-09-12T20:21:48+00:00"
+    },
+    "it/masterclass.html": {
+      "fingerprint": "28560c376f1c94972f5b4718a64fcddf3a7ec3b19f62d7783c02fe7bb99ace19",
+      "lastmod": "2026-09-12T20:21:48+00:00"
+    },
+    "it/news.html": {
+      "fingerprint": "d4fce64e5509fe0e650e509bb9f3bbb5fb80de429750bb307aee27517981bb53",
+      "lastmod": "2026-09-10T23:51:27+02:00"
+    },
+    "it/news/agustinyalba-stelle-nascenti-bachata-sensual.html": {
+      "fingerprint": "52e1931ab4208d5e51f79cd12e974cb0d94ed9ac6002e3cb296219c95ffc210d",
+      "lastmod": "2026-09-12T20:21:48+00:00"
+    },
+    "it/news/aitor-gomez-bachata-sensuale-radici-dominicane.html": {
+      "fingerprint": "fae9aa4812298b485bb42f0e34708625d0db333fcec1100ff908f7f6d158ac1b",
+      "lastmod": "2026-09-12T20:21:48+00:00"
+    },
+    "it/news/aumento-prezzi-full-pass-masterclass-15-giugno-2026.html": {
+      "fingerprint": "64782cf24bcf3f25168bbd662d4f87927ff24e5a6ad0d4b8d0091d3225a76720",
+      "lastmod": "2026-09-12T20:21:48+00:00"
+    },
+    "it/news/bachata-italia-2026-milano-meta-ballo.html": {
+      "fingerprint": "2710ce4581c0a793b14221f7735b0564f96d2da5ab75a1a2288a34b1577fb44b",
+      "lastmod": "2026-09-12T20:21:48+00:00"
+    },
+    "it/news/calendario-festival-bachata-europa-2026-2027.html": {
+      "fingerprint": "890558f0866d492724f8380da42836d00dadd8cad4f002ba8c0dcfd2b6ca42ec",
+      "lastmod": "2026-09-12T20:21:48+00:00"
+    },
+    "it/news/congresso-bachata-da-soli-guida-ballerini.html": {
+      "fingerprint": "59cba9408ee1e78d49cacea0de7f8b41b37f896c693d2e9b840010066c3ca92f",
+      "lastmod": "2026-09-12T20:21:48+00:00"
+    },
+    "it/news/corsi-settimanali-vs-congressi-bachata.html": {
+      "fingerprint": "4bd9d098eedc6937b68c148484fac207c866cddb12eeb600e69f34b054443f8a",
+      "lastmod": "2026-09-12T20:21:48+00:00"
+    },
+    "it/news/cosa-aspettarsi-da-un-congresso-di-bachata-2026.html": {
+      "fingerprint": "58b09e5106c191c964585573625207c0ba92f0af5e7165f375c5c2d193a8c364",
+      "lastmod": "2026-09-12T20:21:48+00:00"
+    },
+    "it/news/cristian-y-gabriella-maestri-bachata-mondiali-2026.html": {
+      "fingerprint": "f2adc4adfc44cd08a897165afd1b39ae83b77c8a79586bd31cd59942a992af16",
+      "lastmod": "2026-09-12T20:21:48+00:00"
+    },
+    "it/news/david-y-ines-maestri-bachata-sensual-2026.html": {
+      "fingerprint": "f4c9635e5f33c144c70f7378cac6abe8bef70157163eb539f1632359a2b98bd8",
+      "lastmod": "2026-09-12T20:21:48+00:00"
+    },
+    "it/news/etichetta-congresso-bachata-social-workshop-party.html": {
+      "fingerprint": "e33eb19bbf5b474ef326d80aa3c74754a8cfe42b1b53fc7b679a2883b25c4748",
+      "lastmod": "2026-09-06T22:16:11+02:00"
+    },
+    "it/news/festival-bachata-milano-2026-2027.html": {
+      "fingerprint": "9a95054d52800952f526e06c103f1babfef685a9341925aea6f3bf7b08e9f71e",
+      "lastmod": "2026-09-12T20:21:48+00:00"
+    },
+    "it/news/gero-y-migle-maestri-bachata-sensual-2026.html": {
+      "fingerprint": "bbefd8982e3a878c8380b33ea1ee869b6ef7394af996c1ea8f63049bb74a4fbb",
+      "lastmod": "2026-09-12T20:21:48+00:00"
+    },
+    "it/news/guida-viaggio-bachata-milano-2026.html": {
+      "fingerprint": "8b53e772965ff72afec5e2e90b93dd0ccfa0613b0a7635f9d317fee02430777a",
+      "lastmod": "2026-09-12T20:21:48+00:00"
+    },
+    "it/news/i-5-migliori-congressi-bachata-europa-2026.html": {
+      "fingerprint": "1f25fa787af2ce14c5a8e1c3cabdf3abdd51564af687bb63dc4de2e3d8b301a0",
+      "lastmod": "2026-09-12T20:21:48+00:00"
+    },
+    "it/news/irene-y-tomas-maestri-bachata-sensual.html": {
+      "fingerprint": "b172cd9990d234451d27b77b4515dddb48552c4a1e50e9350fe324033cf5130a",
+      "lastmod": "2026-09-12T20:21:48+00:00"
+    },
+    "it/news/klau-y-ros-maestri-endless-bachata-2026.html": {
+      "fingerprint": "fba4e477a7b68bdfe1ade777c3d4afd9bee3ca077309bcd74dc8b8e165bda8ed",
+      "lastmod": "2026-09-12T20:21:48+00:00"
+    },
+    "it/news/livelli-workshop-bachata-congresso.html": {
+      "fingerprint": "abb80ba8d40428a031775bf063cccfd3d6a6fd877e12b2ae9dd81764d885996a",
+      "lastmod": "2026-09-12T20:21:48+00:00"
+    },
+    "it/news/migliore-festa-bachata-italia-2026.html": {
+      "fingerprint": "9bd79a96a6cf8aec3dc492749cde02ea316a7c58e7d787f1a1f3808fbbf6d3d6",
+      "lastmod": "2026-09-12T20:21:48+00:00"
+    },
+    "it/news/nacho-y-silvia-bachata-esencia-nuova-generazione.html": {
+      "fingerprint": "08dd954d0bbfc539691d5444abb3fdcfa5849e597c50df7c7f70e58fca6827c0",
+      "lastmod": "2026-09-12T20:21:48+00:00"
+    },
+    "it/party.html": {
+      "fingerprint": "dc9c21327942deab8ea9a501f985058589f85511e41b9efd2397b7f6225cfb6d",
+      "lastmod": "2026-09-12T20:21:48+00:00"
+    },
+    "it/programma.html": {
+      "fingerprint": "b2a26c5ed7ffe602276e135891cc965ae2a500f86b429df59a71981fd26c75f3",
+      "lastmod": "2026-09-05T23:22:02+02:00"
+    },
+    "it/terms.html": {
+      "fingerprint": "050ed322bac4198223b67e3e6828084d42a72641be81b21f928ffb5061d035fa",
+      "lastmod": "2026-09-06T23:36:28+02:00"
+    },
+    "it/tickets.html": {
+      "fingerprint": "e2459a3ceec129d7edc80270f804e07c0c1b1589ee483532e3551a9e57cef74d",
+      "lastmod": "2026-09-12T20:21:48+00:00"
+    },
+    "it/transfer.html": {
+      "fingerprint": "3b207e578c4c25d284320731514ff695f1ff24e8addb0ec0ef64ad031e8c5bed",
+      "lastmod": "2026-09-12T20:21:48+00:00"
+    },
+    "jacknjill.html": {
+      "fingerprint": "d9bac886775bd1f58b0e454065f4cf9d6aeb9e2425814c507bf096cc19d9c627",
+      "lastmod": "2026-09-12T20:21:48+00:00"
+    },
+    "masterclass.html": {
+      "fingerprint": "0621d32a071f9f4a71eca46a76e463e125b4f11f777f974f7881ba563e47b9a9",
+      "lastmod": "2026-09-12T20:21:48+00:00"
+    },
+    "news.html": {
+      "fingerprint": "2d4622aa70087d10db5d0f75a4a26ae19eee75c727106bb81c3997ea2caeda1a",
+      "lastmod": "2026-09-10T23:51:27+02:00"
+    },
+    "news/agustinyalba-bachata-sensual-rising-stars.html": {
+      "fingerprint": "302196096abafb547e55a112f98022f8f0fce8bcb0cd9db428d45d40f66ef52e",
+      "lastmod": "2026-09-12T20:21:48+00:00"
+    },
+    "news/aitor-gomez-bachata-sensual-dominican-roots.html": {
+      "fingerprint": "23c6e58e472455f8de6e82c10e68dcc3e5f9d501ac6928265a87a2b92bb16f13",
+      "lastmod": "2026-09-12T20:21:48+00:00"
+    },
+    "news/bachata-congress-alone-solo-dancer-guide.html": {
+      "fingerprint": "84af8e8b79a763bb616a5378af5a82ddcc5240445b72fcb0bebf58c13177e4d2",
+      "lastmod": "2026-09-12T20:21:48+00:00"
+    },
+    "news/bachata-congress-etiquette-social-dancing-workshops-parties.html": {
+      "fingerprint": "64e2a2421118ccac0a7f03beb565ca9c9995049f82dad519fd50fb2067bd1219",
+      "lastmod": "2026-09-05T23:22:02+02:00"
+    },
+    "news/bachata-festivals-europe-2026-2027-calendar.html": {
+      "fingerprint": "ecdf1a4094465332384304e137e07312451b70eeff7e1b93e31be605cf707f76",
+      "lastmod": "2026-09-12T20:21:48+00:00"
+    },
+    "news/bachata-festivals-milan-2026-2027.html": {
+      "fingerprint": "29a902f6fc6ca17efb7534dffb6c4241885f1651dadf98717db6667e082c8c00",
+      "lastmod": "2026-09-12T20:21:48+00:00"
+    },
+    "news/bachata-italy-2026-milan-dance-destination.html": {
+      "fingerprint": "edba9e8b8e5b80c779ddc23c0ca6ffece9a8697de02b76d3f004a5f4176b8746",
+      "lastmod": "2026-09-12T20:21:48+00:00"
+    },
+    "news/bachata-workshop-levels-guide-congress.html": {
+      "fingerprint": "91dfb41514d1364bf662a93cc45fefad960acaa906af351602c33275d0c0345c",
+      "lastmod": "2026-09-12T20:21:48+00:00"
+    },
+    "news/best-bachata-party-italy-2026.html": {
+      "fingerprint": "95b2c28d5990cb37ab85b4d841502ed9551a3124378310adeb3e431c2be90cdb",
+      "lastmod": "2026-09-12T20:21:48+00:00"
+    },
+    "news/cristian-y-gabriella-bachata-world-masters-2026.html": {
+      "fingerprint": "c9a2e6e527ad189488a4d97cf74dfce3ca5f10e910b1d4792dfea03f3641d5cb",
+      "lastmod": "2026-09-12T20:21:48+00:00"
+    },
+    "news/david-y-ines-bachata-sensual-masters-2026.html": {
+      "fingerprint": "088b0636eae6f55f7b3b7fadf17a77b115861a78f98954ee71a14ec953feda4e",
+      "lastmod": "2026-09-12T20:21:48+00:00"
+    },
+    "news/full-pass-masterclass-price-increase-june-15-2026.html": {
+      "fingerprint": "99219e8bee0d1f8442f32cee28f6d42fb3ebd170f0f8736b87765be3b37a5e5f",
+      "lastmod": "2026-09-12T20:21:48+00:00"
+    },
+    "news/gero-y-migle-bachata-masters-2026.html": {
+      "fingerprint": "2b3ab65403cacd36a863f0569d1d8ef2cff609209bd68dd31a232b29a48e8ee3",
+      "lastmod": "2026-09-12T20:21:48+00:00"
+    },
+    "news/irene-y-tomas-bachata-sensual-masters.html": {
+      "fingerprint": "ae9254df4494909a00f2f720b988eb4f4f9d1710b124ac79518253535f25f09f",
+      "lastmod": "2026-09-12T20:21:48+00:00"
+    },
+    "news/klau-y-ros-endless-bachata-masters-2026.html": {
+      "fingerprint": "e6e0bff5afdb445635414c2c6e7718c867a9005c644d6074a40716a754632e08",
+      "lastmod": "2026-09-12T20:21:48+00:00"
+    },
+    "news/milan-bachata-travel-guide-2026.html": {
+      "fingerprint": "cbcc7c205b61a35a5442d6099bf30d8d765442f390139b316904295a570e964a",
+      "lastmod": "2026-09-12T20:21:48+00:00"
+    },
+    "news/nacho-y-silvia-bachata-esencia-new-generation.html": {
+      "fingerprint": "9246073e2aae4f1d1bfd917ddf721ac3d84eeb3e96186d8dd1c70b9c3af9662c",
+      "lastmod": "2026-09-12T20:21:48+00:00"
+    },
+    "news/top-5-bachata-congresses-europe-2026.html": {
+      "fingerprint": "901437895b55010db45ead07696de8f9e422b7a09304b840996b8ef33559a69f",
+      "lastmod": "2026-09-12T20:21:48+00:00"
+    },
+    "news/weekly-classes-vs-bachata-congresses.html": {
+      "fingerprint": "ac5a96121877134d1ccac62f6e76632806f5d620d90137b4a8aa00d531389227",
+      "lastmod": "2026-09-12T20:21:48+00:00"
+    },
+    "news/what-to-expect-bachata-congress-2026.html": {
+      "fingerprint": "9fa670597a875ba186b4a9a0c69feacc75f049def50f7bfc81945e68c9d3f4b8",
+      "lastmod": "2026-09-12T20:21:48+00:00"
+    },
+    "parties.html": {
+      "fingerprint": "3bca1de0718fc34f8617640c3e5e8c1ada6e89c5df39a4712d3ca35ef4c7b93f",
+      "lastmod": "2026-09-12T20:21:48+00:00"
+    },
+    "program.html": {
+      "fingerprint": "036a6e174ccc7d4ebb0ca02ea96a60afd54e9c0fc55576d195f4dda76d259451",
+      "lastmod": "2026-09-05T23:22:02+02:00"
+    },
+    "terms.html": {
+      "fingerprint": "1cdd77349df8280f90f5d43103df5187fa20bc062d28c9a89ba88130491398da",
+      "lastmod": "2026-09-06T23:36:28+02:00"
+    },
+    "tickets.html": {
+      "fingerprint": "ba5c031b2a62464f2b21d2688b6a3cd1d51424c7565466796a76d3efd46c7fa8",
+      "lastmod": "2026-09-12T20:21:48+00:00"
+    },
+    "transfer.html": {
+      "fingerprint": "33293b2dbcd2729b03ca82200ecb8f7d82614f13879632eb5fd6b5d29052a9b6",
+      "lastmod": "2026-09-12T20:21:48+00:00"
+    }
+  },
+  "version": 1
+}
