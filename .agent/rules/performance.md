@@ -7,8 +7,27 @@ trigger: always_on
 ## Measured acceptance
 
 Target at least 95/100 in each Lighthouse category: Performance, Accessibility,
-Best Practices, and SEO, on every indexable English and Italian page. Run the
-pinned tooling with `npm ci` (Node 22.19+), then:
+Best Practices, and SEO, on every indexable English and Italian page. For a
+completed change set, run browser and Lighthouse checks on **affected pages**:
+the changed pages plus every page or view whose rendering or behavior depends
+on the changed assets, scripts, styles, navigation, or generated output. Include
+translated counterparts and affected interaction states. Determine this scope
+from references, dependencies and the actual output diff, not HTML filenames
+alone. Keep all three device profiles; functional browser checks use all three
+browser engines for affected behavior.
+
+A homepage-only video change needs the English and Italian homepages; it does
+not require auditing unrelated articles or hotel views. A font, stylesheet or
+loader used throughout the site needs site-wide coverage. Inspect uncertain
+dependencies first; use full coverage if their impact cannot be safely bounded.
+Do not rerun unchanged, passing page checks without a relevant dependency change
+or an explicit request for a fresh audit. A scoped pass covers only its stated
+pages and views; do not present it as a new site-wide measurement.
+
+Use the selectors in [focused iteration](#focused-iteration) for both iteration
+and final checks of a bounded change. For a site-wide change or an explicitly
+requested full-site audit, run the full commands below. Use the pinned tooling
+(`npm ci` in a fresh environment, Node 22.19+):
 
 ```bash
 npm run audit:lighthouse
@@ -36,35 +55,39 @@ third parties, or detect Lighthouse to manufacture a passing score.
 The runner does these repetitions automatically for initial performance below
 97 or another failed category. `--runs 3` forces three runs for a specified
 comparison. `--resume` requires unchanged sources and configuration.
-Audit switchable primary-content views through their direct URLs as well;
-include the second hotel view above in local verification. These commands
-discover pages automatically when run; execution and publication follow
+Audit affected switchable primary-content views through their direct URLs as
+well; include the second hotel view when hotel behavior or a shared dependency
+affecting it changes, and in full-site audits. These commands discover pages
+automatically when run; execution and publication follow
 [delivery](delivery.md#verification-and-completion).
 
 Lighthouse acceptance and score tables cover indexable pages only. Skip
 utility/error pages approved by the shared
 [`site_files.py` policy](../../scripts/site_files.py), unless the user specifically
-requests an audit of them. Functional browser checks still cover all public HTML.
+requests an audit of them. Affected utility/error pages still receive functional
+browser checks; full browser runs cover all public HTML.
 Preserve their correct noindex behavior. Scores cannot guarantee every browser, network,
 future dependency version, real-user Core Web Vitals, or complete accessibility.
 
 ## Focused iteration
 
-During an edit, use `npm run test:browser -- --list` to find the actual test names
-and projects, then select the affected cases with `--grep` and, when useful,
-`--project`. Include the translated page and affected interaction states.
+Use `npm run test:browser -- --list` to find the actual test names and projects,
+then select the affected cases with `--grep` and, during diagnosis when useful,
+`--project`. Include the translated page and affected interaction states. Final
+coverage includes all three browser engines and device widths for those cases;
+a single diagnostic project does not replace them.
 For a performance investigation, select explicit pages:
 
 ```bash
 npm run audit:lighthouse -- --pages=hotel.html,it/hotel.html --output=.quality/lighthouse-focused
 ```
 
-Keep the measured-acceptance settings, thresholds and repeat policy. Shared CSS,
-scripts, fonts, navigation or generator changes can affect every page; include
-representative affected layouts during iteration and retain the full final
-coverage above for rendered changes. A focused pass is evidence for those cases,
-not a site-wide result. Do not rerun an unchanged passing final gate just because
-another instruction links to it.
+Keep the measured-acceptance settings, thresholds and repeat policy. During
+iteration, representative affected layouts can shorten feedback. Final checks
+cover every affected page/view identified above, not merely a sample. Generator
+changes require checking their affected outputs; an output used throughout the
+site expands coverage accordingly. Another instruction linking here does not
+require a duplicate passing run.
 
 ## Render and load
 
@@ -114,7 +137,10 @@ another instruction links to it.
   partial build. Image builds require ffmpeg/ffprobe and WebP tools; do not restore
   retired bulk image mutators.
 - Keep full-length originals out of Git. Use compressed, capped-bitrate video
-  with a WebP poster (the existing hero is 720p, about 1.5 Mbps). Decorative
+  with a WebP poster. For broad phone compatibility, use 8-bit H.264 (`yuv420p`),
+  an appropriate profile/level, and MP4 faststart; do not inherit a source's
+  10-bit H.264 format. Verify actual autoplay and advancing playback in WebKit
+  as well as Chromium and Firefox. Decorative
   video may use `preload="none"` and delayed source attachment; user-requested
   content video may use `preload="metadata"`. Respect reduced motion/data saving.
 - Defer optional analytics/decorative code to idle after load, retain the

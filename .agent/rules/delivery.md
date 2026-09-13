@@ -23,7 +23,7 @@ For a new page, start from the closest current page and follow the
 [design](../skills/frontend-design/SKILL.md) and
 [schema](../skills/schema-graph/SKILL.md) workflows.
 Include a useful internal link from an existing page and the translated partner.
-The all-page gates discover new HTML pages automatically; copied markup still
+The static gate and page-discovery tools find new HTML pages automatically; copied markup still
 needs inspection and testing.
 [`scripts/site_files.py`](../../scripts/site_files.py) owns public-page discovery
 and the approved nonindexed utility-page policy; use it for page selection
@@ -50,10 +50,10 @@ Choose checks for the complete change set. Before a release, consider all files
 being released, not only the latest task.
 
 While editing, run the checker or regression tests that cover the affected
-behavior. Use the focused browser/performance commands in the
-[performance rule](performance.md#focused-iteration) when investigating a rendered
-change. This shortens feedback during work; it does not replace the final gates
-or reduce their page, language, browser or score coverage.
+behavior. The [performance rule](performance.md#measured-acceptance) owns the
+scope of rendered checks: affected pages and views, including their shared
+dependencies and translations. Its selectors support both quick diagnosis and
+the final required coverage; retain its browser, device and score requirements.
 
 An internal-instructions or memory-only change set may contain only:
 
@@ -84,10 +84,12 @@ This is the maintained entry point for the static site gate, Python generator
 and checker regression tests, and protected Node form/analytics tests. Its
 implementation belongs to `package.json`; do not maintain a second command list.
 
-For rendered site changes, also run the local browser and Lighthouse checks in
-[performance](performance.md#measured-acceptance). Keep this as the shared final
-gate; a skill's reference to it does not require another identical passing run
-on unchanged files. Audit baselines and checks after further changes still apply.
+For rendered site changes, also run the affected-page browser and Lighthouse
+checks defined in [performance](performance.md#measured-acceptance). The fast
+static gate remains site-wide to catch broken cross-page relationships such as
+canonical/hreflang, schema and generated-index consistency. A skill's reference
+to this workflow does not require another identical passing run on unchanged
+files. Audit baselines and checks after further changes still apply.
 Fix causes instead of weakening checks. Preserve verification results and report
 measured coverage, failures, warnings, and anything not tested; distinguish pre-existing issues from
 regressions. A static pass alone never proves a Lighthouse score.
