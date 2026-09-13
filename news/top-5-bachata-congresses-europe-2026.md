@@ -8,7 +8,7 @@ Canonical: https://milanosensualcongress.com/news/top-5-bachata-congresses-europ
 
 The European Bachata scene is more vibrant than ever. As we look towards 2026, several festivals have established themselves as the "titans" of the industry, offering unparalleled workshop quality, majestic venues, and social parties that last until sunrise.
 
-If you're looking to upgrade your dancing, meet the world's top artists, and experience the pure joy of Bachata Sensual, these are the five festivals you need to have on your radar for 2026.
+If you're looking to upgrade your dancing, meet the world's top artists, and experience the pure joy of Bachata Sensual, these are the five festivals you need to have on your radar for 2026. For upcoming dates from November through spring, use our [2026–2027 European Bachata festival calendar](https://milanosensualcongress.com/news/bachata-festivals-europe-2026-2027-calendar) to plan your season.
 
 ### 1. Milano Sensual Congress (Milan, Italy)
 

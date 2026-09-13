@@ -51,7 +51,7 @@ Viaggia con facilità grazie alle nostre **navette dirette dedicate** dagli aero
 
 #### Community Europea
 
-Unisciti a una community diversificata di ballerini di alto livello provenienti da Spagna, Francia, Germania e Svizzera in una **location di lusso internazionale**. Viaggi in autonomia? Leggi la guida per [andare da solo a un Congresso Bachata](https://milanosensualcongress.com/it/news/congresso-bachata-da-soli-guida-ballerini).
+Unisciti a una community diversificata di ballerini di alto livello provenienti da Spagna, Francia, Germania e Svizzera in una **location di lusso internazionale**. Viaggi in autonomia? Leggi la guida per [andare da solo a un Congresso Bachata](https://milanosensualcongress.com/it/news/congresso-bachata-da-soli-guida-ballerini). Stai pianificando la stagione? Esplora il nostro [calendario dei festival di Bachata in Europa](https://milanosensualcongress.com/it/news/calendario-festival-bachata-europa-2026-2027).
 
 Social Dancing
 

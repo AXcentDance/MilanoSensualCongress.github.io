@@ -51,7 +51,7 @@ Travel with ease with our **dedicated direct shuttles** from Milan Malpensa, Lin
 
 #### European Community
 
-Join a diverse community of high-level social dancers from Spain, France, Germany, and Switzerland in a **World-class luxury venue**. Travelling independently? Read our practical guide to [attending a Bachata Congress alone](https://milanosensualcongress.com/news/bachata-congress-alone-solo-dancer-guide).
+Join a diverse community of high-level social dancers from Spain, France, Germany, and Switzerland in a **World-class luxury venue**. Travelling independently? Read our practical guide to [attending a Bachata Congress alone](https://milanosensualcongress.com/news/bachata-congress-alone-solo-dancer-guide). Planning your season? Explore our [Bachata festivals in Europe calendar](https://milanosensualcongress.com/news/bachata-festivals-europe-2026-2027-calendar).
 
 Social Dancing
 
