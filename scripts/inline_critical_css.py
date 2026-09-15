@@ -540,8 +540,8 @@ def sync_data_inline_page(page, css_files, check):
 
 
 INLINE_SUPPLEMENTS = {
-    "hotel.html": ["css/hotel-views.css"],
-    "it/hotel.html": ["css/hotel-views.css"],
+    "hotel.html": ["css/hotel.css"],
+    "it/hotel.html": ["css/hotel.css"],
 }
 
 
