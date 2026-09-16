@@ -8,7 +8,7 @@ Canonical: https://milanosensualcongress.com/hotel
 
 Devero Hotel is **SOLD OUT**
 
-Rooms at Devero are fully booked. Stay at our second hotel, AS Hotel Cambiago.
+Rooms at Devero are fully booked. Stay at our second hotel, AS Hotel Cambiago. [Read the hotel update](https://milanosensualcongress.com/news/devero-hotel-sold-out-as-cambiago-2026)
 
 Second Hotel · 4★
 

@@ -8,7 +8,7 @@ Canonical: https://milanosensualcongress.com/it/hotel
 
 Devero Hotel è **SOLD OUT**
 
-Camere esaurite al Devero. Prenota il tuo soggiorno al nostro secondo hotel, AS Hotel Cambiago.
+Camere esaurite al Devero. Prenota il tuo soggiorno al nostro secondo hotel, AS Hotel Cambiago. [Leggi la novità sugli hotel](https://milanosensualcongress.com/it/news/devero-hotel-esaurito-as-cambiago-2026)
 
 Secondo hotel · 4★
 

@@ -6,6 +6,14 @@ Il portale ufficiale per i congressi bachata 2026. Tutte le ultime notizie, i fe
 
 Canonical: https://milanosensualcongress.com/it/news
 
+Hotel · MSC 2026
+
+### Devero Hotel Esaurito — Disponibile AS Hotel Cambiago
+
+Devero Hotel è esaurito da agosto per Milano Sensual Congress 2026. Ora sono disponibili camere nel secondo hotel, AS Hotel Cambiago.
+
+[Leggi la Novità Hotel](https://milanosensualcongress.com/it/news/devero-hotel-esaurito-as-cambiago-2026)
+
 10 settembre 2026
 
 ### Festival di Bachata a Milano 2026–2027: Quale Scegliere?

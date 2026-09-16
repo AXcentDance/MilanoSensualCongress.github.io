@@ -21,8 +21,8 @@
       "lastmod": "2026-09-13T13:44:49+00:00"
     },
     "hotel.html": {
-      "fingerprint": "c8e506c0218489fcced8c23ad00dc9b686a57e5f8db32ea43daace01ff10cc87",
-      "lastmod": "2026-09-15T06:08:23+00:00"
+      "fingerprint": "8905394c40fb100c9162b57a3841a22fe2b9538d1d532d2e86e10ad72a400842",
+      "lastmod": "2026-09-16T09:19:20+00:00"
     },
     "index.html": {
       "fingerprint": "6e45deb508979e7e41b0e1696f9e997404e4a2e7bf200e55e086e8d1f408083e",
@@ -49,8 +49,8 @@
       "lastmod": "2026-09-13T13:44:49+00:00"
     },
     "it/hotel.html": {
-      "fingerprint": "aa2ab7bf3b9476fb0cc2ee466836b6647adffc830623f68d86cbc466484094d5",
-      "lastmod": "2026-09-15T06:08:23+00:00"
+      "fingerprint": "539ffa3d8dc833593320ea3806d462487853db3bdd1d0f70400452559d607f14",
+      "lastmod": "2026-09-16T09:19:20+00:00"
     },
     "it/index.html": {
       "fingerprint": "46f4f1fc9a4b7b34b2e8e53b6c048f6fcee9b8460b717ce41d18e9e2a3302194",
@@ -65,8 +65,8 @@
       "lastmod": "2026-09-13T14:57:00+00:00"
     },
     "it/news.html": {
-      "fingerprint": "36b8e65107d378f8f156b213e39e11dfb1d7e649bc1e02ad8b46d68af95bdb48",
-      "lastmod": "2026-09-13T13:44:49+00:00"
+      "fingerprint": "95087186fb62e3218f8b3a619027b7a9ff091ecfd9e8a034b973abe774b3e062",
+      "lastmod": "2026-09-16T09:19:20+00:00"
     },
     "it/news/agustinyalba-stelle-nascenti-bachata-sensual.html": {
       "fingerprint": "22d234d742cbfb14baed49d0f43365a0b8940f2dbc1ddc5b840ce7240fef8e7c",
@@ -107,6 +107,10 @@
     "it/news/david-y-ines-maestri-bachata-sensual-2026.html": {
       "fingerprint": "6af3e6c59b2e40abae434cd4e78649287053612642a4b07d5c66596b9cd2eb85",
       "lastmod": "2026-09-13T14:57:00+00:00"
+    },
+    "it/news/devero-hotel-esaurito-as-cambiago-2026.html": {
+      "fingerprint": "8fe02585a9dae7155bae8d879f304dd968270af636e27b75ca8acfe2591a0203",
+      "lastmod": "2026-09-16T09:21:00+00:00"
     },
     "it/news/etichetta-congresso-bachata-social-workshop-party.html": {
       "fingerprint": "67894a2d5ae88e695579d72b3243da71e75493c1421c802d76c8b9e4f6540388",
@@ -177,8 +181,8 @@
       "lastmod": "2026-09-13T14:57:00+00:00"
     },
     "news.html": {
-      "fingerprint": "2a019e2c6eccea06866dc00c18a5b47a521660198a98ccf8fd83a520ae930c3e",
-      "lastmod": "2026-09-13T13:44:49+00:00"
+      "fingerprint": "0450e50296c525ee1e6529ccd41cea71d8c518b6a32629e0ac121aa61df5a0bf",
+      "lastmod": "2026-09-16T09:19:20+00:00"
     },
     "news/agustinyalba-bachata-sensual-rising-stars.html": {
       "fingerprint": "3ec79debcc0ba2eaa2fba615945e2b2a0e8f38e323a88d803952b76f7cd16fde",
@@ -223,6 +227,10 @@
     "news/david-y-ines-bachata-sensual-masters-2026.html": {
       "fingerprint": "3de18a3257427deb8bbe9227186212b5410b5fafe91bb5acb3a1772b9b8894b8",
       "lastmod": "2026-09-13T14:57:00+00:00"
+    },
+    "news/devero-hotel-sold-out-as-cambiago-2026.html": {
+      "fingerprint": "95618df71fd7d31c15ea002432be4d03a4cde0f70d49c0b8a0e571a60c1a1550",
+      "lastmod": "2026-09-16T09:21:00+00:00"
     },
     "news/full-pass-masterclass-price-increase-june-15-2026.html": {
       "fingerprint": "6868af585c155f58ce954cd31daba553c3523ff98993d455b26060d85596b5a1",

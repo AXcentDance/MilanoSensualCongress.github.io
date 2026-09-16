@@ -6,6 +6,14 @@ Stay updated with the latest Bachata news, festival guides, and dance insights f
 
 Canonical: https://milanosensualcongress.com/news
 
+Hotel · MSC 2026
+
+### Devero Hotel Sold Out — AS Hotel Cambiago Available
+
+Devero Hotel has been sold out since August for Milano Sensual Congress 2026. Rooms are now available at the second hotel, AS Hotel Cambiago.
+
+[Read the Hotel Update](https://milanosensualcongress.com/news/devero-hotel-sold-out-as-cambiago-2026)
+
 September 10, 2026
 
 ### Bachata Festivals in Milan 2026–2027: Which to Choose?

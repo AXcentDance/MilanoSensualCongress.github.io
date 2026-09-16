@@ -192,7 +192,7 @@
   </url>
   <url>
     <loc>https://milanosensualcongress.com/hotel</loc>
-    <lastmod>2026-09-15T06:08:23+00:00</lastmod>
+    <lastmod>2026-09-16T09:19:20+00:00</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://milanosensualcongress.com/hotel" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://milanosensualcongress.com/hotel" />
     <xhtml:link rel="alternate" hreflang="it" href="https://milanosensualcongress.com/it/hotel" />
@@ -207,7 +207,7 @@
   </url>
   <url>
     <loc>https://milanosensualcongress.com/it/hotel</loc>
-    <lastmod>2026-09-15T06:08:23+00:00</lastmod>
+    <lastmod>2026-09-16T09:19:20+00:00</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://milanosensualcongress.com/hotel" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://milanosensualcongress.com/hotel" />
     <xhtml:link rel="alternate" hreflang="it" href="https://milanosensualcongress.com/it/hotel" />
@@ -328,13 +328,17 @@
   </url>
   <url>
     <loc>https://milanosensualcongress.com/news</loc>
-    <lastmod>2026-09-13T13:44:49+00:00</lastmod>
+    <lastmod>2026-09-16T09:19:20+00:00</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://milanosensualcongress.com/news" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://milanosensualcongress.com/news" />
     <xhtml:link rel="alternate" hreflang="it" href="https://milanosensualcongress.com/it/news" />
     <image:image>
       <image:loc>https://milanosensualcongress.com/images/milano-sensual-congress-logo-nav.webp</image:loc>
       <image:title>Milano Sensual Congress Logo</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://milanosensualcongress.com/images/hotel/devero-hotel-exterior-dusk.webp</image:loc>
+      <image:title>Devero Hotel illuminated at dusk, the venue for Milano Sensual Congress</image:title>
     </image:image>
     <image:image>
       <image:loc>https://milanosensualcongress.com/images/news/duomo-di-milano-bachata-italy-2026-dance-destination.webp</image:loc>
@@ -395,13 +399,17 @@
   </url>
   <url>
     <loc>https://milanosensualcongress.com/it/news</loc>
-    <lastmod>2026-09-13T13:44:49+00:00</lastmod>
+    <lastmod>2026-09-16T09:19:20+00:00</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://milanosensualcongress.com/news" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://milanosensualcongress.com/news" />
     <xhtml:link rel="alternate" hreflang="it" href="https://milanosensualcongress.com/it/news" />
     <image:image>
       <image:loc>https://milanosensualcongress.com/images/milano-sensual-congress-logo-nav.webp</image:loc>
       <image:title>Milano Sensual Congress Logo</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://milanosensualcongress.com/images/hotel/devero-hotel-exterior-dusk.webp</image:loc>
+      <image:title>Devero Hotel illuminato al crepuscolo, sede del Milano Sensual Congress</image:title>
     </image:image>
     <image:image>
       <image:loc>https://milanosensualcongress.com/images/news/duomo-di-milano-bachata-italy-2026-dance-destination.webp</image:loc>
@@ -697,6 +705,36 @@
     <image:image>
       <image:loc>https://milanosensualcongress.com/images/milano-sensual-congress-logo-nav.webp</image:loc>
       <image:title>Milano Sensual Congress Logo</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://milanosensualcongress.com/it/news/devero-hotel-esaurito-as-cambiago-2026</loc>
+    <lastmod>2026-09-16T09:21:00+00:00</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://milanosensualcongress.com/news/devero-hotel-sold-out-as-cambiago-2026" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://milanosensualcongress.com/news/devero-hotel-sold-out-as-cambiago-2026" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://milanosensualcongress.com/it/news/devero-hotel-esaurito-as-cambiago-2026" />
+    <image:image>
+      <image:loc>https://milanosensualcongress.com/images/milano-sensual-congress-logo-nav.webp</image:loc>
+      <image:title>Logo Milano Sensual Congress</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://milanosensualcongress.com/images/hotel/devero-hotel-exterior-dusk.webp</image:loc>
+      <image:title>Devero Hotel illuminato al crepuscolo, sede del Milano Sensual Congress</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://milanosensualcongress.com/news/devero-hotel-sold-out-as-cambiago-2026</loc>
+    <lastmod>2026-09-16T09:21:00+00:00</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://milanosensualcongress.com/news/devero-hotel-sold-out-as-cambiago-2026" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://milanosensualcongress.com/news/devero-hotel-sold-out-as-cambiago-2026" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://milanosensualcongress.com/it/news/devero-hotel-esaurito-as-cambiago-2026" />
+    <image:image>
+      <image:loc>https://milanosensualcongress.com/images/milano-sensual-congress-logo-nav.webp</image:loc>
+      <image:title>Milano Sensual Congress Logo</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://milanosensualcongress.com/images/hotel/devero-hotel-exterior-dusk.webp</image:loc>
+      <image:title>Devero Hotel illuminated at dusk, the venue for Milano Sensual Congress</image:title>
     </image:image>
   </url>
   <url>
