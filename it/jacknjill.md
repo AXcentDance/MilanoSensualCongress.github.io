@@ -16,7 +16,7 @@ Per garantire il massimo standard di equità e prestigio, la nostra giuria è co
 
 ### Dettagli dell'Evento e Registrazione
 
-Segna sul calendario il gran finale: la competizione si svolgerà **Domenica 22 Novembre**. Crediamo nel rendere il palco accessibile a tutti i veri amanti del ballo, motivo per cui la quota di iscrizione è di soli **10 EUR** per chiunque possieda un Full Pass o un Full Party Pass.
+Segna sul calendario il gran finale: la competizione si svolgerà **Domenica 22 Novembre**. Crediamo nel rendere il palco accessibile a tutti i veri amanti del ballo, motivo per cui la quota di iscrizione è di soli **10 EUR** per chiunque possieda un Full Pass o un Full Social Pass.
 
 Le iscrizioni sono ora aperte esclusivamente su **Salsadelbaile**. I posti sono strettamente limitati per garantire un flusso agevole per tutti i concorrenti, quindi ti consigliamo di assicurarti l'iscrizione in anticipo per non perdere la magia.
 

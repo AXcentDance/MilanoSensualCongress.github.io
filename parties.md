@@ -62,11 +62,11 @@ Access & Tickets
 
 ### Which pass gets you on the dance floor
 
-**Full Pass — €130 until October 15:** includes all workshops, shows, night parties and afternoon socials of the weekend.
+**Full Pass — €135 until October 15:** includes all workshops, shows, night parties and afternoon socials of the weekend.
 
 **Saturday Afternoon Social:** access with a Full Pass or a Saturday Day Pass.
 
-**Full Party Pass:** access to all official parties (Friday, Saturday & Sunday) — available soon on the tickets page.
+**Full Social Pass — €75:** access to Friday night, Saturday night and Sunday afternoon socials — available now on the tickets page.
 
 [See All Tickets](https://milanosensualcongress.com/tickets) [Sleep On Site](https://milanosensualcongress.com/hotel)
 
@@ -98,7 +98,7 @@ Milano Sensual Congress 2026 offers 20+ hours of official social dancing across 
 
 #### Which ticket do I need to access the parties?
 
-The Full Pass includes all parties and afternoon socials. To access the Saturday afternoon social you need either a Full Pass or a Saturday Day Pass. A Full Party Pass covering all official parties will be available soon.
+The Full Pass includes all parties and afternoon socials. To access the Saturday afternoon social you need either a Full Pass or a Saturday Day Pass. The Full Social Pass costs €75 and includes Friday night, Saturday night and Sunday afternoon socials.
 
 #### Where do the parties take place?
 

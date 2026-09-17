@@ -62,11 +62,11 @@ Accesso e Biglietti
 
 ### Quale pass ti porta in pista
 
-**Full Pass — €130 fino al 15 ottobre:** include tutti i workshop, gli show, i party notturni e i social pomeridiani del weekend.
+**Full Pass — €135 fino al 15 ottobre:** include tutti i workshop, gli show, i party notturni e i social pomeridiani del weekend.
 
 **Social del Sabato Pomeriggio:** accesso con Full Pass oppure con un Day Pass del sabato.
 
-**Full Party Pass:** accesso a tutti i party ufficiali (venerdì, sabato e domenica) — presto disponibile nella pagina biglietti.
+**Full Social Pass — €75:** accesso ai social del venerdì sera, sabato sera e domenica pomeriggio — disponibile ora nella pagina biglietti.
 
 [Vedi Tutti i Biglietti](https://milanosensualcongress.com/it/tickets) [Dormi in Hotel](https://milanosensualcongress.com/it/hotel)
 
@@ -98,7 +98,7 @@ Il Milano Sensual Congress 2026 offre oltre 20 ore di social dancing ufficiale n
 
 #### Quale biglietto serve per accedere ai party?
 
-Il Full Pass include tutti i party e i social pomeridiani. Per accedere al social del sabato pomeriggio serve un Full Pass oppure un Day Pass del sabato. A breve sarà disponibile anche un Full Party Pass per tutti i party ufficiali.
+Il Full Pass include tutti i party e i social pomeridiani. Per accedere al social del sabato pomeriggio serve un Full Pass oppure un Day Pass del sabato. Il Full Social Pass costa €75 e include i social del venerdì sera, sabato sera e domenica pomeriggio.
 
 #### Dove si svolgono i party?
 

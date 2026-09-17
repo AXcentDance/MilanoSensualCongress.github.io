@@ -22,7 +22,7 @@ Best Value
 
 #### Full Pass
 
-€130
+€135
 
 Valid until October 15 at midnight
 
@@ -33,14 +33,6 @@ Valid until October 15 at midnight
 - Afternoon socials
 
 [Buy Full Pass](https://lasalsadelbaile.com/MSC2026)
-
-#### Full Pass Next Tier
-
-€135
-
-From 16 October 2026, 00:00 (Milan time)
-
-Full congress access. Masterclass upgrade purchased separately.
 
 Advanced
 
@@ -68,7 +60,7 @@ Competition
 
 International Competition
 
-Requires Full Pass OR Full Party Pass
+Requires Full Pass OR Full Social Pass
 
 - International Judges
 - Win Official Trophies
@@ -76,16 +68,15 @@ Requires Full Pass OR Full Party Pass
 
 [Register Now](https://lasalsadelbaile.com/MSC2026)
 
-Coming Soon
+#### Full Social Pass
 
-Full Party Passes available soon
+€75
 
-#### Full Party Pass
+- Friday night social
+- Saturday night social
+- Sunday afternoon social
 
---
-
-- Access to ALL official parties
-- Friday, Saturday & Sunday
+[Buy Full Social Pass](https://lasalsadelbaile.com/MSC2026)
 
 Trusted by dancers
 
@@ -141,7 +132,7 @@ Yes, name changes are possible. You can perform this action directly on the webs
 
 ##### What do I need to participate in the Jack & Jill?
 
-To participate in the competition, you must hold a valid **Full Pass** or a **Full Party Pass**. The competition fee is separate (20 CHF), but it requires one of these passes to be valid.
+To participate in the competition, you must hold a valid **Full Pass** or a **Full Social Pass**. The competition fee is separate (20 CHF), but it requires one of these passes to be valid.
 
 ##### Can I buy the Masterclass separately?
 

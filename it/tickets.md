@@ -2,7 +2,7 @@
 
 # Assicurati il Tuo Posto
 
-Acquista i tuoi biglietti per il Milano Sensual Congress 2026. Scegli tra Full Pass, Party Pass e Day Pass. Assicurati il tuo posto al miglior prezzo oggi.
+Acquista i tuoi biglietti per il Milano Sensual Congress 2026. Scegli tra Full Pass, Full Social Pass e Day Pass. Assicurati il tuo posto al miglior prezzo oggi.
 
 Canonical: https://milanosensualcongress.com/it/tickets
 
@@ -22,7 +22,7 @@ Miglior Valore
 
 #### Full Pass
 
-€130
+€135
 
 Valido fino alla mezzanotte del 15 ottobre
 
@@ -33,14 +33,6 @@ Valido fino alla mezzanotte del 15 ottobre
 - Social Pomeridiani
 
 [Acquista Full Pass](https://lasalsadelbaile.com/MSC2026)
-
-#### Prossima Fascia Full Pass
-
-€135
-
-Dal 16 ottobre 2026, ore 00:00 (ora di Milano)
-
-Accesso completo al congresso. Upgrade Masterclass acquistabile separatamente.
 
 Avanzato
 
@@ -68,7 +60,7 @@ Competizione
 
 Competizione Internazionale
 
-Richiede Full Pass O Full Party Pass
+Richiede Full Pass O Full Social Pass
 
 - Giudici Internazionali
 - Vinci Trofei Ufficiali
@@ -76,16 +68,15 @@ Richiede Full Pass O Full Party Pass
 
 [Registrati Ora](https://lasalsadelbaile.com/MSC2026)
 
-Prossimamente
+#### Full Social Pass
 
-I Full Party Pass saranno disponibili a breve
+€75
 
-#### Full Party Pass
+- Social del venerdì sera
+- Social del sabato sera
+- Social della domenica pomeriggio
 
---
-
-- Accesso a TUTTE le feste ufficiali
-- Venerdì, Sabato e Domenica
+[Acquista Full Social Pass](https://lasalsadelbaile.com/MSC2026)
 
 Scelto dai ballerini
 
@@ -141,7 +132,7 @@ Sì, i cambi di nome sono possibili. Puoi effettuare questa operazione direttame
 
 ##### Cosa mi serve per partecipare al Jack & Jill?
 
-Per partecipare alla competizione, devi essere in possesso di un **Full Pass** valido o di un **Full Party Pass**. La quota di iscrizione alla competizione è separata (20 CHF), ma richiede uno di questi pass per essere valida.
+Per partecipare alla competizione, devi essere in possesso di un **Full Pass** valido o di un **Full Social Pass**. La quota di iscrizione alla competizione è separata (20 CHF), ma richiede uno di questi pass per essere valida.
 
 ##### Posso acquistare la Masterclass separatamente?
 

@@ -39,13 +39,15 @@ from datetime import datetime, timezone
 from bs4 import BeautifulSoup
 
 # ---- canonical Full Pass facts (the single switch) ----
-FULL_PASS_PRICE = "130.00"
+FULL_PASS_PRICE = "135.00"
 FULL_PASS_VALID_THROUGH = "2026-10-15T23:59:59+02:00"
-FULL_PASS_VALID_FROM = "2026-08-01T00:00:00+02:00"
-NEXT_FULL_PASS_PRICE = "135.00"
-NEXT_FULL_PASS_VALID_FROM = "2026-10-16T00:00:00+02:00"
-# The next tier's end date has not been announced. Do not invent one.
+FULL_PASS_VALID_FROM = "2026-09-16T00:00:00+02:00"
+# The October increase is confirmed, but its new price is not yet announced.
+NEXT_FULL_PASS_PRICE = None
+NEXT_FULL_PASS_VALID_FROM = None
 NEXT_FULL_PASS_ID = "https://milanosensualcongress.com/tickets#full-pass-next"
+FULL_SOCIAL_PASS_PRICE = "75.00"
+FULL_SOCIAL_PASS_ID = "https://milanosensualcongress.com/tickets#full-social-pass"
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -196,13 +198,21 @@ def check_next_tier(page):
         soup = BeautifulSoup(source.read(), 'html.parser')
     problems = []
     from schema_contract import nodes
-    upcoming = []
+    references = []
     for script in soup.find_all('script', type='application/ld+json'):
         try:
-            upcoming.extend(n for n in nodes(json.loads(script.string or ''))
-                            if n.get('@id') == NEXT_FULL_PASS_ID and n.get('@type') == 'Offer')
+            references.extend(n for n in nodes(json.loads(script.string or ''))
+                              if n.get('@id') == NEXT_FULL_PASS_ID)
         except json.JSONDecodeError:
             continue  # JSON validity belongs to audit_schema.py.
+    upcoming = [n for n in references if n.get('@type') == 'Offer']
+    card = soup.select_one('#next-full-pass-tier')
+    if NEXT_FULL_PASS_PRICE is None or NEXT_FULL_PASS_VALID_FROM is None:
+        if NEXT_FULL_PASS_PRICE is not None or NEXT_FULL_PASS_VALID_FROM is not None:
+            problems.append('next Full Pass announcement needs both price and start')
+        if references or card:
+            problems.append(f'{page}: remove the unconfirmed next Full Pass announcement')
+        return problems
     if len(upcoming) != 1:
         problems.append(f'{page}: needs one announced next Full Pass offer')
     else:
@@ -211,7 +221,6 @@ def check_next_tier(page):
                                 ('availabilityStarts', NEXT_FULL_PASS_VALID_FROM)]:
             if upcoming[0].get(field) != expected:
                 problems.append(f'{page}: next Full Pass {field} disagrees with canonical facts')
-    card = soup.select_one('#next-full-pass-tier')
     amount = card.select_one('[data-next-full-pass-price]') if card else None
     start = card.select_one('time[datetime]') if card else None
     if amount is None or amount.get('data-next-full-pass-price') != NEXT_FULL_PASS_PRICE \
@@ -219,6 +228,36 @@ def check_next_tier(page):
         problems.append(f'{page}: visible next Full Pass price disagrees with canonical facts')
     if start is None or start.get('datetime') != NEXT_FULL_PASS_VALID_FROM:
         problems.append(f'{page}: visible next Full Pass start disagrees with canonical facts')
+    return problems
+
+
+def check_social_pass(page):
+    """Keep the available social ticket's visible price and offer in agreement."""
+    if page not in ('tickets.html', 'it/tickets.html'):
+        return []
+    with open(page, encoding='utf-8') as source:
+        soup = BeautifulSoup(source.read(), 'html.parser')
+    from schema_contract import nodes
+    offers = []
+    for script in soup.find_all('script', type='application/ld+json'):
+        try:
+            offers.extend(n for n in nodes(json.loads(script.string or ''))
+                          if n.get('@id') == FULL_SOCIAL_PASS_ID and n.get('@type') == 'Offer')
+        except json.JSONDecodeError:
+            continue
+    problems = []
+    if len(offers) != 1 or offers[0].get('price') != FULL_SOCIAL_PASS_PRICE \
+            or offers[0].get('priceCurrency') != 'EUR' \
+            or offers[0].get('availability') != 'https://schema.org/InStock':
+        problems.append(f'{page}: Full Social Pass offer disagrees with canonical facts')
+    card = soup.select_one('#full-social-pass')
+    amount = card.select_one('[data-full-social-pass-price]') if card else None
+    if amount is None or amount.get('data-full-social-pass-price') != FULL_SOCIAL_PASS_PRICE \
+            or amount.get_text(strip=True) != '€' + f'{float(FULL_SOCIAL_PASS_PRICE):g}':
+        problems.append(f'{page}: visible Full Social Pass price disagrees with canonical facts')
+    link = card.select_one('a[href]') if card else None
+    if link is None or len(offers) != 1 or link.get('href') != offers[0].get('url'):
+        problems.append(f'{page}: Full Social Pass needs its purchase link')
     return problems
 
 
@@ -257,6 +296,7 @@ def main(argv):
         process_page(page, FULL_PASS_PRICE, FULL_PASS_VALID_THROUGH, problems,
                      apply_changes=False, valid_from=FULL_PASS_VALID_FROM)
         problems.extend(check_next_tier(str(page)))
+        problems.extend(check_social_pass(str(page)))
     if problems:
         print(f'FAILED: {len(problems)} price fact divergence(s) '
               f'(canonical: {FULL_PASS_PRICE} EUR until {FULL_PASS_VALID_THROUGH})')
