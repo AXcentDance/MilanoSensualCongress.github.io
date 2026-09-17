@@ -16,7 +16,7 @@ To ensure the highest standard of fairness and prestige, our jury is composed en
 
 ### Event Details & Registration
 
-Mark your calendars for the grand finale: the competition will take place on **Sunday, November 22nd**. We believe in making the stage accessible to all true lovers of the dance, which is why the entry fee is kept at only **10 EUR** for anyone holding a Full Pass or a Full Party Pass.
+Mark your calendars for the grand finale: the competition will take place on **Sunday, November 22nd**. We believe in making the stage accessible to all true lovers of the dance, which is why the entry fee is kept at only **10 EUR** for anyone holding a Full Pass or a Full Social Pass.
 
 Registration is now open exclusively on **Salsadelbaile**. Spots are strictly limited to ensure a smooth flow for all competitors, so we recommend securing your entry early to avoid missing out on the magic.
 
