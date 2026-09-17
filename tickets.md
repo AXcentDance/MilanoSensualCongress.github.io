@@ -24,7 +24,7 @@ Best Value
 
 €130
 
-Valid until September 15 at midnight
+Valid until October 15 at midnight
 
 - Full Access to entire event
 - All Parties (Fri, Sat, Sun)
@@ -38,7 +38,7 @@ Valid until September 15 at midnight
 
 €135
 
-From 16 September 2026, 00:00 (Milan time)
+From 16 October 2026, 00:00 (Milan time)
 
 Full congress access. Masterclass upgrade purchased separately.
 

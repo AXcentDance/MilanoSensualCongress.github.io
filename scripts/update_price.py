@@ -40,10 +40,10 @@ from bs4 import BeautifulSoup
 
 # ---- canonical Full Pass facts (the single switch) ----
 FULL_PASS_PRICE = "130.00"
-FULL_PASS_VALID_THROUGH = "2026-09-15T23:59:59+02:00"
+FULL_PASS_VALID_THROUGH = "2026-10-15T23:59:59+02:00"
 FULL_PASS_VALID_FROM = "2026-08-01T00:00:00+02:00"
 NEXT_FULL_PASS_PRICE = "135.00"
-NEXT_FULL_PASS_VALID_FROM = "2026-09-16T00:00:00+02:00"
+NEXT_FULL_PASS_VALID_FROM = "2026-10-16T00:00:00+02:00"
 # The next tier's end date has not been announced. Do not invent one.
 NEXT_FULL_PASS_ID = "https://milanosensualcongress.com/tickets#full-pass-next"
 

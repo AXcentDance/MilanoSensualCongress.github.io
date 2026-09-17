@@ -62,7 +62,7 @@ Access & Tickets
 
 ### Which pass gets you on the dance floor
 
-**Full Pass — €130 until September 15:** includes all workshops, shows, night parties and afternoon socials of the weekend.
+**Full Pass — €130 until October 15:** includes all workshops, shows, night parties and afternoon socials of the weekend.
 
 **Saturday Afternoon Social:** access with a Full Pass or a Saturday Day Pass.
 
