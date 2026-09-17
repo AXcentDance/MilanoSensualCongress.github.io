@@ -24,7 +24,7 @@ Miglior Valore
 
 €130
 
-Valido fino alla mezzanotte del 15 settembre
+Valido fino alla mezzanotte del 15 ottobre
 
 - Accesso completo all'intero evento
 - Tutte le Feste (Ven, Sab, Dom)
@@ -38,7 +38,7 @@ Valido fino alla mezzanotte del 15 settembre
 
 €135
 
-Dal 16 settembre 2026, ore 00:00 (ora di Milano)
+Dal 16 ottobre 2026, ore 00:00 (ora di Milano)
 
 Accesso completo al congresso. Upgrade Masterclass acquistabile separatamente.
 

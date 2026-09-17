@@ -62,7 +62,7 @@ Accesso e Biglietti
 
 ### Quale pass ti porta in pista
 
-**Full Pass — €130 fino al 15 settembre:** include tutti i workshop, gli show, i party notturni e i social pomeridiani del weekend.
+**Full Pass — €130 fino al 15 ottobre:** include tutti i workshop, gli show, i party notturni e i social pomeridiani del weekend.
 
 **Social del Sabato Pomeriggio:** accesso con Full Pass oppure con un Day Pass del sabato.
 
