@@ -18,6 +18,7 @@ ROOT = Path(__file__).resolve().parents[1]
 DOMAIN = 'https://milanosensualcongress.com'
 REPOSITORY = 'AXcentDance/MilanoSensualCongress.github.io'
 PAGES_WORKFLOW = 'pages build and deployment'
+PAGES_WORKFLOW_ID = 'pages-build-deployment'
 RETRYABLE = {429, 500, 502, 503, 504}
 
 
@@ -64,7 +65,7 @@ def release_range(event, event_name, head):
         raise ValueError('Unexpected repository in release event')
     if event_name == 'workflow_run':
         run = event.get('workflow_run', {})
-        if (run.get('name') != PAGES_WORKFLOW or run.get('head_branch') != 'main'
+        if (run.get('name') not in {PAGES_WORKFLOW, PAGES_WORKFLOW_ID} or run.get('head_branch') != 'main'
                 or run.get('head_repository', {}).get('full_name') != REPOSITORY
                 or run.get('status') != 'completed' or run.get('conclusion') != 'success'):
             raise ValueError('IndexNow requires a successful main Pages deployment')

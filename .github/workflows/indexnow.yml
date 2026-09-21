@@ -2,7 +2,7 @@ name: Notify IndexNow
 
 on:
   workflow_run:
-    workflows: [pages build and deployment]
+    workflows: [pages-build-deployment]
     types: [completed]
     branches: [main]
   workflow_dispatch:

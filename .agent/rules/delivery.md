@@ -113,7 +113,8 @@ process remains separate from project quality checks.
 ### IndexNow after publication
 
 The notification-only [IndexNow workflow](../../.github/workflows/indexnow.yml)
-listens for successful `pages build and deployment` runs on `main`. It does not
+listens for successful `pages-build-deployment` runs on `main` (displayed by
+GitHub as `pages build and deployment`). It does not
 build, regenerate, commit or deploy the site, and does not restore CI quality
 checks. Its read-only GitHub token verifies the published commit and finds the
 previous successful Pages build, so failed builds do not become the comparison

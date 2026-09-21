@@ -110,6 +110,13 @@ def event():
 
 
 class ReleaseTests(unittest.TestCase):
+    def test_accepts_registered_workflow_name_as_well_as_run_display_name(self):
+        payload = event()
+        payload['workflow_run']['name'] = 'pages-build-deployment'
+        builds = [{'status': 'built', 'commit': value} for value in ['current', 'previous']]
+        with patch.object(indexnow, 'github_builds', return_value=builds):
+            self.assertEqual(indexnow.release_range(payload, 'workflow_run', 'current'), ('previous', 'current'))
+
     def test_baseline_skips_failed_builds_and_repeated_current_builds(self):
         builds = [{'status': 'built', 'commit': 'current'},
                   {'status': 'built', 'commit': 'current'},
