@@ -109,3 +109,36 @@ corresponding content change; no CI job regenerates or commits them. The user re
 quality automation, so do not recreate it or require an Actions-based publishing
 source unless the user requests that change. GitHub's own Pages build/deployment
 process remains separate from project quality checks.
+
+### IndexNow after publication
+
+The notification-only [IndexNow workflow](../../.github/workflows/indexnow.yml)
+listens for successful `pages build and deployment` runs on `main`. It does not
+build, regenerate, commit or deploy the site, and does not restore CI quality
+checks. Its read-only GitHub token verifies the published commit and finds the
+previous successful Pages build, so failed builds do not become the comparison
+baseline. It reuses the public IndexNow ownership file already served at the
+site root; no additional secret is required.
+
+[`scripts/ping_indexnow.py`](../../scripts/ping_indexnow.py) submits added,
+changed, renamed and removed canonical page URLs. Current-page selection uses
+the shared page policy; the previous published sitemap supplies removed URLs.
+Revision fingerprints include substantive shared-content changes. Markdown,
+LLM exports, utility pages and private files are not submitted as new pages.
+The script verifies the live ownership file before submission and retries
+temporary network/service failures. A received notification is not proof of
+indexing or AI citations.
+
+Inspect `Notify IndexNow` in GitHub Actions after a release. Rerun a failed job
+to retry that release's exact range, even if a later release is already live.
+Alternatively, `Run workflow` on `main` resends all current indexable pages and
+the latest release's removed URLs; it requires that `main` has finished
+publishing. A read-only local preview of a release range is:
+
+```bash
+python3 scripts/ping_indexnow.py --before <previous-published-commit> --dry-run
+```
+
+Activation requires publishing the workflow to `main` under the explicit-push
+rule above. Local verification must mock IndexNow submissions; it must not send
+notifications for unpublished changes.

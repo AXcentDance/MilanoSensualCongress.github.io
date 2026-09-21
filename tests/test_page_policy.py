@@ -213,11 +213,10 @@ class PagePolicyTests(unittest.TestCase):
         self.page('404.html', '<meta name="robots" content="noindex">')
         self.page('news/myindex.html')
         self.page('output/draft.html')
-        selected = lambda: policy.indexable_pages(self.root)
+        selected = lambda root=None: policy.indexable_pages(self.root)
         with patch.object(ping_indexnow, 'indexable_pages', side_effect=selected), \
-             patch.object(ping_indexnow.subprocess, 'check_output', return_value='index.html\n404.html\nnews/myindex.html\noutput/draft.html\n'), \
              patch.object(ping_indexnow, 'urlopen', side_effect=AssertionError('No network calls')):
-            self.assertEqual(ping_indexnow.changed_urls('previous'),
+            self.assertEqual(ping_indexnow.changed_urls(None),
                              [sitemap.DOMAIN + '/', sitemap.DOMAIN + '/news/myindex'])
         with patch.object(sync_social_meta, 'indexable_pages', side_effect=selected), \
              patch.object(sync_social_meta, 'process') as process, redirect_stdout(io.StringIO()):
