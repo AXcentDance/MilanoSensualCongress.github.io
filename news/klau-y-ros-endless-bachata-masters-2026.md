@@ -22,6 +22,8 @@ Now based in Orlando, Florida, the duo runs the highly successful **Endless Bach
 
 Their approach strips away chaotic arm-work, favoring deep body isolations, grounded weight transfers, and musicality that connects partners in a profound, uninterrupted flow.
 
+Want to train with them at the congress? Explore the [advanced Bachata masterclass programme](https://milanosensualcongress.com/masterclass) and our [workshop level guide](https://milanosensualcongress.com/news/bachata-workshop-levels-guide-congress). The masterclass upgrade requires a valid Full Pass; check the programme before choosing your sessions.
+
 #### Plan your congress weekend
 
 Use the complete [Bachata Congress 2026 in Europe](https://milanosensualcongress.com/bachata-congress-2026) guide, preview the [workshop program](https://milanosensualcongress.com/program), meet the [international Bachata artists](https://milanosensualcongress.com/artists) and secure your [Full Pass tickets](https://milanosensualcongress.com/tickets) for Milan.

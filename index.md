@@ -10,12 +10,14 @@ Canonical: https://milanosensualcongress.com/
 
 Three days of bachata workshops, parties and social dancing at Devero Hotel, near Milan, with international artists and dancers from across Europe.
 
+Workshops in English · Beginner, intermediate and advanced levels
+
 1,000+ dancers · 20+ nations · 40+ hours of workshops · 20+ hours of social dancing · 3 days
 
 ### International Bachata Lineup
 
 - Gero y Migle
-- Klaus y Ros
+- Klau y Ros
 - Cristian y Gabriella
 - David y Ines
 - Nacho y Silvia
@@ -23,13 +25,11 @@ Three days of bachata workshops, parties and social dancing at Devero Hotel, nea
 - Irene y Tomás
 - Aitor Gomez
 
-NEW
+### Venue & Accommodation
 
-### 4 Star Bachata Congress Hotel
+The congress takes place at Devero Hotel & Spa. Devero rooms are sold out; accommodation is available at AS Hotel Cambiago.
 
-The exclusive Devero Hotel & Spa
-
-[New Location →](https://milanosensualcongress.com/hotel)
+[View hotel options →](https://milanosensualcongress.com/hotel#as-hotel-cambiago)
 
 ### International Bachata Jack & Jill
 
@@ -103,7 +103,7 @@ The entire event takes place at the **New Devero Hotel & Spa** (4 Stars Executiv
 
 #### Can I compete in the Jack & Jill?
 
-Yes! We host an International Jack & Jill competition. Registration details and categories will be announced closer to the event date on our social media and website.
+Yes! Registration for the International Jack & Jill is open. Entry costs €20, plus the ticket platform’s booking fees, and requires a valid Full Pass or Full Social Pass. [Competition details and registration](https://milanosensualcongress.com/jacknjill).
 
 #### How do I book the hotel?
 

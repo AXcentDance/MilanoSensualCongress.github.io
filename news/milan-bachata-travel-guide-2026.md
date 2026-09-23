@@ -2,49 +2,54 @@
 
 # Milan Bachata Travel Guide 2026: Airports, Transfers & Local Tips
 
-Planning your trip to Milano Sensual Congress 2026? Read our complete travel guide for bachata dancers: airports, official shuttles, and how to navigate Milan.
+Plan your Milano Sensual Congress trip: Milan airports, pre-booked transfers to Devero Hotel, AS Hotel Cambiago accommodation and a practical travel checklist.
 
 Canonical: https://milanosensualcongress.com/news/milan-bachata-travel-guide-2026
 
-### Arriving in Milan, Italy
+### Plan your arrival around Cavenago di Brianza
 
-Milan is perfectly positioned as a central European hub. Whether you are flying from London, Madrid, Berlin, or beyond, getting to the **Milano Sensual Congress 2026** is straightforward.
+Milano Sensual Congress takes place on **20–22 November 2026** at Devero Hotel & Spa, Largo Kennedy 1, Cavenago di Brianza. The venue is outside central Milan. Compare your flight and the final journey to the hotel together, especially if you arrive late at night.
 
-#### Malpensa (MXP)
+Start with the [congress programme](https://milanosensualcongress.com/program) to choose your arrival and return dates. Leave time for airport procedures, luggage, travel to the venue and rest before dancing.
 
-The main international gateway. Frequent trains and our official MSC shuttles connect directly to the venue.
+### Which Milan airport should you choose?
 
-#### Linate (LIN)
+#### Milan Malpensa (MXP)
 
-Closest to the city center. Fast and convenient for European flights.
+The [Malpensa Express](https://www.malpensaexpress.it/en/lines-and-timetable/lines-and-timetables/our-lines/) connects the airport with Milan railway stations. It does not go directly to Devero Hotel. If you use the train, arrange the onward journey; alternatively, reserve an official airport transfer.
 
-#### Bergamo Orio (BGY)
+#### Milan Linate (LIN)
 
-Hub for Ryanair and low-cost carriers. Easy shuttle access for budget-conscious dancers.
+ATM’s [M4 metro](https://www.atm.it/en/ViaggiaConNoi/InfoTraffico/Pages/M4passengerserviceinformation2.aspx?c=print) connects Linate with Milan, including San Babila. The metro is a city connection, not a direct service to the congress hotel. Compare the full onward journey with a booked transfer.
 
-### Official MSC Shuttles
+#### Milan Bergamo (BGY)
 
-Don't worry about expensive taxis or complex bus routes. We offer **Official MSC Transfer Services** on Thursday and Friday.
+The airport publishes [bus connections to Milan and other destinations](https://www.milanbergamoairport.it/en/bus/). Check the route and timetable for your arrival. A bus into Milan still leaves a separate journey to Cavenago di Brianza.
 
-- Direct from airport terminals to Devero Hotel.
-- Meet and greet with our staff.
-- Secure luggage handling.
+### Official transfers: book the final leg in advance
 
-[Book Transfer Now](https://milanosensualcongress.com/transfer)
+The congress transfer service accepts advance bookings throughout the event weekend, at any hour. It covers Malpensa, Linate, Bergamo and Milano Centrale. This is a pre-booked service: arrange your pickup and return with the transport provider rather than expecting a walk-up shuttle.
 
-### The Venue: Devero Hotel & Spa
+Use the [official transfer page](https://milanosensualcongress.com/transfer) for current vehicle capacities, prices and booking contacts. Confirm your terminal or station pickup point, flight details, luggage needs and destination hotel when reserving.
 
-The congress takes place at the luxury 4-star executive **Devero Hotel** in Cavenago di Brianza. Located just 20 minutes from Milan, it offers a secluded, high-end environment perfect for intensive workshops and all-night parties. If you stay on-site, you take the elevator directly to the workshops—the ultimate bachata luxury. See how the venue fits into the complete [Bachata Congress 2026 in Europe](https://milanosensualcongress.com/bachata-congress-2026) experience.
+### Where to stay: venue and room availability
 
-### Quick Travel Tips for Bachata Dancers
+**Devero Hotel & Spa remains the congress venue.** Its rooms for the event are sold out. [AS Hotel Cambiago is the available accommodation option](https://milanosensualcongress.com/hotel#as-hotel-cambiago), approximately 800 metres away. Your congress pass and hotel reservation are separate bookings.
 
-- **Milan Transport:**
-  Download the ATM Milano app for city trains and subways.
-- **Power Adapters:**
-  Italy uses Type F and L plugs. Most hotels are compatible with standard European Type C.
-- **Dance Shoes:**
-  Our venue features premium parquet and professional dance floors. Bring your best suede soles.
+Check the [hotel availability update](https://milanosensualcongress.com/news/devero-hotel-sold-out-as-cambiago-2026) before reserving. Confirm the route between your accommodation and Devero, particularly for a late return after the parties, and give your transfer provider the hotel where you are staying.
 
-### Plan your congress weekend
+### Your travel checklist
 
-Use the complete [Bachata Congress 2026 in Europe](https://milanosensualcongress.com/bachata-congress-2026) guide, preview the [workshop program](https://milanosensualcongress.com/program), meet the [international Bachata artists](https://milanosensualcongress.com/artists) and secure your [Full Pass tickets](https://milanosensualcongress.com/tickets) for Milan.
+- Choose your
+  [congress pass](https://milanosensualcongress.com/tickets)
+  and reserve accommodation for the correct nights.
+- Save the venue address, hotel confirmation and transfer contact offline.
+- Check current transport timetables and allow extra time for the journey back to the airport.
+- Pack comfortable dance shoes and a change of clothes; read the
+  [social dancing and workshop etiquette guide](https://milanosensualcongress.com/news/bachata-congress-etiquette-social-dancing-workshops-parties)
+  .
+- Coming without a partner? Read our
+  [solo dancer guide](https://milanosensualcongress.com/news/bachata-congress-alone-solo-dancer-guide)
+  and
+  [workshop level guide](https://milanosensualcongress.com/news/bachata-workshop-levels-guide-congress)
+  .

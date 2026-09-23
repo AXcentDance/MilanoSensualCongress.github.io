@@ -24,6 +24,8 @@ Students who attend their workshops in Milan can expect a focus on **technical b
 
 Beyond the stage, they are social media powerhouses, with their dance videos garnering millions of views. Their influence has shaped the way a new generation of dancers approaches the social floor, emphasizing that technical skill should always serve the connection between partners.
 
+Want to train with them at the congress? Explore the [advanced Bachata masterclass programme](https://milanosensualcongress.com/masterclass) and our [workshop level guide](https://milanosensualcongress.com/news/bachata-workshop-levels-guide-congress). The masterclass upgrade requires a valid Full Pass; check the programme before choosing your sessions.
+
 #### Plan your congress weekend
 
 Use the complete [Bachata Congress 2026 in Europe](https://milanosensualcongress.com/bachata-congress-2026) guide, preview the [workshop program](https://milanosensualcongress.com/program), meet the [international Bachata artists](https://milanosensualcongress.com/artists) and secure your [Full Pass tickets](https://milanosensualcongress.com/tickets) for Milan.

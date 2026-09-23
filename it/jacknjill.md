@@ -16,7 +16,7 @@ Per garantire il massimo standard di equità e prestigio, la nostra giuria è co
 
 ### Dettagli dell'Evento e Registrazione
 
-Segna sul calendario il gran finale: la competizione si svolgerà **Domenica 22 Novembre**. Crediamo nel rendere il palco accessibile a tutti i veri amanti del ballo, motivo per cui la quota di iscrizione è di soli **10 EUR** per chiunque possieda un Full Pass o un Full Social Pass.
+Segna sul calendario il gran finale: la competizione si svolgerà **Domenica 22 Novembre**. Crediamo nel rendere il palco accessibile a tutti i veri amanti del ballo, motivo per cui la quota di iscrizione è di soli **€20** per chiunque possieda un Full Pass o un Full Social Pass.
 
 Le iscrizioni sono ora aperte esclusivamente su **Salsadelbaile**. I posti sono strettamente limitati per garantire un flusso agevole per tutti i concorrenti, quindi ti consigliamo di assicurarti l'iscrizione in anticipo per non perdere la magia.
 
@@ -33,6 +33,6 @@ Oltre ai premi materiali, competere sul palco di Milano offre un **riconosciment
 
 #### Sei Pronto a Gareggiare?
 
-Unisciti ai ballerini d'élite d'Europa e dimostra le tue abilità sul palco di Milano. L'iscrizione costa solo 10 EUR.
+Unisciti ai ballerini d'élite d'Europa e dimostra le tue abilità sul palco di Milano. L'iscrizione costa €20, oltre alle commissioni della piattaforma. È necessario un Full Pass o un Full Social Pass valido.
 
-[Partecipa alla Gara](https://lasalsadelbaile.com/MSC2026) [Acquista Prima il Tuo Pass](https://milanosensualcongress.com/tickets)
+[Partecipa alla Gara](https://lasalsadelbaile.com/MSC2026) [Acquista Prima il Tuo Pass](https://milanosensualcongress.com/it/tickets)

@@ -30,6 +30,8 @@ For the 2026 edition of our congress, Gero and Migle are bringing a specially cu
 
 Attendees will have the rare opportunity to learn directly from the source, absorbing the nuances of their style in the premium, luxury environment that defines the Milano experience. Whether you are looking to master body rolls or perfect your connection, their presence in Milan is an opportunity not to be missed.
 
+Want to train with them at the congress? Explore the [advanced Bachata masterclass programme](https://milanosensualcongress.com/masterclass) and our [workshop level guide](https://milanosensualcongress.com/news/bachata-workshop-levels-guide-congress). The masterclass upgrade requires a valid Full Pass; check the programme before choosing your sessions.
+
 #### Plan your congress weekend
 
 Use the complete [Bachata Congress 2026 in Europe](https://milanosensualcongress.com/bachata-congress-2026) guide, preview the [workshop program](https://milanosensualcongress.com/program), meet the [international Bachata artists](https://milanosensualcongress.com/artists) and secure your [Full Pass tickets](https://milanosensualcongress.com/tickets) for Milan.

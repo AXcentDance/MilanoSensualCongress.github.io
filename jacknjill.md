@@ -16,7 +16,7 @@ To ensure the highest standard of fairness and prestige, our jury is composed en
 
 ### Event Details & Registration
 
-Mark your calendars for the grand finale: the competition will take place on **Sunday, November 22nd**. We believe in making the stage accessible to all true lovers of the dance, which is why the entry fee is kept at only **10 EUR** for anyone holding a Full Pass or a Full Social Pass.
+Mark your calendars for the grand finale: the competition will take place on **Sunday, November 22nd**. We believe in making the stage accessible to all true lovers of the dance, which is why the entry fee is kept at only **€20** for anyone holding a Full Pass or a Full Social Pass.
 
 Registration is now open exclusively on **Salsadelbaile**. Spots are strictly limited to ensure a smooth flow for all competitors, so we recommend securing your entry early to avoid missing out on the magic.
 
@@ -33,6 +33,6 @@ Beyond the prizes, competing on the Milano stage provides unmatched **internatio
 
 #### Are You Ready to Compete?
 
-Join the elite dancers of Europe and prove your skills on the Milano stage. Entry is just 10 EUR.
+Join the elite dancers of Europe and prove your skills on the Milano stage. Entry costs €20, plus the ticket platform’s booking fees. A valid Full Pass or Full Social Pass is required.
 
 [Enter Competition](https://lasalsadelbaile.com/MSC2026) [Get Your Pass First](https://milanosensualcongress.com/tickets)

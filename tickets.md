@@ -56,7 +56,7 @@ Competition
 
 #### Jack & Jill Ticket
 
-20 CHF
+€20
 
 International Competition
 
@@ -132,7 +132,7 @@ Yes, name changes are possible. You can perform this action directly on the webs
 
 ##### What do I need to participate in the Jack & Jill?
 
-To participate in the competition, you must hold a valid **Full Pass** or a **Full Social Pass**. The competition fee is separate (20 CHF), but it requires one of these passes to be valid.
+To participate in the competition, you must hold a valid **Full Pass** or a **Full Social Pass**. The competition fee is separate (€20), but it requires one of these passes to be valid.
 
 ##### Can I buy the Masterclass separately?
 

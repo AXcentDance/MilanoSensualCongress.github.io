@@ -24,6 +24,8 @@ Gli studenti che parteciperanno ai loro workshop a Milano possono aspettarsi un 
 
 Oltre al palcoscenico, sono delle vere potenze sui social media, con i loro video di ballo che raccolgono milioni di visualizzazioni. La loro influenza ha plasmato il modo in cui una nuova generazione di ballerini approccia la pista sociale, sottolineando che l'abilità tecnica dovrebbe sempre servire la connessione tra i partner.
 
+Vuoi approfondire con loro durante il congresso? Consulta il [programma delle masterclass avanzate di Bachata](https://milanosensualcongress.com/it/masterclass) e la [guida ai livelli](https://milanosensualcongress.com/it/news/livelli-workshop-bachata-congresso). L’upgrade masterclass richiede un Full Pass valido; verifica il programma prima di scegliere le lezioni.
+
 #### Pianifica il tuo weekend al congresso
 
 Consulta la guida completa al [Congresso Bachata 2026 in Europa](https://milanosensualcongress.com/it/congresso-bachata-2026), guarda l'anteprima del [programma workshop](https://milanosensualcongress.com/it/programma), scopri gli [artisti internazionali di Bachata](https://milanosensualcongress.com/it/artists) e acquista i tuoi [biglietti Full Pass](https://milanosensualcongress.com/it/tickets) per Milano.

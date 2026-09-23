@@ -2,49 +2,54 @@
 
 # Guida Viaggio Bachata Milano 2026: Aeroporti, Transfer e Consigli
 
-Stai pianificando il tuo viaggio per il Milano Sensual Congress 2026? Leggi la nostra guida completa: aeroporti, navette ufficiali e come muoversi a Milano.
+Organizza il viaggio al Milano Sensual Congress: aeroporti, transfer su prenotazione al Devero, pernottamento all’AS Hotel Cambiago e checklist pratica.
 
 Canonical: https://milanosensualcongress.com/it/news/guida-viaggio-bachata-milano-2026
 
-### Arrivare a Milano, Italia
+### Organizza l’arrivo a Cavenago di Brianza
 
-Milano è perfettamente posizionata come hub dell'Europa centrale. Che tu stia volando da Londra, Madrid, Berlino o altrove, arrivare al **Milano Sensual Congress 2026** è semplicissimo.
+Milano Sensual Congress si svolge il **20–22 novembre 2026** al Devero Hotel & Spa, Largo Kennedy 1, Cavenago di Brianza. La sede è fuori dal centro di Milano. Confronta insieme volo e tragitto finale fino all’hotel, soprattutto se arrivi tardi.
 
-#### Malpensa (MXP)
+Parti dal [programma del congresso](https://milanosensualcongress.com/it/programma) per scegliere arrivo e ritorno. Prevedi tempo per procedure aeroportuali, bagagli, viaggio fino alla sede e riposo prima di ballare.
 
-Il principale gate internazionale. Treni frequenti e le nostre navette ufficiali MSC collegano direttamente alla location.
+### Quale aeroporto di Milano scegliere?
 
-#### Linate (LIN)
+#### Milano Malpensa (MXP)
 
-Il più vicino al centro città. Veloce e comodo per i voli europei.
+Il [Malpensa Express](https://www.malpensaexpress.it/en/lines-and-timetable/lines-and-timetables/our-lines/) collega l’aeroporto con le stazioni di Milano. Non arriva direttamente al Devero Hotel. Se scegli il treno, organizza anche il tragitto successivo; in alternativa, prenota un transfer ufficiale dall’aeroporto.
 
-#### Orio al Serio (BGY)
+#### Milano Linate (LIN)
 
-Hub per Ryanair e compagnie low-cost. Facile accesso tramite navetta per i ballerini attenti al budget.
+La [metropolitana M4 di ATM](https://www.atm.it/it/AtmNews/AtmInforma/Pagine/M4informazionisulserviziopasseggeribis.aspx) collega Linate con Milano, inclusa San Babila. È un collegamento urbano, non una linea diretta per l’hotel del congresso. Confronta l’intero tragitto con un transfer prenotato.
 
-### Navette Ufficiali MSC
+#### Milano Bergamo (BGY)
 
-Non preoccuparti di taxi costosi o percorsi di autobus complessi. Offriamo **Servizi di Transfer Ufficiali MSC** il giovedì e il venerdì.
+L’aeroporto pubblica i [collegamenti in autobus verso Milano e altre destinazioni](https://www.milanbergamoairport.it/en/bus/). Controlla percorso e orari per il tuo arrivo. L’autobus verso Milano richiede comunque un ulteriore spostamento fino a Cavenago di Brianza.
 
-- Direttamente dai terminal aeroportuali al Devero Hotel.
-- Accoglienza con il nostro staff.
-- Gestione sicura dei bagagli.
+### Transfer ufficiali: prenota prima di partire
 
-[Prenota Transfer Ora](https://milanosensualcongress.com/it/transfer)
+Il servizio transfer del congresso accetta prenotazioni anticipate durante tutto il weekend dell’evento, a qualsiasi ora. Copre Malpensa, Linate, Bergamo e Milano Centrale. È un servizio su prenotazione: concorda andata e ritorno con il fornitore, senza dare per scontata la presenza di una navetta senza prenotazione.
 
-### La Location: Devero Hotel & Spa
+Consulta la [pagina transfer ufficiale](https://milanosensualcongress.com/it/transfer) per capienza dei veicoli, prezzi attuali e contatti. Conferma punto di incontro, dati del volo, bagagli e hotel di destinazione al momento della prenotazione.
 
-Il congresso si svolge presso il lussuoso **Devero Hotel** a 4 stelle executive a Cavenago di Brianza. Situato a soli 20 minuti da Milano, offre un ambiente esclusivo di alto livello, perfetto per workshop intensivi e serate fino all'alba. Se alloggi in loco, prendi l'ascensore direttamente per i workshop: il massimo del lusso bachatero. Scopri come la location si inserisce nell'esperienza completa del [Congresso Bachata 2026 in Europa](https://milanosensualcongress.com/it/congresso-bachata-2026).
+### Dove dormire: sede e disponibilità delle camere
 
-### Consigli Rapidi per i Ballerini di Bachata
+**Il Devero Hotel & Spa resta la sede del congresso.** Le sue camere per l’evento sono esaurite. [AS Hotel Cambiago è l’opzione di pernottamento disponibile](https://milanosensualcongress.com/it/hotel#as-hotel-cambiago), a circa 800 metri. Pass del congresso e hotel richiedono prenotazioni separate.
 
-- **Trasporti Milano:**
-  Scarica l'app ATM Milano per treni e metropolitane cittadine.
-- **Adattatori di Corrente:**
-  L'Italia usa prese di tipo F e L. La maggior parte degli hotel è compatibile con il tipo europeo standard C.
-- **Scarpe da Ballo:**
-  La nostra location vanta parquet di alta qualità e piste da ballo professionali. Porta le tue migliori suole in bufala.
+Leggi l’[aggiornamento sulla disponibilità hotel](https://milanosensualcongress.com/it/news/devero-hotel-esaurito-as-cambiago-2026) prima di prenotare. Verifica il percorso tra il tuo alloggio e il Devero, soprattutto per il ritorno dopo i party, e comunica al fornitore del transfer l’hotel in cui pernotti.
 
-### Pianifica il tuo weekend al congresso
+### Checklist prima del viaggio
 
-Consulta la guida completa al [Congresso Bachata 2026 in Europa](https://milanosensualcongress.com/it/congresso-bachata-2026), guarda l'anteprima del [programma workshop](https://milanosensualcongress.com/it/programma), scopri gli [artisti internazionali di Bachata](https://milanosensualcongress.com/it/artists) e acquista i tuoi [biglietti Full Pass](https://milanosensualcongress.com/it/tickets) per Milano.
+- Scegli il
+  [pass del congresso](https://milanosensualcongress.com/it/tickets)
+  e prenota l’alloggio per le notti corrette.
+- Salva offline indirizzo della sede, conferma dell’hotel e contatto del transfer.
+- Verifica gli orari aggiornati dei trasporti e considera un margine per il ritorno in aeroporto.
+- Porta scarpe comode per ballare e un cambio; consulta la
+  [guida al galateo di social e workshop](https://milanosensualcongress.com/it/news/etichetta-congresso-bachata-social-workshop-party)
+  .
+- Parti senza partner? Leggi la
+  [guida per chi parte da solo](https://milanosensualcongress.com/it/news/congresso-bachata-da-soli-guida-ballerini)
+  e quella sui
+  [livelli dei workshop](https://milanosensualcongress.com/it/news/livelli-workshop-bachata-congresso)
+  .

@@ -22,6 +22,8 @@ Ora basati a Orlando, Florida, il duo gestisce la fortunatissima **Endless Bacha
 
 Il loro approccio elimina movimenti caotici delle braccia, favorendo isolamenti corporei profondi, trasferimenti di peso radicati a terra e una musicalità che connette la coppia di ballerini profondamente.
 
+Vuoi approfondire con loro durante il congresso? Consulta il [programma delle masterclass avanzate di Bachata](https://milanosensualcongress.com/it/masterclass) e la [guida ai livelli](https://milanosensualcongress.com/it/news/livelli-workshop-bachata-congresso). L’upgrade masterclass richiede un Full Pass valido; verifica il programma prima di scegliere le lezioni.
+
 #### Pianifica il tuo weekend al congresso
 
 Consulta la guida completa al [Congresso Bachata 2026 in Europa](https://milanosensualcongress.com/it/congresso-bachata-2026), guarda l'anteprima del [programma workshop](https://milanosensualcongress.com/it/programma), scopri gli [artisti internazionali di Bachata](https://milanosensualcongress.com/it/artists) e acquista i tuoi [biglietti Full Pass](https://milanosensualcongress.com/it/tickets) per Milano.
