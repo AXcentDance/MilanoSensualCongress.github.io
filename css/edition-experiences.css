@@ -1,0 +1,103 @@
+/* 2027 experience pages: editorial layouts, preserved 2026 reference content. */
+.edition-2027 .experience-page{background:#062b27;color:#f4f0e6;padding:0}
+.edition-2027 .experience-wrap{width:min(1280px,calc(100% - 64px));margin-inline:auto}
+.edition-2027 .experience-hero{padding:80px 0;position:relative;border-bottom:1px solid #44665b}
+.edition-2027 .experience-eyebrow{display:block;font:700 11px/1.6 Inter,sans-serif;letter-spacing:.19em;text-transform:uppercase;color:#cfb989;margin:0 0 24px}
+.edition-2027 .experience-hero-grid{display:grid;grid-template-columns:1.35fr .65fr;gap:64px;align-items:end}
+.edition-2027 .experience-title{font:500 clamp(3.5rem,7.4vw,7.4rem)/.99 'Playfair Display',serif;letter-spacing:-.055em;margin:0;max-width:980px;text-wrap:balance}
+.edition-2027 .experience-title em{font-weight:400;color:#b6c7b8}
+.edition-2027 .experience-deck{font-size:17px;line-height:1.75;color:#d7dfd5;max-width:650px;margin:24px 0}
+.edition-2027 .experience-hero-aside{padding:26px 0 0;border-top:1px solid #cfb989;font-size:15px;line-height:1.8;color:#b6c7b8}
+.edition-2027 .experience-reference{margin:26px 0 0;border-left:3px solid #d94732;padding:8px 0 8px 17px;color:#d7dfd5;font-size:12px;line-height:1.7;max-width:660px}
+.edition-2027 .experience-actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:28px}
+.edition-2027 .experience-action{display:inline-flex;min-height:48px;align-items:center;justify-content:center;padding:13px 22px;background:#c83e2b;color:#fff;font:700 13px/1.6 Inter,sans-serif;text-decoration:none;letter-spacing:.025em;border:1px solid #c83e2b;transition:background .2s,color .2s}
+.edition-2027 .experience-action:hover{background:#b53727;border-color:#b53727;color:#fff}
+.edition-2027 .experience-action-quiet{background:transparent;border-color:#80998b;color:#f4f0e6}
+.edition-2027 .experience-action-quiet:hover{background:#f4f0e6;border-color:#f4f0e6;color:#062b27}
+.edition-2027 .experience-page a:focus-visible{outline:3px solid #cfb989;outline-offset:5px}
+.edition-2027 .experience-section{padding:80px 0}
+.edition-2027 .experience-paper{background:#f4f0e6;color:#062b27}
+.edition-2027 .experience-paper .experience-eyebrow{color:#406b57}
+.edition-2027 .experience-paper .experience-deck,.edition-2027 .experience-paper .experience-reference{color:#405e52}
+.edition-2027 .experience-heading{font:500 clamp(2.2rem,4vw,4.2rem)/1.13 'Playfair Display',serif;letter-spacing:-.035em;margin:0 0 24px;color:inherit;text-wrap:balance}
+.edition-2027 .experience-section-head{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:end;margin-bottom:48px}
+.edition-2027 .experience-section-head p:not(.experience-eyebrow){margin:0;line-height:1.8;color:#405e52;max-width:570px}
+.edition-2027 .experience-folio{font-size:11px;letter-spacing:.12em;text-transform:uppercase;display:flex;justify-content:space-between;border-bottom:1px solid #a8b9aa;padding:0 0 18px;margin:0 0 40px;gap:16px}
+.edition-2027 .experience-artist-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:48px 28px}
+.edition-2027 .experience-artist-card{min-width:0;border-bottom:1px solid #a8b9aa;padding-bottom:23px}
+.edition-2027 .experience-artist-photo{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;object-position:center 65%;background:#143c32}
+.edition-2027 .experience-artist-info{display:flex;justify-content:space-between;align-items:start;gap:14px;padding:19px 0 10px}
+.edition-2027 .experience-artist-info h3{font:500 clamp(1.5rem,2.1vw,2.25rem)/1.2 'Playfair Display',serif;margin:0;color:#062b27}
+.edition-2027 .experience-artist-index{font-size:11px;line-height:2;letter-spacing:.08em;color:#4a695b}
+.edition-2027 .experience-artist-meta{font-size:12px;line-height:1.7;color:#4a695b;margin:0 0 16px}
+.edition-2027 .experience-text-link{display:inline-flex;align-items:center;min-height:44px;font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:inherit;text-decoration:underline;text-underline-offset:6px}
+.edition-2027 .experience-text-link:hover{color:#a73527}
+.edition-2027 .experience-topics{display:flex;gap:0;flex-wrap:wrap;border-block:1px solid #44665b;margin:0;padding:0;list-style:none}
+.edition-2027 .experience-topics li{padding:24px 25px 24px 0;margin:0 25px 0 0;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:#cfb989}
+.edition-2027 .experience-callout{display:grid;grid-template-columns:1.2fr 1fr;gap:64px;align-items:center}
+.edition-2027 .experience-callout p{line-height:1.8;color:#b6c7b8;max-width:600px}
+.edition-2027 .experience-callout .experience-actions{justify-content:flex-end}
+.edition-2027 .experience-program-hero .experience-title{max-width:850px}
+.edition-2027 .experience-program-mark{font:400 clamp(6rem,16vw,14rem)/.8 'Playfair Display',serif;color:#cfb989;letter-spacing:-.07em;text-align:right}
+.edition-2027 .experience-program-mark small{display:block;font:600 11px/1.5 Inter,sans-serif;letter-spacing:.15em;text-transform:uppercase;margin-top:30px;color:#b6c7b8}
+.edition-2027 .experience-day{display:grid;grid-template-columns:100px 1fr 1.35fr;gap:32px;border-top:1px solid #a8b9aa;padding:38px 0}
+.edition-2027 .experience-day-number{font:400 58px/1 'Playfair Display',serif;color:#1d785d}
+.edition-2027 .experience-day h3{font:500 34px/1.2 'Playfair Display',serif;margin:0 0 12px;color:#062b27}
+.edition-2027 .experience-day-note{font-size:13px;line-height:1.7;color:#4a695b;margin:0}
+.edition-2027 .experience-timetable{list-style:none;margin:0;padding:0}
+.edition-2027 .experience-timetable li{display:flex;gap:20px;justify-content:space-between;padding:11px 0;border-bottom:1px solid #cbd3c7;font-size:14px;line-height:1.65}
+.edition-2027 .experience-timetable time{font-variant-numeric:tabular-nums;white-space:nowrap;font-weight:600}
+.edition-2027 .experience-timetable span{text-align:right}
+.edition-2027 .experience-note{padding:28px 32px;border-left:3px solid #1d785d;background:#e8eadf;color:#405e52;font-size:14px;line-height:1.8;margin-top:26px}
+.edition-2027 .experience-note strong{color:#062b27}
+.edition-2027 .experience-faq{padding:80px 0;background:#031c19}
+.edition-2027 .experience-faq-grid{display:grid;grid-template-columns:.75fr 1.25fr;gap:70px}
+.edition-2027 .experience-faq-item{border-top:1px solid #44665b;padding:24px 0}
+.edition-2027 .experience-faq-item h3{font-size:16px;line-height:1.5;font-weight:600;margin:0 0 12px;color:#f4f0e6}
+.edition-2027 .experience-faq-item p{font-size:14px;line-height:1.85;color:#b6c7b8;margin:0}
+.edition-2027 .experience-faq-item a{color:#f4f0e6;text-decoration:underline;text-underline-offset:3px}
+.edition-2027 .experience-photo-hero{display:grid;grid-template-columns:1fr 1fr;min-height:780px;padding-top:0;background:#031c19}
+.edition-2027 .experience-photo-hero-copy{display:flex;flex-direction:column;justify-content:center;padding:70px max(32px,calc((100vw - 1280px)/2));padding-right:48px}
+.edition-2027 .experience-photo-hero .experience-title{font-size:clamp(3.5rem,6vw,6.2rem)}
+.edition-2027 .experience-photo-panel{position:relative;min-width:0;overflow:hidden}
+.edition-2027 .experience-photo-panel img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}
+.edition-2027 .experience-photo-caption{position:absolute;bottom:0;left:0;right:0;margin:0;padding:18px 24px;background:#062b27;color:#f4f0e6;font-size:11px;letter-spacing:.09em;text-transform:uppercase;line-height:1.7}
+.edition-2027 .experience-photo-panel-tall img{object-position:center top}
+.edition-2027 .experience-stat-strip{display:grid;grid-template-columns:repeat(4,1fr);padding:42px 0;border-bottom:1px solid #44665b;gap:30px}
+.edition-2027 .experience-stat-strip strong{display:block;font:400 clamp(2.5rem,4vw,4rem)/1.1 'Playfair Display',serif;color:#cfb989;margin-bottom:12px}
+.edition-2027 .experience-stat-strip span{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#b6c7b8;line-height:1.6}
+.edition-2027 .experience-three{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:40px}
+.edition-2027 .experience-principle{padding-top:24px;border-top:1px solid #44665b}
+.edition-2027 .experience-principle>span{font-size:12px;color:#cfb989;letter-spacing:.08em}
+.edition-2027 .experience-principle h3{font:500 27px/1.2 'Playfair Display',serif;margin:22px 0 17px}
+.edition-2027 .experience-principle p{font-size:14px;line-height:1.8;color:#b6c7b8}
+.edition-2027 .experience-paper .experience-principle{border-color:#a8b9aa}
+.edition-2027 .experience-paper .experience-principle>span{color:#1d785d}
+.edition-2027 .experience-paper .experience-principle p{color:#405e52}
+.edition-2027 .experience-pass-list{list-style:none;margin:0;padding:0}
+.edition-2027 .experience-pass-list li{border-top:1px solid #a8b9aa;padding:20px 0;font-size:14px;line-height:1.85;color:#405e52}
+.edition-2027 .experience-pass-list strong{display:block;color:#062b27;font-size:17px;margin-bottom:6px}
+.edition-2027 .experience-inset-photo{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;display:block}
+.edition-2027 .experience-paper .experience-action-quiet{border-color:#527560;color:#062b27}
+.edition-2027 .experience-paper .experience-action-quiet:hover{background:#062b27;color:#f4f0e6}
+.edition-2027 .experience-artist-description{font-size:14px;line-height:1.8;color:#405e52;margin:0 0 12px}
+.edition-2027 .experience-syllabus{display:grid;grid-template-columns:.8fr 1.2fr;gap:80px}
+.edition-2027 .experience-syllabus-list{list-style:none;padding:0;margin:0;counter-reset:syllabus}
+.edition-2027 .experience-syllabus-list li{counter-increment:syllabus;display:grid;grid-template-columns:45px 1fr;column-gap:22px;border-top:1px solid #44665b;padding:27px 0}
+.edition-2027 .experience-syllabus-list li:before{content:'0' counter(syllabus);font:400 26px/1 'Playfair Display',serif;color:#cfb989;grid-row:span 2}
+.edition-2027 .experience-syllabus-list h3{font-size:19px;line-height:1.4;margin:0 0 12px}
+.edition-2027 .experience-syllabus-list p{font-size:14px;line-height:1.8;color:#b6c7b8;margin:0}
+.edition-2027 .experience-dossier{display:grid;grid-template-columns:1.2fr .8fr;gap:80px}
+.edition-2027 .experience-dossier p{font-size:16px;line-height:1.9;color:#405e52}
+.edition-2027 .experience-facts{border-top:3px solid #1d785d;padding-top:10px}
+.edition-2027 .experience-facts div{padding:18px 0;border-bottom:1px solid #a8b9aa}
+.edition-2027 .experience-facts dt{font-size:10px;text-transform:uppercase;letter-spacing:.13em;color:#4a695b;margin-bottom:9px}
+.edition-2027 .experience-facts dd{font-size:17px;line-height:1.7;font-weight:600;margin:0;color:#062b27}
+.edition-2027 .experience-prize{padding:35px;border:1px solid #44665b}
+.edition-2027 .experience-prize h3{font:500 31px/1.25 'Playfair Display',serif;margin:18px 0;color:#f4f0e6}
+.edition-2027 .experience-prize p{font-size:14px;line-height:1.85;color:#b6c7b8}
+.edition-2027 .experience-prize span{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#cfb989}
+@media(min-width:1200px){.edition-2027 .experience-artist-grid-eight .experience-artist-card:first-child{grid-column:span 2}.edition-2027 .experience-artist-grid-eight .experience-artist-card:first-child .experience-artist-photo{aspect-ratio:1.65;object-position:center 50%}}
+@media(max-width:1000px){.edition-2027 .experience-hero-grid,.edition-2027 .experience-section-head{gap:36px}.edition-2027 .experience-artist-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.edition-2027 .experience-day{grid-template-columns:65px 1fr 1.4fr;gap:22px}.edition-2027 .experience-photo-hero-copy{padding:65px 28px}.edition-2027 .experience-photo-hero{min-height:710px}.edition-2027 .experience-syllabus,.edition-2027 .experience-dossier,.edition-2027 .experience-faq-grid{gap:40px}.edition-2027 .experience-three{gap:26px}}
+@media(max-width:700px){.edition-2027 .experience-wrap{width:calc(100% - 40px)}.edition-2027 .experience-hero{padding:52px 0 48px}.edition-2027 .experience-hero-grid,.edition-2027 .experience-section-head,.edition-2027 .experience-callout,.edition-2027 .experience-faq-grid,.edition-2027 .experience-syllabus,.edition-2027 .experience-dossier{grid-template-columns:1fr;gap:28px}.edition-2027 .experience-title{font-size:clamp(3rem,13.5vw,5rem)}.edition-2027 .experience-deck{font-size:16px}.edition-2027 .experience-hero-aside{max-width:500px}.edition-2027 .experience-section,.edition-2027 .experience-faq{padding:52px 0}.edition-2027 .experience-artist-grid{gap:32px 16px}.edition-2027 .experience-artist-info h3{font-size:23px}.edition-2027 .experience-artist-info{gap:6px}.edition-2027 .experience-artist-index{font-size:9px}.edition-2027 .experience-artist-meta{font-size:11px}.edition-2027 .experience-text-link{font-size:10px}.edition-2027 .experience-callout .experience-actions{justify-content:flex-start}.edition-2027 .experience-program-mark{text-align:left;font-size:7rem;display:flex;align-items:end;gap:22px}.edition-2027 .experience-program-mark small{margin:0 0 5px;max-width:130px}.edition-2027 .experience-day{grid-template-columns:45px 1fr;gap:18px}.edition-2027 .experience-day-number{font-size:40px}.edition-2027 .experience-day h3{font-size:30px}.edition-2027 .experience-day .experience-timetable{grid-column:2}.edition-2027 .experience-timetable li{font-size:12px;gap:12px}.edition-2027 .experience-note{padding:22px}.edition-2027 .experience-photo-hero{grid-template-columns:1fr;padding-top:0;min-height:0}.edition-2027 .experience-photo-hero-copy{padding:56px 20px 40px}.edition-2027 .experience-photo-hero .experience-title{font-size:clamp(3rem,13.5vw,5rem)}.edition-2027 .experience-photo-panel{height:400px}.edition-2027 .experience-photo-panel img{object-position:center 35%}.edition-2027 .experience-stat-strip{grid-template-columns:repeat(2,1fr);gap:32px;padding:32px 0}.edition-2027 .experience-three{grid-template-columns:1fr;gap:30px}.edition-2027 .experience-topics li{padding:18px 14px 18px 0;margin:0 8px 0 0;font-size:10px}.edition-2027 .experience-folio{font-size:9px;margin-bottom:28px}.edition-2027 .experience-prize{padding:28px}.edition-2027 .experience-masterclass-grid{grid-template-columns:1fr}.edition-2027 .experience-masterclass-grid .experience-artist-photo{aspect-ratio:5/4;object-position:center 30%}}
+@media(prefers-reduced-motion:reduce){.edition-2027 .experience-page *{transition:none!important}}

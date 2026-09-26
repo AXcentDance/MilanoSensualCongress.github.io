@@ -6,6 +6,8 @@ Plan your Milano Sensual Congress trip: Milan airports, pre-booked transfers to 
 
 Canonical: https://milanosensualcongress.com/news/milan-bachata-travel-guide-2026
 
+[All stories](https://milanosensualcongress.com/news)
+
 ### Plan your arrival around Cavenago di Brianza
 
 Milano Sensual Congress takes place on **20–22 November 2026** at Devero Hotel & Spa, Largo Kennedy 1, Cavenago di Brianza. The venue is outside central Milan. Compare your flight and the final journey to the hotel together, especially if you arrive late at night.

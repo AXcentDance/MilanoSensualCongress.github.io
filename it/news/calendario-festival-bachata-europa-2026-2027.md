@@ -6,6 +6,8 @@ Pianifica la tua stagione Bachata in Europa: eventi selezionati da novembre 2026
 
 Canonical: https://milanosensualcongress.com/it/news/calendario-festival-bachata-europa-2026-2027
 
+[Tutte le storie](https://milanosensualcongress.com/it/news)
+
 Stai pianificando una stagione di **festival di Bachata in Europa**? Questo calendario selezionato raccoglie sei eventi tra novembre 2026 e aprile 2027, a partire dal Milano Sensual Congress. Usa le date e i link ufficiali per organizzare i weekend più adatti a te.
 
 Scegli in base allo stile, al livello dei workshop, al social dancing e al viaggio. Prima di prenotare, verifica con ogni organizzatore cosa include il pass, l’alloggio e gli orari di arrivo. Nuovo a questo format? Inizia dalla guida su [cosa aspettarsi da un congresso di Bachata](https://milanosensualcongress.com/it/news/cosa-aspettarsi-da-un-congresso-di-bachata-2026).

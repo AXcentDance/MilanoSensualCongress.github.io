@@ -6,6 +6,8 @@ Archived Milano Sensual Congress ticket update: the €125 Full Pass tier ended 
 
 Canonical: https://milanosensualcongress.com/news/full-pass-masterclass-price-increase-june-15-2026
 
+[All stories](https://milanosensualcongress.com/news)
+
 **Archive notice:** the €125 Full Pass tier described below ended on July 31, 2026. The [current Bachata Congress ticket page](https://milanosensualcongress.com/tickets) lists the active €135 tier through October 15. The Masterclass upgrade remains €59, with no further Masterclass increases planned.
 
 July 31

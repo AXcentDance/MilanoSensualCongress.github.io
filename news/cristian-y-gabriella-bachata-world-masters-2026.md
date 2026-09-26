@@ -6,6 +6,8 @@ Discover the world-class precision of Cristian y Gabriella. The Spanish Bachata 
 
 Canonical: https://milanosensualcongress.com/news/cristian-y-gabriella-bachata-world-masters-2026
 
+[All stories](https://milanosensualcongress.com/news)
+
 "Our goal is to take the traditional essence of Bachata and elevate it through technical perfection and creative freedom." - Cristian y Gabriella
 
 Spain has long been the epicenter of the Bachata revolution, and few couples embody this evolution better than **Cristian y Gabriella**. Based in Seville, they have risen to international stardom not just through their competitive success, but through a teaching methodology that prioritizes the "why" behind every movement.

@@ -6,6 +6,8 @@ Learn bachata congress etiquette for social dancing, workshops and parties. A pr
 
 Canonical: https://milanosensualcongress.com/news/bachata-congress-etiquette-social-dancing-workshops-parties
 
+[All stories](https://milanosensualcongress.com/news)
+
 A bachata congress is more than a schedule of classes and parties. It is a temporary international community, built around trust, music, shared space and the small choices dancers make with each other.
 
 If you are traveling to an international bachata festival for the first time, etiquette can feel like an invisible rulebook. The good news is that bachata congress etiquette is not about being perfect. It is about making the dance floor safer, warmer and more enjoyable for everyone.

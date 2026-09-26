@@ -6,6 +6,8 @@ Devero Hotel has been sold out since August for Milano Sensual Congress 2026. Ro
 
 Canonical: https://milanosensualcongress.com/news/devero-hotel-sold-out-as-cambiago-2026
 
+[All stories](https://milanosensualcongress.com/news)
+
 ### Devero rooms sold out since August
 
 **Devero Hotel, the main hotel for Milano Sensual Congress, has been sold out for the 2026 edition since August.** Thank you to everyone who has already booked their stay for our Bachata weekend on **20–22 November 2026**.

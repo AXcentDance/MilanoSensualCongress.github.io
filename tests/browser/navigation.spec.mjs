@@ -22,7 +22,7 @@ for (const path of ['/', '/it/']) {
     await expect(last).toBeInViewport({ ratio: 1 });
     await expect.poll(() => page.locator('body > nav').evaluate(nav => nav.getBoundingClientRect().bottom <= innerHeight + 1)).toBe(true);
 
-    const language = page.locator(`#mobile-menu a[href="${path === '/' ? 'it/' : '../'}"]`);
+    const language = page.locator(`#mobile-menu a[lang="${path === '/' ? 'it' : 'en'}"]`);
     await language.click();
     await expect(page).toHaveURL(path === '/' ? /\/it\/$/ : /:\d+\/$/);
   });
@@ -34,13 +34,13 @@ for (const path of ['/', '/it/']) {
       const page = await context.newPage();
       await page.goto(baseURL + path);
       await expect(page.locator('button[aria-controls="mobile-menu"]')).toBeHidden();
-      if (info.project.use.viewport.width < 1280) {
+      if (info.project.use.viewport.width <= 1100) {
         await expect(page.locator('#mobile-menu')).toBeVisible();
         expect(await page.evaluate(() => document.querySelector('main').getBoundingClientRect().top >= document.querySelector('body > nav').getBoundingClientRect().bottom)).toBe(true);
       }
-      const contact = page.locator('nav a[href="contact"]:visible');
-      await contact.click();
-      await expect(page).toHaveURL(new RegExp(path + 'contact$'));
+      const programme = path === '/' ? '/program' : '/it/programma';
+      await page.locator(`nav a[href="${programme}"]:visible`).click();
+      await expect(page).toHaveURL(new RegExp(programme + '$'));
       await expect(page.locator('h1')).toBeVisible();
     } finally { await context.close(); }
   });

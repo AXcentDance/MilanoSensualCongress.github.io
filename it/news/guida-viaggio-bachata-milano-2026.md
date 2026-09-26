@@ -6,6 +6,8 @@ Organizza il viaggio al Milano Sensual Congress: aeroporti, transfer su prenotaz
 
 Canonical: https://milanosensualcongress.com/it/news/guida-viaggio-bachata-milano-2026
 
+[Tutte le storie](https://milanosensualcongress.com/it/news)
+
 ### Organizza l’arrivo a Cavenago di Brianza
 
 Milano Sensual Congress si svolge il **20–22 novembre 2026** al Devero Hotel & Spa, Largo Kennedy 1, Cavenago di Brianza. La sede è fuori dal centro di Milano. Confronta insieme volo e tragitto finale fino all’hotel, soprattutto se arrivi tardi.

@@ -72,10 +72,14 @@ CRITICAL_SOURCES = [
     ("css/tailwind.min.css", "purge"),
     ("vendor/fontawesome/fa-subset.min.css", "purge"),
     ("css/site.css", "full"),
+    ("css/edition-2027.css", "purge"),
+    ("css/edition-experiences.css", "purge"),
+    ("css/edition-visit.css", "purge"),
+    ("css/edition-editorial.css", "purge"),
 ]
 
 # Classes that scripts toggle at runtime and must always survive purging.
-SAFELIST = {"hidden", "animate-spin"}
+SAFELIST = {"hidden", "animate-spin", "e27-dialog-open"}
 
 # Warn when a page's generated critical CSS exceeds this many bytes.
 WARN_BYTES = 40 * 1024
@@ -85,28 +89,7 @@ HASH_LEN = 16
 # Legacy pages that inline their CSS wholesale via <style data-inline="...">
 # markers. These pages have no stylesheet <link> tags at all, so the
 # critical-CSS pipeline skips them.
-PAGES = {
-    "news/bachata-workshop-levels-guide-congress.html": [
-        "css/fonts.css",
-        "css/workshop-levels-guide.css",
-        "css/site.css",
-    ],
-    "it/news/livelli-workshop-bachata-congresso.html": [
-        "css/fonts.css",
-        "css/workshop-levels-guide.css",
-        "css/site.css",
-    ],
-    "news/bachata-congress-alone-solo-dancer-guide.html": [
-        "css/fonts.css",
-        "css/solo-congress-guide.css",
-        "css/site.css",
-    ],
-    "it/news/congresso-bachata-da-soli-guida-ballerini.html": [
-        "css/fonts.css",
-        "css/solo-congress-guide.css",
-        "css/site.css",
-    ],
-}
+PAGES = {}
 
 # ---------------------------------------------------------------------------
 # CSS parsing
@@ -534,6 +517,10 @@ def sync_data_inline_page(page, css_files, check):
 
 
 INLINE_SUPPLEMENTS = {
+    "news/bachata-workshop-levels-guide-congress.html": ["css/workshop-levels-guide.css"],
+    "it/news/livelli-workshop-bachata-congresso.html": ["css/workshop-levels-guide.css"],
+    "news/bachata-congress-alone-solo-dancer-guide.html": ["css/solo-congress-guide.css"],
+    "it/news/congresso-bachata-da-soli-guida-ballerini.html": ["css/solo-congress-guide.css"],
     "hotel.html": ["css/hotel.css"],
     "it/hotel.html": ["css/hotel.css"],
 }

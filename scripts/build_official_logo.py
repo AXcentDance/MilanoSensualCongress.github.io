@@ -15,6 +15,7 @@ OUTPUTS = {
     # Key the neutral black matte only for translucent navigation surfaces.
     # The supplied master, artwork colors and all other copies stay unchanged.
     'images/milano-sensual-congress-official-logo-nav.webp': ('scale=400:240:flags=lanczos,format=rgba,colorkey=0x000000:0.015:0.04', True),
+    'images/milano-sensual-congress-official-logo-nav-2027.webp': ('scale=200:120:flags=lanczos,format=rgba,colorkey=0x000000:0.015:0.04', True),
     'images/milano-sensual-congress-official-logo-preview.webp': ('scale=950:570:flags=lanczos,pad=1200:630:(ow-iw)/2:(oh-ih)/2:black', True),
     'images/milano-sensual-congress-official-icon.webp': ('scale=180:108:flags=lanczos,pad=192:192:(ow-iw)/2:(oh-ih)/2:black', True),
     'images/og/milano-sensual-congress-official-social-card.jpg': ('scale=950:570:flags=lanczos,pad=1200:630:(ow-iw)/2:(oh-ih)/2:black', False),

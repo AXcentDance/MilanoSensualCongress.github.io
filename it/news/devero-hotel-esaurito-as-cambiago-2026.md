@@ -6,6 +6,8 @@ Devero Hotel è esaurito da agosto per Milano Sensual Congress 2026. Ora sono di
 
 Canonical: https://milanosensualcongress.com/it/news/devero-hotel-esaurito-as-cambiago-2026
 
+[Tutte le storie](https://milanosensualcongress.com/it/news)
+
 ### Camere al Devero esaurite da agosto
 
 **Devero Hotel, l’hotel principale del Milano Sensual Congress, è esaurito per l’edizione 2026 già da agosto.** Grazie a tutti coloro che hanno già prenotato il soggiorno per il nostro weekend di Bachata del **20–22 novembre 2026**.

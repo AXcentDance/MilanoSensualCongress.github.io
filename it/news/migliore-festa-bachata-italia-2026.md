@@ -6,6 +6,8 @@ Milano Sensual Congress 2026 sarà il miglior social di Bachata in Italia: 1.000
 
 Canonical: https://milanosensualcongress.com/it/news/migliore-festa-bachata-italia-2026
 
+[Tutte le storie](https://milanosensualcongress.com/it/news)
+
 Milano Sensual Congress 2026 non è solo un weekend di workshop Bachata di livello mondiale. Sarà il miglior social di Bachata in Italia dell'anno: oltre 1.000 ballerini, artisti internazionali in pista, posti limitati, due sale da ballo e più di 800 metri quadrati dedicati alla danza.
 
 1.000+

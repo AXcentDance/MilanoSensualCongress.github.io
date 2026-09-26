@@ -6,6 +6,8 @@ Discover the unique style of Aitor Gomez. A master of Dominican footwork and Bac
 
 Canonical: https://milanosensualcongress.com/news/aitor-gomez-bachata-sensual-dominican-roots
 
+[All stories](https://milanosensualcongress.com/news)
+
 "To understand the evolution of Bachata, one must first dance its roots." - Aitor Gomez
 
 In the global Bachata scene, few artists possess the versatility of **Aitor Gomez**. While many dancers specialize in either the traditional Dominican style or the modern Sensual Bachata, Aitor has carved a unique path by mastering both and finding the hidden threads that connect them.

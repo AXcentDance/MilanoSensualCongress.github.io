@@ -6,6 +6,8 @@ Aggiornamento archiviato: la fascia Full Pass da 125€ è terminata il 31 lugli
 
 Canonical: https://milanosensualcongress.com/it/news/aumento-prezzi-full-pass-masterclass-15-giugno-2026
 
+[Tutte le storie](https://milanosensualcongress.com/it/news)
+
 **Avviso archivio:** la fascia Full Pass da 125€ descritta qui sotto è terminata il 31 luglio 2026. La [pagina attuale dei biglietti del Congresso Bachata](https://milanosensualcongress.com/it/tickets) mostra la fascia da 135€ valida fino al 15 ottobre. L'upgrade Masterclass resta a 59€, senza altri aumenti previsti.
 
 31 luglio

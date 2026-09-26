@@ -6,6 +6,8 @@ Scopri perché Milano sta diventando una meta imperdibile per la Bachata in Ital
 
 Canonical: https://milanosensualcongress.com/it/news/bachata-italia-2026-milano-meta-ballo
 
+[Tutte le storie](https://milanosensualcongress.com/it/news)
+
 L'Italia ha sempre avuto gli ingredienti che i ballerini amano: musica, cibo, stile, notti lunghe e una cultura che capisce il valore dello stare insieme. Nel 2026, Milano sta trasformando questi ingredienti in qualcosa di ancora più forte per la community Bachata: una meta europea facile da raggiungere, dove un weekend di ballo può essere internazionale e semplice da vivere.
 
 3

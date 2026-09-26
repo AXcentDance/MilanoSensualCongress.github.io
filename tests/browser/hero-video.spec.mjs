@@ -6,7 +6,7 @@ test.beforeEach(async ({ context }) => {
 });
 
 for (const path of ['/', '/it/']) {
-  test(`${path}: hero video plays inline without interaction after the page loads`, async ({ page }) => {
+  test(`${path}: congress film plays inline when scrolled into view after load`, async ({ page }) => {
     await page.emulateMedia({ reducedMotion: 'no-preference' });
     await page.addInitScript(() => {
       // Register before the page's loader: the movie must not compete with
@@ -18,6 +18,7 @@ for (const path of ['/', '/it/']) {
     await page.goto(path);
     const video = page.locator('#heroVideo');
     expect(await page.evaluate(() => window.heroSourceAtLoadStart)).toBeNull();
+    await video.scrollIntoViewIfNeeded();
     await expect(video).toHaveAttribute('src', /hero-720\.mp4(?:\?|$)/);
 
     // A poster, successful HTTP response, or play() call alone cannot prove
@@ -57,6 +58,8 @@ for (const path of ['/', '/it/']) {
     });
     await page.goto(path);
     await expect(page.locator('h1')).toBeVisible();
+    await page.locator('#heroVideo').scrollIntoViewIfNeeded();
+    await expect(page.locator('#heroVideo')).toHaveAttribute('poster', /poster\.webp$/);
     const state = await page.locator('#heroVideo').evaluate(el => ({
       source: el.getAttribute('src'),
       paused: el.paused,

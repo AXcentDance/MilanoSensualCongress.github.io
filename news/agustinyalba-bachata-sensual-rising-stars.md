@@ -6,6 +6,8 @@ Meet Agustin & Alba, the super-young duo representing the future of Bachata Sens
 
 Canonical: https://milanosensualcongress.com/news/agustinyalba-bachata-sensual-rising-stars
 
+[All stories](https://milanosensualcongress.com/news)
+
 "Daring to redefine the boundaries of expression in Bachata Sensual." - Agustin & Alba
 
 In a world of established legends, **Agustin & Alba** have quickly risen to become one of the most exciting and talked-about couples in the international Bachata community. Based in Barcelona, the birthplace of the Sensual style, they bring a fresh, youthful energy that is literally transforming the dance floors of Europe and beyond.

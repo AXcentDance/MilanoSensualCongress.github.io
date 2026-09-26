@@ -6,22 +6,28 @@ Risposte alle domande comuni sui congressi bachata: cos'e un congresso, principi
 
 Canonical: https://milanosensualcongress.com/it/faq
 
-### Cos'e un congresso bachata?
+FAQ / 01—05
+
+Un weekend da vivere. Tutto quello che ti serve per iniziare.
+
+[Parla con noi](https://milanosensualcongress.com/it/contact)
+
+**01Cos'e un congresso bachata?**
 
 Un congresso bachata e un evento di piu giorni in cui i ballerini si incontrano per workshop, social dancing, party, show e artisti internazionali. Rispetto a una normale serata, offre un weekend completo per imparare di giorno, ballare di notte e connettersi con una comunita piu ampia.
 
-### I congressi bachata sono adatti ai principianti?
+**02I congressi bachata sono adatti ai principianti?**
 
 Si. I principianti possono vivere bene un congresso bachata scegliendo il livello giusto, facendo pause e concentrandosi sull'apprendimento invece che sulla perfezione. Un congresso e anche uno dei modi migliori per scoprire stili diversi, conoscere ballerini di altre citta e costruire sicurezza nel social.
 
-### Cosa dovrei portare a un congresso bachata?
+**03Cosa dovrei portare a un congresso bachata?**
 
 Porta scarpe da ballo comode, magliette di ricambio, acqua, prodotti personali, outfit per i party, caricatore e conferme di biglietto o hotel. Per un weekend completo e utile avere vestiti separati per i workshop diurni e per le serate.
 
-### Cosa include un Full Pass?
+**04Cosa include un Full Pass?**
 
 Un Full Pass di solito include l'accesso ai workshop principali, ai party e al social dancing previsti dal programma ufficiale. Upgrade speciali, competizioni, hotel, cibo, transfer o masterclass possono essere venduti separatamente in base al tipo di biglietto. Controlla sempre la [pagina ufficiale dei biglietti](https://milanosensualcongress.com/it/tickets) prima dell'acquisto.
 
-### Dove si svolge Milano Sensual Congress 2026?
+**05Dove si svolge Milano Sensual Congress 2026?**
 
 Milano Sensual Congress 2026 si svolge dal 20 al 22 novembre 2026 al Devero Hotel di Cavenago di Brianza, nell'area di Milano. Puoi leggere anche la guida completa al [Congresso Bachata 2026 in Europa](https://milanosensualcongress.com/it/congresso-bachata-2026) per workshop, hotel, viaggio e party.

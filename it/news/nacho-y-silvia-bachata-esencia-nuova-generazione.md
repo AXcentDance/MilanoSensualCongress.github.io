@@ -6,6 +6,8 @@ Vivi l'energia della nuova generazione. Nacho e Silvia portano il loro esclusivo
 
 Canonical: https://milanosensualcongress.com/it/news/nacho-y-silvia-bachata-esencia-nuova-generazione
 
+[Tutte le storie](https://milanosensualcongress.com/it/news)
+
 "Il ballo è una conversazione tra due anime." Questa convinzione guida Nacho e Silvia, le stelle nascenti della scena globale della Bachata e membri di spicco dell'Esencia Group.
 
 Negli vibranti studi di danza di **Madrid**, un nuovo movimento sta prendendo forma. All'avanguardia di questa evoluzione ci sono **Nacho y Silvia**, una coppia la cui precisione tecnica e il cui estro creativo li hanno contrassegnati come artisti chiave nella scena moderna della Bachata. Come rappresentanti dell'élite dell' **Esencia Group**, stanno al fianco di leggende come Marco y Sara e Gero y Migle, continuando l'eredità di profonda connessione e movimento organico.

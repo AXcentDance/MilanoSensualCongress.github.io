@@ -6,6 +6,8 @@ Discover the journey of Irene and Tomas, official Bachata Sensual ambassadors tr
 
 Canonical: https://milanosensualcongress.com/news/irene-y-tomas-bachata-sensual-masters
 
+[All stories](https://milanosensualcongress.com/news)
+
 "Connection is not just about physical contact; it's about two souls moving as one." This mantra defines the world-class teaching and performance of Irene and Tomas.
 
 In the global landscape of **Bachata Sensual**, few couples embody the official methodology as purely as **Irene y Tomas**. Trained directly by the creators of the style, **Korke and Judith**, they have ascended to become official ambassadors of the Bachata Sensual brand, carrying the torch of technical excellence and organic connection to every corner of the world.

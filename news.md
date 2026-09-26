@@ -6,70 +6,78 @@ Explore European Bachata festival comparisons, workshop levels, solo travel, art
 
 Canonical: https://milanosensualcongress.com/news
 
+Explore the journal
+
+Our archive preserves information from the 2026 edition. The 2027 edition is taking shape.
+
+01
+
 ### Choose your festival
 
 Explore Europe
 
-[The featured guideCompare 5 European congressesDates, dance styles and venue formats, with organiser sources.Explore the guide](https://milanosensualcongress.com/news/top-5-bachata-congresses-europe-2026)
+[Explore EuropeCompare 5 European congressesDates, dance styles and venue formats, with organiser sources.Read the story](https://milanosensualcongress.com/news/top-5-bachata-congresses-europe-2026)
 
-[Europe festival calendar 2026–2027Six selected events to help plan your dance year.](https://milanosensualcongress.com/news/bachata-festivals-europe-2026-2027-calendar)
+[Explore EuropeEurope festival calendar 2026–2027Six selected events to help plan your dance year.Read the story](https://milanosensualcongress.com/news/bachata-festivals-europe-2026-2027-calendar)
 
-[Compare Bachata festivals near MilanCompare local festival dates and formats for 2026–2027.](https://milanosensualcongress.com/news/bachata-festivals-milan-2026-2027)
+[Explore EuropeCompare Bachata festivals near MilanCompare local festival dates and formats for 2026–2027.Read the story](https://milanosensualcongress.com/news/bachata-festivals-milan-2026-2027)
 
-[Bachata in Italy: the Milan tripExplore Milan as a destination for an international dance weekend.](https://milanosensualcongress.com/news/bachata-italy-2026-milan-dance-destination)
+[Explore EuropeBachata in Italy: the Milan tripExplore Milan as a destination for an international dance weekend.Read the story](https://milanosensualcongress.com/news/bachata-italy-2026-milan-dance-destination)
+
+02
 
 ### Prepare for your congress
 
 Before you go
 
-[Your first Bachata congressUnderstand workshops, socials and the rhythm of a festival weekend.](https://milanosensualcongress.com/news/what-to-expect-bachata-congress-2026)
+[Before you goYour first Bachata congressUnderstand workshops, socials and the rhythm of a festival weekend.Read the story](https://milanosensualcongress.com/news/what-to-expect-bachata-congress-2026)
 
-[Choose your workshop levelFind beginner, intermediate and advanced sessions that fit your experience.](https://milanosensualcongress.com/news/bachata-workshop-levels-guide-congress)
+[Before you goChoose your workshop levelFind beginner, intermediate and advanced sessions that fit your experience.Read the story](https://milanosensualcongress.com/news/bachata-workshop-levels-guide-congress)
 
-[Going to a congress alonePartner rotation, meeting people and planning a solo dance trip.](https://milanosensualcongress.com/news/bachata-congress-alone-solo-dancer-guide)
+[Before you goGoing to a congress alonePartner rotation, meeting people and planning a solo dance trip.Read the story](https://milanosensualcongress.com/news/bachata-congress-alone-solo-dancer-guide)
 
-[Social dancing and workshop etiquettePractical guidance on invitations, consent and sharing the dance floor.](https://milanosensualcongress.com/news/bachata-congress-etiquette-social-dancing-workshops-parties)
+[Before you goSocial dancing and workshop etiquettePractical guidance on invitations, consent and sharing the dance floor.Read the story](https://milanosensualcongress.com/news/bachata-congress-etiquette-social-dancing-workshops-parties)
+
+03
 
 ### Learning and artists
 
 Behind the movement
 
-[Weekly classes or a congress?How regular lessons and an intensive weekend can work together.](https://milanosensualcongress.com/news/weekly-classes-vs-bachata-congresses)
+[Behind the movementWeekly classes or a congress?How regular lessons and an intensive weekend can work together.Read the story](https://milanosensualcongress.com/news/weekly-classes-vs-bachata-congresses)
 
-[Gero y MigleExplore Esencia Style and their approach to training.](https://milanosensualcongress.com/news/gero-y-migle-bachata-masters-2026)
+[Behind the movementGero y MigleExplore Esencia Style and their approach to training.Read the story](https://milanosensualcongress.com/news/gero-y-migle-bachata-masters-2026)
 
-[Klau y RosDiscover their Bachata style and congress masterclasses.](https://milanosensualcongress.com/news/klau-y-ros-endless-bachata-masters-2026)
+[Behind the movementKlau y RosDiscover their Bachata style and congress masterclasses.Read the story](https://milanosensualcongress.com/news/klau-y-ros-endless-bachata-masters-2026)
 
-[Cristian y GabriellaMeet the artists and explore their advanced training.](https://milanosensualcongress.com/news/cristian-y-gabriella-bachata-world-masters-2026)
+[Behind the movementCristian y GabriellaMeet the artists and explore their advanced training.Read the story](https://milanosensualcongress.com/news/cristian-y-gabriella-bachata-world-masters-2026)
 
-[David y InésRead the artist spotlight before choosing your workshops.](https://milanosensualcongress.com/news/david-y-ines-bachata-sensual-masters-2026)
+[Behind the movementDavid y InésRead the artist spotlight before choosing your workshops.Read the story](https://milanosensualcongress.com/news/david-y-ines-bachata-sensual-masters-2026)
 
-[Agustín y AlbaExplore their background and approach to Bachata.](https://milanosensualcongress.com/news/agustinyalba-bachata-sensual-rising-stars)
+[Behind the movementAgustín y AlbaExplore their background and approach to Bachata.Read the story](https://milanosensualcongress.com/news/agustinyalba-bachata-sensual-rising-stars)
 
-[Irene y TomásDiscover the artists joining the international lineup.](https://milanosensualcongress.com/news/irene-y-tomas-bachata-sensual-masters)
+[Behind the movementIrene y TomásDiscover the artists joining the international lineup.Read the story](https://milanosensualcongress.com/news/irene-y-tomas-bachata-sensual-masters)
 
-[Aitor GomezRead about his approach and Dominican roots.](https://milanosensualcongress.com/news/aitor-gomez-bachata-sensual-dominican-roots)
+[Behind the movementAitor GomezRead about his approach and Dominican roots.Read the story](https://milanosensualcongress.com/news/aitor-gomez-bachata-sensual-dominican-roots)
 
-[Nacho y SilviaMeet the artists and explore their Esencia approach.](https://milanosensualcongress.com/news/nacho-y-silvia-bachata-esencia-new-generation)
+[Behind the movementNacho y SilviaMeet the artists and explore their Esencia approach.Read the story](https://milanosensualcongress.com/news/nacho-y-silvia-bachata-esencia-new-generation)
+
+04
 
 ### Plan your trip and stay informed
 
 Your weekend
 
-[Milan airports, transfers and travelPlan the final journey to Cavenago di Brianza and your return.Explore the guide](https://milanosensualcongress.com/news/milan-bachata-travel-guide-2026)
+[Your weekendMilan airports, transfers and travelPlan the final journey to Cavenago di Brianza and your return.Read the story](https://milanosensualcongress.com/news/milan-bachata-travel-guide-2026)
 
-[Devero sold out: AS Hotel Cambiago availableSeparate the event venue from your accommodation booking.Explore the guide](https://milanosensualcongress.com/news/devero-hotel-sold-out-as-cambiago-2026)
+[Your weekendDevero sold out: AS Hotel Cambiago availableSeparate the event venue from your accommodation booking.Read the story](https://milanosensualcongress.com/news/devero-hotel-sold-out-as-cambiago-2026)
 
-[Bachata parties and social dancingExplore the social side of the congress weekend.Explore the guide](https://milanosensualcongress.com/news/best-bachata-party-italy-2026)
+[Your weekendBachata parties and social dancingExplore the social side of the congress weekend.Read the story](https://milanosensualcongress.com/news/best-bachata-party-italy-2026)
+
+05
 
 ### Event archive
 
 Past announcements
 
-#### Archive: previous Full Pass price announcement
-
-Historical pricing announcement. Use the Tickets page for current prices.
-
-### Plan your Milano Sensual Congress weekend
-
-Explore the [congress guide](https://milanosensualcongress.com/bachata-congress-2026), [programme](https://milanosensualcongress.com/program), [masterclasses](https://milanosensualcongress.com/masterclass) and [current tickets and prices](https://milanosensualcongress.com/tickets).
+[Past announcementsArchive: previous Full Pass price announcementHistorical pricing announcement. Use the Tickets page for current prices.Read the story](https://milanosensualcongress.com/news/full-pass-masterclass-price-increase-june-15-2026)

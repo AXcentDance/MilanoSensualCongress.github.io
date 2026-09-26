@@ -6,6 +6,8 @@ Discover the background, style, and unique chemistry of world-renowned Bachata a
 
 Canonical: https://milanosensualcongress.com/news/gero-y-migle-bachata-masters-2026
 
+[All stories](https://milanosensualcongress.com/news)
+
 "Energy is the soul of the dance." This philosophy has carried Gero and Migle from their diverse backgrounds in Spain and Lithuania to the pinnacle of the international Bachata scene.
 
 In the world of **Bachata**, few couples possess the unique blend of technical discipline and explosive charisma that defines **Gero y Migle**. While many mistakenly categorize their dance as standard Sensual, Gero and Migle have actually developed their own distinct philosophy and movement language: the **Esencia Style**. As we prepare for the Milano Sensual Congress 2026, we take an in-depth look at the artists who have become a global benchmark for dancers everywhere.

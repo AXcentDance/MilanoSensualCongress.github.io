@@ -6,6 +6,8 @@ Vuoi andare da solo a un Congresso Bachata? Scopri come funzionano Workshop Bach
 
 Canonical: https://milanosensualcongress.com/it/news/congresso-bachata-da-soli-guida-ballerini
 
+[Tutte le storie](https://milanosensualcongress.com/it/news)
+
 La risposta sincera
 
 ### Puoi arrivare da solo. Non vivrai il weekend in solitudine.

@@ -30,31 +30,41 @@ updated direction on subsequent new pages.
   concepts are historical references, not current brand assets. See the
   [official logo notes](../../images/brand/milano-sensual-congress-official-logo-notes.md).
 
-- **Palette:** Preserve the dark navy base (`brand.dark`, `#0f172a`), white/slate
-  text, and the homepage's pink, purple, and indigo accents. The shared brand
-  tokens are purple `#4c1d95`, pink `#be185d`, accent `#f43f5e`, and gold
-  `#fbbf24`; use gold sparingly as on the homepage. Reuse the homepage's existing
-  shades, gradients, and transparency treatments rather than inventing a new
-  palette or changing the page to a light theme.
+- **2027 edition direction (owner requested 26 September 2026):** “Milano,
+  In Full Colour” replaces the prior edition's flows and purple gradients.
+  Use the tokens in `css/edition-2027.css`: ink green `#062b27`, night green
+  `#031c19`, warm ivory `#f4f0e6`, emerald `#1d785d`, vermilion `#c83e2b`,
+  coral `#f38c78`, sage `#b6c7b8`, and restrained gold `#cfb989`.
+  Dark editorial mastheads alternate with ivory reading and hospitality
+  surfaces. Use darker vermilion for white-text buttons and coral for
+  accents on green. Contrast and hierarchy, rather than claims about universal
+  psychological effects, guide color choices. Keep the official logo colors.
 - **Typography:** Use self-hosted Inter for body copy, navigation, and controls,
   and Playfair Display for display headings, following the homepage's weights,
   scale, and use of italics. Do not introduce a different font pairing.
-- **Navigation and footer:** Carry over the homepage's logo treatment, glass
+- **Navigation and footer:** Carry over the homepage's logo treatment, sticky
   navigation, mobile menu, language switcher, and footer styling. Adapt link
   paths and active states to the page and language; follow the
   [breadcrumb contract](breadcrumbs.md).
-- **Buttons and controls:** Reuse the rounded primary CTA with the homepage's
-  pink-to-purple gradient (`135deg`, `#ec4899` to `#8b5cf6`) and hover gradient
-  (`#db2777` to `#7c3aed`). Match existing secondary buttons, links, and dark
-  translucent form fields, with accessible keyboard focus states.
+- **Buttons and controls:** Use the solid vermilion primary CTA, crisp 2px
+  corners, ivory/outlined secondary buttons and underlined editorial links.
+  Preserve generous touch targets and visible gold keyboard focus states.
 - **Layout and surfaces:** Match the homepage's container widths, spacing
-  rhythm, rounded cards, translucent dark surfaces, subtle light borders,
-  shadows, and restrained hover effects. Adapt content structure and reading
+  rhythm, ruled editorial sections, portrait grids, and restrained hover
+  effects. Avoid decorative glowing cards. Adapt content structure and reading
   width to the page's purpose while keeping this visual language recognizable.
 - **Imagery and motion:** Keep imagery treatments, dark overlays, and animation
   consistent with the homepage. Preserve accessibility, reduced-motion support,
   and the project's performance requirements; do not copy effects that violate
   those requirements.
+
+## Preview facts
+
+The 2027 branch is a local edition preview. Dates and prices for 2027 have not
+been supplied. Current artists, hotel, video and exact 2026 operational facts
+are retained by request, with visible reference labels. Do not invent a 2027
+event occurrence, redate archive articles, or label the existing 2026 checkout
+as a 2027 sale. Replace reference content coherently when facts are confirmed.
 
 ## Precedence and verification
 

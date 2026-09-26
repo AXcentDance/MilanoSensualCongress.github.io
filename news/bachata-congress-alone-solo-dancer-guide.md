@@ -6,6 +6,8 @@ Going to a Bachata Congress alone? Learn how Bachata Workshops, partner rotation
 
 Canonical: https://milanosensualcongress.com/news/bachata-congress-alone-solo-dancer-guide
 
+[All stories](https://milanosensualcongress.com/news)
+
 The honest answer
 
 ### You may arrive solo. You will not experience the weekend alone.

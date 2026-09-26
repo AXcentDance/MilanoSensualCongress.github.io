@@ -6,6 +6,8 @@ Milano Sensual Congress 2026 is set to be the best Bachata social in Italy: 1,00
 
 Canonical: https://milanosensualcongress.com/news/best-bachata-party-italy-2026
 
+[All stories](https://milanosensualcongress.com/news)
+
 Milano Sensual Congress 2026 is not only a weekend of world-class Bachata workshops. It is set to become the best Bachata social in Italy of the year: over 1,000 dancers, international artists on the dance floor, limited spots, two dance floors and more than 800 square meters dedicated to dancing.
 
 1,000+

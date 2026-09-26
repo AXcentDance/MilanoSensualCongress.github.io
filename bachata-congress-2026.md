@@ -6,6 +6,8 @@ Looking for a bachata congress in 2026? Discover Milano Sensual Congress in Ital
 
 Canonical: https://milanosensualcongress.com/bachata-congress-2026
 
+[All stories](https://milanosensualcongress.com/news)
+
 Why this congress
 
 ### A bachata weekend built for international dancers

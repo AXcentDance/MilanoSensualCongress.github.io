@@ -126,6 +126,8 @@ for (const path of ['/', '/it/']) test(`${path}: reduced motion retains the post
   await page.emulateMedia({ reducedMotion: 'reduce' });
   await page.goto(path);
   await expect(page.locator('h1')).toBeVisible();
+  await page.locator('#heroVideo').scrollIntoViewIfNeeded();
+  await expect(page.locator('#heroVideo')).toHaveAttribute('poster', /poster\.webp$/);
   expect(await page.locator('#heroVideo').getAttribute('src')).toBeNull();
   expect(await page.locator('#heroVideo').evaluate(video => video.paused)).toBe(true);
 });

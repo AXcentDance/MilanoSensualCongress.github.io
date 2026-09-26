@@ -6,6 +6,8 @@ Scopri l'etichetta da seguire a un congresso di bachata: social dance, workshop 
 
 Canonical: https://milanosensualcongress.com/it/news/etichetta-congresso-bachata-social-workshop-party
 
+[Tutte le storie](https://milanosensualcongress.com/it/news)
+
 Un congresso di bachata non è solo un programma di lezioni e party. È una comunità internazionale temporanea, costruita sulla fiducia, sulla musica, sullo spazio condiviso e sulle piccole scelte che i ballerini fanno tra loro.
 
 Se stai partecipando per la prima volta a un festival internazionale di bachata, l'etichetta può sembrare un insieme di regole invisibili. In realtà è molto semplice: serve a rendere la pista più sicura, più accogliente e più piacevole per tutti.
