@@ -25,7 +25,7 @@ Usage:
 
 import os
 from site_files import page_is_indexable, page_url_path, public_files, site_pages
-from generation_support import GenerationError, read_page
+from generation_support import GenerationError, read_page, write_outputs
 import posixpath
 import re
 import sys
@@ -92,16 +92,16 @@ class PageConverter:
             host = parts.netloc.lower()
             if host in ('milanosensualcongress.com', 'www.milanosensualcongress.com'):
                 path = parts.path or '/'
-                return self._clean_site_path(path, parts.fragment)
+                return self._clean_site_path(path, parts.fragment, parts.query)
             return href  # external: keep as-is
         if parts.netloc:  # protocol-relative //host/...
             return href
         # Relative link: resolve against this page's directory.
         base = '/' + (self.dir + '/' if self.dir else '')
-        resolved = urljoin(base, parts.path or '')
-        return self._clean_site_path(resolved, parts.fragment)
+        resolved = urljoin(base, parts.path) if parts.path else '/' + self.rel
+        return self._clean_site_path(resolved, parts.fragment, parts.query)
 
-    def _clean_site_path(self, abs_path, fragment=''):
+    def _clean_site_path(self, abs_path, fragment='', query=''):
         path = posixpath.normpath(abs_path)
         if abs_path.endswith('/') and path != '/':
             path += '/'
@@ -109,9 +109,11 @@ class PageConverter:
         if path in ('', '.'):
             url = BASE_URL + '/'
         elif path.endswith('.html'):
-            return clean_url(path, fragment)
+            url = clean_url(path)
         else:
             url = f'{BASE_URL}/{path}'
+        if query:
+            url += '?' + query
         if fragment:
             url += '#' + fragment
         return url
@@ -224,19 +226,8 @@ class PageConverter:
                         out.append(f'**{text}**')
                 else:
                     self.blocks(child, out, list_depth)
-            elif name in BLOCK_TAGS or name in ('span',):
-                # Container: recurse if it holds block children, otherwise
-                # treat its inline content as a paragraph (covers text that
-                # lives directly in styled divs/spans).
-                if any(isinstance(c, Tag) and c.name in BLOCK_TAGS
-                       for c in child.children):
-                    self.blocks(child, out, list_depth)
-                else:
-                    text = self.inline_text(child)
-                    if text:
-                        out.append(text)
             else:
-                # Unknown/inline wrapper at block level.
+                # Containers and unknown wrappers use the same block/inline rule.
                 if any(isinstance(c, Tag) and c.name in BLOCK_TAGS
                        for c in child.children):
                     self.blocks(child, out, list_depth)
@@ -337,16 +328,19 @@ def main():
         if twin is None:
             continue  # noindexed
         expected[rel_html[:-len('.html')] + '.md'] = twin
+    if not expected:
+        raise GenerationError(f'No indexable HTML pages found under {ROOT_DIR}; refusing to remove existing twins')
 
     problems = []
-    warnings = []
-    written = deleted = unchanged = 0
+    outputs = {}
+    removals = []
+    unchanged = 0
 
     for rel_md in sorted(expected):
         abs_md = os.path.join(ROOT_DIR, rel_md)
         exists = os.path.exists(abs_md)
         if exists and not has_marker(abs_md):
-            warnings.append(f'SKIP (no marker, not a twin): {rel_md}')
+            problems.append(('blocked (existing file has no generator marker)', rel_md))
             continue
         current = None
         if exists:
@@ -358,10 +352,7 @@ def main():
         if check:
             problems.append(('missing' if not exists else 'stale', rel_md))
         else:
-            with open(abs_md, 'w', encoding='utf-8') as fh:
-                fh.write(expected[rel_md])
-            written += 1
-            print(f'wrote {rel_md}')
+            outputs[abs_md] = expected[rel_md]
 
     # Orphans: marker-bearing twins with no (indexable) HTML source.
     for rel_md in collect_existing_md():
@@ -373,25 +364,29 @@ def main():
         if check:
             problems.append(('orphaned', rel_md))
         else:
-            os.remove(abs_md)
-            deleted += 1
-            print(f'deleted orphan {rel_md}')
+            removals.append(abs_md)
 
-    for w in warnings:
-        print(f'WARNING: {w}', file=sys.stderr)
-
-    if check:
-        if problems:
-            for kind, rel_md in problems:
-                print(f'{kind}: {rel_md}')
+    if problems:
+        for kind, rel_md in problems:
+            print(f'{kind}: {rel_md}')
+        if any(kind.startswith('blocked') for kind, _ in problems):
+            print('Resolve Markdown ownership collisions without overwriting handwritten content, then rerun generation.')
+        else:
             print(f'{len(problems)} md twin(s) out of date '
                   f'(run: python3 scripts/generate_md_twins.py)')
-            return 1
+        return 1
+
+    if check:
         print(f'{len(expected)} md twins up to date')
         return 0
 
-    print(f'md twins: {written} written, {unchanged} unchanged, '
-          f'{deleted} orphan(s) deleted, {len(warnings)} skipped')
+    write_outputs(outputs, remove=removals)
+    for path in outputs:
+        print(f'wrote {os.path.relpath(path, ROOT_DIR)}')
+    for path in removals:
+        print(f'deleted orphan {os.path.relpath(path, ROOT_DIR)}')
+    print(f'md twins: {len(outputs)} written, {unchanged} unchanged, '
+          f'{len(removals)} orphan(s) deleted, 0 skipped')
     return 0
 
 

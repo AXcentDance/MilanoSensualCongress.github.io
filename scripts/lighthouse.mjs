@@ -1,6 +1,6 @@
 // Serial, unmodified Lighthouse audits. No third-party requests or audits are hidden.
 import lighthouse from 'lighthouse';
-import { launch } from 'chrome-launcher';
+import { launch, getChromePath } from 'chrome-launcher';
 import { mkdirSync, writeFileSync, readFileSync, existsSync, readdirSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { parseArgs } from 'node:util';
@@ -17,6 +17,9 @@ const { values: args } = parseArgs({ options: {
   fragment: { type: 'string' },
   runs: { type: 'string', default: 'auto' }, resume: { type: 'boolean', default: false },
 } });
+if (args.resume && args['base-url']) {
+  throw new Error('Cannot resume remote audits: the live deployment may have changed. Run a fresh audit.');
+}
 const profiles = {
   phone: {},
   tablet: { screenEmulation: { mobile: true, width: 768, height: 1024, deviceScaleFactor: 2, disabled: false } },
@@ -46,7 +49,16 @@ function sourceFingerprint() {
   for (const file of ['robots.txt', 'package-lock.json', 'scripts/site-server.mjs', 'scripts/lighthouse.mjs', 'scripts/quality-results.mjs', 'scripts/site-pages.mjs', 'scripts/site_files.py', 'scripts/generation_support.py']) hashFile(file);
   return hash.digest('hex');
 }
-const manifest = { sourceHash: sourceFingerprint(), profiles: Object.fromEntries(selected.map(p => [p, profiles[p]])),
+const chromeOptions = { chromePath: process.env.CHROME_PATH || getChromePath(), chromeFlags: ['--headless=new', '--no-first-run'], logLevel: 'silent' };
+const probe = await launch(chromeOptions);
+let chromeVersion;
+try {
+  const response = await fetch(`http://127.0.0.1:${probe.port}/json/version`, { signal: AbortSignal.timeout(10000) });
+  if (!response.ok) throw new Error(`Cannot read Chrome version: HTTP ${response.status}`);
+  chromeVersion = (await response.json()).Browser;
+  if (typeof chromeVersion !== 'string' || !chromeVersion.trim()) throw new Error('Chrome did not report its version; cannot verify the audit environment.');
+} finally { await probe.kill(); }
+const manifest = { sourceHash: sourceFingerprint(), chrome: { path: chromeOptions.chromePath, version: chromeVersion }, profiles: Object.fromEntries(selected.map(p => [p, profiles[p]])),
   pages: pages.map(p => p.file), fragment: args.fragment || '', runs: args.runs, base: args['base-url'] || 'local preview', node: process.version, platform: platform(), arch: arch() };
 const manifestPath = resolve(args.output, 'manifest.json');
 if (args.resume && (!existsSync(manifestPath) || JSON.stringify(JSON.parse(readFileSync(manifestPath, 'utf8'))) !== JSON.stringify(manifest))) {
@@ -72,7 +84,7 @@ try {
     if (args.resume && existsSync(destination)) lhr = JSON.parse(readFileSync(destination, 'utf8'));
     else {
       console.log(`Auditing ${page.path} [${profile} ${run}/${count}]`);
-      chrome = await launch({ chromePath: process.env.CHROME_PATH, chromeFlags: ['--headless=new', '--no-first-run'], logLevel: 'silent' });
+      chrome = await launch(chromeOptions);
       let result;
       try {
         result = await lighthouse(new URL(page.path, base).href, {

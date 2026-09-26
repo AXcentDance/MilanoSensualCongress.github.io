@@ -21,7 +21,14 @@ from site_files import ROOT
 SEARCH_DIRS = ('images', 'spring/images')
 VARIANTS = (480, 800, 1200)
 QUALITY = 75
-EXCLUDE_BASENAMES = {'poster', 'logo', 'qr-code', 'milano-sensual-congress-logo-preview'}
+EXCLUDE_BASENAMES = {
+    'poster', 'logo', 'qr-code', 'milano-sensual-congress-logo-preview',
+    'milano-sensual-congress-official-logo',
+    'milano-sensual-congress-official-logo-nav',
+    'milano-sensual-congress-official-logo-preview',
+    'milano-sensual-congress-official-icon',
+    'milano-sensual-congress-official-logo-source',
+}
 
 
 def run_tool(command):

@@ -31,7 +31,6 @@ requested full-site audit, run the full commands below. Use the pinned tooling
 
 ```bash
 npm run audit:lighthouse
-npm run audit:lighthouse -- --pages=hotel.html,it/hotel.html --fragment=as-hotel-cambiago --output=.quality/lighthouse-as-hotel
 npm run test:browser
 ```
 
@@ -56,9 +55,8 @@ The runner does these repetitions automatically for initial performance below
 97 or another failed category. `--runs 3` forces three runs for a specified
 comparison. `--resume` requires unchanged sources and configuration.
 Audit affected switchable primary-content views through their direct URLs as
-well; include the second hotel view when hotel behavior or a shared dependency
-affecting it changes, and in full-site audits. These commands discover pages
-automatically when run; execution and publication follow
+well. These commands discover pages automatically when run; execution and
+publication follow
 [delivery](delivery.md#verification-and-completion).
 
 Lighthouse acceptance and score tables cover indexable pages only. Skip

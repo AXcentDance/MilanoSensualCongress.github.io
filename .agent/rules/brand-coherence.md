@@ -19,6 +19,17 @@ updated direction on subsequent new pages.
 
 ## Required visual language
 
+- **Official logo (owner approved 25 September 2026):** Use the supplied
+  tricolor spires and pink/purple Milano Sensual Congress wordmark for the
+  website, presentations, videos, and future congress materials. The rectangular
+  logo is retired. The exact supplied source is
+  `images/brand/milano-sensual-congress-official-logo-source.png`; web copies use
+  the `milano-sensual-congress-official-` filenames. Rebuild size variants with
+  `python3 scripts/build_official_logo.py`. Preserve the artwork, lettering,
+  colors, and proportions. The older rectangular assets and color-flex SVG
+  concepts are historical references, not current brand assets. See the
+  [official logo notes](../../images/brand/milano-sensual-congress-official-logo-notes.md).
+
 - **Palette:** Preserve the dark navy base (`brand.dark`, `#0f172a`), white/slate
   text, and the homepage's pink, purple, and indigo accents. The shared brand
   tokens are purple `#4c1d95`, pink `#be185d`, accent `#f43f5e`, and gold

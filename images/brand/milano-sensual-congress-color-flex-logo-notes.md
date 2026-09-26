@@ -1,5 +1,10 @@
 # Milano Sensual Congress Flexible Logo
 
+Historical concept only. Retired on 25 September 2026 in favor of the
+[owner-approved official logo](milano-sensual-congress-official-logo-notes.md).
+The usage recommendations below describe the archived concept, not the
+current brand policy.
+
 This logo concept is designed as SVG so the annual palette can change without redrawing the mark.
 
 Edit the color variables near the top of each SVG:

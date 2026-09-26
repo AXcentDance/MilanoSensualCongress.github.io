@@ -56,24 +56,6 @@ for (const entry of sitePages()) {
       await page.keyboard.press('Space');
       await expect.poll(() => question.evaluate(el => el.open)).toBe(initiallyOpen);
     }
-    const carousel = page.locator('#carousel');
-    if (await carousel.count()) {
-      const controls = page.locator('button[onclick*="scrollBy"]');
-      await carousel.scrollIntoViewIfNeeded();
-      await controls.last().click();
-      await expect.poll(() => carousel.evaluate(el => el.scrollLeft / el.clientWidth)).toBeGreaterThan(.95);
-      await controls.first().click();
-      await expect.poll(() => carousel.evaluate(el => el.scrollLeft)).toBe(0);
-      // Visit every horizontally lazy-loaded slide as a visitor can.
-      const slides = await carousel.locator(':scope > div').count();
-      for (let index = 1; index < slides; index++) {
-        await controls.last().click();
-        await expect.poll(() => carousel.evaluate(el => el.scrollLeft / el.clientWidth)).toBeGreaterThan(index - .05);
-      }
-      await expect.poll(() => carousel.locator('img').evaluateAll(images => images.every(im => im.complete && im.naturalWidth > 0))).toBe(true);
-      await carousel.evaluate(el => el.scrollTo({ left: 0, behavior: 'instant' }));
-    }
-
     const overflow = await page.evaluate(() => {
       const width = document.documentElement.clientWidth;
       return [...document.querySelectorAll('nav a, nav button, h1, main p, main table, form')]

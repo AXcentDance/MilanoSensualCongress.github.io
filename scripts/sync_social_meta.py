@@ -18,11 +18,15 @@ from generate_responsive_images import digest, run_tool
 from apply_responsive_images import dims, _dims_cache
 
 SITE = 'https://milanosensualcongress.com'
-BRAND_CARD = '/images/og/milano-sensual-congress-social-card.jpg'
+BRAND_CARD = '/images/og/milano-sensual-congress-official-social-card.jpg'
 THEME_COLOR = '#0f172a'
 PREBUILT = {
     'logo.webp': BRAND_CARD,
     'milano-sensual-congress-logo-preview.webp': BRAND_CARD,
+    'milano-sensual-congress-official-logo.webp': BRAND_CARD,
+    'milano-sensual-congress-official-logo-nav.webp': BRAND_CARD,
+    'milano-sensual-congress-official-logo-preview.webp': BRAND_CARD,
+    'milano-sensual-congress-official-icon.webp': BRAND_CARD,
     'poster.webp': '/images/og/milano-sensual-congress-hero.jpg',
     'bachata-congress-2026-preview.webp': '/images/og/bachata-congress-2026-preview.jpg',
     'duomo-di-milano-bachata-italy-2026-dance-destination.webp': '/images/og/duomo-di-milano-bachata-2026.jpg',

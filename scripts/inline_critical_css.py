@@ -51,7 +51,6 @@ vendor/fontawesome/fa-subset.min.css, any CSS file listed in PAGES, or any
 page's markup (class changes alter that page's critical subset).
 """
 import argparse
-import glob
 import hashlib
 import os
 import re
@@ -82,11 +81,6 @@ SAFELIST = {"hidden", "animate-spin"}
 WARN_BYTES = 40 * 1024
 
 HASH_LEN = 16
-
-# Page globs that make up the indexable site (plus 404.html, which renders
-# for users). .claude/, vendor/, node_modules/ and worktrees are never
-# matched by these patterns.
-PAGE_GLOBS = ["*.html", "it/*.html", "news/*.html", "it/news/*.html"]
 
 # Legacy pages that inline their CSS wholesale via <style data-inline="...">
 # markers. These pages have no stylesheet <link> tags at all, so the

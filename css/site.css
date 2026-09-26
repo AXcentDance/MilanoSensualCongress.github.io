@@ -1,4 +1,5 @@
 /* Small shared fixes; included by the critical-CSS generator on every page. */
+.glass-nav { max-height: 100vh; max-height: 100dvh; overflow-y: auto; }
 .glass-nav > .container > a,
 .glass-nav > .container > a > img { flex-shrink: 0; }
 .glass-nav button[aria-controls] { min-width: 44px; min-height: 44px; align-items: center; justify-content: center; }
@@ -10,6 +11,11 @@ main input:focus-visible,
 main select:focus-visible,
 main summary:focus-visible { outline: 3px solid #f472b6; outline-offset: 4px; }
 main p a:not(.btn-primary):not(.btn-secondary):not(.levels-button) { text-decoration: underline; text-underline-offset: 3px; }
+@media (scripting: none) and (max-width: 1279px) {
+  .glass-nav { position: static; max-height: none; overflow: visible; }
+  .glass-nav button[aria-controls="mobile-menu"] { display: none; }
+  .glass-nav #mobile-menu { display: block; }
+}
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto !important; }
   *, *::before, *::after { animation: none !important; transition: none !important; }

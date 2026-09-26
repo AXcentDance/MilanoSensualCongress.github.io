@@ -102,7 +102,8 @@ summary:focus-visible {
 
 .brand img {
   width: auto;
-  height: 42px;
+  height: 56px;
+  mix-blend-mode: screen;
 }
 
 .brand span {
