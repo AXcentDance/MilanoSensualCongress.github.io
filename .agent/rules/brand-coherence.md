@@ -30,6 +30,13 @@ updated direction on subsequent new pages.
   concepts are historical references, not current brand assets. See the
   [official logo notes](../../images/brand/milano-sensual-congress-official-logo-notes.md).
 
+- **Browser favicon (owner requested 28–29 September 2026):** Use only the
+  seven tricolour spires, with pyramid tops and lower stems extended to a
+  symmetrical common baseline, on a transparent background. Preserve alpha in
+  the PNG and ICO exports. This favicon is separate from the full official logo;
+  its source and export recipe are in the
+  [official logo notes](../../images/brand/milano-sensual-congress-official-logo-notes.md#arrows-only-browser-favicon).
+
 - **Palette:** Preserve the dark navy base (`brand.dark`, `#0f172a`), white/slate
   text, and the homepage's pink, purple, and indigo accents. The shared brand
   tokens are purple `#4c1d95`, pink `#be185d`, accent `#f43f5e`, and gold
