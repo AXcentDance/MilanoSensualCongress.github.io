@@ -31,8 +31,14 @@ owner selected a transparent background and requested publication. The favicon
 has two green, three white and two red spires, stepped pyramid tops and a shared
 lower baseline. It does not replace the full official wordmark elsewhere.
 
+After reviewing the live tab icon on 29 September, the owner selected a medium
+stem weight between the thin version and the bold preview and requested
+publication. The medium artwork has less outside padding for tab legibility
+while preserving seven separate spires and their colours. It uses the preserved
+first thickened draft; the earlier thin assets remain available for cached pages.
+
 The 1254 × 1254 RGBA source is
-`milano-sensual-congress-tricolor-spires-favicon-transparent-source.png`, adapted
+`milano-sensual-congress-tricolor-spires-favicon-medium-source.png`, adapted
 from the official logo with the built-in image generation tool. It is a generated
 adaptation, not a pixel-identical crop. Reproduce the 32px and 192px PNGs and the
 16/32/48px root ICO with `python3 scripts/build_favicon.py`. Alpha-aware resizing

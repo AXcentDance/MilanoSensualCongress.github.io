@@ -8,8 +8,8 @@ import tempfile
 from generation_support import run_generator, write_outputs
 
 ROOT = Path(__file__).resolve().parent.parent
-SOURCE = ROOT / 'images/brand/milano-sensual-congress-tricolor-spires-favicon-transparent-source.png'
-NAME = 'milano-sensual-congress-tricolor-spires-favicon-transparent'
+SOURCE = ROOT / 'images/brand/milano-sensual-congress-tricolor-spires-favicon-medium-source.png'
+NAME = 'milano-sensual-congress-tricolor-spires-favicon-medium'
 
 
 def main():

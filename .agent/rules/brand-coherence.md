@@ -32,7 +32,9 @@ updated direction on subsequent new pages.
 
 - **Browser favicon (owner requested 28–29 September 2026):** Use only the
   seven tricolour spires, with pyramid tops and lower stems extended to a
-  symmetrical common baseline, on a transparent background. Preserve alpha in
+  symmetrical common baseline, on a transparent background. On 29 September
+  the owner selected medium stems between the thin live icon and the bold
+  preview, with less outside padding for legibility in tabs. Preserve alpha in
   the PNG and ICO exports. This favicon is separate from the full official logo;
   its source and export recipe are in the
   [official logo notes](../../images/brand/milano-sensual-congress-official-logo-notes.md#arrows-only-browser-favicon).
