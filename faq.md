@@ -8,7 +8,7 @@ Canonical: https://milanosensualcongress.com/faq
 
 FAQ / 01—05
 
-A weekend to look forward to. Everything you need to get started.
+Questions? Let’s talk.
 
 [Talk to us](https://milanosensualcongress.com/contact)
 

@@ -93,7 +93,7 @@ class ExportFreshnessTests(unittest.TestCase):
         scripts = self.root / 'scripts'
         scripts.mkdir()
         for name in ['generate_rss.py', 'generate_llms_text.py', 'site_files.py', 'generation_support.py',
-                     'article_metadata.py', 'event_facts.py', 'iso_dates.py']:
+                     'article_metadata.py', 'event_facts.py', 'edition_facts.py', 'iso_dates.py']:
             shutil.copy2(ROOT / 'scripts' / name, scripts / name)
         (self.root / 'feed.xml').write_text('stale feed')
         (self.root / 'llms-full.txt').write_text('stale full export')

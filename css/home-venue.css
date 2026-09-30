@@ -1,0 +1,96 @@
+/* The homepage's hotel invitation. Real venue photographs, shared brand fonts. */
+.home-premiere .home-venue {
+  --venue-ink: #163b33;
+  --venue-muted: #526258;
+  --venue-gold: #82652f;
+  --venue-paper: #f5efe3;
+  padding: clamp(48px, 5.5vw, 80px) 0 40px;
+  background: var(--venue-paper);
+  color: var(--venue-ink);
+}
+/* A true section title, with the venue classification as its second line. */
+.home-venue .venue-meta {
+  padding-bottom: 32px;
+  border-bottom: 1px solid #163b3333;
+}
+.home-venue #stay-title {
+  margin: 0;
+  color: var(--venue-ink);
+  font: 750 clamp(38px, 5.2vw, 72px)/1.06 Inter, 'Inter Fallback', sans-serif;
+  letter-spacing: -.05em;
+  text-transform: uppercase;
+}
+.home-venue #stay-title em {
+  display: block;
+  margin-top: 10px;
+  color: var(--venue-gold);
+  font: italic 500 clamp(23px, 3.4vw, 48px)/1.15 'Playfair Display', 'Playfair Display Fallback', serif;
+  letter-spacing: -.035em;
+  text-wrap: balance;
+}
+.home-venue .venue-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(0, .9fr);
+  gap: clamp(32px, 5vw, 72px);
+  align-items: center;
+  padding: 58px 0 50px;
+}
+.home-venue .venue-gallery { position: relative; padding: 0 0 96px 22px; }
+.home-venue .venue-gallery figure { margin: 0; }
+.home-venue .venue-gallery img { display: block; width: 100%; height: auto; object-fit: cover; }
+.home-venue .venue-scene img { aspect-ratio: 1.38; object-position: 55% 50%; border-radius: 3px; }
+.home-venue .venue-scene figcaption { margin-top: 13px; padding-left: 46%; color: var(--venue-muted); font-size: 10px; letter-spacing: .025em; }
+.home-venue .venue-room {
+  position: absolute;
+  left: -14px;
+  bottom: 0;
+  width: 46%;
+  padding: 9px;
+  background: var(--venue-paper);
+  box-shadow: 0 16px 32px #173b3317;
+  transform: rotate(-4deg);
+}
+.home-venue .venue-room img { aspect-ratio: 1.5; object-position: 56% 50%; }
+.home-venue .venue-room figcaption { padding: 13px 4px 6px; font: italic 500 17px/1.3 'Playfair Display', 'Playfair Display Fallback', serif; text-align: center; }
+.home-venue .venue-transfer { display: grid; gap: 12px; min-width: 0; padding-left: clamp(24px, 3vw, 36px); border-left: 1px solid #163b3340; }
+.home-venue .venue-transfer-header { display: flex; align-items: center; justify-content: space-between; gap: 14px; margin-bottom: 4px; }
+.home-venue .venue-transfer-heading { margin: 0; color: var(--venue-ink); font: 750 clamp(24px, 2.2vw, 30px)/1.08 Inter, 'Inter Fallback', sans-serif; letter-spacing: -.04em; text-transform: uppercase; }
+.home-venue .venue-transfer-bus { display: block; width: 112px; max-width: 30%; height: auto; flex-shrink: 0; }
+.home-venue .venue-transfer-route { display: grid; grid-template-columns: minmax(76px, .7fr) 32px minmax(0, 1.3fr); align-items: center; gap: 12px; margin: 0; }
+.home-venue .venue-transfer-point small { display: block; margin-bottom: 5px; color: var(--venue-muted); font: 600 14px/1.3 Inter, 'Inter Fallback', sans-serif; }
+.home-venue .venue-transfer-point strong { color: var(--venue-ink); font: 750 clamp(28px, 3vw, 40px)/1.1 Inter, 'Inter Fallback', sans-serif; letter-spacing: -.045em; }
+.home-venue .venue-transfer-destinations { display: grid; gap: 5px; }
+.home-venue .venue-transfer-destinations strong { font-size: clamp(18px, 1.7vw, 22px); line-height: 1.2; letter-spacing: -.025em; }
+.home-venue .venue-transfer-destinations small { margin: 0; font-size: 11px; font-weight: 500; }
+.home-venue .venue-transfer-arrow { color: var(--venue-gold); }
+.home-venue .venue-transfer-arrow svg { display: block; width: 100%; height: auto; }
+.home-venue .venue-transfer-departures > p { margin: 0 0 7px; color: var(--venue-muted); font-size: 11px; font-weight: 600; }
+.home-venue .venue-transfer-departures ul { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 9px; margin: 0; padding: 0; list-style: none; }
+.home-venue .venue-transfer-departures time { display: grid; place-items: center; min-height: 42px; border: 1px solid #163b3340; border-radius: 5px; background: #fffaf0; color: var(--venue-ink); font-size: clamp(18px, 2vw, 24px); font-weight: 700; font-variant-numeric: tabular-nums; }
+.home-premiere .home-venue a.venue-transfer-link { display: inline-flex; align-items: center; justify-self: start; gap: 8px; min-height: 44px; color: var(--venue-ink); }
+.home-venue .venue-transfer-booking { display: grid; gap: 9px; padding-top: 14px; border-top: 1px solid #163b3333; }
+.home-venue .venue-transfer-airports { display: grid; grid-template-columns: minmax(94px, .75fr) 24px minmax(0, 1.25fr); align-items: center; gap: 10px; margin: 0; color: var(--venue-ink); font: 750 clamp(18px, 1.7vw, 20px)/1.2 Inter, 'Inter Fallback', sans-serif; letter-spacing: -.03em; }
+.home-venue .venue-transfer-booking p { margin: 0; color: var(--venue-muted); font-size: 13px; line-height: 1.55; }
+.home-venue .venue-transfer-booking .venue-transfer-airport-names { margin-top: -5px; font-size: 11px; }
+.home-premiere .home-venue a.venue-transfer-whatsapp { justify-self: start; min-height: 44px; padding: 10px 18px; border-radius: 5px; background: var(--venue-ink); color: #fffaf0; box-shadow: none; }
+.home-premiere .home-venue a.venue-transfer-whatsapp:hover { background: #245b4a; }
+.home-premiere .home-venue a:focus-visible { outline-color: var(--venue-ink); }
+@media (max-width: 1000px) {
+  .home-venue .venue-layout { grid-template-columns: 1fr; gap: 28px; padding-top: 40px; }
+  .home-venue .venue-gallery { padding: 0 0 54px 11%; }
+  .home-venue .venue-scene img { aspect-ratio: 1.7; }
+  .home-venue .venue-scene figcaption { padding-left: 30%; }
+  .home-venue .venue-room { width: 34%; left: 0; }
+  .home-venue .venue-transfer { width: 100%; max-width: 440px; justify-self: center; padding: 22px 0 0; border-left: 0; border-top: 1px solid #163b3340; }
+}
+@media (max-width: 600px) {
+  .home-premiere .home-venue { padding: 37px 0 28px; }
+  .home-venue .venue-meta { padding-bottom: 25px; }
+  .home-venue .venue-layout { padding: 33px 0 0; gap: 24px; }
+  .home-venue .venue-gallery { padding: 0 0 66px 0; }
+  .home-venue .venue-scene img { aspect-ratio: 1.25; }
+  .home-venue .venue-scene figcaption { padding-left: 52%; font-size: 9px; line-height: 1.5; }
+  .home-venue .venue-room { width: 49%; left: 3px; padding: 6px; }
+  .home-venue .venue-room figcaption { padding: 9px 0 4px; font-size: 14px; }
+  .home-venue .venue-transfer-route { gap: 10px; }
+}

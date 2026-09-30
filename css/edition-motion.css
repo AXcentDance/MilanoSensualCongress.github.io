@@ -1,0 +1,85 @@
+/* 2027: festival scale, physical movement, short statements. */
+.edition-2027 .e27-home-copy h1,
+.edition-2027 .experience-title,
+.edition-2027 .visit-hero h1,
+.edition-2027 .visit-contact-masthead h1 { font-family: Inter, 'Inter Fallback', sans-serif; font-weight: 900; letter-spacing: -.075em; text-transform: uppercase; line-height: .94; }
+.edition-2027 .visit-contact-masthead h1 { font-size: clamp(64px, 8vw, 112px); }
+.edition-2027 .e27-home-copy h1 { font-size: clamp(72px, 8.7vw, 128px); }
+.edition-2027 .e27-home-copy h1 em { display: block; font-family: 'Playfair Display', 'Playfair Display Fallback', serif; font-weight: 600; text-transform: lowercase; letter-spacing: -.075em; }
+.edition-2027 .e27-home-hero { min-height: 720px; grid-template-columns: 1.18fr 1fr; }
+.edition-2027 .e27-home-copy { padding-block: 55px; }
+.edition-2027 .e27-home-deck { font-size: 18px; line-height: 1.55; max-width: 320px; }
+.edition-2027 .e27-home-art { border-radius: 180px 0 0 0; }
+.edition-2027 .e27-home-art img { transform-origin: 65% 75%; }
+.edition-2027 .e27-spark { position: absolute; top: 30px; right: 28px; z-index: 2; width: 100px; height: 100px; color: var(--e27-paper); }
+.edition-2027 .e27-heading,
+.edition-2027 .experience-heading,
+.edition-2027 .visit-section h2,
+.edition-2027 .e27-experience-card h3 { font-family: Inter, 'Inter Fallback', sans-serif; font-weight: 850; letter-spacing: -.055em; line-height: 1.02; }
+.edition-2027 .e27-heading { font-size: clamp(42px, 5.8vw, 84px); }
+.edition-2027 .e27-section-head { margin-bottom: 32px; }
+.edition-2027 .e27-kicker { font-size: 11px; letter-spacing: .13em; }
+.edition-2027 .e27-home-meta { flex-wrap: wrap; letter-spacing: .07em; gap: 14px; font-weight: 700; color: var(--e27-paper); }
+.edition-2027 .e27-home-meta span + span { border: 0; padding-left: 0; }
+.edition-2027 .e27-facts { padding-block: 22px; }
+.edition-2027 .e27-facts #congress-facts { font-size: 15px; font-weight: 650; }
+.edition-2027 .e27-film { min-height: 650px; }
+.edition-2027 .e27-film .e27-heading { font-size: clamp(48px, 7vw, 100px); text-transform: uppercase; max-width: 880px; }
+.edition-2027 .e27-artist-photo { overflow: hidden; }
+.edition-2027 .e27-artist img { transition: transform .6s cubic-bezier(.2,.8,.2,1), filter .3s; }
+.edition-2027 .e27-artist h3 { font: 800 clamp(19px, 2vw, 27px)/1.12 Inter, 'Inter Fallback', sans-serif; letter-spacing: -.04em; }
+.edition-2027 .e27-play { width: 54px; height: 54px; transition: transform .35s, background .25s; }
+.edition-2027 .e27-lineup-rest { font-size: 11px; padding-top: 18px; margin-top: 24px; }
+.edition-2027 .e27-experience-card { padding-top: 25px; }
+.edition-2027 .e27-experience-card p { font-size: 15px; line-height: 1.6; }
+.edition-2027 .e27-journal-item h3 { font: 800 31px/1.08 Inter, 'Inter Fallback', sans-serif; letter-spacing: -.05em; }
+.edition-2027 .e27-journal-item p { line-height: 1.55; }
+.edition-2027 .e27-button,
+.edition-2027 .e27-button-outline,
+.edition-2027 .experience-action { border-radius: 999px; padding-inline: 28px; min-height: 56px; font-size: 13px; transition: transform .25s, background .25s, color .25s; }
+.edition-2027 .e27-button span,
+.edition-2027 .e27-text-link span { display: inline-block; transition: transform .25s; }
+.edition-2027 .e27-motion-toggle { position: fixed; z-index: 90; right: 18px; bottom: 18px; min-height: 44px; min-width: 44px; padding: 10px 16px; border: 1px solid #80998b; border-radius: 999px; background: var(--e27-night); color: var(--e27-paper); font: 600 11px/1.2 Inter, sans-serif; box-shadow: 0 3px 15px #0002; }
+.edition-2027 .e27-motion-toggle[hidden] { display: none; }
+.edition-2027 .e27-footer { padding-bottom: 80px; }
+.edition-2027 .e27-footer-wordmark { font: 850 clamp(40px, 5vw, 72px)/.97 Inter, 'Inter Fallback', sans-serif; letter-spacing: -.065em; }
+.edition-2027 .editorial-masthead h1 { font-family: Inter, 'Inter Fallback', sans-serif; font-weight: 850; letter-spacing: -.055em; }
+.edition-2027 .editorial-prose h2 { font-family: Inter, 'Inter Fallback', sans-serif; font-weight: 800; letter-spacing: -.04em; }
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+ .edition-2027 .e27-artist:hover img { transform: scale(1.07) rotate(-1deg); }
+ .edition-2027 .e27-artist:hover .e27-play { transform: rotate(-12deg) scale(1.13); }
+ .edition-2027 :is(.e27-button,.e27-button-outline,.experience-action):hover { transform: translateY(-4px); }
+ .edition-2027 :is(.e27-button,.e27-text-link):hover span { transform: translate(3px, -3px); }
+ .edition-2027 .experience-artist-photo { transition: transform .5s; }
+ .edition-2027 .experience-artist-card:hover .experience-artist-photo { transform: translateY(-8px) rotate(-1deg); }
+}
+@media (prefers-reduced-motion: no-preference) {
+ .edition-2027.e27-motion-on .e27-home-art img { animation: e27-kenburns 14s ease-in-out infinite alternate; }
+ .edition-2027.e27-motion-on .e27-spark { animation: e27-turn 24s linear infinite; }
+ .edition-2027.e27-motion-on .e27-in-view { animation: e27-arrive .75s cubic-bezier(.16,1,.3,1) both; }
+ .edition-2027.e27-motion-paused *,
+ .edition-2027.e27-motion-paused *::before,
+ .edition-2027.e27-motion-paused *::after { animation-play-state: paused !important; }
+}
+@keyframes e27-kenburns { from { transform: scale(1); } to { transform: scale(1.1) translateY(-1.5%); } }
+@keyframes e27-turn { to { transform: rotate(360deg); } }
+@keyframes e27-arrive { from { translate: 0 42px; } to { translate: 0 0; } }
+@media (max-width: 1100px) {
+ .edition-2027 .e27-home-copy h1 { font-size: clamp(65px, 8.5vw, 96px); }
+ .edition-2027 .e27-home-hero { min-height: 650px; }
+ .edition-2027 .e27-spark { width: 74px; height: 74px; }
+}
+@media (max-width: 700px) {
+ .edition-2027 .e27-home-hero { grid-template-columns: 1fr; }
+ .edition-2027 .e27-home-copy { padding: 44px 6% 38px; }
+ .edition-2027 .e27-home-copy h1 { font-size: clamp(65px, 16vw, 100px); }
+ .edition-2027 .e27-home-deck { font-size: 16px; }
+ .edition-2027 .e27-home-art { min-height: 420px; border-radius: 100px 0 0 0; margin-left: 6%; }
+ .edition-2027 .e27-home-meta { margin-top: 28px; font-size: 10px; }
+ .edition-2027 .e27-film { min-height: 520px; }
+ .edition-2027 .e27-motion-toggle { right: 12px; bottom: 12px; }
+ .edition-2027 .e27-facts #congress-facts { font-size: 12px; }
+ .edition-2027 .experience-title { font-size: clamp(49px, 12vw, 78px); }
+ .edition-2027 .visit-contact-masthead h1 { font-size: clamp(44px, 12vw, 70px); }
+ .edition-2027 .editorial-masthead h1 { font-size: clamp(32px, 8vw, 54px); }
+}

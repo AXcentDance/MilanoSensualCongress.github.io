@@ -1,0 +1,773 @@
+{
+  "edition": 2026,
+  "scope": "European countries and transcontinental countries, including Cyprus, Armenia and Kosovo. Countries identify community flags, not individual citizenship records.",
+  "countries": [
+    {
+      "code": "AL",
+      "name": {
+        "en": "Albania",
+        "it": "Albania"
+      },
+      "mapPoint": [
+        398.56,
+        411.95
+      ],
+      "statistics": {
+        "dancerPercent": 1.7,
+        "guestArtists": 4
+      }
+    },
+    {
+      "code": "AD",
+      "name": {
+        "en": "Andorra",
+        "it": "Andorra"
+      },
+      "mapPoint": [
+        257.47,
+        381.75
+      ],
+      "statistics": {
+        "dancerPercent": 2.2,
+        "guestArtists": 0
+      }
+    },
+    {
+      "code": "AM",
+      "name": {
+        "en": "Armenia",
+        "it": "Armenia"
+      },
+      "mapPoint": [
+        593.34,
+        391.87
+      ],
+      "statistics": {
+        "dancerPercent": 1.7,
+        "guestArtists": 0
+      }
+    },
+    {
+      "code": "AT",
+      "name": {
+        "en": "Austria",
+        "it": "Austria"
+      },
+      "mapPoint": [
+        374.26,
+        338.43
+      ],
+      "statistics": {
+        "dancerPercent": 1.9,
+        "guestArtists": 5
+      }
+    },
+    {
+      "code": "AZ",
+      "name": {
+        "en": "Azerbaijan",
+        "it": "Azerbaigian"
+      },
+      "mapPoint": [
+        631.32,
+        374.36
+      ],
+      "statistics": {
+        "dancerPercent": 0.3,
+        "guestArtists": 0
+      }
+    },
+    {
+      "code": "BY",
+      "name": {
+        "en": "Belarus",
+        "it": "Bielorussia"
+      },
+      "mapPoint": [
+        447.35,
+        276.11
+      ],
+      "statistics": {
+        "dancerPercent": 2.3,
+        "guestArtists": 1
+      }
+    },
+    {
+      "code": "BE",
+      "name": {
+        "en": "Belgium",
+        "it": "Belgio"
+      },
+      "mapPoint": [
+        296.11,
+        300.01
+      ],
+      "statistics": {
+        "dancerPercent": 1.9,
+        "guestArtists": 2
+      }
+    },
+    {
+      "code": "BA",
+      "name": {
+        "en": "Bosnia and Herzegovina",
+        "it": "Bosnia ed Erzegovina"
+      },
+      "mapPoint": [
+        387.8,
+        385.11
+      ],
+      "statistics": {
+        "dancerPercent": 2.3,
+        "guestArtists": 2
+      }
+    },
+    {
+      "code": "BG",
+      "name": {
+        "en": "Bulgaria",
+        "it": "Bulgaria"
+      },
+      "mapPoint": [
+        425.96,
+        396.93
+      ],
+      "statistics": {
+        "dancerPercent": 2.2,
+        "guestArtists": 1
+      }
+    },
+    {
+      "code": "HR",
+      "name": {
+        "en": "Croatia",
+        "it": "Croazia"
+      },
+      "mapPoint": [
+        370.2,
+        363.66
+      ],
+      "statistics": {
+        "dancerPercent": 0.7,
+        "guestArtists": 0
+      }
+    },
+    {
+      "code": "CY",
+      "name": {
+        "en": "Cyprus",
+        "it": "Cipro"
+      },
+      "mapPoint": [
+        515.36,
+        465.56
+      ],
+      "statistics": {
+        "dancerPercent": 1.8,
+        "guestArtists": 2
+      }
+    },
+    {
+      "code": "CZ",
+      "name": {
+        "en": "Czechia",
+        "it": "Cechia"
+      },
+      "mapPoint": [
+        362.07,
+        317.74
+      ],
+      "statistics": {
+        "dancerPercent": 1.3,
+        "guestArtists": 0
+      }
+    },
+    {
+      "code": "DK",
+      "name": {
+        "en": "Denmark",
+        "it": "Danimarca"
+      },
+      "mapPoint": [
+        355.53,
+        257.41
+      ],
+      "statistics": {
+        "dancerPercent": 0.3,
+        "guestArtists": 0
+      }
+    },
+    {
+      "code": "EE",
+      "name": {
+        "en": "Estonia",
+        "it": "Estonia"
+      },
+      "mapPoint": [
+        425.68,
+        219.14
+      ],
+      "statistics": {
+        "dancerPercent": 0.3,
+        "guestArtists": 0
+      }
+    },
+    {
+      "code": "FI",
+      "name": {
+        "en": "Finland",
+        "it": "Finlandia"
+      },
+      "mapPoint": [
+        426.13,
+        211.43
+      ],
+      "statistics": {
+        "dancerPercent": 1.7,
+        "guestArtists": 2
+      }
+    },
+    {
+      "code": "FR",
+      "name": {
+        "en": "France",
+        "it": "Francia"
+      },
+      "mapPoint": [
+        278.32,
+        317.66
+      ],
+      "statistics": {
+        "dancerPercent": 1.1,
+        "guestArtists": 1
+      }
+    },
+    {
+      "code": "GE",
+      "name": {
+        "en": "Georgia",
+        "it": "Georgia"
+      },
+      "mapPoint": [
+        590.91,
+        375.71
+      ],
+      "statistics": {
+        "dancerPercent": 1.5,
+        "guestArtists": 0
+      }
+    },
+    {
+      "code": "DE",
+      "name": {
+        "en": "Germany",
+        "it": "Germania"
+      },
+      "mapPoint": [
+        357.34,
+        291.3
+      ],
+      "statistics": {
+        "dancerPercent": 2.0,
+        "guestArtists": 4
+      }
+    },
+    {
+      "code": "GR",
+      "name": {
+        "en": "Greece",
+        "it": "Grecia"
+      },
+      "mapPoint": [
+        431.28,
+        446.25
+      ],
+      "statistics": {
+        "dancerPercent": 2.0,
+        "guestArtists": 4
+      }
+    },
+    {
+      "code": "HU",
+      "name": {
+        "en": "Hungary",
+        "it": "Ungheria"
+      },
+      "mapPoint": [
+        393.1,
+        346.56
+      ],
+      "statistics": {
+        "dancerPercent": 2.2,
+        "guestArtists": 2
+      }
+    },
+    {
+      "code": "IS",
+      "name": {
+        "en": "Iceland",
+        "it": "Islanda"
+      },
+      "mapPoint": [
+        222.24,
+        118.69
+      ],
+      "statistics": {
+        "dancerPercent": 0.4,
+        "guestArtists": 0
+      }
+    },
+    {
+      "code": "IE",
+      "name": {
+        "en": "Ireland",
+        "it": "Irlanda"
+      },
+      "mapPoint": [
+        238.89,
+        255.57
+      ],
+      "statistics": {
+        "dancerPercent": 0.6,
+        "guestArtists": 0
+      }
+    },
+    {
+      "code": "IT",
+      "name": {
+        "en": "Italy",
+        "it": "Italia"
+      },
+      "mapPoint": [
+        340.74,
+        402.97
+      ],
+      "statistics": {
+        "dancerPercent": 31,
+        "guestArtists": 31
+      }
+    },
+    {
+      "code": "KZ",
+      "name": {
+        "en": "Kazakhstan",
+        "it": "Kazakistan"
+      },
+      "mapPoint": [
+        699.12,
+        197.14
+      ],
+      "statistics": {
+        "dancerPercent": 0.8,
+        "guestArtists": 1
+      }
+    },
+    {
+      "code": "XK",
+      "name": {
+        "en": "Kosovo",
+        "it": "Kosovo"
+      },
+      "mapPoint": [
+        409.08,
+        397.86
+      ],
+      "statistics": {
+        "dancerPercent": 0.3,
+        "guestArtists": 0
+      }
+    },
+    {
+      "code": "LV",
+      "name": {
+        "en": "Latvia",
+        "it": "Lettonia"
+      },
+      "mapPoint": [
+        423.84,
+        245.53
+      ],
+      "statistics": {
+        "dancerPercent": 1.3,
+        "guestArtists": 1
+      }
+    },
+    {
+      "code": "LI",
+      "name": {
+        "en": "Liechtenstein",
+        "it": "Liechtenstein"
+      },
+      "mapPoint": [
+        324.53,
+        345.13
+      ],
+      "statistics": {
+        "dancerPercent": 1.5,
+        "guestArtists": 1
+      }
+    },
+    {
+      "code": "LT",
+      "name": {
+        "en": "Lithuania",
+        "it": "Lituania"
+      },
+      "mapPoint": [
+        432.45,
+        268.98
+      ],
+      "statistics": {
+        "dancerPercent": 0.9,
+        "guestArtists": 0
+      }
+    },
+    {
+      "code": "LU",
+      "name": {
+        "en": "Luxembourg",
+        "it": "Lussemburgo"
+      },
+      "mapPoint": [
+        305.25,
+        315.32
+      ],
+      "statistics": {
+        "dancerPercent": 1.0,
+        "guestArtists": 0
+      }
+    },
+    {
+      "code": "MT",
+      "name": {
+        "en": "Malta",
+        "it": "Malta"
+      },
+      "mapPoint": [
+        352.73,
+        466.87
+      ],
+      "statistics": {
+        "dancerPercent": 1.6,
+        "guestArtists": 3
+      }
+    },
+    {
+      "code": "MD",
+      "name": {
+        "en": "Moldova",
+        "it": "Moldavia"
+      },
+      "mapPoint": [
+        464.06,
+        348.02
+      ],
+      "statistics": {
+        "dancerPercent": 2.1,
+        "guestArtists": 3
+      }
+    },
+    {
+      "code": "MC",
+      "name": {
+        "en": "Monaco",
+        "it": "Monaco"
+      },
+      "mapPoint": [
+        304.01,
+        378.41
+      ],
+      "statistics": {
+        "dancerPercent": 2.2,
+        "guestArtists": 2
+      }
+    },
+    {
+      "code": "ME",
+      "name": {
+        "en": "Montenegro",
+        "it": "Montenegro"
+      },
+      "mapPoint": [
+        394.19,
+        400.33
+      ],
+      "statistics": {
+        "dancerPercent": 0.7,
+        "guestArtists": 0
+      }
+    },
+    {
+      "code": "NL",
+      "name": {
+        "en": "Netherlands",
+        "it": "Paesi Bassi"
+      },
+      "mapPoint": [
+        302.98,
+        284.92
+      ],
+      "statistics": {
+        "dancerPercent": 2.0,
+        "guestArtists": 3
+      }
+    },
+    {
+      "code": "MK",
+      "name": {
+        "en": "North Macedonia",
+        "it": "Macedonia del Nord"
+      },
+      "mapPoint": [
+        411.31,
+        404.79
+      ],
+      "statistics": {
+        "dancerPercent": 0.8,
+        "guestArtists": 1
+      }
+    },
+    {
+      "code": "NO",
+      "name": {
+        "en": "Norway",
+        "it": "Norvegia"
+      },
+      "mapPoint": [
+        350.84,
+        211.97
+      ],
+      "statistics": {
+        "dancerPercent": 1.9,
+        "guestArtists": 1
+      }
+    },
+    {
+      "code": "PL",
+      "name": {
+        "en": "Poland",
+        "it": "Polonia"
+      },
+      "mapPoint": [
+        406.59,
+        296.22
+      ],
+      "statistics": {
+        "dancerPercent": 1.0,
+        "guestArtists": 3
+      }
+    },
+    {
+      "code": "PT",
+      "name": {
+        "en": "Portugal",
+        "it": "Portogallo"
+      },
+      "mapPoint": [
+        168.25,
+        393.17
+      ],
+      "statistics": {
+        "dancerPercent": 1.2,
+        "guestArtists": 0
+      }
+    },
+    {
+      "code": "RO",
+      "name": {
+        "en": "Romania",
+        "it": "Romania"
+      },
+      "mapPoint": [
+        446.29,
+        377.32
+      ],
+      "statistics": {
+        "dancerPercent": 1.9,
+        "guestArtists": 3
+      }
+    },
+    {
+      "code": "RU",
+      "name": {
+        "en": "Russia",
+        "it": "Russia"
+      },
+      "mapPoint": [
+        503.89,
+        246.44
+      ],
+      "statistics": {
+        "dancerPercent": 0.3,
+        "guestArtists": 0
+      }
+    },
+    {
+      "code": "SM",
+      "name": {
+        "en": "San Marino",
+        "it": "San Marino"
+      },
+      "mapPoint": [
+        342.29,
+        381.48
+      ],
+      "statistics": {
+        "dancerPercent": 1.9,
+        "guestArtists": 1
+      }
+    },
+    {
+      "code": "RS",
+      "name": {
+        "en": "Serbia",
+        "it": "Serbia"
+      },
+      "mapPoint": [
+        403.4,
+        375.38
+      ],
+      "statistics": {
+        "dancerPercent": 2.0,
+        "guestArtists": 4
+      }
+    },
+    {
+      "code": "SK",
+      "name": {
+        "en": "Slovakia",
+        "it": "Slovacchia"
+      },
+      "mapPoint": [
+        379.48,
+        339.3
+      ],
+      "statistics": {
+        "dancerPercent": 1.7,
+        "guestArtists": 2
+      }
+    },
+    {
+      "code": "SI",
+      "name": {
+        "en": "Slovenia",
+        "it": "Slovenia"
+      },
+      "mapPoint": [
+        359.5,
+        360.43
+      ],
+      "statistics": {
+        "dancerPercent": 1.0,
+        "guestArtists": 2
+      }
+    },
+    {
+      "code": "ES",
+      "name": {
+        "en": "Spain",
+        "it": "Spagna"
+      },
+      "mapPoint": [
+        213.34,
+        391.52
+      ],
+      "statistics": {
+        "dancerPercent": 1.3,
+        "guestArtists": 0
+      }
+    },
+    {
+      "code": "SE",
+      "name": {
+        "en": "Sweden",
+        "it": "Svezia"
+      },
+      "mapPoint": [
+        389.52,
+        220.97
+      ],
+      "statistics": {
+        "dancerPercent": 1.7,
+        "guestArtists": 3
+      }
+    },
+    {
+      "code": "CH",
+      "name": {
+        "en": "Switzerland",
+        "it": "Svizzera"
+      },
+      "mapPoint": [
+        309.52,
+        344.83
+      ],
+      "statistics": {
+        "dancerPercent": 1.9,
+        "guestArtists": 1
+      }
+    },
+    {
+      "code": "TR",
+      "name": {
+        "en": "Türkiye",
+        "it": "Turchia"
+      },
+      "mapPoint": [
+        504.11,
+        417.67
+      ],
+      "statistics": {
+        "dancerPercent": 0.7,
+        "guestArtists": 2
+      }
+    },
+    {
+      "code": "UA",
+      "name": {
+        "en": "Ukraine",
+        "it": "Ucraina"
+      },
+      "mapPoint": [
+        470.92,
+        310.21
+      ],
+      "statistics": {
+        "dancerPercent": 1.9,
+        "guestArtists": 2
+      }
+    },
+    {
+      "code": "GB",
+      "name": {
+        "en": "United Kingdom",
+        "it": "Regno Unito"
+      },
+      "mapPoint": [
+        269.34,
+        286.16
+      ],
+      "statistics": {
+        "dancerPercent": 0.8,
+        "guestArtists": 0
+      }
+    },
+    {
+      "code": "VA",
+      "name": {
+        "en": "Vatican City",
+        "it": "Città del Vaticano"
+      },
+      "mapPoint": [
+        340.34,
+        402.93
+      ],
+      "statistics": {
+        "dancerPercent": 0.2,
+        "guestArtists": 0
+      }
+    }
+  ],
+  "statisticsMode": "demo",
+  "statisticsNotes": "Owner-requested randomized layout sample, not verified 2026 attendance. Dancer percentages total 100 with Italy at 31%. Guest artists total 100 with 31 from Italy. Values are saved and do not change on page load."
+}

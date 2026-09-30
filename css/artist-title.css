@@ -1,0 +1,91 @@
+/* Artists: a quick typographic entrance beneath seven tricolour stars.
+   Separate decorative artwork; the official congress logo stays unchanged. */
+.scene-artists .stage-artist-hero { padding-top: 18px; }
+.stage-title-scene {
+  position: relative;
+  isolation: isolate;
+  display: grid;
+  align-items: end;
+  width: min(1320px, 91%);
+  height: clamp(205px, 31vw, 405px);
+  margin: 0 auto;
+  padding-bottom: 22px;
+}
+.stage-title-stars {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  pointer-events: none;
+}
+.stage-title-spire { transform-box: fill-box; transform-origin: center bottom; }
+.scene-artists .stage-artist-title {
+  margin: 0;
+  padding-right: .06em;
+  color: var(--stage-paper);
+  font: 800 clamp(104px, 24vw, 320px)/.84 Inter, 'Inter Fallback', sans-serif;
+  letter-spacing: -.065em;
+  text-align: center;
+  text-transform: none;
+  white-space: nowrap;
+}
+.stage-title-letter { display: inline-block; }
+.scene-artists .stage-hero-inner {
+  min-height: 330px;
+  grid-template-columns: .85fr 1.15fr;
+  gap: 6%;
+}
+.scene-artists .stage-artist-intro { padding: 15px 0 35px; }
+.scene-artists .stage-artist-intro .stage-kicker { margin-bottom: 18px; }
+.scene-artists .stage-artist-intro .stage-lead { max-width: 350px; }
+.scene-artists .stage-cast-collage { height: 355px; margin: 0; }
+.scene-artists .stage-portrait { width: 31%; }
+.scene-artists .stage-portrait-1 { top: 35px; left: 0; transform: rotate(-9deg); }
+.scene-artists .stage-portrait-2 { top: 90px; left: 32%; width: 33%; transform: rotate(5deg); }
+.scene-artists .stage-portrait-3 { top: 18px; right: 0; transform: rotate(9deg); }
+.scene-artists .stage-portrait > span { font-size: 12px; padding: 35px 12px 15px; }
+.scene-artists .stage-portrait b { font-size: 21px; }
+.scene-artists .stage-cast-seal { display: none; }
+.scene-artists .stage-hero-tail { margin-top: 0; }
+@media (prefers-reduced-motion: no-preference) {
+  .e27-motion-on:not(.e27-motion-paused) .stage-title-letter {
+    animation: artist-title-write .58s cubic-bezier(.16, 1, .3, 1) both;
+    animation-delay: calc(var(--letter) * 45ms);
+  }
+  .e27-motion-on:not(.e27-motion-paused) .stage-title-spire {
+    animation: artist-spire-enter .72s cubic-bezier(.16, 1, .3, 1) both;
+    animation-delay: calc(var(--spire) * 25ms);
+  }
+}
+@keyframes artist-title-write {
+  0% { transform: translateY(.12em); color: transparent; -webkit-text-stroke: 1px var(--stage-paper); }
+  38% { color: transparent; -webkit-text-stroke: 1px var(--stage-paper); }
+  75%, 100% { transform: translateY(0); color: var(--stage-paper); -webkit-text-stroke: 0 transparent; }
+}
+@keyframes artist-spire-enter {
+  from { transform: translateY(22px) scaleY(.72); }
+  to { transform: translateY(0) scaleY(1); }
+}
+@media (max-width: 1000px) {
+  .scene-artists .stage-hero-inner { min-height: 300px; }
+  .scene-artists .stage-cast-collage { height: 285px; }
+  .scene-artists .stage-portrait > span { font-size: 10px; padding-inline: 8px; }
+  .scene-artists .stage-portrait b { display: none; }
+}
+@media (max-width: 700px) {
+  .scene-artists .stage-artist-hero { padding-top: 12px; }
+  .stage-title-scene { width: 94%; height: 43vw; min-height: 165px; padding-bottom: 14px; }
+  .scene-artists .stage-artist-title { font-size: 25vw; }
+  .stage-title-stars { inset: -4% -4% auto; width: 108%; height: 112%; }
+  .scene-artists .stage-hero-inner { display: flex; flex-direction: column; gap: 0; width: 88%; }
+  .scene-artists .stage-artist-intro { align-self: stretch; padding: 24px 0 10px; }
+  .scene-artists .stage-artist-intro .stage-kicker { font-size: 9px; margin-bottom: 14px; }
+  .scene-artists .stage-artist-intro .stage-lead { max-width: 100%; margin-bottom: 22px; }
+  .scene-artists .stage-cast-collage { width: 100%; height: 260px; }
+  .scene-artists .stage-portrait-1 { top: 30px; }
+  .scene-artists .stage-portrait-2 { top: 72px; }
+  .scene-artists .stage-portrait-3 { top: 20px; }
+  .scene-artists .stage-portrait > span { font-size: 9px; padding: 25px 7px 9px; }
+}

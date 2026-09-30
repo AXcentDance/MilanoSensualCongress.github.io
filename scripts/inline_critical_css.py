@@ -9,25 +9,32 @@ Two mechanisms live here:
 
      - all of css/fonts.css (font-face rules are needed immediately);
      - the subset of css/tailwind.min.css whose selectors reference only
-       class names actually present in that page's HTML (class attributes
+       required class names actually present in that page's HTML (class attributes
        plus class tokens quoted in inline scripts), a small safelist
        ('hidden', 'animate-spin'), and every selector with no class at all
-       (html/body/:root/element preflight). @media/@supports blocks are
+       (html/body/:root/element preflight). :is/:where alternatives are
+       matched independently; :not/:has are kept conservatively rather
+       than inferring DOM relationships from a class inventory. @media/@supports blocks are
        filtered recursively; @keyframes are kept when referenced;
      - vendor/fontawesome/fa-subset.min.css filtered the same way (it is a
        flat list of single-class selectors with root-absolute font URLs, so
        the tailwind treatment is trivially safe for it);
      - all of css/site.css (small shared accessibility/responsive defaults).
 
-   The bundle is injected as ONE marker block where the stylesheets sat:
+   The bundle is injected as ONE marker block after the async stylesheet links:
 
      <style data-critical="HASH">...</style>
 
+   Keeping the critical bundle last in the active cascade prevents a delayed
+   full stylesheet from temporarily undoing already-rendered critical rules.
    where HASH is a stable content hash of the generated CSS plus the source
    CSS files. The shared stylesheet links are converted to the async pattern
-   (media="print" onload="this.media='all'") with a single
-   <noscript data-critical-fallback> block, so no render-blocking CSS
-   request remains. Relative url() references are rewritten root-absolute.
+   (media="print" onload="this.media='all'"). Optional edition sheets with
+   no applicable rules or referenced keyframes are omitted from these links.
+   A single <noscript data-critical-fallback> block retains every stylesheet
+   in its original order, both as the no-JavaScript fallback and as the
+   registry used to restore links when page classes change. No render-blocking
+   CSS request remains. Relative url() references are rewritten root-absolute.
    Existing ?v= query strings on the links are preserved verbatim.
 
    The transformation is idempotent: reruns recognise the marker block and
@@ -42,8 +49,8 @@ Usage:
     python3 scripts/inline_critical_css.py            # rewrite all pages
     python3 scripts/inline_critical_css.py --check    # freshness gate
 
---check recomputes every hash without writing; it exits non-zero listing
-stale or missing critical blocks, and on success prints the line
+--check recomputes every complete block without writing; it exits non-zero
+listing stale or missing critical CSS, links or fallbacks, and on success prints the line
 "critical css fresh".
 
 Run this script after editing css/fonts.css, css/tailwind.min.css, css/site.css,
@@ -76,10 +83,27 @@ CRITICAL_SOURCES = [
     ("css/edition-experiences.css", "purge"),
     ("css/edition-visit.css", "purge"),
     ("css/edition-editorial.css", "purge"),
+    ("css/edition-motion.css", "purge"),
+    ("css/edition-personality.css", "purge"),
+    ("css/edition-stage.css", "purge"),
+    ("css/edition-stay.css", "purge"),
+    ("css/edition-culture.css", "purge"),
 ]
 
+# These layers are optional only when the existing conservative selector
+# filter finds no page/runtime rules and none of their keyframes is needed.
+# The complete link registry remains in the no-JavaScript fallback.
+OPTIONAL_ASYNC_SOURCES = {
+    "css/edition-experiences.css",
+    "css/edition-visit.css",
+    "css/edition-editorial.css",
+    "css/edition-stage.css",
+    "css/edition-stay.css",
+    "css/edition-culture.css",
+}
+
 # Classes that scripts toggle at runtime and must always survive purging.
-SAFELIST = {"hidden", "animate-spin", "e27-dialog-open"}
+SAFELIST = {"hidden", "animate-spin", "e27-dialog-open", "e27-motion-on", "e27-motion-paused", "e27-in-view", "scene-progress"}
 
 # Warn when a page's generated critical CSS exceeds this many bytes.
 WARN_BYTES = 40 * 1024
@@ -225,9 +249,70 @@ def selector_classes(selector):
     return {unescape_class(t) for t in CLASS_TOKEN_RE.findall(selector)}
 
 
+LOGICAL_PSEUDO_RE = re.compile(r":(is|where|not|has)\(", re.I)
+
+
+def selector_group_end(selector, start):
+    """Find a bracket/function end without interpreting strings or escapes."""
+    stack, quote, i = [selector[start]], None, start + 1
+    while i < len(selector):
+        char = selector[i]
+        if char == "\\":
+            i += 2
+            continue
+        if quote:
+            if char == quote:
+                quote = None
+        elif char in "\"'":
+            quote = char
+        elif char in "([":
+            stack.append(char)
+        elif char in ")]" and stack and stack[-1] == {")": "(", "]": "["}[char]:
+            stack.pop()
+            if not stack:
+                return i
+        i += 1
+    return len(selector)
+
+
 def keep_selector(selector, classes):
-    used = selector_classes(selector)
-    return not used or used <= classes
+    """Conservatively match class requirements, including logical pseudos.
+
+    The page class inventory cannot prove element identity or relationships.
+    Every positive class outside a logical pseudo is required; :is/:where
+    need only one possible branch. Negation and relational :has contents do
+    not add requirements: retaining extra CSS is safer than excluding rules
+    based on DOM facts this class-only filter does not know.
+    """
+    i = 0
+    while i < len(selector):
+        char = selector[i]
+        if char == "\\":
+            i += 2
+            continue
+        if char == "[":
+            # Attribute values can contain dots and pseudo-looking text.
+            i = selector_group_end(selector, i) + 1
+            continue
+        if char == ":":
+            pseudo = LOGICAL_PSEUDO_RE.match(selector, i)
+            if pseudo:
+                end = selector_group_end(selector, pseudo.end() - 1)
+                if pseudo.group(1).lower() in {"is", "where"}:
+                    branches = split_selectors(selector[pseudo.end():end])
+                    if not any(keep_selector(branch, classes) for branch in branches):
+                        return False
+                i = end + 1
+                continue
+        if char == ".":
+            token = CLASS_TOKEN_RE.match(selector, i)
+            if token:
+                if unescape_class(token.group(1)) not in classes:
+                    return False
+                i = token.end()
+                continue
+        i += 1
+    return True
 
 
 URL_RE = re.compile(r"url\(\s*(['\"]?)([^)'\"]+)\1\s*\)")
@@ -369,22 +454,53 @@ def critical_hash(critical_css, sources):
 
 LINK_TAG_RE = re.compile(r'<link rel="stylesheet" href="[^"]+"[^>]*>')
 HREF_RE = re.compile(r'href="([^"]+)"')
+CRITICAL_STYLE_PATTERN = r'<style data-critical="[0-9a-f]{%d}">.*?</style>\s*' % HASH_LEN
+STYLESHEET_LINKS_PATTERN = r'(?:<link rel="stylesheet"[^>]*>\s*)*'
 CONVERTED_RE = re.compile(
-    r'([ \t]*)<style data-critical="[0-9a-f]{%d}">.*?</style>\s*'
-    r'(?:<link rel="stylesheet"[^>]*>\s*)*'
-    r"<noscript data-critical-fallback>.*?</noscript>" % HASH_LEN,
+    r'([ \t]*)(?:'
+    + CRITICAL_STYLE_PATTERN + STYLESHEET_LINKS_PATTERN  # Legacy critical-first layout.
+    + '|'
+    + STYLESHEET_LINKS_PATTERN + CRITICAL_STYLE_PATTERN  # Current links-first layout.
+    + r')<noscript data-critical-fallback>.*?</noscript>',
     re.S,
 )
 DATA_CRITICAL_RE = re.compile(r'<style data-critical="([0-9a-f]+)">')
 
 
-def build_block(indent, critical_css, digest, hrefs):
-    lines = ['%s<style data-critical="%s">%s</style>' % (indent, digest, critical_css)]
+def async_stylesheet_hrefs(html, critical_css, sources, css_universe, hrefs):
+    """Omit irrelevant optional sheets, retaining complete stylesheet contents.
+
+    Referenced keyframes may live in a sheet with no matching selectors.
+    Critical CSS already includes the animations required by retained rules,
+    inline styles/scripts and the runtime safelist; keep their source sheets.
+    This does not turn the critical subset into the sole source of styles.
+    """
+    classes = collect_page_classes(html, css_universe)
+    source_paths = {os.path.basename(path): path for path, _ in CRITICAL_SOURCES}
+    active = []
     for href in hrefs:
+        path = source_paths[os.path.basename(href.split("?")[0])]
+        if path in OPTIONAL_ASYNC_SOURCES:
+            keyframes = {}
+            rules = filter_css(sources[path], classes, keyframes, "/" + os.path.dirname(path))
+            owns_needed_keyframe = any(
+                re.search(r"\b%s\b" % re.escape(name), critical_css)
+                for name in keyframes
+            )
+            if not rules and not owns_needed_keyframe:
+                continue
+        active.append(href)
+    return active
+
+
+def build_block(indent, critical_css, digest, hrefs, *, async_hrefs=None):
+    lines = []
+    for href in hrefs if async_hrefs is None else async_hrefs:
         lines.append(
             '%s<link rel="stylesheet" href="%s" media="print" '
             "onload=\"this.media='all'\">" % (indent, href)
         )
+    lines.append('%s<style data-critical="%s">%s</style>' % (indent, digest, critical_css))
     fallback = "".join('<link rel="stylesheet" href="%s">' % h for h in hrefs)
     lines.append(
         "%s<noscript data-critical-fallback>%s</noscript>" % (indent, fallback)
@@ -455,16 +571,16 @@ def process_page(page, sources, css_universe, check):
             % (page, size / 1024.0, WARN_BYTES // 1024)
         )
 
+    async_hrefs = async_stylesheet_hrefs(html, critical, sources, css_universe, hrefs)
+    block = build_block(indent, critical, digest, hrefs, async_hrefs=async_hrefs)
     if check:
         found = DATA_CRITICAL_RE.findall(html)
-        content = re.search(r'<style data-critical="[0-9a-f]+">(.*?)</style>', html, re.S)
-        if len(found) != 1 or found[0] != digest or not content or content.group(1) != critical:
+        if len(found) != 1 or html[start:end] != block:
             state = "missing" if not found else "stale"
             print("STALE: %s critical block is %s" % (page, state))
             return False, size, False
         return True, size, False
 
-    block = build_block(indent, critical, digest, hrefs)
     new_html = html[:start] + block + html[end:]
     changed = new_html != html
     if changed:
@@ -517,6 +633,14 @@ def sync_data_inline_page(page, css_files, check):
 
 
 INLINE_SUPPLEMENTS = {
+    "artists.html": ["css/artist-title.css"],
+    "it/artists.html": ["css/artist-title.css"],
+    "index.html": ["css/home-premiere.css", "css/home-nations.css", "css/home-learning.css", "css/home-venue.css"],
+    "it/index.html": ["css/home-premiere.css", "css/home-nations.css", "css/home-learning.css", "css/home-venue.css"],
+    "promoters.html": ["css/promoters-application.css"],
+    "it/promoters.html": ["css/promoters-application.css"],
+    "news.html": ["css/edition-journal.css"],
+    "it/news.html": ["css/edition-journal.css"],
     "news/bachata-workshop-levels-guide-congress.html": ["css/workshop-levels-guide.css"],
     "it/news/livelli-workshop-bachata-congresso.html": ["css/workshop-levels-guide.css"],
     "news/bachata-congress-alone-solo-dancer-guide.html": ["css/solo-congress-guide.css"],

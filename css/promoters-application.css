@@ -1,0 +1,132 @@
+/* The ambassador invitation and application are deliberately one compact page. */
+body.scene-ambassadors .promoters-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.8fr) minmax(220px, 1fr);
+  gap: clamp(28px, 5vw, 72px);
+  align-items: center;
+  min-height: 0;
+  padding: 44px max(6%, calc((100vw - 1280px) / 2)) 48px;
+  background: radial-gradient(ellipse at 82% 48%, #155e4b, #053e36 48%, #032c2e 100%);
+}
+body.scene-ambassadors .promoters-hero::after { content: none; }
+body.scene-ambassadors .promoters-hero-copy { width: 100%; margin: 0; }
+body.scene-ambassadors .promoters-hero h1 {
+  font-size: clamp(66px, 7.4vw, 108px);
+  margin: 0 0 18px;
+  line-height: 1.12;
+  letter-spacing: -.065em;
+}
+body.scene-ambassadors .promoters-lead {
+  font-size: clamp(28px, 3vw, 42px);
+  margin-bottom: 10px;
+}
+body.scene-ambassadors .promoters-deck {
+  font-size: 17px;
+  line-height: 1.6;
+  margin: 0 0 23px;
+  max-width: 490px;
+}
+body.scene-ambassadors .promoters-join {
+  min-height: 50px;
+  padding: 13px 23px;
+  gap: 32px;
+  background: #fff7eb;
+  color: #073c32;
+  box-shadow: none;
+}
+body.scene-ambassadors .promoters-join:hover { background: #dcefdc; }
+body.scene-ambassadors .promoters-note { margin: 17px 0 0; font-size: 11px; max-width: 460px; }
+body.scene-ambassadors .promoters-hero-logo {
+  width: min(100%, 370px);
+  height: auto;
+  justify-self: center;
+  position: relative;
+  z-index: 1;
+  filter: drop-shadow(0 12px 28px #021f2580);
+}
+body.scene-ambassadors .culture-light-shards { inset: -60% -10% -50% 35%; opacity: .22; }
+body.scene-ambassadors .promoters-flag:hover > span { transform: none; }
+body.scene-ambassadors .promoters-application {
+  padding: 48px 6% 64px;
+  color: #103b33;
+  background: #f7f4eb;
+  border-top: 1px solid #d7ddce;
+}
+.promoters-application-shell { max-width: 1000px; margin: auto; }
+.promoters-application-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 24px;
+  margin-bottom: 28px;
+}
+.promoters-application-heading h2 {
+  font: 650 clamp(28px, 3.2vw, 40px)/1.15 Inter, 'Inter Fallback', sans-serif;
+  letter-spacing: -.045em;
+  margin: 0;
+}
+.promoters-application-heading p { max-width: 390px; margin: 0; font-size: 14px; line-height: 1.6; color: #49635b; }
+.promoters-application-form { display: grid; gap: 22px; }
+.promoters-application-fields { display: grid; grid-template-columns: 1fr 1fr; gap: 20px 24px; }
+.promoters-application-form label { display: block; margin-bottom: 8px; font-size: 13px; font-weight: 650; line-height: 1.5; }
+.promoters-application-form label span { font-size: 11px; font-weight: 400; color: #536b63; }
+.promoters-application-form :is(input, select, textarea) {
+  width: 100%;
+  border: 1px solid #9aaca2;
+  border-radius: 6px;
+  background: #fffefa;
+  color: #173c32;
+  font: 400 16px/1.5 Inter, 'Inter Fallback', sans-serif;
+  padding: 12px 14px;
+  min-height: 49px;
+}
+.promoters-application-form :is(input, textarea)::placeholder { color: #64796f; opacity: 1; }
+.promoters-application-form textarea { min-height: 126px; resize: vertical; }
+body.scene-ambassadors .promoters-application :is(input, select, textarea, button, a):focus-visible { outline-color: #175f47; outline-offset: 3px; }
+.promoters-application-actions { display: flex; align-items: center; gap: 28px; }
+.promoters-application-submit {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  min-height: 54px;
+  flex: none;
+  padding: 14px 24px;
+  border: 1px solid #093e32;
+  border-radius: 99px;
+  background: #093e32;
+  color: #fff7eb;
+  font: 650 14px/1.5 Inter, 'Inter Fallback', sans-serif;
+  cursor: pointer;
+  transition: background .2s ease;
+}
+.promoters-application-submit:hover { background: #176047; }
+.promoters-application-submit span { font-size: 22px; line-height: 1; }
+.promoters-application-handoff { max-width: 460px; margin: 0; font-size: 12px; line-height: 1.7; color: #49635b; }
+.promoters-application-privacy { border-top: 1px solid #d4dace; margin: 0; padding-top: 18px; font-size: 11px; line-height: 1.7; color: #536b63; }
+.promoters-application-privacy a { color: #174e3d; text-decoration: underline; text-underline-offset: 3px; }
+.promoters-application-noscript { padding: 14px; background: #e4ecdd; color: #103b33; font-size: 13px; line-height: 1.7; }
+@media (max-width: 900px) {
+  body.scene-ambassadors .promoters-hero { grid-template-columns: minmax(0, 1fr) 230px; gap: 20px; padding-block: 38px; }
+  body.scene-ambassadors .promoters-hero h1 { font-size: clamp(59px, 8.2vw, 74px); }
+  body.scene-ambassadors .promoters-deck { font-size: 15px; }
+  .promoters-application-heading { align-items: start; }
+  .promoters-application-heading p { max-width: 290px; }
+}
+@media (max-width: 600px) {
+  body.scene-ambassadors .promoters-hero { grid-template-columns: 1fr; gap: 26px; padding: 34px 6% 32px; }
+  body.scene-ambassadors .promoters-hero h1 { font-size: clamp(56px, 13.4vw, 78px); margin-bottom: 16px; }
+  body.scene-ambassadors .promoters-lead { font-size: 29px; }
+  body.scene-ambassadors .promoters-deck { max-width: 100%; margin-bottom: 18px; }
+  body.scene-ambassadors .promoters-note { font-size: 11px; }
+  body.scene-ambassadors .promoters-hero-logo { width: 170px; justify-self: end; margin-top: -10px; }
+  body.scene-ambassadors .promoters-application { padding: 35px 6% 44px; }
+  .promoters-application-heading { display: block; margin-bottom: 24px; }
+  .promoters-application-heading p { margin-top: 12px; max-width: none; }
+  .promoters-application-fields { grid-template-columns: 1fr; gap: 18px; }
+  .promoters-application-actions { display: grid; gap: 16px; }
+  .promoters-application-submit { width: 100%; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .promoters-application-submit { transition: none; }
+}

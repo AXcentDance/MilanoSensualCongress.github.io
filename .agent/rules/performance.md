@@ -89,6 +89,30 @@ require a duplicate passing run.
 
 ## Render and load
 
+The owner requested these protections on 30 September 2026 for the live site,
+the 2027 edition, and future work. Preserve them when replacing media or
+redesigning a page; an edition change must not silently restore heavier loading.
+
+- Decorative hero videos show a lightweight responsive poster first and choose
+  a bounded source for the screen and available connection information. Keep a
+  smaller slow-connection variant and a viewport fallback where network hints
+  are unavailable. Respect data saving and very slow connections with the
+  poster, pause offscreen/hidden playback, and avoid downloading replacement
+  sources merely because the viewport changes. Progressive MP4/range support
+  alone is neither adaptive quality nor proof of a small download; measure
+  transferred bytes. Preserve approved footage and timing unless changed by
+  the owner.
+- Supply navigation-logo sizes for the rendered dimensions and device density,
+  preserving the official artwork and proportions. Recompress photographic
+  posters through their generator and inspect the result visually.
+- Reserve hero/title geometry through delayed or failed font loading, including
+  the Italian tablet layout. Keep font preloads limited to above-fold faces.
+- Apply long production caching only to reliably versioned assets, with a new
+  URL for changed bytes and a cache key that retains the version. Verify actual
+  host/CDN headers; repository files alone do not establish the cache policy.
+  Keep HTML and unversioned resources revalidated or short-lived. Cloudflare
+  account/domain setup and DNS changes are separate from repository publication.
+
 - Keep main content in HTML and readable with JavaScript disabled. Keep the
   navigation and LCP heading/image visible from first paint; never animate
   their opacity from zero. Optional secondary reveals must respect reduced

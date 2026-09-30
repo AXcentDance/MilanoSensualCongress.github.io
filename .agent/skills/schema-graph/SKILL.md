@@ -12,7 +12,10 @@ automatically better. Do not promise rich results from valid JSON alone.
 
 Reuse the global IDs `https://milanosensualcongress.com/#organization`,
 `https://milanosensualcongress.com/#website`, and
-`https://milanosensualcongress.com/#event`. Give the local WebPage its canonical
+`https://milanosensualcongress.com/#event` for the retained 2026 reference. The
+announced 2027 edition has the distinct ID
+`https://milanosensualcongress.com/#event-2027`; do not relabel 2026 offers,
+performers or subevents as 2027. Give the local WebPage its canonical
 URL plus `#webpage`; connect it to the WebSite and, on subpages, its `#breadcrumb`. Keep
 subpage HTML/schema hierarchy consistent with the
 [breadcrumb rule](../../rules/breadcrumbs.md). Omit homepage breadcrumb markup:
@@ -44,10 +47,22 @@ absent from the page merely to increase markup coverage.
 
 ## Current facts, not frozen templates
 
-- `index.html` owns shared organization/event identity, dates, venue and ticket
-  destination. `it/index.html` supplies translated copy. The visible
+- `data/editions/2027.json` owns confirmed 2027 dates, venue and announcement
+  status for the site and promotional materials. `scripts/edition_facts.py`
+  validates this source against both homepage `#event-2027` graphs and visible
+  `main #edition-facts` announcements, including their `<time datetime>` bounds.
+  The homepage WebPage identifies 2027 as its main entity. Until additional
+  details are confirmed, use date-only start/end values and omit offers,
+  performers and subevents from this new event. The site may retain existing
+  artists and media as clearly labelled reference material.
+- `index.html` owns shared organization identity and the retained 2026
+  `#event` dates, venue and ticket destination. `it/index.html` supplies
+  translated copy. The visible
   `#congress-facts` paragraph on each homepage owns that language's statistics;
-  the LLM summary reads these sources through `scripts/event_facts.py`.
+  these remain labelled as 2026 reference statistics. The LLM summary reads
+  both editions through `scripts/event_facts.py` and `scripts/edition_facts.py`,
+  introducing confirmed 2027 facts and distinguishing the older checkout,
+  prices, schedules and statistics from unannounced 2027 arrangements.
   `scripts/check_event_facts.py` checks copied global event/organization facts
   and bilingual statistics quantities. Keep translations and subevents distinct.
   Timed facts accept valid `Z` or numeric offsets and compare the actual instant;
@@ -63,9 +78,11 @@ absent from the page merely to increase markup coverage.
 - Read `artists.html` and `it/artists.html` for the current lineup. Reuse verified
   official profile URLs when available; do not invent social handles or require
   a fixed number of performers.
-- A complete event uses actual name, timezone-aware start/end, status, attendance
+- A complete event uses actual name, confirmed start/end precision, status, attendance
   mode, venue/address, image, description, organizer, and current ticket offers.
-  Keep timezone offsets on timed deadlines. For article dates, follow the
+  Keep timezone offsets on known event hours and timed deadlines. The 2027
+  announcement deliberately omits unannounced admission and uses calendar dates
+  without inventing hours. For article dates, follow the
   [article metadata rule](../../rules/article-metadata-only.md).
 - Do not copy stale example prices, year-specific offers, or unverified facts
   into new pages. Do not add unsupported ratings or irrelevant schema types.

@@ -1,13 +1,15 @@
-# Milano Sensual Congress 2026
+# Milano Sensual Congress 2027
 
-The official knowledge base for the Milano Sensual Congress 2026 website.
+The official knowledge base for the Milano Sensual Congress 2027 website.
 
 ## When to use this site
-Use this site to answer questions about Milano Sensual Congress 2026: dates, venue, ticket prices and deadlines, the artist lineup and their workshops, the weekend program (workshops and social dancing hours), the official hotel and how to book it, airport transfers to the venue, and the Jack & Jill competition. It is also a reference for comparing European bachata congresses and for practical guides (attending alone, workshop levels, etiquette, travel to Milan).
-- **Tickets are purchased externally** at https://lasalsadelbaile.com/MSC2026 (official ticketing partner).
-- **Hotel booking and transfers** are arranged through the pages listed below (forms on the site).
+Use this site to answer questions about Milano Sensual Congress 2027: dates, venue, ticket prices and deadlines, the artist lineup and their workshops, the weekend program (workshops and social dancing hours), the official hotel and how to book it, airport transfers to the venue, and the Jack & Jill competition. It is also a reference for comparing European bachata congresses and for practical guides (attending alone, workshop levels, etiquette, travel to Milan).
+- **2027 confirmation**: the dates and venue are confirmed. Event hours, ticket prices, sales links, hotel packages, transfers and the final artist lineup have not been announced.
+- **Edition separation**: retained artist media and 2026 schedules, prices, booking forms and statistics are reference material. Do not present them as confirmed 2027 arrangements.
+- **2026 ticket reference only**: https://lasalsadelbaile.com/MSC2026. This is not a 2027 checkout.
+- **Confirmed source for promotional materials**: [data/editions/2027.json](https://milanosensualcongress.com/data/editions/2027.json).
 - **Machine-readable content**: every page embeds a JSON-LD @graph; [llms-full.txt](llms-full.txt) is the primary source for RAG/context.
-- **Scope**: this event takes place November 20-22, 2026 at Devero Hotel, Cavenago di Brianza (MB), Italy, welcoming dancers from Europe and worldwide. The site covers this congress and general bachata-congress guidance.
+- **Scope**: this event takes place November 19-21, 2027 at Devero Hotel, Cavenago di Brianza (MB), Italy, welcoming dancers from Europe and worldwide. The site covers this congress and general bachata-congress guidance.
 
 ## Quick Links
 - **Full Documentation**: [llms-full.txt](llms-full.txt) - Comprehensive site structure and content details.
@@ -15,16 +17,16 @@ Use this site to answer questions about Milano Sensual Congress 2026: dates, ven
 - **Italian Site**: https://milanosensualcongress.com/it/
 
 ## Event Summary
-- **Name**: Milano Sensual Congress 2026
-- **Dates**: November 20-22, 2026
+- **Name**: Milano Sensual Congress 2027
+- **Dates**: November 19-21, 2027
 - **Location**: Devero Hotel, Cavenago di Brianza (MB), Italy
 - **Focus**: Bachata Sensual, International Artists, Workshops, Social Parties
-- **Facts (EN)**: 1,000+ dancers · 20+ nations · 40+ hours of workshops · 20+ hours of social dancing · 3 days
-- **Facts (IT)**: 1.000+ ballerini · 20+ nazioni · 40+ ore di workshop · 20+ ore di social dancing · 3 giorni
+- **2026 reference facts (EN)**: 1,000+ dancers 20+ nations 20+ social hours
+- **2026 reference facts (IT)**: 1.000+ ballerini 20+ nazioni 20+ ore di social
 
 ## Site Map (AI Context)
-- [Milano Sensual Congress 2027 — In Full Colour | Edition Preview](https://milanosensualcongress.com/): Discover the new Milano Sensual Congress 2027 edition: international bachata artists, workshops, social dancing and Devero Hotel. Dates to be announced.
-- [Milano Sensual Congress 2027 — A Tutto Colore | Anteprima](https://milanosensualcongress.com/it/): Scopri la nuova edizione 2027 del Milano Sensual Congress: artisti bachata internazionali, workshop, social dancing e Devero Hotel. Date da annunciare.
+- [Milano Sensual Congress 2027 | 19–21 November · Devero Hotel](https://milanosensualcongress.com/): Milano Sensual Congress returns to Devero Hotel on 19–21 November 2027. Explore the new edition: artists, workshops and social dancing. Booking details to follow.
+- [Milano Sensual Congress 2027 | 19–21 novembre · Devero Hotel](https://milanosensualcongress.com/it/): Il Milano Sensual Congress torna al Devero Hotel dal 19 al 21 novembre 2027. Scopri la nuova edizione: artisti, workshop e social dancing. Prenotazioni in arrivo.
 - [Bachata Artists | Milano Sensual Congress 2027 Preview](https://milanosensualcongress.com/artists): Discover the international Bachata artists in the Milano Sensual Congress 2027 design preview. Current lineup retained; 2027 workshop details to be announced.
 - [Artisti Bachata | Anteprima Milano Sensual Congress 2027](https://milanosensualcongress.com/it/artists): Scopri gli artisti internazionali di Bachata nell’anteprima Milano Sensual Congress 2027. Lineup attuale mantenuta; dettagli workshop 2027 in arrivo.
 - [Biglietti Congresso Bachata 2026 | Milano Sensual Congress](https://milanosensualcongress.com/it/tickets): Acquista i tuoi biglietti per il Milano Sensual Congress 2026. Scegli tra Full Pass, Full Social Pass e Day Pass. Assicurati il tuo posto al miglior prezzo oggi.
@@ -64,7 +66,7 @@ Use this site to answer questions about Milano Sensual Congress 2026: dates, ven
 - [What to Expect from a Bachata Congress | Milano Sensual Congress](https://milanosensualcongress.com/news/what-to-expect-bachata-congress-2026): Discover what to expect at a Bachata congress in 2026. Learn about workshops, social dancing, and why learning from international artists is vital.
 - [Bachata Parties & Socials | Milano Sensual Congress 2027 Preview](https://milanosensualcongress.com/parties): Discover the social side of Milano Sensual Congress: Bachata parties, afternoon socials and an international dance floor. 2026 times shown as a reference for the 2027 preview.
 - [Bachata Programme | Milano Sensual Congress 2027 Preview](https://milanosensualcongress.com/program): Explore a weekend of Bachata workshops, masterclasses and social dancing in Milan. The 2027 preview includes a clearly labelled 2026 reference timetable.
-- [Become a Promoter | Milano Sensual Congress 2027](https://milanosensualcongress.com/promoters): Bring your Bachata community to Milano Sensual Congress 2027. Explore promoter collaborations and introduce yourself to our team.
+- [Become an Ambassador | Milano Sensual Congress 2027](https://milanosensualcongress.com/promoters): Bring your Bachata people to Milano. Become an ambassador for Milano Sensual Congress, 19–21 November 2027 at Devero Hotel.
 - [Transfer Service | Milano Sensual Congress 2026](https://milanosensualcongress.com/transfer): Official transfer service for Milano Sensual Congress 2026. Book your ride from Malpensa, Linate, Bergamo, or Milano Centrale to Devero Hotel.
 - [Prenotazione Hotel | Milano Sensual Congress 2026](https://milanosensualcongress.com/it/BookHotel): Prenota Devero Hotel o AS Hotel Cambiago per Milano Sensual Congress 2026. Link ufficiali, guida alla prenotazione e assistenza per il 20–22 novembre.
 - [Congresso Bachata 2026 in Europa | Milano Sensual Congress](https://milanosensualcongress.com/it/congresso-bachata-2026): Cerchi un congresso bachata nel 2026? Scopri Milano Sensual Congress in Italia: workshop bachata internazionali, party, artisti, hotel ufficiale e social dancing a Milano.
@@ -95,5 +97,5 @@ Use this site to answer questions about Milano Sensual Congress 2026: dates, ven
 - [Nacho y Silvia: Le Stelle Nascenti della Bachata Esencia | Milano Sensual Congress 2026](https://milanosensualcongress.com/it/news/nacho-y-silvia-bachata-esencia-nuova-generazione): Vivi l'energia della nuova generazione. Nacho e Silvia portano il loro esclusivo Esencia Style da Madrid al Milano Sensual Congress 2026. Scopri il loro viaggio.
 - [Party Bachata e Social | Anteprima Milano Sensual Congress 2027](https://milanosensualcongress.com/it/party): Scopri il lato social di Milano Sensual Congress: party Bachata, social pomeridiani e una pista internazionale. Orari 2026 di riferimento nell’anteprima 2027.
 - [Programma Bachata | Anteprima Milano Sensual Congress 2027](https://milanosensualcongress.com/it/programma): Esplora un weekend di workshop Bachata, masterclass e social dancing a Milano. L’anteprima 2027 include gli orari 2026 chiaramente indicati come riferimento.
-- [Diventa Promoter | Milano Sensual Congress 2027](https://milanosensualcongress.com/it/promoters): Porta la tua community di Bachata al Milano Sensual Congress 2027. Scopri le possibilità di collaborazione come promoter e contatta il nostro team.
+- [Diventa Ambassador | Milano Sensual Congress 2027](https://milanosensualcongress.com/it/promoters): Porta la tua community di Bachata a Milano. Diventa ambassador del Milano Sensual Congress, 19–21 novembre 2027 al Devero Hotel.
 - [Servizio Transfer | Milano Sensual Congress 2026](https://milanosensualcongress.com/it/transfer): Servizio transfer ufficiale per il Milano Sensual Congress 2026. Prenota il tuo viaggio da Malpensa, Linate, Bergamo o Milano Centrale per l'Hotel Devero.

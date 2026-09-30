@@ -1,8 +1,9 @@
-"""Read shared congress facts from their existing, visitor-visible sources.
+"""Read the retained 2026 congress facts from visitor-visible sources.
 
 The English homepage owns language-independent event facts; the Italian
 homepage owns its translated statistics. Price amounts/deadlines remain owned
-and checked by update_price.py. Do not keep another edition-specific template.
+and checked by update_price.py. The confirmed 2027 announcement is separate in
+edition_facts.py; these legacy offers/statistics must not become 2027 facts.
 """
 import json
 from pathlib import Path

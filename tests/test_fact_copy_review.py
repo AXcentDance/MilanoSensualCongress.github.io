@@ -1,6 +1,7 @@
 """Prose review is actionable and read-only, never an automatic facts verdict."""
 from contextlib import redirect_stdout
 import io
+import json
 from pathlib import Path
 import subprocess
 import sys
@@ -61,6 +62,30 @@ class FactCopyReviewTests(unittest.TestCase):
             review_copy(self.root)
         self.assertIn('No shared source facts changed', output.getvalue())
         self.assertIn('does not validate arbitrary prose', output.getvalue())
+
+    def test_new_edition_dates_and_venue_trigger_copy_review_without_changing_legacy_event(self):
+        page = self.root / 'index.html'
+        soup = BeautifulSoup(page.read_text(), 'html.parser')
+        script = soup.select_one('script[type="application/ld+json"]')
+        graph = json.loads(script.string)
+        graph['@graph'].append({'@type': 'DanceEvent',
+            '@id': 'https://milanosensualcongress.com/#event-2027',
+            'name': 'New Congress 2027', 'startDate': '2027-11-19', 'endDate': '2027-11-21',
+            'location': {'name': 'New Hotel', 'address': {'addressLocality': 'New City'}}})
+        script.string = json.dumps(graph)
+        page.write_text(str(soup))
+        (self.root / 'hotel.html').write_text('<body><main><p>New Hotel · November 2027</p></main></body>')
+        original = page.read_bytes()
+        output = io.StringIO()
+        with redirect_stdout(output):
+            review_copy(self.root)
+        text = output.getvalue()
+        self.assertIn('announced edition startDate:', text)
+        self.assertIn('announced edition startDate: None -> 2027-11-19\n', text)
+        self.assertIn('announced edition location.name: None -> New Hotel', text)
+        self.assertIn('hotel.html:1 [dates, venue]', text)
+        self.assertNotIn('No shared source facts changed', text)
+        self.assertEqual(page.read_bytes(), original)
 
     def test_missing_base_and_nonliteral_price_fail_explicitly(self):
         with self.assertRaisesRegex(GenerationError, 'Cannot compare'):

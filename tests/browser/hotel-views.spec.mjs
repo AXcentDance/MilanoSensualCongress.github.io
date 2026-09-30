@@ -9,7 +9,7 @@ test.beforeEach(async ({ context }) => {
 async function expectHotelGuide(page) {
   await expect(page.locator('.hotel-sold-out')).toBeVisible();
   await expect(page.locator('.hotel-sold-out')).toContainText(/Devero Hotel.*SOLD OUT/);
-  await expect(page.locator('h1')).toContainText(/Your address|Il tuo indirizzo/);
+  await expect(page.locator('h1')).toContainText(/Sleep close\.\s*Dance closer\.|Riposa vicino\.\s*Balla di più\./);
   await expect(page.locator('.visit-reference')).toContainText('2026');
   await expect(page.locator('.visit-reference')).toContainText('2027');
   await expect(page.locator('h1')).toBeVisible();
@@ -30,17 +30,17 @@ for (const path of ['/hotel', '/it/hotel']) {
     await expectHotelGuide(page);
     await page.evaluate(() => document.fonts.ready);
     const bounds = await page.evaluate(() => {
-      const nav = document.querySelector('body > nav').getBoundingClientRect();
+      const nav = document.querySelector('body > nav.e27-nav').getBoundingClientRect();
       const notice = document.querySelector('.hotel-sold-out').getBoundingClientRect();
-      const hero = document.querySelector('.hotel-second-hero').getBoundingClientRect();
+      const hero = document.querySelector('.stay-hotel-hero').getBoundingClientRect();
       return { navBottom: nav.bottom, noticeTop: notice.top, heroBottom: hero.bottom, heroTop: hero.top };
     });
     expect(bounds.heroTop).toBeGreaterThanOrEqual(bounds.navBottom - 1);
     expect(bounds.noticeTop).toBeGreaterThanOrEqual(bounds.heroBottom - 1);
-    expect(requests).toContain('/images/hotel/devero-hotel-exterior-dusk.webp');
+    expect(requests.some(url => /^\/images\/hotel\/devero-hotel-exterior-dusk(?:_480w)?\.webp$/.test(url))).toBe(true);
     expect(requests.some(url => url.includes('hotel-views.js'))).toBe(false);
-    await expect(page.locator('.visit-hero img')).toBeVisible();
-    await expect.poll(() => page.locator('.visit-hero img').evaluate(im => im.complete && im.naturalWidth > 0)).toBe(true);
+    await expect(page.locator('.stay-hotel-arch img')).toBeVisible();
+    await expect.poll(() => page.locator('.stay-hotel-arch img').evaluate(im => im.complete && im.naturalWidth > 0)).toBe(true);
     await page.locator('#as-hotel-details img').scrollIntoViewIfNeeded();
     await expect.poll(() => page.locator('#as-hotel-details img').evaluate(im => im.complete && im.naturalWidth > 0)).toBe(true);
     const guide = page.locator('main a[href="BookHotel#as-hotel-cambiago"]');

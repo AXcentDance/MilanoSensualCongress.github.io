@@ -10,12 +10,21 @@ ROOT = Path(__file__).resolve().parent.parent
 SOURCE = ROOT / 'images/brand/milano-sensual-congress-official-logo-source.png'
 # Remove only empty black padding. The full supplied 4096px original is retained.
 CROP = 'crop=3400:2040:200:800'
+# The edition navigation renders at 87px through 700px, then 100px.
+# Keep a compact 1x copy, a phone 2x copy, the existing 200px fallback,
+# and a 3x copy. Each is resized from the approved PNG, never upscaled.
+NAV_WIDTHS = (100, 175, 200, 300)
+NAV_OUTPUTS = {
+    f'images/milano-sensual-congress-official-logo-nav-2027{"" if width == 200 else f"_{width}w"}.webp':
+        (f'scale={width}:{width * 3 // 5}:flags=lanczos,format=rgba,colorkey=0x000000:0.015:0.04', True)
+    for width in NAV_WIDTHS
+}
 OUTPUTS = {
     'images/milano-sensual-congress-official-logo.webp': ('scale=1600:960:flags=lanczos', True),
     # Key the neutral black matte only for translucent navigation surfaces.
     # The supplied master, artwork colors and all other copies stay unchanged.
     'images/milano-sensual-congress-official-logo-nav.webp': ('scale=400:240:flags=lanczos,format=rgba,colorkey=0x000000:0.015:0.04', True),
-    'images/milano-sensual-congress-official-logo-nav-2027.webp': ('scale=200:120:flags=lanczos,format=rgba,colorkey=0x000000:0.015:0.04', True),
+    **NAV_OUTPUTS,
     'images/milano-sensual-congress-official-logo-preview.webp': ('scale=950:570:flags=lanczos,pad=1200:630:(ow-iw)/2:(oh-ih)/2:black', True),
     'images/milano-sensual-congress-official-icon.webp': ('scale=180:108:flags=lanczos,pad=192:192:(ow-iw)/2:(oh-ih)/2:black', True),
     'images/og/milano-sensual-congress-official-social-card.jpg': ('scale=950:570:flags=lanczos,pad=1200:630:(ow-iw)/2:(oh-ih)/2:black', False),
@@ -27,6 +36,10 @@ def main():
         for name, (filters, webp) in OUTPUTS.items():
             staged = Path(temporary) / Path(name).name
             encoding = ['-c:v', 'libwebp', '-lossless', '1', '-compression_level', '6'] if webp else ['-q:v', '2']
+            if name in NAV_OUTPUTS:
+                # In lossless mode quality controls compression effort, not
+                # visible quality. Alpha and every visible RGB value remain exact.
+                encoding += ['-quality', '100']
             subprocess.run(['ffmpeg', '-hide_banner', '-loglevel', 'error', '-y', '-i', str(SOURCE),
                             '-vf', CROP + ',' + filters, '-frames:v', '1', *encoding, str(staged)], check=True)
             outputs[ROOT / name] = staged.read_bytes()

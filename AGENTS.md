@@ -41,6 +41,19 @@ The schema skill owns the graph contract and routes to current event/price/lineu
 sources; sync-indexes owns the discovery-generation sequence. Keep exact values,
 commands, and policies in their owner instead of copying them into other guides.
 
+## Edition information and promotional materials
+
+For flyers, social posts, videos, presentations, or other congress promotion,
+start with the [materials catalog](materials/README.md) and the
+[2027 edition brief](materials/2027/edition-brief.md). The canonical confirmed
+2027 facts live in [the edition record](data/editions/2027.json); the brief and
+promotional copy must agree with it. Record new owner confirmations there first,
+then update affected bilingual copy and the materials catalog. Keep existing
+assets at their current paths, register new sources and exports, and separate
+2026 references from confirmed 2027 material. An asset's presence in this
+repository does not establish rights for a new promotional use. Keep private
+account, contract, contact-list, and draft information outside publishable files.
+
 ## Advertising and analytics context
 
 For congress advertising, marketing, international audience growth, GA4,

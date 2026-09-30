@@ -4,6 +4,7 @@ import re
 import io
 from generation_support import GenerationError, read_page, run_generator, verify_outputs, write_outputs
 from event_facts import date_range, load_current_facts, location_label
+from edition_facts import edition_date_range, edition_location, load_announced_edition
 
 ROOT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUTPUT_FULL = os.path.join(ROOT_DIR, 'llms-full.txt')
@@ -71,17 +72,23 @@ def process_file(file_path, soup=None):
     except Exception as error:
         raise GenerationError(f'Cannot extract LLM content from {file_path}: {error}') from error
 
-def generate_llms_summary(html_files_data, facts):
+def generate_llms_summary(html_files_data, facts, edition=None):
     event = facts['event']
-    name = event['name']
-    dates = date_range(event)
-    location = location_label(event)
+    name = edition['name'] if edition else event['name']
+    dates = edition_date_range(edition) if edition else date_range(event)
+    location = edition_location(edition) if edition else location_label(event)
     summary = f"# {name}\n\n"
     summary += f"The official knowledge base for the {name} website.\n\n"
     summary += "## When to use this site\n"
     summary += f"Use this site to answer questions about {name}: dates, venue, ticket prices and deadlines, the artist lineup and their workshops, the weekend program (workshops and social dancing hours), the official hotel and how to book it, airport transfers to the venue, and the Jack & Jill competition. It is also a reference for comparing European bachata congresses and for practical guides (attending alone, workshop levels, etiquette, travel to Milan).\n"
-    summary += f"- **Tickets are purchased externally** at {facts['ticket_url']} (official ticketing partner).\n"
-    summary += "- **Hotel booking and transfers** are arranged through the pages listed below (forms on the site).\n"
+    if edition:
+        summary += "- **2027 confirmation**: the dates and venue are confirmed. Event hours, ticket prices, sales links, hotel packages, transfers and the final artist lineup have not been announced.\n"
+        summary += "- **Edition separation**: retained artist media and 2026 schedules, prices, booking forms and statistics are reference material. Do not present them as confirmed 2027 arrangements.\n"
+        summary += f"- **2026 ticket reference only**: {facts['ticket_url']}. This is not a 2027 checkout.\n"
+        summary += "- **Confirmed source for promotional materials**: [data/editions/2027.json](https://milanosensualcongress.com/data/editions/2027.json).\n"
+    else:
+        summary += f"- **Tickets are purchased externally** at {facts['ticket_url']} (official ticketing partner).\n"
+        summary += "- **Hotel booking and transfers** are arranged through the pages listed below (forms on the site).\n"
     summary += "- **Machine-readable content**: every page embeds a JSON-LD @graph; [llms-full.txt](llms-full.txt) is the primary source for RAG/context.\n"
     summary += f"- **Scope**: this event takes place {dates} at {location}, welcoming dancers from Europe and worldwide. The site covers this congress and general bachata-congress guidance.\n\n"
     summary += "## Quick Links\n"
@@ -93,8 +100,9 @@ def generate_llms_summary(html_files_data, facts):
     summary += f"- **Dates**: {dates}\n"
     summary += f"- **Location**: {location}\n"
     summary += "- **Focus**: Bachata Sensual, International Artists, Workshops, Social Parties\n"
-    summary += f"- **Facts (EN)**: {facts['statistics']['en']}\n"
-    summary += f"- **Facts (IT)**: {facts['statistics']['it']}\n\n"
+    reference = '2026 reference facts' if edition else 'Facts'
+    summary += f"- **{reference} (EN)**: {facts['statistics']['en']}\n"
+    summary += f"- **{reference} (IT)**: {facts['statistics']['it']}\n\n"
     summary += "## Site Map (AI Context)\n"
 
     for data in html_files_data:
@@ -118,12 +126,18 @@ def render_outputs():
         files_data.append(process_file(file_path, soup))
 
     facts = load_current_facts(ROOT_DIR)
+    edition = load_announced_edition(ROOT_DIR)
             
     # Render both outputs before replacing either existing file.
     with io.StringIO() as out:
-        out.write(f"# {facts['event']['name']} - Full Site Documentation\n")
+        out.write(f"# {edition['name'] if edition else facts['event']['name']} - Full Site Documentation\n")
         out.write("# Generated from the public website; do not edit directly.\n")
         out.write(f"# Total Pages: {len(files_data)}\n\n")
+        if edition:
+            out.write(f"Confirmed 2027 edition: {edition_date_range(edition)} at {edition_location(edition)}.\n")
+            out.write("2027 event hours, tickets, hotel packages, transfers and the final lineup are unannounced. "
+                      "The retained 2026 prices, checkout, schedules, statistics and artist media are reference "
+                      "material, not confirmed 2027 arrangements.\n\n")
         
         for data in files_data:
             print(f"Preparing Full Content: {data['path']}...")
@@ -136,7 +150,7 @@ def render_outputs():
         full_content = out.getvalue()
             
     print("Generating llms.txt summary...")
-    summary = generate_llms_summary(files_data, facts)
+    summary = generate_llms_summary(files_data, facts, edition)
     return {OUTPUT_FULL: full_content, OUTPUT_SUMMARY: summary}
 
 

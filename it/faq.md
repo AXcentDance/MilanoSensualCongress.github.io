@@ -8,7 +8,7 @@ Canonical: https://milanosensualcongress.com/it/faq
 
 FAQ / 01—05
 
-Un weekend da vivere. Tutto quello che ti serve per iniziare.
+Dubbi? Parliamone.
 
 [Parla con noi](https://milanosensualcongress.com/it/contact)
 

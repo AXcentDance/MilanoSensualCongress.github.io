@@ -28,7 +28,9 @@ function mount(file, remaining) {
   };
 }
 
-for (const file of ['index.html', 'tickets.html', 'it/index.html', 'it/tickets.html']) {
+// The homepages now use the separate 2027 early-bird timer. The legacy
+// 2026 price countdown remains on the two ticket pages only.
+for (const file of ['tickets.html', 'it/tickets.html']) {
   test(`${file}: countdown preserves units and updates before the deadline`, () => {
     const countdown = mount(file, (86400 + 3600 + 60 + 5) * 1000);
     assert.equal(countdown.display(), '01:01:01:05');

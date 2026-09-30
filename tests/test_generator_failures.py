@@ -76,7 +76,7 @@ class GeneratorFailureTests(unittest.TestCase):
         directory = self.root / 'scripts'
         directory.mkdir(exist_ok=True)
         for name in ['generate_llms_text.py', 'generate_sitemap.py', 'generation_support.py',
-                     'site_files.py', 'event_facts.py', 'iso_dates.py', 'content_freshness.py']:
+                     'site_files.py', 'event_facts.py', 'edition_facts.py', 'iso_dates.py', 'content_freshness.py']:
             shutil.copy2(SCRIPTS / name, directory / name)
         shutil.copy2(SCRIPTS.parent / 'requirements-dev.txt', self.root / 'requirements-dev.txt')
         return directory

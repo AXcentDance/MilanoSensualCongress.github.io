@@ -37,6 +37,23 @@ class SchemaDatePrecisionTests(unittest.TestCase):
                     self.assertIn('needs timezone offset', issues[0])
                     self.assertEqual(warnings, [])
 
+    def test_announced_edition_accepts_calendar_bounds_but_not_date_only_deadlines(self):
+        node = {'@type': 'DanceEvent', '@id': 'https://milanosensualcongress.com/#event-2027',
+                'startDate': '2027-11-19', 'endDate': '2027-11-21'}
+        self.assertEqual(self.check(node), ([], []))
+        node['validThrough'] = '2027-11-01'
+        issues, warnings = self.check(node)
+        self.assertEqual(len(issues), 1)
+        self.assertIn('needs timezone offset', issues[0])
+        self.assertEqual(warnings, [])
+
+    def test_announced_calendar_dates_still_reject_impossible_dates_and_missing_offsets(self):
+        for value in ('2027-02-29', '2027-11-19T18:00:00'):
+            issues, warnings = self.check({'@type': 'DanceEvent',
+                '@id': 'https://milanosensualcongress.com/#event-2027', 'startDate': value})
+            self.assertEqual(issues, [f'[fixture.html] malformed startDate: "{value}"'])
+            self.assertEqual(warnings, [])
+
     def test_timed_values_still_need_valid_timestamp_syntax_and_timezone(self):
         for types in ['CourseInstance', 'DanceEvent']:
             for field in ['startDate', 'endDate']:

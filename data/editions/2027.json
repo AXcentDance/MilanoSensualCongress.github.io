@@ -1,0 +1,187 @@
+{
+  "edition": 2027,
+  "name": "Milano Sensual Congress 2027",
+  "eventId": "https://milanosensualcongress.com/#event-2027",
+  "startDate": "2027-11-19",
+  "endDate": "2027-11-21",
+  "timezone": "Europe/Rome",
+  "datePrecision": "day",
+  "venue": {
+    "name": "Devero Hotel",
+    "streetAddress": "Largo Kennedy, 1",
+    "addressLocality": "Cavenago di Brianza",
+    "postalCode": "20873",
+    "addressRegion": "MB",
+    "addressCountry": "IT",
+    "classification": {
+      "stars": 4,
+      "designation": "Superior",
+      "confirmation": {
+        "recordedOn": "2026-09-28",
+        "source": "Organizer confirmation in the project conversation",
+        "confirmedFields": [
+          "stars",
+          "designation"
+        ]
+      }
+    }
+  },
+  "status": {
+    "dates": "confirmed",
+    "venue": "confirmed",
+    "times": "unannounced",
+    "tickets": "unannounced",
+    "lineup": "preview"
+  },
+  "confirmation": {
+    "recordedOn": "2026-09-26",
+    "source": "Organizer confirmation in the project conversation",
+    "confirmedFields": [
+      "startDate",
+      "endDate",
+      "venue.name"
+    ]
+  },
+  "venueAddressSource": "Existing congress venue record in index.html; the organizer reconfirmed the same hotel.",
+  "referenceEdition": 2026,
+  "earlyBird": {
+    "endsOn": "2026-12-30",
+    "datePrecision": "day",
+    "timezone": "Europe/Rome",
+    "countdownDeadline": "2026-12-31T00:00:00+01:00",
+    "cutoffBasis": "End of the confirmed final day in Italy; no earlier cutoff was supplied.",
+    "confirmation": {
+      "recordedOn": "2026-09-27",
+      "source": "Organizer confirmation in the project conversation",
+      "confirmedFields": [
+        "endsOn"
+      ]
+    }
+  },
+  "workshops": {
+    "rooms": 3,
+    "hourlyProgrammingAim": {
+      "stylesPerHour": 3,
+      "levelsPerHour": 3,
+      "coverageGuaranteed": false
+    },
+    "levels": [
+      "beginner",
+      "intermediate",
+      "advanced"
+    ],
+    "styles": [
+      "Bachata Sensual",
+      "Bachazouk",
+      "Esencia Style",
+      "Bachata Dominicana"
+    ],
+    "programmingPriority": "Work toward offering three different styles and three different levels each hour across the three workshop rooms, helping dancers find a class suited to their level. This is a planning aim, not guaranteed coverage in every hour.",
+    "masterclasses": true,
+    "masterclassTicketInvitation": {
+      "featuredArtists": [
+        "Gero y Migle",
+        "Klau y Ros",
+        "Pablo y Raquel"
+      ],
+      "scope": "Names selected for the homepage masterclass ticket invitation. This does not confirm the complete congress lineup, ticket availability, prices, pass inclusions or a purchase URL.",
+      "confirmation": {
+        "recordedOn": "2026-09-29",
+        "source": "Organizer request in the project conversation to feature these three artist couples in the homepage Masterclass tickets invitation.",
+        "confirmedFields": [
+          "featuredArtists"
+        ]
+      }
+    },
+    "timetableStatus": "unannounced",
+    "confirmation": {
+      "recordedOn": "2026-09-28",
+      "source": "Organizer confirmation in the project conversation",
+      "confirmedFields": [
+        "rooms",
+        "levels",
+        "styles",
+        "programmingPriority",
+        "masterclasses"
+      ]
+    },
+    "hourlyProgrammingConfirmation": {
+      "recordedOn": "2026-09-29",
+      "source": "Organizer clarification in the project conversation: three different styles and three levels each hour is an effort and planning aim, not a 100% guarantee. The three workshop rooms remain confirmed.",
+      "confirmedFields": [
+        "rooms",
+        "hourlyProgrammingAim",
+        "programmingPriority"
+      ]
+    }
+  },
+  "shuttle": {
+    "origin": {
+      "name": "Malpensa Airport",
+      "iataCode": "MXP"
+    },
+    "destinations": [
+      "Devero Hotel",
+      "AS Hotel Cambiago"
+    ],
+    "departureTimes": [
+      "15:00",
+      "18:00",
+      "20:00"
+    ],
+    "timezone": "Europe/Rome",
+    "scope": "The homepage shuttle invitation covers Malpensa Airport (MXP) to Devero Hotel or AS Hotel Cambiago; both hotels are served. The destinations list does not specify a stop order. The departure day, return service, fares, booking availability and checkout destination have not been supplied.",
+    "confirmation": {
+      "recordedOn": "2026-09-29",
+      "source": "Organizer request in the project conversation: show the Malpensa (MXP) to Devero Hotel shuttle with departures at 3pm, 6pm and 8pm, only MXP.",
+      "confirmedFields": [
+        "origin",
+        "destinations[0]",
+        "departureTimes"
+      ]
+    },
+    "destinationConfirmation": {
+      "recordedOn": "2026-09-30",
+      "source": "Organizer confirmation in the project conversation: the Malpensa (MXP) congress shuttle serves Devero Hotel or AS Hotel Cambiago. Both destinations are served; no sequential stop order is confirmed.",
+      "confirmedFields": [
+        "destinations"
+      ]
+    }
+  },
+  "airportTransfers": {
+    "origins": [
+      {
+        "name": "Bergamo Orio al Serio Airport",
+        "iataCode": "BGY"
+      },
+      {
+        "name": "Milan Linate Airport",
+        "iataCode": "LIN"
+      }
+    ],
+    "destinations": [
+      "Devero Hotel",
+      "AS Hotel Cambiago"
+    ],
+    "booking": {
+      "method": "WhatsApp",
+      "phoneNumber": "+39 366 207 3769",
+      "url": "https://wa.me/393662073769",
+      "advanceBookingRequired": true
+    },
+    "scope": "The homepage airport transfer invitation covers Bergamo Orio al Serio (BGY) or Milan Linate (LIN) to Devero Hotel or AS Hotel Cambiago, with advance booking via WhatsApp. Both hotels are served; no sequential stop order is confirmed. The fixed departure times in shuttle apply only to Malpensa (MXP). This confirmation does not establish 2027 fares, departure days or times, round-the-clock availability, return service or availability for a requested journey.",
+    "transportReference": {
+      "url": "https://milanosensualcongress.com/transfer",
+      "scope": "The existing transfer page supplies the WhatsApp booking contact and advance-booking requirement. Its explicitly 2026 rates and service availability are not new 2027 facts."
+    },
+    "confirmation": {
+      "recordedOn": "2026-09-30",
+      "source": "Organizer request in the project conversation to add BGY and LIN transfers to the previously confirmed two hotel destinations, with WhatsApp booking at +39 366 207 3769 and the transportation information on the live transfer page. Confirmation is scoped to these routes, booking contact and advance-booking requirement.",
+      "confirmedFields": [
+        "origins",
+        "destinations",
+        "booking"
+      ]
+    }
+  }
+}

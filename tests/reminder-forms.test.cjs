@@ -6,13 +6,15 @@ const vm = require('node:vm');
 
 const pages = ['index.html', 'tickets.html', 'it/index.html', 'it/tickets.html'];
 
-function mount(page, { reply = 'success', httpOK = true, networkError = false, analyticsError = false } = {}) {
+function mount(page, { reply = 'success', httpOK = true, networkError = false, analyticsError = false, sourceOverride, analyticsSourceOverride } = {}) {
   const html = readFileSync(resolve(__dirname, '..', page), 'utf8');
   const script = /<script src="(\/js\/reminder-form\.js\?v=\d+)" defer><\/script>/.exec(html);
   assert.ok(script, `${page} loads the shared reminder handler`);
   const handler = readFileSync(resolve(__dirname, '..', script[1].split('?')[0].slice(1)), 'utf8');
   const success = { innerHTML: /<template id="reminder-success">([\s\S]*?)<\/template>/.exec(html)[1] };
-  const source = /name="source" value="([^"]+)"/.exec(html)[1];
+  const source = sourceOverride ?? /name="source" value="([^"]+)"/.exec(html)[1];
+  const formTag = /<form\b[^>]*id="reminder-form"[^>]*>/.exec(html)[0];
+  const analyticsSource = analyticsSourceOverride ?? /data-analytics-source="([^"]+)"/.exec(formTag)?.[1];
   const action = /id="reminder-form"[^>]+action="([^"]+)"/.exec(html)[1];
   const button = { innerHTML: 'Submit', disabled: false };
   const container = { innerHTML: 'Original form', setAttribute() {} };
@@ -22,6 +24,7 @@ function mount(page, { reply = 'success', httpOK = true, networkError = false, a
   const form = {
     action,
     dataset: {
+      analyticsSource,
       processing: /data-processing="([^"]+)"/.exec(html)[1],
       error: /data-error="([^"]+)"/.exec(html)[1]
     },
@@ -53,7 +56,7 @@ function mount(page, { reply = 'success', httpOK = true, networkError = false, a
   };
   vm.runInNewContext(handler, context);
   return {
-    html, source, button, container, status, leads,
+    html, source, analyticsSource: analyticsSource || source, button, container, status, leads,
     submit: () => submit.call(form, { preventDefault() {} }),
     finish: () => finishRequest(),
     timeout: () => timer(),
@@ -93,7 +96,9 @@ for (const page of pages) {
     assert.match(app.container.innerHTML, page.startsWith('it/') ? /Grazie!/ : /Thank you!/);
     assert.equal(app.container.innerHTML.includes('href="artists"'), page.endsWith('index.html'));
     assert.equal(app.leads.length, 1);
-    assert.deepEqual(app.leads[0], { source: app.source });
+    const expectedAnalyticsSource = `${page.endsWith('index.html') ? 'Home' : 'Tickets'} - ${page.startsWith('it/') ? 'IT' : 'EN'}`;
+    assert.equal(app.analyticsSource, expectedAnalyticsSource);
+    assert.deepEqual(app.leads[0], { source: app.analyticsSource });
     assert.equal(app.timer(), null);
   });
 
@@ -143,3 +148,25 @@ for (const page of pages) {
     assert.equal(app.status.hidden, true);
   });
 }
+
+test('edition-specific signup labels are saved while established analytics sources are preserved', async () => {
+  const app = mount('index.html', {
+    sourceOverride: 'Home - EN | 2027 early bird',
+    analyticsSourceOverride: 'Home - EN'
+  });
+  const pending = app.submit();
+  assert.equal(app.request().url.searchParams.get('source'), 'Home - EN | 2027 early bird');
+  assert.equal(app.leads.length, 0);
+  app.finish();
+  await pending;
+  assert.deepEqual(app.leads, [{ source: 'Home - EN' }]);
+});
+
+test('forms without an analytics-source override retain their saved source for analytics', async () => {
+  const app = mount('tickets.html');
+  const pending = app.submit();
+  app.finish();
+  await pending;
+  assert.equal(app.request().url.searchParams.get('source'), app.source);
+  assert.deepEqual(app.leads, [{ source: app.source }]);
+});

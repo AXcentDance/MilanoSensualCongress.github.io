@@ -22,6 +22,28 @@ for (const entry of sitePages()) {
       return true;
     }), 'The main heading is visible without an opacity reveal').toBe(true);
 
+    const navLogo = page.locator('nav img[src*="milano-sensual-congress-official-logo-nav-2027"]');
+    await expect(navLogo).toHaveCount(1);
+    await expect(navLogo).toBeVisible();
+    await expect.poll(() => navLogo.evaluate(image => image.complete && image.naturalWidth > 0)).toBe(true);
+    const logoGeometry = await navLogo.evaluate(async image => {
+      // naturalWidth on a srcset image is density-corrected. Decode the chosen
+      // URL alone to check its actual pixels against this device's resolution.
+      const selected = new Image();
+      selected.src = image.currentSrc;
+      await selected.decode();
+      const bounds = image.getBoundingClientRect();
+      return {
+        source: new URL(image.currentSrc).pathname,
+        pixels: { width: selected.naturalWidth, height: selected.naturalHeight },
+        rendered: { width: bounds.width, height: bounds.height },
+        dpr: devicePixelRatio,
+      };
+    });
+    expect(logoGeometry.source, 'Navigation selects a bounded logo variant').toMatch(/\/milano-sensual-congress-official-logo-nav-2027(?:_(?:100|175|300)w)?\.webp$/);
+    expect(logoGeometry.pixels.width, 'The selected logo has enough pixels for its rendered size and device density').toBeGreaterThanOrEqual(Math.floor(logoGeometry.rendered.width * logoGeometry.dpr) - 2);
+    expect(Math.abs(logoGeometry.rendered.width / logoGeometry.rendered.height - logoGeometry.pixels.width / logoGeometry.pixels.height), 'The navigation logo retains its image proportions').toBeLessThan(.03);
+
     const breadcrumb = page.locator('nav[aria-label*="readcrumb"]');
     if (entry.indexable && !['index.html', 'it/index.html'].includes(entry.file)) {
       await expect(breadcrumb).toBeHidden();
@@ -80,6 +102,17 @@ for (const entry of sitePages()) {
       }
       scrollTo({ top: 0, behavior: 'instant' });
     });
+    // Document scrolling cannot reveal flags clipped by the nested country
+    // picker. Scroll every rendered flag into view through its real container
+    // and require the intended image to decode, rather than exempting flags
+    // or treating their deliberately empty offscreen placeholders as broken.
+    for (const flag of await page.locator('img[data-nations-flag-src]:visible').all()) {
+      const source = await flag.getAttribute('data-nations-flag-src');
+      await flag.scrollIntoViewIfNeeded();
+      await expect(flag).toHaveAttribute('src', source);
+      await expect.poll(() => flag.evaluate(image => image.complete && image.naturalWidth > 0 && image.naturalHeight > 0), { message: `The revealed country flag decodes: ${source}` }).toBe(true);
+    }
+    await page.evaluate(() => scrollTo({ top: 0, behavior: 'instant' }));
     await expect.poll(() => page.locator('img').evaluateAll(images => images.filter(im => im.getClientRects().length && (!im.complete || !im.naturalWidth)).map(im => im.getAttribute('src'))), { timeout: 10000 }).toEqual([]);
     expect(errors).toEqual([]);
     if (entry.indexable) {
@@ -92,7 +125,7 @@ for (const entry of sitePages()) {
 }
 
 for (const path of ['/', '/it/', '/tickets', '/it/tickets']) {
-  for (const outcome of ['success', 'failure']) test(`${path}: reminder ${outcome} with a stubbed response`, async ({ page }) => {
+  for (const outcome of ['success', 'failure']) test(`${path}: reminder ${outcome} with a stubbed response`, async ({ page }, testInfo) => {
     const requests = [];
     await page.route('https://script.google.com/**', route => {
       requests.push(route.request().url());
@@ -100,18 +133,44 @@ for (const path of ['/', '/it/', '/tickets', '/it/tickets']) {
     });
     await page.goto(path);
     const form = page.locator('#reminder-form');
+    await expect(form).toHaveCount(1);
+    await page.evaluate(() => {
+      window.reminderSourcesForTest = [];
+      window.mscAnalytics = { trackReminder: source => window.reminderSourcesForTest.push(source) };
+    });
     await page.evaluate(() => document.fonts.ready);
-    // Finish positioning before focus/click can start competing smooth scrolls.
-    await form.evaluate(el => el.scrollIntoView({ block: 'center', behavior: 'instant' }));
+    // Let the long page jump paint before interacting with the form.
+    await form.evaluate(async el => {
+      el.scrollIntoView({ block: 'center', behavior: 'instant' });
+      await new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve)));
+    });
     await form.locator('input[type="email"]').fill('audit@example.invalid');
-    await form.locator('button[type="submit"]').click();
-    if (outcome === 'success') await expect(page.locator('#reminder-container')).toContainText(path.startsWith('/it') ? 'Grazie' : 'Thank you');
+    const submit = form.locator('button[type="submit"]');
+    // Exercise the input type configured for each device profile.
+    if (testInfo.project.use.hasTouch) await submit.tap();
+    else await submit.click();
+    if (outcome === 'success') {
+      await expect(page.locator('#reminder-container')).toContainText(path.startsWith('/it') ? 'Grazie' : 'Thank you');
+      if (!path.includes('tickets')) await expect(page.locator('#reminder-container')).toContainText(path.startsWith('/it') ? 'La tua richiesta di promemoria è stata salvata.' : 'Your reminder request is saved.');
+    }
     else {
       await expect(page.getByRole('alert')).toBeVisible();
       await expect(form.locator('button[type="submit"]')).toBeEnabled();
       await expect(form.locator('input[type="email"]')).toHaveValue('audit@example.invalid');
     }
     expect(requests.length).toBe(1);
+    const analyticsSource = `${path.includes('tickets') ? 'Tickets' : 'Home'} - ${path.startsWith('/it') ? 'IT' : 'EN'}`;
+    const submitted = new URL(requests[0]);
+    expect(submitted.searchParams.get('email')).toBe('audit@example.invalid');
+    expect(submitted.searchParams.get('source')).toBe(path.includes('tickets') ? analyticsSource : `${analyticsSource} | 2027 early bird`);
+    expect(await page.evaluate(() => window.reminderSourcesForTest)).toEqual(outcome === 'success' ? [analyticsSource] : []);
+    if (!path.includes('tickets')) {
+      const feedback = outcome === 'success' ? page.locator('#reminder-container') : page.getByRole('alert');
+      expect(await feedback.evaluate(el => {
+        const bounds = el.getBoundingClientRect();
+        return bounds.width > 0 && bounds.left >= 0 && bounds.right <= document.documentElement.clientWidth + 1 && el.scrollWidth <= el.clientWidth + 1;
+      }), 'The homepage confirmation or retry message remains readable without horizontal overflow').toBe(true);
+    }
   });
 }
 
@@ -127,9 +186,9 @@ for (const path of ['/', '/it/']) test(`${path}: reduced motion retains the post
   await page.goto(path);
   await expect(page.locator('h1')).toBeVisible();
   await page.locator('#heroVideo').scrollIntoViewIfNeeded();
-  await expect(page.locator('#heroVideo')).toHaveAttribute('poster', /poster\.webp$/);
-  expect(await page.locator('#heroVideo').getAttribute('src')).toBeNull();
-  expect(await page.locator('#heroVideo').evaluate(video => video.paused)).toBe(true);
+  await expect(page.locator('.premiere-poster-image')).toBeVisible();
+  await expect(page.locator('#heroVideo')).toHaveAttribute('data-poster', /wordmark-hero-poster-v07\.webp$/);
+  expect(await page.locator('#heroVideo, #heroAmbientVideo').evaluateAll(videos => videos.map(video => ({ source: video.getAttribute('src'), paused: video.paused })))).toEqual([{ source: null, paused: true }, { source: null, paused: true }]);
 });
 
 for (const path of ['/', '/it/', '/news/bachata-workshop-levels-guide-congress', '/it/news/livelli-workshop-bachata-congresso', '/news/bachata-congress-alone-solo-dancer-guide', '/it/news/congresso-bachata-da-soli-guida-ballerini', '/news/bachata-festivals-milan-2026-2027', '/it/news/festival-bachata-milano-2026-2027']) {
