@@ -28,6 +28,8 @@ EXCLUDE_BASENAMES = {
     'milano-sensual-congress-official-logo-preview',
     'milano-sensual-congress-official-icon',
     'milano-sensual-congress-official-logo-source',
+    # Retained input for build_hero_poster.py, not a public responsive family.
+    'milano-sensual-congress-2026-hero-poster-source',
 }
 
 

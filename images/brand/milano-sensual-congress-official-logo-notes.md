@@ -19,7 +19,13 @@ master, social cards and historical full-logo icon retain the supplied black bac
 The dedicated arrows-only favicon below uses transparency.
 
 Use `../milano-sensual-congress-official-logo.webp` for larger overlays and
-`../milano-sensual-congress-official-logo-nav.webp` for navigation. Prefer
+the `../milano-sensual-congress-official-logo-nav_100w.webp`, `_200w.webp`,
+and `_300w.webp` derivatives for navigation, with the existing 400 × 240
+`../milano-sensual-congress-official-logo-nav.webp` retained for higher densities.
+The live navigation displays the artwork at 93⅓ × 56 CSS pixels; its responsive
+markup selects an adequate source for the device density without changing that
+display size. All navigation exports use the same approved crop, Lanczos resize,
+matte-to-alpha conversion and lossless WebP encoding. Prefer
 the full wordmark whenever space allows. Do not restore the retired assets as
 fallbacks or treat historical exports as new logo references.
 
