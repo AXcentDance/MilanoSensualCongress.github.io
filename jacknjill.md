@@ -22,9 +22,9 @@ The International Jack & Jill brings dancers from across Europe together on the 
 
 The 2026 jury is composed of international Bachata masters. The competition offers dancers a platform to be seen by experienced artists, share their dancing and take the next step in their development.
 
-**2026 competition date**
+**2026 competition date & time**
 
-Sunday, 22 November 2026
+Saturday, 21 November 2026 · 18:00–20:00
 
 **Entry fee**
 

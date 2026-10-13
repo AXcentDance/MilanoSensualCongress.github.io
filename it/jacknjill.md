@@ -22,9 +22,9 @@ L’International Jack & Jill riunisce sul palco di Milano ballerini da tutta Eu
 
 La giuria 2026 è composta da maestri internazionali di Bachata. La competizione offre ai ballerini un palco per esibirsi davanti ad artisti esperti, condividere la propria danza e fare un passo avanti nel proprio percorso.
 
-**Data della competizione 2026**
+**Data e orario della competizione 2026**
 
-Domenica 22 novembre 2026
+Sabato 21 novembre 2026 · 18:00–20:00
 
 **Quota di partecipazione**
 
