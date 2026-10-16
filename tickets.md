@@ -24,7 +24,7 @@ Best Value
 
 €135
 
-Valid until October 15 at midnight
+Valid until November 10 at midnight
 
 - Full Access to entire event
 - All Parties (Fri, Sat, Sun)

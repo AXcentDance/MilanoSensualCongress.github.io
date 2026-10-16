@@ -24,7 +24,7 @@ Miglior Valore
 
 €135
 
-Valido fino alla mezzanotte del 15 ottobre
+Valido fino alla mezzanotte del 10 novembre
 
 - Accesso completo all'intero evento
 - Tutte le Feste (Ven, Sab, Dom)
