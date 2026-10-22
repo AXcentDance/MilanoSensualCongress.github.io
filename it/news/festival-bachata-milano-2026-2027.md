@@ -40,7 +40,7 @@ Il [programma delle feste](https://milanosensualcongress.com/it/party) comprende
 
 #### Pass e pernottamento: organizza il tuo soggiorno
 
-Il [Full Pass](https://milanosensualcongress.com/it/tickets) comprende workshop regolari e feste. Le masterclass sono separate: l'[upgrade Masterclass](https://milanosensualcongress.com/it/masterclass) costa **€59** e richiede un Full Pass. Anche la partecipazione al Jack & Jill prevede una quota separata. Le camere si prenotano a parte: scegli il Devero per dormire nella sede dell'evento oppure consulta l'opzione AS Hotel Cambiago, a 800 metri, nella pagina hotel.
+Il [Full Pass](https://milanosensualcongress.com/it/tickets) comprende workshop regolari e feste. Le masterclass sono separate: l'[upgrade Masterclass](https://milanosensualcongress.com/it/masterclass) costa **€59** e richiede un Full Pass. Anche la partecipazione al Jack & Jill prevede una quota separata. Le camere si prenotano a parte. Per il 2026, Devero e AS Hotel Cambiago sono esauriti. Verifica [Brianteo, il terzo hotel suggerito](https://milanosensualcongress.com/it/hotel#brianteo), per le tue date.
 
 [Scopri i pass per Milano Sensual](https://milanosensualcongress.com/it/tickets)
 

@@ -34,7 +34,7 @@ Consulta la [pagina transfer ufficiale](https://milanosensualcongress.com/it/tra
 
 ### Dove dormire: sede e disponibilità delle camere
 
-**Il Devero Hotel & Spa resta la sede del congresso.** Le sue camere per l’evento sono esaurite. [AS Hotel Cambiago è l’opzione di pernottamento disponibile](https://milanosensualcongress.com/it/hotel#as-hotel-cambiago), a circa 800 metri. Pass del congresso e hotel richiedono prenotazioni separate.
+**Il Devero Hotel & Spa resta la sede del congresso.** Devero e AS Hotel Cambiago sono esauriti per il 2026. [Brianteo è il terzo hotel suggerito](https://milanosensualcongress.com/it/hotel#brianteo); verifica la disponibilità per le tue date prima di prenotare. Pass del congresso e hotel richiedono prenotazioni separate.
 
 Leggi l’[aggiornamento sulla disponibilità hotel](https://milanosensualcongress.com/it/news/devero-hotel-esaurito-as-cambiago-2026) prima di prenotare. Verifica il percorso tra il tuo alloggio e il Devero, soprattutto per il ritorno dopo i party, e comunica al fornitore del transfer l’hotel in cui pernotti.
 

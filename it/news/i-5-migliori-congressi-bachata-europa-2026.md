@@ -20,7 +20,7 @@ Su schermi piccoli, scorri la tabella in orizzontale. Le date si riferiscono all
 | [Fever Bachata World Congress](https://milanosensualcongress.com/it/news/i-5-migliori-congressi-bachata-europa-2026#fever) | 23–27 aprile Edizione conclusa | Gandía, Spagna Bachata | Hotel Gandía Palace; congresso in hotel |
 | [Bachaturo Festival](https://milanosensualcongress.com/it/news/i-5-migliori-congressi-bachata-europa-2026#bachaturo) | 14–16 agosto Edizione conclusa; pre-party il 13 agosto | Katowice, Polonia Bachata, Salsa, Kizomba, Urban Kiz e Cubana | International Congress Centre (MCK) e Spodek; pernottamento separato |
 | [Bachata Geneva Festival](https://milanosensualcongress.com/it/news/i-5-migliori-congressi-bachata-europa-2026#geneva) | 8–12 ottobre Verifica il programma giornaliero | Ginevra, Svizzera Bachata | Palexpo; verifica separatamente l’alloggio |
-| [Milano Sensual Congress](https://milanosensualcongress.com/it/news/i-5-migliori-congressi-bachata-europa-2026#milano) | 20–22 novembre | Cavenago di Brianza, vicino a Milano, Italia Workshop e social di Bachata | Devero Hotel & Spa; camere Devero esaurite, AS Hotel Cambiago disponibile |
+| [Milano Sensual Congress](https://milanosensualcongress.com/it/news/i-5-migliori-congressi-bachata-europa-2026#milano) | 20–22 novembre | Cavenago di Brianza, vicino a Milano, Italia Workshop e social di Bachata | Devero Hotel & Spa; Devero e AS Hotel Cambiago esauriti. Verifica la disponibilità al Brianteo |
 
 ### Bachata Sensual World Congress: un soggiorno più lungo
 
@@ -42,7 +42,7 @@ Bachata Geneva Festival annuncia l’8–12 ottobre al Palexpo, mentre il progra
 
 Milano Sensual Congress si svolge il **20–22 novembre 2026** al Devero Hotel & Spa di Cavenago di Brianza. Offre workshop per principianti, intermedi e avanzati in inglese, con tre sale in parallelo, oltre a party e social dancing. Consulta il [programma](https://milanosensualcongress.com/it/programma) e la [guida ai livelli dei workshop](https://milanosensualcongress.com/it/news/livelli-workshop-bachata-congresso) per scegliere le lezioni.
 
-Per approfondire la tecnica, l’[upgrade masterclass avanzate](https://milanosensualcongress.com/it/masterclass) richiede un Full Pass. Il pernottamento è separato: le camere Devero sono esaurite e [AS Hotel Cambiago è l’alternativa disponibile](https://milanosensualcongress.com/it/hotel#as-hotel-cambiago). Verifica i [pass attuali e le attività incluse](https://milanosensualcongress.com/it/tickets) prima di prenotare.
+Per approfondire la tecnica, l’[upgrade masterclass avanzate](https://milanosensualcongress.com/it/masterclass) richiede un Full Pass. Il pernottamento è separato: Devero e AS Hotel Cambiago sono esauriti. [Verifica Brianteo, il terzo hotel suggerito](https://milanosensualcongress.com/it/hotel#brianteo), per le tue date. Verifica i [pass attuali e le attività incluse](https://milanosensualcongress.com/it/tickets) prima di prenotare.
 
 ### Come scegliere il congresso adatto a te
 

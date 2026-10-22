@@ -1,8 +1,8 @@
 {
   "pages": {
     "BookHotel.html": {
-      "fingerprint": "08d7da29b12d1dd53ceecb9adba38fc37b9b9d7b1e1aae176a7885ff0811e129",
-      "lastmod": "2026-09-25T12:43:05+00:00"
+      "fingerprint": "44fd077f27fc2b524569d41520154741b0e9ad9bf19d96604265d8faa9d74150",
+      "lastmod": "2026-10-22T09:24:18+00:00"
     },
     "artists.html": {
       "fingerprint": "198a14c1be65a7863f68f4147e1bb63226d6bbb6108666c2ee9e230abe43a6a2",
@@ -21,16 +21,16 @@
       "lastmod": "2026-09-25T12:43:05+00:00"
     },
     "hotel.html": {
-      "fingerprint": "725fc15538b8198c90aa2c77ef72cb89eaa906da346e8c83d12984c2b56dfbfa",
-      "lastmod": "2026-10-16T07:01:35+00:00"
+      "fingerprint": "925d57c88fa47065ce676f09befc1b9453be744a091f8e7f5c698b1d74a8b004",
+      "lastmod": "2026-10-22T11:28:42+00:00"
     },
     "index.html": {
-      "fingerprint": "f594ca73c97408ebf8347e3ef24a9467508ae087d26eef9954311f01e550c4b0",
-      "lastmod": "2026-10-16T07:01:35+00:00"
+      "fingerprint": "b07a9192129e36f6e348fa35230f86c618579de61a13e459e85f26082059bf68",
+      "lastmod": "2026-10-22T09:10:20+00:00"
     },
     "it/BookHotel.html": {
-      "fingerprint": "2717a48f46d5bea99c7ee86e96745b5263ad40d4894f7307221cbedc83dbf19c",
-      "lastmod": "2026-09-25T12:43:05+00:00"
+      "fingerprint": "7f9cbd2c4e5b9b891c97893493012c18c14de6e149c54338a97c427ef7197951",
+      "lastmod": "2026-10-22T09:24:18+00:00"
     },
     "it/artists.html": {
       "fingerprint": "028d4b16100df3824e3f0c154cbfbddbf0545d3925244ba3c4b800baae4e0aa5",
@@ -49,12 +49,12 @@
       "lastmod": "2026-09-25T12:43:05+00:00"
     },
     "it/hotel.html": {
-      "fingerprint": "84369adfeae80b48390166c1cf7ef8e35bb9455cdce8a8f13d52dacd340ebd3c",
-      "lastmod": "2026-10-16T07:01:35+00:00"
+      "fingerprint": "0d1c8b105f381a04f3588b607e061beb1b61c0154fb51c85d63d316ec8462ad9",
+      "lastmod": "2026-10-22T11:28:42+00:00"
     },
     "it/index.html": {
-      "fingerprint": "075686777f82ad8bef299355d4beb8599d0ea20fcf5c7ad87836f3e855c99d1f",
-      "lastmod": "2026-10-16T07:01:35+00:00"
+      "fingerprint": "987ee6480484e831e8b117790822d07f87120f1eb1ae4edb647f072314b9045b",
+      "lastmod": "2026-10-22T09:10:20+00:00"
     },
     "it/jacknjill.html": {
       "fingerprint": "7000f56b0a5bf775c97a7853ce820d3d7511652e86145d0b21c8286b349912d4",
@@ -65,8 +65,8 @@
       "lastmod": "2026-10-16T07:01:35+00:00"
     },
     "it/news.html": {
-      "fingerprint": "cc32defd22714bbd1ccc82d46deb447197663ae233ffdc0f3cc38c5fb3e49fc7",
-      "lastmod": "2026-09-25T12:43:05+00:00"
+      "fingerprint": "f2311e7b1e487be93cc28caa8aa5b0c8a292e4423d0c75d811a080cfdaaf2acb",
+      "lastmod": "2026-10-22T09:12:33+00:00"
     },
     "it/news/agustinyalba-stelle-nascenti-bachata-sensual.html": {
       "fingerprint": "2585c94bc8d4286aa416e57c0fd01b5dee0603a9258d06407e601e9620f76e01",
@@ -109,28 +109,28 @@
       "lastmod": "2026-10-16T07:01:35+00:00"
     },
     "it/news/devero-hotel-esaurito-as-cambiago-2026.html": {
-      "fingerprint": "27b3bd2a657c2d53c3f90e925fb9fd3b4760226dc210b874c0450907fca60cc2",
-      "lastmod": "2026-10-16T07:01:35+00:00"
+      "fingerprint": "3c4f104be990f55d4b40ec4b69682a065add8c2d95e49f3b66aa61b3c9ec6930",
+      "lastmod": "2026-10-22T11:43:59+00:00"
     },
     "it/news/etichetta-congresso-bachata-social-workshop-party.html": {
       "fingerprint": "d04b2d229bf1e589cd23ba6960c2c1b07822b5d4704d39a531e0f9ed19d167c0",
       "lastmod": "2026-09-25T12:43:05+00:00"
     },
     "it/news/festival-bachata-milano-2026-2027.html": {
-      "fingerprint": "dfcac73ed9f29da80da29fa8decb7a59700512d9658d4c951845066b31443fb1",
-      "lastmod": "2026-10-16T07:01:35+00:00"
+      "fingerprint": "5348347dfc94dbbb7c856198626124af86b62e5cbe1da403eff17aec888c3d26",
+      "lastmod": "2026-10-22T11:43:59+00:00"
     },
     "it/news/gero-y-migle-maestri-bachata-sensual-2026.html": {
       "fingerprint": "32d2e60ebadd8c37d02d849ee1301571b57fa78e861c9dda36c1c931bc0ca184",
       "lastmod": "2026-10-16T07:01:35+00:00"
     },
     "it/news/guida-viaggio-bachata-milano-2026.html": {
-      "fingerprint": "4738991edc7dc1c892db33ea4230a3d49b5d8a0a5b93adf37d8b56a41af26ac9",
-      "lastmod": "2026-10-16T07:01:35+00:00"
+      "fingerprint": "04b3e27e6d6f1aeead1198335ac795dd5796523c4cb42553821853e3c94aa8a3",
+      "lastmod": "2026-10-22T11:43:59+00:00"
     },
     "it/news/i-5-migliori-congressi-bachata-europa-2026.html": {
-      "fingerprint": "ce10b56279ae2981252bb50dbc5f0a098c86e1af7f37e629a906dfd458001ec0",
-      "lastmod": "2026-10-16T07:01:35+00:00"
+      "fingerprint": "cda09334ad923124fbbee8b2af68387d38fd3e4d34b9198efd4c2ab12c05a7bb",
+      "lastmod": "2026-10-22T11:43:59+00:00"
     },
     "it/news/irene-y-tomas-maestri-bachata-sensual.html": {
       "fingerprint": "0a15a30250ab2717a47f49360f45a6f054477d3f94ee304d2bcb9e9e306f656c",
@@ -181,8 +181,8 @@
       "lastmod": "2026-10-16T07:01:35+00:00"
     },
     "news.html": {
-      "fingerprint": "28fe588736dea4a85cecbab665cf5029aafab10373c2c67271c0b9c16dfe5f13",
-      "lastmod": "2026-09-25T12:43:05+00:00"
+      "fingerprint": "efa2ccf0d70d12fd0520c1bb3c74ed588f420a381dc46d63b6aebc6be09e7837",
+      "lastmod": "2026-10-22T09:12:33+00:00"
     },
     "news/agustinyalba-bachata-sensual-rising-stars.html": {
       "fingerprint": "9789b1bd4655847fbf014198b2f27d84e4d167086cbd0eaa1c9abb7cdfc9943f",
@@ -205,8 +205,8 @@
       "lastmod": "2026-10-16T07:01:35+00:00"
     },
     "news/bachata-festivals-milan-2026-2027.html": {
-      "fingerprint": "d93381b323d053a45ad77ba1d392dc40b1156ba9a671e434b06e9fd3bfaebf8e",
-      "lastmod": "2026-10-16T07:01:35+00:00"
+      "fingerprint": "754d886e0ab406a387c03ea3642b58664f6c55a0ad668756ecb36cde3816642f",
+      "lastmod": "2026-10-22T11:43:59+00:00"
     },
     "news/bachata-italy-2026-milan-dance-destination.html": {
       "fingerprint": "ff559f64eedaa238c052ded55581fed7c95549295a4fc1b15a5eed26e0cd966e",
@@ -229,8 +229,8 @@
       "lastmod": "2026-10-16T07:01:35+00:00"
     },
     "news/devero-hotel-sold-out-as-cambiago-2026.html": {
-      "fingerprint": "2b688d6b4e071a3a72065152ca905285926d48b390bf391f17ca7df169692b9c",
-      "lastmod": "2026-10-16T07:01:35+00:00"
+      "fingerprint": "ac3cb980b99d85f17857e65eba509e9f1e16e4363e3e23948186569e869dd6bd",
+      "lastmod": "2026-10-22T11:43:59+00:00"
     },
     "news/full-pass-masterclass-price-increase-june-15-2026.html": {
       "fingerprint": "37963a467a4d90574a17bd74f1678d73c9ccbed2ad10c1dc1b569245f33ba0cf",
@@ -249,16 +249,16 @@
       "lastmod": "2026-10-16T07:01:35+00:00"
     },
     "news/milan-bachata-travel-guide-2026.html": {
-      "fingerprint": "f157b34ba4e781dec322aa479de455d77f4adfcd8952429de2fbcd6dceef952f",
-      "lastmod": "2026-10-16T07:01:35+00:00"
+      "fingerprint": "d2bec9961923186d371c7f36834764d520f8d8701ca77ad1682a978f09c56c36",
+      "lastmod": "2026-10-22T11:43:59+00:00"
     },
     "news/nacho-y-silvia-bachata-esencia-new-generation.html": {
       "fingerprint": "c67ee58a02a8da8f878606f55523d7e67124acc55ba3d8c830887fb17477c714",
       "lastmod": "2026-10-16T07:01:35+00:00"
     },
     "news/top-5-bachata-congresses-europe-2026.html": {
-      "fingerprint": "96020f5d07253986b09ac64ac8e5b0655da3d4f10a43c02b39dd07a246e21a9b",
-      "lastmod": "2026-10-16T07:01:35+00:00"
+      "fingerprint": "76605f6db0b557b1b70625bcf71a97292a7f47e854eb95a957786b485ac24dd4",
+      "lastmod": "2026-10-22T11:43:59+00:00"
     },
     "news/weekly-classes-vs-bachata-congresses.html": {
       "fingerprint": "0123594cd92687167acdf19ebb8baedf19872af080a78f042028247a3fc2ecee",

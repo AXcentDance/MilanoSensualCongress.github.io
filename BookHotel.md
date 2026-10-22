@@ -2,30 +2,38 @@
 
 # Book your congress hotel
 
-Book Devero Hotel or AS Hotel Cambiago for Milano Sensual Congress 2026. Official reservation links, booking steps and support for November 20–22.
+Check Brianteo on Booking.com for 20–22 November 2026. Devero Hotel and AS Hotel Cambiago are sold out. Find booking steps and help with existing reservations.
 
 Canonical: https://milanosensualcongress.com/BookHotel
 
-Reservations for November 20–22, 2026 are handled by Atmosfera Eventi. Choose from the available rooms and complete your booking on the official reservation portal.
+For 20–22 November 2026, Devero Hotel and AS Hotel Cambiago are sold out. Brianteo is our suggested third option: check availability on Booking.com.
 
 ### Devero Hotel · Event Hotel
 
-[Book Devero Hotel →](https://atmosferaeventi.it/prenotazione/108-ne8OWECn-A1QtaUFB-yTcrX2Pt-GmgitZmq)
+SOLD OUT · 2026
 
 ### AS Hotel Cambiago · Second Hotel
 
-Our second hotel is 800 m from Devero Hotel, within walking distance of the event venue. Use its dedicated reservation link to select your AS Cambiago room.
+SOLD OUT · 2026
 
-[Book AS Cambiago →](https://atmosferaeventi.it/prenotazione/134-5LAWjvWM-nZyIV9Cv-7gKm61tZ-AyoT1uNJ)
+### Brianteo · Suggested third hotel
 
-[See AS Cambiago information and rates →](https://milanosensualcongress.com/hotel#as-hotel-cambiago)
+Hotel Residence and Restaurant · Burago di Molgora
+
+Check availability, price, breakfast and cancellation terms for your stay on Booking.com.
+
+[Check on Booking.com](https://www.booking.com/Share-aq5kGb)
+
+All workshops, shows and parties remain at Devero Hotel. Brianteo is in Burago di Molgora: arrange your travel to and from the congress before booking.
+
+[Hotel website](https://www.brianteo.it/en) · [Route to Devero](https://www.google.com/maps/dir/?api=1&origin=Brianteo+Hotel+Residence+and+Restaurant,+Via+Martin+Luther+King+3%2F5,+Burago+di+Molgora&destination=Devero+Hotel,+Largo+Kennedy+1,+Cavenago+di+Brianza&travelmode=driving)
 
 ### How to book
 
-1. Open the official portal and enter your details.
-2. Select your room and review the total shown by the provider.
-3. Check your email address before confirming: your booking code will be sent there.
+1. Open Booking.com and select your dates and number of guests.
+2. Compare rooms and check the total price and cancellation terms.
+3. Complete your booking and keep the provider’s confirmation.
 
-For help with your reservation: [+39 393 4407045](tel:+393934407045) · [info@oltreilviaggio.net](mailto:info@oltreilviaggio.net).
+For an existing Devero or AS Hotel Cambiago reservation, contact the congress hotel booking team. [+39 393 4407045](tel:+393934407045) · [info@oltreilviaggio.net](mailto:info@oltreilviaggio.net).
 
-[See hotel information and rates →](https://milanosensualcongress.com/hotel)
+[See hotel information →](https://milanosensualcongress.com/hotel)

@@ -27,7 +27,7 @@ Workshops in English · Beginner, intermediate and advanced levels
 
 ### Venue & Accommodation
 
-The congress takes place at Devero Hotel & Spa. Devero rooms are sold out; accommodation is available at AS Hotel Cambiago.
+The congress takes place at Devero Hotel & Spa. Devero and AS Hotel Cambiago are sold out. See Brianteo, our suggested third hotel, and check availability.
 
 [View hotel options →](https://milanosensualcongress.com/hotel#as-hotel-cambiago)
 

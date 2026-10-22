@@ -1,70 +1,79 @@
 import { test, expect } from '@playwright/test';
 
-const booking = 'https://atmosferaeventi.it/prenotazione/134-5LAWjvWM-nZyIV9Cv-7gKm61tZ-AyoT1uNJ';
-const eventBooking = 'https://atmosferaeventi.it/prenotazione/108-ne8OWECn-A1QtaUFB-yTcrX2Pt-GmgitZmq';
+const booking = 'https://www.booking.com/Share-aq5kGb';
 test.beforeEach(async ({ context }) => {
   await context.route('https://**/*', route => route.fulfill({ status: 200, contentType: 'text/plain', body: '' }));
 });
 
-async function expectSingleHotel(page) {
-  await expect(page.locator('.hotel-sold-out')).toBeVisible();
-  await expect(page.locator('.hotel-sold-out')).toContainText(/Devero Hotel.*SOLD OUT/);
-  await expect(page.locator('h1')).toHaveText('AS HotelCambiago');
+async function expectHotelGuide(page) {
   await expect(page.locator('h1')).toBeVisible();
-  await expect(page.locator('.hotel-rate-highlight')).toContainText('Booking.com');
-  await expect(page.locator('tbody td')).toHaveText(['€260', '€220']);
-  await expect(page.locator(`main a[href="${booking}"]`)).toHaveCount(2);
-  await expect(page.locator(`a[href="${eventBooking}"]`)).toHaveCount(0);
-  await expect(page.locator('input[name="hotel-view"], [data-hotel-switcher], #carousel')).toHaveCount(0);
+  await expect(page.locator('main')).toContainText(/20–22 (November|novembre) 2026/);
+  await expect(page.locator('#brianteo')).toContainText('Brianteo');
+  await expect(page.locator('#brianteo')).toContainText('Burago di Molgora');
+  await expect(page.locator('#brianteo a[href="' + booking + '"]')).toBeVisible();
+  await expect(page.locator('main')).toContainText('Devero Hotel');
+  await expect(page.locator('main')).toContainText('AS Hotel Cambiago');
+  await expect(page.locator('main').getByText(/SOLD OUT/, { exact: false })).toHaveCount(2);
+  await expect(page.locator('main a[href*="atmosferaeventi.it"]')).toHaveCount(0);
+  await expect(page.locator('main')).not.toContainText(/€260|€220|lower than|inferiori|2027/);
+  await expect(page.locator('a[href="tel:+393934407045"]')).toHaveCount(1);
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1)).toBe(true);
 }
 
-for (const path of ['/hotel', '/it/hotel']) {
-  test(`${path}: static hotel page shows sold-out notice, AS Cambiago rates and booking`, async ({ page }) => {
-    const requests = [];
-    page.on('request', request => requests.push(new URL(request.url()).pathname));
+for (const path of ['/hotel', '/it/hotel', '/BookHotel', '/it/BookHotel']) {
+  test(path + ': third hotel booking and sold-out status stay clear', async ({ page, context }) => {
     await page.goto(path);
-    await expectSingleHotel(page);
-    await page.evaluate(() => document.fonts.ready);
-    const bounds = await page.evaluate(() => {
-      const nav = document.querySelector('body > nav').getBoundingClientRect();
-      const notice = document.querySelector('.hotel-sold-out').getBoundingClientRect();
-      const hero = document.querySelector('.hotel-second-hero').getBoundingClientRect();
-      return { navBottom: nav.bottom, noticeTop: notice.top, noticeBottom: notice.bottom, heroTop: hero.top };
-    });
-    expect(bounds.noticeTop).toBeGreaterThanOrEqual(bounds.navBottom - 1);
-    expect(bounds.heroTop).toBeGreaterThanOrEqual(bounds.noticeBottom - 1);
-    expect(requests).toContain('/images/hotel/as-hotel-cambiago-entrance-hero.webp');
-    expect(requests.some(url => url.includes('devero-hotel-') || url.includes('hotel-views.js'))).toBe(false);
-    await page.locator('#as-hotel-details img').scrollIntoViewIfNeeded();
-    await expect.poll(() => page.locator('#as-hotel-details img').evaluate(im => im.complete && im.naturalWidth > 0)).toBe(true);
-    const guide = page.locator('main a[href="BookHotel#as-hotel-cambiago"]');
-    await guide.click();
-    await expect(page).toHaveURL(/\/BookHotel#as-hotel-cambiago$/);
-    await expect(page.locator('#as-hotel-cambiago')).toBeVisible();
-  });
+    await expectHotelGuide(page);
+    await expect(page.locator('main a[href*="google.com/maps/dir"]')).toHaveAttribute('href', /origin=Brianteo.*destination=Devero/);
+    await expect(page.locator('main a[href*="brianteo.it/"]')).toHaveAttribute('href', path.startsWith('/it') ? 'https://www.brianteo.it/it' : 'https://www.brianteo.it/en');
+    const popupPromise = context.waitForEvent('page');
+    await page.locator('#brianteo a[href="' + booking + '"]').click();
+    const popup = await popupPromise;
+    await expect(popup).toHaveURL(booking);
+    await popup.close();
 
-  test(`${path}: legacy hotel links and language navigation keep the single page`, async ({ page }) => {
-    for (const hash of ['#as-hotel-cambiago', '#event-hotel', '#hotel-view-second']) {
-      await page.goto(path + hash);
-      await expectSingleHotel(page);
-      expect(await page.evaluate(() => scrollY)).toBe(0);
+    if (path.endsWith('/hotel')) {
+      const banners = page.locator('main > .hotel-sold-out');
+      await expect(banners).toHaveCount(2);
+      await expect(banners.nth(0)).toContainText('Devero Hotel');
+      await expect(banners.nth(1)).toContainText('AS Hotel Cambiago');
+      const [first, second, hero] = await Promise.all([banners.nth(0).boundingBox(), banners.nth(1).boundingBox(), page.locator('#brianteo').boundingBox()]);
+      expect(first.y + first.height).toBeLessThanOrEqual(second.y + 1);
+      expect(second.y + second.height).toBeLessThanOrEqual(hero.y + 1);
+      expect(first.width).toBe(second.width);
+      const photo = page.locator('.hotel-property img');
+      await photo.scrollIntoViewIfNeeded();
+      await expect.poll(() => photo.evaluate(image => image.complete && image.naturalWidth > 0)).toBe(true);
+      await expect(page.locator('.hotel-property figcaption')).toContainText('Brianteo Hotel');
+      await page.locator('main a[href="BookHotel#brianteo"]').click();
+      await expect(page).toHaveURL(/\/BookHotel#brianteo$/);
+      await expectHotelGuide(page);
     }
-    const alternate = path.startsWith('/it') ? '../hotel' : 'it/hotel';
-    const menu = page.locator('button[aria-controls="mobile-menu"]');
-    if (await menu.isVisible()) await menu.click();
-    await page.locator(`nav a[href="${alternate}"]:visible`).click();
-    await expectSingleHotel(page);
-    await expect(page).toHaveURL(new RegExp(path.startsWith('/it') ? '/hotel$' : '/it/hotel$'));
   });
 
-  test(`${path}: static hotel content and booking work without JavaScript`, async ({ browser, baseURL }, info) => {
+  test(path + ': hotel information and booking work without JavaScript', async ({ browser, baseURL }, info) => {
     const context = await browser.newContext({ javaScriptEnabled: false, viewport: info.project.use.viewport });
     try {
       await context.route('https://**/*', route => route.fulfill({ status: 200, body: '' }));
       const page = await context.newPage();
-      await page.goto(baseURL + path + '#as-hotel-cambiago');
-      await expectSingleHotel(page);
+      await page.goto(baseURL + path);
+      await expectHotelGuide(page);
     } finally { await context.close(); }
+  });
+}
+
+for (const path of ['/hotel', '/it/hotel']) {
+  test(path + ': existing hotel anchors and language switch still work', async ({ page }) => {
+    for (const hash of ['#as-hotel-cambiago', '#event-hotel', '#hotel-view-second', '#as-hotel-details']) {
+      await page.goto(path + hash);
+      await expect(page.locator(hash)).toBeVisible();
+      await expectHotelGuide(page);
+    }
+    const alternate = path.startsWith('/it') ? '../hotel' : 'it/hotel';
+    const menu = page.locator('button[aria-controls="mobile-menu"]');
+    if (await menu.isVisible()) await menu.click();
+    await page.locator('nav a[href="' + alternate + '"]:visible').click();
+    await expectHotelGuide(page);
+    await expect(page).toHaveURL(new RegExp(path.startsWith('/it') ? '/hotel$' : '/it/hotel$'));
   });
 }

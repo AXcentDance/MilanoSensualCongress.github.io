@@ -27,7 +27,7 @@ Workshop in inglese · Livelli principianti, intermedi e avanzati
 
 ### Venue e pernottamento
 
-Il congresso si svolge al Devero Hotel & Spa. Camere Devero esaurite; pernottamento disponibile all’AS Hotel Cambiago.
+Il congresso si svolge al Devero Hotel & Spa. Devero e AS Hotel Cambiago sono esauriti. Scopri Brianteo, il terzo hotel suggerito, e verifica la disponibilità.
 
 [Vedi le opzioni hotel →](https://milanosensualcongress.com/it/hotel#as-hotel-cambiago)
 

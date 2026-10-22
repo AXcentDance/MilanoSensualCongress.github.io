@@ -34,7 +34,7 @@ Use the [official transfer page](https://milanosensualcongress.com/transfer) for
 
 ### Where to stay: venue and room availability
 
-**Devero Hotel & Spa remains the congress venue.** Its rooms for the event are sold out. [AS Hotel Cambiago is the available accommodation option](https://milanosensualcongress.com/hotel#as-hotel-cambiago), approximately 800 metres away. Your congress pass and hotel reservation are separate bookings.
+**Devero Hotel & Spa remains the congress venue.** Devero and AS Hotel Cambiago are sold out for 2026. [Brianteo is our suggested third hotel](https://milanosensualcongress.com/hotel#brianteo); check availability for your dates before booking. Your congress pass and hotel reservation are separate bookings.
 
 Check the [hotel availability update](https://milanosensualcongress.com/news/devero-hotel-sold-out-as-cambiago-2026) before reserving. Confirm the route between your accommodation and Devero, particularly for a late return after the parties, and give your transfer provider the hotel where you are staying.
 

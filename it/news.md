@@ -58,7 +58,7 @@ Il tuo weekend
 
 [Aeroporti, transfer e viaggio a MilanoOrganizza il tragitto fino a Cavenago di Brianza e il ritorno.Esplora la guida](https://milanosensualcongress.com/it/news/guida-viaggio-bachata-milano-2026)
 
-[Devero esaurito: AS Hotel Cambiago disponibileDistingui la sede dell’evento dalla prenotazione del pernottamento.Esplora la guida](https://milanosensualcongress.com/it/news/devero-hotel-esaurito-as-cambiago-2026)
+[Devero e AS Cambiago esauriti: scopri BrianteoEntrambi gli hotel sono al completo. Scopri la terza opzione.Esplora la guida](https://milanosensualcongress.com/it/news/devero-hotel-esaurito-as-cambiago-2026)
 
 [Party di Bachata e social dancingScopri il lato social del weekend di congresso.Esplora la guida](https://milanosensualcongress.com/it/news/migliore-festa-bachata-italia-2026)
 

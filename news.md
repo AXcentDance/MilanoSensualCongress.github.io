@@ -58,7 +58,7 @@ Your weekend
 
 [Milan airports, transfers and travelPlan the final journey to Cavenago di Brianza and your return.Explore the guide](https://milanosensualcongress.com/news/milan-bachata-travel-guide-2026)
 
-[Devero sold out: AS Hotel Cambiago availableSeparate the event venue from your accommodation booking.Explore the guide](https://milanosensualcongress.com/news/devero-hotel-sold-out-as-cambiago-2026)
+[Devero & AS Cambiago sold out: try BrianteoBoth congress hotels are full. See the third option.Explore the guide](https://milanosensualcongress.com/news/devero-hotel-sold-out-as-cambiago-2026)
 
 [Bachata parties and social dancingExplore the social side of the congress weekend.Explore the guide](https://milanosensualcongress.com/news/best-bachata-party-italy-2026)
 

@@ -40,7 +40,7 @@ The [party schedule](https://milanosensualcongress.com/parties) includes Friday 
 
 #### A clear plan for your pass and stay
 
-The [Full Pass](https://milanosensualcongress.com/tickets) includes regular workshops and parties. Masterclasses are separate: the [Masterclass Upgrade](https://milanosensualcongress.com/masterclass) costs **€59** and requires a Full Pass. Jack & Jill participation also has a separate fee. Hotel rooms are booked separately; choose Devero for an on-site stay or check the AS Hotel Cambiago option, 800 metres away, on the hotel page.
+The [Full Pass](https://milanosensualcongress.com/tickets) includes regular workshops and parties. Masterclasses are separate: the [Masterclass Upgrade](https://milanosensualcongress.com/masterclass) costs **€59** and requires a Full Pass. Jack & Jill participation also has a separate fee. Hotel rooms are booked separately. For 2026, Devero and AS Hotel Cambiago are sold out. Check [Brianteo, our suggested third hotel](https://milanosensualcongress.com/hotel#brianteo), for your dates.
 
 [See passes for Milano Sensual](https://milanosensualcongress.com/tickets)
 

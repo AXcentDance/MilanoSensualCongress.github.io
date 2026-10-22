@@ -2,30 +2,38 @@
 
 # Prenota il tuo hotel per il congresso
 
-Prenota Devero Hotel o AS Hotel Cambiago per Milano Sensual Congress 2026. Link ufficiali, guida alla prenotazione e assistenza per il 20–22 novembre.
+Cerca Brianteo su Booking.com per il 20–22 novembre 2026. Devero e AS Hotel Cambiago sono esauriti. Guida alla prenotazione e assistenza per chi ha già prenotato.
 
 Canonical: https://milanosensualcongress.com/it/BookHotel
 
-Le prenotazioni per il 20–22 novembre 2026 sono gestite da Atmosfera Eventi. Consulta le camere disponibili e completa la prenotazione direttamente sul portale ufficiale.
+Per il 20–22 novembre 2026, Devero Hotel e AS Hotel Cambiago sono esauriti. Brianteo è la terza opzione suggerita: verifica la disponibilità su Booking.com.
 
 ### Devero Hotel · Hotel dell’evento
 
-[Prenota Devero Hotel →](https://atmosferaeventi.it/prenotazione/108-ne8OWECn-A1QtaUFB-yTcrX2Pt-GmgitZmq)
+SOLD OUT · 2026
 
 ### AS Hotel Cambiago · Secondo hotel
 
-Il nostro secondo hotel si trova a 800 m dal Devero Hotel, a pochi passi dalla sede dell’evento. Usa il link di prenotazione dedicato per scegliere la tua camera all’AS Cambiago.
+SOLD OUT · 2026
 
-[Prenota AS Cambiago →](https://atmosferaeventi.it/prenotazione/134-5LAWjvWM-nZyIV9Cv-7gKm61tZ-AyoT1uNJ)
+### Brianteo · Terzo hotel suggerito
 
-[Vedi informazioni e tariffe AS Cambiago →](https://milanosensualcongress.com/it/hotel#as-hotel-cambiago)
+Hotel Residence and Restaurant · Burago di Molgora
+
+Verifica disponibilità, prezzo, colazione e condizioni di cancellazione per le date del tuo soggiorno su Booking.com.
+
+[Verifica su Booking.com](https://www.booking.com/Share-aq5kGb)
+
+Tutti i workshop, gli show e le feste restano al Devero Hotel. Brianteo si trova a Burago di Molgora: organizza gli spostamenti da e verso il congresso prima di prenotare.
+
+[Sito dell’hotel](https://www.brianteo.it/it) · [Percorso per il Devero](https://www.google.com/maps/dir/?api=1&origin=Brianteo+Hotel+Residence+and+Restaurant,+Via+Martin+Luther+King+3%2F5,+Burago+di+Molgora&destination=Devero+Hotel,+Largo+Kennedy+1,+Cavenago+di+Brianza&travelmode=driving)
 
 ### Come prenotare
 
-1. Apri il portale ufficiale e inserisci i tuoi dati.
-2. Seleziona la camera e verifica il totale mostrato dal portale.
-3. Controlla il tuo indirizzo email prima di confermare: lì riceverai il codice della prenotazione.
+1. Apri Booking.com e seleziona le date e il numero di ospiti.
+2. Confronta le camere e controlla il prezzo totale e le condizioni di cancellazione.
+3. Completa la prenotazione e conserva la conferma del portale.
 
-Per assistenza con la prenotazione: [+39 393 4407045](tel:+393934407045) · [info@oltreilviaggio.net](mailto:info@oltreilviaggio.net).
+Per una prenotazione già effettuata al Devero o all’AS Hotel Cambiago, contatta il team prenotazioni del congresso. [+39 393 4407045](tel:+393934407045) · [info@oltreilviaggio.net](mailto:info@oltreilviaggio.net).
 
-[Vedi informazioni e tariffe hotel →](https://milanosensualcongress.com/it/hotel)
+[Vedi le informazioni sugli hotel →](https://milanosensualcongress.com/it/hotel)
