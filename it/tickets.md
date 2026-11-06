@@ -16,15 +16,15 @@ Partecipa al più atteso dei **congressi bachata 2026**. Scegli il pass che fa p
 
 ### Scegli la Tua Esperienza
 
-Assicurati il tuo posto in anticipo per le migliori tariffe.
+I prezzi non includono le commissioni di LaSalsaDelBaile. Full Pass: +€4,30; Full Social Pass: +€3,60; Jack & Jill: +€2,10.
 
 Miglior Valore
 
 #### Full Pass
 
-€135
+€140
 
-Valido fino alla mezzanotte del 10 novembre
+Valido fino alle 23:59 CET del 10 novembre
 
 - Accesso completo all'intero evento
 - Tutte le Feste (Ven, Sab, Dom)
@@ -56,7 +56,7 @@ Competizione
 
 #### Biglietto Jack & Jill
 
-€20
+€25
 
 Competizione Internazionale
 
@@ -70,7 +70,7 @@ Richiede Full Pass O Full Social Pass
 
 #### Full Social Pass
 
-€75
+€80
 
 - Social del venerdì sera
 - Social del sabato sera
@@ -132,7 +132,7 @@ Sì, i cambi di nome sono possibili. Puoi effettuare questa operazione direttame
 
 ##### Cosa mi serve per partecipare al Jack & Jill?
 
-Per partecipare alla competizione, devi essere in possesso di un **Full Pass** valido o di un **Full Social Pass**. La quota di iscrizione alla competizione è separata (€20), ma richiede uno di questi pass per essere valida.
+Per partecipare alla competizione, devi essere in possesso di un **Full Pass** valido o di un **Full Social Pass**. La quota di iscrizione alla competizione è separata (€25), ma richiede uno di questi pass per essere valida.
 
 ##### Posso acquistare la Masterclass separatamente?
 

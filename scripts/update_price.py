@@ -13,7 +13,8 @@ Usage:
         exits 1.
 
     python3 scripts/update_price.py --set PRICE VALID_THROUGH [VALID_FROM]
-        Supply VALID_FROM when changing to a new price tier.
+        Supply a confirmed VALID_FROM when changing price, or "unknown" to
+        omit an unverified start date instead of retaining the previous tier's.
         Rewrites, in every JSON-LD block: the Full Pass offer price, the
         outer/aggregate price fields, and every UnitPriceSpecification named
         like "Current Full Pass" / "Full Pass attuale". Also updates the
@@ -39,14 +40,15 @@ from datetime import datetime, timezone
 from bs4 import BeautifulSoup
 
 # ---- canonical Full Pass facts (the single switch) ----
-FULL_PASS_PRICE = "135.00"
+FULL_PASS_PRICE = "140.00"
 FULL_PASS_VALID_THROUGH = "2026-11-10T23:59:59+01:00"
-FULL_PASS_VALID_FROM = "2026-09-16T00:00:00+02:00"
+# The seller has no start date configured for this current offer.
+FULL_PASS_VALID_FROM = None
 # The November increase is confirmed, but its new price is not yet announced.
 NEXT_FULL_PASS_PRICE = None
 NEXT_FULL_PASS_VALID_FROM = None
 NEXT_FULL_PASS_ID = "https://milanosensualcongress.com/tickets#full-pass-next"
-FULL_SOCIAL_PASS_PRICE = "75.00"
+FULL_SOCIAL_PASS_PRICE = "80.00"
 FULL_SOCIAL_PASS_ID = "https://milanosensualcongress.com/tickets#full-social-pass"
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -82,6 +84,17 @@ def visit(node, price, valid_through, problems, page, apply_changes, valid_from=
         else:
             problems.append(f'{page}: {label} {key}={have!r} (want {want!r})')
 
+    def handle_start(obj, label):
+        nonlocal changed
+        if valid_from is not None:
+            handle_field(obj, 'validFrom', valid_from, label)
+        elif 'validFrom' in obj:
+            if apply_changes:
+                del obj['validFrom']
+                changed = True
+            else:
+                problems.append(f'{page}: {label} has an unverified validFrom')
+
     if isinstance(node, dict):
         t = node.get('@type')
         types = t if isinstance(t, list) else [t]
@@ -90,14 +103,12 @@ def visit(node, price, valid_through, problems, page, apply_changes, valid_from=
         if 'Offer' in types:
             if is_full_pass_name(name):
                 handle_field(node, 'price', price, f'offer "{name}"')
-                if valid_from is not None:
-                    handle_field(node, 'validFrom', valid_from, f'offer "{name}"')
+                handle_start(node, f'offer "{name}"')
                 if 'validThrough' in node or not apply_changes:
                     handle_field(node, 'validThrough', valid_through, f'offer "{name}"')
             elif name is None and 'price' in node and node.get('priceCurrency') == 'EUR':
                 handle_field(node, 'price', price, 'outer offer')
-                if valid_from is not None:
-                    handle_field(node, 'validFrom', valid_from, 'outer offer')
+                handle_start(node, 'outer offer')
                 if 'validThrough' in node:
                     handle_field(node, 'validThrough', valid_through, 'outer offer')
 
@@ -160,8 +171,9 @@ def rewrite_own_constants(price, valid_through, valid_from):
                  f'FULL_PASS_PRICE = "{price}"', src, count=1, flags=re.M)
     src = re.sub(r'^FULL_PASS_VALID_THROUGH = ".*?"$',
                  f'FULL_PASS_VALID_THROUGH = "{valid_through}"', src, count=1, flags=re.M)
-    src = re.sub(r'^FULL_PASS_VALID_FROM = ".*?"$',
-                 f'FULL_PASS_VALID_FROM = "{valid_from}"', src, count=1, flags=re.M)
+    start_literal = json.dumps(valid_from) if valid_from is not None else 'None'
+    src = re.sub(r'^FULL_PASS_VALID_FROM = (?:".*?"|None)$',
+                 f'FULL_PASS_VALID_FROM = {start_literal}', src, count=1, flags=re.M)
     with open(path, 'w', encoding='utf-8') as f:
         f.write(src)
 
@@ -268,14 +280,18 @@ def main(argv):
         price = normalize_price(argv[1])
         valid_through = argv[2]
         if price != FULL_PASS_PRICE and len(argv) != 4:
-            sys.exit('a new price tier needs its confirmed VALID_FROM timestamp')
+            sys.exit('a new price needs its confirmed VALID_FROM timestamp or explicit "unknown"')
         valid_from = argv[3] if len(argv) == 4 else FULL_PASS_VALID_FROM
+        if valid_from == 'unknown':
+            valid_from = None
         if not re.match(r'^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}[+-]\d{2}:\d{2}$', valid_through):
             sys.exit(f'invalid validThrough (need full ISO-8601 with offset): {valid_through!r}')
         try:
-            start, end = (datetime.fromisoformat(value) for value in (valid_from, valid_through))
-            if start.tzinfo is None or start > end:
-                raise ValueError('start must have a timezone and precede the deadline')
+            end = datetime.fromisoformat(valid_through)
+            if valid_from is not None:
+                start = datetime.fromisoformat(valid_from)
+                if start.tzinfo is None or start > end:
+                    raise ValueError('start must have a timezone and precede the deadline')
         except ValueError as error:
             sys.exit(f'invalid price interval: {error}')
         touched = []

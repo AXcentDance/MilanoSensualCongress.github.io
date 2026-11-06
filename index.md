@@ -103,7 +103,7 @@ The entire event takes place at the **New Devero Hotel & Spa** (4 Stars Executiv
 
 #### Can I compete in the Jack & Jill?
 
-Yes! Registration for the International Jack & Jill is open. Entry costs €20, plus the ticket platform’s booking fees, and requires a valid Full Pass or Full Social Pass. [Competition details and registration](https://milanosensualcongress.com/jacknjill).
+Yes! Registration for the International Jack & Jill is open. Entry costs €25, plus the ticket platform’s booking fees, and requires a valid Full Pass or Full Social Pass. [Competition details and registration](https://milanosensualcongress.com/jacknjill).
 
 #### How do I book the hotel?
 

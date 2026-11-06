@@ -47,6 +47,22 @@ class PriceDeadlineTests(unittest.TestCase):
             ]:
                 self.assertTrue(self.check_ticket_html(check_next_tier, html))
 
+    def test_unknown_price_start_removes_old_tier_date_only_from_admission(self):
+        start = '2030-09-01T00:00:00+02:00'
+        upgrade = {'@type': 'Offer', 'name': 'Masterclass Upgrade',
+                   'price': '59.00', 'priceCurrency': 'EUR', 'validFrom': start}
+        current = {'@type': 'Offer', 'name': 'Current Full Pass',
+                   'price': '135.00', 'validFrom': start,
+                   'validThrough': '2030-11-10T23:59:59+01:00', 'addOn': [upgrade]}
+        problems = []
+        visit(current, '140.00', current['validThrough'], problems, 'tickets.html', False)
+        self.assertTrue(any('unverified validFrom' in issue for issue in problems))
+        visit(current, '140.00', current['validThrough'], [], 'tickets.html', True)
+        self.assertNotIn('validFrom', current)
+        self.assertEqual(upgrade['validFrom'], start)
+        visit(current, '145.00', current['validThrough'], [], 'tickets.html', True, start)
+        self.assertEqual(current['validFrom'], start)
+
     def test_announced_next_price_still_requires_matching_card_and_offer(self):
         start = '2030-10-16T00:00:00+02:00'
         offer = {'@type': 'Offer', '@id': update_price.NEXT_FULL_PASS_ID,
@@ -68,14 +84,14 @@ class PriceDeadlineTests(unittest.TestCase):
 
     def test_social_pass_requires_matching_price_availability_and_purchase_link(self):
         offer = {'@type': 'Offer', '@id': update_price.FULL_SOCIAL_PASS_ID,
-                 'price': '75.00', 'priceCurrency': 'EUR',
+                 'price': update_price.FULL_SOCIAL_PASS_PRICE, 'priceCurrency': 'EUR',
                  'availability': 'https://schema.org/InStock', 'url': 'https://example.test/tickets'}
         html = '<script type="application/ld+json">' + json.dumps(offer) + '</script>' \
-               '<div id="full-social-pass"><span data-full-social-pass-price="75.00">€75</span>' \
+               f'<div id="full-social-pass"><span data-full-social-pass-price="{update_price.FULL_SOCIAL_PASS_PRICE}">€{float(update_price.FULL_SOCIAL_PASS_PRICE):g}</span>' \
                '<a href="https://example.test/tickets">Buy Full Social Pass</a></div>'
         self.assertEqual(self.check_ticket_html(check_social_pass, html), [])
-        for changed in [html.replace('€75', '€70'), html.replace('InStock', 'PreOrder'),
-                        html.replace('"price": "75.00"', '"price": "70.00"'),
+        for changed in [html.replace(f'€{float(update_price.FULL_SOCIAL_PASS_PRICE):g}', '€70'), html.replace('InStock', 'PreOrder'),
+                        html.replace(f'"price": "{update_price.FULL_SOCIAL_PASS_PRICE}"', '"price": "70.00"'),
                         html.replace('href="https://example.test/tickets"', 'href="https://example.test/wrong"')]:
             self.assertTrue(self.check_ticket_html(check_social_pass, changed))
 

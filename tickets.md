@@ -16,15 +16,15 @@ Join us at the stunning Devero Hotel for the premier Bachata event. We went sold
 
 ### Choose Your Experience
 
-Secure your spot early for the best rates.
+Prices exclude LaSalsaDelBaile booking fees. Full Pass: +€4.30; Full Social Pass: +€3.60; Jack & Jill: +€2.10.
 
 Best Value
 
 #### Full Pass
 
-€135
+€140
 
-Valid until November 10 at midnight
+Valid until November 10 at 23:59 CET
 
 - Full Access to entire event
 - All Parties (Fri, Sat, Sun)
@@ -56,7 +56,7 @@ Competition
 
 #### Jack & Jill Ticket
 
-€20
+€25
 
 International Competition
 
@@ -70,7 +70,7 @@ Requires Full Pass OR Full Social Pass
 
 #### Full Social Pass
 
-€75
+€80
 
 - Friday night social
 - Saturday night social
@@ -132,7 +132,7 @@ Yes, name changes are possible. You can perform this action directly on the webs
 
 ##### What do I need to participate in the Jack & Jill?
 
-To participate in the competition, you must hold a valid **Full Pass** or a **Full Social Pass**. The competition fee is separate (€20), but it requires one of these passes to be valid.
+To participate in the competition, you must hold a valid **Full Pass** or a **Full Social Pass**. The competition fee is separate (€25), but it requires one of these passes to be valid.
 
 ##### Can I buy the Masterclass separately?
 

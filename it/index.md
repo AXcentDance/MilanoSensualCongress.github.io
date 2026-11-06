@@ -103,7 +103,7 @@ L'intero evento si svolge presso il **New Devero Hotel & Spa** (4 Stelle Executi
 
 #### Posso competere nel Jack & Jill?
 
-Sì! Le iscrizioni al Jack & Jill internazionale sono aperte. La quota è di €20, oltre alle commissioni della piattaforma, e richiede un Full Pass o un Full Social Pass valido. [Regolamento e iscrizione](https://milanosensualcongress.com/it/jacknjill).
+Sì! Le iscrizioni al Jack & Jill internazionale sono aperte. La quota è di €25, oltre alle commissioni della piattaforma, e richiede un Full Pass o un Full Social Pass valido. [Regolamento e iscrizione](https://milanosensualcongress.com/it/jacknjill).
 
 #### Come prenoto l'hotel?
 
