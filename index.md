@@ -12,7 +12,7 @@ Three days of bachata workshops, parties and social dancing at Devero Hotel, nea
 
 Workshops in English · Beginner, intermediate and advanced levels
 
-### All ticket sales close on Friday evening, 20 November.
+### All ticket sales close on Friday, 20 November at midday.
 
 No tickets of any kind will be sold during the weekend.
 

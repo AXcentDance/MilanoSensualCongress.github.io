@@ -62,7 +62,7 @@ Access & Tickets
 
 ### Which pass gets you on the dance floor
 
-**Full Pass — €140 until November 20 at 18:00 CET:** includes all workshops, shows, night parties and afternoon socials of the weekend.
+**Full Pass — €140 until November 20 at 12:00 CET:** includes all workshops, shows, night parties and afternoon socials of the weekend.
 
 **Saturday Afternoon Social:** access with a Full Pass or a Saturday Day Pass.
 

@@ -95,8 +95,8 @@ for (const path of ['/', '/it/', '/tickets', '/it/tickets']) {
   test(`${path}: sales deadline replaces the expired price reminder`, async ({ page }) => {
     await page.goto(path);
     await expect(page.locator('#sales-deadline')).toContainText(path.startsWith('/it')
-      ? 'Tutte le vendite chiudono venerdì 20 novembre in serata.'
-      : 'All ticket sales close on Friday evening, 20 November.');
+      ? 'Tutte le vendite chiudono venerdì 20 novembre a mezzogiorno.'
+      : 'All ticket sales close on Friday, 20 November at midday.');
     await expect(page.locator('#sales-deadline')).toContainText(path.startsWith('/it')
       ? 'Durante il weekend non sarà venduto alcun tipo di biglietto.'
       : 'No tickets of any kind will be sold during the weekend.');

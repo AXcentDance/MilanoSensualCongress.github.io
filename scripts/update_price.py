@@ -41,10 +41,10 @@ from bs4 import BeautifulSoup
 
 # ---- canonical Full Pass facts (the single switch) ----
 FULL_PASS_PRICE = "140.00"
-FULL_PASS_VALID_THROUGH = "2026-11-20T18:00:00+01:00"
+FULL_PASS_VALID_THROUGH = "2026-11-20T12:00:00+01:00"
 # The seller has no start date configured for this current offer.
 FULL_PASS_VALID_FROM = None
-# No further price increase; the owner confirmed all sales close on 20 November at 18:00 CET.
+# No further price increase; the owner confirmed all sales close on 20 November at 12:00 CET.
 NEXT_FULL_PASS_PRICE = None
 NEXT_FULL_PASS_VALID_FROM = None
 NEXT_FULL_PASS_ID = "https://milanosensualcongress.com/tickets#full-pass-next"

@@ -12,7 +12,7 @@ Tre giorni di workshop di bachata, party e social dancing al Devero Hotel, vicin
 
 Workshop in inglese · Livelli principianti, intermedi e avanzati
 
-### Tutte le vendite chiudono venerdì 20 novembre in serata.
+### Tutte le vendite chiudono venerdì 20 novembre a mezzogiorno.
 
 Durante il weekend non sarà venduto alcun tipo di biglietto.
 

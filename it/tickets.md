@@ -12,7 +12,7 @@ Partecipa al più atteso dei **congressi bachata 2026**. Scegli il pass che fa p
 
 1.000+ ballerini · 20+ nazioni · 40+ ore di workshop · 20+ ore di social dancing · 3 giorni
 
-### Tutte le vendite chiudono venerdì 20 novembre in serata.
+### Tutte le vendite chiudono venerdì 20 novembre a mezzogiorno.
 
 Durante il weekend non sarà venduto alcun tipo di biglietto.
 
@@ -28,7 +28,7 @@ Miglior Valore
 
 €140
 
-Disponibile fino a venerdì 20 novembre in serata
+Disponibile fino a venerdì 20 novembre a mezzogiorno
 
 - Accesso completo all'intero evento
 - Tutte le Feste (Ven, Sab, Dom)
