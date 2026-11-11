@@ -13,6 +13,7 @@ function mount(page, { reply = 'success', httpOK = true, networkError = false, a
   const handler = readFileSync(resolve(__dirname, '..', script[1].split('?')[0].slice(1)), 'utf8');
   const success = { innerHTML: /<template id="reminder-success">([\s\S]*?)<\/template>/.exec(html)[1] };
   const source = /name="source" value="([^"]+)"/.exec(html)[1];
+  const analyticsSource = /data-analytics-source="([^"]+)"/.exec(html)[1];
   const action = /id="reminder-form"[^>]+action="([^"]+)"/.exec(html)[1];
   const button = { innerHTML: 'Submit', disabled: false };
   const container = { innerHTML: 'Original form', setAttribute() {} };
@@ -22,6 +23,7 @@ function mount(page, { reply = 'success', httpOK = true, networkError = false, a
   const form = {
     action,
     dataset: {
+      analyticsSource,
       processing: /data-processing="([^"]+)"/.exec(html)[1],
       error: /data-error="([^"]+)"/.exec(html)[1]
     },
@@ -53,7 +55,7 @@ function mount(page, { reply = 'success', httpOK = true, networkError = false, a
   };
   vm.runInNewContext(handler, context);
   return {
-    html, source, button, container, status, leads,
+    html, source, analyticsSource, button, container, status, leads,
     submit: () => submit.call(form, { preventDefault() {} }),
     finish: () => finishRequest(),
     timeout: () => timer(),
@@ -80,6 +82,8 @@ for (const page of pages) {
     const request = app.request();
     assert.equal(request.url.searchParams.get('email'), 'test+reminder@example.com');
     assert.equal(request.url.searchParams.get('source'), app.source);
+    assert.match(app.source, / \| 2027 sales opening$/);
+    assert.doesNotMatch(app.analyticsSource, /2027|@/);
     assert.equal(request.options.mode, 'cors');
     assert.equal(request.options.cache, 'no-store');
     assert.equal(app.button.disabled, true);
@@ -93,7 +97,7 @@ for (const page of pages) {
     assert.match(app.container.innerHTML, page.startsWith('it/') ? /Grazie!/ : /Thank you!/);
     assert.equal(app.container.innerHTML.includes('href="artists"'), page.endsWith('index.html'));
     assert.equal(app.leads.length, 1);
-    assert.deepEqual(app.leads[0], { source: app.source });
+    assert.deepEqual(app.leads[0], { source: app.analyticsSource });
     assert.equal(app.timer(), null);
   });
 

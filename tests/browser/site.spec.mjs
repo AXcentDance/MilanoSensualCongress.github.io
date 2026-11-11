@@ -92,7 +92,20 @@ for (const entry of sitePages()) {
 }
 
 for (const path of ['/', '/it/', '/tickets', '/it/tickets']) {
-  for (const outcome of ['success', 'failure']) test(`${path}: reminder ${outcome} with a stubbed response`, async ({ page }) => {
+  test(`${path}: sales deadline replaces the expired price reminder`, async ({ page }) => {
+    await page.goto(path);
+    await expect(page.locator('#sales-deadline')).toContainText(path.startsWith('/it')
+      ? 'Tutte le vendite chiudono venerdì 20 novembre in serata.'
+      : 'All ticket sales close on Friday evening, 20 November.');
+    await expect(page.locator('#sales-deadline')).toContainText(path.startsWith('/it')
+      ? 'Durante il weekend non sarà venduto alcun tipo di biglietto.'
+      : 'No tickets of any kind will be sold during the weekend.');
+    await expect(page.locator('#countdown, [role="timer"]')).toHaveCount(0);
+  });
+}
+
+for (const path of ['/', '/it/', '/tickets', '/it/tickets']) {
+  for (const outcome of ['success', 'failure']) test(`${path}: 2027 signup ${outcome} with a stubbed response`, async ({ page }) => {
     const requests = [];
     await page.route('https://script.google.com/**', route => {
       requests.push(route.request().url());
@@ -112,6 +125,7 @@ for (const path of ['/', '/it/', '/tickets', '/it/tickets']) {
       await expect(form.locator('input[type="email"]')).toHaveValue('audit@example.invalid');
     }
     expect(requests.length).toBe(1);
+    expect(new URL(requests[0]).searchParams.get('source')).toContain('2027 sales opening');
   });
 }
 

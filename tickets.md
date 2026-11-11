@@ -12,6 +12,10 @@ Join us at the stunning Devero Hotel for the premier Bachata event. We went sold
 
 1,000+ dancers · 20+ nations · 40+ hours of workshops · 20+ hours of social dancing · 3 days
 
+### All ticket sales close on Friday evening, 20 November.
+
+No tickets of any kind will be sold during the weekend.
+
 [Get Tickets](https://lasalsadelbaile.com/MSC2026)
 
 ### Choose Your Experience
@@ -24,7 +28,7 @@ Best Value
 
 €140
 
-Valid until November 10 at 23:59 CET
+Available until Friday evening, 20 November
 
 - Full Access to entire event
 - All Parties (Fri, Sat, Sun)

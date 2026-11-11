@@ -12,6 +12,14 @@ Tre giorni di workshop di bachata, party e social dancing al Devero Hotel, vicin
 
 Workshop in inglese · Livelli principianti, intermedi e avanzati
 
+### Tutte le vendite chiudono venerdì 20 novembre in serata.
+
+Durante il weekend non sarà venduto alcun tipo di biglietto.
+
+[Blocca il Full Pass a 140€](https://lasalsadelbaile.com/MSC2026)
+
+[Esplora il programma →](https://milanosensualcongress.com/it/programma)
+
 1.000+ ballerini · 20+ nazioni · 40+ ore di workshop · 20+ ore di social dancing · 3 giorni
 
 ### Lineup Internazionale di Bachata

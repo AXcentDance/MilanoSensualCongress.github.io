@@ -46,7 +46,7 @@
 
         // Analytics must not prevent saving or turn a saved reminder into an error.
         try {
-          if (window.mscAnalytics) window.mscAnalytics.trackReminder(data.get('source'));
+          if (window.mscAnalytics) window.mscAnalytics.trackReminder(form.dataset.analyticsSource || data.get('source'));
         } catch (_) { /* The reminder is already confirmed. */ }
       } catch (_) {
         status.textContent = form.dataset.error;
