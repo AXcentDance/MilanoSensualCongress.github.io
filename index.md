@@ -12,11 +12,7 @@ Three days of bachata workshops, parties and social dancing at Devero Hotel, nea
 
 ### All ticket sales close on Friday, 20 November at midday.
 
-No tickets of any kind will be sold during the weekend.
-
 [Secure my €140 Full Pass](https://lasalsadelbaile.com/MSC2026)
-
-[Explore the programme →](https://milanosensualcongress.com/program)
 
 1,000+ dancers · 20+ nations · 40+ hours of workshops · 20+ hours of social dancing · 3 days
 

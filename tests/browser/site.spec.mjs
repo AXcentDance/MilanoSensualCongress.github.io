@@ -97,9 +97,17 @@ for (const path of ['/', '/it/', '/tickets', '/it/tickets']) {
     await expect(page.locator('#sales-deadline')).toContainText(path.startsWith('/it')
       ? 'Tutte le vendite chiudono venerdì 20 novembre a mezzogiorno.'
       : 'All ticket sales close on Friday, 20 November at midday.');
-    await expect(page.locator('#sales-deadline')).toContainText(path.startsWith('/it')
+    const weekendNotice = path.startsWith('/it')
       ? 'Durante il weekend non sarà venduto alcun tipo di biglietto.'
-      : 'No tickets of any kind will be sold during the weekend.');
+      : 'No tickets of any kind will be sold during the weekend.';
+    if (path.endsWith('tickets')) {
+      await expect(page.locator('#sales-deadline')).toContainText(weekendNotice);
+    } else {
+      await expect(page.locator('#sales-deadline')).not.toContainText(weekendNotice);
+      await expect(page.locator('#sales-deadline a[href="program"], #sales-deadline a[href="programma"]')).toHaveCount(0);
+      await expect(page.locator('#reminder-form label')).toHaveCount(0);
+      await expect(page.getByRole('textbox', { name: 'Email', exact: true })).toBeVisible();
+    }
     await expect(page.locator('#countdown, [role="timer"]')).toHaveCount(0);
   });
 }
