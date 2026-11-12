@@ -15,7 +15,11 @@ ROOT = Path(__file__).resolve().parent.parent
 EXCLUDED = {'node_modules', 'vendor', 'scripts', 'tests', 'System', 'test-results',
             'playwright-report', '__pycache__', 'output', 'tmp', 'google',
             'assets', 'images', 'css', 'js', 'fonts'}
-NONINDEXED_PAGES = {'404.html': 'Public error page'}
+NONINDEXED_PAGES = {
+    '404.html': 'Public error page',
+    'insurance.html': 'Participant insurance data-entry utility',
+    'it/insurance.html': 'Italian participant insurance data-entry utility',
+}
 
 
 def ignored_directory(name):
