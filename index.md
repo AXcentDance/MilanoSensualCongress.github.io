@@ -10,8 +10,6 @@ Canonical: https://milanosensualcongress.com/
 
 Three days of bachata workshops, parties and social dancing at Devero Hotel, near Milan, with international artists and dancers from across Europe.
 
-Workshops in English · Beginner, intermediate and advanced levels
-
 ### All ticket sales close on Friday, 20 November at midday.
 
 No tickets of any kind will be sold during the weekend.

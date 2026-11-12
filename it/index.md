@@ -10,8 +10,6 @@ Canonical: https://milanosensualcongress.com/it/
 
 Tre giorni di workshop di bachata, party e social dancing al Devero Hotel, vicino a Milano, con artisti internazionali e ballerini da tutta Europa.
 
-Workshop in inglese · Livelli principianti, intermedi e avanzati
-
 ### Tutte le vendite chiudono venerdì 20 novembre a mezzogiorno.
 
 Durante il weekend non sarà venduto alcun tipo di biglietto.
