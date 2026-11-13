@@ -203,7 +203,6 @@ Leave your email for news and special discounts.
 
 Keep me updated
 
-By signing up, you agree to receive MSC 2027 news and discount emails.
 Privacy
 
 ---
@@ -409,7 +408,6 @@ Lascia la tua email per ricevere novità e sconti speciali.
 
 Tienimi aggiornato
 
-Iscrivendoti, accetti di ricevere email su novità e sconti MSC 2027.
 Privacy
 
 ---

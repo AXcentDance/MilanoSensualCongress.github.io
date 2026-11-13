@@ -540,15 +540,23 @@
 .home-signup-fields input::placeholder { color:#45625a; opacity:1; }
 .home-signup-fields button { flex:1 1 auto; min-height:46px; border:0; border-radius:8px; padding:10px 14px; background:#dfc58e; color:#031e1c; font:750 13px/1.3 Inter,'Inter Fallback',sans-serif; cursor:pointer; }
 .home-signup-fields button:disabled { opacity:.7; cursor:wait; }
-.home-signup .home-signup-consent { margin:12px 0 0; font-size:11px; line-height:1.45; }
+.home-signup .home-signup-privacy { margin:12px 0 0; font-size:11px; line-height:1.45; }
 .home-signup a { color:#dfc58e; text-decoration:underline; text-underline-offset:3px; }
 .home-signup :is(button,input,a):focus-visible { outline:3px solid #fff6e6; outline-offset:3px; }
 .home-signup .home-signup-saved { margin:0; }
+@media (min-width:1001px) {
+ .home-signup { display:grid; grid-template-columns:1fr 1fr; column-gap:28px; width:1000px; bottom:18px; padding:18px 54px 18px 24px; border-radius:14px; }
+ .home-signup h2 { grid-column:1; margin:0 0 6px; font-size:22px; }
+ .home-signup .home-signup-date { grid-column:1; margin-bottom:6px; font-size:13px; }
+ .home-signup #home-signup-description { grid-column:1; margin:0; font-size:13px; }
+ .home-signup #home-signup-container { grid-column:2; grid-row:1 / span 3; align-self:center; min-width:0; }
+ .home-signup .home-signup-privacy { margin-top:8px; }
+}
 @media (max-width:700px) {
  .home-signup { bottom:calc(12px + env(safe-area-inset-bottom)); width:calc(100% - 24px); max-width:none; max-height:calc(100dvh - 170px); padding:16px; border-radius:14px; }
  .home-signup h2 { font-size:21px; margin-bottom:6px; }
  .home-signup p { margin-bottom:10px; font-size:13px; }
- .home-signup .home-signup-consent { margin-top:10px; font-size:11px; }
+ .home-signup .home-signup-privacy { margin-top:10px; font-size:11px; }
 }
   </style>
   <meta property="og:type" content="website">
@@ -867,8 +875,8 @@
 <div id="home-signup-container">
 <form id="home-signup-form" data-analytics-source="none" action="https://script.google.com/macros/s/AKfycbzNaU95FbDrYx2kp3uwYi5Kxu0_ziFrh2gL28OZicVla0zkfj7wVuafgDdeffkBaPKZmg/exec" method="GET" data-processing="Processing..." data-error="We could not confirm your signup. Please try again.">
 <input type="hidden" name="source" value="Home - EN | 2027 news and discounts | email opt-in"/>
-<div class="home-signup-fields"><input id="home-signup-email" aria-label="Your email address" name="email" type="email" autocomplete="email" placeholder="Your email address" aria-describedby="home-signup-description home-signup-consent" required/><button type="submit"><span class="home-signup-submit-label">Keep me updated</span></button></div>
-<p id="home-signup-consent" class="home-signup-consent">By signing up, you agree to receive MSC 2027 news and discount emails. <a href="/terms">Privacy</a></p>
+<div class="home-signup-fields"><input id="home-signup-email" aria-label="Your email address" name="email" type="email" autocomplete="email" placeholder="Your email address" aria-describedby="home-signup-description" required/><button type="submit"><span class="home-signup-submit-label">Keep me updated</span></button></div>
+<p id="home-signup-privacy" class="home-signup-privacy"><a href="/terms">Privacy</a></p>
 </form>
 </div>
 </aside>
