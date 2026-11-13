@@ -1,7 +1,7 @@
 (() => {
   // Wait for the Apps Script acknowledgement before confirming the reminder.
-  const reminderForm = document.getElementById('reminder-form');
-  if (reminderForm) {
+  function bindSignup(reminderForm, container, success, onSaved) {
+    if (!reminderForm) return;
     const status = document.createElement('p');
     status.setAttribute('role', 'alert');
     status.style.cssText = 'color: #fda4af; font-size: 0.875rem; text-align: center; margin-top: 0.75rem';
@@ -11,7 +11,6 @@
     reminderForm.addEventListener('submit', async function (e) {
       e.preventDefault();
       const form = this;
-      const container = document.getElementById('reminder-container');
       const button = form.querySelector('button');
       if (button.disabled) return;
       const originalButtonText = button.innerHTML;
@@ -42,11 +41,14 @@
           throw new Error('Reminder was not acknowledged');
         }
         container.setAttribute('role', 'status');
-        container.innerHTML = document.getElementById('reminder-success').innerHTML;
+        container.innerHTML = success.innerHTML;
+        if (onSaved) onSaved();
 
         // Analytics must not prevent saving or turn a saved reminder into an error.
         try {
-          if (window.mscAnalytics) window.mscAnalytics.trackReminder(form.dataset.analyticsSource || data.get('source'));
+          // Edition-specific signup labels may differ from the established
+          // analytics source. Keep the stored label intact in the request.
+          if (window.mscAnalytics && form.dataset.analyticsSource !== 'none') window.mscAnalytics.trackReminder(form.dataset.analyticsSource || data.get('source'));
         } catch (_) { /* The reminder is already confirmed. */ }
       } catch (_) {
         status.textContent = form.dataset.error;
@@ -59,4 +61,20 @@
       }
     });
   }
+  bindSignup(document.getElementById('reminder-form'), document.getElementById('reminder-container'), document.getElementById('reminder-success'));
+
+  const panel = document.getElementById('home-signup');
+  if (!panel) return;
+  const dismissedKey = 'msc-2027-signup-dismissed';
+  const remember = () => {
+    try { sessionStorage.setItem(dismissedKey, '1'); } catch (_) { /* Closing still works without storage. */ }
+  };
+  try { panel.hidden = sessionStorage.getItem(dismissedKey) === '1'; }
+  catch (_) { panel.hidden = false; }
+  const dismiss = () => { panel.hidden = true; remember(); };
+  panel.querySelector('[data-signup-close]').addEventListener('click', dismiss);
+  panel.addEventListener('keydown', event => {
+    if (event.key === 'Escape') { event.preventDefault(); dismiss(); }
+  });
+  bindSignup(document.getElementById('home-signup-form'), document.getElementById('home-signup-container'), document.getElementById('home-signup-success'), remember);
 })();

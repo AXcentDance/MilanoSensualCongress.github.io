@@ -105,14 +105,14 @@ for (const path of ['/', '/it/', '/tickets', '/it/tickets']) {
     } else {
       await expect(page.locator('#sales-deadline')).not.toContainText(weekendNotice);
       await expect(page.locator('#sales-deadline a[href="program"], #sales-deadline a[href="programma"]')).toHaveCount(0);
-      await expect(page.locator('#reminder-form label')).toHaveCount(0);
-      await expect(page.getByRole('textbox', { name: 'Email', exact: true })).toBeVisible();
+      await expect(page.locator('#reminder-container')).toHaveCount(0);
+      await expect(page.locator('#home-signup input[type="email"]')).toBeVisible();
     }
     await expect(page.locator('#countdown, [role="timer"]')).toHaveCount(0);
   });
 }
 
-for (const path of ['/', '/it/', '/tickets', '/it/tickets']) {
+for (const path of ['/tickets', '/it/tickets']) {
   for (const outcome of ['success', 'failure']) test(`${path}: 2027 signup ${outcome} with a stubbed response`, async ({ page }) => {
     const requests = [];
     await page.route('https://script.google.com/**', route => {

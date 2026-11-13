@@ -11,10 +11,11 @@ function mount(page, { reply = 'success', httpOK = true, networkError = false, a
   const script = /<script src="(\/js\/reminder-form\.js\?v=\d+)" defer><\/script>/.exec(html);
   assert.ok(script, `${page} loads the shared reminder handler`);
   const handler = readFileSync(resolve(__dirname, '..', script[1].split('?')[0].slice(1)), 'utf8');
-  const success = { innerHTML: /<template id="reminder-success">([\s\S]*?)<\/template>/.exec(html)[1] };
+  const home = page.endsWith('index.html');
+  const success = { innerHTML: /<template id="(?:home-signup|reminder)-success">([\s\S]*?)<\/template>/.exec(html)[1] };
   const source = /name="source" value="([^"]+)"/.exec(html)[1];
   const analyticsSource = /data-analytics-source="([^"]+)"/.exec(html)[1];
-  const action = /id="reminder-form"[^>]+action="([^"]+)"/.exec(html)[1];
+  const action = /id="(?:home-signup|reminder)-form"[^>]+action="([^"]+)"/.exec(html)[1];
   const button = { innerHTML: 'Submit', disabled: false };
   const container = { innerHTML: 'Original form', setAttribute() {} };
   const status = { hidden: true, style: {}, setAttribute() {} };
@@ -33,11 +34,15 @@ function mount(page, { reply = 'success', httpOK = true, networkError = false, a
   };
   const context = {
     document: {
-      getElementById: id => ({ 'reminder-form': form, 'reminder-container': container, 'reminder-success': success })[id],
+      getElementById: id => home ? ({
+        'home-signup': { querySelector: () => ({ addEventListener() {} }), addEventListener() {} },
+        'home-signup-form': form, 'home-signup-container': container, 'home-signup-success': success
+      })[id] : ({ 'reminder-form': form, 'reminder-container': container, 'reminder-success': success })[id],
       createElement: () => status
     },
     FormData: class { get(key) { return key === 'email' ? '  test+reminder@example.com  ' : source; } },
     URL, AbortController,
+    sessionStorage: { getItem: () => null, setItem() {} },
     setTimeout: callback => { timer = callback; return 1; },
     clearTimeout: () => { timer = null; },
     fetch: (url, options) => {
@@ -72,7 +77,7 @@ for (const page of pages) {
       assert.ok(policy.includes('https://script.google.com'));
       assert.ok(policy.includes('https://script.googleusercontent.com'));
     }
-    assert.match(html, /id="reminder-form"[^>]+method="GET"/);
+    assert.match(html, /id="(?:home-signup|reminder)-form"[^>]+method="GET"/);
     assert.doesNotMatch(html, /hiddenIframe|formspree\.io/);
   });
 
@@ -82,7 +87,7 @@ for (const page of pages) {
     const request = app.request();
     assert.equal(request.url.searchParams.get('email'), 'test+reminder@example.com');
     assert.equal(request.url.searchParams.get('source'), app.source);
-    assert.match(app.source, / \| 2027 sales opening$/);
+    assert.match(app.source, page.endsWith('index.html') ? /2027 news and discounts \| email opt-in$/ : / \| 2027 sales opening$/);
     assert.doesNotMatch(app.analyticsSource, /2027|@/);
     assert.equal(request.options.mode, 'cors');
     assert.equal(request.options.cache, 'no-store');
@@ -95,9 +100,8 @@ for (const page of pages) {
     app.finish();
     await pending;
     assert.match(app.container.innerHTML, page.startsWith('it/') ? /Grazie!/ : /Thank you!/);
-    assert.equal(app.container.innerHTML.includes('href="artists"'), page.endsWith('index.html'));
-    assert.equal(app.leads.length, 1);
-    assert.deepEqual(app.leads[0], { source: app.analyticsSource });
+    assert.equal(app.container.innerHTML.includes('href="artists"'), false);
+    assert.deepEqual(app.leads, page.endsWith('index.html') ? [] : [{ source: app.analyticsSource }]);
     assert.equal(app.timer(), null);
   });
 
@@ -135,7 +139,7 @@ for (const page of pages) {
     assert.equal(app.status.hidden, true);
     app.finish();
     await retry;
-    assert.equal(app.leads.length, 1);
+    assert.equal(app.leads.length, page.endsWith('index.html') ? 0 : 1);
   });
 
   test(`${page}: analytics failure does not undo confirmed success`, async () => {
