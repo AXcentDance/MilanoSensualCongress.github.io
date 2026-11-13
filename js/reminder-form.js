@@ -1,6 +1,6 @@
 (() => {
   // Wait for the Apps Script acknowledgement before confirming the reminder.
-  function bindSignup(reminderForm, container, success, onSaved) {
+  function bindSignup(reminderForm, container, success) {
     if (!reminderForm) return;
     const status = document.createElement('p');
     status.setAttribute('role', 'alert');
@@ -42,7 +42,6 @@
         }
         container.setAttribute('role', 'status');
         container.innerHTML = success.innerHTML;
-        if (onSaved) onSaved();
 
         // Analytics must not prevent saving or turn a saved reminder into an error.
         try {
@@ -65,16 +64,11 @@
 
   const panel = document.getElementById('home-signup');
   if (!panel) return;
-  const dismissedKey = 'msc-2027-signup-dismissed';
-  const remember = () => {
-    try { sessionStorage.setItem(dismissedKey, '1'); } catch (_) { /* Closing still works without storage. */ }
-  };
-  try { panel.hidden = sessionStorage.getItem(dismissedKey) === '1'; }
-  catch (_) { panel.hidden = false; }
-  const dismiss = () => { panel.hidden = true; remember(); };
+  panel.hidden = false;
+  const dismiss = () => { panel.hidden = true; };
   panel.querySelector('[data-signup-close]').addEventListener('click', dismiss);
   panel.addEventListener('keydown', event => {
     if (event.key === 'Escape') { event.preventDefault(); dismiss(); }
   });
-  bindSignup(document.getElementById('home-signup-form'), document.getElementById('home-signup-container'), document.getElementById('home-signup-success'), remember);
+  bindSignup(document.getElementById('home-signup-form'), document.getElementById('home-signup-container'), document.getElementById('home-signup-success'));
 })();

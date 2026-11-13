@@ -5,7 +5,7 @@ test.beforeEach(async ({ context }) => {
 });
 
 for (const [path, language] of [['/', 'EN'], ['/it/', 'IT']]) {
-  test(`${path}: fixed email invitation scrolls, closes and stays dismissed`, async ({ page }) => {
+  test(`${path}: fixed email invitation scrolls, closes and returns on reload`, async ({ page }) => {
     await page.goto(path);
     const panel = page.locator('#home-signup');
     await expect(panel).toBeVisible();
@@ -13,6 +13,10 @@ for (const [path, language] of [['/', 'EN'], ['/it/', 'IT']]) {
     await expect(panel.locator('.home-signup-date')).toHaveText(language === 'IT' ? '19/20/21 novembre 2027' : '19/20/21 November 2027');
     await expect(page.locator('#reminder-container')).toHaveCount(0);
     const before = await panel.boundingBox();
+    expect(Math.abs(before.x + before.width / 2 - page.viewportSize().width / 2)).toBeLessThan(2);
+    await expect(panel).toHaveCSS('text-align', 'center');
+    await expect(panel.locator('label')).toHaveCount(0);
+    await expect(panel.locator('input[type=email]')).toHaveAccessibleName(language === 'IT' ? 'Il tuo indirizzo email' : 'Your email address');
     await page.evaluate(() => window.scrollTo({ top: 1500, behavior: 'instant' }));
     await expect.poll(() => page.evaluate(() => window.scrollY)).toBeGreaterThan(1000);
     const after = await panel.boundingBox();
@@ -25,9 +29,9 @@ for (const [path, language] of [['/', 'EN'], ['/it/', 'IT']]) {
     await panel.locator('[data-signup-close]').click();
     await expect(panel).toBeHidden();
     await page.reload();
-    await expect(panel).toBeHidden();
+    await expect(panel).toBeVisible();
     await page.goto(path === '/' ? '/it/' : '/');
-    await expect(panel).toBeHidden();
+    await expect(panel).toBeVisible();
   });
 
   test(`${path}: email invitation validates, retries and confirms only saved signups`, async ({ page }) => {
@@ -58,7 +62,7 @@ for (const [path, language] of [['/', 'EN'], ['/it/', 'IT']]) {
     expect(requests).toBe(2);
     await expect(page.locator('#reminder-form')).toHaveCount(0);
     await page.reload();
-    await expect(panel).toBeHidden();
+    await expect(panel).toBeVisible();
   });
 
   test(`${path}: invitation remains closable with unavailable storage and Escape`, async ({ page }) => {

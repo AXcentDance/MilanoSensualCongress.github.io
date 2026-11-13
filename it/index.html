@@ -512,17 +512,16 @@
 <style data-inline="css/home-signup.css">
 /* Dismissible invitation stays in the viewport without blocking page scrolling. */
 .home-signup {
- position:fixed; z-index:95; left:24px; bottom:24px; width:420px;
+ position:fixed; z-index:95; left:50%; bottom:24px; width:420px; transform:translateX(-50%); text-align:center;
  max-width:calc(100% - 48px); max-height:calc(100dvh - 130px); overflow-y:auto;
  padding:24px; border:1px solid #dfc58e; border-radius:18px;
  background:#031e1c; color:#fff6e6; box-shadow:0 14px 48px #0007;
 }
 .home-signup[hidden] { display:none; }
-.home-signup h2 { margin:0 30px 10px 0; color:#dfc58e; font:800 24px/1.15 Inter,'Inter Fallback',sans-serif; letter-spacing:-.04em; }
+.home-signup h2 { margin:0 20px 10px; color:#dfc58e; font:800 24px/1.15 Inter,'Inter Fallback',sans-serif; letter-spacing:-.04em; }
 .home-signup p { margin:0 0 16px; font-size:14px; line-height:1.5; }
 .home-signup .home-signup-date { margin:0 0 12px; color:#dfc58e; font-size:14px; font-weight:700; }
 .home-signup-close { position:absolute; top:4px; right:4px; width:44px; height:44px; border:0; border-radius:50%; background:transparent; color:#fff6e6; font:400 28px/1 Inter,sans-serif; cursor:pointer; }
-.home-signup-label { display:block; margin-bottom:5px; font-size:12px; }
 .home-signup-fields { display:flex; flex-wrap:wrap; gap:8px; }
 .home-signup-fields input { flex:1 1 170px; min-width:0; width:100%; min-height:46px; border:1px solid #bdcdc6; border-radius:8px; padding:10px 12px; background:#fff6e6; color:#031e1c; font:400 16px/1.4 Inter,'Inter Fallback',sans-serif; }
 .home-signup-fields input::placeholder { color:#45625a; opacity:1; }
@@ -533,7 +532,7 @@
 .home-signup :is(button,input,a):focus-visible { outline:3px solid #fff6e6; outline-offset:3px; }
 .home-signup .home-signup-saved { margin:0; }
 @media (max-width:700px) {
- .home-signup { left:12px; bottom:calc(12px + env(safe-area-inset-bottom)); width:calc(100% - 24px); max-width:none; max-height:calc(100dvh - 170px); padding:16px; border-radius:14px; }
+ .home-signup { bottom:calc(12px + env(safe-area-inset-bottom)); width:calc(100% - 24px); max-width:none; max-height:calc(100dvh - 170px); padding:16px; border-radius:14px; }
  .home-signup h2 { font-size:21px; margin-bottom:6px; }
  .home-signup p { margin-bottom:10px; font-size:13px; }
  .home-signup .home-signup-consent { margin-top:10px; font-size:11px; }
@@ -857,14 +856,13 @@
 <div id="home-signup-container">
 <form id="home-signup-form" data-analytics-source="none" action="https://script.google.com/macros/s/AKfycbzNaU95FbDrYx2kp3uwYi5Kxu0_ziFrh2gL28OZicVla0zkfj7wVuafgDdeffkBaPKZmg/exec" method="GET" data-processing="Invio in corso..." data-error="Non è stato possibile confermare l’iscrizione. Riprova.">
 <input type="hidden" name="source" value="Home - IT | 2027 news and discounts | email opt-in"/>
-<label class="home-signup-label" for="home-signup-email">Il tuo indirizzo email</label>
-<div class="home-signup-fields"><input id="home-signup-email" name="email" type="email" autocomplete="email" placeholder="Il tuo indirizzo email" aria-describedby="home-signup-description home-signup-consent" required/><button type="submit"><span class="home-signup-submit-label">Tienimi aggiornato</span></button></div>
+<div class="home-signup-fields"><input id="home-signup-email" aria-label="Il tuo indirizzo email" name="email" type="email" autocomplete="email" placeholder="Il tuo indirizzo email" aria-describedby="home-signup-description home-signup-consent" required/><button type="submit"><span class="home-signup-submit-label">Tienimi aggiornato</span></button></div>
 <p id="home-signup-consent" class="home-signup-consent">Iscrivendoti, accetti di ricevere email su novità e sconti MSC 2027. <a href="/it/terms">Privacy</a></p>
 </form>
 </div>
 </aside>
 <template id="home-signup-success"><p class="home-signup-saved">Grazie! La tua richiesta è stata salvata.</p></template>
-  <script src="/js/reminder-form.js?v=5" defer></script>
+  <script src="/js/reminder-form.js?v=6" defer></script>
 </body>
 
 </html>
