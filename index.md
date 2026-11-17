@@ -73,7 +73,7 @@ Afternoon Social **16:00 – 20:00** Social Dance **23:00 – 05:00**
 
 Afternoon Social **16:00 – 22:00**
 
-[Parties & Social Dancing](https://milanosensualcongress.com/parties)
+[Parties & Social Dancing](https://milanosensualcongress.com/schedule)
 
 The Team Behind The Magic
 
@@ -113,7 +113,7 @@ Book through the official link on our [Hotel page](https://milanosensualcongress
 
 #### Will there be day socials?
 
-Yes, there are afternoon socials on Saturday and Sunday. See the [Parties page](https://milanosensualcongress.com/parties) for times and pass requirements.
+Yes, there are afternoon socials on Saturday and Sunday. See the [Parties page](https://milanosensualcongress.com/schedule) for times and pass requirements.
 
 #### Are the Bachata Masterclasses taught in English?
 

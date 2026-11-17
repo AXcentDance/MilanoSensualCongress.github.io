@@ -36,7 +36,7 @@ The [2026 artist line-up](https://milanosensualcongress.com/artists) includes Ge
 
 #### Afternoon socials and nights until 05:00
 
-The [party schedule](https://milanosensualcongress.com/parties) includes Friday and Saturday nights from 23:00 to 05:00, a Saturday afternoon social from 16:00 to 20:00, and Sunday dancing from 16:00 to 22:00. Build in breaks, then return to the floor with the ideas you explored in class.
+The [party schedule](https://milanosensualcongress.com/schedule) includes Friday and Saturday nights from 23:00 to 05:00, a Saturday afternoon social from 16:00 to 20:00, and Sunday dancing from 16:00 to 22:00. Build in breaks, then return to the floor with the ideas you explored in class.
 
 #### A clear plan for your pass and stay
 

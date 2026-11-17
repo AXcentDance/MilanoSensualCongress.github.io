@@ -4,13 +4,13 @@
 
 Official Milano Sensual Congress schedule, 20–22 November 2026: workshop timetables, shows, party times and dress codes at Devero Hotel near Milan.
 
-Canonical: https://milanosensualcongress.com/parties
+Canonical: https://milanosensualcongress.com/schedule
 
 Milano Sensual Congress · 20–22 November 2026
 
 Workshops, shows and Bachata parties at Devero Hotel, Cavenago di Brianza, near Milan. Three rooms: Duomo, Navigli and San Babila.
 
-[Friday](https://milanosensualcongress.com/parties#friday)[Saturday](https://milanosensualcongress.com/parties#saturday)[Sunday](https://milanosensualcongress.com/parties#sunday)
+[Friday](https://milanosensualcongress.com/schedule#friday)[Saturday](https://milanosensualcongress.com/schedule#saturday)[Sunday](https://milanosensualcongress.com/schedule#sunday)
 
 All times are local: CET (Italy). Night parties end the following morning.
 

@@ -44,7 +44,7 @@ The complete Milano Sensual Congress 2026 workshop schedule, including class-by-
 
 ### What time are the Bachata workshops and parties?
 
-The current preview has workshops from 18:00 to 23:00 on Friday, 10:00 to 20:00 on Saturday and 10:00 to 16:00 on Sunday. The official social dance times are 23:00 to 05:00 on Friday, 16:00 to 20:00 and 23:00 to 05:00 on Saturday, and 16:00 to 22:00 on Sunday. See the full details on the [parties & social dancing page](https://milanosensualcongress.com/parties).
+The current preview has workshops from 18:00 to 23:00 on Friday, 10:00 to 20:00 on Saturday and 10:00 to 16:00 on Sunday. The official social dance times are 23:00 to 05:00 on Friday, 16:00 to 20:00 and 23:00 to 05:00 on Saturday, and 16:00 to 22:00 on Sunday. See the full details on the [parties & social dancing page](https://milanosensualcongress.com/schedule).
 
 ### Can the congress program change?
 

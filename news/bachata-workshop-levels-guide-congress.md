@@ -77,7 +77,7 @@ Travelling with friends who dance at different levels? You can each choose a sui
 
 ### A Bachata Festival weekend goes beyond the classroom.
 
-Workshops give you ideas; social dancing gives you a reason to use them. The [Bachata parties and socials](https://milanosensualcongress.com/parties) bring dancers together around the music, whether your favourite dance uses simple basics or years of experience.
+Workshops give you ideas; social dancing gives you a reason to use them. The [Bachata parties and socials](https://milanosensualcongress.com/schedule) bring dancers together around the music, whether your favourite dance uses simple basics or years of experience.
 
 The international [Bachata artists at Milano Sensual Congress](https://milanosensualcongress.com/artists) offer different influences to explore. Let curiosity guide you: connection, rhythm, musicality and movement can keep your dancing interesting long after the weekend.
 
