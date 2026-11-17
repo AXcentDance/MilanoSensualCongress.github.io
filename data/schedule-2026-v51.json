@@ -1,0 +1,595 @@
+{
+  "edition": 2026,
+  "showLevelNames": true,
+  "legendStatus": "Owner specified top legend left to right: Advanced (red), Intermediate (orange), Beginner (green); class assignments unchanged.",
+  "rooms": [
+    [
+      "DUOMO"
+    ],
+    [
+      "NAVIGLI"
+    ],
+    [
+      "SAN BABILA"
+    ]
+  ],
+  "days": [
+    {
+      "id": "friday",
+      "title": "FRIDAY",
+      "date": "20 NOVEMBER 2026",
+      "rows": [
+        {
+          "time": [
+            "18:00",
+            "18:55"
+          ],
+          "cells": [
+            [
+              "David y Ines",
+              "Bachata Fusion",
+              "intermediate"
+            ],
+            [
+              "Guglielmo y Leilen",
+              "Bachata Fusion",
+              "advanced"
+            ],
+            [
+              "Pipicella y Eda",
+              "Bachata Fusion",
+              "open"
+            ]
+          ]
+        },
+        {
+          "time": [
+            "19:00",
+            "19:55"
+          ],
+          "cells": [
+            [
+              "Albero y Nadia",
+              "Bachata Sensual",
+              "intermediate"
+            ],
+            [
+              "Stiven y Mary",
+              "Dominican Bachata",
+              "intermediate"
+            ],
+            [
+              "Francesco y Narcisa",
+              "Bachata Fusion",
+              "open"
+            ]
+          ]
+        },
+        {
+          "time": [
+            "20:00",
+            "20:55"
+          ],
+          "cells": [
+            [
+              "Marco y Valeria",
+              "Bachata Sensual",
+              "intermediate"
+            ],
+            [
+              "Raul",
+              "Dominican Bachata",
+              "intermediate"
+            ],
+            [
+              "Eddy y Ginni",
+              "Bachata Fusion",
+              "open"
+            ]
+          ]
+        },
+        {
+          "time": [
+            "21:00",
+            "21:55"
+          ],
+          "cells": [
+            [
+              "Cristian y Gabriella",
+              "Bachata Sensual",
+              "intermediate"
+            ],
+            [
+              "Nacho y Silvia",
+              "Bachata New Generation",
+              "advanced"
+            ],
+            [
+              "Ella y Murad",
+              "Bachazouk",
+              "open"
+            ]
+          ]
+        },
+        {
+          "time": [
+            "22:00",
+            "22:55"
+          ],
+          "cells": [
+            [
+              "Gero y Migle",
+              "Bachata Esencia",
+              "intermediate"
+            ],
+            [
+              "David y Ines",
+              "Bachata Fusion",
+              "advanced"
+            ],
+            null
+          ]
+        },
+        {
+          "time": [
+            "23:00",
+            "05:00"
+          ],
+          "cells": [
+            [
+              "SOCIAL",
+              "NO REMIX",
+              "social"
+            ],
+            [
+              "SOCIAL",
+              "LOW BPM",
+              "social"
+            ],
+            null
+          ]
+        }
+      ],
+      "theme": {
+        "title": "MEDITERRANEAN NIGHT",
+        "dressCode": "DRESS CODE: WHITE · LIGHT BLUE · NAVY · DARK BLUE",
+        "colour": "#BCD8F2"
+      },
+      "checkIn": "17:00",
+      "checkInPrefix": "CHECK-IN FROM ",
+      "restaurantHours": "19:00–21:00"
+    },
+    {
+      "id": "saturday",
+      "title": "SATURDAY",
+      "date": "21 NOVEMBER 2026",
+      "rows": [
+        {
+          "time": [
+            "10:00",
+            "10:55"
+          ],
+          "cells": [
+            [
+              "Agustin y Alba",
+              "Bachata Sensual",
+              "open"
+            ],
+            [
+              "Tony y Svenja",
+              "Bachata Sensual",
+              "intermediate"
+            ],
+            null
+          ]
+        },
+        {
+          "time": [
+            "11:00",
+            "11:55"
+          ],
+          "cells": [
+            [
+              "Gero y Migle",
+              "Bachata Esencia",
+              "advanced"
+            ],
+            [
+              "Irene y Tomas",
+              "Bachata Sensual",
+              "intermediate"
+            ],
+            null
+          ]
+        },
+        {
+          "time": [
+            "12:00",
+            "12:55"
+          ],
+          "cells": [
+            [
+              "Ale y Xidan",
+              "Bachata Sensual",
+              "intermediate"
+            ],
+            [
+              "Oscar y Ines",
+              "Bachata Sensual",
+              "advanced"
+            ],
+            [
+              "Yda y Gabri",
+              "Bachazouk",
+              "open"
+            ]
+          ]
+        },
+        {
+          "time": [
+            "13:00",
+            "13:55"
+          ],
+          "cells": [
+            [
+              "Elvis y Mary",
+              "Bachata Sensual",
+              "intermediate"
+            ],
+            [
+              "Flavio y Elizabetta",
+              "Dominican Bachata",
+              "intermediate"
+            ],
+            [
+              "Salvatore y Antonella",
+              "Bachata Sensual",
+              "open"
+            ]
+          ]
+        },
+        {
+          "time": [
+            "14:00",
+            "14:55"
+          ],
+          "cells": [
+            [
+              "Mattias y Marta",
+              "Bachata Sensual",
+              "intermediate"
+            ],
+            [
+              "Agustin y Alba",
+              "Bachata Sensual",
+              "advanced"
+            ],
+            [
+              "Gero y Migle",
+              "MASTERCLASS",
+              "masterclass"
+            ]
+          ]
+        },
+        {
+          "time": [
+            "15:00",
+            "15:55"
+          ],
+          "cells": [
+            [
+              "Aitor",
+              "Dominican Bachata",
+              "intermediate"
+            ],
+            [
+              "Daniel y Alyona",
+              "Bachata Sensual",
+              "intermediate"
+            ],
+            [
+              "Cristian y Gabriella",
+              "MASTERCLASS",
+              "masterclass"
+            ]
+          ]
+        },
+        {
+          "time": [
+            "16:00",
+            "16:55"
+          ],
+          "cells": [
+            [
+              "Stefano y Stefania",
+              "Bachata Fusion",
+              "intermediate"
+            ],
+            [
+              "SOCIAL",
+              "",
+              "social"
+            ],
+            [
+              "Oscar y Ines",
+              "Bachata Sensual",
+              "open"
+            ]
+          ]
+        },
+        {
+          "time": [
+            "17:00",
+            "17:55"
+          ],
+          "cells": [
+            [
+              "Klau y Ros",
+              "Endless Bachata",
+              "intermediate"
+            ],
+            [
+              "SOCIAL",
+              "",
+              "social"
+            ],
+            [
+              "Manuel y Laura",
+              "Bachata Fusion",
+              "open"
+            ]
+          ]
+        },
+        {
+          "time": [
+            "18:00",
+            "18:55"
+          ],
+          "cells": [
+            [
+              "J&J",
+              "",
+              "event"
+            ],
+            [
+              "SOCIAL",
+              "",
+              "social"
+            ],
+            [
+              "Flavio y Gaia",
+              "Bachata Nueva",
+              "open"
+            ]
+          ]
+        },
+        {
+          "time": [
+            "19:00",
+            "19:55"
+          ],
+          "cells": [
+            [
+              "J&J",
+              "",
+              "event"
+            ],
+            [
+              "SOCIAL",
+              "",
+              "social"
+            ],
+            null
+          ]
+        },
+        {
+          "time": [
+            "22:30",
+            "00:00"
+          ],
+          "cells": [
+            [
+              "SHOW",
+              "",
+              "event"
+            ],
+            [
+              "SHOW",
+              "",
+              "event"
+            ],
+            [
+              "SHOW",
+              "",
+              "event"
+            ]
+          ]
+        },
+        {
+          "time": [
+            "00:00",
+            "05:00"
+          ],
+          "cells": [
+            [
+              "SOCIAL",
+              "NO REMIX",
+              "social"
+            ],
+            [
+              "SOCIAL",
+              "LOW BPM",
+              "social"
+            ],
+            null
+          ]
+        }
+      ],
+      "mergedCells": [
+        {
+          "roomIndex": 1,
+          "start": "16:00",
+          "rowCount": 4
+        },
+        {
+          "roomIndex": 0,
+          "start": "18:00",
+          "rowCount": 2
+        }
+      ],
+      "theme": {
+        "title": "CONGRESS COLOURS",
+        "dressCode": "DRESS CODE: ROSE · BLACK · PURPLE · LILAC",
+        "colour": "#E9C5D0"
+      },
+      "checkIn": "22:00",
+      "restaurantHours": "13:00–15:00  /  19:00–21:00"
+    },
+    {
+      "id": "sunday",
+      "title": "SUNDAY",
+      "date": "22 NOVEMBER 2026",
+      "rows": [
+        {
+          "time": [
+            "11:00",
+            "11:55"
+          ],
+          "cells": [
+            [
+              "Fabrizio e Alice",
+              "Bachata Sensual",
+              "intermediate"
+            ],
+            [
+              "Laura y Antony",
+              "Bachata Fusion",
+              "intermediate"
+            ],
+            [
+              "Sabrina y Ali",
+              "Bachata Sensual",
+              "open"
+            ]
+          ]
+        },
+        {
+          "time": [
+            "12:00",
+            "12:55"
+          ],
+          "cells": [
+            [
+              "Nacho y Silvia",
+              "Bachata New Generation",
+              "intermediate"
+            ],
+            [
+              "Aitor",
+              "Dominican Bachata",
+              "intermediate"
+            ],
+            [
+              "Martina",
+              "Bachata Lady Style",
+              "open"
+            ]
+          ]
+        },
+        {
+          "time": [
+            "13:00",
+            "13:55"
+          ],
+          "cells": [
+            [
+              "Cristian y Gabriella",
+              "Bachata Sensual",
+              "intermediate"
+            ],
+            [
+              "Andrea Xdance",
+              "Musicality with Instruments",
+              "open"
+            ],
+            [
+              "Klau y Ros",
+              "MASTERCLASS",
+              "masterclass"
+            ]
+          ]
+        },
+        {
+          "time": [
+            "14:00",
+            "14:55"
+          ],
+          "cells": [
+            [
+              "Irene y Tomas",
+              "Bachata Sensual",
+              "advanced"
+            ],
+            [
+              "Gabriele y Francesca",
+              "Bachata Sensual",
+              "intermediate"
+            ],
+            [
+              "Samuel y Adele",
+              "Bachata Fusion",
+              "open"
+            ]
+          ]
+        },
+        {
+          "time": [
+            "15:00",
+            "15:55"
+          ],
+          "cells": [
+            [
+              "Klau y Ros",
+              "Endless Bachata",
+              "advanced"
+            ],
+            [
+              "Samuele y Sofia",
+              "Bachata Sensual",
+              "intermediate"
+            ],
+            [
+              "Alex y Mattia",
+              "Bachata Contact",
+              "open"
+            ]
+          ]
+        },
+        {
+          "time": [
+            "16:00",
+            "22:00"
+          ],
+          "cells": [
+            [
+              "SOCIAL",
+              "NO REMIX",
+              "social"
+            ],
+            null,
+            null
+          ]
+        }
+      ],
+      "theme": {
+        "title": "CASUAL AFTERNOON SOCIAL",
+        "dressCode": "DRESS CODE: CASUAL",
+        "colour": "#EAD09C"
+      },
+      "checkIn": "16:00",
+      "restaurantHours": "13:00–15:00"
+    }
+  ],
+  "language": "English",
+  "masterclassPresentation": "Champagne outline and filled MASTERCLASS badge; distinct from red Advanced"
+}
