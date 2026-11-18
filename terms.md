@@ -23,11 +23,11 @@ These Terms and Conditions govern the sale of tickets and attendance at the **Mi
   [LaSalsaDelBaile](https://lasalsadelbaile.com)
   . By purchasing a ticket, you also accept their terms of service.
 - **Name Changes:**
-  Name changes are permitted for an administrative fee of
-  **€10.00**
-  per ticket. This action is allowed
-  **only before the event starts**
-  . Once the event has commenced, no name changes will be processed.
+  Ticket name changes have been closed since 10 November 2026, the deadline for name changes.
+  [Read the ticket name change notice](https://milanosensualcongress.com/change-name-ticket)
+  .
+- **Pass Sales:**
+  New passes cannot be purchased once Milano Sensual Congress 2026 starts.
 
 #### 1.2 Event Access & Wristbands
 
@@ -36,9 +36,7 @@ These Terms and Conditions govern the sale of tickets and attendance at the **Mi
 - **Damaged/Lost Wristbands:**
   To receive a replacement for a damaged wristband, you
   **must present and surrender the damaged wristband**
-  at the registration desk. If you are unable to present the wristband (e.g., it is lost), you will be required to
-  **purchase a new full-price ticket**
-  to re-enter the event.
+  at the registration desk. If you are unable to present the wristband (e.g., it is lost), you cannot re-enter the event without a valid wristband. New passes cannot be purchased once the congress starts.
 - **Right of Admission:**
   The Organizer reserves the right to refuse admission or eject any person whose conduct is deemed disorderly or who fails to comply with these Terms.
 

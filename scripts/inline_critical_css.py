@@ -534,6 +534,8 @@ def sync_data_inline_page(page, css_files, check):
 
 
 INLINE_SUPPLEMENTS = {
+    "change-name-ticket.html": ["css/ticket-policy-2026.css"],
+    "it/change-name-ticket.html": ["css/ticket-policy-2026.css"],
     "index.html": ["css/home-signup.css"],
     "it/index.html": ["css/home-signup.css"],
     "hotel.html": ["css/hotel.css"],

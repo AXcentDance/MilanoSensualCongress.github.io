@@ -12,6 +12,10 @@
       "fingerprint": "7a7bcc0e58aab30fa31b289005c613338b7b4478944c171186755260e09f6865",
       "lastmod": "2026-11-17T08:36:14+00:00"
     },
+    "change-name-ticket.html": {
+      "fingerprint": "9d6c20c80000c221c517c62b2e76a06c01c5deadb5c09e302eeb281b2758d7e7",
+      "lastmod": "2026-11-18T15:09:07+00:00"
+    },
     "contact.html": {
       "fingerprint": "ad8c44fabe6b05d1beaa543d4cd7672c1c136530ff6ed46425d99d5d7444849d",
       "lastmod": "2026-11-17T08:36:14+00:00"
@@ -35,6 +39,10 @@
     "it/artists.html": {
       "fingerprint": "9a0a0a5ee2a3351eb6e93e4c74d256a94df9b050aecb1faa4956a5ee77e16635",
       "lastmod": "2026-11-17T07:53:31+00:00"
+    },
+    "it/change-name-ticket.html": {
+      "fingerprint": "63eff7d2a3f90999f5c5ae0cea5e78196511fb96bfe08e5e295c74582b306e89",
+      "lastmod": "2026-11-18T15:09:07+00:00"
     },
     "it/congresso-bachata-2026.html": {
       "fingerprint": "b7c92119d1522eb323362d4587de605651c465dc896dba42408a7420ba294775",
@@ -161,12 +169,12 @@
       "lastmod": "2026-11-17T07:53:31+00:00"
     },
     "it/terms.html": {
-      "fingerprint": "5ca30a8074a0a7a6a4cf36c8d0690d53c289972acb11fa37bb4938ec508f7d74",
-      "lastmod": "2026-11-17T07:53:31+00:00"
+      "fingerprint": "559963584598ec7c8ca01ac601dbddd783ed4f5de6f21bac710270639310fa61",
+      "lastmod": "2026-11-18T15:09:07+00:00"
     },
     "it/tickets.html": {
-      "fingerprint": "60582d11538ff3c2a0e0d144fb6a5d63a89598840c8910f2a423ba6ee6b5e7a8",
-      "lastmod": "2026-11-17T07:53:31+00:00"
+      "fingerprint": "5591c10c0b9061a959e53c569ae59a36270d0d93e5ad65afc318a61f502dff42",
+      "lastmod": "2026-11-18T15:09:07+00:00"
     },
     "it/transfer.html": {
       "fingerprint": "93b945ac86db7f1aac75db4c6efe03bfc0f054418a19b5d25414b4ba9547cd8f",
@@ -277,12 +285,12 @@
       "lastmod": "2026-11-17T08:36:14+00:00"
     },
     "terms.html": {
-      "fingerprint": "6a96ee3922faeef94db6495f798dd4b673e86bff7e92859cae1f9555ec7b9130",
-      "lastmod": "2026-11-17T08:36:14+00:00"
+      "fingerprint": "b14fcdc707f2751be4dc39ec01dab35bd9ac6882c7a650be4ec944a26cdefc10",
+      "lastmod": "2026-11-18T15:09:07+00:00"
     },
     "tickets.html": {
-      "fingerprint": "67766cefa41daf5166f09617b0872474e74a978af9ddbe8303e307a1a758c5f4",
-      "lastmod": "2026-11-17T08:36:14+00:00"
+      "fingerprint": "067243888640795a5bd3b62723f4cbcd9e3b12ba7c6057f12882d9ace7da65c7",
+      "lastmod": "2026-11-18T15:09:07+00:00"
     },
     "transfer.html": {
       "fingerprint": "e17fdf0258bb3f44f7e09a91365d62b317ffc773281d6189b8d15654bf540463",

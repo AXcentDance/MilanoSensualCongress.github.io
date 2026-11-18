@@ -22,12 +22,12 @@ I presenti Termini e Condizioni regolano la vendita dei biglietti e la partecipa
   I biglietti sono venduti tramite il nostro partner
   [LaSalsaDelBaile](https://lasalsadelbaile.com)
   . Acquistando un biglietto, accetti anche i loro termini di servizio.
-- **Cambi di Nome:**
-  I cambi di nome sono consentiti a fronte di una tassa amministrativa di
-  **€10,00**
-  per biglietto. Questa operazione è consentita
-  **solo prima dell'inizio dell'evento**
-  . Una volta iniziato l'evento, non verranno elaborati cambi di nome.
+- **Cambio Nome:**
+  Il cambio nome sui biglietti è chiuso dal 10 novembre 2026, termine ultimo per le modifiche.
+  [Leggi l’avviso sul cambio nome dei biglietti](https://milanosensualcongress.com/it/change-name-ticket)
+  .
+- **Vendita Pass:**
+  Non è possibile acquistare nuovi pass dopo l’inizio del Milano Sensual Congress 2026.
 
 #### 1.2 Accesso all'Evento e Braccialetti
 
@@ -36,9 +36,7 @@ I presenti Termini e Condizioni regolano la vendita dei biglietti e la partecipa
 - **Braccialetti Danneggiati/Smarriti:**
   Per ricevere un braccialetto sostitutivo in caso di danneggiamento, è
   **necessario presentare e riconsegnare il braccialetto danneggiato**
-  al banco registrazioni. Se non sei in grado di presentare il braccialetto (es. smarrimento), ti sarà richiesto di
-  **acquistare un nuovo biglietto a prezzo pieno**
-  per rientrare all'evento.
+  al banco registrazioni. Se non sei in grado di presentare il braccialetto (es. smarrimento), non puoi rientrare all’evento senza un braccialetto valido. Non è possibile acquistare nuovi pass dopo l’inizio del congresso.
 - **Diritto di Ammissione:**
   L'Organizzatore si riserva il diritto di rifiutare l'ammissione o allontanare qualsiasi persona la cui condotta sia ritenuta inappropriata o che non rispetti i presenti Termini.
 

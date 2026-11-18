@@ -1,6 +1,6 @@
 # Milano Sensual Congress 2026 - Full Site Documentation
 # Generated from the public website; do not edit directly.
-# Total Pages: 72
+# Total Pages: 74
 
 ## Page: Milano Sensual Congress 2026 — Bachata Congress, 20–22 November (https://milanosensualcongress.com/)
 Description: Join Milano Sensual Congress, November 20–22, 2026 at Devero Hotel near Milan. Explore bachata workshops, parties, international artists and tickets.
@@ -707,6 +707,8 @@ Scegli la Tua Esperienza
 
 I prezzi non includono le commissioni di LaSalsaDelBaile. Full Pass: +€4,30; Full Social Pass: +€3,60; Jack & Jill: +€2,10.
 
+Non è possibile acquistare nuovi pass dopo l’inizio del Milano Sensual Congress 2026.
+
  Miglior Valore
 
 Full Pass
@@ -836,9 +838,9 @@ Domande Frequenti
 
  Posso cambiare il nome sul mio biglietto?
 
-Sì, i cambi di nome sono possibili. Puoi effettuare questa
- operazione direttamente sul sito web per una piccola tassa amministrativa. Gestisci la tua prenotazione
- tramite la piattaforma di biglietteria.
+No. Il cambio nome sui biglietti è chiuso dal 10 novembre 2026, termine ultimo per le modifiche.
+
+Leggi l’avviso sul cambio nome dei biglietti
 
  Cosa mi serve per partecipare al Jack & Jill?
 
@@ -902,6 +904,8 @@ Email
 Choose Your Experience
 
 Prices exclude LaSalsaDelBaile booking fees. Full Pass: +€4.30; Full Social Pass: +€3.60; Jack & Jill: +€2.10.
+
+New passes cannot be purchased once Milano Sensual Congress 2026 starts.
 
  Best Value
 
@@ -1032,9 +1036,9 @@ Frequently Asked Questions
 
  Can I change the name on my ticket?
 
-Yes, name changes are possible. You can perform this action
- directly on the website for a small administrative fee. Please manage your booking through the ticket
- platform.
+No. Ticket name changes have been closed since 10 November 2026, the deadline for name changes.
+
+Read the ticket name change notice
 
  What do I need to participate in the Jack & Jill?
 
@@ -1466,13 +1470,13 @@ LaSalsaDelBaile
 . Acquistando un
  biglietto, accetti anche i loro termini di servizio.
 
-Cambi di Nome:
- I cambi di nome sono consentiti a fronte di una tassa amministrativa di
+Cambio Nome:
+ Il cambio nome sui biglietti è chiuso dal 10 novembre 2026, termine ultimo per le modifiche.
+Leggi l’avviso sul cambio nome dei biglietti
+.
 
-€10,00
- per biglietto. Questa operazione è consentita
-solo prima dell'inizio dell'evento
-. Una volta iniziato l'evento, non verranno elaborati cambi di nome.
+Vendita Pass:
+ Non è possibile acquistare nuovi pass dopo l’inizio del Milano Sensual Congress 2026.
 
 1.2 Accesso all'Evento e Braccialetti
 
@@ -1483,10 +1487,8 @@ Braccialetti Danneggiati/Smarriti:
  Per ricevere un braccialetto sostitutivo in caso di danneggiamento, è
 
 necessario presentare e riconsegnare il braccialetto danneggiato
- al banco registrazioni. Se non sei in grado di presentare il braccialetto (es. smarrimento), ti sarà richiesto di
-
-acquistare un nuovo biglietto a prezzo pieno
- per rientrare all'evento.
+ al banco registrazioni. Se non sei in grado di presentare il braccialetto (es. smarrimento), non puoi rientrare all’evento senza un braccialetto valido.
+ Non è possibile acquistare nuovi pass dopo l’inizio del congresso.
 
 Diritto di Ammissione:
  L'Organizzatore si riserva il diritto di rifiutare l'ammissione o allontanare qualsiasi persona la cui condotta sia ritenuta inappropriata o che non rispetti i presenti Termini.
@@ -1605,13 +1607,12 @@ LaSalsaDelBaile
  ticket, you also accept their terms of service.
 
 Name Changes:
- Name changes are permitted for an administrative fee of
+ Ticket name changes have been closed since 10 November 2026, the deadline for name changes.
+Read the ticket name change notice
+.
 
-€10.00
- per ticket. This action is allowed
-only before the event
- starts
-. Once the event has commenced, no name changes will be processed.
+Pass Sales:
+ New passes cannot be purchased once Milano Sensual Congress 2026 starts.
 
 1.2 Event Access & Wristbands
 
@@ -1624,10 +1625,8 @@ Damaged/Lost Wristbands:
 
 must present and surrender the damaged wristband
  at the registration desk. If
- you are unable to present the wristband (e.g., it is lost), you will be required to
-
-purchase a new full-price ticket
- to re-enter the event.
+ you are unable to present the wristband (e.g., it is lost), you cannot re-enter the event without a valid wristband.
+ New passes cannot be purchased once the congress starts.
 
 Right of Admission:
  The Organizer reserves the right to refuse admission or
@@ -1857,6 +1856,31 @@ No. A bachata congress welcomes different levels. Choose workshops that match yo
 What makes a congress different from a normal party?
 
 A congress combines workshops, parties, social dancing, shows, artists and travel into one intensive weekend. It is both a learning event and a dance community experience.
+
+---
+
+## Page: Change Name Ticket - Milano Sensual Congress 2026 (https://milanosensualcongress.com/change-name-ticket)
+Description: Ticket name changes have been closed since 10 November 2026. New passes cannot be purchased once Milano Sensual Congress 2026 starts.
+
+Change Name Ticket - Milano Sensual Congress 2026
+
+Milano Sensual Congress 2026
+/
+ Ticket information
+Change Name Ticket
+Ticket name changes have been closed since 10 November 2026, the deadline for name changes.
+This notice applies to Milano Sensual Congress 2026.
+
+Ticket information
+↗
+
+Name changes are closed
+Ticket name changes have been closed since 10 November 2026, the deadline for name changes.
+
+Pass sales close when the congress starts
+New passes cannot be purchased once Milano Sensual Congress 2026 starts.
+
+Terms and conditions
 
 ---
 
@@ -4664,6 +4688,31 @@ info@oltreilviaggio.net
 .
 
 Vedi le informazioni sugli hotel →
+
+---
+
+## Page: Cambio Nome Biglietto - Milano Sensual Congress 2026 (https://milanosensualcongress.com/it/change-name-ticket)
+Description: Il cambio nome è chiuso dal 10 novembre 2026. Non è possibile acquistare nuovi pass dopo l’inizio del Milano Sensual Congress 2026.
+
+Cambio Nome Biglietto - Milano Sensual Congress 2026
+
+Milano Sensual Congress 2026
+/
+ Informazioni sui biglietti
+Cambio Nome Biglietto
+Il cambio nome sui biglietti è chiuso dal 10 novembre 2026, termine ultimo per le modifiche.
+Questo avviso riguarda il Milano Sensual Congress 2026.
+
+Informazioni sui biglietti
+↗
+
+Il cambio nome è chiuso
+Il cambio nome sui biglietti è chiuso dal 10 novembre 2026, termine ultimo per le modifiche.
+
+La vendita dei pass termina all’inizio del congresso
+Non è possibile acquistare nuovi pass dopo l’inizio del Milano Sensual Congress 2026.
+
+Termini e condizioni
 
 ---
 

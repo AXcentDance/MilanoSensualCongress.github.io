@@ -22,6 +22,8 @@ No tickets of any kind will be sold during the weekend.
 
 Prices exclude LaSalsaDelBaile booking fees. Full Pass: +€4.30; Full Social Pass: +€3.60; Jack & Jill: +€2.10.
 
+New passes cannot be purchased once Milano Sensual Congress 2026 starts.
+
 Best Value
 
 #### Full Pass
@@ -132,7 +134,9 @@ Spain
 
 ##### Can I change the name on my ticket?
 
-Yes, name changes are possible. You can perform this action directly on the website for a small administrative fee. Please manage your booking through the ticket platform.
+No. Ticket name changes have been closed since 10 November 2026, the deadline for name changes.
+
+[Read the ticket name change notice](https://milanosensualcongress.com/change-name-ticket)
 
 ##### What do I need to participate in the Jack & Jill?
 
