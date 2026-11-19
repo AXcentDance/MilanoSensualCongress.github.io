@@ -173,12 +173,12 @@
             [
               "Agustin y Alba",
               "Bachata Sensual",
-              "open"
+              "advanced"
             ],
             [
-              "Tony y Svenja",
+              "Irene y Tomas",
               "Bachata Sensual",
-              "intermediate"
+              "open"
             ],
             null
           ]
@@ -195,9 +195,9 @@
               "advanced"
             ],
             [
-              "Irene y Tomas",
+              "Tony y Svenja",
               "Bachata Sensual",
-              "intermediate"
+              "open"
             ],
             null
           ]
@@ -356,11 +356,7 @@
               "",
               "social"
             ],
-            [
-              "Flavio y Gaia",
-              "Bachata Nueva",
-              "open"
-            ]
+            null
           ]
         },
         {

@@ -4351,14 +4351,14 @@ Dress code:
 Read timetable as text
 10:00–10:55
 Duomo:
- Agustin y Alba · Bachata Sensual · Beginner
+ Agustin y Alba · Bachata Sensual · Advanced
 Navigli:
- Tony y Svenja · Bachata Sensual · Intermediate
+ Irene y Tomas · Bachata Sensual · Beginner
 11:00–11:55
 Duomo:
  Gero y Migle · Bachata Esencia · Advanced
 Navigli:
- Irene y Tomas · Bachata Sensual · Intermediate
+ Tony y Svenja · Bachata Sensual · Beginner
 12:00–12:55
 Duomo:
  Ale y Xidan · Bachata Sensual · Intermediate
@@ -4406,8 +4406,6 @@ Duomo:
  J&J
 Navigli:
  SOCIAL
-San Babila:
- Flavio y Gaia · Bachata Nueva · Beginner
 19:00–19:55
 Duomo:
  J&J
@@ -7185,14 +7183,14 @@ Dress code:
 Leggi gli orari in formato testo
 10:00–10:55
 Duomo:
- Agustin y Alba · Bachata Sensual · Principianti
+ Agustin y Alba · Bachata Sensual · Avanzato
 Navigli:
- Tony y Svenja · Bachata Sensual · Intermedio
+ Irene y Tomas · Bachata Sensual · Principianti
 11:00–11:55
 Duomo:
  Gero y Migle · Bachata Esencia · Avanzato
 Navigli:
- Irene y Tomas · Bachata Sensual · Intermedio
+ Tony y Svenja · Bachata Sensual · Principianti
 12:00–12:55
 Duomo:
  Ale y Xidan · Bachata Sensual · Intermedio
@@ -7240,8 +7238,6 @@ Duomo:
  J&J
 Navigli:
  SOCIAL
-San Babila:
- Flavio y Gaia · Bachata Nueva · Principianti
 19:00–19:55
 Duomo:
  J&J

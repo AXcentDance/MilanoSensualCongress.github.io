@@ -63,7 +63,7 @@ From 17:00
 
 21 November 2026
 
-[Open full-size timetable](https://milanosensualcongress.com/images/schedule/milano-sensual-congress-2026-saturday-schedule-v51-4k.png)
+[Open full-size timetable](https://milanosensualcongress.com/images/schedule/milano-sensual-congress-2026-saturday-schedule-v56-4k.png)
 
 **Check-in**
 
@@ -82,11 +82,11 @@ From 17:00
 **Read timetable as text**
 
 1. ##### 10:00–10:55
-  **Duomo:** Agustin y Alba · Bachata Sensual · Beginner
-  **Navigli:** Tony y Svenja · Bachata Sensual · Intermediate
+  **Duomo:** Agustin y Alba · Bachata Sensual · Advanced
+  **Navigli:** Irene y Tomas · Bachata Sensual · Beginner
 2. ##### 11:00–11:55
   **Duomo:** Gero y Migle · Bachata Esencia · Advanced
-  **Navigli:** Irene y Tomas · Bachata Sensual · Intermediate
+  **Navigli:** Tony y Svenja · Bachata Sensual · Beginner
 3. ##### 12:00–12:55
   **Duomo:** Ale y Xidan · Bachata Sensual · Intermediate
   **Navigli:** Oscar y Ines · Bachata Sensual · Advanced
@@ -114,7 +114,6 @@ From 17:00
 9. ##### 18:00–18:55
   **Duomo:** J&J
   **Navigli:** SOCIAL
-  **San Babila:** Flavio y Gaia · Bachata Nueva · Beginner
 10. ##### 19:00–19:55
   **Duomo:** J&J
   **Navigli:** SOCIAL
