@@ -75,22 +75,6 @@ Social Pomeridiano **16:00 – 22:00**
 
 [Party e Social Dancing](https://milanosensualcongress.com/it/party)
 
-Il Team Dietro la Magia
-
-### Gli Organizzatori del Bachata Congress Italia
-
-#### Marco Fracassi
-
-Cofondatore e Organizzatore del Congresso
-
-@marcoyvaleria — Marco e la sua partner di ballo Valeria sono artisti internazionali di Bachata Sensual con una scuola ad Arcore, MB. Marco ha fondato il **Milano Sensual Congress** insieme ad Alessandro Slamitz. Con un decennio di esperienza nell'insegnamento e nelle performance, sono direttori del **Gero y Migle Project Performance Show** a Milano, e Marco lavora come direttore artistico per uno dei migliori club latini a Milano, l' UnaMas Club.
-
-#### Alessandro Slamitz (Ale)
-
-Cofondatore e Organizzatore del Congresso
-
-@aleyxidan — Ale e la sua partner di ballo Xidan sono artisti internazionali di Bachata Sensual. Hanno fondato [AXcent Dance](https://axcentdance.com), la prima scuola specializzata in Bachata Sensual a Zurigo, fondata nel 2025. Oltre che artisti, sono giudici del Campionato Svizzero Internazionale di Salsa e Bachata. Alessandro ha fondato il **Milano Sensual Congress** insieme a Marco Fracassi. Ale y Xidan sono anche i co-organizzatori del **Bailadoro Dance Weekend**.
-
 ### Servizio Transfer Ufficiale
 
 Raggiungi il Devero Hotel da Malpensa, Linate, Bergamo o Milano Centrale. I transfer devono essere prenotati in anticipo.
