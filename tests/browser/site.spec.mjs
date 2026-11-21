@@ -91,7 +91,7 @@ for (const entry of sitePages()) {
   });
 }
 
-for (const path of ['/', '/it/', '/tickets', '/it/tickets']) {
+for (const path of ['/', '/it/']) {
   test(`${path}: sales deadline replaces the expired price reminder`, async ({ page }) => {
     await page.goto(path);
     await expect(page.locator('#sales-deadline')).toContainText(path.startsWith('/it')
@@ -113,6 +113,10 @@ for (const path of ['/', '/it/', '/tickets', '/it/tickets']) {
 for (const path of ['/tickets', '/it/tickets']) {
   test(`${path}: separate 2026 and 2027 ticket links without a reminder signup`, async ({ page }) => {
     await page.goto(path);
+    await expect(page.locator('#sales-deadline-heading')).toHaveCount(0);
+    await expect(page.locator('#sales-deadline')).not.toContainText(path.startsWith('/it')
+      ? 'Tutte le vendite chiudono venerdì 20 novembre a mezzogiorno.'
+      : 'All ticket sales close on Friday, 20 November at midday.');
     const buttons = page.locator('#sales-deadline a');
     await expect(buttons).toHaveCount(2);
     await expect(buttons.nth(0)).toHaveText(path.startsWith('/it') ? 'Acquista party serale 2026' : 'Buy 2026 night party');
