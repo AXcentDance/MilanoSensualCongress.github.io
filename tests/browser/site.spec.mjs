@@ -91,26 +91,7 @@ for (const entry of sitePages()) {
   });
 }
 
-for (const path of ['/', '/it/']) {
-  test(`${path}: sales deadline replaces the expired price reminder`, async ({ page }) => {
-    await page.goto(path);
-    await expect(page.locator('#sales-deadline')).toContainText(path.startsWith('/it')
-      ? 'Tutte le vendite chiudono venerdì 20 novembre a mezzogiorno.'
-      : 'All ticket sales close on Friday, 20 November at midday.');
-    const weekendNotice = path.startsWith('/it')
-      ? 'Durante il weekend non sarà venduto alcun tipo di biglietto.'
-      : 'No tickets of any kind will be sold during the weekend.';
-    await expect(page.locator('#sales-deadline')).not.toContainText(weekendNotice);
-    if (!path.endsWith('tickets')) {
-      await expect(page.locator('#sales-deadline a[href="program"], #sales-deadline a[href="programma"]')).toHaveCount(0);
-      await expect(page.locator('#reminder-container')).toHaveCount(0);
-      await expect(page.locator('#home-signup input[type="email"]')).toBeVisible();
-    }
-    await expect(page.locator('#countdown, [role="timer"]')).toHaveCount(0);
-  });
-}
-
-for (const path of ['/tickets', '/it/tickets']) {
+for (const path of ['/', '/it/', '/tickets', '/it/tickets']) {
   test(`${path}: separate 2026 and 2027 ticket links without a reminder signup`, async ({ page }) => {
     await page.goto(path);
     await expect(page.locator('#sales-deadline-heading')).toHaveCount(0);
@@ -127,8 +108,15 @@ for (const path of ['/tickets', '/it/tickets']) {
       await expect(button).toBeVisible();
       await expect(button).toHaveAttribute('target', '_blank');
     }
-    await expect(page.locator('#reminder-container, #reminder-form, #reminder-success')).toHaveCount(0);
+    await expect(page.locator('#reminder-container, #reminder-form, #reminder-success, #home-signup, #home-signup-success')).toHaveCount(0);
     await expect(page.locator('script[src*="reminder-form.js"]')).toHaveCount(0);
+    if (!path.endsWith('tickets')) {
+      const repeatedButtons = page.locator('header a[href="https://lasalsadelbaile.com/MSC2026"], header a[href="https://lasalsadelbaile.com/MSC2027"]');
+      await expect(repeatedButtons).toHaveCount(4);
+      for (let i = 0; i < 4; i++) {
+        await expect(repeatedButtons.nth(i)).toHaveAttribute('href', `https://lasalsadelbaile.com/MSC${i % 2 ? '2027' : '2026'}`);
+      }
+    }
   });
 }
 

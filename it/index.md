@@ -10,9 +10,7 @@ Canonical: https://milanosensualcongress.com/it/
 
 Tre giorni di workshop di bachata, party e social dancing al Devero Hotel, vicino a Milano, con artisti internazionali e ballerini da tutta Europa.
 
-### Tutte le vendite chiudono venerdì 20 novembre a mezzogiorno.
-
-[Blocca il Full Pass a 140€](https://lasalsadelbaile.com/MSC2026)
+[Acquista party serale 2026](https://lasalsadelbaile.com/MSC2026) [Acquista 2027](https://lasalsadelbaile.com/MSC2027)
 
 1.000+ ballerini · 20+ nazioni · 40+ ore di workshop · 20+ ore di social dancing · 3 giorni
 
@@ -37,7 +35,7 @@ Il congresso si svolge al Devero Hotel & Spa. Devero e AS Hotel Cambiago sono es
 
 Competi con i migliori.
 
-[Acquista il Pass](https://lasalsadelbaile.com/MSC2026)
+[Acquista party serale 2026](https://lasalsadelbaile.com/MSC2026) [Acquista 2027](https://lasalsadelbaile.com/MSC2027)
 
 La Scelta Internazionale
 
