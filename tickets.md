@@ -14,9 +14,7 @@ Join us at the stunning Devero Hotel for the premier Bachata event. We went sold
 
 ### All ticket sales close on Friday, 20 November at midday.
 
-No tickets of any kind will be sold during the weekend.
-
-[Get Tickets](https://lasalsadelbaile.com/MSC2026)
+[Buy 2026 night party](https://lasalsadelbaile.com/MSC2026) [Buy 2027](https://lasalsadelbaile.com/MSC2027)
 
 ### Choose Your Experience
 

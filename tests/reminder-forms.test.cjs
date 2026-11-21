@@ -4,7 +4,7 @@ const { resolve } = require('node:path');
 const { test } = require('node:test');
 const vm = require('node:vm');
 
-const pages = ['index.html', 'tickets.html', 'it/index.html', 'it/tickets.html'];
+const pages = ['index.html', 'it/index.html'];
 
 function mount(page, { reply = 'success', httpOK = true, networkError = false, analyticsError = false } = {}) {
   const html = readFileSync(resolve(__dirname, '..', page), 'utf8');

@@ -14,9 +14,7 @@ Partecipa al più atteso dei **congressi bachata 2026**. Scegli il pass che fa p
 
 ### Tutte le vendite chiudono venerdì 20 novembre a mezzogiorno.
 
-Durante il weekend non sarà venduto alcun tipo di biglietto.
-
-[Acquista Biglietti](https://lasalsadelbaile.com/MSC2026)
+[Acquista party serale 2026](https://lasalsadelbaile.com/MSC2026) [Acquista 2027](https://lasalsadelbaile.com/MSC2027)
 
 ### Scegli la Tua Esperienza
 

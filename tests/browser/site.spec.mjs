@@ -100,10 +100,8 @@ for (const path of ['/', '/it/', '/tickets', '/it/tickets']) {
     const weekendNotice = path.startsWith('/it')
       ? 'Durante il weekend non sarà venduto alcun tipo di biglietto.'
       : 'No tickets of any kind will be sold during the weekend.';
-    if (path.endsWith('tickets')) {
-      await expect(page.locator('#sales-deadline')).toContainText(weekendNotice);
-    } else {
-      await expect(page.locator('#sales-deadline')).not.toContainText(weekendNotice);
+    await expect(page.locator('#sales-deadline')).not.toContainText(weekendNotice);
+    if (!path.endsWith('tickets')) {
       await expect(page.locator('#sales-deadline a[href="program"], #sales-deadline a[href="programma"]')).toHaveCount(0);
       await expect(page.locator('#reminder-container')).toHaveCount(0);
       await expect(page.locator('#home-signup input[type="email"]')).toBeVisible();
@@ -113,27 +111,20 @@ for (const path of ['/', '/it/', '/tickets', '/it/tickets']) {
 }
 
 for (const path of ['/tickets', '/it/tickets']) {
-  for (const outcome of ['success', 'failure']) test(`${path}: 2027 signup ${outcome} with a stubbed response`, async ({ page }) => {
-    const requests = [];
-    await page.route('https://script.google.com/**', route => {
-      requests.push(route.request().url());
-      return route.fulfill({ status: outcome === 'success' ? 200 : 503, contentType: 'text/plain', body: outcome });
-    });
+  test(`${path}: separate 2026 and 2027 ticket links without a reminder signup`, async ({ page }) => {
     await page.goto(path);
-    const form = page.locator('#reminder-form');
-    await page.evaluate(() => document.fonts.ready);
-    // Finish positioning before focus/click can start competing smooth scrolls.
-    await form.evaluate(el => el.scrollIntoView({ block: 'center', behavior: 'instant' }));
-    await form.locator('input[type="email"]').fill('audit@example.invalid');
-    await form.locator('button[type="submit"]').click();
-    if (outcome === 'success') await expect(page.locator('#reminder-container')).toContainText(path.startsWith('/it') ? 'Grazie' : 'Thank you');
-    else {
-      await expect(page.getByRole('alert')).toBeVisible();
-      await expect(form.locator('button[type="submit"]')).toBeEnabled();
-      await expect(form.locator('input[type="email"]')).toHaveValue('audit@example.invalid');
+    const buttons = page.locator('#sales-deadline a');
+    await expect(buttons).toHaveCount(2);
+    await expect(buttons.nth(0)).toHaveText(path.startsWith('/it') ? 'Acquista party serale 2026' : 'Buy 2026 night party');
+    await expect(buttons.nth(0)).toHaveAttribute('href', 'https://lasalsadelbaile.com/MSC2026');
+    await expect(buttons.nth(1)).toHaveText(path.startsWith('/it') ? 'Acquista 2027' : 'Buy 2027');
+    await expect(buttons.nth(1)).toHaveAttribute('href', 'https://lasalsadelbaile.com/MSC2027');
+    for (const button of await buttons.all()) {
+      await expect(button).toBeVisible();
+      await expect(button).toHaveAttribute('target', '_blank');
     }
-    expect(requests.length).toBe(1);
-    expect(new URL(requests[0]).searchParams.get('source')).toContain('2027 sales opening');
+    await expect(page.locator('#reminder-container, #reminder-form, #reminder-success')).toHaveCount(0);
+    await expect(page.locator('script[src*="reminder-form.js"]')).toHaveCount(0);
   });
 }
 
