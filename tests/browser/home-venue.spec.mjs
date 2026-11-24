@@ -156,7 +156,8 @@ for (const path of ['/', '/it/']) {
     const section = page.locator('#home-jnj');
     await expect(section.locator('h3')).toHaveText(['Amateur', 'Semi-pro']);
     expect(await section.evaluate(el => el.nextElementSibling.id)).toBe('home-questions');
-    await expect(section.getByRole('link')).toHaveAttribute('href', `${path === '/it/' ? '/it' : ''}/jacknjill`);
+    await expect(section.getByRole('link')).toHaveCount(0);
+    await expect(section.locator('.jnj-note')).toHaveCount(0);
     const date = page.locator('.premiere-date-line');
     expect(await date.evaluate(el => el.scrollWidth <= el.clientWidth + 1)).toBe(true);
     if (page.viewportSize().width >= 1000) {

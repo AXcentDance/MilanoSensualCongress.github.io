@@ -1,76 +1,101 @@
-import { test, expect } from '@playwright/test';
-import { writeFile } from 'node:fs/promises';
+import {test, expect} from '@playwright/test';
 
-const destination = 'https://wa.me/41799668481';
-test.beforeEach(async ({ context }) => {
-  // No test details leave the browser, including the prepared WhatsApp draft.
-  await context.route('https://**/*', route => route.fulfill({ status: 200, contentType: 'text/plain', body: '' }));
+const endpoint = 'https://script.google.com/macros/s/**/exec';
+test.beforeEach(async ({context}) => {
+  // Never submit test data to Google or the congress team.
+  await context.route('https://**/*', route => route.abort());
 });
 
-for (const path of ['/promoters', '/it/promoters']) {
+async function requiredFields(page) {
+  for (const [name, value] of Object.entries({name:'Alex & Test',phone:'+00123',country:'Italy',city:'Milano'}))
+    await page.locator('#promoter-' + name).fill(value);
+}
+
+for (const path of ['/promoters','/it/promoters']) {
   const italian = path.startsWith('/it/');
-  test(`${path}: ambassador application prepares a complete draft without sending it`, async ({ page }, testInfo) => {
-    const drafts = [];
-    await page.route('https://wa.me/**', route => {
-      drafts.push(new URL(route.request().url()));
-      return route.fulfill({ status: 200, contentType: 'text/html', body: '<!doctype html><title>Local intercepted draft</title>' });
+  test(path + ': application includes all fields and confirms a matching receipt', async ({page}, testInfo) => {
+    let request;
+    await page.route(endpoint, route => {
+      expect(route.request().method()).toBe('POST');
+      request = Object.fromEntries(new URLSearchParams(route.request().postData()));
+      return route.fulfill({json:{ok:true,submissionId:request.submissionId}});
     });
     await page.goto(path);
-    await expect(page.locator('.promoters-kicker, .promoters-start')).toHaveCount(0);
     await expect(page.locator('.promoters-hero-logo')).toBeVisible();
-    await expect(page.locator('.promoters-join')).toHaveAttribute('href', '#ambassador-application');
-    expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
+    await expect(page.locator('.promoters-join')).toHaveAttribute('href','#ambassador-application');
+    await expect(page.locator('#promoter-email, #promoter-social, option[value="dancer"]')).toHaveCount(0);
+    await expect(page.locator('#promoter-phone')).toHaveJSProperty('required',true);
+    await expect(page.locator('#promoter-message')).toHaveJSProperty('required',false);
     await page.evaluate(() => document.fonts.ready);
-    const layout = await page.evaluate(() => {
-      const rect = selector => {
-        const { x, y, width, height } = document.querySelector(selector).getBoundingClientRect();
-        return { x, y, width, height };
-      };
-      return { viewport: window.innerWidth, scrollWidth: document.documentElement.scrollWidth,
-        hero: rect('.promoters-hero'), logo: rect('.promoters-hero-logo'), form: rect('.promoters-application') };
+    const bounds = await page.locator('.promoters-application-fields > div').evaluateAll(fields =>
+      fields.map(field => { const r = field.getBoundingClientRect(); return {top:r.top,left:r.left,right:r.right}; }));
+    expect(bounds).toHaveLength(6);
+    const width = page.viewportSize().width;
+    bounds.forEach((r, i) => {
+      expect(r.right).toBeLessThanOrEqual(width);
+      if (!i) return;
+      if (width > 600 && i % 2) expect(r.top).toBeCloseTo(bounds[i-1].top,0);
+      else expect(r.top).toBeGreaterThan(bounds[i-1].top);
     });
-    await testInfo.attach('layout', { body: JSON.stringify(layout), contentType: 'application/json' });
-    await writeFile(testInfo.outputPath('layout.json'), JSON.stringify(layout, null, 2));
-    await page.screenshot({ path: testInfo.outputPath('application-page.png'), fullPage: true, animations: 'disabled' });
-    await page.locator('#promoter-name').fill('Alex & Test');
-    await page.locator('#promoter-email').fill('alex@example.test');
-    await page.locator('#promoter-phone').fill('+41 00 000 00 00');
-    await page.locator('#promoter-country').fill('Switzerland');
-    await page.locator('#promoter-city').fill('Zürich');
-    await page.locator('#promoter-social').fill('@test_dancers');
+    await page.locator('#ambassador-application').screenshot({path:testInfo.outputPath('application-form.png'),animations:'disabled'});
+    await requiredFields(page);
     await page.locator('#promoter-role').selectOption('teacher');
-    await page.locator('#promoter-community').fill('Test Dance School');
-    await page.locator('#promoter-message').fill('Teaching Bachata.\nBringing a group & sharing the event.');
-    await expect(page.locator('#application-handoff')).toContainText(italian ? 'Non sarà inviata' : 'Nothing is sent');
-    await Promise.all([
-      page.waitForURL(url => url.origin + url.pathname === destination),
-      page.locator('.promoters-application-submit').click(),
-    ]);
-    expect(drafts).toHaveLength(1);
-    expect([...drafts[0].searchParams.keys()]).toEqual(['text']);
-    const text = drafts[0].searchParams.get('text');
-    for (const value of ['Alex & Test', 'alex@example.test', '+41 00 000 00 00', 'Switzerland', 'Zürich', '@test_dancers', 'Test Dance School', 'Bringing a group & sharing the event.']) expect(text).toContain(value);
-    expect(text).toContain(italian ? 'Il tuo ruolo: Insegnante' : 'Your role: Teacher');
+    await page.locator('#promoter-community').fill('Dance School');
+    await page.locator('#promoter-message').fill('Local classes.\nSchool events.');
+    const submit = page.locator('.promoters-application-submit');
+    await submit.click();
+    await expect(page.getByRole('status')).toContainText(italian ? 'Abbiamo ricevuto' : 'We received');
+    await expect(submit).toBeDisabled();
+    expect(request).toEqual({name:'Alex & Test',phone:'+00123',country:'Italy',city:'Milano',role:'teacher',
+      community:'Dance School',message:'Local classes.\nSchool events.',website:'',language:italian ? 'it':'en',
+      response:'json',submissionId:expect.stringMatching(/^[0-9a-f-]{36}$/)});
   });
 
-  test(`${path}: ambassador validation preserves unfinished applications`, async ({ page }) => {
-    const handoffs = [];
-    await page.route('https://wa.me/**', route => { handoffs.push(route.request().url()); return route.fulfill({ status: 200, body: '' }); });
+  test(path + ': empty phone blocks submission and an unconfirmed receipt can be retried', async ({page}) => {
+    const posts = [];
+    await page.route(endpoint, route => {
+      const data = new URLSearchParams(route.request().postData());
+      posts.push(data);
+      return route.fulfill({json:{ok:true,submissionId:posts.length === 1 ? 'different' : data.get('submissionId')}});
+    });
     await page.goto(path);
-    await page.locator('#promoter-name').fill('   ');
-    await page.locator('#promoter-email').fill('alex@example.test');
-    await page.locator('#promoter-country').fill('Switzerland');
-    await page.locator('#promoter-city').fill('Zürich');
-    await page.locator('#promoter-message').fill('I would like to collaborate.');
-    await page.locator('.promoters-application-submit').click();
-    expect(handoffs).toHaveLength(0);
-    expect(await page.locator('#promoter-name').evaluate(input => input.validity.customError)).toBe(true);
-    await page.locator('#promoter-name').fill('Alex');
-    expect(await page.locator('#promoter-name').evaluate(input => input.validity.valid)).toBe(true);
-    await expect(page.locator('#promoter-message')).toHaveValue('I would like to collaborate.');
-    await page.locator('#promoter-email').fill('invalid');
-    await page.locator('.promoters-application-submit').click();
-    expect(handoffs).toHaveLength(0);
-    expect(await page.locator('#promoter-email').evaluate(input => input.validity.typeMismatch)).toBe(true);
+    await requiredFields(page);
+    const phone = page.locator('#promoter-phone');
+    const submit = page.locator('.promoters-application-submit');
+    await phone.fill('');
+    await submit.click();
+    expect(await phone.evaluate(input => input.validity.valueMissing)).toBe(true);
+    await phone.fill('   ');
+    await submit.click();
+    expect(await phone.evaluate(input => input.validity.customError)).toBe(true);
+    expect(posts).toHaveLength(0);
+    await phone.fill('+00123');
+    await submit.click();
+    await expect(page.getByRole('status')).toContainText(italian ? 'Invio non confermato' : 'could not confirm');
+    await expect(phone).toHaveValue('+00123');
+    await submit.click();
+    await expect(submit).toBeDisabled();
+    expect(posts).toHaveLength(2);
+    expect(posts[1].get('submissionId')).toBe(posts[0].get('submissionId'));
+    for (const name of ['role','community','message']) expect(posts[1].get(name)).toBe('');
+  });
+
+  test(path + ': native form submits all details without JavaScript', async ({browser}) => {
+    const context = await browser.newContext({javaScriptEnabled:false,baseURL:'http://127.0.0.1:4173'});
+    try {
+      await context.route('https://**/*', route => route.abort());
+      const page = await context.newPage();
+      let request;
+      await page.route(endpoint, route => {
+        request = new URLSearchParams(route.request().postData());
+        return route.fulfill({contentType:'text/plain',body:'Received'});
+      });
+      await page.goto(path);
+      await requiredFields(page);
+      await page.locator('.promoters-application-submit').press('Enter');
+      await expect(page.locator('body')).toContainText('Received');
+      expect(request.get('phone')).toBe('+00123');
+      expect(request.get('language')).toBe(italian ? 'it':'en');
+    } finally { await context.close(); }
   });
 }

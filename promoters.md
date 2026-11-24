@@ -10,7 +10,7 @@ Collaborate with our international congress and become an ambassador. Receive sp
 
 [Join the team](https://milanosensualcongress.com/promoters#ambassador-application)
 
-For dancers, teachers, organisers and content creators.
+For teachers, organisers and content creators.
 
 ### Join the team.
 

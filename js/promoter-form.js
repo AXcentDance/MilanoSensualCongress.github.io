@@ -1,36 +1,54 @@
-/* A structured application drafted in the existing official WhatsApp chat.
-   No application is sent, stored or reported as received by this page. */
 (() => {
   const form = document.querySelector('[data-application-form]');
-  if (!form) return;
-  const fields = [...form.querySelectorAll('[data-application-label]')];
-  const message = form.querySelector('textarea[name="text"]');
-  const outgoing = document.createElement('input');
-  outgoing.type = 'hidden';
-  outgoing.name = 'text';
-  form.append(outgoing);
-  message.removeAttribute('name');
+  if (!form || !window.fetch || !window.crypto?.randomUUID) return;
+  const status = form.querySelector('[role="status"]');
+  const button = form.querySelector('button[type="submit"]');
+  let lastPayload = '';
+  let submissionId = '';
+  let busy = false;
+  let submitted = false;
 
-  fields.forEach(field => {
-    field.addEventListener('input', () => field.setCustomValidity(''));
-    field.addEventListener('change', () => field.setCustomValidity(''));
-  });
-  form.addEventListener('submit', event => {
-    const empty = fields.find(field => field.required && !field.value.trim());
-    if (empty) {
-      event.preventDefault();
-      empty.setCustomValidity(form.dataset.emptyMessage);
-      empty.reportValidity();
-      return;
+  form.addEventListener('input', event => event.target.setCustomValidity?.(''));
+  form.addEventListener('submit', async event => {
+    event.preventDefault();
+    if (busy || submitted) return;
+    for (const field of form.querySelectorAll('[required]')) {
+      if (!field.value.trim()) {
+        field.setCustomValidity(form.dataset.emptyMessage);
+        field.reportValidity();
+        return;
+      }
     }
-    const lines = fields.flatMap(field => {
-      const value = field.value.trim();
-      if (!value) return [];
-      const displayValue = field.tagName === 'SELECT'
-        ? field.options[field.selectedIndex].text
-        : value;
-      return [`${field.dataset.applicationLabel}: ${displayValue}`];
-    });
-    outgoing.value = [form.dataset.applicationTitle, '', ...lines].join('\n');
+    const data = new URLSearchParams(new FormData(form));
+    const payload = data.toString();
+    if (payload !== lastPayload) {
+      submissionId = crypto.randomUUID();
+      lastPayload = payload;
+    }
+    data.set('response', 'json');
+    data.set('submissionId', submissionId);
+    busy = true;
+    button.disabled = true;
+    status.textContent = form.dataset.pending;
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), 30000);
+    try {
+      const response = await fetch(form.action, {
+        method: 'POST', body: data, credentials: 'omit', referrerPolicy: 'no-referrer', signal: controller.signal,
+      });
+      const receipt = await response.json();
+      if (!response.ok || receipt.ok !== true || receipt.submissionId !== submissionId) throw Error('Missing receipt');
+      submitted = true;
+      form.reset();
+      for (const field of form.querySelectorAll('input, select, textarea')) field.disabled = true;
+      button.textContent = form.dataset.submitted;
+      status.textContent = form.dataset.success;
+    } catch {
+      status.textContent = form.dataset.error;
+    } finally {
+      clearTimeout(timeout);
+      busy = false;
+      button.disabled = submitted;
+    }
   });
 })();

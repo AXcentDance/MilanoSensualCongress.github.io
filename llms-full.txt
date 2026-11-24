@@ -539,13 +539,10 @@ MXP–Devero bus timetable
 TWO DIVISIONS
 JACK & JILL.
 Two separate divisions: Amateur and Semi-pro.
-Explore Jack & Jill
-↗
 ✦
 Amateur
 ✦
 Semi-pro
-2027 registration and rules to follow.
 
 Before you arrive
 YOUR
@@ -1107,13 +1104,10 @@ Orari della navetta MXP–Devero
 DUE DIVISIONI
 JACK & JILL.
 Due categorie separate: Amateur e Semi-pro.
-Scopri il Jack & Jill
-↗
 ✦
 Amateur
 ✦
 Semi-pro
-Iscrizioni e regolamento 2027 in arrivo.
 
 Prima di partire
 LE TUE
@@ -5400,7 +5394,7 @@ Collaborate with our international congress and become an ambassador. Receive sp
 Join the team
 ↗
 
-For dancers, teachers, organisers and content creators.
+For teachers, organisers and content creators.
 
 Join the team.
 Tell us about your experience and how you would like to collaborate.
@@ -5408,20 +5402,14 @@ Tell us about your experience and how you would like to collaborate.
 Full name
 *
 
-Email
-*
-
 Phone / WhatsApp
-(optional)
+*
 
 Country
 *
 
 City
 *
-
-Instagram or social profile
-(optional)
 
 Your role
 (optional)
@@ -5431,18 +5419,17 @@ Teacher
 Dance school
 Event organiser
 Content creator
-Dancer
 Other
 
 School, community or organisation
 (optional)
 
-Tell us about yourself and your idea
-*
+More about yourself
+(optional)
 
-Continue in WhatsApp
+Submit application
 ↗
-Your application will open in WhatsApp. Nothing is sent until you send it in the chat.
+Your application will be saved in a private Google Sheet and emailed to the congress team.
 
 Share only the details relevant to your collaboration.
 Privacy policy
@@ -8834,7 +8821,7 @@ Collabora con il nostro congresso internazionale e diventa ambassador. Ricevi sc
 Entra nel team
 ↗
 
-Per ballerini, insegnanti, organizzatori e content creator.
+Per insegnanti, organizzatori e content creator.
 
 Entra nel team.
 Raccontaci la tua esperienza e come vorresti collaborare.
@@ -8842,20 +8829,14 @@ Raccontaci la tua esperienza e come vorresti collaborare.
 Nome e cognome
 *
 
-Email
-*
-
 Telefono / WhatsApp
-(facoltativo)
+*
 
 Paese
 *
 
 Città
 *
-
-Profilo Instagram o social
-(facoltativo)
 
 Il tuo ruolo
 (facoltativo)
@@ -8865,18 +8846,17 @@ Insegnante
 Scuola di ballo
 Organizzatore
 Content creator
-Ballerino/a
 Altro
 
 Scuola, community o organizzazione
 (facoltativo)
 
-Parlaci di te e della tua idea
-*
+Qualcosa in più su di te
+(facoltativo)
 
-Continua su WhatsApp
+Invia candidatura
 ↗
-La candidatura si aprirà in WhatsApp. Non sarà inviata finché non la invii nella chat.
+La candidatura verrà salvata in un foglio Google privato e inviata via email al team del congresso.
 
 Condividi solo i dettagli utili alla collaborazione.
 Informativa sulla privacy

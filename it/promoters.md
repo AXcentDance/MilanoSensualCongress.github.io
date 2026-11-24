@@ -10,7 +10,7 @@ Collabora con il nostro congresso internazionale e diventa ambassador. Ricevi sc
 
 [Entra nel team](https://milanosensualcongress.com/it/promoters#ambassador-application)
 
-Per ballerini, insegnanti, organizzatori e content creator.
+Per insegnanti, organizzatori e content creator.
 
 ### Entra nel team.
 

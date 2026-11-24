@@ -174,11 +174,10 @@
 /* Jack & Jill is a separate invitation immediately before the questions. */
 .home-premiere .home-jnj { background:#062b25; border-top:1px solid #a2d9be33; }
 .home-jnj .jnj-layout { display:grid; grid-template-columns:1fr 1.2fr; align-items:center; gap:64px; }
-.home-jnj .jnj-intro { color:var(--e27-sage); margin:22px 0; font-size:16px; line-height:1.6; }
+.home-jnj .jnj-intro { color:var(--e27-sage); margin:22px 0 0; font-size:16px; line-height:1.6; }
 .home-jnj .jnj-divisions { display:grid; grid-template-columns:1fr 1fr; gap:18px; }
 .home-jnj .jnj-divisions article { padding:28px 22px; border:1px solid #bcebd766; background:linear-gradient(140deg,#194d3c,#0b342b); clip-path:polygon(0 0,calc(100% - 20px) 0,100% 20px,100% 100%,0 100%); }
 .home-jnj .jnj-divisions span { display:block; color:#bcebd7; font-size:30px; margin-bottom:34px; }
 .home-jnj .jnj-divisions h3 { margin:0; color:var(--e27-paper); font:800 clamp(24px,2.6vw,38px)/1.1 Inter,'Inter Fallback',sans-serif; letter-spacing:-.045em; }
-.home-jnj .jnj-note { margin:18px 0 0; color:var(--e27-sage); font-size:12px; line-height:1.6; }
 @media (max-width:999px) { .home-jnj .jnj-layout { grid-template-columns:1fr; gap:30px; } }
 @media (max-width:600px) { .home-jnj .jnj-divisions { gap:12px; } .home-jnj .jnj-divisions article { padding:22px 16px; } }

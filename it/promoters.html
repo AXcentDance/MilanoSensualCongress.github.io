@@ -3,7 +3,7 @@
 <html class="scroll-smooth" lang="it">
 <head>
 <meta charset="utf-8"/>
-<meta content="default-src 'self'; script-src 'self' 'unsafe-inline' https://connect.facebook.net https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://www.facebook.com https://connect.facebook.net https://*.google-analytics.com https://www.googletagmanager.com; font-src 'self'; media-src 'self'; connect-src 'self' https://www.facebook.com https://connect.facebook.net https://dv-c3e594c6d429469e90b54478358619c3.ecs.us-east-1.on.aws https://bded8a3c6ae-1-1053047382554.us-central1.run.app https://*.google-analytics.com https://*.analytics.google.com https://www.googletagmanager.com; form-action 'self' https://wa.me https://api.whatsapp.com https://web.whatsapp.com https://www.facebook.com/tr/; frame-src https://www.facebook.com; object-src 'none'; base-uri 'self'" http-equiv="Content-Security-Policy"/>
+<meta content="default-src 'self'; script-src 'self' 'unsafe-inline' https://connect.facebook.net https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://www.facebook.com https://connect.facebook.net https://*.google-analytics.com https://www.googletagmanager.com; font-src 'self'; media-src 'self'; connect-src 'self' https://script.google.com https://script.googleusercontent.com https://www.facebook.com https://connect.facebook.net https://dv-c3e594c6d429469e90b54478358619c3.ecs.us-east-1.on.aws https://bded8a3c6ae-1-1053047382554.us-central1.run.app https://*.google-analytics.com https://*.analytics.google.com https://www.googletagmanager.com; form-action 'self' https://script.google.com https://script.googleusercontent.com https://www.facebook.com/tr/; frame-src https://www.facebook.com; object-src 'none'; base-uri 'self'" http-equiv="Content-Security-Policy"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <meta content="#031e1c" name="theme-color"/>
 <title>Diventa Ambassador | Milano Sensual Congress 2027</title>
@@ -287,7 +287,6 @@ body.edition-2027 .promoters-application :is(input, select, textarea, button, a)
 .promoters-application-handoff { max-width: 460px; margin: 0; font-size: 12px; line-height: 1.7; color: var(--e27-paper-copy); }
 .promoters-application-privacy { border-top: 1px solid var(--e27-paper-line); margin: 0; padding-top: 18px; font-size: 11px; line-height: 1.7; color: var(--e27-paper-copy); }
 .promoters-application-privacy a { color: var(--e27-emerald); text-decoration: underline; text-underline-offset: 3px; }
-.promoters-application-noscript { padding: 14px; background: var(--e27-paper-muted); color: var(--e27-paper-ink); font-size: 13px; line-height: 1.7; }
 @media (max-width: 900px) {
   body.scene-ambassadors .promoters-hero { grid-template-columns: minmax(0, 1fr) 230px; gap: 20px; padding-block: 38px; }
   body.scene-ambassadors .promoters-hero h1 { font-size: clamp(59px, 8.2vw, 74px); }
@@ -342,27 +341,25 @@ body.edition-2027 .promoters-application :is(input, select, textarea, button, a)
 <h1 aria-label="Diventa Ambassador"><span class="promoters-lead">Diventa</span><span class="promoters-flag" aria-hidden="true"><span>Amba</span><span>ssa</span><span>dor</span></span></h1>
 <p class="promoters-deck">Collabora con il nostro congresso internazionale e diventa ambassador. Ricevi sconti dedicati, un volantino personalizzato e altri vantaggi.</p>
 <a class="promoters-join" href="#ambassador-application">Entra nel team <span aria-hidden="true">↗</span></a>
-<p class="promoters-note">Per ballerini, insegnanti, organizzatori e content creator.</p>
+<p class="promoters-note">Per insegnanti, organizzatori e content creator.</p>
 </div>
 <img alt="Milano Sensual Congress" class="promoters-hero-logo" decoding="async" height="480" loading="eager" sizes="(max-width: 600px) 170px, (max-width: 900px) 230px, 370px" src="/images/milano-sensual-congress-2027-teal-logo-hero-v57.webp" srcset="/images/milano-sensual-congress-2027-teal-logo-hero-v57_400w.webp 400w, /images/milano-sensual-congress-2027-teal-logo-hero-v57.webp 800w" width="800">
 </header>
 <section class="promoters-application" id="ambassador-application" aria-labelledby="application-title">
 <div class="promoters-application-shell">
 <div class="promoters-application-heading"><h2 id="application-title">Entra nel team.</h2><p>Raccontaci la tua esperienza e come vorresti collaborare.</p></div>
-<form class="promoters-application-form" id="promoter-application-form" data-application-form action="https://wa.me/41799668481" method="get" aria-describedby="application-handoff" data-application-title="Candidatura Ambassador — Milano Sensual Congress 2027" data-empty-message="Compila questo campo prima di continuare.">
+<form class="promoters-application-form" id="promoter-application-form" data-application-form action="https://script.google.com/macros/s/AKfycbyrj9e0D4uQ1oiTb1nFhqygRw0sTT7kdq8WJwYGm-2jbeuLwR0-Ve11Oi12peKqY6J4RA/exec" method="post" aria-describedby="application-handoff" data-empty-message="Compila questo campo." data-pending="Invio della candidatura in corso…" data-success="Abbiamo ricevuto la tua candidatura. Grazie!" data-submitted="Candidatura ricevuta" data-error="Invio non confermato. I tuoi dati sono ancora nel modulo. Riprova.">
+<input type="hidden" name="language" value="it"/><input type="hidden" name="website" value=""/>
 <div class="promoters-application-fields">
-<div><label for="promoter-name">Nome e cognome <span aria-hidden="true">*</span></label><input id="promoter-name" data-application-label="Nome e cognome" type="text" maxlength="100" autocomplete="name" required=""/></div>
-<div><label for="promoter-email">Email <span aria-hidden="true">*</span></label><input id="promoter-email" data-application-label="Email" type="email" maxlength="140" autocomplete="email" required=""/></div>
-<div><label for="promoter-phone">Telefono / WhatsApp <span>(facoltativo)</span></label><input id="promoter-phone" data-application-label="Telefono / WhatsApp" type="tel" maxlength="100" autocomplete="tel" placeholder="+39 …"/></div>
-<div><label for="promoter-country">Paese <span aria-hidden="true">*</span></label><input id="promoter-country" data-application-label="Paese" type="text" maxlength="100" autocomplete="country-name" required=""/></div>
-<div><label for="promoter-city">Città <span aria-hidden="true">*</span></label><input id="promoter-city" data-application-label="Città" type="text" maxlength="100" autocomplete="address-level2" required=""/></div>
-<div><label for="promoter-social">Profilo Instagram o social <span>(facoltativo)</span></label><input id="promoter-social" data-application-label="Profilo Instagram o social" type="text" maxlength="140" placeholder="@tuoprofilo"/></div>
-<div><label for="promoter-role">Il tuo ruolo <span>(facoltativo)</span></label><select id="promoter-role" data-application-label="Il tuo ruolo"><option value="">Seleziona</option><option value="promoter">Promoter</option><option value="teacher">Insegnante</option><option value="school">Scuola di ballo</option><option value="organiser">Organizzatore</option><option value="creator">Content creator</option><option value="dancer">Ballerino/a</option><option value="other">Altro</option></select></div>
-<div><label for="promoter-community">Scuola, community o organizzazione <span>(facoltativo)</span></label><input id="promoter-community" data-application-label="Scuola, community o organizzazione" type="text" maxlength="100" autocomplete="organization"/></div>
+<div><label for="promoter-name">Nome e cognome <span aria-hidden="true">*</span></label><input id="promoter-name" name="name" type="text" maxlength="100" autocomplete="name" required=""/></div>
+<div><label for="promoter-phone">Telefono / WhatsApp <span aria-hidden="true">*</span></label><input id="promoter-phone" name="phone" type="tel" maxlength="100" autocomplete="tel" required="" placeholder="+39 …"/></div>
+<div><label for="promoter-country">Paese <span aria-hidden="true">*</span></label><input id="promoter-country" name="country" type="text" maxlength="100" autocomplete="country-name" required=""/></div>
+<div><label for="promoter-city">Città <span aria-hidden="true">*</span></label><input id="promoter-city" name="city" type="text" maxlength="100" autocomplete="address-level2" required=""/></div>
+<div><label for="promoter-role">Il tuo ruolo <span>(facoltativo)</span></label><select id="promoter-role" name="role"><option value="">Seleziona</option><option value="promoter">Promoter</option><option value="teacher">Insegnante</option><option value="school">Scuola di ballo</option><option value="organiser">Organizzatore</option><option value="creator">Content creator</option><option value="other">Altro</option></select></div>
+<div><label for="promoter-community">Scuola, community o organizzazione <span>(facoltativo)</span></label><input id="promoter-community" name="community" type="text" maxlength="100" autocomplete="organization"/></div>
 </div>
-<div><label for="promoter-message">Parlaci di te e della tua idea <span aria-hidden="true">*</span></label><textarea id="promoter-message" name="text" data-application-label="Presentazione e proposta" rows="4" maxlength="1200" placeholder="Raccontaci la tua esperienza con la Bachata e come vorresti collaborare." required=""></textarea></div>
-<noscript><p class="promoters-application-noscript">Senza JavaScript, includi nome, email, città, paese e profilo social nel messaggio.</p></noscript>
-<div class="promoters-application-actions"><button class="promoters-application-submit" type="submit">Continua su WhatsApp <span aria-hidden="true">↗</span></button><p class="promoters-application-handoff" id="application-handoff">La candidatura si aprirà in WhatsApp. Non sarà inviata finché non la invii nella chat.</p></div>
+<div><label for="promoter-message">Qualcosa in più su di te <span>(facoltativo)</span></label><textarea id="promoter-message" name="message" rows="4" maxlength="1200" placeholder="Raccontaci la tua esperienza con la Bachata e come vorresti collaborare."></textarea></div>
+<div class="promoters-application-actions"><button class="promoters-application-submit" type="submit">Invia candidatura <span aria-hidden="true">↗</span></button><p class="promoters-application-handoff" id="application-handoff" role="status">La candidatura verrà salvata in un foglio Google privato e inviata via email al team del congresso.</p></div>
 <p class="promoters-application-privacy">Condividi solo i dettagli utili alla collaborazione. <a href="/it/terms#read-2">Informativa sulla privacy</a>.</p>
 </form>
 </div>
@@ -371,7 +368,7 @@ body.edition-2027 .promoters-application :is(input, select, textarea, button, a)
 
 <footer class="e27-footer"><div class="e27-wrap"><div class="e27-footer-top"><div><p class="e27-footer-wordmark">Milano.<br/><em>A tutto colore.</em></p><p class="e27-kicker" style="margin-top:24px">Milano Sensual Congress · 2027</p></div><div><p class="e27-kicker">Il congresso</p><ul><li><a href="/it/artists">Artisti</a></li><li><a href="/it/programma">Programma</a></li><li><a href="/it/party">Party</a></li><li><a href="/it/masterclass">Masterclass</a></li><li><a href="/it/jacknjill">Jack &amp; Jill</a></li></ul></div><div><p class="e27-kicker">Organizza la visita</p><ul><li><a href="/it/tickets">Pass</a></li><li><a href="/it/hotel">Hotel</a></li><li><a href="/it/navetta">Navetta</a></li><li><a href="/it/faq">FAQ</a></li><li><a href="/it/contact">Contatti</a></li></ul></div><div><p class="e27-kicker">Restiamo in contatto</p><ul><li><a aria-current="page" href="/it/promoters">Promoters</a></li><li><a href="/it/news">Journal</a></li><li><a href="https://www.instagram.com/milanosensualcongress/" rel="noopener noreferrer" target="_blank">Instagram ↗</a></li><li><a href="/it/congresso-bachata-2026">Guida al congresso 2026</a></li></ul></div></div><div class="e27-footer-bottom"><p>© 2026 Milano Sensual Congress · Anteprima edizione 2027</p><div><a href="/it/terms">Termini e privacy</a><span>Milano, Italia</span></div></div></div></footer>
 <button class="e27-motion-toggle" type="button" hidden aria-pressed="false" aria-label="Metti in pausa le animazioni">Ⅱ Animazioni</button>
-<script src="/js/promoter-form.js?v=2" defer></script>
+<script src="/js/promoter-form.js?v=20261124" defer></script>
 <script src="/js/edition-motion.js?v=2" defer></script>
 </body>
 </html>

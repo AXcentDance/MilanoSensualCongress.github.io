@@ -168,13 +168,9 @@ TWO DIVISIONS
 
 Two separate divisions: Amateur and Semi-pro.
 
-[Explore Jack & Jill](https://milanosensualcongress.com/jacknjill)
-
 #### Amateur
 
 #### Semi-pro
-
-2027 registration and rules to follow.
 
 Before you arrive
 
