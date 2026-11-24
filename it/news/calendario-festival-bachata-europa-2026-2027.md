@@ -6,6 +6,8 @@ Pianifica la tua stagione Bachata in Europa: eventi selezionati da novembre 2026
 
 Canonical: https://milanosensualcongress.com/it/news/calendario-festival-bachata-europa-2026-2027
 
+[Tutte le storie](https://milanosensualcongress.com/it/news)
+
 Stai pianificando una stagione di **festival di Bachata in Europa**? Questo calendario selezionato raccoglie sei eventi tra novembre 2026 e aprile 2027, a partire dal Milano Sensual Congress. Usa le date e i link ufficiali per organizzare i weekend più adatti a te.
 
 Scegli in base allo stile, al livello dei workshop, al social dancing e al viaggio. Prima di prenotare, verifica con ogni organizzatore cosa include il pass, l’alloggio e gli orari di arrivo. Nuovo a questo format? Inizia dalla guida su [cosa aspettarsi da un congresso di Bachata](https://milanosensualcongress.com/it/news/cosa-aspettarsi-da-un-congresso-di-bachata-2026).
@@ -14,7 +16,7 @@ Scegli in base allo stile, al livello dei workshop, al social dancing e al viagg
 
 Dal **20 al 22 novembre 2026**, il **Milano Sensual Congress** porta workshop, party e social dancing al Devero Hotel, quattro stelle a Cavenago di Brianza, vicino a Milano. I workshop sono in inglese, con sale per diversi livelli e una [lineup internazionale di Bachata](https://milanosensualcongress.com/it/artists) che include Gero y Migle, Klau y Ros, Cristian y Gabriella e David y Ines. Il weekend comprende un [Jack & Jill internazionale](https://milanosensualcongress.com/it/jacknjill) e [party fino alle 5 del mattino venerdì e sabato](https://milanosensualcongress.com/it/party).
 
-Workshop e party si svolgono nell’hotel dell’evento: chi soggiorna lì può passare dalla camera alla pista senza cambiare location. Consulta l’anteprima del [programma dei workshop](https://milanosensualcongress.com/it/programma), confronta gli [hotel del congresso](https://milanosensualcongress.com/it/hotel) e scopri le [opzioni Full Pass attuali](https://milanosensualcongress.com/it/tickets). Il [servizio transfer ufficiale](https://milanosensualcongress.com/it/transfer) si prenota in anticipo da Malpensa, Linate, Bergamo e Milano Centrale.
+Workshop e party si svolgono nell’hotel dell’evento: chi soggiorna lì può passare dalla camera alla pista senza cambiare location. Consulta l’anteprima del [programma dei workshop](https://milanosensualcongress.com/it/programma), confronta gli [hotel del congresso](https://milanosensualcongress.com/it/hotel) e scopri le [opzioni Full Pass attuali](https://milanosensualcongress.com/it/tickets). Il [servizio transfer ufficiale](https://milanosensualcongress.com/it/news/guida-viaggio-bachata-milano-2026#read-3) si prenota in anticipo da Malpensa, Linate, Bergamo e Milano Centrale.
 
 ### Gennaio 2027 Bachata Sensual World Congress — Punta Umbría, Huelva, Spagna
 

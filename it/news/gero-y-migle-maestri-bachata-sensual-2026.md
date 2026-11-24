@@ -6,6 +6,8 @@ Scopri la storia, lo stile e l'incredibile chimica degli artisti di Bachata di f
 
 Canonical: https://milanosensualcongress.com/it/news/gero-y-migle-maestri-bachata-sensual-2026
 
+[Tutte le storie](https://milanosensualcongress.com/it/news)
+
 "L'energia è l'anima del ballo." Questa filosofia ha portato Gero e Migle dalle loro diverse radici in Spagna e Lituania fino ai vertici della scena internazionale della bachata.
 
 Nel mondo della **Bachata**, poche coppie possiedono il mix unico di disciplina tecnica e carisma esplosivo che definisce **Gero y Migle**. Sebbene molti cataloghino erroneamente il loro ballo come standard Sensual, Gero e Migle hanno in realtà sviluppato una propria filosofia e un linguaggio di movimento distinti: l' **Esencia Style**. Mentre ci prepariamo per il Milano Sensual Congress 2026, analizziamo in profondità gli artisti che sono diventati un punto di riferimento globale per i ballerini di tutto il mondo.

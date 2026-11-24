@@ -6,6 +6,8 @@ Incontra Agustin & Alba, il duo giovanissimo che rappresenta il futuro della Bac
 
 Canonical: https://milanosensualcongress.com/it/news/agustinyalba-stelle-nascenti-bachata-sensual
 
+[Tutte le storie](https://milanosensualcongress.com/it/news)
+
 "Osare ridefinire i confini dell'espressione nella Bachata Sensual." - Agustin & Alba
 
 In un mondo di leggende affermate, **Agustin & Alba** sono emersi rapidamente come una delle coppie più eccitanti e chiacchierate nella comunità internazionale della Bachata. Con base a Barcellona, la culla dello stile Sensual, portano un'energia fresca e giovane che sta letteralmente trasformando le piste da ballo in Europa e oltre.

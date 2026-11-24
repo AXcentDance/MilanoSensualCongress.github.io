@@ -1,0 +1,13 @@
+/* Chapter navigation uses the shared 2027 brand. Page layouts live in their
+   owning family stylesheet; this file does not redefine the site shell. */
+.edition-2027 .scene-progress { position: fixed; z-index: 80; top: 50%; right: 12px; transform: translateY(-50%); display: flex; flex-direction: column; align-items: flex-end; gap: 3px; }
+.edition-2027 .scene-progress a { position: relative; display: flex; justify-content: center; align-items: center; width: 44px; height: 44px; min-height: 44px; min-width: 44px; color: var(--e27-paper); }
+.edition-2027 .scene-progress a::after { content: ''; flex: none; width: 8px; height: 8px; border: 1px solid var(--e27-gold); border-radius: 50%; box-shadow: 0 0 0 4px var(--e27-ink); background: var(--e27-ink); transition: transform .25s,background .25s; }
+.edition-2027 .scene-progress a[aria-current="location"]::after { transform: scale(1.4); background: var(--e27-gold); }
+.edition-2027 .scene-progress span { position: absolute; right: 44px; width: max-content; max-width: 160px; pointer-events: none; border: 1px solid var(--e27-line); border-radius: 8px; padding: 8px 12px; background: var(--e27-ink); font-size: 10px; opacity: 0; visibility: hidden; transition: opacity .2s; }
+.edition-2027 .scene-progress a:is(:hover,:focus-visible) span { opacity: 1; visibility: visible; }
+.edition-2027 .scene-progress[hidden] { display: none; }
+.scene-missing .editorial-error { background: var(--e27-ink); color: var(--e27-paper); }
+.scene-missing .editorial-error :is(.editorial-overline,.editorial-error-copy > p:not(.editorial-overline)) { color: var(--e27-sage); }
+@media (max-width: 1100px) { .edition-2027 .scene-progress { display: none; } }
+@media (prefers-reduced-motion: reduce) { .edition-2027 .scene-progress :is(a::after,span) { transition: none; } }

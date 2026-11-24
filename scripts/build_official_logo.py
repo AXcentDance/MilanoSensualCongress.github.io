@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 """Build size-appropriate copies of the owner's approved logo without redrawing it."""
 from pathlib import Path
+import argparse
 import subprocess
+import sys
 import tempfile
 
 from generation_support import run_generator, write_outputs
@@ -10,9 +12,12 @@ ROOT = Path(__file__).resolve().parent.parent
 SOURCE = ROOT / 'images/brand/milano-sensual-congress-official-logo-source.png'
 # Remove only empty black padding. The full supplied 4096px original is retained.
 CROP = 'crop=3400:2040:200:800'
-NAV_WIDTHS = (100, 200, 300)
+# The edition navigation renders at 87px through 700px, then 100px.
+# Keep a compact 1x copy, a phone 2x copy, the existing 200px fallback,
+# and a 3x copy. Each is resized from the approved PNG, never upscaled.
+NAV_WIDTHS = (100, 175, 200, 300)
 NAV_OUTPUTS = {
-    f'images/milano-sensual-congress-official-logo-nav_{width}w.webp':
+    f'images/milano-sensual-congress-official-logo-nav-2027{"" if width == 200 else f"_{width}w"}.webp':
         (f'scale={width}:{width * 3 // 5}:flags=lanczos,format=rgba,colorkey=0x000000:0.015:0.04', True)
     for width in NAV_WIDTHS
 }
@@ -21,23 +26,41 @@ OUTPUTS = {
     # Key the neutral black matte only for translucent navigation surfaces.
     # The supplied master, artwork colors and all other copies stay unchanged.
     'images/milano-sensual-congress-official-logo-nav.webp': ('scale=400:240:flags=lanczos,format=rgba,colorkey=0x000000:0.015:0.04', True),
+    **NAV_OUTPUTS,
     'images/milano-sensual-congress-official-logo-preview.webp': ('scale=950:570:flags=lanczos,pad=1200:630:(ow-iw)/2:(oh-ih)/2:black', True),
     'images/milano-sensual-congress-official-icon.webp': ('scale=180:108:flags=lanczos,pad=192:192:(ow-iw)/2:(oh-ih)/2:black', True),
     'images/og/milano-sensual-congress-official-social-card.jpg': ('scale=950:570:flags=lanczos,pad=1200:630:(ow-iw)/2:(oh-ih)/2:black', False),
-    **NAV_OUTPUTS,
 }
 
-def main():
+def main(argv=()):
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--teal-2027', action='store_true', help='Build the selected teal 2027 edition navigation and invitation logos')
+    args = parser.parse_args(argv)
+    source, crop, recipes = SOURCE, CROP + ',', OUTPUTS
+    if args.teal_2027:
+        source = ROOT / 'images/brand/milano-sensual-congress-2027-teal-logo-v57-source.png'
+        crop = ''  # This edition master already has transparent, tightly cropped margins.
+        recipes = {
+            f'images/milano-sensual-congress-official-logo-nav-2027-teal-v57{"" if width == 200 else f"_{width}w"}.webp':
+                (f'scale={width}:{width * 3 // 5}:flags=lanczos,format=rgba', True)
+            for width in NAV_WIDTHS
+        }
+        recipes.update({
+            f'images/milano-sensual-congress-2027-teal-logo-hero-v57{"_400w" if width == 400 else ""}.webp':
+                (f'scale={width}:{width * 3 // 5}:flags=lanczos,format=rgba', True)
+            for width in (400, 800)
+        })
     outputs = {}
     with tempfile.TemporaryDirectory(prefix='msc-logo-') as temporary:
-        for name, (filters, webp) in OUTPUTS.items():
+        for name, (filters, webp) in recipes.items():
             staged = Path(temporary) / Path(name).name
             encoding = ['-c:v', 'libwebp', '-lossless', '1', '-compression_level', '6'] if webp else ['-q:v', '2']
-            if name in NAV_OUTPUTS:
-                # In lossless mode quality sets encoding effort, not image loss.
+            if name in NAV_OUTPUTS or args.teal_2027:
+                # In lossless mode quality controls compression effort, not
+                # visible quality. Alpha and every visible RGB value remain exact.
                 encoding += ['-quality', '100']
-            subprocess.run(['ffmpeg', '-hide_banner', '-loglevel', 'error', '-y', '-i', str(SOURCE),
-                            '-vf', CROP + ',' + filters, '-frames:v', '1', *encoding, str(staged)], check=True)
+            subprocess.run(['ffmpeg', '-hide_banner', '-loglevel', 'error', '-y', '-i', str(source),
+                            '-vf', crop + filters, '-frames:v', '1', *encoding, str(staged)], check=True)
             outputs[ROOT / name] = staged.read_bytes()
     for destination in outputs:
         destination.parent.mkdir(parents=True, exist_ok=True)
@@ -47,4 +70,4 @@ def main():
 
 
 if __name__ == '__main__':
-    raise SystemExit(run_generator(main))
+    raise SystemExit(run_generator(lambda: main(sys.argv[1:])))

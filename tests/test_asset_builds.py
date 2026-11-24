@@ -120,6 +120,60 @@ class AssetBuildTests(unittest.TestCase):
             self.build_images(record)
         self.assertEqual(sum(command[:2] == ['cwebp', '-q'] for command in calls), 3)
 
+    def test_source_override_migrates_legacy_cache_without_rebuilding_other_images(self):
+        poster = 'images/msc-2027-duomo-wordmark-hero-poster-v07.webp'
+        self.put(poster, '1440|film poster')
+        self.put('images/artist.webp', '1600|portrait')
+        with patch.object(images, 'SOURCE_RECIPE_OVERRIDES', {}):
+            self.build_images()
+        cache_path = self.root / '.quality/responsive-images.json'
+        cache = json.loads(cache_path.read_text())
+        for record in cache['sources'].values():
+            record.pop('recipe')
+        cache_path.write_text(json.dumps(cache))
+        artist = self.root / 'images/artist_480w.webp'
+        stamp = artist.stat().st_mtime_ns
+        calls = []
+
+        def record(command):
+            calls.append(command)
+            return self.fake_tool(command)
+
+        self.build_images(record)
+        conversions = [command for command in calls if command[:2] == ['cwebp', '-q']]
+        self.assertEqual(len(conversions), 3)
+        self.assertTrue(all(Path(command[command.index('-o') - 1]) == self.root / poster
+                            for command in conversions))
+        self.assertTrue(all(command[command.index('-q') + 1] == '40'
+                            and command[command.index('-m') + 1] == '6'
+                            for command in conversions))
+        self.assertEqual(artist.stat().st_mtime_ns, stamp)
+        saved = json.loads(cache_path.read_text())
+        self.assertEqual(saved['sources'][poster]['recipe']['quality'], 40)
+        self.assertEqual(saved['sources']['images/artist.webp']['recipe']['quality'], 75)
+        calls.clear()
+        self.build_images(record)
+        self.assertFalse(any(command[:2] == ['cwebp', '-q'] for command in calls))
+
+    def test_changing_or_removing_source_recipe_override_only_rebuilds_that_source(self):
+        poster = 'images/msc-2027-duomo-wordmark-hero-poster-v07.webp'
+        self.put(poster, '1440|film poster')
+        self.put('images/artist.webp', '1600|portrait')
+        self.build_images()
+        for overrides in ({poster: {'quality': 41, 'method': 6}}, {}):
+            calls = []
+
+            def record(command):
+                calls.append(command)
+                return self.fake_tool(command)
+
+            with patch.object(images, 'SOURCE_RECIPE_OVERRIDES', overrides):
+                self.build_images(record)
+            conversions = [command for command in calls if command[:2] == ['cwebp', '-q']]
+            self.assertEqual(len(conversions), 3)
+            self.assertTrue(all(Path(command[command.index('-o') - 1]) == self.root / poster
+                                for command in conversions))
+
     def test_no_upscaling_and_obsolete_larger_derivatives_removed(self):
         self.put('images/artist.webp', '1600|photo')
         self.build_images()

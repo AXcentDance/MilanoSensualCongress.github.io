@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://connect.facebook.net https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://www.facebook.com https://connect.facebook.net https://*.google-analytics.com https://www.googletagmanager.com; font-src 'self'; media-src 'self'; connect-src 'self' https://www.facebook.com https://connect.facebook.net https://dv-c3e594c6d429469e90b54478358619c3.ecs.us-east-1.on.aws https://bded8a3c6ae-1-1053047382554.us-central1.run.app https://*.google-analytics.com https://*.analytics.google.com https://www.googletagmanager.com; form-action 'self' https://www.facebook.com/tr/; frame-src https://www.facebook.com; object-src 'none'; base-uri 'self'">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="theme-color" content="#080b0f">
+  <meta name="theme-color" content="#031e1c">
   <title>Congresso Bachata da Soli: Festival e Workshop</title>
   <meta name="description" content="Vuoi andare da solo a un Congresso Bachata? Scopri come funzionano Workshop Bachata, rotazione partner e social nei Festival Bachata internazionali.">
   <meta name="keywords" content="Congresso Bachata da soli, Festival Bachata da soli, Workshop Bachata senza partner, ballerino solo festival, Eventi Bachata, Festival Bachata, Bachata Sensual Italia, eventi danza Milano 2026">
@@ -18,1229 +18,16 @@
   <link rel="alternate" hreflang="en" href="https://milanosensualcongress.com/news/bachata-congress-alone-solo-dancer-guide">
   <link rel="alternate" hreflang="x-default" href="https://milanosensualcongress.com/news/bachata-congress-alone-solo-dancer-guide">
   <link rel="alternate" hreflang="it" href="https://milanosensualcongress.com/it/news/congresso-bachata-da-soli-guida-ballerini">
-  <link rel="preload" as="font" type="font/woff2" href="/fonts/playfair-display-latin.woff2" crossorigin>
+  <link rel="preload" as="font" type="font/woff2" href="/fonts/playfair-display-italic-latin.woff2" crossorigin>
   <link rel="preload" as="font" type="font/woff2" href="/fonts/playfair-display-italic-latin.woff2" crossorigin>
   <link rel="preload" as="font" type="font/woff2" href="/fonts/inter-latin.woff2" crossorigin>
   <!-- Page CSS is inlined to cut render-blocking round trips.
        After editing css/fonts.css or css/solo-congress-guide.css run:
        python3 scripts/inline_critical_css.py -->
-  <style data-inline="css/fonts.css">
-/* Self-hosted variable fonts (formerly Google Fonts). Latin loads by default; latin-ext only when those characters appear. */
-/* Metrics-adjusted local fallbacks: values computed with fonttools from the shipped woff2 files vs the local fallback faces, so the swap from fallback to web font causes no reflow (CLS). */
-@font-face {
-  font-family: 'Inter Fallback';
-  src: local('Arial');
-  size-adjust: 109.38%;
-  ascent-override: 88.57%;
-  descent-override: 22.05%;
-  line-gap-override: 0%;
-}
-@font-face {
-  font-family: 'Playfair Display Fallback';
-  src: local('Times New Roman');
-  size-adjust: 110.64%;
-  ascent-override: 97.80%;
-  descent-override: 22.69%;
-  line-gap-override: 0%;
-}
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 100 900;
-  font-display: swap;
-  src: url('/fonts/inter-latin-ext.woff2') format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 100 900;
-  font-display: swap;
-  src: url('/fonts/inter-latin.woff2') format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-@font-face {
-  font-family: 'Playfair Display';
-  font-style: italic;
-  font-weight: 400 900;
-  font-display: swap;
-  src: url('/fonts/playfair-display-italic-latin-ext.woff2') format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-@font-face {
-  font-family: 'Playfair Display';
-  font-style: italic;
-  font-weight: 400 900;
-  font-display: swap;
-  src: url('/fonts/playfair-display-italic-latin.woff2') format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-@font-face {
-  font-family: 'Playfair Display';
-  font-style: normal;
-  font-weight: 400 900;
-  font-display: swap;
-  src: url('/fonts/playfair-display-latin-ext.woff2') format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-@font-face {
-  font-family: 'Playfair Display';
-  font-style: normal;
-  font-weight: 400 900;
-  font-display: swap;
-  src: url('/fonts/playfair-display-latin.woff2') format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-  </style>
+
   <style data-inline="css/solo-congress-guide.css">
-:root {
-  --ink: #0f172a;
-  --ink-soft: #131d33;
-  --paper: #f8fafc;
-  --paper-muted: #cbd5e1;
-  --pink: #ec4899;
-  --pink-dark: #be185d;
-  --purple: #8b5cf6;
-  --purple-dark: #4c1d95;
-  --gold: #fbbf24;
-  --line: rgba(255, 255, 255, .12);
-  --glass: rgba(255, 255, 255, .035);
-  --serif: "Playfair Display", Georgia, serif;
-  --sans: "Inter", sans-serif;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-  background: var(--ink);
-}
-
-body {
-  margin: 0;
-  overflow-x: hidden;
-  background:
-    radial-gradient(circle at 82% 14%, rgba(139, 92, 246, .13), transparent 30rem),
-    radial-gradient(circle at 8% 42%, rgba(236, 72, 153, .08), transparent 34rem),
-    var(--ink);
-  color: var(--paper);
-  font-family: var(--sans);
-  font-size: 16px;
-  -webkit-font-smoothing: antialiased;
-}
-
-body::before {
-  position: fixed;
-  z-index: 20;
-  inset: 0;
-  pointer-events: none;
-  content: "";
-  opacity: .16;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 160 160' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.18'/%3E%3C/svg%3E");
-}
-
-a {
-  color: inherit;
-  text-decoration-thickness: 1px;
-  text-underline-offset: .22em;
-}
-
-a:focus-visible,
-button:focus-visible,
-summary:focus-visible {
-  outline: 3px solid var(--pink);
-  outline-offset: 4px;
-}
-
-.reading-progress {
-  position: fixed;
-  z-index: 90;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 3px;
-  transform: scaleX(0);
-  transform-origin: left center;
-  background: linear-gradient(90deg, var(--pink), var(--purple));
-  box-shadow: 0 0 16px rgba(236, 72, 153, .7);
-}
-
-.site-nav {
-  position: fixed;
-  z-index: 50;
-  top: 0;
-  left: 0;
-  width: 100%;
-  border-bottom: 1px solid rgba(255, 255, 255, .1);
-  background: rgba(15, 23, 42, .84);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-}
-
-.nav-wrap {
-  display: flex;
-  width: min(1180px, calc(100% - 2rem));
-  min-height: 76px;
-  margin: 0 auto;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.brand {
-  display: inline-flex;
-  align-items: center;
-  gap: .8rem;
-  text-decoration: none;
-}
-
-.brand img {
-  width: auto;
-  height: 56px;
-  mix-blend-mode: screen;
-}
-
-.brand span {
-  padding-left: .8rem;
-  border-left: 1px solid var(--line);
-  color: var(--paper-muted);
-  font-size: .68rem;
-  letter-spacing: .22em;
-  text-transform: uppercase;
-}
-
-.nav-links {
-  display: flex;
-  align-items: center;
-  gap: 1.55rem;
-  color: var(--paper-muted);
-  font-size: .78rem;
-  font-weight: 700;
-  letter-spacing: .04em;
-}
-
-.nav-links a {
-  text-decoration: none;
-  transition: color .25s ease;
-}
-
-.nav-links a:hover,
-.nav-links .active {
-  color: var(--pink);
-}
-
-.language-switch {
-  display: flex;
-  gap: .7rem;
-  padding-left: 1.4rem;
-  border-left: 1px solid var(--line);
-}
-
-.language-switch .current {
-  color: var(--paper);
-}
-
-.mobile-nav {
-  display: none;
-  position: relative;
-}
-
-.mobile-nav summary {
-  min-width: 44px;
-  min-height: 44px;
-  border: 1px solid var(--line);
-  border-radius: 50%;
-  cursor: pointer;
-  color: var(--paper);
-  font-size: 0;
-  list-style: none;
-}
-
-.mobile-nav summary::-webkit-details-marker {
-  display: none;
-}
-
-.mobile-nav summary::before,
-.mobile-nav summary::after {
-  position: absolute;
-  right: 12px;
-  width: 18px;
-  height: 1px;
-  content: "";
-  background: var(--paper);
-}
-
-.mobile-nav summary::before {
-  top: 17px;
-}
-
-.mobile-nav summary::after {
-  top: 24px;
-}
-
-.mobile-menu {
-  position: absolute;
-  top: 52px;
-  right: 0;
-  display: grid;
-  width: min(82vw, 300px);
-  padding: 1.2rem;
-  border: 1px solid var(--line);
-  border-radius: 1rem;
-  background: rgba(15, 23, 42, .98);
-  box-shadow: 0 24px 80px rgba(2, 6, 23, .55), 0 0 0 1px rgba(236, 72, 153, .08);
-  gap: .2rem;
-}
-
-.mobile-menu a {
-  display: block;
-  min-height: 44px;
-  padding: .78rem;
-  border-bottom: 1px solid rgba(244, 239, 229, .08);
-  text-decoration: none;
-}
-
-.guide-hero {
-  position: relative;
-  display: grid;
-  min-height: 100svh;
-  padding: 9rem 1rem 3rem;
-  overflow: hidden;
-  align-items: end;
-  isolation: isolate;
-}
-
-.guide-hero::before {
-  position: absolute;
-  z-index: -3;
-  inset: 0;
-  content: "";
-  background:
-    linear-gradient(90deg, rgba(15, 23, 42, .97) 0%, rgba(15, 23, 42, .76) 52%, rgba(15, 23, 42, .26) 100%),
-    radial-gradient(circle at 76% 34%, rgba(139, 92, 246, .2), transparent 29rem),
-    radial-gradient(circle at 58% 75%, rgba(236, 72, 153, .11), transparent 24rem);
-}
-
-.guide-hero::after {
-  position: absolute;
-  z-index: -1;
-  right: -5vw;
-  bottom: -25vh;
-  width: 58vw;
-  height: 58vw;
-  min-width: 520px;
-  min-height: 520px;
-  border: 1px solid rgba(139, 92, 246, .2);
-  border-radius: 50%;
-  content: "";
-  box-shadow: 0 0 0 8vw rgba(236, 72, 153, .032), 0 0 0 16vw rgba(139, 92, 246, .024);
-}
-
-#connection-canvas {
-  position: absolute;
-  z-index: -2;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  opacity: .95;
-}
-
-.hero-inner {
-  display: grid;
-  width: min(1180px, 100%);
-  margin: 0 auto;
-  gap: 2.2rem;
-}
-
-.breadcrumb {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: .55rem;
-  color: var(--paper-muted);
-  font-size: .72rem;
-  font-weight: 700;
-  letter-spacing: .12em;
-  text-transform: uppercase;
-}
-
-.breadcrumb a {
-  text-decoration: none;
-}
-
-.breadcrumb a:hover {
-  color: var(--pink);
-}
-
-.breadcrumb span[aria-hidden="true"] {
-  color: var(--pink);
-}
-
-.hero-copy {
-  max-width: 890px;
-}
-
-.eyebrow {
-  display: inline-flex;
-  align-items: center;
-  gap: .75rem;
-  margin: 0 0 1.25rem;
-  color: #c084fc;
-  font-size: .72rem;
-  font-weight: 800;
-  letter-spacing: .18em;
-  text-transform: uppercase;
-}
-
-.eyebrow::before {
-  width: 42px;
-  height: 1px;
-  content: "";
-  background: currentColor;
-}
-
-.guide-hero h1 {
-  max-width: 980px;
-  margin: 0;
-  font-family: var(--serif);
-  font-size: clamp(3.25rem, 8.2vw, 8rem);
-  font-weight: 500;
-  letter-spacing: -.055em;
-  line-height: .86;
-  text-wrap: balance;
-}
-
-.guide-hero h1 em {
-  display: block;
-  background: linear-gradient(100deg, #f472b6 2%, var(--pink) 42%, #c084fc 78%, var(--purple) 100%);
-  color: transparent;
-  font-weight: 400;
-  -webkit-background-clip: text;
-  background-clip: text;
-  filter: drop-shadow(0 10px 30px rgba(190, 24, 93, .18));
-}
-
-.hero-deck {
-  max-width: 690px;
-  margin: 1.6rem 0 0;
-  color: #e2e8f0;
-  font-size: clamp(1rem, 1.8vw, 1.28rem);
-  line-height: 1.65;
-  text-wrap: pretty;
-}
-
-.hero-footer {
-  display: flex;
-  padding-top: 1.4rem;
-  border-top: 1px solid var(--line);
-  align-items: end;
-  justify-content: space-between;
-  gap: 2rem;
-}
-
-.hero-stats {
-  display: flex;
-  flex-wrap: wrap;
-  gap: clamp(1.2rem, 4vw, 4rem);
-}
-
-.hero-stat strong {
-  display: block;
-  color: var(--paper);
-  font-family: var(--serif);
-  font-size: 1.8rem;
-  font-weight: 500;
-}
-
-.hero-stat span {
-  color: var(--paper-muted);
-  font-size: .66rem;
-  font-weight: 800;
-  letter-spacing: .14em;
-  text-transform: uppercase;
-}
-
-.scroll-note {
-  display: flex;
-  color: var(--paper-muted);
-  font-size: .68rem;
-  font-weight: 700;
-  letter-spacing: .14em;
-  text-transform: uppercase;
-  align-items: center;
-  gap: .75rem;
-}
-
-.scroll-note::after {
-  width: 54px;
-  height: 1px;
-  content: "";
-  background: linear-gradient(90deg, var(--pink), var(--purple));
-}
-
-.article-main {
-  position: relative;
-}
-
-.article-main::before {
-  position: absolute;
-  top: 24rem;
-  left: -16rem;
-  width: 30rem;
-  height: 30rem;
-  border: 1px solid rgba(236, 72, 153, .12);
-  border-radius: 50%;
-  content: "";
-}
-
-.article-shell {
-  width: min(1180px, calc(100% - 2rem));
-  margin: 0 auto;
-}
-
-.opening {
-  display: grid;
-  padding: clamp(5rem, 9vw, 9rem) 0;
-  grid-template-columns: minmax(0, 1.25fr) minmax(260px, .75fr);
-  gap: clamp(3rem, 8vw, 8rem);
-  align-items: start;
-}
-
-.section-kicker {
-  margin: 0 0 1rem;
-  color: var(--pink);
-  font-size: .72rem;
-  font-weight: 800;
-  letter-spacing: .16em;
-  text-transform: uppercase;
-}
-
-.opening h2,
-.section-heading {
-  margin: 0;
-  font-family: var(--serif);
-  font-size: clamp(2.5rem, 5.8vw, 5.6rem);
-  font-weight: 500;
-  letter-spacing: -.04em;
-  line-height: .98;
-  text-wrap: balance;
-}
-
-.opening-copy > p,
-.prose p,
-.prose li {
-  color: var(--paper-muted);
-  font-size: 1.08rem;
-  line-height: 1.85;
-}
-
-.opening-copy > p:first-of-type {
-  color: var(--paper);
-  font-family: var(--serif);
-  font-size: clamp(1.35rem, 2.5vw, 2rem);
-  line-height: 1.45;
-}
-
-.opening-copy a,
-.prose a,
-.story-card a,
-.plan-card a {
-  color: #f472b6;
-}
-
-.answer-card {
-  position: sticky;
-  top: 2rem;
-  padding: 2rem;
-  border: 1px solid rgba(236, 72, 153, .42);
-  border-radius: 1.25rem;
-  background: linear-gradient(145deg, rgba(190, 24, 93, .18), rgba(76, 29, 149, .13) 72%, rgba(255, 255, 255, .03));
-  box-shadow: 0 30px 80px rgba(2, 6, 23, .32), inset 0 1px 0 rgba(255, 255, 255, .04);
-}
-
-.answer-card .number {
-  display: block;
-  margin-bottom: 3.4rem;
-  color: var(--pink);
-  font-family: var(--serif);
-  font-size: 3.6rem;
-  line-height: 1;
-}
-
-.answer-card h2 {
-  margin: 0 0 1rem;
-  font-family: var(--serif);
-  font-size: 2rem;
-  font-weight: 500;
-  line-height: 1.08;
-}
-
-.answer-card p {
-  margin: 0;
-  color: var(--paper-muted);
-  line-height: 1.7;
-}
-
-.answer-card strong {
-  color: #c084fc;
-}
-
-.field-guide {
-  padding: clamp(5rem, 9vw, 9rem) 0;
-  border-top: 1px solid var(--line);
-}
-
-.section-intro {
-  display: grid;
-  margin-bottom: 4.5rem;
-  grid-template-columns: 1fr 1fr;
-  gap: 3rem;
-  align-items: end;
-}
-
-.section-intro > p {
-  max-width: 520px;
-  margin: 0 0 .5rem;
-  color: var(--paper-muted);
-  font-size: 1.05rem;
-  line-height: 1.8;
-}
-
-.story-grid {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  gap: 1rem;
-}
-
-.story-card {
-  position: relative;
-  min-height: 300px;
-  padding: clamp(1.5rem, 3vw, 2.5rem);
-  overflow: hidden;
-  border: 1px solid var(--line);
-  border-radius: 1.25rem;
-  background: var(--glass);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .025);
-  transition: border-color .3s ease, box-shadow .3s ease, transform .3s ease;
-}
-
-.story-card:hover {
-  border-color: rgba(236, 72, 153, .4);
-  box-shadow: 0 22px 55px rgba(2, 6, 23, .28), 0 0 28px rgba(190, 24, 93, .1);
-  transform: translateY(-4px);
-}
-
-.story-card:nth-child(1) {
-  grid-column: span 7;
-}
-
-.story-card:nth-child(2) {
-  grid-column: span 5;
-  border-color: rgba(139, 92, 246, .32);
-  background: linear-gradient(145deg, rgba(76, 29, 149, .35), rgba(139, 92, 246, .08));
-  color: var(--paper);
-}
-
-.story-card:nth-child(3) {
-  grid-column: 3 / span 5;
-}
-
-.story-card:nth-child(4) {
-  grid-column: span 5;
-  border-color: rgba(236, 72, 153, .34);
-}
-
-.story-card .card-index {
-  display: block;
-  margin-bottom: 4rem;
-  color: var(--pink);
-  font-family: var(--serif);
-  font-size: 1.3rem;
-}
-
-.story-card:nth-child(2) .card-index {
-  color: #c084fc;
-}
-
-.story-card h3 {
-  max-width: 18ch;
-  margin: 0 0 1rem;
-  font-family: var(--serif);
-  font-size: clamp(1.65rem, 3vw, 2.7rem);
-  font-weight: 500;
-  line-height: 1.05;
-}
-
-.story-card p {
-  max-width: 58ch;
-  margin: 0;
-  color: var(--paper-muted);
-  line-height: 1.75;
-}
-
-.story-card:nth-child(2) p {
-  color: var(--paper-muted);
-}
-
-.story-card::after {
-  position: absolute;
-  right: -4rem;
-  bottom: -4rem;
-  width: 10rem;
-  height: 10rem;
-  border: 1px solid currentColor;
-  border-radius: 50%;
-  content: "";
-  opacity: .08;
-}
-
-.timeline-section {
-  padding: clamp(5rem, 9vw, 9rem) 0;
-  border-top: 1px solid var(--line);
-}
-
-.arrival-line {
-  position: relative;
-  display: grid;
-  margin-top: 4rem;
-  grid-template-columns: repeat(3, 1fr);
-}
-
-.arrival-line::before {
-  position: absolute;
-  top: 1.2rem;
-  right: 12%;
-  left: 12%;
-  height: 1px;
-  content: "";
-  background: linear-gradient(90deg, var(--pink), var(--purple));
-}
-
-.arrival-step {
-  position: relative;
-  padding: 4.5rem clamp(1rem, 3vw, 2.5rem) 0;
-}
-
-.arrival-step::before {
-  position: absolute;
-  z-index: 2;
-  top: .7rem;
-  left: 50%;
-  width: 1rem;
-  height: 1rem;
-  border: 5px solid var(--ink);
-  border-radius: 50%;
-  content: "";
-  background: var(--pink);
-  box-shadow: 0 0 0 1px var(--pink), 0 0 18px rgba(236, 72, 153, .45);
-}
-
-.arrival-step:nth-child(2)::before {
-  background: var(--gold);
-  box-shadow: 0 0 0 1px var(--gold), 0 0 18px rgba(251, 191, 36, .3);
-}
-
-.arrival-step:nth-child(3)::before {
-  background: var(--purple);
-  box-shadow: 0 0 0 1px var(--purple), 0 0 18px rgba(139, 92, 246, .45);
-}
-
-.arrival-step time {
-  display: block;
-  margin-bottom: .8rem;
-  color: #c084fc;
-  font-size: .7rem;
-  font-weight: 800;
-  letter-spacing: .14em;
-  text-transform: uppercase;
-}
-
-.arrival-step h3 {
-  margin: 0 0 1rem;
-  font-family: var(--serif);
-  font-size: 1.8rem;
-  font-weight: 500;
-}
-
-.arrival-step p {
-  margin: 0;
-  color: var(--paper-muted);
-  line-height: 1.75;
-}
-
-.quote-band {
-  position: relative;
-  padding: clamp(5rem, 10vw, 10rem) 1rem;
-  overflow: hidden;
-  border-top: 1px solid rgba(255, 255, 255, .1);
-  border-bottom: 1px solid rgba(255, 255, 255, .1);
-  background:
-    radial-gradient(circle at 12% 18%, rgba(244, 114, 182, .32), transparent 26rem),
-    linear-gradient(120deg, #831843 0%, var(--pink-dark) 34%, var(--purple-dark) 100%);
-  color: var(--paper);
-}
-
-.quote-band::before {
-  position: absolute;
-  top: -6rem;
-  right: -3rem;
-  content: "TOGETHER";
-  color: transparent;
-  font-family: var(--serif);
-  font-size: clamp(7rem, 20vw, 20rem);
-  line-height: 1;
-  -webkit-text-stroke: 1px rgba(255, 255, 255, .14);
-}
-
-.quote-band blockquote {
-  position: relative;
-  width: min(980px, 100%);
-  margin: 0 auto;
-  font-family: var(--serif);
-  font-size: clamp(2.4rem, 6vw, 6.4rem);
-  letter-spacing: -.045em;
-  line-height: 1;
-}
-
-.quote-band blockquote span {
-  color: #fbcfe8;
-  font-style: italic;
-}
-
-.practical-section {
-  padding: clamp(5rem, 9vw, 9rem) 0;
-}
-
-.practical-grid {
-  display: grid;
-  margin-top: 4rem;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
-}
-
-.practical-card {
-  padding: clamp(1.5rem, 4vw, 3.2rem);
-  border: 1px solid var(--line);
-  border-radius: 1.25rem;
-  background: linear-gradient(145deg, rgba(255, 255, 255, .045), rgba(255, 255, 255, .018));
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .025);
-}
-
-.practical-card.full {
-  grid-column: 1 / -1;
-}
-
-.practical-card h3 {
-  margin: 0 0 1.25rem;
-  font-family: var(--serif);
-  font-size: clamp(1.8rem, 3vw, 3rem);
-  font-weight: 500;
-}
-
-.practical-card p,
-.practical-card li {
-  color: var(--paper-muted);
-  line-height: 1.75;
-}
-
-.practical-card ul {
-  display: grid;
-  margin: 1.6rem 0 0;
-  padding: 0;
-  grid-template-columns: 1fr 1fr;
-  gap: .75rem 1.5rem;
-  list-style: none;
-}
-
-.practical-card li {
-  position: relative;
-  padding: .85rem 0 .85rem 1.5rem;
-  border-bottom: 1px solid rgba(244, 239, 229, .09);
-}
-
-.practical-card li::before {
-  position: absolute;
-  top: 1.48rem;
-  left: 0;
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  content: "";
-  background: var(--pink);
-}
-
-.safety-card {
-  background: linear-gradient(135deg, rgba(76, 29, 149, .28), rgba(236, 72, 153, .07));
-  border-color: rgba(139, 92, 246, .38);
-}
-
-.weekend-section {
-  padding: clamp(5rem, 9vw, 9rem) 0;
-  border-top: 1px solid var(--line);
-}
-
-.weekend-grid {
-  display: grid;
-  margin-top: 4rem;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
-}
-
-.plan-card {
-  min-height: 380px;
-  padding: 2.2rem;
-  border: 1px solid var(--line);
-  border-top: 4px solid var(--pink);
-  border-radius: 0 0 1.25rem 1.25rem;
-  background: var(--glass);
-  color: var(--paper);
-  box-shadow: 0 24px 60px rgba(2, 6, 23, .26);
-}
-
-.plan-card:nth-child(2) {
-  border-top-color: var(--gold);
-  transform: translateY(2rem);
-}
-
-.plan-card:nth-child(3) {
-  border-top-color: var(--purple);
-}
-
-.plan-card .day {
-  display: block;
-  margin-bottom: 4rem;
-  color: #f472b6;
-  font-size: .7rem;
-  font-weight: 800;
-  letter-spacing: .16em;
-  text-transform: uppercase;
-}
-
-.plan-card h3 {
-  margin: 0 0 1.2rem;
-  font-family: var(--serif);
-  font-size: 2.3rem;
-  font-weight: 500;
-  line-height: 1;
-}
-
-.plan-card p {
-  color: var(--paper-muted);
-  line-height: 1.75;
-}
-
-.faq-section {
-  display: grid;
-  padding: clamp(6rem, 10vw, 10rem) 0;
-  border-top: 1px solid var(--line);
-  grid-template-columns: minmax(260px, .72fr) minmax(0, 1.28fr);
-  gap: clamp(3rem, 8vw, 8rem);
-}
-
-.faq-intro {
-  position: sticky;
-  top: 2rem;
-  align-self: start;
-}
-
-.faq-intro p {
-  color: var(--paper-muted);
-  line-height: 1.75;
-}
-
-.faq-list details {
-  border-bottom: 1px solid var(--line);
-}
-
-.faq-list summary {
-  position: relative;
-  padding: 1.6rem 3rem 1.6rem 0;
-  cursor: pointer;
-  font-family: var(--serif);
-  font-size: clamp(1.25rem, 2.4vw, 1.8rem);
-  list-style: none;
-}
-
-.faq-list summary::-webkit-details-marker {
-  display: none;
-}
-
-.faq-list summary::after {
-  position: absolute;
-  top: 1.45rem;
-  right: .25rem;
-  content: "+";
-  color: var(--pink);
-  font-family: var(--sans);
-  font-size: 1.6rem;
-  font-weight: 300;
-  transition: transform .25s ease;
-}
-
-.faq-list details[open] summary::after {
-  transform: rotate(45deg);
-}
-
-.faq-list details p {
-  max-width: 680px;
-  margin: 0;
-  padding: 0 2rem 1.8rem 0;
-  color: var(--paper-muted);
-  line-height: 1.75;
-}
-
-.final-cta {
-  position: relative;
-  padding: clamp(5rem, 10vw, 9rem) 1rem;
-  overflow: hidden;
-  border-top: 1px solid var(--line);
-  text-align: center;
-  background: radial-gradient(circle at 50% 50%, rgba(76, 29, 149, .24), transparent 35rem);
-}
-
-.final-cta::before {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: min(70vw, 700px);
-  height: min(70vw, 700px);
-  border: 1px solid rgba(236, 72, 153, .2);
-  border-radius: 50%;
-  content: "";
-  transform: translate(-50%, -50%);
-  box-shadow: 0 0 0 5rem rgba(139, 92, 246, .025), 0 0 0 10rem rgba(236, 72, 153, .018);
-}
-
-.cta-inner {
-  position: relative;
-  width: min(820px, 100%);
-  margin: 0 auto;
-}
-
-.final-cta h2 {
-  margin: 0 0 1.5rem;
-  font-family: var(--serif);
-  font-size: clamp(3rem, 7vw, 7rem);
-  font-weight: 500;
-  letter-spacing: -.05em;
-  line-height: .95;
-}
-
-.final-cta p {
-  max-width: 580px;
-  margin: 0 auto 2rem;
-  color: var(--paper-muted);
-  line-height: 1.75;
-}
-
-.cta-button {
-  display: inline-flex;
-  min-height: 52px;
-  padding: .95rem 1.4rem .95rem 1.7rem;
-  border-radius: 999px;
-  align-items: center;
-  gap: 1.2rem;
-  background: linear-gradient(135deg, var(--pink) 0%, var(--purple) 100%);
-  color: var(--paper);
-  font-size: .78rem;
-  font-weight: 900;
-  letter-spacing: .08em;
-  text-decoration: none;
-  text-transform: uppercase;
-  box-shadow: 0 12px 36px rgba(190, 24, 93, .34);
-  transition: box-shadow .25s ease, transform .25s ease, filter .25s ease;
-}
-
-.cta-button::after {
-  display: grid;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  content: "→";
-  background: rgba(15, 23, 42, .82);
-  color: var(--paper);
-  place-items: center;
-}
-
-.cta-button:hover {
-  transform: translateY(-3px);
-  filter: saturate(1.15) brightness(1.08);
-  box-shadow: 0 16px 42px rgba(190, 24, 93, .48), 0 0 24px rgba(139, 92, 246, .22);
-}
-
-.site-footer {
-  padding: 3rem 1rem;
-  border-top: 1px solid var(--line);
-}
-
-.footer-inner {
-  display: flex;
-  width: min(1180px, 100%);
-  margin: 0 auto;
-  align-items: end;
-  justify-content: space-between;
-  gap: 2rem;
-}
-
-.footer-inner h2 {
-  margin: 0 0 .5rem;
-  font-family: var(--serif);
-  font-size: 1.6rem;
-  font-weight: 500;
-}
-
-.footer-inner p,
-.footer-inner nav {
-  margin: 0;
-  color: var(--paper-muted);
-  font-size: .78rem;
-  line-height: 1.7;
-}
-
-.footer-inner nav {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  gap: 1.2rem;
-}
-
-.footer-inner nav a:hover {
-  color: var(--pink);
-}
-
-@media (max-width: 900px) {
-  .nav-links {
-    display: none;
-  }
-
-  .mobile-nav {
-    display: block;
-  }
-
-  .guide-hero::before {
-    background:
-      linear-gradient(180deg, rgba(15, 23, 42, .76), rgba(15, 23, 42, .96)),
-      radial-gradient(circle at 72% 28%, rgba(139, 92, 246, .18), transparent 24rem);
-  }
-
-  #connection-canvas {
-    opacity: .58;
-  }
-
-  .opening,
-  .section-intro,
-  .faq-section {
-    grid-template-columns: 1fr;
-  }
-
-  .answer-card,
-  .faq-intro {
-    position: relative;
-    top: auto;
-  }
-
-  .story-card:nth-child(n) {
-    grid-column: span 12;
-  }
-
-  .story-card:nth-child(3) {
-    grid-column: 2 / span 11;
-  }
-
-  .arrival-line,
-  .weekend-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .arrival-line::before {
-    top: 0;
-    right: auto;
-    bottom: 0;
-    left: .5rem;
-    width: 1px;
-    height: auto;
-  }
-
-  .arrival-step {
-    padding: 0 0 3.5rem 3rem;
-  }
-
-  .arrival-step::before {
-    top: .2rem;
-    left: 0;
-  }
-
-  .plan-card:nth-child(2) {
-    transform: none;
-  }
-}
-
-@media (max-width: 640px) {
-  .guide-hero {
-    min-height: 92svh;
-    padding-top: 7.5rem;
-  }
-
-  .guide-hero h1 {
-    font-size: clamp(3rem, 16vw, 5.2rem);
-  }
-
-  .hero-footer,
-  .footer-inner {
-    align-items: flex-start;
-    flex-direction: column;
-  }
-
-  .scroll-note {
-    display: none;
-  }
-
-  .hero-stats {
-    width: 100%;
-    justify-content: space-between;
-  }
-
-  .hero-stat strong {
-    font-size: 1.4rem;
-  }
-
-  .opening {
-    padding-top: 4.5rem;
-  }
-
-  .story-card:nth-child(n) {
-    grid-column: span 12;
-  }
-
-  .practical-grid,
-  .practical-card ul {
-    grid-template-columns: 1fr;
-  }
-
-  .footer-inner nav {
-    justify-content: flex-start;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  html {
-    scroll-behavior: auto;
-  }
-
-  *,
-  *::before,
-  *::after {
-    scroll-behavior: auto !important;
-    animation-duration: .01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: .01ms !important;
-  }
-
-  #connection-canvas {
-    display: none;
-  }
-}
+/* This guide now uses the shared 2027 editorial components.
+   Palette and type: edition-2027.css. Reading layout: edition-editorial.css. */
   </style>
   <link rel="dns-prefetch" href="https://connect.facebook.net">
 
@@ -1477,11 +264,12 @@ summary:focus-visible {
         "@type": "Offer",
         "name": "Full Pass attuale",
         "url": "https://lasalsadelbaile.com/MSC2026",
-        "price": "140.00",
+        "price": "135.00",
         "priceCurrency": "EUR",
         "availability": "https://schema.org/InStock",
-        "validThrough": "2026-11-20T12:00:00+01:00",
-        "@id": "https://milanosensualcongress.com/tickets#full-pass"
+        "validThrough": "2026-10-15T23:59:59+02:00",
+        "@id": "https://milanosensualcongress.com/tickets#full-pass",
+        "validFrom": "2026-09-16T00:00:00+02:00"
       },
       "url": "https://milanosensualcongress.com/"
     }
@@ -1509,30 +297,44 @@ summary:focus-visible {
   }
   </script>
   <script src="/js/prefetch-fallback.js?v=1" defer></script>
-<style data-inline="css/site.css">
-/* Small shared fixes; included by the critical-CSS generator on every page. */
-.glass-nav { max-height: 100vh; max-height: 100dvh; overflow-y: auto; }
-.glass-nav > .container > a,
-.glass-nav > .container > a > img { flex-shrink: 0; }
-.glass-nav button[aria-controls] { min-width: 44px; min-height: 44px; align-items: center; justify-content: center; }
-.glass-nav a:focus-visible,
-.glass-nav button:focus-visible,
-main a:focus-visible,
-main button:focus-visible,
-main input:focus-visible,
-main select:focus-visible,
-main summary:focus-visible { outline: 3px solid #f472b6; outline-offset: 4px; }
-main p a:not(.btn-primary):not(.btn-secondary):not(.levels-button) { text-decoration: underline; text-underline-offset: 3px; }
-@media (scripting: none) and (max-width: 1279px) {
-  .glass-nav { position: static; max-height: none; overflow: visible; }
-  .glass-nav button[aria-controls="mobile-menu"] { display: none; }
-  .glass-nav #mobile-menu { display: block; }
-}
-@media (prefers-reduced-motion: reduce) {
-  html { scroll-behavior: auto !important; }
-  *, *::before, *::after { animation: none !important; transition: none !important; }
-}
-  </style>
+
+<link rel="stylesheet" href="/css/fonts.css?v=2" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="/css/tailwind.min.css?v=20261010-brand" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="/vendor/fontawesome/fa-subset.min.css?v=2" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="/css/site.css?v=3" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="/css/edition-2027.css?v=20261010-brand" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="/css/edition-editorial.css?v=20261010-brand" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="/css/edition-motion.css?v=20261010-brand" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="/css/edition-personality.css?v=20261010-brand" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="/css/edition-culture.css?v=20261010-brand" media="print" onload="this.media='all'">
+<style data-critical="af6a1495451fab28">@font-face { font-family: 'Inter Fallback'; src: local('Arial'); size-adjust: 109.38%; ascent-override: 88.57%; descent-override: 22.05%; line-gap-override: 0%; } @font-face { font-family: 'Playfair Display Fallback'; src: local('Times New Roman'); size-adjust: 110.64%; ascent-override: 97.80%; descent-override: 22.69%; line-gap-override: 0%; } @font-face { font-family: 'Inter'; font-style: normal; font-weight: 100 900; font-display: swap; src: url('/fonts/inter-latin-ext.woff2') format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; } @font-face { font-family: 'Inter'; font-style: normal; font-weight: 100 900; font-display: swap; src: url('/fonts/inter-latin.woff2') format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; } @font-face { font-family: 'Playfair Display'; font-style: italic; font-weight: 400 900; font-display: swap; src: url('/fonts/playfair-display-italic-latin-ext.woff2') format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; } @font-face { font-family: 'Playfair Display'; font-style: italic; font-weight: 400 900; font-display: swap; src: url('/fonts/playfair-display-italic-latin.woff2') format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; } @font-face { font-family: 'Playfair Display'; font-style: normal; font-weight: 400 900; font-display: swap; src: url('/fonts/playfair-display-latin-ext.woff2') format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; } @font-face { font-family: 'Playfair Display'; font-style: normal; font-weight: 400 900; font-display: swap; src: url('/fonts/playfair-display-latin.woff2') format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }*,::backdrop,:after,:before{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:#3b82f680;--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }*,:after,:before{box-sizing:border-box;border:0 solid #e5e7eb}:after,:before{--tw-content:""}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;-o-tab-size:4;tab-size:4;font-family:Inter,Inter Fallback,sans-serif;font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:initial}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:initial;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:initial}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0}fieldset,legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::-moz-placeholder,textarea::-moz-placeholder{opacity:1;color:#9ca3af}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.hidden{display:none}.animate-spin{animation:spin 1s linear infinite}.scroll-smooth{scroll-behavior:smooth}@font-face{font-family:"Font Awesome 6 Free";font-style:normal;font-weight:900;font-display:block;src:url(/vendor/fontawesome/webfonts/fa-solid-900-subset.2afe770e00485620.woff2) format("woff2")}@font-face{font-family:"Font Awesome 6 Free";font-style:normal;font-weight:400;font-display:block;src:url(/vendor/fontawesome/webfonts/fa-regular-400-subset.bc82e9c0646d20dc.woff2) format("woff2")}@font-face{font-family:"Font Awesome 6 Brands";font-style:normal;font-weight:400;font-display:block;src:url(/vendor/fontawesome/webfonts/fa-brands-400-subset.1c85a33b75b7dabe.woff2) format("woff2")}.glass-nav { max-height: 100vh; max-height: 100dvh; overflow-y: auto; } .glass-nav > .container > a, .glass-nav > .container > a > img { flex-shrink: 0; } .glass-nav button[aria-controls] { min-width: 44px; min-height: 44px; align-items: center; justify-content: center; } .glass-nav a:focus-visible, .glass-nav button:focus-visible, main a:focus-visible, main button:focus-visible, main input:focus-visible, main select:focus-visible, main summary:focus-visible { outline: 3px solid #f38c78; outline-offset: 4px; } main p a:not(.btn-primary):not(.btn-secondary):not(.levels-button) { text-decoration: underline; text-underline-offset: 3px; } @media (scripting: none) and (max-width: 1279px) { .glass-nav { position: static; max-height: none; overflow: visible; } .glass-nav button[aria-controls="mobile-menu"] { display: none; } .glass-nav #mobile-menu { display: block; } } @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto !important; } *, *::before, *::after { animation: none !important; transition: none !important; } }:root{
+  --e27-ink: #031e1c;
+  --e27-night: #021310;
+  --e27-paper: #fff6e6;
+  --e27-emerald: #07594e;
+  --e27-red: #bc3b28;
+  --e27-coral: #ff9b81;
+  --e27-sage: #bdcdc6;
+  --e27-gold: #dfc58e;
+  --e27-line: #dfc58e38;
+  --e27-nav: #021815;
+  --e27-surface: #082b25;
+  --e27-surface-raised: #103b33;
+  --e27-paper-muted: #eedfca;
+  --e27-paper-ink: #17372e;
+  --e27-paper-copy: #45625a;
+  --e27-paper-line: #17372e30;
+  --e27-radius: 12px;
+}body.edition-2027{ background: var(--e27-ink); color: var(--e27-paper); font-family: Inter,'Inter Fallback',sans-serif; -webkit-font-smoothing: antialiased; }.edition-2027 ::selection{ color: var(--e27-paper); background: var(--e27-red); }.edition-2027 :is(a,button,input,select,textarea,summary):focus-visible{ outline: 3px solid var(--e27-gold); outline-offset: 5px; }.edition-2027 :is(h1,h2,h3){ text-wrap: balance; }.edition-2027 main{ overflow: clip; }.edition-2027 [id]{ scroll-margin-top: 110px; }.edition-2027 .e27-preview{ padding: 8px 24px; background: #082925; color: var(--e27-sage); font-size: 10px; line-height: 1.5; text-align: center; letter-spacing: .025em; }.edition-2027 .e27-preview strong{ font-weight: 800; color: var(--e27-paper); }.edition-2027 .e27-nav{ position: sticky; top: 0; z-index: 100; background: var(--e27-nav); border-bottom: 1px solid var(--e27-line); }.edition-2027 .e27-nav-inner{ max-width: 1440px; padding: 12px 4.5%; margin: auto; display: flex; align-items: center; justify-content: space-between; gap: 24px; min-height: 86px; }.edition-2027 .e27-brand{ display: flex; align-items: center; gap: 15px; flex-shrink: 0; }.edition-2027 .e27-brand img{ width: 100px; height: 60px; object-fit: contain; }.edition-2027 .e27-brand span{ padding-left: 8px; font-size: 11px; letter-spacing: .16em; color: var(--e27-gold); }.edition-2027 .e27-desktop{ display: flex; align-items: center; gap: clamp(16px,2.2vw,32px); }.edition-2027 .e27-desktop > a{ padding: 12px 0; font-size: 12px; font-weight: 600; color: var(--e27-paper); }.edition-2027 .e27-desktop > a:is(:hover,[aria-current="page"]){ color: var(--e27-gold); }.edition-2027 .e27-desktop > a[aria-current="page"]{ text-decoration: underline; text-underline-offset: 7px; text-decoration-thickness: 1px; }.edition-2027 .e27-languages{ display: flex; border-left: 1px solid var(--e27-line); padding-left: 16px; gap: 4px; }.edition-2027 .e27-languages a{ min-width: 32px; min-height: 44px; display: grid; place-items: center; font-size: 11px; color: var(--e27-sage); }.edition-2027 .e27-languages [aria-current]{ color: var(--e27-paper); text-decoration: underline; text-underline-offset: 5px; }.edition-2027 .e27-nav .e27-nav-cta{ display: inline-flex; flex-shrink: 0; align-items: center; justify-content: center; gap: 16px; min-height: 46px; padding: 12px 17px; border: 1px solid #fff6e633; border-radius: 10px; background: var(--e27-paper); color: var(--e27-ink); font: 650 12px/1.4 Inter,'Inter Fallback',sans-serif; letter-spacing: .01em; white-space: nowrap; text-decoration: none; transition: background .2s,border-color .2s; }.edition-2027 .e27-nav .e27-nav-cta svg{ flex: none; width: 18px; height: 18px; }.edition-2027 .e27-nav .e27-nav-cta:is(:hover,[aria-current="page"]){ background: #e2eadf; border-color: #e2eadf; color: var(--e27-ink); }.edition-2027 .e27-menu-toggle{ display: none; min-width: 48px; min-height: 48px; border: 1px solid var(--e27-line); border-radius: 10px; font-size: 22px; }.edition-2027 .e27-mobile-menu{ background: var(--e27-nav); border-top: 1px solid var(--e27-line); padding: 20px 6%; max-height: calc(100dvh - 86px); overflow-y: auto; }.edition-2027 .e27-mobile-menu:not(.hidden){ display: grid; grid-template-columns: 1fr 1fr; gap: 4px 20px; }.edition-2027 .e27-mobile-menu a{ display: flex; align-items: center; min-height: 44px; font-size: 14px; }.edition-2027 .e27-mobile-menu a[aria-current="page"]{ color: var(--e27-gold); }.edition-2027 .e27-mobile-menu .e27-nav-cta{ grid-column: 1/-1; justify-self: start; align-self: center; margin-block: 0; }.edition-2027 .e27-mobile-menu .e27-languages{ grid-column: 1/-1; border: 0; padding: 12px 0 0; margin-top: 12px; border-top: 1px solid var(--e27-line); }.edition-2027 .e27-mobile-menu .e27-languages a{ justify-content: center; }.edition-2027 .e27-skip{ position: fixed; left: 20px; top: -100px; z-index: 200; padding: 12px 20px; background: var(--e27-paper); color: var(--e27-ink); }.edition-2027 .e27-skip:focus{ top: 12px; }.edition-2027 .e27-wrap{ width: min(1180px,88%); margin-inline: auto; }.edition-2027 .e27-kicker{ display: block; color: var(--e27-gold); font-size: 10px; line-height: 1.6; font-weight: 700; text-transform: uppercase; letter-spacing: .2em; margin-bottom: 20px; }.edition-2027 #congress-facts{ font-size: 13px; line-height: 2; letter-spacing: .01em; }.edition-2027.e27-dialog-open{ overflow: hidden; }.edition-2027 .e27-footer{ background: var(--e27-night); color: var(--e27-paper); border-top: 1px solid var(--e27-line); padding: 65px 0 80px; }.edition-2027 .e27-footer-top{ display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 50px; margin-bottom: 50px; }.edition-2027 .e27-footer-wordmark{ font: 850 42px/.97 Inter,'Inter Fallback',sans-serif; letter-spacing: -.05em; }.edition-2027 .e27-footer-wordmark em{ display: block; max-width: 270px; margin-top: 12px; color: var(--e27-gold); font: italic 500 23px/1.2 'Playfair Display','Playfair Display Fallback',serif; }.edition-2027 .e27-footer .e27-kicker{ margin-bottom: 14px; font-size: 9px; }.edition-2027 .e27-footer ul{ list-style: none; padding: 0; margin: 0; }.edition-2027 .e27-footer li a{ display: inline-block; min-height: 38px; padding-block: 10px; font-size: 12px; color: var(--e27-sage); }.edition-2027 .e27-footer a:hover{ color: var(--e27-paper); text-decoration: underline; text-underline-offset: 4px; }.edition-2027 .e27-footer-bottom{ border-top: 1px solid var(--e27-line); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 20px; padding-top: 24px; color: var(--e27-sage); font-size: 10px; line-height: 1.8; }.edition-2027 .e27-footer-bottom div{ display: flex; flex-wrap: wrap; gap: 20px; }@media (max-width: 1100px){.edition-2027 .e27-desktop{ display: none; }.edition-2027 .e27-menu-toggle{ display: flex; align-items: center; justify-content: center; }}@media (max-width: 700px){.edition-2027 .e27-preview{ font-size: 9px; padding: 7px 16px; }.edition-2027 .e27-nav-inner{ min-height: 74px; padding-block: 6px; }.edition-2027 .e27-brand img{ width: 87px; height: 52px; }.edition-2027 .e27-wrap{ width: 88%; }.edition-2027 .e27-footer{ padding-top: 48px; }.edition-2027 #congress-facts{ font-size: 12px; }.edition-2027 .e27-footer-top{ grid-template-columns: 1fr 1fr; gap: 32px; }.edition-2027 .e27-footer-top > :first-child{ grid-column: 1/-1; }}@media (scripting: none){.edition-2027 .e27-menu-toggle{ display: none; }.edition-2027 .e27-nav{ position: static; }.edition-2027 .e27-mobile-menu{ display: grid; grid-template-columns: 1fr 1fr; gap: 4px 20px; max-height: none; }}@media (min-width: 1101px){.edition-2027 .e27-mobile-menu{ display: none !important; }}.edition-2027 .editorial-masthead{
+  background: var(--e27-ink); color: var(--e27-paper); padding: clamp(3.5rem, 7vw, 7rem) 0;
+  border-bottom: 1px solid rgba(182, 199, 184, .24); position: relative;
+}.edition-2027 .editorial-masthead::before{
+  content: none;
+}.edition-2027 .editorial-masthead-inner{
+  width: min(1180px, 88%); margin: 0 auto; display: grid;
+  grid-template-columns: minmax(0, 1.7fr) minmax(260px, 1fr); align-items: center; gap: clamp(2rem, 6vw, 6rem);
+}.edition-2027 .editorial-masthead-inner:not(:has(.editorial-hero-figure)){ grid-template-columns: minmax(0, 960px); }.edition-2027 .editorial-overline{ font: 600 .7rem/1.6 Inter, sans-serif; letter-spacing: .17em; text-transform: uppercase; color: var(--e27-sage); margin: 0 0 1.8rem; }.edition-2027 .editorial-overline span{ margin: 0 .7rem; color: var(--e27-gold); }.edition-2027 .editorial-masthead h1{ font-family: Inter, 'Inter Fallback', sans-serif; font-size: clamp(42px, 4.9vw, 72px); line-height: 1.04; font-weight: 900; letter-spacing: -.055em; text-transform: uppercase; margin: 0 0 1.8rem; max-width: 950px; color: var(--e27-paper); }.edition-2027 .editorial-masthead h1 :is(span, em){ color: var(--e27-gold); background: none; font-family: 'Playfair Display', 'Playfair Display Fallback', serif; font-style: italic; font-weight: 500; text-transform: none; }.edition-2027 .editorial-deck{ font-size: clamp(1rem, 1.4vw, 1.16rem); line-height: 1.7; max-width: 44rem; color: var(--e27-sage); margin: 0; font-weight: 400; }.edition-2027 .editorial-edition-note{ border-top: 1px solid rgba(182, 199, 184, .25); padding-top: 1.2rem; margin-top: 2rem; max-width: 40rem; font-size: .71rem; line-height: 1.65; color: var(--e27-sage); }.edition-2027 .editorial-hero-figure{ position: relative; margin: 0; min-width: 0; }.edition-2027 .editorial-hero-figure img{ width: 100%; height: auto; max-height: 510px; object-fit: cover; aspect-ratio: 4 / 5; border-radius: var(--e27-radius); border: 1px solid var(--e27-line); }.edition-2027 .editorial-hero-figure a{ color: var(--e27-paper); }.edition-2027 .editorial-hero-figure figcaption{ color: var(--e27-sage); font-size: .68rem; line-height: 1.55; padding-top: .8rem; }.edition-2027 .editorial-main{ background: var(--e27-paper); color: var(--e27-paper-ink); padding: clamp(3rem, 6vw, 6.5rem) 0; }.edition-2027 .editorial-reading-grid{ display: grid; grid-template-columns: 215px minmax(0, 1fr); gap: clamp(2.5rem, 7vw, 7rem); width: min(1180px, 88%); margin: 0 auto; align-items: start; }.edition-2027 .editorial-rail{ position: sticky; top: 112px; border-top: 2px solid var(--e27-emerald); padding-top: 1.3rem; color: var(--e27-paper-copy); }.edition-2027 .editorial-small-label{ font: 600 .65rem/1.65 Inter, sans-serif; letter-spacing: .14em; text-transform: uppercase; color: var(--e27-paper-copy); margin: 0 0 1rem; }.edition-2027 .editorial-rail ol{ padding: 0; margin: 0 0 2rem; list-style: none; }.edition-2027 .editorial-rail li{ border-bottom: 1px solid var(--e27-paper-line); }.edition-2027 .editorial-rail li a{ display: grid; grid-template-columns: 22px 1fr; gap: .65rem; align-items: baseline; padding: .8rem 0; font-size: .78rem; line-height: 1.55; color: var(--e27-paper-ink); text-decoration: none; }.edition-2027 .editorial-rail li a span{ color: var(--e27-paper-copy); font-size: .61rem; }.edition-2027 .editorial-rail a:hover{ color: #a33524; }.edition-2027 .editorial-backlink{ display: inline-flex; align-items: center; justify-content: space-between; gap: 1.6rem; padding: .65rem 0; min-height: 44px; color: var(--e27-emerald); font-size: .78rem; font-weight: 600; text-decoration: none; border-bottom: 1px solid currentColor; }.edition-2027 .editorial-article{ min-width: 0; }.edition-2027 .editorial-prose{ color: var(--e27-paper-copy); font: 400 1rem/1.85 Inter, sans-serif; }.edition-2027 .editorial-prose :is(p, ul, ol, blockquote, table){ margin: 0 0 1.4rem; }.edition-2027 .editorial-prose :is(h2, h3, h4){ color: var(--e27-ink); line-height: 1.25; font-weight: 500; }.edition-2027 .editorial-prose h2{ font-family: Inter, 'Inter Fallback', sans-serif; font-size: clamp(28px, 2.7vw, 39px); font-weight: 800; letter-spacing: -.045em; margin: 3rem 0 1.1rem; padding-top: 1.6rem; border-top: 1px solid var(--e27-paper-line); scroll-margin-top: 120px; }.edition-2027 .editorial-prose > h2:first-child,.edition-2027 .editorial-prose > :first-child h2:first-child{ margin-top: 0; }.edition-2027 .editorial-prose h3{ font-size: 1.16rem; font-weight: 650; margin: 2rem 0 .8rem; }.edition-2027 .editorial-prose h4{ font-size: 1rem; font-weight: 650; margin: 1.5rem 0 .8rem; }.edition-2027 .editorial-prose strong{ color: var(--e27-paper-ink); font-weight: 650; }.edition-2027 .editorial-prose a:not(.editorial-action){ color: var(--e27-emerald); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }.edition-2027 .editorial-prose a:not(.editorial-action):hover{ color: #a33524; }.edition-2027 .editorial-prose ul{ list-style: disc; padding-left: 1.35rem; }.edition-2027 .editorial-prose ol{ list-style: decimal; padding-left: 1.35rem; }.edition-2027 .editorial-prose li{ margin-bottom: .65rem; }.edition-2027 .editorial-prose blockquote{ font: italic 500 clamp(1.4rem, 2.2vw, 1.9rem)/1.5 'Playfair Display', serif; color: var(--e27-emerald); border-left: 3px solid var(--e27-red); padding: .5rem 0 .5rem 1.5rem; }.edition-2027 .editorial-prose img{ max-width: 100%; height: auto; }.edition-2027 .editorial-prose figure{ margin: 2rem 0; }.edition-2027 .editorial-prose figcaption{ font-size: .75rem; color: var(--e27-paper-copy); margin-top: .65rem; }.edition-2027 .editorial-panel{ background: var(--e27-paper-muted); border: 1px solid var(--e27-paper-line); padding: 1.6rem; margin: 1.7rem 0; border-radius: var(--e27-radius); }.edition-2027 .editorial-panel > :last-child{ margin-bottom: 0; }.edition-2027 .editorial-columns{ display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.3rem; margin: 1.7rem 0; align-items: start; }.edition-2027 .editorial-columns .editorial-panel{ margin: 0; }.edition-2027 .editorial-prose .editorial-feature{ margin: 2.5rem 0; padding: 2rem; background: var(--e27-paper-muted); border: 1px solid var(--e27-paper-line); border-radius: var(--e27-radius); }.edition-2027 .editorial-feature h2{ border: 0; margin-top: 0; padding-top: 0; }.edition-2027 .editorial-feature h3{ margin-top: 0; }.edition-2027 .editorial-action{ background: var(--e27-red); color: var(--e27-paper); display: inline-flex; align-items: center; justify-content: center; gap: 1.2rem; min-height: 54px; padding: .9rem 1.6rem; margin: .35rem .4rem .35rem 0; font: 650 .8rem/1.5 Inter, sans-serif; text-decoration: none; border: 1px solid transparent; border-radius: 999px; }.edition-2027 .editorial-action:hover{ background: #a63223; color: var(--e27-paper); }.edition-2027 .editorial-prose table{ width: 100%; border-collapse: collapse; font-size: .82rem; line-height: 1.6; }.edition-2027 .editorial-prose :is(th, td){ text-align: left; vertical-align: top; padding: .85rem; border-bottom: 1px solid var(--e27-paper-line); }.edition-2027 .editorial-prose th{ color: var(--e27-ink); background: var(--e27-paper-muted); font-weight: 650; }.edition-2027 .editorial-prose td small{ display: block; }.edition-2027 .editorial-prose details{ border-bottom: 1px solid var(--e27-paper-line); padding: .4rem 0; }.edition-2027 .editorial-prose summary{ cursor: pointer; min-height: 48px; padding: .85rem 0; font-weight: 650; color: var(--e27-ink); }.edition-2027 .editorial-prose details p{ padding-top: .5rem; }.edition-2027 :is(.editorial-main, .editorial-library, .editorial-masthead, .editorial-error) :is(a, summary, [tabindex]):focus-visible{ outline: 3px solid var(--e27-red); outline-offset: 5px; }@media (min-width: 768px){.edition-2027 .editorial-prose > p:first-child{ font-size: 1.2rem; line-height: 1.75; color: var(--e27-paper-ink); }}@media (max-width: 1023px){.edition-2027 .editorial-reading-grid{ grid-template-columns: 185px minmax(0, 1fr); gap: 2.2rem; }.edition-2027 .editorial-columns{ grid-template-columns: 1fr; }.edition-2027 .editorial-masthead-inner{ gap: 2rem; grid-template-columns: minmax(0, 1.5fr) minmax(220px, 1fr); }}@media (max-width: 767px){.edition-2027 .editorial-masthead-inner{ width: calc(100% - 40px); grid-template-columns: 1fr; gap: 2rem; }.edition-2027 .editorial-masthead{ padding: 3rem 0; }.edition-2027 .editorial-masthead::before{ width: 4px; }.edition-2027 .editorial-masthead h1{ font-size: clamp(34px, 9.3vw, 60px); }.edition-2027 .editorial-hero-figure{ max-width: 480px; width: 100%; }.edition-2027 .editorial-hero-figure img{ max-height: 380px; aspect-ratio: 4 / 3; object-position: center 35%; }.edition-2027 .editorial-reading-grid{ width: calc(100% - 40px); grid-template-columns: 1fr; gap: 2.5rem; }.edition-2027 .editorial-rail{ position: static; }.edition-2027 .editorial-rail nav ol{ display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 1rem; margin-bottom: 1rem; }.edition-2027 .editorial-rail nav li a{ font-size: .72rem; }.edition-2027 .editorial-rail .editorial-backlink{ margin-top: .5rem; }.edition-2027 .editorial-prose h2{ margin-top: 2.5rem; }.edition-2027 .editorial-prose{ font-size: .96rem; }.edition-2027 .editorial-panel,.edition-2027 .editorial-prose .editorial-feature{ padding: 1.2rem; }}@media (max-width: 520px){.edition-2027 .editorial-rail nav ol{ grid-template-columns: 1fr; }.edition-2027 .editorial-prose table{ font-size: .73rem; }.edition-2027 .editorial-prose :is(th, td){ padding: .65rem; }}.edition-2027 .editorial-hero-figure figcaption a{ text-decoration: underline; text-underline-offset: 3px; }.edition-2027 .e27-motion-toggle{ position: fixed; z-index: 90; right: 18px; bottom: 18px; min-height: 44px; min-width: 44px; padding: 10px 16px; border: 1px solid var(--e27-line); border-radius: 999px; background: var(--e27-night); color: var(--e27-paper); font: 600 11px/1.2 Inter, sans-serif; box-shadow: 0 3px 15px #0002; }.edition-2027 .e27-motion-toggle[hidden]{ display: none; }@media (prefers-reduced-motion: no-preference){.edition-2027.e27-motion-on .e27-in-view{ animation: e27-arrive .6s cubic-bezier(.16,1,.3,1) both; }.edition-2027.e27-motion-paused *,.edition-2027.e27-motion-paused *::before,.edition-2027.e27-motion-paused *::after{ animation-play-state: paused !important; }}@media (max-width: 700px){.edition-2027 .e27-motion-toggle{ right: 12px; bottom: 12px; }}.edition-2027 .scene-progress{ position: fixed; z-index: 80; top: 50%; right: 12px; transform: translateY(-50%); display: flex; flex-direction: column; align-items: flex-end; gap: 3px; }.edition-2027 .scene-progress a{ position: relative; display: flex; justify-content: center; align-items: center; width: 44px; height: 44px; min-height: 44px; min-width: 44px; color: var(--e27-paper); }.edition-2027 .scene-progress a::after{ content: ''; flex: none; width: 8px; height: 8px; border: 1px solid var(--e27-gold); border-radius: 50%; box-shadow: 0 0 0 4px var(--e27-ink); background: var(--e27-ink); transition: transform .25s,background .25s; }.edition-2027 .scene-progress a[aria-current="location"]::after{ transform: scale(1.4); background: var(--e27-gold); }.edition-2027 .scene-progress span{ position: absolute; right: 44px; width: max-content; max-width: 160px; pointer-events: none; border: 1px solid var(--e27-line); border-radius: 8px; padding: 8px 12px; background: var(--e27-ink); font-size: 10px; opacity: 0; visibility: hidden; transition: opacity .2s; }.edition-2027 .scene-progress a:is(:hover,:focus-visible) span{ opacity: 1; visibility: visible; }.edition-2027 .scene-progress[hidden]{ display: none; }@media (max-width: 1100px){.edition-2027 .scene-progress{ display: none; }}@media (prefers-reduced-motion: reduce){.edition-2027 .scene-progress :is(a::after,span){ transition: none; }}body.scene-story .editorial-masthead-inner{ grid-template-columns: minmax(0, 1.42fr) minmax(260px, 1fr); gap: clamp(35px, 6vw, 80px); }body.scene-story .editorial-masthead-inner:not(:has(.editorial-hero-figure)){ grid-template-columns: minmax(0, 980px); }body.scene-story .editorial-hero-figure img{ max-height: 540px; border-radius: var(--e27-radius); }body.scene-story.story-guides .editorial-prose > .editorial-columns p > strong{ display: block; margin-bottom: .35em; }@media (max-width: 1000px){body.scene-story .editorial-masthead-inner{ gap: 30px; grid-template-columns: minmax(0, 1.2fr) minmax(240px, 1fr); }}@media (max-width: 767px){body.scene-story .editorial-masthead-inner{ grid-template-columns: 1fr; gap: 35px; }body.scene-story .editorial-hero-figure{ width: min(420px, 100%); margin-inline: auto; }body.scene-story .editorial-hero-figure img{ max-height: 460px; }}@keyframes spin{to{transform:rotate(1turn)}}@keyframes e27-arrive{ from { translate: 0 20px; } to { translate: 0 0; } }</style>
+<noscript data-critical-fallback><link rel="stylesheet" href="/css/fonts.css?v=2"><link rel="stylesheet" href="/css/tailwind.min.css?v=20261010-brand"><link rel="stylesheet" href="/vendor/fontawesome/fa-subset.min.css?v=2"><link rel="stylesheet" href="/css/site.css?v=3"><link rel="stylesheet" href="/css/edition-2027.css?v=20261010-brand"><link rel="stylesheet" href="/css/edition-experiences.css?v=20261010-brand"><link rel="stylesheet" href="/css/edition-visit.css?v=20261010-brand"><link rel="stylesheet" href="/css/edition-editorial.css?v=20261010-brand"><link rel="stylesheet" href="/css/edition-motion.css?v=20261010-brand"><link rel="stylesheet" href="/css/edition-personality.css?v=20261010-brand"><link rel="stylesheet" href="/css/edition-stage.css?v=20261107-programme"><link rel="stylesheet" href="/css/edition-stay.css?v=20261010-brand"><link rel="stylesheet" href="/css/edition-culture.css?v=20261010-brand"></noscript>
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://milanosensualcongress.com/it/news/congresso-bachata-da-soli-guida-ballerini">
   <meta property="og:title" content="Congresso Bachata da Soli: Festival e Workshop">
@@ -1551,261 +353,199 @@ main p a:not(.btn-primary):not(.btn-secondary):not(.levels-button) { text-decora
   <meta name="twitter:image:alt" content="Congresso Bachata da Soli: Festival e Workshop">
 </head>
 
-<body>
+<body class="edition-2027 scene-story story-guides">
   <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=2083020305980459&amp;ev=PageView&amp;noscript=1" alt=""></noscript>
-  <div class="reading-progress" aria-hidden="true"></div>
 
-  <nav class="site-nav" aria-label="Navigazione principale">
-    <div class="nav-wrap">
-      <a class="brand" href="../">
-        <img alt="Milano Sensual Congress: Pagina iniziale" decoding="async" height="240" loading="eager" sizes="93.333px" srcset="/images/milano-sensual-congress-official-logo-nav_100w.webp 100w, /images/milano-sensual-congress-official-logo-nav_200w.webp 200w, /images/milano-sensual-congress-official-logo-nav_300w.webp 300w, /images/milano-sensual-congress-official-logo-nav.webp 400w" src="../../images/milano-sensual-congress-official-logo-nav.webp" width="400" class="h-14 w-auto mix-blend-screen">
-        <span>2026</span>
-      </a>
-      <div class="nav-links">
-        <a href="../">Home</a>
-        <a href="../artists">Artisti</a>
-        <a href="../tickets">Biglietti</a><a href="../party">Orari</a>
-        <a href="../hotel">Hotel</a>
-        <a href="../transfer">Transfer</a>
-        <a class="active" href="../news">News</a>
-        <div class="language-switch" aria-label="Selezione lingua">
-          <a href="../../news/bachata-congress-alone-solo-dancer-guide" lang="en">EN</a>
-          <a class="current" href="#" lang="it" aria-current="page">IT</a>
-        </div>
-      </div>
-      <details class="mobile-nav">
-        <summary>Menu</summary>
-        <div class="mobile-menu">
-          <a href="../">Home</a><a href="../artists">Artisti</a><a href="../tickets">Biglietti</a><a href="../party">Orari</a>
-          <a href="../hotel">Hotel</a><a href="../transfer">Transfer</a><a href="../news">News</a>
-          <a href="../../news/bachata-congress-alone-solo-dancer-guide" lang="en">English</a>
-        </div>
-      </details>
-    </div>
-  </nav>
 
-  <header class="guide-hero">
-    <canvas id="connection-canvas" aria-hidden="true"></canvas>
-    <div class="hero-inner">
-      <nav class="breadcrumb" aria-label="Breadcrumb" hidden style="display:none!important">
-        <a href="../">Home</a><span aria-hidden="true">/</span><a href="../news">News</a><span aria-hidden="true">/</span><span>Guida per chi arriva da solo</span>
-      </nav>
-      <div class="hero-copy">
-        <p class="eyebrow">La guida per il ballerino indipendente</p>
-        <h1>Andare a un Congresso Bachata <em>da soli?</em></h1>
-        <p class="hero-deck">Una guida pratica a Festival Bachata, rotazione partner, social e nuove conoscenze—senza dover arrivare con una coppia o con un gruppo.</p>
-      </div>
-      <div class="hero-footer">
-        <div class="hero-stats" aria-label="Punti chiave dell'articolo">
-          <div class="hero-stat"><strong>0</strong><span>partner obbligatori</span></div>
-          <div class="hero-stat"><strong>3</strong><span>giorni per connettersi</span></div>
-          <div class="hero-stat"><strong>1.000+</strong><span>ballerini attesi</span></div>
-        </div>
-        <span class="scroll-note">Leggi la guida</span>
-      </div>
-    </div>
-  </header>
+  <a class="e27-skip" href="#main-content">Vai al contenuto</a>
+ <div class="e27-preview" role="region" aria-label="Anteprima edizione"><strong>19–21 NOVEMBRE 2027 · DEVERO HOTEL</strong> · Le prenotazioni mostrate si riferiscono al 2026.</div>
+ <nav aria-label="Navigazione principale" class="e27-nav"><div class="e27-nav-inner"><a aria-label="Milano Sensual Congress — Edizione 2027 — Home" class="e27-brand" href="/it/"><img alt="Milano Sensual Congress" decoding="async" height="120" loading="eager" sizes="(max-width: 700px) 87px, 100px" srcset="/images/milano-sensual-congress-official-logo-nav-2027-teal-v57_100w.webp 100w, /images/milano-sensual-congress-official-logo-nav-2027-teal-v57_175w.webp 175w, /images/milano-sensual-congress-official-logo-nav-2027-teal-v57.webp 200w, /images/milano-sensual-congress-official-logo-nav-2027-teal-v57_300w.webp 300w" src="/images/milano-sensual-congress-official-logo-nav-2027-teal-v57.webp" width="200"><span>EDIZIONE<br/><strong>2027</strong></span></a><div class="e27-desktop"><a href="/it/artists">Artisti</a><a href="/it/programma">Programma</a><a href="/it/hotel">Hotel</a><a href="/it/news">Journal</a><a href="/it/promoters">Promoters</a><a href="/it/contact">Contatti</a><div class="e27-languages"><a href="/news/bachata-congress-alone-solo-dancer-guide" lang="en">EN</a><a aria-current="true" href="/it/news/congresso-bachata-da-soli-guida-ballerini" lang="it">IT</a></div><a class="e27-nav-cta premiere-nav-booking" href="/it/tickets"><span>Prenota il tuo pass</span><svg aria-hidden="true" fill="none" focusable="false" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" viewBox="0 0 24 24" width="18"><path d="M6 18 18 6M6 6h12v12"></path></svg></a></div><button aria-controls="mobile-menu" aria-expanded="false" aria-label="Apri menu di navigazione" class="e27-menu-toggle" onclick='var m=document.getElementById("mobile-menu");m.classList.toggle("hidden");this.setAttribute("aria-expanded",String(!m.classList.contains("hidden")))'><span aria-hidden="true">☰</span></button></div><div class="e27-mobile-menu hidden" id="mobile-menu" tabindex="-1"><a href="/it/">Home</a><a href="/it/artists">Artisti</a><a href="/it/programma">Programma</a><a href="/it/hotel">Hotel</a><a href="/it/news">Journal</a><a href="/it/faq">Info</a><a href="/it/party">Party</a><a href="/it/masterclass">Masterclass</a><a href="/it/jacknjill">Jack &amp; Jill</a><a href="/it/navetta">Navetta</a><a href="/it/contact">Contatti</a><a href="/it/promoters">Promoters</a><a class="e27-nav-cta premiere-nav-booking" href="/it/tickets"><span>Prenota il tuo pass</span><svg aria-hidden="true" fill="none" focusable="false" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" viewBox="0 0 24 24" width="18"><path d="M6 18 18 6M6 6h12v12"></path></svg></a><div class="e27-languages"><a href="/news/bachata-congress-alone-solo-dancer-guide" lang="en">EN</a><a aria-current="true" href="/it/news/congresso-bachata-da-soli-guida-ballerini" lang="it">IT</a></div></div></nav>
 
-  <main class="article-main">
-    <article>
-      <div class="article-shell opening">
-        <div class="opening-copy reveal">
-          <p class="section-kicker">La risposta sincera</p>
-          <h2>Puoi arrivare da solo. Non vivrai il weekend in solitudine.</h2>
-          <p>Il momento prima di acquistare il pass può diventare sorprendentemente personale. Vuoi i workshop, la musica e il social fino a tarda notte—ma il tuo partner abituale non può venire, la tua scuola non organizza il viaggio oppure nessuno del gruppo ha ancora deciso. E allora arriva la domanda: mi divertirò davvero a un <strong>Congresso Bachata</strong> se parto da solo?</p>
-          <p>Sì. Per molti aspetti, un congresso è pensato proprio per i ballerini indipendenti. Durante un <strong>Workshop Bachata</strong> si ruota normalmente il partner. Il social nasce per incontrare persone diverse, una canzone alla volta. Le pause caffè, i corridoi dell'hotel e le lezioni successive creano secondi e terzi incontri in modo naturale. Non devi inventarti una nuova personalità per il weekend; basta lasciare un po' di spazio alle piccole conversazioni.</p>
-          <p>Questa guida non promette che ogni minuto sarà facilissimo. Entrare da soli in una sala piena può mettere soggezione. È una mappa per rendere più semplice la prima ora—e per capire perché i <strong>Festival Bachata</strong> internazionali spesso fanno sentire meno soli di una normale serata fuori.</p>
-        </div>
-        <aside class="answer-card reveal">
-          <span class="number">01</span>
-          <h2>La risposta breve</h2>
-          <p><strong>Non ti serve un partner.</strong> Organizza bene l'arrivo, scegli il livello giusto, invita a ballare con rispetto e lascia che il ritmo ripetuto del weekend faccia il resto.</p>
-        </aside>
-      </div>
+  <header class="editorial-masthead" data-scene-word="DA SAPERE"><div class="editorial-masthead-inner"><div class="editorial-masthead-copy"><p class="editorial-overline">Milano Sensual Congress <span aria-hidden="true">/</span> Storie &amp; guide</p><h1>Andare a un Congresso Bachata <em>da soli?</em></h1><p class="editorial-deck">Una guida pratica a Festival Bachata, rotazione partner, social e nuove conoscenze—senza dover arrivare con una coppia o con un gruppo.</p><p class="editorial-edition-note">Dall’archivio MSC · I riferimenti all’edizione 2026 sono conservati.</p></div><figure class="editorial-hero-figure"><img src="/images/news/bachata-congress-2026-dance-connection_480w.webp" width="480" height="480" alt="Andare a un Congresso Bachata da soli?" loading="eager" decoding="async" fetchpriority="high"></figure></div></header>
 
-      <section class="article-shell field-guide" aria-labelledby="come-funziona">
-        <div class="section-intro reveal">
-          <div>
-            <p class="section-kicker">Come funziona il weekend</p>
-            <h2 class="section-heading" id="come-funziona">Quattro motivi per cui chi arriva solo si ambienta in fretta</h2>
-          </div>
-          <p>Un congresso non è un'unica festa enorme in cui tutti si conoscono già. È una sequenza di esperienze condivise. Ogni momento offre un modo semplice e senza pressione per diventare un volto familiare.</p>
-        </div>
-        <div class="story-grid">
-          <section class="story-card">
-            <span class="card-index">01 / Workshop</span>
-            <h3>La rotazione ti presenta prima ancora di trovare le parole</h3>
-            <p>Nella maggior parte delle lezioni congressuali, leader e follower ruotano durante il workshop. Arrivare senza partner è quindi normale, non un'eccezione. Sorridi, di' il tuo nome, prova il materiale e cambia quando l'artista chiama la rotazione. Consulta la nostra <a href="livelli-workshop-bachata-congresso">guida ai livelli dei Workshop Bachata</a> per scegliere una sala con un ritmo adatto a te.</p>
-          </section>
-          <section class="story-card">
-            <span class="card-index">02 / Social</span>
-            <h3>Una canzone è un invito completo</h3>
-            <p>Puoi chiedere semplicemente: “Ti va di ballare?”. Basta questo. Un sì significa una canzone condivisa, non un impegno per tutta la sera. Un no può voler dire piedi stanchi, un ballo già promesso o una pausa necessaria; accettalo con serenità e invita qualcun altro. Dopo il primo invito, la pista diventa più facile.</p>
-          </section>
-          <section class="story-card">
-            <span class="card-index">03 / Location</span>
-            <h3>L'hotel trasforma gli sconosciuti in volti familiari</h3>
-            <p>Nella <a href="../hotel">location ufficiale del Devero Hotel</a>, workshop, social e party si svolgono sotto lo stesso tetto. Incontri le stesse persone a colazione, in lezione e accanto alla pista. La familiarità cresce senza forzarla—e dopo l'ultima canzone non devi affrontare da solo un lungo spostamento in città.</p>
-          </section>
-          <section class="story-card">
-            <span class="card-index">04 / Community</span>
-            <h3>La maggior parte delle persone vuole allargare il proprio giro</h3>
-            <p>Gli <strong>Eventi Bachata</strong> internazionali attirano ballerini da città e Paesi diversi proprio perché cercano nuove influenze. Chiedi da dove arrivano, quale artista vogliono studiare o quale lezione hanno preferito. La curiosità condivisa vale più di una frase perfetta.</p>
-          </section>
-        </div>
-      </section>
+  <main class="editorial-main" id="main-content"><nav aria-label="Breadcrumb" class="breadcrumb" hidden="" style="display:none!important">
+<a href="../">Home</a><span aria-hidden="true">/</span><a href="../news">News</a><span aria-hidden="true">/</span><span>Guida per chi arriva da solo</span>
+</nav><div class="editorial-reading-grid"><aside class="editorial-rail"><nav aria-label="In questa pagina"><p class="editorial-small-label">In questa pagina</p><ol><li><a href="#read-1"><span aria-hidden="true">01</span>Puoi arrivare da solo. Non vivrai il weekend in solitudine.</a></li><li><a href="#read-2"><span aria-hidden="true">02</span>La risposta breve</a></li><li><a href="#come-funziona"><span aria-hidden="true">03</span>Quattro motivi per cui chi arriva solo si ambienta in fretta</a></li><li><a href="#prima-ora"><span aria-hidden="true">04</span>Rendi l&#x27;arrivo più piccolo dell&#x27;intero weekend</a></li><li><a href="#strumenti-solo"><span aria-hidden="true">05</span>Il comfort crea sicurezza</a></li><li><a href="#piano-weekend"><span aria-hidden="true">06</span>Tre giorni per il tuo primo congresso da solo</a></li><li><a href="#faq-solo"><span aria-hidden="true">07</span>FAQ: Congresso Bachata da soli</a></li><li><a href="#read-8"><span aria-hidden="true">08</span>Arriva solo. Riparti connesso.</a></li></ol></nav><a class="editorial-backlink" href="/it/news">Tutte le storie <span aria-hidden="true">↗</span></a></aside><article class="editorial-article"><div class="editorial-prose">
 
-      <section class="article-shell timeline-section" aria-labelledby="prima-ora">
-        <div class="section-intro reveal">
-          <div>
-            <p class="section-kicker">I tuoi primi 90 minuti</p>
-            <h2 class="section-heading" id="prima-ora">Rendi l'arrivo più piccolo dell'intero weekend</h2>
-          </div>
-          <p>Non chiederti di “fare amicizia” immediatamente. Datti tre azioni concrete. La sicurezza spesso arriva quando il corpo comincia a muoversi.</p>
-        </div>
-        <div class="arrival-line">
-          <section class="arrival-step reveal">
-            <time>Minuto 00</time>
-            <h3>Orientati</h3>
-            <p>Ritira il pass, trova le sale, riempi la borraccia e individua un posto tranquillo dove poterti fermare più tardi. La certezza pratica riduce la pressione sociale.</p>
-          </section>
-          <section class="arrival-step reveal">
-            <time>Minuto 30</time>
-            <h3>Entra in una rotazione</h3>
-            <p>Scegli una lezione accessibile, non quella più avanzata. Presentati alla persona accanto a te. Alla fine riconoscerai già diversi volti.</p>
-          </section>
-          <section class="arrival-step reveal">
-            <time>Minuto 90</time>
-            <h3>Crea un piano semplice</h3>
-            <p>Chiedi a qualcuno quale workshop seguirà dopo o se andrà al social serale. Non stai cercando un'amicizia istantanea—solo un prossimo incontro naturale.</p>
-          </section>
-        </div>
-      </section>
+<div>
+<div>
+<p class="editorial-small-label">La risposta sincera</p>
+<h2 id="read-1">Puoi arrivare da solo. Non vivrai il weekend in solitudine.</h2>
+<p>Il momento prima di acquistare il pass può diventare sorprendentemente personale. Vuoi i workshop, la musica e il social fino a tarda notte—ma il tuo partner abituale non può venire, la tua scuola non organizza il viaggio oppure nessuno del gruppo ha ancora deciso. E allora arriva la domanda: mi divertirò davvero a un <strong>Congresso Bachata</strong> se parto da solo?</p>
+<p>Sì. Per molti aspetti, un congresso è pensato proprio per i ballerini indipendenti. Durante un <strong>Workshop Bachata</strong> si ruota normalmente il partner. Il social nasce per incontrare persone diverse, una canzone alla volta. Le pause caffè, i corridoi dell'hotel e le lezioni successive creano secondi e terzi incontri in modo naturale. Non devi inventarti una nuova personalità per il weekend; basta lasciare un po' di spazio alle piccole conversazioni.</p>
+<p>Questa guida non promette che ogni minuto sarà facilissimo. Entrare da soli in una sala piena può mettere soggezione. È una mappa per rendere più semplice la prima ora—e per capire perché i <strong>Festival Bachata</strong> internazionali spesso fanno sentire meno soli di una normale serata fuori.</p>
+</div>
+<aside class="editorial-panel">
+<span>01</span>
+<h2 id="read-2">La risposta breve</h2>
+<p><strong>Non ti serve un partner.</strong> Organizza bene l'arrivo, scegli il livello giusto, invita a ballare con rispetto e lascia che il ritmo ripetuto del weekend faccia il resto.</p>
+</aside>
+</div>
+<section aria-labelledby="come-funziona">
+<div>
+<div>
+<p class="editorial-small-label">Come funziona il weekend</p>
+<h2 id="come-funziona">Quattro motivi per cui chi arriva solo si ambienta in fretta</h2>
+</div>
+<p>Un congresso non è un'unica festa enorme in cui tutti si conoscono già. È una sequenza di esperienze condivise. Ogni momento offre un modo semplice e senza pressione per diventare un volto familiare.</p>
+</div>
+<div class="editorial-columns">
+<section class="editorial-panel">
+<span class="editorial-small-label">01 / Workshop</span>
+<h3>La rotazione ti presenta prima ancora di trovare le parole</h3>
+<p>Nella maggior parte delle lezioni congressuali, leader e follower ruotano durante il workshop. Arrivare senza partner è quindi normale, non un'eccezione. Sorridi, di' il tuo nome, prova il materiale e cambia quando l'artista chiama la rotazione. Consulta la nostra <a href="livelli-workshop-bachata-congresso">guida ai livelli dei Workshop Bachata</a> per scegliere una sala con un ritmo adatto a te.</p>
+</section>
+<section class="editorial-panel">
+<span class="editorial-small-label">02 / Social</span>
+<h3>Una canzone è un invito completo</h3>
+<p>Puoi chiedere semplicemente: “Ti va di ballare?”. Basta questo. Un sì significa una canzone condivisa, non un impegno per tutta la sera. Un no può voler dire piedi stanchi, un ballo già promesso o una pausa necessaria; accettalo con serenità e invita qualcun altro. Dopo il primo invito, la pista diventa più facile.</p>
+</section>
+<section class="editorial-panel">
+<span class="editorial-small-label">03 / Location</span>
+<h3>L'hotel trasforma gli sconosciuti in volti familiari</h3>
+<p>Nella <a href="../hotel">location ufficiale del Devero Hotel</a>, workshop, social e party si svolgono sotto lo stesso tetto. Incontri le stesse persone a colazione, in lezione e accanto alla pista. La familiarità cresce senza forzarla—e dopo l'ultima canzone non devi affrontare da solo un lungo spostamento in città.</p>
+</section>
+<section class="editorial-panel">
+<span class="editorial-small-label">04 / Community</span>
+<h3>La maggior parte delle persone vuole allargare il proprio giro</h3>
+<p>Gli <strong>Eventi Bachata</strong> internazionali attirano ballerini da città e Paesi diversi proprio perché cercano nuove influenze. Chiedi da dove arrivano, quale artista vogliono studiare o quale lezione hanno preferito. La curiosità condivisa vale più di una frase perfetta.</p>
+</section>
+</div>
+</section>
+<section aria-labelledby="prima-ora">
+<div>
+<div>
+<p class="editorial-small-label">I tuoi primi 90 minuti</p>
+<h2 id="prima-ora">Rendi l'arrivo più piccolo dell'intero weekend</h2>
+</div>
+<p>Non chiederti di “fare amicizia” immediatamente. Datti tre azioni concrete. La sicurezza spesso arriva quando il corpo comincia a muoversi.</p>
+</div>
+<div>
+<section>
+<time>Minuto 00</time>
+<h3>Orientati</h3>
+<p>Ritira il pass, trova le sale, riempi la borraccia e individua un posto tranquillo dove poterti fermare più tardi. La certezza pratica riduce la pressione sociale.</p>
+</section>
+<section>
+<time>Minuto 30</time>
+<h3>Entra in una rotazione</h3>
+<p>Scegli una lezione accessibile, non quella più avanzata. Presentati alla persona accanto a te. Alla fine riconoscerai già diversi volti.</p>
+</section>
+<section>
+<time>Minuto 90</time>
+<h3>Crea un piano semplice</h3>
+<p>Chiedi a qualcuno quale workshop seguirà dopo o se andrà al social serale. Non stai cercando un'amicizia istantanea—solo un prossimo incontro naturale.</p>
+</section>
+</div>
+</section>
+<section class="editorial-feature">
+<blockquote>A un Congresso Bachata, essere soli non significa mancanza di connessione. Significa avere <span>spazio perché la connessione accada.</span></blockquote>
+</section>
+<section aria-labelledby="strumenti-solo">
+<div>
+<div>
+<p class="editorial-small-label">Il kit di chi viaggia solo</p>
+<h2 id="strumenti-solo">Il comfort crea sicurezza</h2>
+</div>
+<p>Prepararsi bene non elimina la spontaneità. Ti dà l'energia e la tranquillità necessarie per godertela.</p>
+</div>
+<div class="editorial-columns">
+<section class="editorial-panel">
+<h3>Come conoscere persone in modo naturale</h3>
+<p>Arriva mentre le sale si stanno ancora riempiendo, invece di entrare quando la lezione è già iniziata. Mettiti vicino agli altri anziché sparire dentro al telefono. Usa l'evento stesso come conversazione: “Hai già seguito una loro lezione?”, “Che stile balli di solito?” oppure “Resti anche per il social?”.</p>
+<p>Durante i party, invita chi si trova ai bordi della pista senza interrompere una conversazione. Ringrazia ogni partner dopo la canzone. Se un ballo è stato particolarmente piacevole, puoi dire: “Spero di ballare ancora più tardi”, lasciando poi il giusto spazio.</p>
+</section>
+<section class="editorial-panel">
+<h3>I tuoi confini viaggiano con te</h3>
+<p>Arrivare da soli non significa accettare ogni invito o movimento. Puoi rifiutare un ballo senza doverti giustificare. Puoi chiedere più spazio, uscire da un abbraccio scomodo o interrompere la danza. Nella Bachata Sensual, una buona connessione nasce dall'ascolto, non dalla pressione.</p>
+<p>Comunica a una persona fidata dove alloggi, tieni il telefono carico e usa trasporti organizzati. Prima del weekend leggi la guida completa all'<a href="etichetta-congresso-bachata-social-workshop-party">etichetta del Congresso Bachata</a>, con consigli pratici su consenso, gestione dello spazio e rispetto del partner.</p>
+</section>
+<section class="editorial-panel">
+<h3>Prepara la valigia per essere autonomo, non per ogni disastro possibile</h3>
+<p>Tieni con te le cose che proteggono la tua energia. Tutto il resto può restare in camera.</p>
+<ul>
+<li>Scarpe comode da ballo e un paio di riserva</li>
+<li>Maglie pulite per workshop e social notturni</li>
+<li>Borraccia, piccolo asciugamano e snack leggeri</li>
+<li>Deodorante, mentine e prodotti personali essenziali</li>
+<li>Caricatore o power bank compatto</li>
+<li>Uno strato caldo per le pause tra le sale</li>
+<li>Conferme di biglietto e hotel salvate offline</li>
+<li>I farmaci necessari durante giornate molto lunghe</li>
+</ul>
+</section>
+</div>
+</section>
+<section aria-labelledby="piano-weekend">
+<div>
+<div>
+<p class="editorial-small-label">Un itinerario senza pressione</p>
+<h2 id="piano-weekend">Tre giorni per il tuo primo congresso da solo</h2>
+</div>
+<p>Usa il <a href="../programma">programma ufficiale di workshop e party</a> quando sarà pubblicato il calendario definitivo. Nel frattempo, questo ritmo dà struttura al weekend senza riempirlo troppo.</p>
+</div>
+<div class="editorial-columns">
+<section class="editorial-panel">
+<span class="editorial-small-label">Venerdì · Arriva</span>
+<h3>Scegli familiarità, non intensità</h3>
+<p>Fai il check-in presto, esplora la location e partecipa all'attività di apertura. Al primo party datti un obiettivo modesto: invita tre persone e resta abbastanza per capire l'atmosfera della sala. Non devi chiudere la pista già la prima notte.</p>
+</section>
+<section class="editorial-panel">
+<span class="editorial-small-label">Sabato · Espandi</span>
+<h3>Lascia che i volti ripetuti diventino persone</h3>
+<p>Alterna tecnica, musicalità e una lezione dell'artista che più ti incuriosisce. Fai una vera pausa per mangiare. Al social saluta le persone incontrate nelle rotazioni. Guarda prima la <a href="../artists">lineup degli artisti internazionali</a>, così avrai workshop e conversazioni da aspettare con piacere.</p>
+</section>
+<section class="editorial-panel">
+<span class="editorial-small-label">Domenica · Conserva</span>
+<h3>Finisci con qualità, non con sfinimento</h3>
+<p>Scegli le lezioni che il corpo può ancora assorbire. Scambia i contatti solo quando l'interesse è reciproco. Prima di partire, annota un dettaglio tecnico e una persona che speri di incontrare ancora. È già un congresso riuscito.</p>
+</section>
+</div>
+</section>
+<section aria-labelledby="faq-solo">
+<div>
+<p class="editorial-small-label">Domande prima di prenotare</p>
+<h2 id="faq-solo">FAQ: Congresso Bachata da soli</h2>
+<p>Risposte chiare per chi sta decidendo se viaggiare senza partner o gruppo.</p>
+</div>
+<div>
+<details open="">
+<summary>Posso andare da solo a un Congresso Bachata?</summary>
+<p>Sì. Molti ballerini partecipano da soli ai congressi Bachata. Nei workshop si ruota normalmente il partner, il social nasce per ballare con persone diverse e una location all-in-one permette di incontrare più volte gli stessi volti durante il weekend.</p>
+</details>
+<details>
+<summary>Serve un partner per i Workshop Bachata?</summary>
+<p>Di solito no. La maggior parte dei workshop congressuali prevede la rotazione, quindi chi arriva da solo può partecipare e praticare con persone diverse. Segui le indicazioni dell'artista, perché una lezione specifica o un percorso avanzato potrebbero occasionalmente avere un formato differente.</p>
+</details>
+<details>
+<summary>Un Congresso Bachata è adatto a un principiante che arriva da solo?</summary>
+<p>Sì, se scegli workshop del livello giusto, ti concedi delle pause e vivi il weekend come un'esperienza di apprendimento, non come un esame. Parti da lezioni open level e balli social semplici. Potrai aumentare la difficoltà dopo aver capito il ritmo del congresso.</p>
+</details>
+<details>
+<summary>Come posso conoscere persone a un Festival Bachata?</summary>
+<p>Arriva in anticipo, partecipa alle rotazioni, presentati ai ballerini vicini e invita a ballare con rispetto. Alloggiare nell'hotel ufficiale crea inoltre incontri ripetuti e naturali a colazione, nelle lezioni e intorno ai party.</p>
+</details>
+<details>
+<summary>Come raggiungo la location da un aeroporto di Milano se viaggio da solo?</summary>
+<p>Consulta in anticipo i <a href="guida-viaggio-bachata-milano-2026#read-3">transfer ufficiali da Malpensa, Linate, Bergamo e Milano Centrale</a>. Prenota prima del viaggio, salva la conferma offline e contatta l'organizzazione se hai dubbi sulla soluzione più adatta.</p>
+</details>
+</div>
+</section>
 
-      <section class="quote-band">
-        <blockquote>A un Congresso Bachata, essere soli non significa mancanza di connessione. Significa avere <span>spazio perché la connessione accada.</span></blockquote>
-      </section>
+<section class="editorial-feature">
+<div class="editorial-feature">
+<p class="editorial-small-label">20–22 novembre 2026 · Milano</p>
+<h2 id="read-8">Arriva solo.<br/>Riparti connesso.</h2>
+<p>Vivi un Congresso Bachata internazionale con workshop, party, social e l'intero weekend all'interno di un hotel a quattro stelle.</p>
+<a class="editorial-action" href="https://lasalsadelbaile.com/MSC2026" rel="noopener noreferrer" target="_blank">Acquista il Full Pass</a>
+</div>
+</section>
+</div></article></div></main>
 
-      <section class="article-shell practical-section" aria-labelledby="strumenti-solo">
-        <div class="section-intro reveal">
-          <div>
-            <p class="section-kicker">Il kit di chi viaggia solo</p>
-            <h2 class="section-heading" id="strumenti-solo">Il comfort crea sicurezza</h2>
-          </div>
-          <p>Prepararsi bene non elimina la spontaneità. Ti dà l'energia e la tranquillità necessarie per godertela.</p>
-        </div>
-        <div class="practical-grid">
-          <section class="practical-card reveal">
-            <h3>Come conoscere persone in modo naturale</h3>
-            <p>Arriva mentre le sale si stanno ancora riempiendo, invece di entrare quando la lezione è già iniziata. Mettiti vicino agli altri anziché sparire dentro al telefono. Usa l'evento stesso come conversazione: “Hai già seguito una loro lezione?”, “Che stile balli di solito?” oppure “Resti anche per il social?”.</p>
-            <p>Durante i party, invita chi si trova ai bordi della pista senza interrompere una conversazione. Ringrazia ogni partner dopo la canzone. Se un ballo è stato particolarmente piacevole, puoi dire: “Spero di ballare ancora più tardi”, lasciando poi il giusto spazio.</p>
-          </section>
-          <section class="practical-card safety-card reveal">
-            <h3>I tuoi confini viaggiano con te</h3>
-            <p>Arrivare da soli non significa accettare ogni invito o movimento. Puoi rifiutare un ballo senza doverti giustificare. Puoi chiedere più spazio, uscire da un abbraccio scomodo o interrompere la danza. Nella Bachata Sensual, una buona connessione nasce dall'ascolto, non dalla pressione.</p>
-            <p>Comunica a una persona fidata dove alloggi, tieni il telefono carico e usa trasporti organizzati. Prima del weekend leggi la guida completa all'<a href="etichetta-congresso-bachata-social-workshop-party">etichetta del Congresso Bachata</a>, con consigli pratici su consenso, gestione dello spazio e rispetto del partner.</p>
-          </section>
-          <section class="practical-card full reveal">
-            <h3>Prepara la valigia per essere autonomo, non per ogni disastro possibile</h3>
-            <p>Tieni con te le cose che proteggono la tua energia. Tutto il resto può restare in camera.</p>
-            <ul>
-              <li>Scarpe comode da ballo e un paio di riserva</li>
-              <li>Maglie pulite per workshop e social notturni</li>
-              <li>Borraccia, piccolo asciugamano e snack leggeri</li>
-              <li>Deodorante, mentine e prodotti personali essenziali</li>
-              <li>Caricatore o power bank compatto</li>
-              <li>Uno strato caldo per le pause tra le sale</li>
-              <li>Conferme di biglietto e hotel salvate offline</li>
-              <li>I farmaci necessari durante giornate molto lunghe</li>
-            </ul>
-          </section>
-        </div>
-      </section>
 
-      <section class="article-shell weekend-section" aria-labelledby="piano-weekend">
-        <div class="section-intro reveal">
-          <div>
-            <p class="section-kicker">Un itinerario senza pressione</p>
-            <h2 class="section-heading" id="piano-weekend">Tre giorni per il tuo primo congresso da solo</h2>
-          </div>
-          <p>Usa il <a href="../programma">programma ufficiale di workshop e party</a> quando sarà pubblicato il calendario definitivo. Nel frattempo, questo ritmo dà struttura al weekend senza riempirlo troppo.</p>
-        </div>
-        <div class="weekend-grid">
-          <section class="plan-card reveal">
-            <span class="day">Venerdì · Arriva</span>
-            <h3>Scegli familiarità, non intensità</h3>
-            <p>Fai il check-in presto, esplora la location e partecipa all'attività di apertura. Al primo party datti un obiettivo modesto: invita tre persone e resta abbastanza per capire l'atmosfera della sala. Non devi chiudere la pista già la prima notte.</p>
-          </section>
-          <section class="plan-card reveal">
-            <span class="day">Sabato · Espandi</span>
-            <h3>Lascia che i volti ripetuti diventino persone</h3>
-            <p>Alterna tecnica, musicalità e una lezione dell'artista che più ti incuriosisce. Fai una vera pausa per mangiare. Al social saluta le persone incontrate nelle rotazioni. Guarda prima la <a href="../artists">lineup degli artisti internazionali</a>, così avrai workshop e conversazioni da aspettare con piacere.</p>
-          </section>
-          <section class="plan-card reveal">
-            <span class="day">Domenica · Conserva</span>
-            <h3>Finisci con qualità, non con sfinimento</h3>
-            <p>Scegli le lezioni che il corpo può ancora assorbire. Scambia i contatti solo quando l'interesse è reciproco. Prima di partire, annota un dettaglio tecnico e una persona che speri di incontrare ancora. È già un congresso riuscito.</p>
-          </section>
-        </div>
-      </section>
-
-      <section class="article-shell faq-section" aria-labelledby="faq-solo">
-        <div class="faq-intro reveal">
-          <p class="section-kicker">Domande prima di prenotare</p>
-          <h2 class="section-heading" id="faq-solo">FAQ: Congresso Bachata da soli</h2>
-          <p>Risposte chiare per chi sta decidendo se viaggiare senza partner o gruppo.</p>
-        </div>
-        <div class="faq-list reveal">
-          <details open>
-            <summary>Posso andare da solo a un Congresso Bachata?</summary>
-            <p>Sì. Molti ballerini partecipano da soli ai congressi Bachata. Nei workshop si ruota normalmente il partner, il social nasce per ballare con persone diverse e una location all-in-one permette di incontrare più volte gli stessi volti durante il weekend.</p>
-          </details>
-          <details>
-            <summary>Serve un partner per i Workshop Bachata?</summary>
-            <p>Di solito no. La maggior parte dei workshop congressuali prevede la rotazione, quindi chi arriva da solo può partecipare e praticare con persone diverse. Segui le indicazioni dell'artista, perché una lezione specifica o un percorso avanzato potrebbero occasionalmente avere un formato differente.</p>
-          </details>
-          <details>
-            <summary>Un Congresso Bachata è adatto a un principiante che arriva da solo?</summary>
-            <p>Sì, se scegli workshop del livello giusto, ti concedi delle pause e vivi il weekend come un'esperienza di apprendimento, non come un esame. Parti da lezioni open level e balli social semplici. Potrai aumentare la difficoltà dopo aver capito il ritmo del congresso.</p>
-          </details>
-          <details>
-            <summary>Come posso conoscere persone a un Festival Bachata?</summary>
-            <p>Arriva in anticipo, partecipa alle rotazioni, presentati ai ballerini vicini e invita a ballare con rispetto. Alloggiare nell'hotel ufficiale crea inoltre incontri ripetuti e naturali a colazione, nelle lezioni e intorno ai party.</p>
-          </details>
-          <details>
-            <summary>Come raggiungo la location da un aeroporto di Milano se viaggio da solo?</summary>
-            <p>Consulta in anticipo i <a href="../transfer">transfer ufficiali da Malpensa, Linate, Bergamo e Milano Centrale</a>. Prenota prima del viaggio, salva la conferma offline e contatta l'organizzazione se hai dubbi sulla soluzione più adatta.</p>
-          </details>
-        </div>
-      </section>
-    </article>
-
-    <section class="final-cta">
-      <div class="cta-inner reveal">
-        <p class="section-kicker">20–22 novembre 2026 · Milano</p>
-        <h2>Arriva solo.<br>Riparti connesso.</h2>
-        <p>Vivi un Congresso Bachata internazionale con workshop, party, social e l'intero weekend all'interno di un hotel a quattro stelle.</p>
-        <a class="cta-button" href="https://lasalsadelbaile.com/MSC2026" target="_blank" rel="noopener noreferrer">Acquista il Full Pass</a>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="footer-inner">
-      <div>
-        <h2>Milano Sensual Congress</h2>
-        <p>Tre giorni di Bachata, una community internazionale.</p>
-      </div>
-      <nav aria-label="Navigazione nel footer">
-        <a href="../tickets">Biglietti</a><a href="../party">Orari</a><a href="../hotel">Hotel</a><a href="../transfer">Transfer</a>
-        <a href="../faq">FAQ</a><a href="../terms">Termini e privacy</a>
-      </nav>
-    </div>
-  </footer>
-
-  <script src="/vendor/gsap/gsap.min.js" defer></script>
-  <script src="/vendor/gsap/ScrollTrigger.min.js" defer></script>
-  <script type="module" src="/js/solo-congress-guide.js?v=5"></script>
+<footer class="e27-footer"><div class="e27-wrap"><div class="e27-footer-top"><div><p class="e27-footer-wordmark">Milano.<br/><em>A tutto colore.</em></p><p class="e27-kicker" style="margin-top:24px">Milano Sensual Congress · 2027</p></div><div><p class="e27-kicker">Il congresso</p><ul><li><a href="/it/artists">Artisti</a></li><li><a href="/it/programma">Programma</a></li><li><a href="/it/party">Party</a></li><li><a href="/it/masterclass">Masterclass</a></li><li><a href="/it/jacknjill">Jack &amp; Jill</a></li></ul></div><div><p class="e27-kicker">Organizza la visita</p><ul><li><a href="/it/tickets">Pass</a></li><li><a href="/it/hotel">Hotel</a></li><li><a href="/it/navetta">Navetta</a></li><li><a href="/it/faq">FAQ</a></li><li><a href="/it/contact">Contatti</a></li></ul></div><div><p class="e27-kicker">Restiamo in contatto</p><ul><li><a href="/it/promoters">Promoters</a></li><li><a href="/it/news">Journal</a></li><li><a href="https://www.instagram.com/milanosensualcongress/" rel="noopener noreferrer" target="_blank">Instagram ↗</a></li><li><a href="/it/congresso-bachata-2026">Guida al congresso 2026</a></li></ul></div></div><div class="e27-footer-bottom"><p>© 2026 Milano Sensual Congress · Anteprima edizione 2027</p><div><a href="/it/terms">Termini e privacy</a><span>Milano, Italia</span></div></div></div></footer>
+<button class="e27-motion-toggle" type="button" hidden aria-pressed="false" aria-label="Metti in pausa le animazioni">Ⅱ Animazioni</button>
+<script src="/js/edition-motion.js?v=2" defer></script>
 </body>
 
 </html>

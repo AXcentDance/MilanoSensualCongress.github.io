@@ -6,6 +6,8 @@ Plan your Milano Sensual Congress trip: Milan airports, pre-booked transfers to 
 
 Canonical: https://milanosensualcongress.com/news/milan-bachata-travel-guide-2026
 
+[All stories](https://milanosensualcongress.com/news)
+
 ### Plan your arrival around Cavenago di Brianza
 
 Milano Sensual Congress takes place on **20–22 November 2026** at Devero Hotel & Spa, Largo Kennedy 1, Cavenago di Brianza. The venue is outside central Milan. Compare your flight and the final journey to the hotel together, especially if you arrive late at night.
@@ -30,11 +32,11 @@ The airport publishes [bus connections to Milan and other destinations](https://
 
 The congress transfer service accepts advance bookings throughout the event weekend, at any hour. It covers Malpensa, Linate, Bergamo and Milano Centrale. This is a pre-booked service: arrange your pickup and return with the transport provider rather than expecting a walk-up shuttle.
 
-Use the [official transfer page](https://milanosensualcongress.com/transfer) for current vehicle capacities, prices and booking contacts. Confirm your terminal or station pickup point, flight details, luggage needs and destination hotel when reserving.
+For vehicle capacities and fares, [contact the congress team](https://milanosensualcongress.com/contact). Confirm your terminal or station pickup point, flight details, luggage needs and destination hotel when reserving.
 
 ### Where to stay: venue and room availability
 
-**Devero Hotel & Spa remains the congress venue.** Devero and AS Hotel Cambiago are sold out for 2026. [Brianteo is our suggested third hotel](https://milanosensualcongress.com/hotel#brianteo); check availability for your dates before booking. Your congress pass and hotel reservation are separate bookings.
+**Devero Hotel & Spa remains the congress venue.** Its rooms for the event are sold out. [AS Hotel Cambiago is the available accommodation option](https://milanosensualcongress.com/hotel#as-hotel-cambiago), approximately 800 metres away. Your congress pass and hotel reservation are separate bookings.
 
 Check the [hotel availability update](https://milanosensualcongress.com/news/devero-hotel-sold-out-as-cambiago-2026) before reserving. Confirm the route between your accommodation and Devero, particularly for a late return after the parties, and give your transfer provider the hotel where you are staying.
 

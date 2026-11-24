@@ -6,6 +6,8 @@ Vuoi andare da solo a un Congresso Bachata? Scopri come funzionano Workshop Bach
 
 Canonical: https://milanosensualcongress.com/it/news/congresso-bachata-da-soli-guida-ballerini
 
+[Tutte le storie](https://milanosensualcongress.com/it/news)
+
 La risposta sincera
 
 ### Puoi arrivare da solo. Non vivrai il weekend in solitudine.
@@ -158,7 +160,7 @@ Arriva in anticipo, partecipa alle rotazioni, presentati ai ballerini vicini e i
 
 **Come raggiungo la location da un aeroporto di Milano se viaggio da solo?**
 
-Consulta in anticipo i [transfer ufficiali da Malpensa, Linate, Bergamo e Milano Centrale](https://milanosensualcongress.com/it/transfer). Prenota prima del viaggio, salva la conferma offline e contatta l'organizzazione se hai dubbi sulla soluzione più adatta.
+Consulta in anticipo i [transfer ufficiali da Malpensa, Linate, Bergamo e Milano Centrale](https://milanosensualcongress.com/it/news/guida-viaggio-bachata-milano-2026#read-3). Prenota prima del viaggio, salva la conferma offline e contatta l'organizzazione se hai dubbi sulla soluzione più adatta.
 
 20–22 novembre 2026 · Milano
 

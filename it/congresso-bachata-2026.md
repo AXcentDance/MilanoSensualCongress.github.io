@@ -6,6 +6,8 @@ Cerchi un congresso bachata nel 2026? Scopri Milano Sensual Congress in Italia: 
 
 Canonical: https://milanosensualcongress.com/it/congresso-bachata-2026
 
+[Tutte le storie](https://milanosensualcongress.com/it/news)
+
 Perche questo congresso
 
 ### Un weekend bachata pensato per ballerini internazionali
@@ -60,7 +62,7 @@ Dettagli evento
 
 **Hotel:** Hotel ufficiale del congresso con sale evento, party e logistica comoda per ballerini
 
-[Acquista Biglietti](https://milanosensualcongress.com/it/tickets) [Info Hotel](https://milanosensualcongress.com/it/hotel)
+[Acquista Biglietti](https://milanosensualcongress.com/it/tickets) [Orari 2026](https://milanosensualcongress.com/it/orari-2026) [Info Hotel](https://milanosensualcongress.com/it/hotel)
 
 ### FAQ Congresso Bachata 2026
 

@@ -101,10 +101,11 @@ class QualityGateTests(unittest.TestCase):
 
     def test_missing_menu_target_fails_the_contract(self):
         root = Path(__file__).resolve().parents[1]
-        html = (root / 'index.html').read_text()
-        self.assertEqual(audit_page(html, 'index.html'), [])
+        html = (root / 'artists.html').read_text()
+        self.assertIn('id="mobile-menu"', html)
+        self.assertEqual(audit_page(html, 'artists.html'), [])
         html = html.replace('id="mobile-menu"', 'id="different-menu"')
-        self.assertIn('aria-controls points to a missing element: mobile-menu', audit_page(html, 'index.html'))
+        self.assertIn('aria-controls points to a missing element: mobile-menu', audit_page(html, 'artists.html'))
 
     def test_a_success_message_cannot_mask_a_failed_process(self):
         with patch.object(run_all_checks, 'CHECKERS', [(['example.py'], 'success')]), \

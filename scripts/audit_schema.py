@@ -8,6 +8,7 @@ from bs4 import BeautifulSoup
 from site_files import site_pages
 from iso_dates import iso_datetime
 from schema_contract import check_graph
+from edition_facts import EDITION_EVENT_ID
 
 ROOT_DIR = "."
 SITE = "https://milanosensualcongress.com"
@@ -16,8 +17,8 @@ SITE = "https://milanosensualcongress.com"
 FULL_ISO_RE = re.compile(r'^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}(:\d{2})?(\.\d+)?([+-]\d{2}:\d{2}|Z)$')
 DATE_ONLY_RE = re.compile(r'^\d{4}-\d{2}-\d{2}$')
 
-# Timed fields normally carry offsets. CourseInstance start/end may instead use
-# a truthful calendar date when no precise lesson time has been established.
+# Timed fields normally carry offsets. CourseInstance and the separately
+# announced 2027 event may use truthful calendar bounds until hours are known.
 STRICT_DATE_FIELDS = ('datePublished', 'startDate', 'endDate', 'validThrough', 'validFrom', 'availabilityStarts')
 
 
@@ -112,9 +113,12 @@ def check_dates(rel, data, issues, warnings):
                 except ValueError:
                     issues.append(f'[{rel}] malformed {field}: "{value}"')
                     continue
-                # A DanceEvent keeps its precise-time contract even if a node
-                # also declares CourseInstance. Other warning policies remain.
-                if field != 'datePublished' and 'DanceEvent' in types:
+                # The announced edition has confirmed calendar dates, but no
+                # hours yet. Legacy event times and offer deadlines stay strict.
+                if field in ('startDate', 'endDate') and 'DanceEvent' in types \
+                        and node.get('@id') == EDITION_EVENT_ID:
+                    pass
+                elif field != 'datePublished' and 'DanceEvent' in types:
                     issues.append(
                         f"[{rel}] {field} on DanceEvent is date-only: \"{value}\" "
                         f"(needs timezone offset)")

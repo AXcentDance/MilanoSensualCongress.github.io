@@ -6,70 +6,66 @@ Guide ai festival di Bachata in Europa, livelli dei workshop, viaggi da soli, ar
 
 Canonical: https://milanosensualcongress.com/it/news
 
-### Scegli il tuo festival
+01
 
-Esplora l’Europa
+### Trova il tuo festival.
 
-[La guida in primo pianoConfronta 5 congressi europeiDate, stili di ballo e sedi, con fonti degli organizzatori.Esplora la guida](https://milanosensualcongress.com/it/news/i-5-migliori-congressi-bachata-europa-2026)
+[Cinque congressi europei a confronto.BACHATA. *SENZA CONFINI.* Trova il tuo festival](https://milanosensualcongress.com/it/news/i-5-migliori-congressi-bachata-europa-2026)
 
-[Calendario europeo 2026–2027Sei eventi selezionati per organizzare il tuo anno di ballo.](https://milanosensualcongress.com/it/news/calendario-festival-bachata-europa-2026-2027)
+[Il tuo calendario. 2026–2027.](https://milanosensualcongress.com/it/news/calendario-festival-bachata-europa-2026-2027)
 
-[Confronta i festival di Bachata vicino a MilanoConfronta date e formule dei festival della zona nel 2026–2027.](https://milanosensualcongress.com/it/news/festival-bachata-milano-2026-2027)
+[Bachata intorno a Milano.](https://milanosensualcongress.com/it/news/festival-bachata-milano-2026-2027)
 
-[Bachata in Italia: il viaggio a MilanoScopri Milano come destinazione per un weekend internazionale di ballo.](https://milanosensualcongress.com/it/news/bachata-italia-2026-milano-meta-ballo)
+[Italia. Milano. Bachata.](https://milanosensualcongress.com/it/news/bachata-italia-2026-milano-meta-ballo)
 
-### Preparati al congresso
+02
 
-Prima di partire
+### Arriva pronto.
 
-[Il tuo primo congresso di BachataScopri workshop, social e ritmi di un weekend di festival.](https://milanosensualcongress.com/it/news/cosa-aspettarsi-da-un-congresso-di-bachata-2026)
+[Il tuo primo congresso.](https://milanosensualcongress.com/it/news/cosa-aspettarsi-da-un-congresso-di-bachata-2026)
 
-[Scegli il livello dei workshopIndividua le lezioni per principianti, intermedi e avanzati adatte a te.](https://milanosensualcongress.com/it/news/livelli-workshop-bachata-congresso)
+[Trova il tuo livello.](https://milanosensualcongress.com/it/news/livelli-workshop-bachata-congresso)
 
-[Partire da soli per un congressoRotazione dei partner, nuove conoscenze e organizzazione del viaggio.](https://milanosensualcongress.com/it/news/congresso-bachata-da-soli-guida-ballerini)
+[Parti da solo?](https://milanosensualcongress.com/it/news/congresso-bachata-da-soli-guida-ballerini)
 
-[Galateo di social dancing e workshopConsigli su inviti, consenso e rispetto della pista.](https://milanosensualcongress.com/it/news/etichetta-congresso-bachata-social-workshop-party)
+[Bella energia. Buone maniere.](https://milanosensualcongress.com/it/news/etichetta-congresso-bachata-social-workshop-party)
 
-### Formazione e artisti
+03
 
-Dietro il movimento
+### Dentro il movimento.
 
-[Lezioni settimanali o congresso?Come combinare lezioni regolari e un weekend intensivo.](https://milanosensualcongress.com/it/news/corsi-settimanali-vs-congressi-bachata)
+[Guida alla formazioneLezioni settimanali o congresso?](https://milanosensualcongress.com/it/news/corsi-settimanali-vs-congressi-bachata)
 
-[Gero y MigleScopri Esencia Style e il loro approccio alla formazione.](https://milanosensualcongress.com/it/news/gero-y-migle-maestri-bachata-sensual-2026)
+[Gero y Migle](https://milanosensualcongress.com/it/news/gero-y-migle-maestri-bachata-sensual-2026)
 
-[Klau y RosScopri il loro stile di Bachata e le masterclass del congresso.](https://milanosensualcongress.com/it/news/klau-y-ros-maestri-endless-bachata-2026)
+[Klau y Ros](https://milanosensualcongress.com/it/news/klau-y-ros-maestri-endless-bachata-2026)
 
-[Cristian y GabriellaConosci gli artisti e scopri la loro formazione avanzata.](https://milanosensualcongress.com/it/news/cristian-y-gabriella-maestri-bachata-mondiali-2026)
+[Cristian y Gabriella](https://milanosensualcongress.com/it/news/cristian-y-gabriella-maestri-bachata-mondiali-2026)
 
-[David y InésLeggi il profilo degli artisti prima di scegliere i workshop.](https://milanosensualcongress.com/it/news/david-y-ines-maestri-bachata-sensual-2026)
+[David y Inés](https://milanosensualcongress.com/it/news/david-y-ines-maestri-bachata-sensual-2026)
 
-[Agustín y AlbaScopri il loro percorso e approccio alla Bachata.](https://milanosensualcongress.com/it/news/agustinyalba-stelle-nascenti-bachata-sensual)
+[Agustín y Alba](https://milanosensualcongress.com/it/news/agustinyalba-stelle-nascenti-bachata-sensual)
 
-[Irene y TomásScopri gli artisti della lineup internazionale.](https://milanosensualcongress.com/it/news/irene-y-tomas-maestri-bachata-sensual)
+[Irene y Tomás](https://milanosensualcongress.com/it/news/irene-y-tomas-maestri-bachata-sensual)
 
-[Aitor GomezScopri il suo approccio e le radici dominicane.](https://milanosensualcongress.com/it/news/aitor-gomez-bachata-sensuale-radici-dominicane)
+[Aitor Gomez](https://milanosensualcongress.com/it/news/aitor-gomez-bachata-sensuale-radici-dominicane)
 
-[Nacho y SilviaConosci gli artisti e il loro approccio Esencia.](https://milanosensualcongress.com/it/news/nacho-y-silvia-bachata-esencia-nuova-generazione)
+[Nacho y Silvia](https://milanosensualcongress.com/it/news/nacho-y-silvia-bachata-esencia-nuova-generazione)
 
-### Organizza il viaggio e segui gli aggiornamenti
+04
 
-Il tuo weekend
+### Si parte.
 
-[Aeroporti, transfer e viaggio a MilanoOrganizza il tragitto fino a Cavenago di Brianza e il ritorno.Esplora la guida](https://milanosensualcongress.com/it/news/guida-viaggio-bachata-milano-2026)
+[Milano. Come arrivare.](https://milanosensualcongress.com/it/news/guida-viaggio-bachata-milano-2026)
 
-[Devero e AS Cambiago esauriti: scopri BrianteoEntrambi gli hotel sono al completo. Scopri la terza opzione.Esplora la guida](https://milanosensualcongress.com/it/news/devero-hotel-esaurito-as-cambiago-2026)
+[2026: Devero esaurito. AS Hotel Cambiago.](https://milanosensualcongress.com/it/news/devero-hotel-esaurito-as-cambiago-2026)
 
-[Party di Bachata e social dancingScopri il lato social del weekend di congresso.Esplora la guida](https://milanosensualcongress.com/it/news/migliore-festa-bachata-italia-2026)
+[La notte è social.](https://milanosensualcongress.com/it/news/migliore-festa-bachata-italia-2026)
 
-### Archivio dell’evento
+05
 
-Edizioni e annunci
+### Dall’archivio.
 
-#### Archivio: precedente annuncio prezzi Full Pass
+[Annuncio 2026Annuncio prezzi Full Pass 2026.](https://milanosensualcongress.com/it/news/aumento-prezzi-full-pass-masterclass-15-giugno-2026)
 
-Annuncio storico dei prezzi. Consulta Biglietti per i prezzi attuali.
-
-### Organizza il tuo Milano Sensual Congress
-
-Consulta la [guida al congresso](https://milanosensualcongress.com/it/congresso-bachata-2026), il [programma](https://milanosensualcongress.com/it/programma), le [masterclass](https://milanosensualcongress.com/it/masterclass) e i [biglietti e prezzi attuali](https://milanosensualcongress.com/it/tickets).
+Archivio 2026. Date, prezzi e disponibilità negli articoli si riferiscono a quell’edizione.

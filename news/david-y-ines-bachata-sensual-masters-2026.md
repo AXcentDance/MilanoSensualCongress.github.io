@@ -6,6 +6,8 @@ Experience the world-class expertise of David y Inés at Milano Sensual Congress
 
 Canonical: https://milanosensualcongress.com/news/david-y-ines-bachata-sensual-masters-2026
 
+[All stories](https://milanosensualcongress.com/news)
+
 "Our goal is to transform technical rigor into pure, fluid emotion on the dance floor." - David & Inés
 
 In the landscape of international Bachata, few couples command as much respect for their technical discipline as **David Morante and Inés Ferrero**. Based in Spain, their journey from founders of the renowned "Marimba" dance school to global icons is a testament to their unwavering commitment to the art of movement.

@@ -19,7 +19,7 @@ from apply_responsive_images import dims, _dims_cache
 
 SITE = 'https://milanosensualcongress.com'
 BRAND_CARD = '/images/og/milano-sensual-congress-official-social-card.jpg'
-THEME_COLOR = '#0f172a'
+THEME_COLOR = '#101222'
 PREBUILT = {
     'logo.webp': BRAND_CARD,
     'milano-sensual-congress-logo-preview.webp': BRAND_CARD,

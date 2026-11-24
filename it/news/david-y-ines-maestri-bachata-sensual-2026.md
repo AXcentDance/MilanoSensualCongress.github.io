@@ -6,6 +6,8 @@ Vivi l'esperienza dei maestri mondiali David y Inés al Milano Sensual Congress 
 
 Canonical: https://milanosensualcongress.com/it/news/david-y-ines-maestri-bachata-sensual-2026
 
+[Tutte le storie](https://milanosensualcongress.com/it/news)
+
 "Il nostro obiettivo è trasformare il rigore tecnico in pura emozione fluida sulla pista da ballo." - David & Inés
 
 Nel panorama della Bachata internazionale, poche coppie godono di tanto rispetto per la loro disciplina tecnica come **David Morante e Inés Ferrero**. Con base in Spagna, il loro viaggio dai fondatori della rinomata scuola di danza "Marimba" a icone globali è una testimonianza del loro costante impegno nell'arte del movimento.

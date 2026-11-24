@@ -1,0 +1,160 @@
+/* Congress experiences: cinematic openings and a shared emerald stage. */
+.stage-world { background:var(--e27-ink); color:var(--e27-paper); overflow:clip; }
+.edition-2027 .stage-world .experience-wrap { width:min(1180px,88%); }
+.stage-world :is(h1,h2,h3,p) { margin-top:0; }
+.stage-world h1 { font:900 clamp(64px,7.6vw,110px)/1 Inter,'Inter Fallback',sans-serif; letter-spacing:-.06em; text-wrap:balance; margin:0 0 28px; }
+.stage-world h1 em { font-family:'Playfair Display','Playfair Display Fallback',serif; font-weight:500; letter-spacing:-.055em; color:var(--e27-gold); }
+.stage-world .stage-kicker { font:700 10px/1.6 Inter,sans-serif; letter-spacing:.2em; margin-bottom:26px; color:var(--e27-gold); }
+.stage-world .stage-lead { max-width:410px; font-size:18px; line-height:1.7; margin-bottom:28px; color:var(--e27-sage); }
+.stage-world .stage-reference { font-size:11px; line-height:1.8; max-width:410px; margin:26px 0 0; color:var(--e27-sage); }
+.stage-world .stage-button { display:inline-flex; align-items:center; justify-content:space-between; gap:28px; min-height:54px; padding:15px 25px; border:1px solid #dfc58e70; border-radius:999px; font-size:12px; font-weight:700; color:var(--e27-paper); background:transparent; text-decoration:none; transition:background .2s,color .2s; }
+.stage-world .stage-button span { font-size:21px; line-height:1; }
+.stage-world .stage-button:hover { background:var(--e27-paper); color:var(--e27-ink); }
+.stage-world .experience-section { position:relative; padding-block:96px; }
+.stage-world .experience-heading { font:850 clamp(36px,4.7vw,64px)/1.04 Inter,'Inter Fallback',sans-serif; letter-spacing:-.05em; color:inherit; }
+.stage-world .experience-heading em { font-family:'Playfair Display','Playfair Display Fallback',serif; font-weight:500; color:var(--e27-gold); }
+.stage-world .experience-eyebrow { color:var(--e27-gold); font-size:10px; letter-spacing:.2em; line-height:1.6; }
+.stage-world .experience-section-head { align-items:start; gap:48px; margin-bottom:42px; }
+.stage-world .experience-section-head p:not(.experience-eyebrow),.stage-world .experience-deck { color:var(--e27-sage); }
+.stage-world .experience-text-link { color:var(--e27-gold); text-transform:none; letter-spacing:0; }
+.stage-world .experience-action { background:var(--e27-red); color:var(--e27-paper); border-color:transparent; border-radius:999px; }
+.stage-world .experience-action:hover { background:#a63223; color:var(--e27-paper); }
+.stage-world .experience-action-quiet { color:var(--e27-gold); border-color:var(--e27-line); background:transparent; }
+.stage-world .experience-action-quiet:hover { color:var(--e27-ink); background:var(--e27-paper); }
+.stage-world .experience-principle { padding:28px; border:1px solid var(--e27-line); border-radius:var(--e27-radius); background:var(--e27-surface); }
+.stage-world .experience-principle h3 { color:var(--e27-paper); font:750 24px/1.2 Inter,sans-serif; }
+.stage-world .experience-principle p { color:var(--e27-sage); }
+.stage-world .experience-principle > span { color:var(--e27-gold); }
+.stage-world .experience-faq { padding:80px 0; background:var(--e27-night); color:var(--e27-paper); border-top:1px solid var(--e27-line); }
+.stage-world .experience-faq :is(.experience-deck,.experience-faq-item p) { color:var(--e27-sage); }
+.stage-world .experience-faq-item { border-color:var(--e27-line); }
+.stage-world .experience-faq-item h3 { color:var(--e27-paper); }
+.stage-world .experience-faq-item a { color:var(--e27-gold); }
+.stage-world .experience-note { border:1px solid var(--e27-line); border-radius:var(--e27-radius); background:var(--e27-surface); color:var(--e27-sage); }
+.stage-world .experience-note strong { color:var(--e27-paper); }
+
+/* Artists: level portraits, restrained framing and a complete, readable gallery. */
+.scene-artists .stage-world { background:radial-gradient(ellipse at 85% 0,#07594e50,transparent 36%),var(--e27-ink); }
+.scene-artists .stage-artist-gallery { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:48px 28px; align-items:start; }
+.scene-artists .stage-artist-tile { min-width:0; padding:0 0 24px; border:0; border-bottom:1px solid var(--e27-line); background:none; position:relative; }
+.stage-artist-film { position:relative; display:block; border-radius:var(--e27-radius); overflow:hidden; border:1px solid var(--e27-line); background:var(--e27-surface); }
+.scene-artists .stage-artist-film .experience-artist-photo { display:block; width:100%; height:auto; aspect-ratio:4/5; object-fit:cover; border-radius:0; transform:none; }
+.stage-film-play { position:absolute; z-index:3; right:16px; top:16px; display:grid; place-items:center; width:44px; height:44px; border:0; border-radius:50%; color:var(--e27-ink); background:var(--e27-paper); font-size:13px; padding:0; }
+.stage-film-play[hidden] { display:none; }
+button.stage-film-play { cursor:pointer; }
+.stage-film-play svg { width:13px; height:13px; }
+.stage-film-play[aria-pressed="true"] { color:var(--e27-paper); background:var(--e27-red); }
+.stage-film-play:focus-visible { outline:2px solid var(--e27-gold); outline-offset:4px; }
+.stage-artist-film .experience-artist-photo[data-official-portrait] { object-position:center 20%; }
+.stage-film-label { position:absolute; inset-inline:0; bottom:0; padding:42px 20px 20px; background:linear-gradient(transparent,#021310dc); color:var(--e27-paper); font-size:11px; font-weight:700; }
+.scene-artists .experience-artist-info { margin-top:20px; display:flex; align-items:start; gap:12px; }
+.scene-artists .experience-artist-info h2 { margin:0; font:750 clamp(24px,2.3vw,32px)/1.15 Inter,'Inter Fallback',sans-serif; letter-spacing:-.04em; color:var(--e27-paper); }
+.scene-artists .experience-artist-index { color:var(--e27-gold); font-size:11px; }
+.scene-artists :is(.experience-artist-description,.experience-artist-meta) { color:var(--e27-sage); font-size:13px; line-height:1.8; }
+
+/* Programme: one fine connecting line, three ordered day panels. */
+.stage-program-hero { padding:72px max(6%,calc((100vw - 1180px)/2)) 36px; text-align:center; background:radial-gradient(ellipse at 50% 15%,#07594e60,transparent 65%),var(--e27-ink); }
+.stage-program-hero .stage-lead { max-width:none; margin-bottom:0; }
+.scene-program .stage-itinerary { padding-top:48px; }
+.stage-pending { margin-top:36px; }
+.stage-pending h3 { color:var(--e27-paper); font:750 24px/1.2 Inter,sans-serif; letter-spacing:-.04em; margin-bottom:20px; }
+.stage-pending dl { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:24px; margin:0; }
+.stage-pending dl > div { padding:18px 0; border-block:1px solid var(--e27-line); }
+.stage-pending dt { color:var(--e27-paper); font-weight:650; }
+.stage-pending dd { margin:8px 0 0; color:var(--e27-sage); font-size:13px; }
+.stage-route { position:relative; padding-left:28px; border-left:1px solid var(--e27-line); }
+.scene-program .stage-route-stop { position:relative; display:grid; grid-template-columns:68px 1fr; gap:18px 28px; margin-bottom:24px; padding:32px; border:1px solid var(--e27-line); border-radius:var(--e27-radius); background:var(--e27-surface); }
+.scene-program .stage-route-stop::before { content:''; position:absolute; top:42px; left:-34px; width:10px; height:10px; border-radius:50%; background:var(--e27-gold); box-shadow:0 0 0 6px var(--e27-ink); }
+.scene-program .stage-route-stop .experience-day-number { color:var(--e27-gold); font:700 52px/1 Inter,sans-serif; letter-spacing:-.07em; }
+.stage-stop-date { font-size:10px; font-weight:650; letter-spacing:.12em; margin-bottom:13px; color:var(--e27-sage); }
+.scene-program .stage-route-stop h3 { color:var(--e27-paper); font:800 34px/1.1 Inter,sans-serif; letter-spacing:-.04em; }
+.scene-program .stage-route-stop .experience-day-note { color:var(--e27-sage); font-size:13px; }
+.scene-program .stage-route-stop .experience-timetable { grid-column:2; padding:0; }
+.scene-program .experience-timetable li { border-color:var(--e27-line); display:grid; grid-template-columns:1fr 1.15fr; gap:20px; color:var(--e27-paper); }
+.scene-program .experience-timetable time { color:var(--e27-paper); font-size:15px; font-weight:700; }.scene-program .experience-timetable span { color:var(--e27-sage); font-size:13px; }
+
+/* Parties: a wide, uncropped scene and quiet statistics, with equal night cards. */
+.stage-night-hero { position:relative; padding:72px 0 48px; background:radial-gradient(ellipse at 50% 40%,#07594e55,transparent 65%),var(--e27-ink); }
+.stage-night-title { width:min(1180px,88%); margin:auto; text-align:center; }
+.stage-night-title h1 { font-size:clamp(64px,8.5vw,124px); }
+.stage-night-title .stage-lead { margin:0 auto 38px; max-width:none; }
+.stage-night-beams { display:none; }
+.stage-night-frame { width:min(1180px,88%); margin:0 auto; aspect-ratio:1.85; position:relative; border-radius:var(--e27-radius); border:1px solid var(--e27-line); overflow:hidden; background:var(--e27-night); }
+.stage-night-image { width:100%; height:100%; position:absolute; object-fit:cover; object-position:center 44%; }
+.stage-night-invitation { position:absolute; right:24px; bottom:24px; z-index:3; padding:16px 22px; border-radius:999px; background:var(--e27-red); color:var(--e27-paper); font:700 12px/1.5 Inter,sans-serif; display:flex; align-items:center; gap:22px; min-height:54px; }
+.stage-night-invitation span { font-size:24px; }
+.stage-night-hero > .stage-reference { text-align:center; max-width:88%; margin:22px auto; }
+.stage-night-pulse { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); width:min(1000px,88%); margin:36px auto 0; border-block:1px solid var(--e27-line); }
+.stage-night-pulse > div { padding:26px 18px; text-align:center; }.stage-night-pulse > div + div { border-left:1px solid var(--e27-line); }
+.stage-night-pulse strong { display:block; font:750 clamp(32px,3.6vw,50px)/1 Inter,sans-serif; letter-spacing:-.04em; color:var(--e27-gold); }
+.stage-night-pulse span { display:block; font-size:10px; line-height:1.7; margin-top:12px; color:var(--e27-sage); }
+.stage-night-hours { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:24px; }
+.scene-parties .stage-night-hours .experience-day { display:block; color:var(--e27-paper); background:var(--e27-surface); border:1px solid var(--e27-line); padding:30px; border-radius:var(--e27-radius); }
+.scene-parties .experience-day-number { display:block; font:600 24px/1 Inter,sans-serif; color:var(--e27-gold); margin-bottom:24px; }
+.scene-parties .experience-day h3 { font:750 28px/1.2 Inter,sans-serif; color:var(--e27-paper); }.scene-parties .experience-day-note { color:var(--e27-sage); }
+.scene-parties .experience-timetable { margin-top:28px; }.scene-parties .experience-timetable li { display:block; border-color:var(--e27-line); padding-block:18px; }
+.scene-parties .experience-timetable time { color:var(--e27-paper); display:block; font-size:17px; margin-bottom:5px; }.scene-parties .experience-timetable span { color:var(--e27-sage); display:block; font-size:12px; text-align:left; }
+.scene-parties .stage-night-admission { background:var(--e27-surface); border-block:1px solid var(--e27-line); }
+.scene-parties .experience-inset-photo { border-radius:var(--e27-radius); }
+.scene-parties .experience-pass-list li { color:var(--e27-sage); border-color:var(--e27-line); }.scene-parties .experience-pass-list strong { color:var(--e27-paper); }
+
+/* Learning and competition: a portrait with a single discreet caption. */
+.stage-studio-hero,.stage-arena-hero { position:relative; display:grid; grid-template-columns:1.1fr .9fr; gap:72px; align-items:center; padding:80px max(6%,calc((100vw - 1180px)/2)); background:radial-gradient(ellipse at 90% 20%,#07594e60,transparent 65%),var(--e27-ink); }
+.stage-studio-composition { width:100%; position:relative; padding:0 0 32px; }
+.stage-studio-image { aspect-ratio:4/5; position:relative; overflow:hidden; border:1px solid var(--e27-line); border-radius:var(--e27-radius); background:var(--e27-surface-raised); }
+.stage-studio-photo { width:100%; height:100%; object-fit:cover; }
+.stage-studio-coordinate { position:absolute; font-size:9px; letter-spacing:.08em; color:var(--e27-sage); }.stage-coordinate-top,.stage-studio-cross { display:none; }.stage-coordinate-bottom { bottom:0; right:0; }
+.stage-studio-stamp { position:absolute; z-index:2; padding:14px 20px; background:var(--e27-night); color:var(--e27-paper); border:1px solid var(--e27-line); border-radius:10px; bottom:56px; left:20px; display:flex; align-items:center; gap:16px; }
+.stage-studio-stamp strong { font:700 30px/1 Inter,sans-serif; letter-spacing:-.04em; color:var(--e27-gold); }.stage-studio-stamp span { font-size:9px; letter-spacing:.07em; }
+.scene-masterclass .experience-syllabus-list { list-style:none; padding:0; margin:0; }
+.scene-masterclass .experience-syllabus-list li { position:relative; list-style:none; padding:0 0 26px 65px; margin-bottom:28px; border-bottom:1px solid var(--e27-line); }
+.stage-syllabus-number { position:absolute; left:0; top:0; font:600 24px/1.2 Inter,sans-serif; color:var(--e27-gold); }
+.scene-masterclass .experience-syllabus-list h3 { font:750 24px/1.2 Inter,sans-serif; color:var(--e27-paper); }.scene-masterclass .experience-syllabus-list p { color:var(--e27-sage); }
+.scene-masterclass .stage-studio-mentors { background:var(--e27-surface); border-block:1px solid var(--e27-line); }
+.scene-masterclass .experience-masterclass-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:28px; align-items:start; }
+.scene-masterclass .stage-mentor { padding:0; background:none; border:0; }.scene-masterclass .stage-mentor .experience-artist-photo { height:auto; aspect-ratio:4/5; width:100%; object-fit:cover; border-radius:var(--e27-radius); border:1px solid var(--e27-line); }
+.scene-masterclass .stage-mentor .experience-artist-info { margin-top:16px; }.scene-masterclass .stage-mentor h3 { color:var(--e27-paper); font:750 27px/1.15 Inter,sans-serif; }
+.scene-masterclass .stage-mentor :is(.experience-artist-meta,.experience-artist-description) { color:var(--e27-sage); }.scene-masterclass .stage-mentor .experience-artist-index { color:var(--e27-gold); }
+.stage-arena-rings { position:relative; width:100%; aspect-ratio:4/5; }
+.stage-arena-portrait { width:100%; height:100%; border:1px solid var(--e27-line); border-radius:var(--e27-radius); overflow:hidden; background:var(--e27-surface); }.stage-arena-photo { width:100%; height:100%; object-fit:cover; }
+.stage-arena-label { position:absolute; bottom:20px; left:20px; padding:15px 22px; border:1px solid var(--e27-line); border-radius:10px; background:var(--e27-night); color:var(--e27-paper); font:700 17px/1.2 Inter,sans-serif; }.stage-arena-label b { color:var(--e27-gold); }.stage-arena-star { display:none; }
+.scene-jacknjill .stage-arena-dossier { background:var(--e27-surface); border-block:1px solid var(--e27-line); }.scene-jacknjill .stage-arena-dossier p { color:var(--e27-sage); }
+.stage-scorecard { border:1px solid var(--e27-line); background:var(--e27-ink); padding:8px 28px; border-radius:var(--e27-radius); }
+.scene-jacknjill .stage-scorecard > div { display:grid; grid-template-columns:25px 1fr; gap:6px 14px; padding-block:22px; border-color:var(--e27-line); }.stage-score-number { grid-row:span 2; color:var(--e27-gold); font-size:12px; }
+.scene-jacknjill .stage-scorecard dt { color:var(--e27-sage); font-size:11px; }.scene-jacknjill .stage-scorecard dd { color:var(--e27-paper); font-size:14px; }
+.stage-podium { display:grid; grid-template-columns:1.12fr 1fr; gap:24px; }.scene-jacknjill .stage-podium .experience-prize { margin:0; border:1px solid var(--e27-line); border-radius:var(--e27-radius); padding:32px; background:var(--e27-surface); }
+.scene-jacknjill .stage-podium .experience-prize h3 { color:var(--e27-paper); font:750 30px/1.15 Inter,sans-serif; }.scene-jacknjill .stage-podium .experience-prize p { color:var(--e27-sage); }.scene-jacknjill .stage-podium .experience-prize > span { color:var(--e27-gold); }
+.scene-jacknjill .stage-podium .stage-podium-1 { grid-row:span 2; border-color:#dfc58e80; background:var(--e27-surface-raised); display:flex; flex-direction:column; justify-content:center; }.scene-jacknjill .stage-podium .stage-podium-1 h3 { font-size:clamp(34px,3.3vw,48px); }
+
+@media (hover:hover) and (prefers-reduced-motion:no-preference) {
+ .stage-artist-film img { transition:transform .5s; }.stage-artist-film:hover img { transform:scale(1.035); }
+}
+@media (max-width:1000px) {
+ .stage-world h1 { font-size:clamp(52px,7.7vw,82px); }
+ .stage-studio-hero,.stage-arena-hero { gap:36px; padding-top:64px; }
+ .scene-artists .stage-artist-gallery { grid-template-columns:repeat(2,minmax(0,1fr)); }
+ .stage-night-hours { gap:16px; }.scene-parties .stage-night-hours .experience-day { padding:24px 20px; }
+ .scene-masterclass .experience-masterclass-grid { gap:20px; }.scene-masterclass .stage-mentor h3 { font-size:22px; }
+}
+@media (max-width:700px) {
+ .stage-world h1 { font-size:clamp(48px,13vw,76px); }.stage-world .stage-lead { font-size:16px; }
+ .stage-world .experience-section { padding-block:64px; }.stage-world .experience-heading { font-size:clamp(34px,8.8vw,48px); }
+ .stage-world .experience-section-head { display:block; margin-bottom:32px; }.stage-world .experience-section-head > p { margin-top:20px; }
+ .stage-world .experience-faq-grid,.stage-studio-hero,.stage-arena-hero { display:block; }
+ .stage-world .experience-faq-grid > div:first-child { margin-bottom:32px; }
+ .stage-program-hero { padding-top:48px; }
+ .stage-pending dl { grid-template-columns:1fr; gap:0; }
+ .stage-pending dl > div { display:flex; justify-content:space-between; gap:16px; border-top:0; }
+ .stage-pending dd { margin:0; }
+ .stage-route { padding-left:16px; }.scene-program .stage-route-stop { padding:24px 20px; grid-template-columns:1fr; gap:14px; }.scene-program .stage-route-stop::before { left:-22px; }.scene-program .stage-route-stop .experience-timetable { grid-column:1; }
+ .scene-program .stage-route-stop .experience-day-number { font-size:28px; }.scene-program .experience-timetable li { gap:14px; grid-template-columns:1fr 1fr; }
+ .scene-artists .stage-artist-gallery { gap:32px 16px; }.scene-artists .experience-artist-info h2 { font-size:21px; }.scene-artists .experience-artist-info { flex-direction:column; gap:5px; }.scene-artists .experience-artist-description { font-size:12px; }
+ .stage-film-play { top:10px; right:10px; }.stage-film-label { padding:32px 12px 14px; font-size:10px; }
+ .stage-night-hero { padding-top:48px; }.stage-night-title h1 { font-size:clamp(48px,12vw,74px); }.stage-night-frame { aspect-ratio:1.35; }.stage-night-invitation { right:12px; bottom:12px; padding:10px 17px; }
+ .stage-night-pulse { grid-template-columns:repeat(2,minmax(0,1fr)); }.stage-night-pulse > div:nth-child(3) { border-left:0; }.stage-night-pulse > div:nth-child(n+3) { border-top:1px solid var(--e27-line); }
+ .stage-night-hours,.stage-podium { grid-template-columns:1fr; }.scene-parties .stage-night-hours .experience-day { padding:28px; }
+ .stage-studio-hero,.stage-arena-hero { padding-block:48px; }.stage-studio-composition,.stage-arena-rings { width:min(420px,100%); margin:38px auto 0; }
+ .scene-masterclass .experience-masterclass-grid { grid-template-columns:1fr; gap:40px; }.scene-masterclass .stage-mentor { width:min(420px,100%); margin:auto; }
+ .stage-studio-stamp { bottom:48px; left:14px; padding:12px 16px; }.stage-studio-stamp strong { font-size:24px; }
+ .scene-masterclass .experience-syllabus { display:block; }.scene-masterclass .experience-syllabus-list { margin-top:32px; }
+}

@@ -6,15 +6,17 @@ Plan your Bachata festival season in Europe: selected events from November 2026 
 
 Canonical: https://milanosensualcongress.com/news/bachata-festivals-europe-2026-2027-calendar
 
+[All stories](https://milanosensualcongress.com/news)
+
 Planning a season of **Bachata festivals in Europe**? This selected calendar brings together six events between November 2026 and April 2027, starting with Milano Sensual Congress. Use the dates and official event links to plan the weekends that suit you.
 
 Choose by dance style, workshop level, social dancing and travel plans. Confirm the pass inclusions, accommodation and arrival times with each organizer before booking. New to the format? Start with our guide on [what to expect at a Bachata congress](https://milanosensualcongress.com/news/what-to-expect-bachata-congress-2026).
 
 ### November 2026 Milano Sensual Congress — Milan, Italy
 
-On **20–22 November 2026**, **Milano Sensual Congress** brings workshops, parties and social dancing to the four-star Devero Hotel in Cavenago di Brianza, near Milan. Workshops are taught in English, with rooms for different levels and an [international Bachata lineup](https://milanosensualcongress.com/artists) including Gero y Migle, Klau y Ros, Cristian y Gabriella and David y Ines. The weekend includes an [international Jack & Jill](https://milanosensualcongress.com/jacknjill) and [night parties until 5 AM on Friday and Saturday](https://milanosensualcongress.com/schedule).
+On **20–22 November 2026**, **Milano Sensual Congress** brings workshops, parties and social dancing to the four-star Devero Hotel in Cavenago di Brianza, near Milan. Workshops are taught in English, with rooms for different levels and an [international Bachata lineup](https://milanosensualcongress.com/artists) including Gero y Migle, Klau y Ros, Cristian y Gabriella and David y Ines. The weekend includes an [international Jack & Jill](https://milanosensualcongress.com/jacknjill) and [night parties until 5 AM on Friday and Saturday](https://milanosensualcongress.com/parties).
 
-Workshops and parties take place at the event hotel, so guests staying there can move between their room and the dance floor without changing venues. Preview the [workshop program](https://milanosensualcongress.com/program), compare the [congress hotels](https://milanosensualcongress.com/hotel) and check [current Full Pass options](https://milanosensualcongress.com/tickets). The [official transfer service](https://milanosensualcongress.com/transfer) offers advance bookings from Malpensa, Linate, Bergamo and Milano Centrale.
+Workshops and parties take place at the event hotel, so guests staying there can move between their room and the dance floor without changing venues. Preview the [workshop program](https://milanosensualcongress.com/program), compare the [congress hotels](https://milanosensualcongress.com/hotel) and check [current Full Pass options](https://milanosensualcongress.com/tickets). The [official transfer service](https://milanosensualcongress.com/news/milan-bachata-travel-guide-2026#read-3) offers advance bookings from Malpensa, Linate, Bergamo and Milano Centrale.
 
 ### January 2027 Bachata Sensual World Congress — Punta Umbría, Huelva, Spain
 

@@ -6,6 +6,8 @@ Milano Sensual Congress 2026 sarà il miglior social di Bachata in Italia: 1.000
 
 Canonical: https://milanosensualcongress.com/it/news/migliore-festa-bachata-italia-2026
 
+[Tutte le storie](https://milanosensualcongress.com/it/news)
+
 Milano Sensual Congress 2026 non è solo un weekend di workshop Bachata di livello mondiale. Sarà il miglior social di Bachata in Italia dell'anno: oltre 1.000 ballerini, artisti internazionali in pista, posti limitati, due sale da ballo e più di 800 metri quadrati dedicati alla danza.
 
 1.000+
@@ -50,7 +52,7 @@ Questo significa più spazio per ballare, più varietà musicale, più possibili
 
 Milano è una delle location più forti per una grande **serata latina in Italia**: facile da raggiungere dall'Europa, collegata da aeroporti e treni, e vicina all'hotel ufficiale del congresso. Per i ballerini internazionali, l'evento combina viaggio, hotel, workshop e party in un'esperienza chiara e completa.
 
-Se arrivi dalla Svizzera, dalla Francia, dalla Germania, dalla Spagna, dall'Austria, dall'Est Europa o da un'altra città italiana, il congresso ti dà un motivo per trasformare un normale weekend in un vero viaggio Bachata. Le [opzioni transfer ufficiali](https://milanosensualcongress.com/it/transfer) e le informazioni sull'[hotel del congresso](https://milanosensualcongress.com/it/hotel) rendono la logistica più semplice.
+Se arrivi dalla Svizzera, dalla Francia, dalla Germania, dalla Spagna, dall'Austria, dall'Est Europa o da un'altra città italiana, il congresso ti dà un motivo per trasformare un normale weekend in un vero viaggio Bachata. Le [opzioni transfer ufficiali](https://milanosensualcongress.com/it/news/guida-viaggio-bachata-milano-2026#read-3) e le informazioni sull'[hotel del congresso](https://milanosensualcongress.com/it/hotel) rendono la logistica più semplice.
 
 ### Perché chi ama i party dovrebbe prenotare presto
 

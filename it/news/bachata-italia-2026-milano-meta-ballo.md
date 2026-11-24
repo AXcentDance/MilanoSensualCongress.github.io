@@ -6,6 +6,8 @@ Scopri perché Milano sta diventando una meta imperdibile per la Bachata in Ital
 
 Canonical: https://milanosensualcongress.com/it/news/bachata-italia-2026-milano-meta-ballo
 
+[Tutte le storie](https://milanosensualcongress.com/it/news)
+
 L'Italia ha sempre avuto gli ingredienti che i ballerini amano: musica, cibo, stile, notti lunghe e una cultura che capisce il valore dello stare insieme. Nel 2026, Milano sta trasformando questi ingredienti in qualcosa di ancora più forte per la community Bachata: una meta europea facile da raggiungere, dove un weekend di ballo può essere internazionale e semplice da vivere.
 
 3
@@ -32,7 +34,7 @@ Questo conta perché i ballerini non viaggiano solo per le lezioni. Viaggiano pe
 
 Milano è uno dei punti di ingresso più forti per un **festival Bachata in Italia**. I ballerini possono arrivare da Malpensa, Linate o Bergamo, e la città è collegata in treno con Svizzera, Francia, Austria, Germania e il resto d'Italia. Per chi confronta **festival latini in Europa**, questa accessibilità cambia la decisione.
 
-L'evento sostiene anche il viaggio con [opzioni transfer ufficiali dagli aeroporti di Milano e da Milano Centrale](https://milanosensualcongress.com/it/transfer). È importante per chi arriva con scarpe da ballo, bagagli, outfit da social, costumi e poco tempo. Meno energia spesa nella logistica significa più energia per la pista.
+L'evento sostiene anche il viaggio con [opzioni transfer ufficiali dagli aeroporti di Milano e da Milano Centrale](https://milanosensualcongress.com/it/news/guida-viaggio-bachata-milano-2026#read-3). È importante per chi arriva con scarpe da ballo, bagagli, outfit da social, costumi e poco tempo. Meno energia spesa nella logistica significa più energia per la pista.
 
 ### Il Devero Hotel rende il congresso più semplice
 
@@ -68,7 +70,7 @@ I ballerini dovrebbero assicurarsi prima il Full Pass, poi pianificare hotel, tr
 
 #### Pianifica il tuo weekend Bachata a Milano
 
-Usa la guida completa al [Congresso Bachata 2026](https://milanosensualcongress.com/it/congresso-bachata-2026), confronta le opzioni [Full Pass](https://milanosensualcongress.com/it/tickets), guarda l'[hotel ufficiale](https://milanosensualcongress.com/it/hotel), controlla i [transfer aeroportuali](https://milanosensualcongress.com/it/transfer) e scopri gli [artisti Bachata internazionali](https://milanosensualcongress.com/it/artists).
+Usa la guida completa al [Congresso Bachata 2026](https://milanosensualcongress.com/it/congresso-bachata-2026), confronta le opzioni [Full Pass](https://milanosensualcongress.com/it/tickets), guarda l'[hotel ufficiale](https://milanosensualcongress.com/it/hotel), controlla i [transfer aeroportuali](https://milanosensualcongress.com/it/news/guida-viaggio-bachata-milano-2026#read-3) e scopri gli [artisti Bachata internazionali](https://milanosensualcongress.com/it/artists).
 
 #### Rendi Milano la tua meta Bachata 2026
 

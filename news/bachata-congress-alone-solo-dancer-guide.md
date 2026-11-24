@@ -6,6 +6,8 @@ Going to a Bachata Congress alone? Learn how Bachata Workshops, partner rotation
 
 Canonical: https://milanosensualcongress.com/news/bachata-congress-alone-solo-dancer-guide
 
+[All stories](https://milanosensualcongress.com/news)
+
 The honest answer
 
 ### You may arrive solo. You will not experience the weekend alone.
@@ -158,7 +160,7 @@ Arrive early, join workshop rotations, introduce yourself to nearby dancers and 
 
 **How should I travel from a Milan airport if I am alone?**
 
-Review the [official transfer options from Malpensa, Linate, Bergamo and Milano Centrale](https://milanosensualcongress.com/transfer) before travelling. Book in advance, keep the confirmation available offline and contact the organisers if you need clarification about the most suitable arrangement.
+Review the [official transfer options from Malpensa, Linate, Bergamo and Milano Centrale](https://milanosensualcongress.com/news/milan-bachata-travel-guide-2026#read-3) before travelling. Book in advance, keep the confirmation available offline and contact the organisers if you need clarification about the most suitable arrangement.
 
 20–22 November 2026 · Milan
 

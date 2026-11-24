@@ -6,6 +6,8 @@ Scopri lo stile unico di Aitor Gomez. Un maestro del footwork domenicano e della
 
 Canonical: https://milanosensualcongress.com/it/news/aitor-gomez-bachata-sensuale-radici-dominicane
 
+[Tutte le storie](https://milanosensualcongress.com/it/news)
+
 "Per capire l'evoluzione della Bachata, bisogna prima ballare le sue radici." - Aitor Gomez
 
 Nella scena globale della Bachata, pochi artisti possiedono la versatilità di **Aitor Gomez**. Mentre molti ballerini si specializzano nello stile tradizionale domenicano o nella moderna Bachata Sensuale, Aitor ha tracciato un percorso unico padroneggiando entrambi e trovando i fili nascosti che li collegano.

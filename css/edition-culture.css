@@ -1,0 +1,48 @@
+/* Reading, questions and archives extend the shared 2027 homepage brand.
+   Shared type, palette and article components belong to edition-editorial.css. */
+body.scene-story .editorial-masthead-inner { grid-template-columns: minmax(0, 1.42fr) minmax(260px, 1fr); gap: clamp(35px, 6vw, 80px); }
+body.scene-story .editorial-masthead-inner:not(:has(.editorial-hero-figure)) { grid-template-columns: minmax(0, 980px); }
+body.scene-story .editorial-hero-figure img { max-height: 540px; border-radius: var(--e27-radius); }
+body.scene-story.story-artists .editorial-hero-figure img { object-fit: contain; background: var(--e27-surface); }
+body.scene-story.story-guides .editorial-prose > .editorial-columns p > strong { display: block; margin-bottom: .35em; }
+body.scene-story .editorial-hero-poster img { aspect-ratio: 4 / 5; height: auto; max-height: none; object-fit: contain; }
+body.scene-journal .culture-journal-orbit,
+body.scene-ambassadors .culture-light-shards,
+body.scene-ambassadors .promoters-stripes { display: none; }
+body.scene-ambassadors .promoters-kicker { color: var(--e27-gold); }
+body.scene-ambassadors .promoters-start { padding: 64px 0; }
+body.scene-ambassadors .promoters-start ol { gap: 24px; }
+body.scene-ambassadors .promoters-start li { grid-template-columns: 40px 1fr; padding: 28px; border: 1px solid var(--e27-paper-line); border-radius: var(--e27-radius); }
+body.scene-ambassadors .promoters-step-number { color: var(--e27-emerald); font: 800 28px/1 Inter, sans-serif; }
+body:is(.scene-faq,.scene-terms,.scene-archive) .editorial-masthead { padding-block: 78px 84px; }
+body:is(.scene-faq,.scene-terms,.scene-archive) .editorial-masthead h1 { font-size: clamp(48px, 6.2vw, 90px); max-width: 860px; }
+body.scene-faq .editorial-rail-intro { font-size: 30px; }
+body.scene-faq .editorial-question { margin-bottom: 14px; border: 1px solid var(--e27-paper-line); background: var(--e27-paper); border-radius: var(--e27-radius); padding-inline: 26px; }
+body.scene-faq .editorial-question[open] { background: var(--e27-paper-muted); }
+body.scene-faq .editorial-question summary { grid-template-columns: 30px 1fr 34px; align-items: center; padding: 25px 0; gap: 14px; }
+body.scene-faq .editorial-question-number { color: var(--e27-emerald); font: 700 12px/1 Inter, sans-serif; }
+body.scene-faq .editorial-question-plus { display: grid; place-items: center; width: 34px; height: 34px; border: 1px solid var(--e27-paper-line); border-radius: 50%; color: var(--e27-paper-ink); }
+body.scene-faq .editorial-question > div { padding: 0 0 25px 44px; }
+body.scene-terms .editorial-rail nav li a { display: grid; grid-template-columns: 40px 1fr; align-items: center; padding: 18px 0; color: var(--e27-paper-ink); }
+body.scene-terms .editorial-rail nav li a span { font: 750 24px/1 Inter, sans-serif; color: var(--e27-emerald); }
+body.scene-terms .editorial-panel { background: transparent; border: 0; padding: 0; }
+body.scene-archive .editorial-panel { background: var(--e27-paper-muted); border: 1px solid var(--e27-paper-line); border-radius: var(--e27-radius); }
+@media (max-width: 1000px) {
+ body.scene-story .editorial-masthead-inner { gap: 30px; grid-template-columns: minmax(0, 1.2fr) minmax(240px, 1fr); }
+ body.scene-ambassadors .promoters-start li { padding: 22px; grid-template-columns: 1fr; gap: 16px; }
+}
+@media (max-width: 767px) {
+ body.scene-story .editorial-masthead-inner { grid-template-columns: 1fr; gap: 35px; }
+ body.scene-story .editorial-hero-figure { width: min(420px, 100%); margin-inline: auto; }
+ body.scene-story .editorial-hero-figure img { max-height: 460px; }
+ body.scene-story .editorial-hero-poster img { max-height: none; height: auto; }
+ body:is(.scene-faq,.scene-terms,.scene-archive) .editorial-masthead { padding-block: 48px 56px; }
+ body:is(.scene-faq,.scene-terms,.scene-archive) .editorial-masthead h1 { font-size: clamp(38px, 10vw, 64px); }
+ body.scene-faq .editorial-question { padding-inline: 18px; }
+ body.scene-faq .editorial-question summary { grid-template-columns: 21px 1fr 29px; gap: 10px; padding-block: 22px; }
+ body.scene-faq .editorial-question h2 { font-size: 20px; }
+ body.scene-faq .editorial-question-plus { width: 29px; height: 29px; }
+ body.scene-faq .editorial-question > div { padding-left: 0; font-size: 15px; }
+ body.scene-ambassadors .promoters-start { padding-block: 40px; }
+ body.scene-ambassadors .promoters-start li { grid-template-columns: 36px 1fr; }
+}

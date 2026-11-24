@@ -1,0 +1,201 @@
+{
+  "edition": 2027,
+  "name": "Milano Sensual Congress 2027",
+  "eventId": "https://milanosensualcongress.com/#event-2027",
+  "startDate": "2027-11-19",
+  "endDate": "2027-11-21",
+  "timezone": "Europe/Rome",
+  "datePrecision": "day",
+  "venue": {
+    "name": "Devero Hotel",
+    "streetAddress": "Largo Kennedy, 1",
+    "addressLocality": "Cavenago di Brianza",
+    "postalCode": "20873",
+    "addressRegion": "MB",
+    "addressCountry": "IT",
+    "classification": {
+      "stars": 4,
+      "designation": "Superior",
+      "confirmation": {
+        "recordedOn": "2026-09-28",
+        "source": "Organizer confirmation in the project conversation",
+        "confirmedFields": [
+          "stars",
+          "designation"
+        ]
+      }
+    }
+  },
+  "status": {
+    "dates": "confirmed",
+    "venue": "confirmed",
+    "times": "unannounced",
+    "tickets": "unannounced",
+    "lineup": "preview"
+  },
+  "referenceEdition": 2026,
+  "websiteTicketDestination": {
+    "url": "https://lasalsadelbaile.com/MSC2027"
+  },
+  "earlyBird": {
+    "endsOn": "2026-12-30",
+    "datePrecision": "day",
+    "timezone": "Europe/Rome",
+    "countdownDeadline": "2026-12-31T00:00:00+01:00"
+  },
+  "headliners": {
+    "artists": [
+      "Gero y Migle",
+      "Nacho y Silvia",
+      "David y Ines",
+      "Agustin y Alba",
+      "Miguel y Sunsire",
+      "Cristian y Gabriella",
+      "Klau y Ros",
+      "Pablo y Raquel",
+      "Luis y Andrea",
+      "Aitor y Sara"
+    ],
+    "homepagePresentation": {
+      "order": [
+        "Miguel y Sunsire",
+        "Pablo y Raquel",
+        "Gero y Migle",
+        "Cristian y Gabriella",
+        "Agustin y Alba",
+        "Nacho y Silvia",
+        "Klau y Ros",
+        "Luis y Andrea",
+        "David y Ines",
+        "Aitor"
+      ],
+      "videoPreviews": {
+        "artists": []
+      }
+    }
+  },
+  "shuttle": {
+    "origin": {
+      "name": "Malpensa Airport",
+      "iataCode": "MXP"
+    },
+    "destinations": [
+      "Devero Hotel",
+      "AS Hotel Cambiago"
+    ],
+    "departuresByHotel": {
+      "Devero Hotel": "17:00",
+      "AS Hotel Cambiago": "16:00"
+    },
+    "departureTimeStatus": "toBeConfirmed",
+    "timezone": "Europe/Rome",
+    "deveroBus": {
+      "bookingStatus": "openingSoon",
+      "departures": [
+        {
+          "from": "Malpensa Airport (MXP)",
+          "to": "Devero Hotel",
+          "departure": "2027-11-19T16:00:00+01:00"
+        },
+        {
+          "from": "Devero Hotel",
+          "to": "Malpensa Airport (MXP)",
+          "departure": "2027-11-21T14:00:00+01:00"
+        }
+      ],
+      "confirmedOn": "2026-11-24"
+    }
+  },
+  "provisionalProgramme": {
+    "status": "provisional-not-confirmed",
+    "days": [
+      {
+        "date": "2027-11-19",
+        "sessions": [
+          {
+            "activity": "workshops",
+            "start": "18:00",
+            "end": "23:00"
+          },
+          {
+            "activity": "social",
+            "start": "23:00",
+            "end": "05:00",
+            "endsNextDay": true
+          }
+        ]
+      },
+      {
+        "date": "2027-11-20",
+        "sessions": [
+          {
+            "activity": "workshops",
+            "start": "10:00",
+            "end": "20:00"
+          },
+          {
+            "activity": "afternoon-social",
+            "start": "16:00",
+            "end": "20:00"
+          },
+          {
+            "activity": "social",
+            "start": "23:00",
+            "end": "05:00",
+            "endsNextDay": true
+          }
+        ]
+      },
+      {
+        "date": "2027-11-21",
+        "sessions": [
+          {
+            "activity": "workshops",
+            "start": "11:00",
+            "end": "16:00"
+          },
+          {
+            "activity": "afternoon-social",
+            "start": "16:00",
+            "end": "22:00"
+          }
+        ]
+      }
+    ],
+    "timesToBeConfirmed": [
+      "masterclasses",
+      "check-in",
+      "chill"
+    ],
+    "homepageNotice": {
+      "en": "Programme out soon",
+      "it": "Programma in arrivo"
+    }
+  },
+  "hotels": {
+    "main": {
+      "name": "Devero Hotel",
+      "role": "Congress venue",
+      "classification": "4-star Superior"
+    },
+    "secondary": {
+      "name": "AS Hotel Cambiago",
+      "role": "Secondary accommodation",
+      "classification": "4-star"
+    },
+    "booking": {
+      "status": "opening-soon"
+    }
+  },
+  "jackAndJill": {
+    "divisions": [
+      "Amateur",
+      "Semi-pro"
+    ],
+    "entryFee": {
+      "amount": 25,
+      "currency": "EUR",
+      "confirmedOn": "2026-11-24"
+    }
+  }
+}

@@ -14,6 +14,7 @@ for (const entry of sitePages()) {
     expect(response.status()).toBe(200);
     await expect(page.locator('h1')).toBeVisible();
     await expect(page.locator('main')).toBeVisible();
+    if (['index.html', 'it/index.html'].includes(entry.file)) await expect(page.locator('.premiere-copy')).toHaveCSS('opacity', '1');
     expect(await page.locator('h1').evaluate(el => {
       for (let node = el; node; node = node.parentElement) {
         if (+getComputedStyle(node).opacity <= .05) return false;
@@ -21,6 +22,42 @@ for (const entry of sitePages()) {
       }
       return true;
     }), 'The main heading is visible without an opacity reveal').toBe(true);
+
+    const is2026Notice = ['change-name-ticket.html', 'it/change-name-ticket.html'].includes(entry.file);
+    const logoStem = is2026Notice
+      ? 'milano-sensual-congress-official-logo-nav'
+      : 'milano-sensual-congress-official-logo-nav-2027-teal-v57';
+    const navLogo = page.locator(`nav img[src*="${logoStem}"]`);
+    await expect(navLogo).toHaveCount(1);
+    await expect(navLogo).toBeVisible();
+    const home = entry.file.startsWith('it/') ? '/it/' : '/';
+    const homeOnlyNav = ['index.html', 'it/index.html', 'shuttle.html', 'it/navetta.html'].includes(entry.file);
+    if (homeOnlyNav) {
+      await expect(page.locator('nav.e27-nav a')).toHaveCount(1);
+      await expect(page.locator('nav.e27-nav a')).toHaveAttribute('href', home);
+      await expect(page.locator('nav.e27-nav button')).toHaveCount(0);
+    } else for (const language of ['en', 'it']) {
+      await expect(page.locator(`.e27-desktop .e27-languages a[lang="${language}"]`)).toHaveText(language.toUpperCase());
+      await expect(page.locator(`.e27-mobile-menu .e27-languages a[lang="${language}"]`)).toHaveText(language.toUpperCase());
+    }
+    await expect.poll(() => navLogo.evaluate(image => image.complete && image.naturalWidth > 0)).toBe(true);
+    const logoGeometry = await navLogo.evaluate(async image => {
+      // naturalWidth on a srcset image is density-corrected. Decode the chosen
+      // URL alone to check its actual pixels against this device's resolution.
+      const selected = new Image();
+      selected.src = image.currentSrc;
+      await selected.decode();
+      const bounds = image.getBoundingClientRect();
+      return {
+        source: new URL(image.currentSrc).pathname,
+        pixels: { width: selected.naturalWidth, height: selected.naturalHeight },
+        rendered: { width: bounds.width, height: bounds.height },
+        dpr: devicePixelRatio,
+      };
+    });
+    expect(logoGeometry.source, 'Navigation selects a bounded logo variant').toMatch(new RegExp(`/${logoStem}(?:_(?:100|175|300)w)?\\.webp$`));
+    expect(logoGeometry.pixels.width, 'The selected logo has enough pixels for its rendered size and device density').toBeGreaterThanOrEqual(Math.floor(logoGeometry.rendered.width * logoGeometry.dpr) - 2);
+    expect(Math.abs(logoGeometry.rendered.width / logoGeometry.rendered.height - logoGeometry.pixels.width / logoGeometry.pixels.height), 'The navigation logo retains its image proportions').toBeLessThan(.03);
 
     const breadcrumb = page.locator('nav[aria-label*="readcrumb"]');
     if (entry.indexable && !['index.html', 'it/index.html'].includes(entry.file)) {
@@ -80,42 +117,74 @@ for (const entry of sitePages()) {
       }
       scrollTo({ top: 0, behavior: 'instant' });
     });
+    // Document scrolling cannot reveal flags clipped by the nested country
+    // picker. Scroll every rendered flag into view through its real container
+    // and require the intended image to decode, rather than exempting flags
+    // or treating their deliberately empty offscreen placeholders as broken.
+    for (const flag of await page.locator('img[data-nations-flag-src]:visible').all()) {
+      const source = await flag.getAttribute('data-nations-flag-src');
+      await flag.scrollIntoViewIfNeeded();
+      await expect(flag).toHaveAttribute('src', source);
+      await expect.poll(() => flag.evaluate(image => image.complete && image.naturalWidth > 0 && image.naturalHeight > 0), { message: `The revealed country flag decodes: ${source}` }).toBe(true);
+    }
+    await page.evaluate(() => scrollTo({ top: 0, behavior: 'instant' }));
     await expect.poll(() => page.locator('img').evaluateAll(images => images.filter(im => im.getClientRects().length && (!im.complete || !im.naturalWidth)).map(im => im.getAttribute('src'))), { timeout: 10000 }).toEqual([]);
     expect(errors).toEqual([]);
-    if (entry.indexable) {
+    if (entry.indexable && entry.path !== home) {
       const alternate = await page.locator(`head link[hreflang="${entry.file.startsWith('it/') ? 'en' : 'it'}"]`).getAttribute('href');
       const href = new URL(alternate).pathname;
-      const matching = await page.locator('nav a').evaluateAll((links, wanted) => links.some(a => new URL(a.href).pathname === wanted), href);
+      const matching = await page.locator(homeOnlyNav ? 'footer a[hreflang]' : 'nav a').evaluateAll((links, wanted) => links.some(a => new URL(a.href).pathname === wanted), href);
       expect(matching, 'Navigation offers the translated counterpart').toBe(true);
     }
   });
 }
 
 for (const path of ['/', '/it/', '/tickets', '/it/tickets']) {
-  test(`${path}: separate 2026 and 2027 ticket links without a reminder signup`, async ({ page }) => {
+  for (const outcome of ['success', 'failure']) test(`${path}: reminder ${outcome} with a stubbed response`, async ({ page }, testInfo) => {
+    const requests = [];
+    await page.route('https://script.google.com/**', route => {
+      requests.push(route.request().url());
+      return route.fulfill({ status: outcome === 'success' ? 200 : 503, contentType: 'text/plain', body: outcome });
+    });
     await page.goto(path);
-    await expect(page.locator('#sales-deadline-heading')).toHaveCount(0);
-    await expect(page.locator('#sales-deadline')).not.toContainText(path.startsWith('/it')
-      ? 'Tutte le vendite chiudono venerdì 20 novembre a mezzogiorno.'
-      : 'All ticket sales close on Friday, 20 November at midday.');
-    const buttons = page.locator('#sales-deadline a');
-    await expect(buttons).toHaveCount(2);
-    await expect(buttons.nth(0)).toHaveText(path.startsWith('/it') ? 'Acquista party serale 2026' : 'Buy 2026 night party');
-    await expect(buttons.nth(0)).toHaveAttribute('href', 'https://lasalsadelbaile.com/MSC2026');
-    await expect(buttons.nth(1)).toHaveText(path.startsWith('/it') ? 'Acquista 2027' : 'Buy 2027');
-    await expect(buttons.nth(1)).toHaveAttribute('href', 'https://lasalsadelbaile.com/MSC2027');
-    for (const button of await buttons.all()) {
-      await expect(button).toBeVisible();
-      await expect(button).toHaveAttribute('target', '_blank');
+    const form = page.locator('#reminder-form');
+    await expect(form).toHaveCount(1);
+    await page.evaluate(() => {
+      window.reminderSourcesForTest = [];
+      window.mscAnalytics = { trackReminder: source => window.reminderSourcesForTest.push(source) };
+    });
+    await page.evaluate(() => document.fonts.ready);
+    // Let the long page jump paint before interacting with the form.
+    await form.evaluate(async el => {
+      el.scrollIntoView({ block: 'center', behavior: 'instant' });
+      await new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve)));
+    });
+    await form.locator('input[type="email"]').fill('audit@example.invalid');
+    const submit = form.locator('button[type="submit"]');
+    // Exercise the input type configured for each device profile.
+    if (testInfo.project.use.hasTouch) await submit.tap();
+    else await submit.click();
+    if (outcome === 'success') {
+      await expect(page.locator('#reminder-container')).toContainText(path.startsWith('/it') ? 'Grazie' : 'Thank you');
+      if (!path.includes('tickets')) await expect(page.locator('#reminder-container')).toContainText(path.startsWith('/it') ? 'La tua richiesta di promemoria è stata salvata.' : 'Your reminder request is saved.');
     }
-    await expect(page.locator('#reminder-container, #reminder-form, #reminder-success, #home-signup, #home-signup-success')).toHaveCount(0);
-    await expect(page.locator('script[src*="reminder-form.js"]')).toHaveCount(0);
-    if (!path.endsWith('tickets')) {
-      const repeatedButtons = page.locator('header a[href="https://lasalsadelbaile.com/MSC2026"], header a[href="https://lasalsadelbaile.com/MSC2027"]');
-      await expect(repeatedButtons).toHaveCount(4);
-      for (let i = 0; i < 4; i++) {
-        await expect(repeatedButtons.nth(i)).toHaveAttribute('href', `https://lasalsadelbaile.com/MSC${i % 2 ? '2027' : '2026'}`);
-      }
+    else {
+      await expect(page.getByRole('alert')).toBeVisible();
+      await expect(form.locator('button[type="submit"]')).toBeEnabled();
+      await expect(form.locator('input[type="email"]')).toHaveValue('audit@example.invalid');
+    }
+    expect(requests.length).toBe(1);
+    const analyticsSource = `${path.includes('tickets') ? 'Tickets' : 'Home'} - ${path.startsWith('/it') ? 'IT' : 'EN'}`;
+    const submitted = new URL(requests[0]);
+    expect(submitted.searchParams.get('email')).toBe('audit@example.invalid');
+    expect(submitted.searchParams.get('source')).toBe(path.includes('tickets') ? analyticsSource : `${analyticsSource} | 2027 early bird`);
+    expect(await page.evaluate(() => window.reminderSourcesForTest)).toEqual(outcome === 'success' ? [analyticsSource] : []);
+    if (!path.includes('tickets')) {
+      const feedback = outcome === 'success' ? page.locator('#reminder-container') : page.getByRole('alert');
+      expect(await feedback.evaluate(el => {
+        const bounds = el.getBoundingClientRect();
+        return bounds.width > 0 && bounds.left >= 0 && bounds.right <= document.documentElement.clientWidth + 1 && el.scrollWidth <= el.clientWidth + 1;
+      }), 'The homepage confirmation or retry message remains readable without horizontal overflow').toBe(true);
     }
   });
 }
@@ -127,12 +196,13 @@ test('Missing URLs return a usable, noindex 404', async ({ page }) => {
   await expect(page.locator('meta[name="robots"]')).toHaveAttribute('content', /noindex/);
 });
 
-for (const path of ['/', '/it/']) test(`${path}: reduced motion retains the poster without video autoplay`, async ({ page }) => {
+for (const path of ['/', '/it/']) test(`${path}: reduced motion retains the tricolour image and visible text`, async ({ page }) => {
   await page.emulateMedia({ reducedMotion: 'reduce' });
   await page.goto(path);
   await expect(page.locator('h1')).toBeVisible();
-  expect(await page.locator('#heroVideo').getAttribute('src')).toBeNull();
-  expect(await page.locator('#heroVideo').evaluate(video => video.paused)).toBe(true);
+  await expect(page.locator('.premiere-copy')).toHaveCSS('opacity', '1');
+  await expect(page.locator('.premiere-star-trails')).toBeVisible();
+  await expect(page.locator('.premiere-hero video')).toHaveCount(0);
 });
 
 for (const path of ['/', '/it/', '/news/bachata-workshop-levels-guide-congress', '/it/news/livelli-workshop-bachata-congresso', '/news/bachata-congress-alone-solo-dancer-guide', '/it/news/congresso-bachata-da-soli-guida-ballerini', '/news/bachata-festivals-milan-2026-2027', '/it/news/festival-bachata-milano-2026-2027']) {
@@ -141,6 +211,10 @@ for (const path of ['/', '/it/', '/news/bachata-workshop-levels-guide-congress',
     const page = await context.newPage();
     await page.goto(baseURL + path);
     await expect(page.locator('h1')).toBeVisible();
+    if (path === '/' || path === '/it/') {
+      // Film enhancement never hides the event details without JavaScript.
+      await expect(page.locator('.premiere-copy')).toHaveCSS('opacity', '1');
+    }
     const display = await page.locator('h1').evaluate(el => getComputedStyle(el).opacity);
     expect(Number(display)).toBe(1);
     await context.close();

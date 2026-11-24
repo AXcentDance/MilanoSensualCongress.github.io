@@ -6,6 +6,8 @@ Scopri la precisione di livello mondiale di Cristian y Gabriella. I maestri spag
 
 Canonical: https://milanosensualcongress.com/it/news/cristian-y-gabriella-maestri-bachata-mondiali-2026
 
+[Tutte le storie](https://milanosensualcongress.com/it/news)
+
 "Il nostro obiettivo è prendere l'essenza tradizionale della Bachata ed elevarla attraverso la perfezione tecnica e la libertà creativa." - Cristian y Gabriella
 
 La Spagna è da tempo l'epicentro della rivoluzione della Bachata, e poche coppie incarnano questa evoluzione meglio di **Cristian y Gabriella**. Con sede a Siviglia, sono ascesi alla celebrità internazionale non solo attraverso il loro successo competitivo, ma grazie a una metodologia di insegnamento che privilegia il "perché" dietro ogni movimento.

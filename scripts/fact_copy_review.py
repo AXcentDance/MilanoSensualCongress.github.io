@@ -5,13 +5,15 @@ third-party hotels/events and independent offers must be judged in context.
 """
 import ast
 from decimal import Decimal, InvalidOperation
+from datetime import date, datetime
 from pathlib import Path
 import re
 import subprocess
 from zoneinfo import ZoneInfo
 
 from bs4 import BeautifulSoup
-from event_facts import EVENT_ID, core_event, one_definition
+from event_facts import EVENT_ID, core_event, definitions, one_definition
+from edition_facts import EDITION_EVENT_ID
 from generation_support import GenerationError
 from iso_dates import iso_datetime
 from site_files import classified_pages
@@ -40,6 +42,26 @@ def snapshot(read, known_statistics=None):
     result = {field: value for field, value in core.items()
               if field in {'name', 'startDate', 'endDate'} or field.startswith('location.')}
     result['ticket destination'] = event.get('offers', {}).get('url')
+    # Preserve the old comparison while also noticing a new edition. Otherwise
+    # changing only the announcement misleadingly reports "no facts changed".
+    announced = definitions(home, 'index.html', EDITION_EVENT_ID)
+    if announced:
+        if len(announced) != 1:
+            raise GenerationError('index.html: expected one announced edition for copy review')
+        upcoming = announced[0]
+        result['announced edition name'] = upcoming.get('name')
+        for field in ('startDate', 'endDate'):
+            try:
+                value = upcoming.get(field)
+                result['announced edition ' + field] = (date.fromisoformat(value)
+                    if isinstance(value, str) and re.fullmatch(r'\d{4}-\d{2}-\d{2}', value)
+                    else iso_datetime(value))
+            except (ValueError, TypeError) as error:
+                raise GenerationError(f'Cannot review announced edition {field}: {error}') from error
+        result['announced edition location.name'] = upcoming.get('location', {}).get('name')
+        for field, value in upcoming.get('location', {}).get('address', {}).items():
+            if field != '@type':
+                result['announced edition location.address.' + field] = value
     for language, soup in [('en', home), ('it', BeautifulSoup(read('it/index.html'), 'html.parser'))]:
         summary = soup.select_one('main #congress-facts')
         field = f'statistics ({language})'
@@ -56,10 +78,14 @@ def snapshot(read, known_statistics=None):
 
 def changed_categories(changes):
     categories = set()
+    def local_date(value):
+        return value.astimezone(ZoneInfo('Europe/Rome')).date() if isinstance(value, datetime) else value
     for field, (before, after) in changes.items():
+        field = field.removeprefix('announced edition ')
         if field in {'startDate', 'endDate'}:
-            categories.add('times')
-            if before.astimezone(ZoneInfo('Europe/Rome')).date() != after.astimezone(ZoneInfo('Europe/Rome')).date():
+            if isinstance(before, datetime) or isinstance(after, datetime):
+                categories.add('times')
+            if before is None or after is None or local_date(before) != local_date(after):
                 categories.add('dates')
         if field == 'name':
             categories.add('dates')
@@ -88,7 +114,8 @@ def candidate_snippets(soup, categories, values, previous_values=None):
         return []
     sources = [values, previous_values or {}]
     venue_terms = [str(value).casefold() for source in sources for field, value in source.items()
-                   if field in {'location.name', 'location.address.addressLocality'} and value]
+                   if field.removeprefix('announced edition ') in {
+                       'location.name', 'location.address.addressLocality'} and value]
     found = []
     seen = set()
     for node in body.find_all(['p', 'li', 'td', 'th', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6',
@@ -128,7 +155,8 @@ def review_copy(root, base='HEAD'):
     except (OSError, subprocess.CalledProcessError) as error:
         detail = error.stderr.strip() if isinstance(error, subprocess.CalledProcessError) else str(error)
         raise GenerationError(f'Cannot compare visible-copy facts against {base}: {detail}') from error
-    changes = {field: (old[field], value) for field, value in current.items() if old[field] != value}
+    changes = {field: (old.get(field), current.get(field)) for field in sorted(old.keys() | current.keys())
+               if old.get(field) != current.get(field)}
     if not changes:
         print(f'No shared source facts changed against {base}. This does not validate arbitrary prose.')
         return

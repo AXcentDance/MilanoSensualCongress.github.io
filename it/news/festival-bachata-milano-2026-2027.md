@@ -6,6 +6,8 @@ Confronta date e location dei festival di bachata a Milano: Milano Sensual Congr
 
 Canonical: https://milanosensualcongress.com/it/news/festival-bachata-milano-2026-2027
 
+[Tutte le storie](https://milanosensualcongress.com/it/news)
+
 Cerchi un **festival di bachata a Milano nel 2026 o nel 2027**? Milano Sensual Congress, Europe Bachata Festival e Bachata Day si svolgono in weekend diversi e in location differenti nell'area milanese. La domanda pratica è quali date, workshop e spostamenti si adattino ai tuoi programmi.
 
 Per un weekend di novembre dedicato alla Bachata Sensual, il **Milano Sensual Congress, dal 20 al 22 novembre 2026**, riunisce workshop in inglese, social pomeridiani e serate fino a notte fonda al Devero Hotel. Ecco come organizzare il viaggio e collocarlo nel calendario dei festival milanesi.
@@ -40,7 +42,7 @@ Il [programma delle feste](https://milanosensualcongress.com/it/party) comprende
 
 #### Pass e pernottamento: organizza il tuo soggiorno
 
-Il [Full Pass](https://milanosensualcongress.com/it/tickets) comprende workshop regolari e feste. Le masterclass sono separate: l'[upgrade Masterclass](https://milanosensualcongress.com/it/masterclass) costa **€59** e richiede un Full Pass. Anche la partecipazione al Jack & Jill prevede una quota separata. Le camere si prenotano a parte. Per il 2026, Devero e AS Hotel Cambiago sono esauriti. Verifica [Brianteo, il terzo hotel suggerito](https://milanosensualcongress.com/it/hotel#brianteo), per le tue date.
+Il [Full Pass](https://milanosensualcongress.com/it/tickets) comprende workshop regolari e feste. Le masterclass sono separate: l'[upgrade Masterclass](https://milanosensualcongress.com/it/masterclass) costa **€59** e richiede un Full Pass. Anche la partecipazione al Jack & Jill prevede una quota separata. Le camere si prenotano a parte: scegli il Devero per dormire nella sede dell'evento oppure consulta l'opzione AS Hotel Cambiago, a 800 metri, nella pagina hotel.
 
 [Scopri i pass per Milano Sensual](https://milanosensualcongress.com/it/tickets)
 
@@ -66,7 +68,7 @@ Bachata Day si svolge dal **5 al 7 marzo 2027** al Crowne Plaza Milano Linate di
   Considera insieme pass, camera, trasporti ed eventuali extra. La presenza di “Milano” nel nome di un festival non significa che la location sia in centro.
 - **Organizza l'ultimo tratto del viaggio.**
   Milano Sensual offre
-  [transfer su prenotazione anticipata](https://milanosensualcongress.com/it/transfer)
+  [transfer su prenotazione anticipata](https://milanosensualcongress.com/it/news/guida-viaggio-bachata-milano-2026#read-3)
   da Malpensa, Linate, Bergamo e Milano Centrale. Consulta i dettagli del servizio per pianificare l'arrivo.
 
 Viaggi da solo? Per Milano Sensual non devi prenotare con un partner. La nostra [guida per chi parte da solo](https://milanosensualcongress.com/it/news/congresso-bachata-da-soli-guida-ballerini) spiega come conoscere persone, partecipare alle lezioni e ambientarsi nei social. Per un soggiorno più lungo, consulta la [guida di viaggio a Milano](https://milanosensualcongress.com/it/news/guida-viaggio-bachata-milano-2026).

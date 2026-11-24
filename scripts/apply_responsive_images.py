@@ -18,13 +18,15 @@ from urllib.parse import parse_qsl, unquote, urlsplit
 from site_files import site_pages
 from pathlib import Path
 from generation_support import BeautifulSoup, GenerationError, run_generator, write_outputs
-from generate_responsive_images import VARIANTS, run_tool
-
-VARIANT_WIDTHS = VARIANTS
+from generate_responsive_images import run_tool, variant_widths
 
 # (page glob, src substring, sizes) — first match wins.
 # Measured: 375px / 768px / 1440px viewports, real rendered widths.
 CONTEXT_RULES = [
+    # Flyer-to-contour hero: measured boxes 375 / 768 / 1180.8 at 375 / 768 / 1440px.
+    # The phone cover crop is twice its box width (16:9 source in an 8:9 scene).
+    ('index.html', 'msc-2027-duomo-flyer-contour-hero-poster-v03', '(max-width: 699px) 200vw, (max-width: 1099px) 100vw, (max-width: 1600px) 82vw, 1312px'),
+    ('it/index.html', 'msc-2027-duomo-flyer-contour-hero-poster-v03', '(max-width: 699px) 200vw, (max-width: 1099px) 100vw, (max-width: 1600px) 82vw, 1312px'),
     # AS Cambiago card: measured 277 / 654 / 567px at 375 / 768 / 1440px.
     ('hotel.html', 'as-hotel-cambiago-entrance-fountain', '(max-width: 639px) calc(100vw - 98px), (max-width: 767px) 542px, (max-width: 1023px) 654px, (max-width: 1279px) 439px, (max-width: 1535px) 567px, 695px'),
     ('it/hotel.html', 'as-hotel-cambiago-entrance-fountain', '(max-width: 639px) calc(100vw - 98px), (max-width: 767px) 542px, (max-width: 1023px) 654px, (max-width: 1279px) 439px, (max-width: 1535px) 567px, 695px'),
@@ -47,8 +49,6 @@ CONTEXT_RULES = [
     ('it/masterclass.html', 'images/artists/', '(max-width: 640px) 87vw, (max-width: 1024px) 29vw, 366px'),
     ('bachata-congress-2026.html', 'images/news/', '(max-width: 640px) 87vw, (max-width: 1024px) 93vw, 590px'),
     ('it/congresso-bachata-2026.html', 'images/news/', '(max-width: 640px) 87vw, (max-width: 1024px) 93vw, 590px'),
-    ('transfer.html', 'transfer-car', '100vw'),
-    ('it/transfer.html', 'transfer-car', '100vw'),
     ('contact.html', 'images/hotel/', '(max-width: 640px) 70vw, (max-width: 1024px) 85vw, 526px'),
     ('it/contact.html', 'images/hotel/', '(max-width: 640px) 70vw, (max-width: 1024px) 85vw, 526px'),
 ]
@@ -76,7 +76,7 @@ def variants_for(fs_path):
     """Return [(width, variant_fs_path)] for existing ladder rungs of a file."""
     base, ext = os.path.splitext(fs_path)
     out = []
-    for w in VARIANT_WIDTHS:
+    for w in variant_widths(fs_path):
         v = f'{base}_{w}w{ext}'
         if os.path.exists(v):
             # Old larger derivatives can remain on disk until references have
@@ -115,7 +115,7 @@ def generated_candidate(value, source):
     candidate = urlsplit(re.sub(r'^https://milanosensualcongress\.com/', '/', parts[0]))
     if candidate.scheme or candidate.netloc:
         return False
-    widths = '|'.join(map(str, VARIANT_WIDTHS))
+    widths = '|'.join(map(str, variant_widths(source.path)))
     pattern = re.escape(os.path.splitext(source.path)[0]) + rf'(?:_(?:{widths})w)?\.webp'
     cache_only = lambda query: all(key == 'v' for key, _ in parse_qsl(unescape(query), keep_blank_values=True))
     same_query = candidate.query == source.query or (cache_only(candidate.query) and cache_only(source.query))

@@ -1,0 +1,15 @@
+/* A quiet heading that keeps the gallery close and reserves its font geometry. */
+.scene-artists .stage-artist-hero { padding: 48px 0 36px; }
+.stage-title-scene { display: grid; width: min(1180px, 88%); margin: auto; }
+.scene-artists .stage-artist-title {
+  margin: 0;
+  color: var(--e27-paper);
+  font: 800 clamp(64px, 8vw, 112px)/1.08 Inter, 'Inter Fallback', sans-serif;
+  letter-spacing: -.055em;
+  text-align: left;
+}
+.scene-artists .stage-artist-collection { padding-top: 0; padding-bottom: 72px; }
+@media (max-width: 700px) {
+  .scene-artists .stage-artist-hero { padding: 32px 0 28px; }
+  .scene-artists .stage-artist-collection { padding-bottom: 48px; }
+}

@@ -1,0 +1,200 @@
+/* Stay, admission, travel and contact. One editorial system, practical page layouts. */
+body.edition-2027:is(.scene-hotel,.scene-booking,.scene-tickets,.scene-transfer,.scene-contact) .visit-page { color:var(--e27-paper-ink); background:var(--e27-paper); }
+.edition-2027 .stay-eyebrow { font:700 10px/1.65 Inter,'Inter Fallback',sans-serif; letter-spacing:.2em; text-transform:uppercase; margin:0 0 25px; color:var(--e27-gold); }
+.edition-2027 :is(.stay-hotel-hero,.stay-booking-header,.stay-ticket-title,.stay-transfer-title,.stay-contact-header) h1 { font:900 clamp(60px,7vw,100px)/1.02 Inter,'Inter Fallback',sans-serif; letter-spacing:-.055em; margin:0 0 28px; color:var(--e27-paper); }
+.edition-2027 :is(.stay-hotel-hero,.stay-booking-header,.stay-ticket-title,.stay-transfer-title,.stay-contact-header) h1 em { font-family:'Playfair Display','Playfair Display Fallback',serif; font-weight:500; color:var(--e27-gold); }
+.edition-2027 .stay-pill { display:inline-flex; align-items:center; justify-content:space-between; gap:28px; padding:15px 25px; min-height:54px; border:1px solid #dfc58e70; border-radius:999px; font-size:12px; font-weight:700; background:transparent; color:var(--e27-paper); text-decoration:none; transition:background .2s,color .2s; }
+.edition-2027 .stay-pill span { font-size:22px; line-height:1; }.edition-2027 .stay-pill:hover { background:var(--e27-paper); color:var(--e27-ink); }
+.edition-2027 .stay-fine { font-size:11px; line-height:1.8; margin-top:18px; color:var(--e27-sage); }
+body.edition-2027:is(.scene-hotel,.scene-booking,.scene-tickets,.scene-transfer,.scene-contact) .visit-action { border-radius:999px; min-height:54px; }
+body.edition-2027:is(.scene-hotel,.scene-booking,.scene-tickets,.scene-transfer,.scene-contact) .visit-reference { border:1px solid var(--e27-paper-line); border-radius:10px; background:var(--e27-paper-muted); color:var(--e27-paper-copy); }
+body.edition-2027:is(.scene-hotel,.scene-booking,.scene-tickets,.scene-transfer,.scene-contact) .visit-reference strong { color:var(--e27-paper-ink); }
+body.edition-2027:is(.scene-hotel,.scene-booking,.scene-tickets,.scene-transfer,.scene-contact) .visit-reference-mark { color:var(--e27-paper-ink); border-color:var(--e27-paper-line); }
+
+/* The hotel: full architectural photography, clear copy, and a quiet room detail. */
+.edition-2027 .stay-hotel-hero { position:relative; display:grid; grid-template-columns:1fr 1fr; gap:64px; align-items:center; min-height:710px; padding:72px max(6%,calc((100vw - 1180px)/2)); background:radial-gradient(ellipse at 85% 20%,#07594e55,transparent 65%),var(--e27-ink); color:var(--e27-paper); }
+.edition-2027 .stay-hotel-copy { position:relative; z-index:2; padding-bottom:20px; }
+.edition-2027 .stay-hotel-copy h1 { font-size:clamp(56px,6.3vw,90px); }
+.edition-2027 .stay-hotel-date { display:inline-block; border-block:1px solid var(--e27-line); font-size:14px; padding:13px 0; margin:2px 0 24px; color:var(--e27-gold); }
+.edition-2027 .stay-intro { max-width:360px; font-size:17px; line-height:1.75; margin:0 0 28px; color:var(--e27-sage); }
+.edition-2027 .stay-hotel-collage { position:relative; height:540px; min-width:0; }
+.edition-2027 .stay-hotel-arch { position:absolute; top:0; right:0; width:90%; height:470px; margin:0; border:1px solid var(--e27-line); border-radius:var(--e27-radius); overflow:hidden; background:var(--e27-surface); }
+.edition-2027 .stay-hotel-arch img { width:100%; height:100%; object-fit:cover; object-position:53% center; }
+.edition-2027 .stay-hotel-arch figcaption { position:absolute; bottom:22px; left:22px; color:var(--e27-paper); background:#021310dc; padding:10px 14px; font-size:10px; letter-spacing:.12em; border-radius:6px; }
+.edition-2027 .stay-hotel-room { position:absolute; left:0; bottom:0; width:58%; margin:0; padding:7px 7px 0; background:var(--e27-paper); color:var(--e27-paper-ink); border-radius:10px; box-shadow:0 12px 32px #00130d4d; }
+.edition-2027 .stay-hotel-room img { width:100%; height:auto; aspect-ratio:1.5; object-fit:cover; border-radius:6px; }
+.edition-2027 .stay-hotel-room figcaption { font:italic 500 clamp(16px,1.7vw,22px)/1.3 'Playfair Display',serif; padding:12px 6px 15px; }
+.edition-2027 .stay-hotel-orbit { display:none; }.edition-2027 .stay-hotel-address { position:absolute; right:0; bottom:5px; font-size:9px; letter-spacing:.1em; line-height:1.8; color:var(--e27-sage); text-align:right; }
+.edition-2027 .stay-hotel-archive { padding-top:44px; border-top:1px solid var(--e27-paper-line); }
+body.edition-2027.scene-hotel .visit-hotel-intro { padding-top:64px; }
+body.edition-2027.scene-hotel .visit-hotel-pair { gap:28px; grid-template-columns:1fr 140px 1fr; }
+body.edition-2027.scene-hotel .visit-hotel-pair article { background:#fffaf2; padding:28px; border:1px solid var(--e27-paper-line); border-radius:var(--e27-radius); }
+body.edition-2027.scene-hotel .visit-hotel-pair article p { color:var(--e27-paper-copy); }
+body.edition-2027.scene-hotel .visit-hotel-pair .visit-text-link { color:var(--e27-emerald); }
+body.edition-2027.scene-hotel .visit-distance { width:140px; color:var(--e27-emerald); border:0; }body.edition-2027.scene-hotel .visit-distance strong { font-family:Inter,sans-serif; font-weight:700; font-size:60px; }
+body.edition-2027.scene-hotel .visit-room-grid { gap:32px; background:transparent; align-items:start; }body.edition-2027.scene-hotel .visit-room-grid img { border-radius:var(--e27-radius); }
+body.edition-2027.scene-hotel .visit-room-grid > div:last-child { background:var(--e27-surface); color:var(--e27-paper); padding:32px; border:1px solid var(--e27-line); border-radius:var(--e27-radius); }
+body.edition-2027.scene-hotel .visit-room-grid > div:last-child :is(.text-slate-300,.text-slate-400,.text-white) { color:var(--e27-paper); }
+body.edition-2027.scene-hotel .visit-room-grid > div:last-child :is(tr,table) { border-color:var(--e27-line); }
+body.edition-2027.scene-hotel .visit-room-grid .visit-action { background:var(--e27-red); color:var(--e27-paper); }
+body.edition-2027.scene-hotel .visit-help-panel { background:var(--e27-surface); color:var(--e27-paper); border-radius:var(--e27-radius); border:1px solid var(--e27-line); }
+body.edition-2027.scene-hotel .visit-help-panel :is(.text-slate-400,.text-white,.text-pink-400) { color:var(--e27-paper); }
+body.edition-2027.scene-hotel .visit-help-panel a { background:transparent; color:var(--e27-paper); border:1px solid var(--e27-line); border-radius:8px; }
+
+/* Reservations: a two-column concierge with aligned, readable booking panels. */
+body.edition-2027.scene-booking .visit-page { background:var(--e27-ink); color:var(--e27-paper); }
+.edition-2027 .stay-booking-desk { display:grid; grid-template-columns:.9fr 1.1fr; gap:72px; width:min(1180px,88%); margin:auto; padding:72px 0 96px; }
+.edition-2027 .stay-booking-concierge { min-width:0; }.edition-2027 .stay-booking-header h1 { font-size:clamp(52px,5.4vw,78px); }
+.edition-2027 .stay-booking-header > p:not(.stay-eyebrow) { font-size:16px; line-height:1.75; color:var(--e27-sage); }
+.edition-2027 .stay-booking-status { display:inline-block; padding:10px 15px; border:1px solid var(--e27-line); border-radius:999px; color:var(--e27-gold); font-size:11px; margin-top:20px; }
+.edition-2027 .stay-booking-photo { width:100%; margin:38px 0 28px; background:var(--e27-surface); border:1px solid var(--e27-line); border-radius:var(--e27-radius); overflow:hidden; }
+.edition-2027 .stay-booking-photo img { width:100%; height:auto; aspect-ratio:1.3; object-fit:cover; }.edition-2027 .stay-booking-photo figcaption { padding:17px 21px; font:italic 500 22px/1.4 'Playfair Display',serif; color:var(--e27-gold); }
+body.edition-2027.scene-booking .visit-shell { width:100%; }body.edition-2027.scene-booking .visit-section { padding:0; }
+body.edition-2027.scene-booking .visit-reference { margin-bottom:24px; background:var(--e27-surface); color:var(--e27-sage); border-color:var(--e27-line); }body.edition-2027.scene-booking .visit-reference :is(strong,.visit-reference-mark) { color:var(--e27-paper); }
+body.edition-2027.scene-booking .visit-booking-intro { font-size:14px; line-height:1.8; margin-bottom:28px; color:var(--e27-sage); }
+body.edition-2027.scene-booking :is(.e27-kicker,.visit-text-link) { color:var(--e27-gold); }
+body.edition-2027.scene-booking .visit-booking-grid { grid-template-columns:1fr; gap:24px; }
+body.edition-2027.scene-booking .visit-booking-card { background:var(--e27-paper); color:var(--e27-paper-ink); border:1px solid var(--e27-line); border-radius:var(--e27-radius); padding:30px; }
+body.edition-2027.scene-booking .visit-booking-card h2 { font:800 30px/1.15 Inter,sans-serif; }
+body.edition-2027.scene-booking .visit-booking-card :is(p,.e27-kicker) { color:var(--e27-paper-copy); }
+body.edition-2027.scene-booking .visit-booking-card .visit-text-link { color:var(--e27-emerald); }
+body.edition-2027.scene-booking .visit-action-primary { background:var(--e27-red); color:var(--e27-paper); }
+body.edition-2027.scene-booking .visit-steps-section { margin-top:48px; background:transparent; }
+body.edition-2027.scene-booking .visit-two-col { grid-template-columns:1fr; gap:20px; }
+body.edition-2027.scene-booking .visit-section-title { font-size:32px; color:var(--e27-paper); }
+body.edition-2027.scene-booking .visit-steps li { font-size:14px; padding:18px 0; color:var(--e27-sage); border-color:var(--e27-line); }
+body.edition-2027.scene-booking .visit-steps :is(strong,span) { color:var(--e27-paper); }
+body.edition-2027.scene-booking .visit-support-strip { grid-template-columns:1fr; gap:20px; padding:32px 0 0; color:var(--e27-sage); }body.edition-2027.scene-booking .visit-support-strip h2 { color:var(--e27-paper); }
+
+/* Admission: warm paper and one emerald stub, continuing the homepage ticket. */
+.edition-2027 .stay-ticket-hero { position:relative; display:grid; grid-template-columns:1.15fr .85fr; align-items:center; gap:72px; padding:80px max(6%,calc((100vw - 1180px)/2)); background:radial-gradient(ellipse at 90% 15%,#07594e70,transparent 70%),var(--e27-ink); color:var(--e27-paper); }
+.edition-2027 .stay-ticket-title > p:not(.stay-eyebrow) { font-size:18px; line-height:1.7; color:var(--e27-sage); margin:0 0 28px; }
+.edition-2027 .stay-ticket-object { position:relative; max-width:340px; width:100%; margin:auto; }
+.edition-2027 .stay-ticket-stub { padding:28px; color:var(--e27-paper-ink); background:linear-gradient(115deg,#fffaed,#eeddbd); border:1px solid var(--e27-gold); border-radius:var(--e27-radius); box-shadow:0 4px 0 #9c804b,0 20px 40px #00130d40; position:relative; }
+.edition-2027 .stay-ticket-stub::before,.edition-2027 .stay-ticket-stub::after { content:''; position:absolute; top:66%; width:24px; height:24px; background:var(--e27-ink); border:1px solid var(--e27-gold); border-radius:50%; }
+.edition-2027 .stay-ticket-stub::before { left:-13px; }.edition-2027 .stay-ticket-stub::after { right:-13px; }
+.edition-2027 .stay-ticket-stub > p:first-child { font-size:10px; letter-spacing:.2em; font-weight:700; }
+.edition-2027 .stay-ticket-stub strong { display:block; font:750 clamp(76px,8vw,110px)/.94 Inter,'Inter Fallback',sans-serif; letter-spacing:-.07em; padding:24px 0; }.edition-2027 .stay-ticket-stub strong span { display:block; text-align:right; }
+.edition-2027 .stay-ticket-dates { border-top:1px dashed var(--e27-paper-line); padding-top:24px; display:flex; gap:16px; justify-content:space-between; font-size:10px; font-weight:750; }
+.edition-2027 .stay-ticket-sale { font-size:9px; letter-spacing:.09em; margin:18px 0; }
+.edition-2027 .stay-ticket-barcode { width:100%; height:24px; background:repeating-linear-gradient(90deg,#17372e 0 2px,transparent 2px 5px,#17372e 5px 6px,transparent 6px 10px); }.edition-2027 .stay-ticket-spark { display:none; }
+.edition-2027 .stay-pass-desk { display:grid; grid-template-columns:230px 1fr; gap:48px; align-items:start; }.edition-2027 .stay-pass-intro { position:sticky; top:130px; }
+body.edition-2027.scene-tickets .visit-reference { display:block; padding:24px; }body.edition-2027.scene-tickets .visit-reference-mark { display:block; border:0; padding:0; margin-bottom:12px; font-size:32px; }
+body.edition-2027.scene-tickets .visit-pass-grid { gap:24px; }body.edition-2027.scene-tickets .visit-pass { border:1px solid var(--e27-paper-line); border-radius:var(--e27-radius); background:#fffaf2; padding:30px; }body.edition-2027.scene-tickets .visit-pass-featured { border-top:4px solid var(--e27-red); background:#f7ead0; }
+.edition-2027 .stay-pass-serial { font:650 9px/1.4 Inter,sans-serif; letter-spacing:.15em; color:var(--e27-paper-copy); border-bottom:1px dashed var(--e27-paper-line); padding-bottom:13px; margin-bottom:20px; }
+body.edition-2027.scene-tickets .visit-pass .text-4xl { font:750 50px/1.15 Inter,'Inter Fallback',sans-serif; letter-spacing:-.05em; }body.edition-2027.scene-tickets .visit-pass-name { font-family:Inter,sans-serif; font-weight:800; }
+body.edition-2027.scene-tickets .visit-pass .visit-action { background:var(--e27-red); color:var(--e27-paper); border:0; }body.edition-2027.scene-tickets .visit-pass .visit-action:hover { background:#a63223; }
+body.edition-2027.scene-tickets .visit-benefits { background:var(--e27-paper); border-block:1px solid var(--e27-paper-line); }body.edition-2027.scene-tickets .visit-benefit { border-top:1px solid var(--e27-paper-line); padding:24px 0; }
+body.edition-2027.scene-tickets .visit-artists { background:var(--e27-surface); color:var(--e27-paper); }body.edition-2027.scene-tickets .visit-artist { border:0; padding:0; }body.edition-2027.scene-tickets .visit-artist-image { border-radius:var(--e27-radius); aspect-ratio:4/5; }body.edition-2027.scene-tickets .visit-artist h3 { font:750 23px/1.2 Inter,sans-serif; }
+body.edition-2027.scene-tickets .visit-artists :is(p,.text-slate-400) { color:var(--e27-sage); }
+body.edition-2027.scene-tickets .visit-reminder-inner { background:var(--e27-surface); border:1px solid var(--e27-line); border-radius:var(--e27-radius); }body.edition-2027.scene-tickets .visit-reminder .form-input { background:var(--e27-paper); color:var(--e27-ink); border-radius:999px; }body.edition-2027.scene-tickets .visit-reminder .form-input::placeholder { color:var(--e27-paper-copy); }
+body.edition-2027.scene-tickets .visit-reminder button { background:var(--e27-red); color:var(--e27-paper); border-radius:999px; }
+body.edition-2027.scene-tickets #reminder-container [role="alert"] { color:var(--e27-paper) !important; }
+
+/* Travel: a legible route diagram, without tilted signs or competing colors. */
+.edition-2027 .stay-transfer-hero { display:grid; grid-template-columns:1fr 1fr; gap:64px; align-items:center; padding:72px max(6%,calc((100vw - 1180px)/2)); background:radial-gradient(ellipse at 85% 15%,#07594e55,transparent 65%),var(--e27-ink); color:var(--e27-paper); }
+.edition-2027 .stay-transfer-title > p:not(.stay-eyebrow) { font-size:17px; line-height:1.75; color:var(--e27-sage); margin-bottom:30px; max-width:360px; }
+/* Keep the airport on the left and the hotel on the right for both legs. */
+.shuttle-timetable {
+  display: grid;
+  gap: 16px;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.shuttle-leg {
+  padding: clamp(18px, 3vw, 30px);
+  background: var(--e27-surface);
+  border: 1px solid var(--e27-line);
+  border-radius: var(--e27-radius);
+}
+.shuttle-leg time {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--e27-line);
+  font-size: clamp(14px, 1.3vw, 17px);
+  color: var(--e27-sage);
+}
+.shuttle-leg time strong {
+  color: var(--e27-gold);
+  font-size: clamp(28px, 3vw, 41px);
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+.shuttle-route {
+  display: grid;
+  grid-template-columns: 1fr minmax(50px, .85fr) 1fr;
+  align-items: start;
+  gap: 10px;
+  margin: 22px 0 0;
+}
+.shuttle-stop { min-width: 0; }
+.shuttle-direction { display: block; margin-bottom: 6px; color: var(--e27-gold); font-size: 11px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; }
+.shuttle-stop strong { display: block; font-size: clamp(18px, 2vw, 27px); line-height: 1.08; letter-spacing: -.03em; }
+.shuttle-stop small { display: block; margin-top: 5px; font-size: 12px; line-height: 1.4; color: var(--e27-sage); }
+.shuttle-stop:last-child, .shuttle-return .shuttle-stop:first-child { text-align: right; }
+.shuttle-return .shuttle-stop:first-child { grid-area: 1 / 3; }
+.shuttle-return .shuttle-stop:last-child { grid-area: 1 / 1; text-align: left; }
+.shuttle-track {
+  position: relative;
+  grid-area: 1 / 2;
+  align-self: center;
+  padding-bottom: 2px;
+  border-bottom: 1px dashed var(--e27-gold);
+}
+.shuttle-track img { display: block; margin: auto; width: min(82px, 100%); height: auto; }
+.shuttle-track::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  right: 0;
+  width: 7px;
+  height: 7px;
+  border: solid var(--e27-gold);
+  border-width: 1px 1px 0 0;
+  transform: rotate(45deg);
+}
+.shuttle-return .shuttle-track { transform: scaleX(-1); }
+@media (min-width: 701px) and (max-width: 950px) {
+  .edition-2027 .stay-transfer-hero { grid-template-columns: 1fr; }
+}
+
+/* Contact: a calm writing desk with a simple, clearly labelled form. */
+.edition-2027 .stay-conversation { display:grid; grid-template-columns:1fr 1fr; gap:72px; align-items:start; padding:72px max(6%,calc((100vw - 1180px)/2)) 88px; background:radial-gradient(ellipse at 0 0,#07594e55,transparent 65%),var(--e27-ink); color:var(--e27-paper); }
+.edition-2027 .stay-conversation-intro { min-width:0; }.edition-2027 .stay-contact-header { padding:0 0 40px; }.edition-2027 .stay-contact-header > p:not(.stay-eyebrow) { font-size:17px; line-height:1.75; max-width:360px; color:var(--e27-sage); }.edition-2027 .stay-speech-orbit { display:none; }
+body.edition-2027.scene-contact .visit-message-column { background:var(--e27-paper); color:var(--e27-paper-ink); border:1px solid var(--e27-gold); border-radius:var(--e27-radius); padding:32px; }
+body.edition-2027.scene-contact .visit-message-column h2 { font:800 34px/1.15 Inter,sans-serif; letter-spacing:-.04em; margin:0 0 16px; }body.edition-2027.scene-contact .visit-contact-index { color:var(--e27-paper-copy); }body.edition-2027.scene-contact .visit-contact-section-intro { color:var(--e27-paper-copy); font-size:14px; }
+body.edition-2027.scene-contact .visit-contact-form { border:0; padding:0; background:transparent; color:var(--e27-paper-ink); }body.edition-2027.scene-contact .visit-contact-form label { color:var(--e27-paper-ink); }body.edition-2027.scene-contact .visit-contact-form label > span { color:var(--e27-paper-copy); }
+body.edition-2027.scene-contact .visit-contact-form :is(input:not([type="hidden"]),select,textarea) { background:#fffaf2; border:1px solid #45625a70; color:var(--e27-paper-ink); border-radius:8px; min-height:50px; font-size:16px; }body.edition-2027.scene-contact .visit-contact-form :is(input,textarea)::placeholder { color:var(--e27-paper-copy); }
+body.edition-2027.scene-contact .visit-contact-form .visit-action { background:var(--e27-red); color:var(--e27-paper); min-height:54px; }body.edition-2027.scene-contact .visit-contact-form .visit-action:hover { background:#a63223; }body.edition-2027.scene-contact .visit-contact-form .visit-contact-handoff { color:var(--e27-paper-copy); }
+body.edition-2027.scene-contact .visit-quick-help { padding-top:8px; }body.edition-2027.scene-contact .visit-quick-help > .visit-contact-index { display:none; }body.edition-2027.scene-contact .visit-quick-help h2 { font:750 25px/1.2 Inter,sans-serif; margin-bottom:24px; }
+body.edition-2027.scene-contact .visit-contact-help-card { border:0; border-top:1px solid var(--e27-line); background:transparent; margin:0; padding:21px 0; border-radius:0; }body.edition-2027.scene-contact .visit-contact-help-card h3 { color:var(--e27-gold); font-size:10px; margin-bottom:8px; }body.edition-2027.scene-contact .visit-contact-help-card p { color:var(--e27-sage); font-size:13px; margin-bottom:7px; }body.edition-2027.scene-contact .visit-contact-help-card a { color:var(--e27-paper); font-size:13px; }
+body.edition-2027.scene-contact .visit-contact-social-heading { text-align:left; max-width:none; margin:0 0 36px; }body.edition-2027.scene-contact .visit-contact-social-heading > p:last-child { color:var(--e27-paper-copy); }
+body.edition-2027.scene-contact .visit-contact-social-grid { gap:24px; }body.edition-2027.scene-contact .visit-social-panel { min-height:240px; padding:32px; border:1px solid var(--e27-paper-line); border-radius:var(--e27-radius); background:var(--e27-paper-muted); color:var(--e27-paper-ink); }body.edition-2027.scene-contact .visit-social-panel h3 { font:750 32px/1.2 Inter,sans-serif; }body.edition-2027.scene-contact .visit-social-panel:hover { background:#f7ead0; }
+body.edition-2027.scene-contact .visit-contact-shortcuts { margin-top:40px; border-color:var(--e27-paper-line); }body.edition-2027.scene-contact .visit-contact-shortcuts a { color:var(--e27-emerald); }
+body.edition-2027.scene-contact .visit-contact-venue { background:var(--e27-surface); color:var(--e27-paper); border-block:1px solid var(--e27-line); }body.edition-2027.scene-contact .visit-contact-venue .visit-two-col { grid-template-columns:1fr 1.2fr; align-items:center; }body.edition-2027.scene-contact .visit-venue-image { border-radius:var(--e27-radius); aspect-ratio:1.5; }body.edition-2027.scene-contact .visit-contact-venue :is(.visit-small,.e27-kicker) { color:var(--e27-sage); }body.edition-2027.scene-contact .visit-contact-venue .visit-action { border-color:var(--e27-line); color:var(--e27-paper); }
+body.edition-2027.scene-contact .visit-answer { padding:0; border-color:var(--e27-paper-line); }body.edition-2027.scene-contact .visit-answer summary { cursor:pointer; display:flex; align-items:center; justify-content:space-between; gap:15px; min-height:65px; padding:21px 0; list-style:none; }body.edition-2027.scene-contact .visit-answer summary::-webkit-details-marker { display:none; }body.edition-2027.scene-contact .visit-answer summary::after { content:'+'; font-size:24px; color:var(--e27-emerald); }body.edition-2027.scene-contact .visit-answer[open] summary::after { content:'−'; }body.edition-2027.scene-contact .visit-answer h4 { margin:0; color:var(--e27-paper-ink); }body.edition-2027.scene-contact .visit-answer p { color:var(--e27-paper-copy); padding-bottom:22px; }
+
+@media (max-width:1100px) {
+ .edition-2027 .stay-pass-desk { grid-template-columns:1fr; gap:24px; }.edition-2027 .stay-pass-intro { position:static; }
+ .edition-2027 .stay-hotel-hero,.edition-2027 .stay-ticket-hero,.edition-2027 .stay-transfer-hero,.edition-2027 .stay-conversation { gap:36px; padding-inline:6%; }
+ .edition-2027 .stay-hotel-collage { height:440px; }.edition-2027 .stay-hotel-arch { height:380px; }.edition-2027 .stay-hotel-copy h1 { font-size:clamp(48px,6.4vw,72px); }
+ .edition-2027 .stay-booking-desk { gap:36px; }.edition-2027 .stay-booking-header h1 { font-size:52px; }
+
+ body.edition-2027.scene-hotel .visit-hotel-pair { grid-template-columns:1fr; }body.edition-2027.scene-hotel .visit-distance { width:100%; padding-block:16px; }body.edition-2027.scene-contact .visit-message-column { padding:26px; }
+}
+@media (max-width:700px) {
+ .edition-2027 :is(.stay-hotel-hero,.stay-booking-header,.stay-ticket-title,.stay-transfer-title,.stay-contact-header) h1 { font-size:clamp(44px,12vw,64px); }
+ .edition-2027 .stay-hotel-hero,.edition-2027 .stay-booking-desk,.edition-2027 .stay-ticket-hero,.edition-2027 .stay-transfer-hero,.edition-2027 .stay-conversation { display:block; padding-block:48px; }
+ .edition-2027 .stay-hotel-copy { padding-bottom:36px; }.edition-2027 .stay-hotel-collage { height:430px; }.edition-2027 .stay-hotel-arch { height:350px; width:90%; }.edition-2027 .stay-hotel-room { width:62%; }.edition-2027 .stay-hotel-address { max-width:34%; font-size:8px; }
+ .edition-2027 .stay-booking-desk { width:88%; }.edition-2027 .stay-booking-photo { max-width:420px; }body.edition-2027.scene-booking .visit-reference { margin-top:32px; }
+ body.edition-2027.scene-hotel .visit-room-grid { grid-template-columns:1fr; }body.edition-2027.scene-hotel .visit-room-grid > div:last-child { padding:26px; }body.edition-2027.scene-hotel .visit-help-panel { padding:28px; }
+ .edition-2027 .stay-ticket-object { width:82%; max-width:320px; margin-top:42px; }.edition-2027 .stay-ticket-stub { padding:24px; }.edition-2027 .stay-ticket-stub strong { font-size:88px; }body.edition-2027.scene-tickets .visit-pass-grid { grid-template-columns:1fr; }
+
+
+ .edition-2027 .stay-contact-header { padding-bottom:28px; }body.edition-2027.scene-contact .visit-message-column { margin-top:32px; padding:24px; }body.edition-2027.scene-contact .visit-contact-social-grid { grid-template-columns:1fr; }body.edition-2027.scene-contact .visit-contact-venue .visit-two-col { grid-template-columns:1fr; }
+}

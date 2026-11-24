@@ -21,6 +21,18 @@ from site_files import ROOT
 SEARCH_DIRS = ('images', 'spring/images')
 VARIANTS = (480, 800, 1200)
 QUALITY = 75
+# Keep already-compressed hero media at its visually checked quality: q40 for
+# the film posters, q35 for the calm still/outline. The default q75 re-encode
+# increases their bytes. Scope recipes so other photographic assets stay unchanged.
+SOURCE_RECIPE_OVERRIDES = {
+    'images/msc-2027-duomo-wordmark-hero-poster-v07.webp': {'quality': 40, 'method': 6},
+    'images/msc-2027-duomo-teal-wordmark-hero-poster-v08.webp': {'quality': 40, 'method': 6},
+    'images/msc-2027-duomo-still-hero-v01.webp': {'quality': 35, 'method': 6},
+    'images/msc-2027-duomo-outline-hero-v02.webp': {'quality': 35, 'method': 6},
+    'images/msc-2027-duomo-flight-hero-poster-v01.webp': {'quality': 40, 'method': 6},
+    'images/msc-2027-duomo-night-hero-poster-v02.webp': {'quality': 48, 'method': 6},
+    'images/msc-2027-duomo-flyer-contour-hero-poster-v03.webp': {'quality': 48, 'method': 6},
+}
 EXCLUDE_BASENAMES = {
     'poster', 'logo', 'qr-code', 'milano-sensual-congress-logo-preview',
     'milano-sensual-congress-official-logo',
@@ -28,9 +40,15 @@ EXCLUDE_BASENAMES = {
     'milano-sensual-congress-official-logo-preview',
     'milano-sensual-congress-official-icon',
     'milano-sensual-congress-official-logo-source',
-    # Retained input for build_hero_poster.py, not a public responsive family.
-    'milano-sensual-congress-2026-hero-poster-source',
 }
+
+
+def variant_widths(path):
+    """Keep the small homepage portraits close to their measured card sizes."""
+    path = Path(path)
+    if path.parent.name == 'artists' and path.name.startswith('msc-2027-') and re.search(r'-portrait-v\d+$', path.stem):
+        return (320, *VARIANTS)
+    return VARIANTS
 
 
 def run_tool(command):
@@ -87,7 +105,7 @@ def generate_variants(root=ROOT):
             cache = {}
     except (OSError, ValueError):
         cache = {}
-    previous = cache.get('sources', {}) if cache.get('recipe') == recipe else {}
+    previous = cache.get('sources', {})
     records, outputs, removals = {}, {}, set()
     skipped = 0
     with tempfile.TemporaryDirectory(prefix='msc-images-') as temporary:
@@ -98,23 +116,32 @@ def generate_variants(root=ROOT):
             before = previous.get(relative, {})
             if not isinstance(before, dict):
                 before = {}
+            source_recipe = {**recipe, **SOURCE_RECIPE_OVERRIDES.get(relative, {})}
+            source_recipe['widths'] = list(variant_widths(source))
+            # Older caches stored only one global recipe. Reuse those hashes
+            # for unchanged defaults; an override invalidates only its source.
+            cached_recipe = before.get('recipe', cache.get('recipe'))
             old_variants = before.get('variants', {})
             if not isinstance(old_variants, dict):
                 old_variants = {}
-            record = {'sha256': fingerprint, 'variants': {}}
-            for target_width in VARIANTS:
+            record = {'sha256': fingerprint, 'recipe': source_recipe, 'variants': {}}
+            for target_width in source_recipe['widths']:
                 target = source.with_name(f'{source.stem}_{target_width}w{source.suffix}')
                 if target_width >= width:
                     if target.exists():
                         removals.add(target)
                     continue
                 cached = old_variants.get(str(target_width))
-                if before.get('sha256') == fingerprint and target.exists() and digest(target) == cached:
+                if (cached_recipe == source_recipe and before.get('sha256') == fingerprint
+                        and target.exists() and digest(target) == cached):
                     record['variants'][str(target_width)] = cached
                     skipped += 1
                     continue
                 staged = Path(temporary) / f'{len(outputs)}.webp'
-                run_tool(['cwebp', '-q', str(QUALITY), '-resize', str(target_width), '0', source, '-o', staged])
+                encoding = ['cwebp', '-q', str(source_recipe['quality'])]
+                if 'method' in source_recipe:
+                    encoding += ['-m', str(source_recipe['method'])]
+                run_tool([*encoding, '-resize', str(target_width), '0', source, '-o', staged])
                 if not staged.is_file() or staged.stat().st_size == 0:
                     raise GenerationError(f'Cannot generate {target}: cwebp produced no image')
                 if source_width(staged) != target_width:

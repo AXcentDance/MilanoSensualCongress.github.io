@@ -1,0 +1,19 @@
+/* 2026 communications palette. Reuse the shared editorial layout and tokens. */
+.edition-2026 {
+  --e27-ink: #1b121e;
+  --e27-night: #140d17;
+  --e27-paper: #fff1e5;
+  --e27-emerald: #743c68;
+  --e27-red: #a52e60;
+  --e27-coral: #edc4d0;
+  --e27-sage: #dbcbdc;
+  --e27-gold: #edc4d0;
+  --e27-line: #edc4d038;
+  --e27-nav: #1b121e;
+  --e27-surface: #291d2c;
+  --e27-surface-raised: #38283c;
+  --e27-paper-muted: #f1e3e7;
+  --e27-paper-ink: #302235;
+  --e27-paper-copy: #66536b;
+  --e27-paper-line: #30223530;
+}

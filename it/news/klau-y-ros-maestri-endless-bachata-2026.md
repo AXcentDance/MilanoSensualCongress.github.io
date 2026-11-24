@@ -6,6 +6,8 @@ Scopri lo stile inconfondibile Endless Bachata di Klau y Ros. Scopri il loro via
 
 Canonical: https://milanosensualcongress.com/it/news/klau-y-ros-maestri-endless-bachata-2026
 
+[Tutte le storie](https://milanosensualcongress.com/it/news)
+
 "Endless Bachata è più di una semplice combinazione di passi: è un'estrema fluidità, un'intensa connessione musicale e una narrazione emozionale." - Klau y Ros
 
 Questo novembre, il Milano Sensual Congress 2026 accoglie con orgoglio uno dei duo di Bachata sensual più dinamici e richiesti al mondo: **Klau y Ros**. Conosciuti a livello globale per la loro metodologia *Endless Bachata* , portano sulla pista da ballo un sapore distinto che ha affascinato studenti e ballerini esperti.

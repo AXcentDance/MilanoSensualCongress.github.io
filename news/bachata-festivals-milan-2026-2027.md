@@ -6,6 +6,8 @@ Compare Milan bachata festival dates and venues: Milano Sensual Congress in Nove
 
 Canonical: https://milanosensualcongress.com/news/bachata-festivals-milan-2026-2027
 
+[All stories](https://milanosensualcongress.com/news)
+
 Looking for a **bachata festival in Milan in 2026 or 2027**? Milano Sensual Congress, Europe Bachata Festival and Bachata Day take place on different weekends and at different venues around Milan. The practical question is which dates, workshop format and travel plan fit you.
 
 For a November weekend centred on Bachata Sensual, **Milano Sensual Congress, 20–22 November 2026**, brings English-taught workshops, afternoon socials and late-night dancing together at Devero Hotel. Here is how to plan that weekend and place it in the Milan festival calendar.
@@ -36,11 +38,11 @@ The [2026 artist line-up](https://milanosensualcongress.com/artists) includes Ge
 
 #### Afternoon socials and nights until 05:00
 
-The [party schedule](https://milanosensualcongress.com/schedule) includes Friday and Saturday nights from 23:00 to 05:00, a Saturday afternoon social from 16:00 to 20:00, and Sunday dancing from 16:00 to 22:00. Build in breaks, then return to the floor with the ideas you explored in class.
+The [party schedule](https://milanosensualcongress.com/parties) includes Friday and Saturday nights from 23:00 to 05:00, a Saturday afternoon social from 16:00 to 20:00, and Sunday dancing from 16:00 to 22:00. Build in breaks, then return to the floor with the ideas you explored in class.
 
 #### A clear plan for your pass and stay
 
-The [Full Pass](https://milanosensualcongress.com/tickets) includes regular workshops and parties. Masterclasses are separate: the [Masterclass Upgrade](https://milanosensualcongress.com/masterclass) costs **€59** and requires a Full Pass. Jack & Jill participation also has a separate fee. Hotel rooms are booked separately. For 2026, Devero and AS Hotel Cambiago are sold out. Check [Brianteo, our suggested third hotel](https://milanosensualcongress.com/hotel#brianteo), for your dates.
+The [Full Pass](https://milanosensualcongress.com/tickets) includes regular workshops and parties. Masterclasses are separate: the [Masterclass Upgrade](https://milanosensualcongress.com/masterclass) costs **€59** and requires a Full Pass. Jack & Jill participation also has a separate fee. Hotel rooms are booked separately; choose Devero for an on-site stay or check the AS Hotel Cambiago option, 800 metres away, on the hotel page.
 
 [See passes for Milano Sensual](https://milanosensualcongress.com/tickets)
 
@@ -66,7 +68,7 @@ Bachata Day takes place from **5 to 7 March 2027** at Crowne Plaza Milano Linate
   Check your pass, room, travel and any optional extras together. A festival name containing “Milan” does not mean its venue is in the city centre.
 - **Arrange the final leg of your journey.**
   Milano Sensual offers
-  [transfers by advance booking](https://milanosensualcongress.com/transfer)
+  [transfers by advance booking](https://milanosensualcongress.com/news/milan-bachata-travel-guide-2026#read-3)
   from Malpensa, Linate, Bergamo and Milano Centrale. Use the actual service details to plan your arrival.
 
 Coming on your own? You do not need to book with a partner for Milano Sensual. Our [solo dancer guide](https://milanosensualcongress.com/news/bachata-congress-alone-solo-dancer-guide) covers meeting people, joining classes and settling into the social floor. For a longer trip, explore the [Milan travel guide](https://milanosensualcongress.com/news/milan-bachata-travel-guide-2026).

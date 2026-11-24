@@ -37,7 +37,8 @@ class OfficialLogoTests(unittest.TestCase):
 
     def execute(self, convert):
         diagnostics = io.StringIO()
-        with patch.object(subprocess, 'run', side_effect=convert), \
+        with patch.object(sys, 'argv', [str(self.script)]), \
+                patch.object(subprocess, 'run', side_effect=convert), \
                 redirect_stdout(diagnostics), redirect_stderr(diagnostics):
             try:
                 runpy.run_path(str(self.script), run_name='__main__')

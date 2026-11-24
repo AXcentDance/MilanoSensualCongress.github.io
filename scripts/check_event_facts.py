@@ -3,6 +3,7 @@
 from pathlib import Path
 
 from event_facts import EVENT_ID, ORGANIZATION_ID, core_event, core_organization, definitions, entities, load_current_facts
+from edition_facts import check_edition_page, load_announced_edition
 from generation_support import GenerationError, run_generator
 from site_files import classified_pages
 
@@ -11,10 +12,13 @@ ROOT = Path(__file__).resolve().parents[1]
 
 def check(root=ROOT):
     facts = load_current_facts(root)
+    edition = load_announced_edition(root)
     errors = []
     count = 0
     shared = {}
     for page, soup, _indexable in classified_pages(root):
+        if edition:
+            errors.extend(check_edition_page(page, soup, edition))
         matches = definitions(soup, page, EVENT_ID)
         if len(matches) > 1:
             errors.append(f'{page}: multiple definitions of the global congress entity')
@@ -81,6 +85,8 @@ def check(root=ROOT):
     if errors:
         raise GenerationError('\n'.join(errors))
     print(f'OK: {count} shared congress entities agree with homepage facts; bilingual statistics agree')
+    if edition:
+        print('OK: confirmed 2027 announcement agrees with data/editions/2027.json and both visible homepages')
 
 
 if __name__ == '__main__':

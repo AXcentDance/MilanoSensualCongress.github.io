@@ -6,6 +6,8 @@ Looking for a bachata congress in 2026? Discover Milano Sensual Congress in Ital
 
 Canonical: https://milanosensualcongress.com/bachata-congress-2026
 
+[All stories](https://milanosensualcongress.com/news)
+
 Why this congress
 
 ### A bachata weekend built for international dancers
@@ -60,7 +62,7 @@ Event details
 
 **Hotel:** Official congress hotel with event rooms, parties and dancer-friendly logistics
 
-[Buy Tickets](https://milanosensualcongress.com/tickets) [Hotel Info](https://milanosensualcongress.com/hotel)
+[Buy Tickets](https://milanosensualcongress.com/tickets) [2026 timetable](https://milanosensualcongress.com/schedule) [Hotel Info](https://milanosensualcongress.com/hotel)
 
 ### Bachata Congress 2026 FAQ
 

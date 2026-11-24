@@ -6,22 +6,36 @@ Answers to common Bachata congress questions: what a Bachata congress is, beginn
 
 Canonical: https://milanosensualcongress.com/faq
 
-### What is a Bachata congress?
+FAQ / 01—07
+
+Questions? Let’s talk.
+
+[Talk to us](https://milanosensualcongress.com/contact)
+
+**01What is a Bachata congress?**
 
 A Bachata congress is a multi-day dance event where dancers gather for workshops, social dancing, parties, shows and international artists. Compared with a normal party, it gives you a full weekend to learn during the day, dance at night and connect with a wider dance community.
 
-### Are Bachata congresses good for beginners?
+**02Are Bachata congresses good for beginners?**
 
 Yes. Beginners can enjoy a Bachata congress when they choose the right workshop level, take breaks and focus on learning rather than perfection. A congress is also one of the best ways to understand different Bachata styles, meet dancers from other cities and build confidence on the social floor.
 
-### What should I bring to a Bachata congress?
+**03What should I bring to a Bachata congress?**
 
 Bring comfortable dance shoes, spare shirts, water, personal care items, party outfits, a charger and your ticket or hotel confirmation. For a full weekend, it is smart to pack separate clothes for daytime workshops and evening parties.
 
-### What is included in a Full Pass?
+**04What is included in a Full Pass?**
 
 A Full Pass usually includes access to the main workshops, parties and social dancing included in the official event program. Special upgrades, competitions, hotel rooms, food, transfers or masterclasses may be sold separately depending on the ticket type. Always check the [official tickets page](https://milanosensualcongress.com/tickets) before buying.
 
-### Where is Milano Sensual Congress 2026?
+**05Where is Milano Sensual Congress 2026?**
 
 Milano Sensual Congress 2026 takes place from 20 to 22 November 2026 at Devero Hotel in Cavenago di Brianza, in the Milan area of Italy. You can also read the full [Bachata Congress 2026 in Europe guide](https://milanosensualcongress.com/bachata-congress-2026) for workshops, hotel, travel and party details.
+
+**06How much does it cost to enter the 2027 Jack & Jill?**
+
+Entry to the 2027 Jack & Jill costs €25.
+
+**07Which airport does the 2027 congress shuttle leave from?**
+
+We offer a shuttle from Milan Malpensa Airport (MXP) to the hotel.
