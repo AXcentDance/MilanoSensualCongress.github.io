@@ -24,8 +24,6 @@ body.edition-2027 { background: var(--e27-ink); color: var(--e27-paper); font-fa
 .edition-2027 :is(h1,h2,h3) { text-wrap: balance; }
 .edition-2027 main { overflow: clip; }
 .edition-2027 [id] { scroll-margin-top: 110px; }
-.edition-2027 .e27-preview { padding: 8px 24px; background: #082925; color: var(--e27-sage); font-size: 10px; line-height: 1.5; text-align: center; letter-spacing: .025em; }
-.edition-2027 .e27-preview strong { font-weight: 800; color: var(--e27-paper); }
 .edition-2027 .e27-nav { position: sticky; top: 0; z-index: 100; background: var(--e27-nav); border-bottom: 1px solid var(--e27-line); }
 .edition-2027 .e27-nav-inner { max-width: 1440px; padding: 12px 4.5%; margin: auto; display: flex; align-items: center; justify-content: space-between; gap: 24px; min-height: 86px; }
 .edition-2027 .e27-brand { display: flex; align-items: center; gap: 15px; flex-shrink: 0; }
@@ -186,7 +184,6 @@ body.edition-2027 { background: var(--e27-ink); color: var(--e27-paper); font-fa
   .edition-2027 .e27-stay { gap: 40px; }
 }
 @media (max-width: 700px) {
-  .edition-2027 .e27-preview { font-size: 9px; padding: 7px 16px; }
   .edition-2027 .e27-nav-inner { min-height: 74px; padding-block: 6px; }
   .edition-2027 .e27-brand img { width: 87px; height: 52px; }
   .edition-2027 .e27-wrap { width: 88%; }

@@ -100,7 +100,8 @@ for (const prefix of ['', '/it']) {
     await page.goto(`${prefix}/`);
     await expect(page.locator('h1')).toBeVisible();
     await expect(page.locator('#edition-facts')).toContainText('2027');
-    await expect(page.locator('.e27-preview')).toContainText('DEVERO HOTEL');
+    await expect(page.locator('.e27-preview')).toHaveCount(0);
+    await expect(page.locator('nav.e27-nav')).toBeVisible();
     await expect(page.locator('.premiere-star').first()).toHaveCSS('animation-name', 'none');
     await expect(page.locator('.e27-motion-toggle')).toHaveCount(0);
     await expect(page.locator('body')).not.toHaveClass(/e27-motion-on/);

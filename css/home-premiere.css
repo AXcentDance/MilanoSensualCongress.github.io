@@ -155,7 +155,6 @@
 }
 @media (max-width:700px) {
  .home-premiere .e27-nav-inner { min-height:74px; }
- .home-premiere .e27-preview { font-size:9px; }
  .home-premiere .e27-section { padding-block:64px; }
  .home-premiere .e27-wrap { width:88%; }
  .home-premiere .premiere-actions { gap:10px; margin-top:24px; }
